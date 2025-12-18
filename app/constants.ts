@@ -9,7 +9,7 @@ export const YEAR_THEMES: Record<number, YearTheme> = {
 
 export const MESSAGE_TYPE_LABELS: Record<number, string> = {
   [MessageType.GENERAL_INFORMATION]: "Información General",
-  [MessageType.DAF]: "Disparo Automático por Frecuencia (DAF)",
+  [MessageType.DAF]: "DAF",
   [MessageType.FAILURE_BY_ZONE]: "Afectaciones por Zonas",
   [MessageType.DAILY_RESUME]: "Resumen Diario",
   [MessageType.BLOCK_INFORMATION]: "Afectaciones de Bloques",
