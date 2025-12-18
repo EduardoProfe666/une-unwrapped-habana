@@ -1,84 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <link rel="icon" type="image/x-icon" href="https://une-unwrapped-habana.vercel.app/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="https://une-unwrapped-habana.vercel.app/favicon.ico"/>
     <link rel="apple-touch-icon" sizes="180x180" href="https://une-unwrapped-habana.vercel.app/apple-touch-icon.png">
 
     <title>UNE Unwrapped</title>
-    <meta name="description" content="Estadísticas anuales del estado del SEN capitalino" />
-    <meta name="keywords" content="UNE, Unwrapped, estadísticas, resumen anual, datos" />
-    <meta name="author" content="EduardoProfe666" />
+    <meta name="description" content="Estadísticas anuales del estado del SEN capitalino"/>
+    <meta name="keywords" content="UNE, Unwrapped, estadísticas, resumen anual, datos"/>
+    <meta name="author" content="EduardoProfe666"/>
 
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://une-unwrapped-habana.vercel.app/" />
-    <meta property="og:title" content="UNE Unwrapped" />
-    <meta property="og:description" content="Estadísticas anuales del estado del SEN capitalino" />
-    <meta property="og:image" content="https://une-unwrapped-habana.vercel.app/banner.png" /> <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://une-unwrapped-habana.vercel.app/" />
-    <meta property="twitter:title" content="UNE Unwrapped" />
-    <meta property="twitter:description" content="Estadísticas anuales del estado del SEN capitalino" />
-    <meta property="twitter:image" content="https://une-unwrapped-habana.vercel.app/banner.jpg" />
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://une-unwrapped-habana.vercel.app/"/>
+    <meta property="og:title" content="UNE Unwrapped"/>
+    <meta property="og:description" content="Estadísticas anuales del estado del SEN capitalino"/>
+    <meta property="og:image" content="https://une-unwrapped-habana.vercel.app/banner.png"/>
+    <meta property="twitter:card" content="summary_large_image"/>
+    <meta property="twitter:url" content="https://une-unwrapped-habana.vercel.app/"/>
+    <meta property="twitter:title" content="UNE Unwrapped"/>
+    <meta property="twitter:description" content="Estadísticas anuales del estado del SEN capitalino"/>
+    <meta property="twitter:image" content="https://une-unwrapped-habana.vercel.app/banner.jpg"/>
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap"
+          rel="stylesheet">
     <style>
-      body {
-        font-family: 'Space Grotesk', sans-serif;
-        background-color: #fdf6e3;
-        overflow-x: hidden;
-      }
-      /* Custom Scrollbar */
-      ::-webkit-scrollbar {
-        width: 12px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-        border-left: 2px solid black;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #000;
-        border: 2px solid #f1f1f1;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #333;
-      }
-      .neobrutal-shadow {
-        box-shadow: 6px 6px 0px 0px rgba(0,0,0,1);
-      }
-      .neobrutal-shadow-sm {
-        box-shadow: 3px 3px 0px 0px rgba(0,0,0,1);
-      }
-      .neobrutal-border {
-        border: 3px solid black;
-      }
-      .hide-scrollbar::-webkit-scrollbar {
-          display: none;
-      }
-      .hide-scrollbar {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-      }
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: #fdf6e3;
+            overflow-x: hidden;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-left: 2px solid black;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #000;
+            border: 2px solid #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #333;
+        }
+
+        .neobrutal-shadow {
+            box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 1);
+        }
+
+        .neobrutal-shadow-sm {
+            box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 1);
+        }
+
+        .neobrutal-border {
+            border: 3px solid black;
+        }
+
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.2.3/",
-    "react": "https://esm.sh/react@^19.2.3",
-    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
-    "recharts": "https://esm.sh/recharts@^3.6.0",
-    "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
-    "html-to-image": "https://esm.sh/html-to-image@^1.11.13"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
+    <script type="importmap">
+        {
+          "imports": {
+            "react/": "https://esm.sh/react@^19.2.3/",
+            "react": "https://esm.sh/react@^19.2.3",
+            "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+            "recharts": "https://esm.sh/recharts@^3.6.0",
+            "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
+            "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+            "html-to-image": "https://esm.sh/html-to-image@^1.11.13"
+          }
+        }
+    </script>
 </head>
-  <body>
-    <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
+<body>
+<div id="root"></div>
 </body>
 </html>
