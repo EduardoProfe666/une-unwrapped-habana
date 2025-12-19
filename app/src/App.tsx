@@ -74,7 +74,7 @@ function App() {
                 {/* Sync Date Corner */}
                 <div
                     className="fixed top-0 right-0 p-2 z-50 bg-black text-white text-[10px] font-mono opacity-60 hover:opacity-100 transition-opacity">
-                    SYNC: {new Date(data.sync_date).toLocaleString()}
+                    SYNC: {new Date(data.sync_date).toLocaleString('es-CU')}
                 </div>
 
                 {/* Hero Section */}
@@ -155,7 +155,7 @@ function App() {
                                         {stat.icon}
                                     </div>
                                     <span className="text-2xl md:text-4xl font-black truncate"
-                                          title={stat.value.toLocaleString()}>
+                                          title={stat.value.toLocaleString('es-ES')}>
                         {stat.value >= 1000000 ? `${(stat.value / 1000000).toFixed(1)}M` : formatNumber(stat.value)}
                     </span>
                                 </m.div>

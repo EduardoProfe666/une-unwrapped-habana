@@ -1,6 +1,7 @@
 import React, {useMemo} from 'react';
 import {TelegramMessage as ITelegramMessage} from '../common/types.ts';
 import {ExternalLink, Eye, MessageCircle} from 'lucide-react';
+import {formatDate} from "@/src/common/utils.ts";
 
 interface Props {
     message: ITelegramMessage;
@@ -15,7 +16,7 @@ export const TelegramMessage: React.FC<Props> = ({message, highlightCount, class
             .slice(0, 4);
     }, [message.reactions]);
 
-    const formattedViews = useMemo(() => message.views.toLocaleString(), [message.views]);
+    const formattedViews = useMemo(() => message.views.toLocaleString('es-ES'), [message.views]);
 
     return (
         <div
@@ -38,7 +39,7 @@ export const TelegramMessage: React.FC<Props> = ({message, highlightCount, class
           <span className="font-bold text-sm md:text-base leading-tight truncate sm:whitespace-normal">
             Empresa Eléctrica de La Habana
           </span>
-                    <span className="text-[10px] font-mono text-gray-500 mt-1">{message.date_cuba}</span>
+                    <span className="text-[10px] font-mono text-gray-500 mt-1">{new Date(message.date_cuba).toLocaleString('es-CU')}</span>
                 </div>
             </div>
 
