@@ -12,7 +12,7 @@ import {ChartSection} from './components/ChartSection';
 import {WordCloud} from './components/WordCloud';
 import {SenAnalysisSection} from './components/SenAnalysis';
 import {BlockCard} from './components/BlockCard';
-import {Info, HelpCircle, Terminal, TrendingUp, ThumbsUp, ThumbsDown, MessageSquare} from 'lucide-react';
+import {Info, HelpCircle, Terminal, TrendingUp, ThumbsUp, ThumbsDown, MessageSquare, AlertTriangle} from 'lucide-react';
 import {Analytics} from "@vercel/analytics/react";
 import {SpeedInsights} from "@vercel/speed-insights/react";
 
@@ -121,9 +121,8 @@ function App() {
 
             {/* Disclaimer Section */}
             <section
-                className="bg-yellow-300 border-b-4 border-black p-4 text-center text-sm font-bold flex justify-center items-center gap-2">
-                <HelpCircle size={18}/>
-                <span>INFO: Datos extraídos automáticamente de Telegram. Tratados con algoritmos sencillos de análisis de texto. Solo para entretenimiento.</span>
+                className="bg-yellow-300 border-b-4 border-black p-4 text-center text-sm font-bold flex justify-center items-center gap-2 px-10">
+                <span>IMPORTANTE: Esta página no está afiliada a la Empresa Eléctrica de La Habana ni a la Unión Eléctrica. Los datos se extraen automáticamente de mensajes públicos del canal de Telegram capitalino y se procesan con algoritmos básicos de análisis de texto. Son una aproximación y pueden contener errores de interpretación algorítmica. NO son datos oficiales y su precisión puede distar de la realidad. Úsese exclusivamente con fines de entretenimiento y con precaución.</span>
             </section>
 
             {loading ? (
