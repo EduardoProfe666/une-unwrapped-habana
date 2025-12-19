@@ -21,7 +21,7 @@ export const MESSAGE_TYPE_LABELS: Record<number, string> = {
 
 export const MESSAGE_TYPE_DESCRIPTIONS: Record<number, string> = {
     [MessageType.GENERAL_INFORMATION]: "Noticias generales, mantenimientos planificados, avisos institucionales y otras informaciones de interés.",
-    [MessageType.DAF]: "🤷‍♂️🤷‍♂️🤷‍♂️🤷‍♂️🤷‍♂️",
+    [MessageType.DAF]: "Disparado Automático por Frecuencia (DAF) 🤷‍♂️",
     [MessageType.FAILURE_BY_ZONE]: "Reportes específicos de averías o interrupciones en municipios, repartos o zonas determinadas.",
     [MessageType.DAILY_RESUME]: "Resumen estadístico y descriptivo del comportamiento del servicio eléctrico durante el día anterior.",
     [MessageType.BLOCK_INFORMATION]: "Información relacionada con la programación, rotación y afectación de los bloques de apagón.",
