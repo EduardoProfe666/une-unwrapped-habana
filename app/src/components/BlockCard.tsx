@@ -21,7 +21,7 @@ const NeobrutalTooltip = ({ text }: { text: string }) => (
   </motion.div>
 );
 
-export const BlockCard: React.FC<Props> = ({ block, color }) => {
+const BlockCard: React.FC<Props> = ({ block, color }) => {
   const cardRef = useRef<HTMLDivElement>(null);
   const [hoveredStat, setHoveredStat] = useState<string | null>(null);
 
@@ -156,3 +156,5 @@ export const BlockCard: React.FC<Props> = ({ block, color }) => {
     </div>
   );
 };
+
+export default BlockCard;

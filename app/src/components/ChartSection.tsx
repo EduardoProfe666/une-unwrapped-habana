@@ -9,7 +9,7 @@ interface Props {
 
 type ChartType = 'views' | 'replies' | 'reactions' | 'messages';
 
-export const ChartSection: React.FC<Props> = ({ data, color }) => {
+const ChartSection: React.FC<Props> = ({ data, color }) => {
   const [chartType, setChartType] = useState<ChartType>('views');
 
   const chartData = Object.keys(data.monthly_views).map(month => ({
@@ -64,3 +64,5 @@ export const ChartSection: React.FC<Props> = ({ data, color }) => {
     </div>
   );
 };
+
+export default ChartSection;

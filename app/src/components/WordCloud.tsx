@@ -5,7 +5,7 @@ interface Props {
   color: string;
 }
 
-export const WordCloud: React.FC<Props> = ({ words, color }) => {
+const WordCloud: React.FC<Props> = ({ words, color }) => {
   const sortedWords = Object.entries(words).sort((a, b) => (b[1] as number) - (a[1] as number));
   const maxCount = sortedWords[0][1] as number;
   const minCount = sortedWords[sortedWords.length - 1][1] as number;
@@ -39,3 +39,5 @@ export const WordCloud: React.FC<Props> = ({ words, color }) => {
     </div>
   );
 };
+
+export default WordCloud;
