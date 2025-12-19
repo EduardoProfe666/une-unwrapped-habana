@@ -27,11 +27,11 @@ def process_all_messages():
 
 def process_latest_messages():
     """
-    Process latest 25 messages from telegram channel and store them on database
+    Process latest 50 messages from telegram channel and store them on database
     """
     conn = setup_database()
     with TelegramClient(__session, __api_id, __api_hash) as client:
-        messages = client.get_messages(__channel_username, limit=25)
+        messages = client.get_messages(__channel_username, limit=50)
 
         for message in messages:
             __process_message(conn, message)
