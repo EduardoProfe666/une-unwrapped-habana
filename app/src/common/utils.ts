@@ -25,7 +25,8 @@ export const formatDate = (dateStr: string): string => {
       month: 'long',
       year: 'numeric',
       hour: '2-digit',
-      minute: '2-digit'
+      minute: '2-digit',
+      hour12: true,
     }).format(date);
   } catch (e) {
     return dateStr;

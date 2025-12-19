@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import { BlockAnalysis } from '../common/types.ts';
 import { Download, Zap, AlertTriangle, CheckCircle, Activity } from 'lucide-react';
 import * as htmlToImage from 'html-to-image';
-import { motion, AnimatePresence } from 'framer-motion';
+import { m, AnimatePresence } from 'framer-motion';
 
 interface Props {
   block: BlockAnalysis;
@@ -10,7 +10,7 @@ interface Props {
 }
 
 const NeobrutalTooltip = ({ text }: { text: string }) => (
-  <motion.div
+  <m.div
     initial={{ opacity: 0, y: 10, scale: 0.95 }}
     animate={{ opacity: 1, y: 0, scale: 1 }}
     exit={{ opacity: 0, scale: 0.95 }}
@@ -18,7 +18,7 @@ const NeobrutalTooltip = ({ text }: { text: string }) => (
   >
     {text}
     <div className="absolute top-full translate-y-1 left-4 w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[6px] border-t-black"></div>
-  </motion.div>
+  </m.div>
 );
 
 const BlockCard: React.FC<Props> = ({ block, color }) => {
