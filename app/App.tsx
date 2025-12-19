@@ -161,14 +161,18 @@ function App() {
                     </motion.section>
 
                     {/* AVERAGES & TEXT STATS */}
-                    <section className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                    <section className="flex flex-col gap-12 w-full">
+
                         <motion.div
-                            initial={{x: -50, opacity: 0}}
-                            whileInView={{x: 0, opacity: 1}}
+                            initial={{
+                                y: 50,
+                                opacity: 0
+                            }}
+                            whileInView={{y: 0, opacity: 1}}
                             viewport={{once: true}}
-                            className="bg-white neobrutal-border p-6 neobrutal-shadow-sm space-y-4"
+                            className="bg-white neobrutal-border p-6 neobrutal-shadow-sm space-y-4 w-full max-w-2xl mx-auto"
                         >
-                            <h2 className={`text-3xl font-black ${theme.accent} uppercase border-b-2 border-black pb-2`}>Promedios</h2>
+                            <h2 className={`text-3xl font-black ${theme.accent} uppercase border-b-2 border-black pb-2 text-center`}>Promedios</h2>
                             <ul className="space-y-3 font-mono text-lg">
                                 <li className="flex justify-between"><span>Vistas/Msg:</span>
                                     <b>{formatNumber(data.avg_views)}</b></li>
@@ -184,17 +188,19 @@ function App() {
                         </motion.div>
 
                         <motion.div
-                            initial={{x: 50, opacity: 0}}
-                            whileInView={{x: 0, opacity: 1}}
+                            initial={{y: 50, opacity: 0}}
+                            whileInView={{y: 0, opacity: 1}}
                             viewport={{once: true}}
-                            className="space-y-10"
+                            transition={{delay: 0.2}}
+                            className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl mx-auto items-start"
                         >
-                            <div className="relative group">
+                            <div className="relative group w-full">
                                 <span
                                     className="absolute -rotate-3 -top-3 left-4 bg-black text-white px-2 text-xs font-bold z-20">PRIMER MENSAJE</span>
                                 <TelegramMessage message={data.first_message}/>
                             </div>
-                            <div className="relative group mt-12">
+
+                            <div className="relative group w-full">
                                 <span
                                     className="absolute -rotate-3 -top-3 left-4 bg-black text-white px-2 text-xs font-bold z-20">ÚLTIMO MENSAJE</span>
                                 <TelegramMessage message={data.last_message}/>
