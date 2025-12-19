@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { BlockAnalysis } from '../types';
+import { BlockAnalysis } from '../common/types.ts';
 import { Download, Zap, AlertTriangle, CheckCircle, Activity } from 'lucide-react';
 import * as htmlToImage from 'html-to-image';
 import { motion, AnimatePresence } from 'framer-motion';

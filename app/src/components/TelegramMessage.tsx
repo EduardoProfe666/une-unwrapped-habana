@@ -1,5 +1,5 @@
 import React from 'react';
-import { TelegramMessage as ITelegramMessage } from '../types';
+import { TelegramMessage as ITelegramMessage } from '../common/types.ts';
 import { Eye, MessageCircle } from 'lucide-react';
 
 interface Props {

@@ -9,7 +9,7 @@ export interface TelegramMessage {
   views: number;
   replies: number;
   text: string;
-  count?: number; // Optional as per top3 lists
+  count?: number;
 }
 
 export enum MessageType {

@@ -4,14 +4,14 @@ import {
     YEAR_THEMES,
     MESSAGE_TYPE_LABELS,
     MESSAGE_TYPE_DESCRIPTIONS, AVAILABLE_YEARS
-} from './constants';
-import {UneAnalysis, MessageType} from './types';
-import {formatNumber} from './utils';
-import {TelegramMessage} from './components/TelegramMessage';
-import {ChartSection} from './components/ChartSection';
-import {WordCloud} from './components/WordCloud';
-import {SenAnalysisSection} from './components/SenAnalysis';
-import {BlockCard} from './components/BlockCard';
+} from './common/constants.ts';
+import {UneAnalysis, MessageType} from './common/types.ts';
+import {formatNumber} from './common/utils.ts';
+import {TelegramMessage} from '@/src/components/TelegramMessage.tsx';
+import {ChartSection} from '@/src/components/ChartSection.tsx';
+import {WordCloud} from '@/src/components/WordCloud.tsx';
+import {SenAnalysisSection} from '@/src/components/SenAnalysis.tsx';
+import {BlockCard} from '@/src/components/BlockCard.tsx';
 import {Info, HelpCircle, Terminal, TrendingUp, ThumbsUp, ThumbsDown, MessageSquare, AlertTriangle} from 'lucide-react';
 import {Analytics} from "@vercel/analytics/react";
 import {SpeedInsights} from "@vercel/speed-insights/react";

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from 'recharts';
-import { UneAnalysis } from '../types';
+import { UneAnalysis } from '../common/types.ts';
 
 interface Props {
   data: UneAnalysis;

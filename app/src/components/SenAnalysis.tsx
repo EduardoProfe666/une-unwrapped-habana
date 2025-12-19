@@ -1,9 +1,9 @@
 import React from 'react';
-import { SenAnalysis } from '../types';
-import { formatDuration, formatDate } from '../utils';
+import { SenAnalysis } from '../common/types.ts';
+import { formatDuration, formatDate } from '../common/utils.ts';
 import { AlertOctagon, Clock } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { TelegramMessage } from './TelegramMessage';
+import { TelegramMessage } from './TelegramMessage.tsx';
 
 interface Props {
   analysis: SenAnalysis;

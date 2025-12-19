@@ -1,14 +1,17 @@
 {
-  "name": "une-unwrapped---la-habana",
+  "name": "une-unwrapped-habana",
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "author": "EduardoProfe666",
+  "repository": "https://github.com/EduardoProfe666/une-unwrapped-habana",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.18",
     "@vercel/analytics": "^1.6.1",
     "@vercel/speed-insights": "^1.3.1",
     "framer-motion": "^12.23.26",
@@ -16,7 +19,8 @@
     "lucide-react": "^0.561.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
-    "recharts": "^3.6.0"
+    "recharts": "^3.6.0",
+    "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",

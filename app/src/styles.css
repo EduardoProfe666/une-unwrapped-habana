@@ -1,0 +1,46 @@
+@import "../node_modules/.pnpm/tailwindcss@4.1.18/node_modules/tailwindcss/dist/lib.d.mts";
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #fdf6e3;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-left: 2px solid black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #000;
+    border: 2px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #333;
+}
+
+.neobrutal-shadow {
+    box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.neobrutal-shadow-sm {
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.neobrutal-border {
+    border: 3px solid black;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
