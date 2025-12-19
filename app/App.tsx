@@ -13,6 +13,8 @@ import {WordCloud} from './components/WordCloud';
 import {SenAnalysisSection} from './components/SenAnalysis';
 import {BlockCard} from './components/BlockCard';
 import {Info, HelpCircle, Terminal, TrendingUp, ThumbsUp, ThumbsDown, MessageSquare} from 'lucide-react';
+import {Analytics} from "@vercel/analytics/react";
+import {SpeedInsights} from "@vercel/speed-insights/react";
 
 const availableYears = [2022, 2023, 2024, 2025];
 
@@ -378,7 +380,8 @@ function App() {
                 <p className="text-sm text-gray-400 max-w-2xl mx-auto mb-8">
                     Esta página no está afiliada a la Empresa Eléctrica de La Habana ni a la Unión Eléctrica.
                     Los datos son una aproximación basada en mensajes públicos de Telegram y pueden contener errores de
-                    interpretación algorítmica. NO deben ser tratados como datos oficiales y reales, pues pueden contener errores
+                    interpretación algorítmica. NO deben ser tratados como datos oficiales y reales, pues pueden
+                    contener errores
                     y estar alejados de la estimación real. Solo es para entretenimiento, usar con precaución.
                 </p>
                 <div className="flex justify-center items-center gap-4">
@@ -393,7 +396,8 @@ function App() {
                     </a>
                 </div>
             </footer>
-
+            <Analytics/>
+            <SpeedInsights/>
         </div>
     );
 }
