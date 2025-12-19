@@ -134,3 +134,36 @@ def get_messages_by_year(year: int) -> list[TelegramMessage]:
 
 def construct_link_by_id(message_id):
     return f"https://t.me/{__channel_username}/{message_id}"
+
+
+def get_year_range() -> tuple[int, int]:
+    """
+    Retrieves the first and last year recorded in the messages table.
+
+    :return: A tuple containing (first_year, last_year) as integers.
+             Returns (None, None) if the database is empty.
+    """
+    conn = setup_database()
+    cursor = conn.cursor()
+
+    try:
+        cursor.execute('''
+                       SELECT MIN(SUBSTR(date_cuba, 1, 4)),
+                              MAX(SUBSTR(date_cuba, 1, 4))
+                       FROM messages
+                       ''')
+
+        result = cursor.fetchone()
+
+        if result and result[0] is not None:
+            first_year = int(result[0])
+            last_year = int(result[1])
+            return first_year, last_year
+
+        return None, None
+
+    except Exception as e:
+        print(f"Error retrieving year range: {e}")
+        return None, None
+    finally:
+        conn.close()

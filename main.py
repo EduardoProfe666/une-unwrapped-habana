@@ -1,17 +1,12 @@
-from datetime import datetime
-
-from core.analyzer import analyze_data
-from core.scrapper import process_latest_messages, process_all_messages
-from zoneinfo import ZoneInfo
+from core import *
 
 if __name__ == '__main__':
-    first_year = 2022
-    years = list(range(first_year, datetime.now(ZoneInfo("America/Havana")).year + 1))
-
     # Message Retrieving from Telegram
     # process_all_messages()
     process_latest_messages()
 
     # Data Analysis
+    first_year, last_year = get_year_range()
+    years = list(range(first_year, last_year + 1))
     for year in years:
         analyze_data(year)
