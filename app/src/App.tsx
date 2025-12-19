@@ -13,8 +13,6 @@ import {WordCloud} from '@/src/components/WordCloud.tsx';
 import {SenAnalysisSection} from '@/src/components/SenAnalysis.tsx';
 import {BlockCard} from '@/src/components/BlockCard.tsx';
 import {Info, HelpCircle, Terminal, TrendingUp, ThumbsUp, ThumbsDown, MessageSquare, AlertTriangle} from 'lucide-react';
-import {Analytics} from "@vercel/analytics/react";
-import {SpeedInsights} from "@vercel/speed-insights/react";
 
 function App() {
     const [selectedYear, setSelectedYear] = useState<number>(2025);
@@ -77,7 +75,7 @@ function App() {
             <header
                 className="min-h-[80vh] flex flex-col items-center justify-center p-6 relative overflow-hidden border-b-4 border-black bg-white">
                 <div className="absolute top-4 left-4 font-bold text-xl flex items-center gap-2">
-                    <img src="/logo.png" alt="Logo"
+                    <img src="/logo.webp" alt="Logo"
                          className="h-10 w-10 p-0.5 rounded-full bg-gray-300 border-2 border-black"/>
                     UNE Unwrapped
                 </div>
@@ -399,8 +397,6 @@ function App() {
                     </a>
                 </div>
             </footer>
-            <Analytics/>
-            <SpeedInsights/>
         </div>
     );
 }

@@ -1,4 +1,4 @@
-![asd](/app/public/banner.png)
+![asd](/app/public/banner.webp)
 
 ## ⚡ UNE Unwrapped
 
