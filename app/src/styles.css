@@ -1,4 +1,20 @@
-@import "../node_modules/.pnpm/tailwindcss@4.1.18/node_modules/tailwindcss/dist/lib.d.mts";
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('/fonts/space-grotesk-v22-latin-regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('/fonts/space-grotesk-v22-latin-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 body {
     font-family: 'Space Grotesk', sans-serif;
