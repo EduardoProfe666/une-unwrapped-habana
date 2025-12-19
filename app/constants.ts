@@ -9,6 +9,8 @@ export const YEAR_THEMES: Record<number, YearTheme> = {
     2027: {bg: 'bg-teal-50', primary: 'bg-teal-500', secondary: 'bg-teal-300', accent: 'text-teal-600'},
 };
 
+export const AVAILABLE_YEARS = [2022, 2023, 2024, 2025];
+
 export const MESSAGE_TYPE_LABELS: Record<number, string> = {
     [MessageType.GENERAL_INFORMATION]: "Información General",
     [MessageType.DAF]: "DAF",

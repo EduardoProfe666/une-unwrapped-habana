@@ -3,7 +3,7 @@ import {motion, AnimatePresence, Variants} from 'framer-motion';
 import {
     YEAR_THEMES,
     MESSAGE_TYPE_LABELS,
-    MESSAGE_TYPE_DESCRIPTIONS
+    MESSAGE_TYPE_DESCRIPTIONS, AVAILABLE_YEARS
 } from './constants';
 import {UneAnalysis, MessageType} from './types';
 import {formatNumber} from './utils';
@@ -15,8 +15,6 @@ import {BlockCard} from './components/BlockCard';
 import {Info, HelpCircle, Terminal, TrendingUp, ThumbsUp, ThumbsDown, MessageSquare, AlertTriangle} from 'lucide-react';
 import {Analytics} from "@vercel/analytics/react";
 import {SpeedInsights} from "@vercel/speed-insights/react";
-
-const availableYears = [2022, 2023, 2024, 2025];
 
 function App() {
     const [selectedYear, setSelectedYear] = useState<number>(2025);
@@ -98,7 +96,7 @@ function App() {
                     </p>
 
                     <div className="flex flex-wrap gap-4 justify-center">
-                        {availableYears.map(year => (
+                        {AVAILABLE_YEARS.map(year => (
                             <button
                                 key={year}
                                 onClick={() => setSelectedYear(year)}
@@ -130,7 +128,7 @@ function App() {
                     CARGANDO DATOS DEL {selectedYear}...
                 </div>
             ) : (
-                <main className="max-w-7xl mx-auto p-4 md:p-8 space-y-24">
+                <main className="max-w-7xl mx-auto p-4 md:p-8 space-y-16">
 
                     {/* TOTALS GRID */}
                     <motion.section
