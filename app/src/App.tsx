@@ -105,27 +105,61 @@ function App() {
         [data]
     );
 
+    const scrollToFooter = () => {
+        window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: 'smooth'
+        });
+    };
 
-    if (!data) return <div
-        className="min-h-screen flex items-center justify-center font-bold text-2xl">CARGANDO...</div>;
+    if (!data) return (
+        <div className="min-h-screen flex flex-col items-center justify-center bg-white p-6">
+            <div className="relative w-24 h-24 mb-8">
+                <div className="absolute inset-0 border-8 border-black animate-[spin_3s_linear_infinite]" />
+                <div className="absolute inset-4 border-4 border-yellow-400 animate-[spin_1s_linear_infinite_reverse]" />
+                <div className="absolute inset-9 bg-red-500 animate-pulse" />
+            </div>
+            <div className="text-center">
+                <h2 className="font-black tracking-tighter text-4xl mb-2 italic">CARGANDO_SISTEMA</h2>
+                <div className="flex gap-1 justify-center">
+                    {[...Array(5)].map((_, i) => (
+                        <m.div
+                            key={i}
+                            animate={{ opacity: [0, 1, 0] }}
+                            transition={{ repeat: Infinity, duration: 0.8, delay: i * 0.1 }}
+                            className="w-3 h-3 bg-black"
+                        />
+                    ))}
+                </div>
+                <p className="font-mono text-[10px] mt-4 opacity-40 uppercase tracking-[0.3em]">
+                    Establishing connection to Habana_Hub...
+                </p>
+            </div>
+        </div>
+    );
 
     return (
         <LazyMotion features={domAnimation}>
             <div className={`min-h-screen ${theme.bg} text-black transition-colors duration-500 relative`}>
 
                 {/* Sync Date Corner */}
-                <div
-                    className="fixed top-0 right-0 p-2 z-50 bg-black text-white text-[10px] font-mono opacity-60 hover:opacity-100 transition-opacity">
-                    SYNC: {new Date(data.sync_date).toLocaleString('es-CU')}
+                <div className="fixed top-0 right-0 p-2 z-50 hover:opacity-70 opacity-45 bg-black text-white text-[10px] font-mono border-l-2 border-b-2 border-white/20">
+                    SYNC_OK: {new Date(data.sync_date).toLocaleString('es-CU')}
                 </div>
 
                 {/* Hero Section */}
-                <header
-                    className="min-h-[80vh] flex flex-col items-center justify-center p-6 relative overflow-hidden border-b-4 border-black bg-white">
-                    <div className="absolute top-4 left-4 font-bold text-xl flex items-center gap-2">
-                        <img src="/logo.webp" alt="Logo" width="360" height="360" loading="lazy"
-                             className="h-10 w-10 p-0.5 rounded-full bg-gray-300 border-2 border-black"/>
-                        UNE Unwrapped
+                <header className="min-h-[80vh] flex flex-col items-center justify-center p-6 relative overflow-hidden border-b-4 border-black bg-white">
+                    <div className="absolute inset-0 opacity-[0.05] pointer-events-none"
+                         style={{ backgroundImage: 'radial-gradient(#000 2px, transparent 2px)', backgroundSize: '30px 30px' }} />
+                    <div className="absolute top-8 left-8 flex items-center gap-4 group">
+                        <div className="relative">
+                            <img src="/logo.webp" alt="Logo" width="360" height="360"
+                                 className="h-14 w-14 p-1 bg-white border-4 border-black shadow-[4px_4px_0px_0px_black] group-hover:shadow-none group-hover:translate-x-1 group-hover:translate-y-1 transition-all"/>
+                        </div>
+                        <div className="flex flex-col">
+                            <span className="font-black text-2xl leading-none tracking-tighter italic">UNE_UNWRAPPED</span>
+                            <span className="text-[10px] font-bold bg-black text-white px-1 w-fit mt-1">HABANA_HUB</span>
+                        </div>
                     </div>
 
                     <m.div
@@ -146,7 +180,7 @@ function App() {
                                 <button
                                     key={year}
                                     onClick={() => setSelectedYear(year)}
-                                    className={`px-6 py-3 font-bold border-4 border-black text-lg transition-transform hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_black] ${
+                                    className={`px-6 py-3 font-bold border-4 border-black text-lg transition-all shadow-[4px_4px_0px_0px_black] hover:shadow-none hover:translate-x-1 hover:translate-y-1 active:shadow-none ${
                                         selectedYear === year ? `${theme.primary} text-white` : 'bg-white'
                                     }`}
                                 >
@@ -164,14 +198,32 @@ function App() {
                 </header>
 
                 {/* Disclaimer Section */}
-                <section
-                    className="bg-yellow-300 border-b-4 border-black p-4 text-center text-sm font-bold flex justify-center items-center gap-2 px-10">
-                    <span>IMPORTANTE: Esta página no está afiliada con la Empresa Eléctrica de La Habana ni con la Unión Eléctrica. La información se obtiene de forma automática a partir de mensajes públicos en el canal de Telegram de La Habana, utilizando algoritmos básicos de análisis de texto. Algunos datos son aproximados y pueden contener errores. No son oficiales y su exactitud no está garantizada.</span>
+                <section className="bg-yellow-300 border-b-4 border-black p-2 top-0 z-[40]">
+                    <div className="max-w-7xl mx-auto flex flex-col items-center gap-3 text-center">
+                        {/* Texto del Disclaimer */}
+                        <span className="text-sm font-black uppercase tracking-tight">
+                            Proyecto independiente. Datos no oficiales basados en análisis de Telegram. Puede contener errores
+                        </span>
+
+                        {/* Botón ahora debajo */}
+                        <button
+                            onClick={scrollToFooter}
+                            className="group flex items-center gap-2 text-[11px] font-black uppercase bg-white border-2 border-black px-6 py-2 shadow-[4px_4px_0px_0px_black] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all"
+                        >
+                            Leer aviso legal completo
+                            <span className="group-hover:translate-y-0.5 transition-transform font-bold">↓</span>
+                        </button>
+                    </div>
                 </section>
 
                 {loading ? (
-                    <div className="h-96 flex items-center justify-center text-2xl font-black animate-pulse">
-                        CARGANDO DATOS DEL {selectedYear}...
+                    <div className="h-screen flex items-center justify-center">
+                        <div className="text-center space-y-4">
+                            <div className="text-6xl animate-bounce">⚡</div>
+                            <p className="text-2xl font-black italic uppercase tracking-tighter">
+                                Cargando datos del {selectedYear}...
+                            </p>
+                        </div>
                     </div>
                 ) : (
                     <main className="max-w-7xl mx-auto p-4 md:p-8 space-y-16">
