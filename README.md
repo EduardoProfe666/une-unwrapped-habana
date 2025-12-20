@@ -142,13 +142,13 @@ La aplicación está desplegada y disponible en: [une-unwrapped-habana.vercel.ap
 
 4. **Iniciar el servidor de desarrollo**
 >   ```bash
->   npm run dev
+>   npm dev
 >   # o
 >   yarn dev
 >   # o
->   pnpm run dev
+>   pnpm dev
 >   # o
->   bun run dev
+>   bun dev
 >   ```
    
 5. **Acceder a la aplicación**
