@@ -60,7 +60,7 @@ const BlockCard: React.FC<Props> = ({ block, color }) => {
           </div>
 
           {/* Stats Container */}
-          <div className="space-y-1 z-10 relative bg-white/60 backdrop-blur-[2px] rounded border border-transparent">
+          <div className="space-y-1 z-10 relative bg-transparent rounded border border-transparent">
             {stats.map((stat) => (
                 <div
                     key={stat.id}
@@ -91,7 +91,7 @@ const BlockCard: React.FC<Props> = ({ block, color }) => {
               * Datos no oficiales sujetos a error
             </p>
             <div className="bg-black text-white text-[10px] font-black px-2 py-0.5 mt-1 transform -rotate-1">
-              une-unwrapped.vercel.app
+              une-unwrapped-habana.vercel.app
             </div>
           </div>
         </div>

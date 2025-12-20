@@ -1,17 +1,36 @@
 import React, {lazy, Suspense, useMemo, useState} from 'react';
 import {domAnimation, LazyMotion, m, Variants} from 'framer-motion';
-import {AVAILABLE_YEARS, MESSAGE_TYPE_DESCRIPTIONS, MESSAGE_TYPE_LABELS, YEAR_THEMES} from './common/constants.ts';
+import {AVAILABLE_YEARS, YEAR_THEMES} from './common/constants.ts';
 import {formatNumber} from './common/utils.ts';
-import {TelegramMessage} from '@/src/components/TelegramMessage.tsx';
 import {MessageSquare, ThumbsUp, TrendingUp} from 'lucide-react';
 import SectionLoader from "@/src/components/SectionLoader.tsx";
 import useYearAnalysis from "@/src/hooks/use-year-analysis.ts";
-import {TopList} from "@/src/components/TopList.tsx";
+import AppFooter from "@/src/components/AppFooter.tsx";
 
+const TopList = lazy(() => import("@/src/components/TopList.tsx"));
+const TotalsGrid = lazy(() => import("@/src/components/TotalsGrid.tsx"));
+const AveragesCard = lazy(() => import("@/src/components/AveragesCard.tsx"));
+const ExtremeMessages = lazy(() => import("@/src/components/ExtremeMessages.tsx"));
+const FirstLastMessages = lazy(() => import("@/src/components/FirstLastMessages.tsx"));
 const ChartSection = lazy(() => import('@/src/components/ChartSection.tsx'));
 const WordCloud = lazy(() => import('@/src/components/WordCloud.tsx'));
 const SenAnalysisSection = lazy(() => import('@/src/components/SenAnalysis.tsx'));
 const BlockCard = lazy(() => import('@/src/components/BlockCard.tsx'));
+const DistributionSection = lazy(() => import('@/src/components/DistributionSection'));
+
+const containerVariants: Variants = {
+    hidden: {opacity: 0},
+    visible: {opacity: 1, transition: {staggerChildren: 0.1}}
+};
+
+const itemVariants: Variants = {
+    hidden: {y: 50, opacity: 0},
+    visible: {
+        y: 0,
+        opacity: 1,
+        transition: {type: 'spring', stiffness: 50}
+    }
+};
 
 function App() {
     const [selectedYear, setSelectedYear] = useState<number>(2025);
@@ -22,19 +41,12 @@ function App() {
         [selectedYear]
     );
 
-    const containerVariants = useMemo<Variants>(() => ({
-        hidden: {opacity: 0},
-        visible: {opacity: 1, transition: {staggerChildren: 0.1}}
-    }), []);
-
-    const itemVariants = useMemo<Variants>(() => ({
-        hidden: {y: 50, opacity: 0},
-        visible: {
-            y: 0,
-            opacity: 1,
-            transition: {type: 'spring', stiffness: 50}
-        }
-    }), []);
+    const totals = useMemo(() => data && [
+        {label: 'Vistas Totales', value: data.total_views, icon: <TrendingUp/>},
+        {label: 'Mensajes', value: data.total_messages, icon: <MessageSquare/>},
+        {label: 'Reacciones', value: data.total_reactions, icon: <ThumbsUp/>},
+        {label: 'Comentarios', value: data.total_replies, icon: <MessageSquare/>},
+    ], [data]);
 
     const topLists = useMemo(
         () => data && [
@@ -134,80 +146,25 @@ function App() {
                     <main className="max-w-7xl mx-auto p-4 md:p-8 space-y-16">
 
                         {/* TOTALS GRID */}
-                        <m.section
-                            variants={containerVariants}
-                            initial="hidden"
-                            whileInView="visible"
-                            viewport={{once: true, margin: "-100px"}}
-                            className="grid grid-cols-2 md:grid-cols-4 gap-4"
-                        >
-                            {[
-                                {label: 'Vistas Totales', value: data.total_views, icon: <TrendingUp/>},
-                                {label: 'Mensajes', value: data.total_messages, icon: <MessageSquare/>},
-                                {label: 'Reacciones', value: data.total_reactions, icon: <ThumbsUp/>},
-                                {label: 'Comentarios', value: data.total_replies, icon: <MessageSquare/>},
-                            ].map((stat, i) => (
-                                <m.div key={i} variants={itemVariants}
-                                       className="bg-white neobrutal-border p-4 neobrutal-shadow flex flex-col justify-between h-32">
-                                    <div className="flex justify-between items-start text-gray-500">
-                                        <span className="text-xs font-bold uppercase">{stat.label}</span>
-                                        {stat.icon}
-                                    </div>
-                                    <span className="text-2xl md:text-4xl font-black truncate"
-                                          title={stat.value.toLocaleString('es-ES')}>
-                        {stat.value >= 1000000 ? `${(stat.value / 1000000).toFixed(1)}M` : formatNumber(stat.value)}
-                    </span>
-                                </m.div>
-                            ))}
-                        </m.section>
+                        <Suspense fallback={<SectionLoader/>}>
+                            <TotalsGrid
+                                items={totals}
+                                containerVariants={containerVariants}
+                                itemVariants={itemVariants}
+                            />
+                        </Suspense>
 
-                        {/* AVERAGES & TEXT STATS */}
-                        <section className="flex flex-col gap-12 w-full">
-
-                            <m.div
-                                initial={{
-                                    y: 50,
-                                    opacity: 0
-                                }}
-                                whileInView={{y: 0, opacity: 1}}
-                                viewport={{once: true}}
-                                className="bg-white neobrutal-border p-6 neobrutal-shadow-sm space-y-4 w-full max-w-2xl mx-auto"
-                            >
-                                <h2 className={`text-3xl font-black ${theme.accent} uppercase border-b-2 border-black pb-2 text-center`}>Promedios</h2>
-                                <ul className="space-y-3 font-mono text-lg">
-                                    <li className="flex justify-between"><span>Vistas/Msg:</span>
-                                        <b>{formatNumber(data.avg_views)}</b></li>
-                                    <li className="flex justify-between"><span>Reacciones/Msg:</span>
-                                        <b>{data.avg_reactions}</b></li>
-                                    <li className="flex justify-between"><span>Longitud Texto:</span>
-                                        <b>{data.avg_text_length} letras</b></li>
-                                    <li className="flex justify-between text-green-600"><span>👍 Avg:</span>
-                                        <b>{data.avg_positive_reactions}</b></li>
-                                    <li className="flex justify-between text-red-600"><span>👎 Avg:</span>
-                                        <b>{data.avg_negative_reactions}</b></li>
-                                </ul>
-                            </m.div>
-
-                            <m.div
-                                initial={{y: 50, opacity: 0}}
-                                whileInView={{y: 0, opacity: 1}}
-                                viewport={{once: true}}
-                                transition={{delay: 0.2}}
-                                className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl mx-auto items-start"
-                            >
-                                <div className="relative group w-full">
-                                <span
-                                    className="absolute -rotate-3 -top-3 left-4 bg-black text-white px-2 text-xs font-bold z-20">PRIMER MENSAJE</span>
-                                    <TelegramMessage message={data.first_message}/>
-                                </div>
-
-                                <div className="relative group w-full">
-                                <span
-                                    className="absolute -rotate-3 -top-3 left-4 bg-black text-white px-2 text-xs font-bold z-20">ÚLTIMO MENSAJE</span>
-                                    <TelegramMessage message={data.last_message}/>
-                                </div>
-                            </m.div>
-                        </section>
+                        {/* AVERAGES */}
+                        <Suspense fallback={<SectionLoader/>}>
+                            <AveragesCard
+                                accentClass={theme.accent}
+                                avgViews={data.avg_views}
+                                avgReactions={data.avg_reactions}
+                                avgTextLength={data.avg_text_length}
+                                avgPositive={data.avg_positive_reactions}
+                                avgNegative={data.avg_negative_reactions}
+                            />
+                        </Suspense>
 
                         {/* MONTHLY CHARTS */}
                         <section>
@@ -219,101 +176,33 @@ function App() {
                             </Suspense>
                         </section>
 
+                        {/* Text Stats */}
+                        <Suspense fallback={<SectionLoader/>}>
+                            <FirstLastMessages
+                                firstMessage={data.first_message}
+                                lastMessage={data.last_message}
+                            />
+                        </Suspense>
+
                         {/* EXTREMES (Shortest/Longest) */}
-                        <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            <div className="flex flex-col gap-4">
-                                <h3 className="text-xl font-bold uppercase text-center">Mensaje Más Corto</h3>
-                                <TelegramMessage message={data.shortest_message} className="border-green-500"/>
-                            </div>
-                            <div className="flex flex-col gap-4">
-                                <h3 className="text-xl font-bold uppercase text-center">Mensaje Más Largo</h3>
-                                <TelegramMessage message={data.longest_message} className="border-red-500"/>
-                            </div>
-                        </section>
+                        <Suspense fallback={<SectionLoader/>}>
+                            <ExtremeMessages
+                                shortestMessage={data.shortest_message}
+                                longestMessage={data.longest_message}
+                            />
+                        </Suspense>
 
                         {/* DISTRIBUTION */}
-                        <section className="bg-white neobrutal-border p-8 neobrutal-shadow">
-                            <h2 className="text-3xl font-black mb-6 uppercase">Tipos de Mensajes</h2>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                                <div className="space-y-4">
-                                    {Object.entries(data.distribution_message).map(([typeId, count]) => (
-                                        <div key={typeId}
-                                             className="flex items-center gap-2 group cursor-help relative">
-                                            <div
-                                                className="w-full bg-gray-100 h-10 rounded-none overflow-hidden relative border-2 border-black shadow-[2px_2px_0px_0px_black]">
-                                                <div
-                                                    className={`h-full ${theme.primary} absolute top-0 left-0`}
-                                                    style={{width: `${((count as number) / data.total_messages) * 100}%`}}
-                                                ></div>
-                                                <span
-                                                    className="absolute left-2 top-1/2 -translate-y-1/2 z-10 font-bold text-xs md:text-sm mix-blend-multiply uppercase">
-                                    {MESSAGE_TYPE_LABELS[parseInt(typeId)] || `Tipo ${typeId}`}
-                                </span>
-                                                <span
-                                                    className="absolute right-2 top-1/2 -translate-y-1/2 z-10 font-mono text-xs font-bold">
-                                    {count as number}
-                                </span>
-                                            </div>
-
-                                            {/* DAF Tooltip Logic (Generalized) */}
-                                            <div
-                                                className="hidden group-hover:flex absolute left-0 bottom-full bg-black text-white p-3 text-xs w-64 z-20 mb-2 border-2 border-white shadow-lg pointer-events-none">
-                                                {MESSAGE_TYPE_DESCRIPTIONS[parseInt(typeId)] || "Sin descripción disponible."}
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-
-                                {/* Reaction Distribution */}
-                                <div
-                                    className="flex flex-col items-center justify-center bg-gray-50 border-2 border-dashed border-gray-400 p-4">
-                                    <h3 className="font-bold mb-8 uppercase text-xl">Reacciones Totales</h3>
-                                    <div className="flex gap-12 items-end h-64 w-full justify-center px-4">
-
-                                        {/* Barra Positiva */}
-                                        <div
-                                            className="flex flex-col items-center flex-1 h-full justify-end group relative">
-                                            {/* Tooltip Estilo Neo-brutalista */}
-                                            <div
-                                                className="hidden group-hover:flex absolute left-1/2 -translate-x-1/2 bottom-full bg-black text-white p-3 text-xs w-48 z-20 mb-4 border-2 border-white shadow-lg pointer-events-none flex-col items-center text-center">
-                                            <span
-                                                className="font-black text-lg">{formatNumber(data.total_positive_reactions)}</span>
-                                                <span>REACCIONES POSITIVAS</span>
-                                            </div>
-
-                                            <span
-                                                className="font-black text-2xl mb-2">{((data.total_positive_reactions / data.total_reactions) * 100).toFixed(1)}%</span>
-                                            <div
-                                                style={{height: `${(data.total_positive_reactions / data.total_reactions) * 100}%`}}
-                                                className="w-full max-w-[80px] bg-green-500 border-4 border-black min-h-[20px] shadow-[4px_4px_0px_0px_black] transition-all group-hover:-translate-y-1"
-                                            ></div>
-                                            <span className="text-4xl mt-4">👍</span>
-                                        </div>
-
-                                        {/* Barra Negativa */}
-                                        <div
-                                            className="flex flex-col items-center flex-1 h-full justify-end group relative">
-                                            {/* Tooltip Estilo Neo-brutalista */}
-                                            <div
-                                                className="hidden group-hover:flex absolute left-1/2 -translate-x-1/2 bottom-full bg-black text-white p-3 text-xs w-48 z-20 mb-4 border-2 border-white shadow-lg pointer-events-none flex-col items-center text-center">
-                                            <span
-                                                className="font-black text-lg">{formatNumber(data.total_negative_reactions)}</span>
-                                                <span>REACCIONES NEGATIVAS</span>
-                                            </div>
-
-                                            <span
-                                                className="font-black text-2xl mb-2">{((data.total_negative_reactions / data.total_reactions) * 100).toFixed(1)}%</span>
-                                            <div
-                                                style={{height: `${(data.total_negative_reactions / data.total_reactions) * 100}%`}}
-                                                className="w-full max-w-[80px] bg-red-500 border-4 border-black min-h-[20px] shadow-[4px_4px_0px_0px_black] transition-all group-hover:-translate-y-1"
-                                            ></div>
-                                            <span className="text-4xl mt-4">👎</span>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
+                        <Suspense fallback={<SectionLoader/>}>
+                            <DistributionSection
+                                distributionMessage={data.distribution_message}
+                                totalMessages={data.total_messages}
+                                totalReactions={data.total_reactions}
+                                totalPositiveReactions={data.total_positive_reactions}
+                                totalNegativeReactions={data.total_negative_reactions}
+                                primaryColorClass={theme.primary}
+                            />
+                        </Suspense>
 
                         {/* TOP LISTS */}
                         <section className="space-y-16">
@@ -365,28 +254,7 @@ function App() {
                 )}
 
                 {/* Footer */}
-                <footer className="bg-black text-white p-8 mt-24 text-center border-t-4 border-gray-800">
-                    <p className="font-bold mb-4">UNE Unwrapped La Habana {selectedYear}</p>
-                    <p className="text-sm text-gray-400 max-w-2xl mx-auto mb-8">
-                        Esta página no está afiliada a la Empresa Eléctrica de La Habana ni a la Unión Eléctrica.
-                        Los datos son una aproximación basada en mensajes públicos de Telegram y pueden contener errores
-                        de
-                        interpretación algorítmica. NO deben ser tratados como datos oficiales y reales, pues pueden
-                        contener errores
-                        y estar alejados de la estimación real. Solo es para entretenimiento, usar con precaución.
-                    </p>
-                    <div className="flex justify-center items-center gap-4">
-                        <a href="https://t.me/EmpresaElectricaDeLaHabana" target="_blank" rel="noreferrer"
-                           className="bg-white text-black px-4 py-2 font-bold rounded hover:bg-gray-200">
-                            Canal Oficial
-                        </a>
-                        {/* Hidden Feature */}
-                        <a href="https://eduardoprofe666.github.io"
-                           className="opacity-30 hover:opacity-100 transition-opacity text-2xl" title="???">
-                            🎩
-                        </a>
-                    </div>
-                </footer>
+                <AppFooter year={selectedYear}/>
             </div>
         </LazyMotion>
     );

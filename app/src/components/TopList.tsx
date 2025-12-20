@@ -40,10 +40,12 @@ const TopListSectionComponent: React.FC<TopListProps> = ({title, items, badgeCol
     );
 };
 
-export const TopList = memo(
+const TopList = memo(
     TopListSectionComponent,
     (prev, next) =>
         prev.title === next.title &&
         prev.badgeColorClass === next.badgeColorClass &&
         prev.items === next.items
 );
+
+export default TopList;
