@@ -144,7 +144,7 @@ function App() {
                 {/* Disclaimer Section */}
                 <section
                     className="bg-yellow-300 border-b-4 border-black p-4 text-center text-sm font-bold flex justify-center items-center gap-2 px-10">
-                    <span>IMPORTANTE: Esta página no está afiliada con la Empresa Eléctrica de La Habana ni con la Unión Eléctrica. La información se obtiene de forma automática a partir de mensajes públicos en el canal de Telegram de La Habana, utilizando algoritmos básicos de análisis de texto. Los datos son aproximados y pueden contener errores. No son oficiales y su exactitud no está garantizada.</span>
+                    <span>IMPORTANTE: Esta página no está afiliada con la Empresa Eléctrica de La Habana ni con la Unión Eléctrica. La información se obtiene de forma automática a partir de mensajes públicos en el canal de Telegram de La Habana, utilizando algoritmos básicos de análisis de texto. Algunos datos son aproximados y pueden contener errores. No son oficiales y su exactitud no está garantizada.</span>
                 </section>
 
                 {loading ? (
