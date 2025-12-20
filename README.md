@@ -69,6 +69,7 @@ Si este resumen te ha parecido interesante, útil o simplemente te gusta la inic
 
 - **Dale una estrella:** Haz clic en la estrella (Star) en la esquina superior derecha de este repositorio para ayudar a que más personas lo conozcan.
 - **Comparte:** Ayuda a difundir el proyecto con otras personas (siempre recuerda que lo datos no son oficiales ni exactos).
+- **Programa:** Ayuda a mejorar el sitio en todo lo que se te ocurra haciendo PR con cualquier feature que te parezca interesante.
 
 ## 📥 Instalación
 
