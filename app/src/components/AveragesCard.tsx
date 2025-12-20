@@ -1,5 +1,6 @@
 import React, {memo} from 'react';
 import {formatNumber} from '@/src/common/utils';
+import StatBlock from "@/src/components/StatBlock.tsx";
 
 interface AveragesCardProps {
     accentClass: string;
@@ -19,35 +20,56 @@ const AveragesCard: React.FC<AveragesCardProps> = ({
                                                        avgNegative
                                                    }) => {
     return (
-        <div className="bg-white neobrutal-border p-6 neobrutal-shadow-sm space-y-4 w-full max-w-2xl mx-auto transition-transform hover:-translate-y-1">
-            <h2
-                className={`text-3xl font-black ${accentClass} uppercase border-b-2 border-black pb-2 text-center`}
-            >
-                Promedios
-            </h2>
+        <div
+            className="bg-white border-4 border-black shadow-[6px_6px_0px_0px_black] p-6 w-full max-w-3xl mx-auto
+                       transition-transform hover:-translate-y-1"
+        >
+            {/* HEADER */}
+            <div className="flex justify-center mb-6">
+                <span
+                    className={`px-6 py-2 text-xl font-black uppercase border-4 border-black ${accentClass}`}
+                >
+                    Promedios
+                </span>
+            </div>
 
-            <ul className="space-y-3 font-mono text-lg">
-                <li className="flex justify-between">
-                    <span>Vistas/Msg:</span>
-                    <b>{formatNumber(avgViews)}</b>
-                </li>
-                <li className="flex justify-between">
-                    <span>Reacciones/Msg:</span>
-                    <b>{avgReactions}</b>
-                </li>
-                <li className="flex justify-between">
-                    <span>Longitud Texto:</span>
-                    <b>{avgTextLength} letras</b>
-                </li>
-                <li className="flex justify-between text-green-600">
-                    <span>👍 Avg:</span>
-                    <b>{avgPositive}</b>
-                </li>
-                <li className="flex justify-between text-red-600">
-                    <span>👎 Avg:</span>
-                    <b>{avgNegative}</b>
-                </li>
-            </ul>
+            {/* GRID */}
+            <div className="grid grid-cols-2 gap-4">
+
+                {/* VIEWS */}
+                <StatBlock
+                    label="Vistas / Msg"
+                    value={formatNumber(avgViews)}
+                />
+
+                {/* REACTIONS */}
+                <StatBlock
+                    label="Reacciones / Msg"
+                    value={avgReactions}
+                />
+
+                {/* TEXT LENGTH (FULL WIDTH) */}
+                <div className="col-span-2">
+                    <StatBlock
+                        label="Longitud del Texto"
+                        value={`${avgTextLength} letras`}
+                    />
+                </div>
+
+                {/* POSITIVE */}
+                <StatBlock
+                    label="👍 Reacciones Positivas"
+                    value={avgPositive}
+                    extraClass="bg-green-100"
+                />
+
+                {/* NEGATIVE */}
+                <StatBlock
+                    label="👎 Reacciones Negativas"
+                    value={avgNegative}
+                    extraClass="bg-red-100"
+                />
+            </div>
         </div>
     );
 };
