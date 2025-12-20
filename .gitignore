@@ -30,3 +30,4 @@ dist-ssr
 *.sln
 *.sw?
 *.pyc
+app/public/sitemap.xml

@@ -7,7 +7,7 @@
   "repository": "https://github.com/EduardoProfe666/une-unwrapped-habana",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "ts-node ./src/common/generate-sitemap.ts && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -23,10 +23,12 @@
     "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
+    "@stdian/react-sitemap": "^0.2.1",
     "@types/node": "^22.14.0",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^5.0.0",
+    "ts-node": "^10.9.2",
     "typescript": "~5.8.2",
     "vite": "^6.2.0"
   }
