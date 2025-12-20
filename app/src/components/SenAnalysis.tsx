@@ -1,26 +1,13 @@
 import React, {useMemo} from 'react';
 import {SenAnalysis} from '../common/types.ts';
 import {formatDate, formatDuration} from '../common/utils.ts';
-import {AlertOctagon, Clock} from 'lucide-react';
-import {m, Variants} from 'framer-motion';
+import {AlertOctagon, Clock, Zap, Activity} from 'lucide-react';
+import {m} from 'framer-motion';
 import TelegramMessage from './TelegramMessage.tsx';
 
 interface Props {
     analysis: SenAnalysis;
 }
-
-const timelineItemVariants: Variants = {
-    hidden: {opacity: 0, x: -30},
-    visible: {
-        opacity: 1,
-        x: 0,
-        transition: {
-            type: 'spring',
-            damping: 20,
-            stiffness: 100
-        }
-    }
-};
 
 const SenAnalysisSection: React.FC<Props> = ({analysis}) => {
     const renderedEvents = useMemo(() => {
@@ -34,94 +21,107 @@ const SenAnalysisSection: React.FC<Props> = ({analysis}) => {
     }, [analysis.failure_events]);
 
     return (
-        <div className="space-y-8">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div className="bg-red-500 neobrutal-border p-6 text-white neobrutal-shadow">
-                    <h3 className="text-xl md:text-2xl font-bold uppercase">Menciones al SEN</h3>
-                    <p className="text-5xl md:text-6xl font-black leading-none mt-2">{analysis.mentions}</p>
+        <div className="space-y-12">
+            {/* KPI DE IMPACTO */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="bg-red-600 border-4 border-black p-6 text-white shadow-[8px_8px_0px_0px_black] flex flex-col justify-between">
+                    <h3 className="text-xs font-black uppercase tracking-widest opacity-80 flex items-center gap-2">
+                        <Activity size={16} /> Menciones Totales
+                    </h3>
+                    <p className="text-6xl font-black italic mt-4">{analysis.mentions}</p>
                 </div>
-                <div className="bg-black neobrutal-border p-6 text-white neobrutal-shadow">
-                    <h3 className="text-xl md:text-2xl font-bold uppercase">Caídas Totales</h3>
-                    <p className="text-5xl md:text-6xl font-black text-red-500 leading-none mt-2">
-                        {analysis.total_failure_events}
-                    </p>
+
+                <div className="md:col-span-2 bg-black border-4 border-black p-6 text-white shadow-[8px_8px_0px_0px_black] relative overflow-hidden">
+                    <div className="relative z-10 flex flex-col h-full justify-between">
+                        <h3 className="text-xs font-black uppercase tracking-widest text-red-500 flex items-center gap-2">
+                            <Zap size={16} fill="currentColor" /> Eventos de Caída Total
+                        </h3>
+                        <p className="text-7xl font-black text-red-500 italic leading-none mt-2">
+                            {analysis.total_failure_events.toString().padStart(2, '0')}
+                        </p>
+                    </div>
+                    {/* Decoración de fondo */}
+                    <div className="absolute top-0 right-0 p-4 opacity-10">
+                        <Zap size={120} strokeWidth={1} />
+                    </div>
                 </div>
             </div>
 
-            <div className="flex items-center gap-2 mt-8 mb-4">
-                <h3 className="text-2xl font-bold border-b-4 border-black inline-block">Cronología de Eventos</h3>
-            </div>
+            {/* CRONOLOGÍA */}
+            <div className="relative">
+                <div className="absolute left-4 md:left-8 top-0 bottom-0 w-2 bg-black opacity-10" />
+                <div className="absolute left-4 md:left-8 top-0 bottom-0 w-2 border-l-2 border-dashed border-black/30 ml-4" />
 
-            <div className="space-y-12 relative border-l-8 border-black ml-4 pl-8 md:pl-12 py-4">
-                {renderedEvents.map((event) => (
-                    <m.div
-                        key={`${event.eventNumber}-${event.start_date}`}
-                        variants={timelineItemVariants}
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{once: true, margin: "-50px"}}
-                        className="relative bg-white neobrutal-border p-4 md:p-6 neobrutal-shadow mb-12"
-                    >
-                        {/* Timeline Dot */}
-                        <div
-                            className="absolute -left-[54px] md:-left-[70px] top-6 w-10 h-10 bg-red-500 border-4 border-black rounded-full z-10 flex items-center justify-center shadow-[2px_2px_0px_0px_black]">
-                            <span className="text-white font-bold text-lg">!</span>
-                        </div>
-
-                        <div
-                            className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 bg-red-50/50 p-4 border-2 border-red-200">
-                            <div className="flex items-center gap-3 text-red-600">
-                                <AlertOctagon size={32} strokeWidth={3} className="shrink-0"/>
-                                <div>
-                                    <span
-                                        className="block font-black text-xl uppercase leading-none">Caída del Sistema</span>
-                                    <span className="text-xs font-bold text-red-400">EVENTO #{event.eventNumber}</span>
+                <div className="space-y-20 relative">
+                    {renderedEvents.map((event, index) => (
+                        <m.div
+                            key={`${event.eventNumber}-${event.start_date}`}
+                            initial={{ opacity: 0, x: -20 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            className="relative pl-12 md:pl-24"
+                        >
+                            {/* Punto de Conexión (El "Breaker") */}
+                            <div className="absolute left-1.5 md:left-5.5 top-0 flex flex-col items-center">
+                                <div className="w-10 h-10 bg-black border-4 border-red-500 rounded-none rotate-45 flex items-center justify-center shadow-[4px_4px_0px_0px_rgba(239,68,68,0.5)] z-20">
+                                    <span className="text-white font-black text-sm -rotate-45">{event.eventNumber}</span>
                                 </div>
                             </div>
 
-                            <div className="flex items-center gap-2 bg-yellow-300 border-2 border-black px-3 py-2 shadow-[4px_4px_0px_0px_black] transform rotate-1 self-start sm:self-auto max-w-full">
-                                <Clock size={18} className="shrink-0"/>
-                                <span className="font-black font-mono text-sm md:text-base break-all sm:break-normal">
-                                  {event.duration}
-                                </span>
-                            </div>
-                        </div>
-
-                        {/* Dates Grid */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8 mb-8">
-                            <div className="bg-gray-50 p-3 border-l-4 border-black">
-                                <p className="font-bold text-[10px] text-gray-500 uppercase tracking-widest mb-1">Inicio</p>
-                                <p className="font-mono text-lg font-bold">{event.formattedStart}</p>
-                            </div>
-                            <div className="bg-gray-50 p-3 border-l-4 border-black">
-                                <p className="font-bold text-[10px] text-gray-500 uppercase tracking-widest mb-1">Fin</p>
-                                <p className="font-mono text-lg font-bold">{event.formattedEnd}</p>
-                            </div>
-                        </div>
-
-                        {/* Messages Comparison */}
-                        <div
-                            className="grid grid-cols-1 xl:grid-cols-2 gap-6 pt-6 border-t-4 border-dashed border-gray-200">
-                            <div className="space-y-4">
-                                <div className="flex items-center gap-2">
-                                    <span
-                                        className="bg-black text-white px-3 py-1 text-xs font-bold uppercase transform -rotate-1">Inicio</span>
-                                    <div className="h-[2px] flex-1 bg-black/10"></div>
+                            {/* Contenedor Principal */}
+                            <div className="bg-white border-4 border-black shadow-[12px_12px_0px_0px_black] overflow-hidden">
+                                {/* Barra de Estado de la Alerta */}
+                                <div className="bg-yellow-300 border-b-4 border-black p-4 flex flex-wrap items-center justify-between gap-4">
+                                    <div className="flex items-center gap-3">
+                                        <AlertOctagon size={28} strokeWidth={3} className="text-black" />
+                                        <h4 className="font-black text-xl uppercase tracking-tighter">Colapso del Sistema</h4>
+                                    </div>
+                                    <div className="bg-black text-white px-4 py-2 font-mono text-sm md:text-lg font-black shadow-[4px_4px_0px_0px_rgba(0,0,0,0.3)] flex items-center gap-2">
+                                        <Clock size={20} />
+                                        {event.duration}
+                                    </div>
                                 </div>
-                                <TelegramMessage message={event.start_message}/>
-                            </div>
 
-                            <div className="space-y-4">
-                                <div className="flex items-center gap-2">
-                                    <span
-                                        className="bg-black text-white px-3 py-1 text-xs font-bold uppercase transform rotate-1">Restablecimiento</span>
-                                    <div className="h-[2px] flex-1 bg-black/10"></div>
+                                <div className="p-6 space-y-8">
+                                    {/* Info Técnica de Fechas */}
+                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-px bg-black border-2 border-black">
+                                        <div className="bg-gray-50 p-4">
+                                            <span className="block text-[10px] font-black uppercase text-gray-400 mb-1">Punto de Desconexión</span>
+                                            <span className="font-mono text-base md:text-lg font-bold">{event.formattedStart}</span>
+                                        </div>
+                                        <div className="bg-gray-50 p-4">
+                                            <span className="block text-[10px] font-black uppercase text-gray-400 mb-1">Punto de Sincronización</span>
+                                            <span className="font-mono text-base md:text-lg font-bold">{event.formattedEnd}</span>
+                                        </div>
+                                    </div>
+
+                                    {/* Comparativa de Mensajes */}
+                                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                                        <div className="space-y-4">
+                                            <div className="flex items-center gap-2 px-2 py-1 bg-red-100 border-l-4 border-red-600 w-fit">
+                                                <span className="text-[10px] font-black uppercase text-red-600">Reporte de Falla</span>
+                                            </div>
+                                            <TelegramMessage message={event.start_message} />
+                                        </div>
+
+                                        <div className="space-y-4">
+                                            <div className="flex items-center gap-2 px-2 py-1 bg-green-100 border-l-4 border-green-600 w-fit">
+                                                <span className="text-[10px] font-black uppercase text-green-600">Reporte de Recuperación</span>
+                                            </div>
+                                            <TelegramMessage message={event.end_message} />
+                                        </div>
+                                    </div>
                                 </div>
-                                <TelegramMessage message={event.end_message}/>
+
+                                {/* Footer Técnico del Evento */}
+                                <div className="bg-gray-100 border-t-2 border-black p-2 px-4 flex justify-between">
+                                    <span className="text-[9px] font-mono font-black opacity-30">SEN_STATUS: CRITICAL</span>
+                                    <span className="text-[9px] font-mono font-black opacity-30">LOG_ID_{event.eventNumber.toString().padStart(3, '0')}</span>
+                                </div>
                             </div>
-                        </div>
-                    </m.div>
-                ))}
+                        </m.div>
+                    ))}
+                </div>
             </div>
         </div>
     );

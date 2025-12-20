@@ -58,7 +58,7 @@ const TopListSectionComponent: React.FC<TopListProps> = ({ title, items, badgeCo
                                     }
                                 />
                             </div>
-                            
+
                             <div className="mt-4 flex items-center gap-2 px-2">
                                 <div className="h-0.5 flex-grow bg-black opacity-10" />
                                 <span className="text-[10px] font-mono font-black text-gray-400 uppercase tracking-widest">
