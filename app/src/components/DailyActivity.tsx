@@ -157,7 +157,7 @@ const DailyActivity: React.FC<Props> = ({ dailyMessages, colorClass, year }) => 
                 <div className="flex gap-6">
                     <div className="text-right border-r-4 border-black pr-4">
                         <p className="text-[10px] font-black text-gray-500 uppercase leading-none">Promedio Diario</p>
-                        <p className="text-2xl font-black italic">{avgMessages.toFixed(1)}</p>
+                        <p className="text-2xl font-black italic">{avgMessages.toFixed(0)}</p>
                     </div>
                     <div className="text-right">
                         <p className="text-[10px] font-black text-gray-500 uppercase leading-none">Pico del Año</p>
