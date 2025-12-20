@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@tailwindcss/vite':
-        specifier: ^4.1.18
-        version: 4.1.18(vite@6.4.1(@types/node@22.19.3)(jiti@2.6.1)(lightningcss@1.30.2))
       '@vercel/analytics':
         specifier: ^1.6.1
         version: 1.6.1(react@19.2.3)
@@ -35,13 +32,13 @@ importers:
       recharts:
         specifier: ^3.6.0
         version: 3.6.0(@types/react@19.2.7)(react-dom@19.2.3(react@19.2.3))(react-is@19.2.3)(react@19.2.3)(redux@5.0.1)
-      tailwindcss:
-        specifier: ^4.1.18
-        version: 4.1.18
     devDependencies:
       '@stdian/react-sitemap':
         specifier: ^0.2.1
         version: 0.2.1(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      '@tailwindcss/vite':
+        specifier: ^4.1.18
+        version: 4.1.18(vite@6.4.1(@types/node@22.19.3)(jiti@2.6.1)(lightningcss@1.30.2))
       '@types/node':
         specifier: ^22.14.0
         version: 22.19.3
@@ -57,6 +54,9 @@ importers:
       dotenv:
         specifier: ^17.2.3
         version: 17.2.3
+      tailwindcss:
+        specifier: ^4.1.18
+        version: 4.1.18
       ts-node:
         specifier: ^10.9.2
         version: 10.9.2(@types/node@22.19.3)(typescript@5.8.3)
