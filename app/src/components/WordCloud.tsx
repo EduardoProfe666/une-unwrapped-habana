@@ -83,7 +83,7 @@ const WordCloud: React.FC<Props> = ({ words, color }) => {
                           exit={{ opacity: 0 }}
                           className="absolute -top-12 left-1/2 -translate-x-1/2 z-50 bg-black text-white px-3 py-1 border-2 border-white shadow-[4px_4px_0px_0px_black] whitespace-nowrap pointer-events-none"
                       >
-                  <span className="text-[10px] font-black uppercase italic">
+                  <span className="text-[11px] font-black uppercase italic">
                     {formatNumber(count)} Repeticiones
                   </span>
                       </m.div>

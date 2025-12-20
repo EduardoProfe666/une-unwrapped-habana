@@ -289,12 +289,26 @@ function App() {
                         </section>
 
                         {/* BLOCKS ANALYSIS */}
-                        <section>
-                            <h2 className="text-4xl font-black text-center mb-12">Análisis de Bloques</h2>
+                        <section className="mt-20">
+                            <div className="flex flex-col items-center mb-16 relative">
+                                <div className="absolute top-1/2 left-0 w-full h-1 bg-black/10 -z-10"/>
+
+                                <div
+                                    className="bg-white border-4 border-black px-8 py-3 shadow-[8px_8px_0px_0px_black] relative">
+                                    <span className="absolute -top-3 left-4 bg-black text-white text-[10px] font-black px-2 py-0.5 tracking-widest uppercase">
+                                        System_Module: Bk
+                                    </span>
+                                    <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter">
+                                        Análisis de Bloques
+                                    </h2>
+                                </div>
+                            </div>
+
                             <Suspense fallback={<SectionLoader/>}>
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                                     {data.blocks_analysis.map((block) => (
-                                        <BlockCard key={block.number} block={block} color={theme.accent}/>
+                                        <BlockCard key={block.number} block={block} color={theme.accent}
+                                                   year={selectedYear}/>
                                     ))}
                                 </div>
                             </Suspense>
