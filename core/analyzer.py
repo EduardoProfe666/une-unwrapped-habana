@@ -95,7 +95,7 @@ def analyze_data(year: int):
     data.monthly_replies = {i: 0 for i in range(1, 13)}
     data.monthly_reactions = {i: 0 for i in range(1, 13)}
     data.monthly_messages = {i: 0 for i in range(1, 13)}
-    data.weekly_messages = {i: 0 for i in range(1, 54)}
+    data.daily_messages = {i: 0 for i in range(1, 367)}
     for m in messages:
         if m.date_cuba_d:
             month = m.date_cuba_d.month
@@ -105,8 +105,8 @@ def analyze_data(year: int):
             data.monthly_reactions[month] += sum(m.reactions.values())
 
             week_number = m.date_cuba_d.isocalendar()[1]
-            if 1 <= week_number <= 53:
-                data.weekly_messages[week_number] += 1
+            day_of_year = m.date_cuba_d.timetuple().tm_yday
+            data.daily_messages[day_of_year] += 1
 
             # ---------------------------------------- DISTRIBUTIONS ---------------------------------------- #
     reac_counts = Counter()

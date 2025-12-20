@@ -71,7 +71,8 @@ export interface UneAnalysis {
   monthly_replies: Record<string, number>;
   monthly_reactions: Record<string, number>;
   monthly_messages: Record<string, number>;
-  
+  daily_messages: Record<number, number>;
+
   distribution_message: Record<string, number>;
   distribution_reaction: Record<string, number>;
   

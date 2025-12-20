@@ -121,7 +121,7 @@ class UneAnalysis:
     monthly_replies: Dict[int, int] = field(default_factory=dict)
     monthly_reactions: Dict[int, int] = field(default_factory=dict)
     monthly_messages: Dict[int, int] = field(default_factory=dict)
-    weekly_messages: Dict[int, int] = field(default_factory=dict)
+    daily_messages: Dict[int, int] = field(default_factory=dict)
 
     # DISTRIBUTIONS
     distribution_message: Dict[int, int] = field(default_factory=dict)

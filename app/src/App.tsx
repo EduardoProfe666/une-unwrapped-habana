@@ -16,6 +16,7 @@ const WordCloud = lazy(() => import('@/src/components/WordCloud.tsx'));
 const SenAnalysisSection = lazy(() => import('@/src/components/SenAnalysis.tsx'));
 const BlockCard = lazy(() => import('@/src/components/BlockCard.tsx'));
 const DistributionSection = lazy(() => import('@/src/components/DistributionSection'));
+const DailyActivity = lazy(() => import('@/src/components/DailyActivity.tsx'));
 
 function App() {
     const [selectedYear, setSelectedYear] = useState<number>(2025);
@@ -210,6 +211,14 @@ function App() {
                                 totalPositiveReactions={data.total_positive_reactions}
                                 totalNegativeReactions={data.total_negative_reactions}
                                 primaryColorClass={theme.primary}
+                            />
+                        </Suspense>
+
+                        <Suspense fallback={<SectionLoader/>}>
+                            <DailyActivity
+                                dailyMessages={data.daily_messages}
+                                colorClass={theme.primary}
+                                year={selectedYear}
                             />
                         </Suspense>
 
