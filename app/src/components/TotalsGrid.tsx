@@ -6,7 +6,7 @@ import { LucideIcon } from 'lucide-react'; // Importamos el tipo de Lucide
 interface TotalItem {
     label: string;
     value: number;
-    icon: LucideIcon; // Cambiamos ReactNode por LucideIcon
+    icon: LucideIcon;
     colorClass?: string;
 }
 
@@ -26,7 +26,6 @@ const TotalsGrid: React.FC<TotalsGridProps> = ({ items, containerVariants, itemV
             className="grid grid-cols-2 lg:grid-cols-4 gap-6"
         >
             {items.map((stat, i) => {
-                // Ahora tratamos el icono como un componente directamente
                 const IconComponent = stat.icon;
 
                 return (
@@ -35,11 +34,9 @@ const TotalsGrid: React.FC<TotalsGridProps> = ({ items, containerVariants, itemV
                         variants={itemVariants}
                         className="bg-white border-4 border-black p-5 relative flex flex-col justify-between h-36 shadow-[6px_6px_0px_0px_black] group hover:-translate-y-2 hover:-translate-x-1 transition-transform"
                     >
-                        {/* Acento de color */}
                         <div className={`absolute top-0 right-0 w-8 h-8 border-l-4 border-b-4 border-black ${stat.colorClass || 'bg-black'} group-hover:w-full group-hover:h-2 transition-all duration-300`} />
 
                         <header className="flex flex-col gap-1">
-                            {/* Renderizamos el icono con sus props correctamente */}
                             <div className="bg-black text-white w-fit p-1 mb-1">
                                 <IconComponent size={16} strokeWidth={3} />
                             </div>

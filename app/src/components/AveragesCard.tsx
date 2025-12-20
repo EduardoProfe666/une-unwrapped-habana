@@ -27,7 +27,6 @@ const AveragesCard: React.FC<AveragesCardProps> = ({
     return (
         <div
             className="bg-white border-4 border-black shadow-[12px_12px_0px_0px_black] p-8 w-full max-w-4xl mx-auto relative overflow-hidden">
-            {/* Marca de agua / Decoración */}
             <div
                 className="absolute -right-8 -top-8 text-[120px] font-black opacity-[0.03] select-none pointer-events-none">
                 AVG
@@ -48,7 +47,6 @@ const AveragesCard: React.FC<AveragesCardProps> = ({
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-                {/* Bloque Principal: Vistas y Reacciones */}
                 <div className="md:col-span-2 grid grid-cols-2 gap-4">
                     <div className="border-l-4 border-black pl-4">
                         <span className="text-[10px] font-black text-gray-400 uppercase">Vistas / Msg</span>
@@ -71,7 +69,6 @@ const AveragesCard: React.FC<AveragesCardProps> = ({
                     </div>
                 </div>
 
-                {/* Bloque: Ratio de Sentimiento */}
                 <div className="flex flex-col justify-center bg-black text-white p-6 shadow-[8px_8px_0px_0px_#22c55e]">
                     <span className="text-[10px] font-black uppercase opacity-60 mb-4">Balance de Sentimiento</span>
                     <div className="space-y-4">
