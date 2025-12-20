@@ -1,7 +1,6 @@
 import React, {lazy, Suspense, useMemo, useState} from 'react';
 import {domAnimation, LazyMotion, m, Variants} from 'framer-motion';
 import {AVAILABLE_YEARS, YEAR_THEMES} from './common/constants.ts';
-import {formatNumber} from './common/utils.ts';
 import {MessageSquare, ThumbsUp, TrendingUp} from 'lucide-react';
 import SectionLoader from "@/src/components/SectionLoader.tsx";
 import useYearAnalysis from "@/src/hooks/use-year-analysis.ts";

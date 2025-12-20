@@ -1,5 +1,5 @@
-import React, { useMemo, useState } from 'react';
-import { AnimatePresence } from 'framer-motion';
+import React, {useMemo, useState} from 'react';
+import {AnimatePresence} from 'framer-motion';
 import NeobrutalTooltip from "@/src/components/NeobrutalTooltip.tsx";
 import {formatNumber} from "@/src/common/utils.ts";
 

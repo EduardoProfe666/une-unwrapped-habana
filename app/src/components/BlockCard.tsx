@@ -1,8 +1,8 @@
-import React, { useRef, useState, useCallback, useMemo } from 'react';
-import { BlockAnalysis } from '../common/types.ts';
-import { Download, Zap, AlertTriangle, CheckCircle, Activity } from 'lucide-react';
+import React, {useCallback, useMemo, useRef, useState} from 'react';
+import {BlockAnalysis} from '../common/types.ts';
+import {Activity, AlertTriangle, CheckCircle, Download, Zap} from 'lucide-react';
 import * as htmlToImage from 'html-to-image';
-import { AnimatePresence } from 'framer-motion';
+import {AnimatePresence} from 'framer-motion';
 import NeobrutalTooltip from "@/src/components/NeobrutalTooltip.tsx";
 
 interface Props {

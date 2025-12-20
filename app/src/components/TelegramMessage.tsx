@@ -1,7 +1,6 @@
 import React, {useMemo} from 'react';
 import {TelegramMessage as ITelegramMessage} from '../common/types.ts';
 import {ExternalLink, Eye, MessageCircle} from 'lucide-react';
-import {formatDate} from "@/src/common/utils.ts";
 
 interface Props {
     message: ITelegramMessage;

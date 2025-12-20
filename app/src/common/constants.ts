@@ -1,4 +1,4 @@
-import {YearTheme, MessageType} from './types.ts';
+import {MessageType, YearTheme} from './types.ts';
 
 export const YEAR_THEMES: Record<number, YearTheme> = {
     2022: {bg: 'bg-blue-50', primary: 'bg-blue-500', secondary: 'bg-blue-300', accent: 'text-blue-600'},

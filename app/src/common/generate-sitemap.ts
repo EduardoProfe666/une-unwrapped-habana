@@ -1,5 +1,5 @@
 import Sitemap from "@stdian/react-sitemap";
-import { writeFileSync } from "fs";
+import {writeFileSync} from "fs";
 import * as dotenv from 'dotenv';
 import path from 'path';
 
