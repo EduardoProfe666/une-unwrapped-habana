@@ -318,7 +318,10 @@ function App() {
                 )}
 
                 {/* Footer */}
-                <AppFooter year={selectedYear}/>
+                <AppFooter
+                    year={selectedYear}
+                    color={theme.primary}
+                />
             </div>
         </LazyMotion>
     );
