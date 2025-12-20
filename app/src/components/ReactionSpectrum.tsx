@@ -96,15 +96,15 @@ const ReactionSpectrum: React.FC<Props> = ({distributionReaction, totalReactions
                 </div>
             </div>
 
-            <div className="mt-16 flex justify-between items-center border-t-2 border-black pt-4">
-                <div className="flex gap-1">
+            <div className="mt-16 flex justify-between group items-center border-t-2 border-black pt-4">
+                <div className="flex gap-1 opacity-50 group-hover:opacity-100">
                     {Array.from({length: 12}).map((_, i) => (
                         <div key={i} className="w-1 h-4 bg-black" style={{opacity: (i + 1) / 12}}/>
                     ))}
                 </div>
-                <span className="text-[10px] font-black uppercase tracking-widest text-gray-300">
-            Análisis del Espectro del Sentimiento // {year}
-        </span>
+                <span className="text-[10px] font-black uppercase tracking-widest group-hover:text-slate-500 text-slate-300">
+                    Espectro de Reacciones // {year}
+                </span>
             </div>
         </section>
     );
