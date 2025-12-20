@@ -1,5 +1,5 @@
 import React, {memo} from 'react';
-import {TelegramMessage} from '@/src/components/TelegramMessage';
+import TelegramMessage from '@/src/components/TelegramMessage';
 
 interface MessageHighlightCardProps {
     title: string;
@@ -11,7 +11,7 @@ const MessageHighlightCard: React.FC<MessageHighlightCardProps> = ({
                                                                        message,
                                                                    }) => {
     return (
-        <div className="relative w-full group hover:-translate-y-2 transition-transform">
+        <div className="relative w-full group">
             <span
                 className={`absolute -rotate-2 -top-3 left-4 bg-black text-white px-3 py-1 text-xs font-black z-20`}>
                 {title}

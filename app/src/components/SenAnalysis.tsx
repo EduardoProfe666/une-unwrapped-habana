@@ -3,7 +3,7 @@ import {SenAnalysis} from '../common/types.ts';
 import {formatDate, formatDuration} from '../common/utils.ts';
 import {AlertOctagon, Clock} from 'lucide-react';
 import {m, Variants} from 'framer-motion';
-import {TelegramMessage} from './TelegramMessage.tsx';
+import TelegramMessage from './TelegramMessage.tsx';
 
 interface Props {
     analysis: SenAnalysis;
