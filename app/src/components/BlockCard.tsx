@@ -10,6 +10,8 @@ interface Props {
   color: string;
 }
 
+const BASE_HOST = import.meta.env.VITE_BASE_HOST;
+
 const BlockCard: React.FC<Props> = ({ block, color }) => {
   const cardRef = useRef<HTMLDivElement>(null);
   const [hoveredStat, setHoveredStat] = useState<string | null>(null);
@@ -91,7 +93,7 @@ const BlockCard: React.FC<Props> = ({ block, color }) => {
               * Datos no oficiales sujetos a error
             </p>
             <div className="bg-black text-white text-[10px] font-black px-2 py-0.5 mt-1 transform -rotate-1">
-              une-unwrapped-habana.vercel.app
+              {BASE_HOST}
             </div>
           </div>
         </div>
