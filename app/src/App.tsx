@@ -18,20 +18,6 @@ const SenAnalysisSection = lazy(() => import('@/src/components/SenAnalysis.tsx')
 const BlockCard = lazy(() => import('@/src/components/BlockCard.tsx'));
 const DistributionSection = lazy(() => import('@/src/components/DistributionSection'));
 
-const containerVariants: Variants = {
-    hidden: {opacity: 0},
-    visible: {opacity: 1, transition: {staggerChildren: 0.1}}
-};
-
-const itemVariants: Variants = {
-    hidden: {y: 50, opacity: 0},
-    visible: {
-        y: 0,
-        opacity: 1,
-        transition: {type: 'spring', stiffness: 50}
-    }
-};
-
 function App() {
     const [selectedYear, setSelectedYear] = useState<number>(2025);
     const {data, loading} = useYearAnalysis(selectedYear);
@@ -40,6 +26,30 @@ function App() {
         () => YEAR_THEMES[selectedYear] ?? YEAR_THEMES[2025],
         [selectedYear]
     );
+
+    const fastContainerVariants = useMemo<Variants>(() => ({
+        hidden: {},
+        visible: {
+            transition: {
+                staggerChildren: 0.05
+            }
+        }
+    }), []);
+
+    const fastItemVariants = useMemo<Variants>(() => ({
+        hidden: {
+            opacity: 0,
+            y: 20
+        },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.22,
+                ease: 'easeOut'
+            }
+        }
+    }), []);
 
     const totals = useMemo(() => data && [
         {label: 'Vistas Totales', value: data.total_views, icon: <TrendingUp/>},
@@ -100,7 +110,7 @@ function App() {
                     <m.div
                         initial={{scale: 0.8, opacity: 0}}
                         animate={{scale: 1, opacity: 1}}
-                        transition={{duration: 0.5}}
+                        transition={{duration: 0.4}}
                         className="text-center z-10"
                     >
                         <h1 className="text-6xl md:text-9xl font-black mb-4 tracking-tighter">
@@ -149,8 +159,8 @@ function App() {
                         <Suspense fallback={<SectionLoader/>}>
                             <TotalsGrid
                                 items={totals}
-                                containerVariants={containerVariants}
-                                itemVariants={itemVariants}
+                                containerVariants={fastContainerVariants}
+                                itemVariants={fastItemVariants}
                             />
                         </Suspense>
 

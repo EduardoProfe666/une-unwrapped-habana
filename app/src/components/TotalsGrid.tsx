@@ -24,7 +24,7 @@ const TotalsGrid: React.FC<TotalsGridProps> = ({
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
-            viewport={{once: true, margin: '-100px'}}
+            viewport={{ once: true }}
             className="grid grid-cols-2 md:grid-cols-4 gap-4"
         >
             {items.map((stat, i) => (
