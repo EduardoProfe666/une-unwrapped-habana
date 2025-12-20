@@ -11,6 +11,13 @@ interface Props {
 const DAYS_LABELS = ['Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab'];
 const MONTHS_LABELS = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
 
+const formatDayToDate = (dayNum: number, year: number): string => {
+    const date = new Date(year, 0, dayNum);
+    const day = date.getDate();
+    const month = MONTHS_LABELS[date.getMonth()].toLowerCase();
+    return `${day} de ${month}`;
+};
+
 const DailyActivity: React.FC<Props> = ({ dailyMessages, colorClass, year }) => {
     const [hoveredDay, setHoveredDay] = useState<number | null>(null);
 
@@ -122,7 +129,7 @@ const DailyActivity: React.FC<Props> = ({ dailyMessages, colorClass, year }) => 
                                                             {hoveredDay === day.dayNum && (
                                                                 <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-4 z-[110] pointer-events-none whitespace-nowrap">
                                                                     <NeobrutalTooltip
-                                                                        text={`Día ${day.dayNum}: ${day.count} mensajes`}
+                                                                        text={`${formatDayToDate(day.dayNum, year)}: ${day.count} mensajes`}
                                                                     />
                                                                 </div>
                                                             )}
