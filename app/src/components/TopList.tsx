@@ -1,7 +1,7 @@
 import {TelegramMessage as TelegramMessageType} from "@/src/common/types.ts";
 import {memo} from "react";
 import {formatNumber} from "@/src/common/utils.ts";
-import {TelegramMessage} from "@/src/components/TelegramMessage.tsx";
+import TelegramMessage from "@/src/components/TelegramMessage.tsx";
 
 export interface TopListProps {
     title: string;

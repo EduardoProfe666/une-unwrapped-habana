@@ -53,10 +53,30 @@ function App() {
     }), []);
 
     const totals = useMemo(() => data && [
-        {label: 'Vistas Totales', value: data.total_views, icon: <TrendingUp/>},
-        {label: 'Mensajes', value: data.total_messages, icon: <MessageSquare/>},
-        {label: 'Reacciones', value: data.total_reactions, icon: <ThumbsUp/>},
-        {label: 'Comentarios', value: data.total_replies, icon: <MessageSquare/>},
+        {
+            label: 'Vistas Totales',
+            value: data.total_views,
+            icon: TrendingUp,
+            colorClass: 'bg-blue-400'
+        },
+        {
+            label: 'Mensajes',
+            value: data.total_messages,
+            icon: MessageSquare,
+            colorClass: 'bg-yellow-400'
+        },
+        {
+            label: 'Reacciones',
+            value: data.total_reactions,
+            icon: ThumbsUp,
+            colorClass: 'bg-green-400'
+        },
+        {
+            label: 'Comentarios',
+            value: data.total_replies,
+            icon: MessageSquare,
+            colorClass: 'bg-red-400'
+        },
     ], [data]);
 
     const topLists = useMemo(
@@ -174,6 +194,7 @@ function App() {
                                 avgTextLength={data.avg_text_length}
                                 avgPositive={data.avg_positive_reactions}
                                 avgNegative={data.avg_negative_reactions}
+                                year={selectedYear}
                             />
                         </Suspense>
 
