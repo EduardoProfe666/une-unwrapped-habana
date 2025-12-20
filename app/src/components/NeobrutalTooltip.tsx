@@ -9,7 +9,6 @@ const NeobrutalTooltip = ({ text }: { text: string }) => (
         className="absolute bottom-full left-0 mb-2 z-99999 bg-black text-white p-2 text-[11px] font-bold border-2 border-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] pointer-events-none min-w-[150px] text-center"
     >
         {text}
-        <div className="absolute top-full translate-y-1 left-4 w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-[6px] border-t-black"></div>
     </m.div>
 );
 

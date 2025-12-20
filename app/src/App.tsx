@@ -271,7 +271,6 @@ function App() {
 
                         {/* WORD CLOUD */}
                         <section>
-                            <h2 className="text-4xl font-black text-center mb-8">Palabras más repetidas</h2>
                             <Suspense fallback={<SectionLoader/>}>
                                 <WordCloud words={data.top25_most_repeated_words} color={theme.accent}/>
                             </Suspense>
