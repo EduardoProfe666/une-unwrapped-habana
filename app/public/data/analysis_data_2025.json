@@ -1,5 +1,5 @@
 {
-    "sync_date": "2025-12-20T14:39:02.399775-05:00",
+    "sync_date": "2025-12-20T15:25:45.587658-05:00",
     "year": 2025,
     "first_message": {
         "id": 32200,
@@ -17,18 +17,19 @@
         "text": "✅📣Restablecido el servicio en el Municipio de la Lisa, en la dirección:37 y 264-Arroyo Arenas📣✅"
     },
     "last_message": {
-        "id": 49736,
-        "link": "https://t.me/EmpresaElectricaDeLaHabana/49736",
-        "date_utc": "2025-12-20 19:36:19",
-        "date_utc_d": "2025-12-20T19:36:19",
-        "date_cuba": "2025-12-20 14:36:19",
-        "date_cuba_d": "2025-12-20T14:36:19",
+        "id": 49739,
+        "link": "https://t.me/EmpresaElectricaDeLaHabana/49739",
+        "date_utc": "2025-12-20 20:14:38",
+        "date_utc_d": "2025-12-20T20:14:38",
+        "date_cuba": "2025-12-20 15:14:38",
+        "date_cuba_d": "2025-12-20T15:14:38",
         "reactions": {
-            "👎": 33
+            "👍": 11,
+            "👎": 114
         },
-        "views": 912,
-        "replies": 4,
-        "text": "🚨‼️Informamos a los clientes asociados al Bloque No. 5 que a partir de este momento se encuentran afectados por déficit de generación por EMERGENCIA.‼️🚨"
+        "views": 3028,
+        "replies": 44,
+        "text": "‼️📣En estos momentos se realizan las operaciones según el procedimiento técnico correspondientes al restablecimiento de los circuitos pertenecientes al Bloque No 1, afectado por déficit de generación de emergencia. Su totalidad se llevará a cabo paulatinamente.\nInformamos a los clientes asociados al Bloque No 2 que a partir de este momento inicia la afectación por déficit de EMERGENCIA.‼️"
     },
     "shortest_message": {
         "id": 33007,
@@ -62,14 +63,14 @@
         "text": "📣🚧Averías existentes hasta el momento\n\n🚨Averías Primarias\n📌Municipio: Habana del Este\n👉Dirección: Colina Villa Real, Villa Bacuranao, Celimar, Pepito Tey, Micro X (Puente Partido)\n\n📌Municipio: Cotorro\n👉Dirección: Cruz Verde, Amor, Paraíso, San Pedro, Vedado del Cotorro, La Torre (Puente Partido)\n\n➡️Averías Secundarias por transformador dañado:\n\n📌Municipio: 10 de octubre\n👉Dirección: San José e/ Luz y Altarriba. Lawton\n👉Dirección: Encarnación e/ Flores y San Benigno. Santos Suárez\n\n📌Municipio: Boyeros\n👉Dirección: 7 e/ 4 y 6. Santiago de las Vegas\n👉Dirección: 111 y 24. Sierra Maestra\n\n📌Municipio: Marianao\n👉Dirección: 45 e/ 114 y 116. Los Quemados\n\n📌Municipio: Plaza\n👉Dirección: Protestante e/ 2da y San Antonio. Dionisia\n👉Dirección: 13 e/ 16 y 18. Vedado\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Lisa\n👉Dirección:  39 e/ 268 y 270. Arroyo Arenas\n \n📌Municipio: Habana del Este\n👉Dirección:  Zona 1 Edif 34 (Técnico Extranjero). Alamar\n👉Dirección:  Zona 21 Edif 709, 710, 711, 712. Alamar                                                                                                                                                                                                                                                                                                                                                                                                                                                            👉Dirección:  Zona 11. Alamar\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Arroyo Naranjo\n👉Dirección:  Alday e/ Camuji y Cuba. Vieja Linda\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Guanabacoa\n👉Dirección:  Finca La Convita. Mi Gloria\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: San Miguel del Padrón\n👉Dirección:  Finca El Mamey. Revoledo",
         "count": 3460
     },
-    "total_views": 583378234,
-    "total_messages": 16858,
+    "total_views": 583489582,
+    "total_messages": 16861,
     "total_erased_messages": 681,
-    "total_replies": 712000,
-    "total_reactions": 2254519,
-    "total_positive_reactions": 415043,
-    "total_negative_reactions": 1839476,
-    "avg_views": 34605,
+    "total_replies": 712223,
+    "total_reactions": 2255482,
+    "total_positive_reactions": 415148,
+    "total_negative_reactions": 1840334,
+    "avg_views": 34606,
     "avg_replies": 42,
     "avg_reactions": 134,
     "avg_positive_reactions": 25,
@@ -87,7 +88,7 @@
         "9": 78915214,
         "10": 75118535,
         "11": 66428237,
-        "12": 53422270
+        "12": 53533618
     },
     "monthly_replies": {
         "1": 5679,
@@ -101,7 +102,7 @@
         "9": 123282,
         "10": 103746,
         "11": 65201,
-        "12": 76839
+        "12": 77062
     },
     "monthly_reactions": {
         "1": 14996,
@@ -115,7 +116,7 @@
         "9": 345058,
         "10": 362109,
         "11": 289514,
-        "12": 365033
+        "12": 365996
     },
     "monthly_messages": {
         "1": 810,
@@ -129,7 +130,7 @@
         "9": 1912,
         "10": 2029,
         "11": 1953,
-        "12": 1477
+        "12": 1480
     },
     "daily_messages": {
         "1": 27,
@@ -485,7 +486,7 @@
         "351": 73,
         "352": 83,
         "353": 80,
-        "354": 52,
+        "354": 55,
         "355": 0,
         "356": 0,
         "357": 0,
@@ -500,15 +501,15 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 11213,
+        "1": 11214,
         "2": 722,
         "3": 1691,
         "4": 339,
-        "5": 2893
+        "5": 2895
     },
     "distribution_reaction": {
-        "👎": 1839476,
-        "👍": 415043
+        "👎": 1840334,
+        "👍": 415148
     },
     "top3_most_viewed_messages": [
         {
@@ -713,7 +714,7 @@
     "top25_most_repeated_words": {
         "municipio": 10591,
         "consumidores": 6623,
-        "bloque": 5679,
+        "bloque": 5683,
         "servicio": 5677,
         "habana": 5515,
         "afectados": 5163,
@@ -721,18 +722,18 @@
         "calle": 3199,
         "mw": 3162,
         "quejas": 2925,
-        "déficit": 2884,
+        "déficit": 2888,
         "boyeros": 2551,
-        "clientes": 2395,
+        "clientes": 2397,
         "playa": 2368,
-        "generación": 2343,
+        "generación": 2345,
         "pendientes": 2311,
         "arroyo": 2244,
         "sistema": 2237,
         "centro": 2201,
         "naranjo": 2195,
         "miguel": 2190,
-        "emergencia": 2167,
+        "emergencia": 2171,
         "octubre": 2145,
         "disparo": 2108,
         "avería": 2095
@@ -740,31 +741,31 @@
     "blocks_analysis": [
         {
             "number": 1,
-            "mentions": 2266,
+            "mentions": 2267,
             "declared_recoveries": 227,
-            "declared_affectations": 786,
-            "declared_emergencies": 270
+            "declared_affectations": 787,
+            "declared_emergencies": 271
         },
         {
             "number": 2,
-            "mentions": 2546,
+            "mentions": 2547,
             "declared_recoveries": 160,
-            "declared_affectations": 760,
-            "declared_emergencies": 255
+            "declared_affectations": 761,
+            "declared_emergencies": 256
         },
         {
             "number": 3,
-            "mentions": 2058,
+            "mentions": 2059,
             "declared_recoveries": 164,
             "declared_affectations": 731,
             "declared_emergencies": 245
         },
         {
             "number": 4,
-            "mentions": 2072,
+            "mentions": 2073,
             "declared_recoveries": 164,
-            "declared_affectations": 786,
-            "declared_emergencies": 277
+            "declared_affectations": 787,
+            "declared_emergencies": 278
         },
         {
             "number": 5,
@@ -775,10 +776,10 @@
         },
         {
             "number": 6,
-            "mentions": 2080,
+            "mentions": 2081,
             "declared_recoveries": 134,
-            "declared_affectations": 703,
-            "declared_emergencies": 263
+            "declared_affectations": 704,
+            "declared_emergencies": 264
         }
     ],
     "sen_analysis": {
