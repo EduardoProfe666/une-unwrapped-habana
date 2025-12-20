@@ -112,31 +112,8 @@ function App() {
         });
     };
 
-    if (!data) return (
-        <div className="min-h-screen flex flex-col items-center justify-center bg-white p-6">
-            <div className="relative w-24 h-24 mb-8">
-                <div className="absolute inset-0 border-8 border-black animate-[spin_3s_linear_infinite]" />
-                <div className="absolute inset-4 border-4 border-yellow-400 animate-[spin_1s_linear_infinite_reverse]" />
-                <div className="absolute inset-9 bg-red-500 animate-pulse" />
-            </div>
-            <div className="text-center">
-                <h2 className="font-black tracking-tighter text-4xl mb-2 italic">CARGANDO_SISTEMA</h2>
-                <div className="flex gap-1 justify-center">
-                    {[...Array(5)].map((_, i) => (
-                        <m.div
-                            key={i}
-                            animate={{ opacity: [0, 1, 0] }}
-                            transition={{ repeat: Infinity, duration: 0.8, delay: i * 0.1 }}
-                            className="w-3 h-3 bg-black"
-                        />
-                    ))}
-                </div>
-                <p className="font-mono text-[10px] mt-4 opacity-40 uppercase tracking-[0.3em]">
-                    Establishing connection to Habana_Hub...
-                </p>
-            </div>
-        </div>
-    );
+    if (!data) return <div
+        className="min-h-screen flex items-center justify-center font-bold text-2xl">CARGANDO...</div>;
 
     return (
         <LazyMotion features={domAnimation}>
