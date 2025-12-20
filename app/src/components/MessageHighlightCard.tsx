@@ -11,7 +11,7 @@ const MessageHighlightCard: React.FC<MessageHighlightCardProps> = ({
                                                                        message,
                                                                    }) => {
     return (
-        <div className="relative w-full group">
+        <div className="relative w-full group hover:-translate-y-2 transition-transform">
             <span
                 className={`absolute -rotate-2 -top-3 left-4 bg-black text-white px-3 py-1 text-xs font-black z-20`}>
                 {title}
