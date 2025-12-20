@@ -160,7 +160,7 @@ Si este resumen te ha parecido interesante, útil o simplemente te gusta la inic
 >   ```
    
 5. **Acceder a la aplicación**
-> Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
+> Abre [http://localhost:5173](http://localhost:5173) en tu navegador.
 
 ---
 

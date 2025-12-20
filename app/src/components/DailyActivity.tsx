@@ -68,7 +68,6 @@ const DailyActivity: React.FC<Props> = ({ dailyMessages, colorClass, year }) => 
                 <div className="overflow-x-auto pb-16 custom-scrollbar">
                     <div className="inline-block relative min-w-max p-6 pt-12">
 
-                        {/* Etiquetas de Meses - Mejoradas */}
                         <div className="absolute top-2 left-18 flex w-full pointer-events-none">
                             {months.map((m, i) => (
                                 <div
@@ -82,7 +81,6 @@ const DailyActivity: React.FC<Props> = ({ dailyMessages, colorClass, year }) => 
                         </div>
 
                         <div className="flex gap-4">
-                            {/* Etiquetas de Días */}
                             <div className="flex flex-col justify-between py-1 text-[10px] font-black text-gray-400 uppercase w-8 select-none">
                                 {DAYS_LABELS.map((label, i) => (
                                     <span key={i} className="h-5 leading-none flex items-center">
@@ -91,7 +89,6 @@ const DailyActivity: React.FC<Props> = ({ dailyMessages, colorClass, year }) => 
                                 ))}
                             </div>
 
-                            {/* La Grilla Grande */}
                             <div className="flex flex-col gap-1.5">
                                 {matrix.map((row, rowIndex) => (
                                     <div key={rowIndex} className="flex gap-1.5">
@@ -143,7 +140,6 @@ const DailyActivity: React.FC<Props> = ({ dailyMessages, colorClass, year }) => 
             </div>
 
             <footer className="mt-8 pt-6 border-t-4 border-black flex flex-wrap justify-between items-end gap-6">
-                {/* Leyenda de Intensidad */}
                 <div className="flex items-center gap-3">
                     <span className="text-xs font-black uppercase">Menos</span>
                     <div className="flex gap-1.5 p-1 bg-white border-2 border-black shadow-[3px_3px_0px_0px_black]">
@@ -158,7 +154,6 @@ const DailyActivity: React.FC<Props> = ({ dailyMessages, colorClass, year }) => 
                     <span className="text-xs font-black uppercase">Más</span>
                 </div>
 
-                {/* Estadísticas de Esquina */}
                 <div className="flex gap-6">
                     <div className="text-right border-r-4 border-black pr-4">
                         <p className="text-[10px] font-black text-gray-500 uppercase leading-none">Promedio Diario</p>

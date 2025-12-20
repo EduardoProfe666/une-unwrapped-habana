@@ -6,6 +6,7 @@ import SectionLoader from "@/src/components/SectionLoader.tsx";
 import useYearAnalysis from "@/src/hooks/use-year-analysis.ts";
 import AppFooter from "@/src/components/AppFooter.tsx";
 
+const ReactionSpectrum = lazy(() => import("@/src/components/ReactionSpectrum.tsx"));
 const TopList = lazy(() => import("@/src/components/TopList.tsx"));
 const TotalsGrid = lazy(() => import("@/src/components/TotalsGrid.tsx"));
 const AveragesCard = lazy(() => import("@/src/components/AveragesCard.tsx"));
@@ -214,10 +215,21 @@ function App() {
                             />
                         </Suspense>
 
+                        {/* DAILY ACTIVITY */}
                         <Suspense fallback={<SectionLoader/>}>
                             <DailyActivity
                                 dailyMessages={data.daily_messages}
                                 colorClass={theme.primary}
+                                year={selectedYear}
+                            />
+                        </Suspense>
+
+                        {/*  REACTION SPECTRUM */}
+                        <Suspense fallback={<SectionLoader/>}>
+                            <ReactionSpectrum
+                                distributionReaction={data.distribution_reaction}
+                                totalReactions={data.total_reactions}
+                                accentColor={theme.primary}
                                 year={selectedYear}
                             />
                         </Suspense>
