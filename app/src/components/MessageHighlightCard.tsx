@@ -38,7 +38,7 @@ const MessageHighlightCard: React.FC<MessageHighlightCardProps> = ({
                     className="shadow-[8px_8px_0px_0px_black] group-hover:shadow-[12px_12px_0px_0px_black] transition-shadow"
                 />
             </div>
-            
+
             <div className="absolute -bottom-4 right-4 font-mono text-[8px] font-black opacity-10 group-hover:opacity-30 transition-opacity uppercase">
                 Record_Type: {title.replace(" ", "_")}
             </div>
