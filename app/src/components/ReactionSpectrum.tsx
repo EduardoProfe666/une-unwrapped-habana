@@ -27,7 +27,7 @@ const ReactionSpectrum: React.FC<Props> = ({distributionReaction, totalReactions
                 <div className="lg:w-1/3 space-y-8">
                     <header>
                         <h2 className="text-6xl font-black uppercase tracking-tighter leading-[0.8]">
-                            Pulso<br/>
+                            Análisis<br/>
                             <span className="text-outline text-white"
                                   style={{WebkitTextStroke: '2px black'}}>Social</span>
                         </h2>
@@ -77,11 +77,11 @@ const ReactionSpectrum: React.FC<Props> = ({distributionReaction, totalReactions
 
                                 <div
                                     className="absolute inset-0 flex items-center px-4 justify-between pointer-events-none">
-                                    <span className="text-xs font-black mix-blend-difference uppercase text-white transition-opacity duration-500 delay-500">
-                                        {item.count.toLocaleString()} <span className="opacity-40 mix-blend-difference text-white ml-2 font-bold">RCS</span>
+                                    <span className="text-xs font-black mix-blend-difference uppercase text-white transition-opacity duration-500 delay-500 group-hover:bg-black group-hover:text-white">
+                                        {item.count.toLocaleString()} <span className="opacity-40 mix-blend-difference text-white ml-2 font-bold group-hover:bg-black group-hover:text-white">RCS</span>
                                     </span>
                                     <span
-                                        className="text-xs font-black mix-blend-difference text-white opacity-40 font-mono">
+                                        className="text-xs font-black mix-blend-difference text-white opacity-40 font-mono group-hover:bg-black group-hover:text-white">
                                         {item.percentage.toFixed(1)}%
                                     </span>
                                 </div>
