@@ -1,71 +1,70 @@
-import React, {lazy, Suspense, useEffect, useState} from 'react';
+import React, {lazy, Suspense, useMemo, useState} from 'react';
 import {domAnimation, LazyMotion, m, Variants} from 'framer-motion';
 import {AVAILABLE_YEARS, MESSAGE_TYPE_DESCRIPTIONS, MESSAGE_TYPE_LABELS, YEAR_THEMES} from './common/constants.ts';
-import {UneAnalysis} from './common/types.ts';
 import {formatNumber} from './common/utils.ts';
 import {TelegramMessage} from '@/src/components/TelegramMessage.tsx';
 import {MessageSquare, ThumbsUp, TrendingUp} from 'lucide-react';
+import SectionLoader from "@/src/components/SectionLoader.tsx";
+import useYearAnalysis from "@/src/hooks/use-year-analysis.ts";
+import {TopList} from "@/src/components/TopList.tsx";
 
 const ChartSection = lazy(() => import('@/src/components/ChartSection.tsx'));
 const WordCloud = lazy(() => import('@/src/components/WordCloud.tsx'));
 const SenAnalysisSection = lazy(() => import('@/src/components/SenAnalysis.tsx'));
 const BlockCard = lazy(() => import('@/src/components/BlockCard.tsx'));
 
-const SectionLoader = () => (
-    <div
-        className="w-full h-64 bg-gray-50/50 animate-pulse border-2 border-dashed border-gray-300 rounded-lg flex flex-col items-center justify-center gap-2">
-        <div className="h-8 w-8 border-4 border-black border-t-transparent rounded-full animate-spin"></div>
-        <span className="text-gray-400 font-bold text-sm font-mono">CARGANDO RECURSOS...</span>
-    </div>
-);
-
 function App() {
     const [selectedYear, setSelectedYear] = useState<number>(2025);
-    const [data, setData] = useState<UneAnalysis | null>(null);
-    const [loading, setLoading] = useState(false);
+    const {data, loading} = useYearAnalysis(selectedYear);
 
-    // Theme helper
-    const theme = YEAR_THEMES[selectedYear] || YEAR_THEMES[2025];
+    const theme = useMemo(
+        () => YEAR_THEMES[selectedYear] ?? YEAR_THEMES[2025],
+        [selectedYear]
+    );
 
-    useEffect(() => {
-        const controller = new AbortController();
-        const signal = controller.signal;
-
-        const fetchData = async () => {
-            setLoading(true);
-            try {
-                const response = await fetch(`/data/analysis_data_${selectedYear}.json`, {signal});
-                if (!response.ok) {
-                    throw new Error(`Error al cargar los datos del año ${selectedYear}`);
-                }
-                const jsonData = await response.json();
-                setData(jsonData);
-            } catch (error) {
-                if (error.name === 'AbortError') {
-                    return;
-                }
-                console.error("Error fetching data:", error);
-            } finally {
-                setLoading(false);
-            }
-        };
-        fetchData();
-        return () => controller.abort();
-    }, [selectedYear]);
-
-    // Framer Motion Variants
-    const containerVariants: Variants = {
+    const containerVariants = useMemo<Variants>(() => ({
         hidden: {opacity: 0},
         visible: {opacity: 1, transition: {staggerChildren: 0.1}}
-    };
+    }), []);
 
-    const itemVariants: Variants = {
+    const itemVariants = useMemo<Variants>(() => ({
         hidden: {y: 50, opacity: 0},
-        visible: {y: 0, opacity: 1, transition: {type: 'spring', stiffness: 50}}
-    };
+        visible: {
+            y: 0,
+            opacity: 1,
+            transition: {type: 'spring', stiffness: 50}
+        }
+    }), []);
+
+    const topLists = useMemo(
+        () => data && [
+            {
+                title: 'Top 3: Más Vistos 👀',
+                items: data.top3_most_viewed_messages,
+                badgeColorClass: 'bg-blue-200'
+            },
+            {
+                title: 'Top 3: Más Comentados 📝',
+                items: data.top3_most_replied_messages,
+                badgeColorClass: 'bg-yellow-200'
+            },
+            {
+                title: 'Top 3: Más Positivos 😍',
+                items: data.top3_most_positive_reaction_messages,
+                badgeColorClass: 'bg-green-200'
+            },
+            {
+                title: 'Top 3: Más Negativos 🤬',
+                items: data.top3_most_negative_reaction_messages,
+                badgeColorClass: 'bg-red-200'
+            }
+        ],
+        [data]
+    );
+
 
     if (!data) return <div
-        className="min-h-screen flex items-center justify-center font-bold text-2xl">Cargando...</div>;
+        className="min-h-screen flex items-center justify-center font-bold text-2xl">CARGANDO...</div>;
 
     return (
         <LazyMotion features={domAnimation}>
@@ -81,7 +80,7 @@ function App() {
                 <header
                     className="min-h-[80vh] flex flex-col items-center justify-center p-6 relative overflow-hidden border-b-4 border-black bg-white">
                     <div className="absolute top-4 left-4 font-bold text-xl flex items-center gap-2">
-                        <img src="/logo.webp" alt="Logo"
+                        <img src="/logo.webp" alt="Logo" width="360" height="360" loading="lazy"
                              className="h-10 w-10 p-0.5 rounded-full bg-gray-300 border-2 border-black"/>
                         UNE Unwrapped
                     </div>
@@ -124,7 +123,7 @@ function App() {
                 {/* Disclaimer Section */}
                 <section
                     className="bg-yellow-300 border-b-4 border-black p-4 text-center text-sm font-bold flex justify-center items-center gap-2 px-10">
-                    <span>IMPORTANTE: Esta página no está afiliada a la Empresa Eléctrica de La Habana ni a la Unión Eléctrica. Los datos se extraen automáticamente de mensajes públicos del canal de Telegram capitalino y se procesan con algoritmos básicos de análisis de texto. Son una aproximación y pueden contener errores de interpretación algorítmica. NO son datos oficiales y su precisión puede distar de la realidad. Úsese exclusivamente con fines de entretenimiento y con precaución.</span>
+                    <span>IMPORTANTE: Esta página no está afiliada con la Empresa Eléctrica de La Habana ni con la Unión Eléctrica. La información se obtiene de forma automática a partir de mensajes públicos en el canal de Telegram de La Habana, utilizando algoritmos básicos de análisis de texto. Los datos son aproximados y pueden contener errores. No son oficiales y su exactitud no está garantizada.</span>
                 </section>
 
                 {loading ? (
@@ -317,44 +316,18 @@ function App() {
                         </section>
 
                         {/* TOP LISTS */}
-                        {/* Helper function to render Top 3 list */}
-                        {[
-                            {title: "Top 3: Más Vistos", items: data.top3_most_viewed_messages, color: "bg-blue-200"},
-                            {
-                                title: "Top 3: Más Comentados",
-                                items: data.top3_most_replied_messages,
-                                color: "bg-yellow-200"
-                            },
-                            {
-                                title: "Top 3: Más Negativos 🤬",
-                                items: data.top3_most_negative_reaction_messages,
-                                color: "bg-red-200"
-                            },
-                            {
-                                title: "Top 3: Más Positivos 😍",
-                                items: data.top3_most_positive_reaction_messages,
-                                color: "bg-green-200"
-                            },
-                        ].map((section, idx) => (
-                            <section key={idx} className="space-y-6">
-                                <h2 className={`text-2xl md:text-4xl font-black inline-block px-4 py-1 neobrutal-border ${section.color} neobrutal-shadow`}>
-                                    {section.title}
-                                </h2>
-                                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                                    {section.items.map((msg, i) => (
-                                        <div key={msg.id}
-                                             className="transform hover:-translate-y-2 transition-transform duration-300">
-                                            <div
-                                                className="text-center font-bold text-4xl mb-2 opacity-20">#{i + 1}</div>
-                                            <TelegramMessage
-                                                message={msg}
-                                                highlightCount={formatNumber(msg.count || 0)}
-                                            />
-                                        </div>
-                                    ))}
-                                </div>
-                            </section>
-                        ))}
+                        <section className="space-y-16">
+                            <Suspense fallback={<SectionLoader/>}>
+                                {topLists.map(section => (
+                                    <TopList
+                                        key={section.title}
+                                        title={section.title}
+                                        items={section.items}
+                                        badgeColorClass={section.badgeColorClass}
+                                    />
+                                ))}
+                            </Suspense>
+                        </section>
 
                         {/* WORD CLOUD */}
                         <section>

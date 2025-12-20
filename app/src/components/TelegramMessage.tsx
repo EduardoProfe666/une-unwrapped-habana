@@ -47,11 +47,12 @@ export const TelegramMessage: React.FC<Props> = ({message, highlightCount, class
             <div
                 className="p-4 text-sm text-gray-900 font-medium whitespace-pre-wrap leading-relaxed max-h-60 overflow-y-auto overscroll-contain bg-white scrollbar-neobrutal">
                 {message.text}
+                <br/>
                 <a
                     href={message.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-blue-600 font-black block mt-3 hover:underline decoration-2 transition-colors"
+                    className="inline-flex items-center gap-1 text-blue-600 font-black mt-3 hover:underline decoration-2 transition-colors"
                 >
                     <ExternalLink size={14}/> Ver en Telegram
                 </a>
