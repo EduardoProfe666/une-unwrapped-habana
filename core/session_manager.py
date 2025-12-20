@@ -14,3 +14,6 @@ def session_generator():
     with TelegramClient(StringSession(), __api_id, __api_hash) as client:
         print("Your string session is:")
         print(client.session.save())
+
+if __name__ == '__main__':
+    session_generator()
