@@ -63,6 +63,13 @@ con un estilo visual que rompe un poco con el flat design de siempre.
 
 La aplicación está desplegada y disponible en: [une-unwrapped-habana.vercel.app](https://une-unwrapped-habana.vercel.app/)
 
+## 🌟 Apoya el proyecto
+
+Si este resumen te ha parecido interesante, útil o simplemente te gusta la iniciativa, ¡tu apoyo significa mucho!
+
+- **Dale una estrella:** Haz clic en la estrella (Star) en la esquina superior derecha de este repositorio para ayudar a que más personas lo conozcan.
+- **Comparte:** Ayuda a difundir el proyecto con otras personas (siempre recuerda que lo datos no son oficiales ni exactos).
+
 ## 📥 Instalación
 
 ### Backend
