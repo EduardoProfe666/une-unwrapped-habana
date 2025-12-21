@@ -1,4 +1,4 @@
-import React, {lazy, Suspense, useMemo, useState} from 'react';
+import React, {lazy, Suspense, useEffect, useMemo, useState} from 'react';
 import {domAnimation, LazyMotion, m, Variants} from 'framer-motion';
 import {AVAILABLE_YEARS, YEAR_THEMES} from './common/constants.ts';
 import {MessageSquare, ThumbsUp, TrendingUp} from 'lucide-react';
@@ -22,6 +22,7 @@ const DailyActivity = lazy(() => import('@/src/components/DailyActivity.tsx'));
 function App() {
     const [selectedYear, setSelectedYear] = useState<number>(2025);
     const {data, loading} = useYearAnalysis(selectedYear);
+    const [showScrollTop, setShowScrollTop] = useState(false);
 
     const theme = useMemo(
         () => YEAR_THEMES[selectedYear] ?? YEAR_THEMES[2025],
@@ -112,6 +113,14 @@ function App() {
         });
     };
 
+    useEffect(() => {
+        const handleScroll = () => {
+            setShowScrollTop(window.scrollY > 400);
+        };
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     if (!data) return <div
         className="min-h-screen flex items-center justify-center font-bold text-2xl">CARGANDO...</div>;
 
@@ -123,6 +132,23 @@ function App() {
                 <div className="fixed top-0 right-0 p-2 z-50 hover:opacity-70 opacity-45 bg-black text-white text-[10px] font-mono border-l-2 border-b-2 border-white/20">
                     SYNC_OK: {new Date(data.sync_date).toLocaleString('es-CU')}
                 </div>
+
+                {/* Scroll to Top */}
+                <m.button
+                    initial={{ opacity: 0, x: 20 }}
+                    animate={{
+                        opacity: showScrollTop ? 1 : 0,
+                        x: showScrollTop ? 0 : 20,
+                        pointerEvents: showScrollTop ? 'auto' : 'none'
+                    }}
+                    onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                    className={`fixed bottom-8 right-8 z-[100] p-4 ${theme.primary} border-4 border-black shadow-[4px_4px_0px_0px_black] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all group`}
+                >
+                    <div className="flex flex-col items-center leading-none">
+                        <span className="text-2xl font-black">↑</span>
+                        <span className="text-[10px] font-black">TOP</span>
+                    </div>
+                </m.button>
 
                 {/* Hero Section */}
                 <header className="min-h-[80vh] flex flex-col items-center justify-center p-6 relative overflow-hidden border-b-4 border-black bg-white">
