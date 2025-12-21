@@ -1,0 +1,15 @@
+[project]
+name = "une-unwrapped-habana"
+version = "2.5.0"
+description = "⚡ UNE Unwrapped - Resumen Eléctrico de La Habana"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pyaes==1.6.1",
+    "pyasn1==0.6.1",
+    "python-dotenv==1.2.1",
+    "pytz==2025.2",
+    "rsa==4.9.1",
+    "telethon==1.42.0",
+    "tzdata==2025.3",
+]

@@ -76,8 +76,8 @@ Si este resumen te ha parecido interesante, útil o simplemente te gusta la inic
 ### Backend
 
 #### Requisitos Previos
-- Python 3.13.x o superior
-- pip
+- python ~= 3.13.x 
+- uv ~= 0.9.x 
 
 #### Pasos para Instalación y Uso Local
 
@@ -89,7 +89,7 @@ Si este resumen te ha parecido interesante, útil o simplemente te gusta la inic
 
 2. **Instalar dependencias**
 >   ```bash
->   pip install -r requirements.txt
+>   uv sync
 >   ```
 
 3. **Obtener credenciales para Telethon**
@@ -98,8 +98,7 @@ Si este resumen te ha parecido interesante, útil o simplemente te gusta la inic
 4. **Obtener session string para Telethon**
 >   Una vez con el `API_ID` y `API_HASH`, es necesario obtener el `API_SESSION`.
 >   ```bash
->   cd core
->   python session_manager.py
+>   uv run python core/session_manager.py
 >   ```
 >   Luego rellena con tu número de teléfono registrado en la cuenta de Telegram (con prefijo incluido Ej. +53XXXXXXXX).
 >   
@@ -110,7 +109,7 @@ Si este resumen te ha parecido interesante, útil o simplemente te gusta la inic
 
 6. **Correr el proyecto para empezar a sincronizar**
 >   ```bash
->   python main.py
+>   uv run python main.py
 >   ```
 >   Si no hay datos, o están muy desactualizados, a lo mejor conveniene cargar todos los mensajes, en lugar de solo los últimos.
 >   Para ello descomenta la siguiente línea en `main.py`
@@ -121,8 +120,8 @@ Si este resumen te ha parecido interesante, útil o simplemente te gusta la inic
 ### Frontend
 
 #### Requisitos Previos
-- Node.js 22.x o superior
-- npm/pnpm/yarn/bun (Preferiblemente bun)
+- node ~= 22.x
+- bun ~= 1.3.x
 
 
 #### Pasos para Instalación y Uso Local
@@ -136,12 +135,6 @@ Si este resumen te ha parecido interesante, útil o simplemente te gusta la inic
 
 2. **Instalar dependencias**
 >   ```bash
->   npm install
->   # o
->   yarn install
->   # o
->   pnpm install
->   # o
 >   bun install
 >   ```
    
@@ -150,12 +143,6 @@ Si este resumen te ha parecido interesante, útil o simplemente te gusta la inic
 
 4. **Iniciar el servidor de desarrollo**
 >   ```bash
->   npm dev
->   # o
->   yarn dev
->   # o
->   pnpm dev
->   # o
 >   bun dev
 >   ```
    
