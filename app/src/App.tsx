@@ -261,86 +261,6 @@ function App() {
                             </Suspense>
                         </section>
 
-                        {/* Text Stats */}
-                        <Suspense fallback={<SectionLoader/>}>
-                            <FirstLastMessages
-                                firstMessage={data.first_message}
-                                lastMessage={data.last_message}
-                            />
-                        </Suspense>
-
-                        {/* EXTREMES (Shortest/Longest) */}
-                        <Suspense fallback={<SectionLoader/>}>
-                            <ExtremeMessages
-                                shortestMessage={data.shortest_message}
-                                longestMessage={data.longest_message}
-                            />
-                        </Suspense>
-
-                        {/* DISTRIBUTION */}
-                        <Suspense fallback={<SectionLoader/>}>
-                            <DistributionSection
-                                distributionMessage={data.distribution_message}
-                                totalMessages={data.total_messages}
-                                totalReactions={data.total_reactions}
-                                totalPositiveReactions={data.total_positive_reactions}
-                                totalNegativeReactions={data.total_negative_reactions}
-                                primaryColorClass={theme.primary}
-                            />
-                        </Suspense>
-
-                        {/* DAILY ACTIVITY */}
-                        <Suspense fallback={<SectionLoader/>}>
-                            <DailyActivity
-                                dailyMessages={data.daily_messages}
-                                colorClass={theme.primary}
-                                year={selectedYear}
-                            />
-                        </Suspense>
-
-                        {/*  REACTION SPECTRUM */}
-                        <Suspense fallback={<SectionLoader/>}>
-                            <ReactionSpectrum
-                                distributionReaction={data.distribution_reaction}
-                                totalReactions={data.total_reactions}
-                                accentColor={theme.primary}
-                                year={selectedYear}
-                            />
-                        </Suspense>
-
-                        {/* TOP LISTS */}
-                        <section className="space-y-16">
-                            <Suspense fallback={<SectionLoader/>}>
-                                {topLists.map(section => (
-                                    <TopList
-                                        key={section.title}
-                                        title={section.title}
-                                        items={section.items}
-                                        badgeColorClass={section.badgeColorClass}
-                                    />
-                                ))}
-                            </Suspense>
-                        </section>
-
-                        {/* WORD CLOUD */}
-                        <section>
-                            <Suspense fallback={<SectionLoader/>}>
-                                <WordCloud words={data.top25_most_repeated_words} color={theme.accent}/>
-                            </Suspense>
-                        </section>
-
-                        {/* SEN ANALYSIS */}
-                        <section className="bg-white neobrutal-border p-4 md:p-8 relative overflow-hidden">
-                            <div className="absolute top-0 left-0 w-full h-2 bg-red-500"></div>
-                            <div className="absolute bottom-0 left-0 w-full h-2 bg-red-500"></div>
-                            <h2 className="text-4xl font-black text-center mb-12 text-red-600 uppercase tracking-widest">
-                                Estado del SEN
-                            </h2>
-                            <Suspense fallback={<SectionLoader/>}>
-                                <SenAnalysisSection analysis={data.sen_analysis}/>
-                            </Suspense>
-                        </section>
-
                         {/* BLOCKS ANALYSIS */}
                         <section className="mt-20">
                             <div className="flex flex-col items-center mb-16 relative">
@@ -364,6 +284,86 @@ function App() {
                                                    year={selectedYear}/>
                                     ))}
                                 </div>
+                            </Suspense>
+                        </section>
+
+                        {/* DAILY ACTIVITY */}
+                        <Suspense fallback={<SectionLoader/>}>
+                            <DailyActivity
+                                dailyMessages={data.daily_messages}
+                                colorClass={theme.primary}
+                                year={selectedYear}
+                            />
+                        </Suspense>
+
+                        {/* DISTRIBUTION */}
+                        <Suspense fallback={<SectionLoader/>}>
+                            <DistributionSection
+                                distributionMessage={data.distribution_message}
+                                totalMessages={data.total_messages}
+                                totalReactions={data.total_reactions}
+                                totalPositiveReactions={data.total_positive_reactions}
+                                totalNegativeReactions={data.total_negative_reactions}
+                                primaryColorClass={theme.primary}
+                            />
+                        </Suspense>
+
+                        {/*  REACTION SPECTRUM */}
+                        <Suspense fallback={<SectionLoader/>}>
+                            <ReactionSpectrum
+                                distributionReaction={data.distribution_reaction}
+                                totalReactions={data.total_reactions}
+                                accentColor={theme.primary}
+                                year={selectedYear}
+                            />
+                        </Suspense>
+
+                        {/* WORD CLOUD */}
+                        <section>
+                            <Suspense fallback={<SectionLoader/>}>
+                                <WordCloud words={data.top25_most_repeated_words} color={theme.accent}/>
+                            </Suspense>
+                        </section>
+
+                        {/* SEN ANALYSIS */}
+                        <section className="bg-white neobrutal-border p-4 md:p-8 relative overflow-hidden">
+                            <div className="absolute top-0 left-0 w-full h-2 bg-red-500"></div>
+                            <div className="absolute bottom-0 left-0 w-full h-2 bg-red-500"></div>
+                            <h2 className="text-4xl font-black text-center mb-12 text-red-600 uppercase tracking-widest">
+                                Estado del SEN
+                            </h2>
+                            <Suspense fallback={<SectionLoader/>}>
+                                <SenAnalysisSection analysis={data.sen_analysis}/>
+                            </Suspense>
+                        </section>
+
+                        {/* Text Stats */}
+                        <Suspense fallback={<SectionLoader/>}>
+                            <FirstLastMessages
+                                firstMessage={data.first_message}
+                                lastMessage={data.last_message}
+                            />
+                        </Suspense>
+
+                        {/* EXTREMES (Shortest/Longest) */}
+                        <Suspense fallback={<SectionLoader/>}>
+                            <ExtremeMessages
+                                shortestMessage={data.shortest_message}
+                                longestMessage={data.longest_message}
+                            />
+                        </Suspense>
+
+                        {/* TOP LISTS */}
+                        <section className="space-y-16">
+                            <Suspense fallback={<SectionLoader/>}>
+                                {topLists.map(section => (
+                                    <TopList
+                                        key={section.title}
+                                        title={section.title}
+                                        items={section.items}
+                                        badgeColorClass={section.badgeColorClass}
+                                    />
+                                ))}
                             </Suspense>
                         </section>
 
