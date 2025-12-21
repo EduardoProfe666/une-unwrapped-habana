@@ -26,7 +26,7 @@ export default defineConfig(({ mode }) => {
             {
                 name: 'generate-robots-txt',
                 closeBundle() {
-                    const robotsContent = `User-agent: *\nDisallow: /private/\nAllow: /\n\nSitemap: ${baseUrl.replace(/\/$/, '')}/sitemap.xml`;
+                    const robotsContent = `User-agent: *\nAllow: /\n\nSitemap: ${baseUrl.replace(/\/$/, '')}/sitemap.xml`;
                     const outputPath = path.resolve(__dirname, 'dist/robots.txt');
 
                     if (fs.existsSync(path.resolve(__dirname, 'dist'))) {
