@@ -4,6 +4,7 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from "@tailwindcss/vite";
 import * as fs from "node:fs";
 import { VitePWA } from 'vite-plugin-pwa';
+import compression from 'vite-plugin-compression';
 
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, process.cwd(), '');
@@ -18,6 +19,7 @@ export default defineConfig(({ mode }) => {
         plugins: [
             react(),
             tailwindcss(),
+            compression({ algorithm: 'brotliCompress', ext: '.br' }),
             {
                 name: 'html-transform',
                 transformIndexHtml(html) {
@@ -79,6 +81,22 @@ export default defineConfig(({ mode }) => {
             alias: {
                 '@': path.resolve(__dirname, '.'),
             }
-        }
+        },
+        build: {
+            rollupOptions: {
+                output: {
+                    manualChunks: (id) => {
+                        if (id.includes('node_modules')) {
+                            if (id.includes('recharts')) return 'vendor-charts';
+                            if (id.includes('framer-motion')) return 'vendor-motion';
+                            if (id.includes('lucide-react')) return 'vendor-icons';
+                            return 'vendor-core';
+                        }
+                    }
+                }
+            },
+            chunkSizeWarningLimit: 600,
+            reportCompressedSize: true
+        },
     };
 });
