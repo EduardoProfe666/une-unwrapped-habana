@@ -1,5 +1,5 @@
 {
-    "sync_date": "2025-12-22T00:28:49.116224-05:00",
+    "sync_date": "2025-12-22T00:39:08.747638-05:00",
     "year": 2024,
     "first_message": {
         "id": 19617,
@@ -760,42 +760,48 @@
             "mentions": 1383,
             "declared_recoveries": 19,
             "declared_affectations": 19,
-            "declared_emergencies": 1
+            "declared_emergencies": 1,
+            "estimated_affected_seconds": 1535624
         },
         {
             "number": 2,
             "mentions": 1444,
             "declared_recoveries": 21,
             "declared_affectations": 10,
-            "declared_emergencies": 1
+            "declared_emergencies": 1,
+            "estimated_affected_seconds": 971009
         },
         {
             "number": 3,
             "mentions": 1039,
             "declared_recoveries": 20,
             "declared_affectations": 19,
-            "declared_emergencies": 2
+            "declared_emergencies": 2,
+            "estimated_affected_seconds": 1489409
         },
         {
             "number": 4,
             "mentions": 902,
             "declared_recoveries": 21,
             "declared_affectations": 7,
-            "declared_emergencies": 1
+            "declared_emergencies": 1,
+            "estimated_affected_seconds": 1141182
         },
         {
             "number": 5,
             "mentions": 877,
             "declared_recoveries": 14,
             "declared_affectations": 0,
-            "declared_emergencies": 0
+            "declared_emergencies": 0,
+            "estimated_affected_seconds": 0
         },
         {
             "number": 6,
             "mentions": 941,
             "declared_recoveries": 12,
             "declared_affectations": 0,
-            "declared_emergencies": 0
+            "declared_emergencies": 0,
+            "estimated_affected_seconds": 0
         }
     ],
     "sen_analysis": {
