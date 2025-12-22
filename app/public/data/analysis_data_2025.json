@@ -1,5 +1,5 @@
 {
-    "sync_date": "2025-12-22T05:28:13.571114-05:00",
+    "sync_date": "2025-12-22T05:49:54.529251-05:00",
     "year": 2025,
     "first_message": {
         "id": 32200,
@@ -24,10 +24,10 @@
         "date_cuba": "2025-12-22 04:53:41",
         "date_cuba_d": "2025-12-22T04:53:41",
         "reactions": {
-            "👍": 1,
-            "👎": 1
+            "👍": 3,
+            "👎": 2
         },
-        "views": 681,
+        "views": 1195,
         "replies": 0,
         "text": "📣¿Qué hacer si me llega el importe elevado?\n\n  Cuando el importe de consumo llega elevado usted puede recurrir al sistema de atención a la población de nuestra empresa que funciona con un Técnico de Atención al Cliente en los tres niveles de la estructura:\n1. Oficina Comercial (es donde las personas van y pagan el servicio eléctrico por ventanilla o realizan quejas).\n2. UEB municipal (es la Empresa Eléctrica de su municipio).\n3. Oficina Provincial (radicada en Capdevila, municipio Boyeros y allí hay un grupo de Atención al Cliente).\n-Aunque existe personal presencial para atenderle en los diferentes niveles de la estructura, usted puede a través del:\nNúmero Telefónico 📞18888.\nEl correo electrónico📩 18888@eleclh.une.cu.\nNuestras redes sociales en Facebook o el canal de Telegram.\nSolicitar que desea realizar una #queja administrativa y de 5 a 7 días hábiles le visitará un inspector y se le ofrecerá respuesta por escrito de su caso. Recuerde debe siempre ofrecer los datos siguientes: #RUTA, #FOLIO, #OFICINACOMERCIAL.\n\nEquipo de Comunicación \nEmpresa Eléctrica de La Habana📣"
     },
@@ -63,13 +63,13 @@
         "text": "📣🚧Averías existentes hasta el momento\n\n🚨Averías Primarias\n📌Municipio: Habana del Este\n👉Dirección: Colina Villa Real, Villa Bacuranao, Celimar, Pepito Tey, Micro X (Puente Partido)\n\n📌Municipio: Cotorro\n👉Dirección: Cruz Verde, Amor, Paraíso, San Pedro, Vedado del Cotorro, La Torre (Puente Partido)\n\n➡️Averías Secundarias por transformador dañado:\n\n📌Municipio: 10 de octubre\n👉Dirección: San José e/ Luz y Altarriba. Lawton\n👉Dirección: Encarnación e/ Flores y San Benigno. Santos Suárez\n\n📌Municipio: Boyeros\n👉Dirección: 7 e/ 4 y 6. Santiago de las Vegas\n👉Dirección: 111 y 24. Sierra Maestra\n\n📌Municipio: Marianao\n👉Dirección: 45 e/ 114 y 116. Los Quemados\n\n📌Municipio: Plaza\n👉Dirección: Protestante e/ 2da y San Antonio. Dionisia\n👉Dirección: 13 e/ 16 y 18. Vedado\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Lisa\n👉Dirección:  39 e/ 268 y 270. Arroyo Arenas\n \n📌Municipio: Habana del Este\n👉Dirección:  Zona 1 Edif 34 (Técnico Extranjero). Alamar\n👉Dirección:  Zona 21 Edif 709, 710, 711, 712. Alamar                                                                                                                                                                                                                                                                                                                                                                                                                                                            👉Dirección:  Zona 11. Alamar\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Arroyo Naranjo\n👉Dirección:  Alday e/ Camuji y Cuba. Vieja Linda\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Guanabacoa\n👉Dirección:  Finca La Convita. Mi Gloria\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: San Miguel del Padrón\n👉Dirección:  Finca El Mamey. Revoledo",
         "count": 3460
     },
-    "total_views": 585875794,
+    "total_views": 585882846,
     "total_messages": 16954,
     "total_erased_messages": 683,
     "total_replies": 715120,
-    "total_reactions": 2271382,
-    "total_positive_reactions": 417813,
-    "total_negative_reactions": 1853569,
+    "total_reactions": 2271401,
+    "total_positive_reactions": 417828,
+    "total_negative_reactions": 1853573,
     "avg_views": 34557,
     "avg_replies": 42,
     "avg_reactions": 134,
@@ -88,7 +88,7 @@
         "9": 78915214,
         "10": 75118535,
         "11": 66428237,
-        "12": 55919830
+        "12": 55926882
     },
     "monthly_replies": {
         "1": 5679,
@@ -116,7 +116,7 @@
         "9": 345058,
         "10": 362109,
         "11": 289514,
-        "12": 381896
+        "12": 381915
     },
     "monthly_messages": {
         "1": 810,
@@ -508,8 +508,8 @@
         "5": 2931
     },
     "distribution_reaction": {
-        "👎": 1853569,
-        "👍": 417813
+        "👎": 1853573,
+        "👍": 417828
     },
     "top3_most_viewed_messages": [
         {
