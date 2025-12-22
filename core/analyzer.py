@@ -48,6 +48,18 @@ BLOCK_END_PATTERNS = [
 
 BLOCK_LIST_PATTERN = re.compile(r"bloques?:?\s*([1-6,\s]+)", re.IGNORECASE)
 
+MAX_BLOCK_DURATION_SECONDS = 24 * 60 * 60
+
+def apply_block_safety_timeout(state: dict, current_time: datetime):
+    if state["active"] and state["start"]:
+        elapsed = (current_time - state["start"]).total_seconds()
+        if elapsed >= MAX_BLOCK_DURATION_SECONDS:
+            state["accumulated"] += MAX_BLOCK_DURATION_SECONDS
+            state["active"] = False
+            state["start"] = None
+            return True
+    return False
+
 def extract_blocks_from_list(text: str) -> set[int]:
     match = BLOCK_LIST_PATTERN.search(text)
     if not match:
@@ -305,6 +317,9 @@ def analyze_data(year: int):
         if END_FAILURE_TRIGGER in text and sen_active:
             sen_active = False
             continue
+
+        for i in range(1, BLOCK_COUNT + 1):
+            apply_block_safety_timeout(block_states[i], t)
 
         for i in range(1, BLOCK_COUNT + 1):
             state = block_states[i]
