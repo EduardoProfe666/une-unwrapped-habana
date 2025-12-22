@@ -5,6 +5,7 @@ import {MessageSquare, ThumbsUp, TrendingUp} from 'lucide-react';
 import SectionLoader from "@/src/components/SectionLoader.tsx";
 import useYearAnalysis from "@/src/hooks/use-year-analysis.ts";
 import AppFooter from "@/src/components/AppFooter.tsx";
+import GithubSupport from "@/src/components/GithubSupport.tsx";
 
 const ReactionSpectrum = lazy(() => import("@/src/components/ReactionSpectrum.tsx"));
 const TopList = lazy(() => import("@/src/components/TopList.tsx"));
@@ -369,7 +370,9 @@ function App() {
 
                     </main>
                 )}
-
+                <Suspense fallback={<SectionLoader/>}>
+                    <GithubSupport accentColor={theme.primary} />
+                </Suspense>
                 {/* Footer */}
                 <AppFooter
                     year={selectedYear}
