@@ -72,19 +72,29 @@ const ReactionSpectrum: React.FC<Props> = ({distributionReaction, totalReactions
                                     initial={{width: 0}}
                                     whileInView={{width: `${item.percentage}%`}}
                                     transition={{duration: 1.2, ease: [0.22, 1, 0.36, 1]}}
-                                    className={`absolute top-0 left-0 h-full border-r-2 border-black ${accentColor}`}
+                                    className={`absolute top-0 left-0 h-full border-r-2 border-black ${accentColor} z-10`}
                                 />
-
-                                <div
-                                    className="absolute inset-0 flex items-center px-4 justify-between pointer-events-none">
-                                    <span className="text-xs font-black mix-blend-difference uppercase text-white transition-opacity duration-500 delay-500 group-hover:bg-black group-hover:text-white">
-                                        {item.count.toLocaleString()} <span className="opacity-40 mix-blend-difference text-white ml-2 font-bold group-hover:bg-black group-hover:text-white">RCS</span>
+                                <div className="absolute inset-0 flex items-center px-4 justify-between z-0">
+                                    <span className="text-xs font-black uppercase text-black">
+                                        {item.count.toLocaleString()} <span className="opacity-40 ml-2 font-bold">EVTS</span>
                                     </span>
-                                    <span
-                                        className="text-xs font-black mix-blend-difference text-white opacity-40 font-mono group-hover:bg-black group-hover:text-white">
+                                    <span className="text-xs font-black text-black opacity-40 font-mono">
                                         {item.percentage.toFixed(1)}%
                                     </span>
-                                </div>
+                                    </div>
+                                    <m.div
+                                        initial={{ clipPath: 'inset(0 100% 0 0)' }}
+                                        whileInView={{ clipPath: `inset(0 ${100 - item.percentage}% 0 0)` }}
+                                        transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+                                        className="absolute inset-0 flex items-center px-4 justify-between z-20 pointer-events-none"
+                                    >
+                                        <span className="text-xs font-black uppercase text-white">
+                                            {item.count.toLocaleString()} <span className="opacity-60 ml-2 font-bold text-white">EVTS</span>
+                                        </span>
+                                        <span className="text-xs font-black text-slate-400 opacity-60 font-mono">
+                                            {item.percentage.toFixed(1)}%
+                                        </span>
+                                    </m.div>
                             </div>
 
                             <div
