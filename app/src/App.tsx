@@ -143,7 +143,7 @@ function App() {
                         pointerEvents: showScrollTop ? 'auto' : 'none'
                     }}
                     onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                    className={`fixed bottom-8 right-8 z-[100] p-4 ${theme.primary} border-4 border-black shadow-[4px_4px_0px_0px_black] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all group`}
+                    className={`fixed cursor-pointer bottom-8 right-8 z-[100] p-4 ${theme.primary} border-4 border-black shadow-[4px_4px_0px_0px_black] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all group`}
                 >
                     <div className="flex flex-col items-center leading-none">
                         <span className="text-2xl font-black">↑</span>
@@ -184,7 +184,7 @@ function App() {
                                 <button
                                     key={year}
                                     onClick={() => setSelectedYear(year)}
-                                    className={`px-6 py-3 font-bold border-4 border-black text-lg shadow-[4px_4px_0px_0px_black] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all active:shadow-none ${
+                                    className={`px-6 py-3 font-bold cursor-pointer border-4 border-black text-lg shadow-[4px_4px_0px_0px_black] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all active:shadow-none ${
                                         selectedYear === year ? `${theme.primary} text-white` : 'bg-white'
                                     }`}
                                 >
@@ -210,7 +210,7 @@ function App() {
 
                         <button
                             onClick={scrollToFooter}
-                            className="group flex items-center gap-2 text-[11px] font-black uppercase bg-white border-2 border-black px-6 py-2 shadow-[4px_4px_0px_0px_black] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all"
+                            className="group flex cursor-pointer items-center gap-2 text-[11px] font-black uppercase bg-white border-2 border-black px-6 py-2 shadow-[4px_4px_0px_0px_black] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all"
                         >
                             Leer aviso legal completo
                             <span className="group-hover:translate-y-0.5 transition-transform font-bold">↓</span>
