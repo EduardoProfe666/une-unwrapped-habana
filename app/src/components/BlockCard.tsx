@@ -113,7 +113,7 @@ const BlockCard: React.FC<Props> = ({block, color, year}) => {
                             >
                                 <div className={`flex justify-between items-center py-4 px-2 transition-colors duration-200 ${hoveredStat === stat.id ? 'bg-gray-50' : 'bg-transparent'}`}>
                                     <div className="flex items-center gap-3">
-                                        <div className={`p-1.5 border-2 border-black bg-white shadow-[2px_2px_0px_0px_black] ${stat.colorClass}`}>
+                                        <div className={`p-1.5 border-2 border-black bg-white shadow-[2px_2px_0px_0px_black] ${stat.colorClass} group-hover/item:shadow-none group-hover/item:translate-x-1 group-hover/item:translate-y-1 transition-all`}>
                                             <stat.icon size={18} strokeWidth={3} />
                                         </div>
                                         <span className="font-black uppercase text-sm md:text-base tracking-tighter">
@@ -135,7 +135,7 @@ const BlockCard: React.FC<Props> = ({block, color, year}) => {
                                             initial={{ opacity: 0, y: 5 }}
                                             animate={{ opacity: 1, y: 0 }}
                                             exit={{ opacity: 0 }}
-                                            className="absolute left-1/2 -translate-x-1/2 -top-6 bg-black text-white text-[10px] px-3 py-1 font-bold border-2 border-white shadow-[4px_4px_0px_0px_black] z-50 pointer-events-none whitespace-nowrap"
+                                            className="absolute left-1/2 -translate-x-1/2 -top-6 bg-black text-white text-[10px] px-3 py-1 font-bold border-2 border-white shadow-[4px_4px_0px_0px_black] z-50 pointer-events-none"
                                         >
                                             {stat.text.toUpperCase()}
                                         </m.div>
@@ -198,7 +198,7 @@ const BlockCard: React.FC<Props> = ({block, color, year}) => {
                             </div>
                         </div>
                     </div>
-                    
+
                     <div className="mt-6 pt-4 border-t-2 border-black border-dashed flex justify-between items-end">
                         <div className="space-y-1">
                             <p className="text-[9px] font-black uppercase opacity-40">System_Data_Analysis_{year}</p>

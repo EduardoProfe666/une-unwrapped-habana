@@ -39,7 +39,7 @@ const SenAnalysisSection: React.FC<Props> = ({analysis}) => {
                             {analysis.total_failure_events.toString().padStart(2, '0')}
                         </p>
                     </div>
-                    <div className="absolute top-0 right-0 p-4 opacity-10">
+                    <div className="absolute top-0 right-0 p-4 opacity-30">
                         <Zap size={120} strokeWidth={1} />
                     </div>
                 </div>
