@@ -26,6 +26,7 @@ export interface BlockAnalysis {
   declared_recoveries: number;
   declared_affectations: number;
   declared_emergencies: number;
+  estimated_affected_seconds: number;
 }
 
 export interface SenFailureEvent {
