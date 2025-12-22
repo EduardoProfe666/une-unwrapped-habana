@@ -83,7 +83,6 @@ const BlockCard: React.FC<Props> = ({block, color, year}) => {
                 ref={cardRef}
                 className="bg-white border-4 border-black p-0 shadow-[8px_8px_0px_0px_black] transition-all duration-300 group-hover:-translate-y-2 group-hover:shadow-[12px_12px_0px_0px_black] relative overflow-hidden"
             >
-                {/* HEADER */}
                 <div className="bg-black text-white p-3 flex justify-between items-center z-20 relative">
                     <div className="flex items-center gap-2">
                         <div
@@ -96,13 +95,11 @@ const BlockCard: React.FC<Props> = ({block, color, year}) => {
                 </div>
 
                 <div className="p-6 relative">
-                    {/* FONDO GIGANTE */}
                     <span
                         className={`absolute -right-4 -bottom-8 text-[12rem] font-black opacity-[0.1] select-none pointer-events-none leading-none z-0 ${color}`}>
                         {block.number}
                     </span>
 
-                    {/* LISTA DE STATS REGULARES */}
                     <div className="flex flex-col z-10 relative border-t-4 border-black">
                         {stats.map((stat) => (
                             <div
@@ -128,7 +125,6 @@ const BlockCard: React.FC<Props> = ({block, color, year}) => {
                                     </div>
                                 </div>
 
-                                {/* TOOLTIP */}
                                 <AnimatePresence>
                                     {hoveredStat === stat.id && (
                                         <m.div
@@ -164,7 +160,6 @@ const BlockCard: React.FC<Props> = ({block, color, year}) => {
                         </AnimatePresence>
 
                         <div className="border-4 border-black bg-gray-100 p-1">
-                            {/* Cabecera Interna */}
                             <div className="flex justify-between items-center px-2 py-1 mb-1">
                                 <div className="flex items-center gap-2">
                                     <Clock size={14} strokeWidth={3} />

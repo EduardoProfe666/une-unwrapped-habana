@@ -368,11 +368,12 @@ function App() {
                             </Suspense>
                         </section>
 
+                        <Suspense fallback={<SectionLoader/>}>
+                            <GithubSupport accentColor={theme.primary} />
+                        </Suspense>
+
                     </main>
                 )}
-                <Suspense fallback={<SectionLoader/>}>
-                    <GithubSupport accentColor={theme.primary} />
-                </Suspense>
                 {/* Footer */}
                 <AppFooter
                     year={selectedYear}

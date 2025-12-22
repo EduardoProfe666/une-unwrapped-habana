@@ -14,7 +14,7 @@ const GithubSupport: React.FC<{ accentColor: string }> = ({ accentColor }) => {
     }, []);
 
     return (
-        <section className="my-20 flex justify-center px-4 relative">
+        <section className="flex justify-center px-4 relative">
             <div className="absolute top-1/2 left-0 w-full h-1 bg-black/5 -z-10" />
 
             <div className="bg-white border-4 border-black p-8 md:p-12 shadow-[16px_16px_0px_0px_black] max-w-4xl w-full relative overflow-hidden group/card">
