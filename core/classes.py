@@ -62,6 +62,7 @@ class BlockAnalysis:
     declared_recoveries: int = 0
     declared_affectations: int = 0
     declared_emergencies: int = 0
+    estimated_affected_seconds: int = 0
 
 @dataclass
 class SENFailureAnalysisEvent:

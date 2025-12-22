@@ -35,6 +35,39 @@ SEN_PATTERNS = [
 START_FAILURE_TRIGGER = "desconexión del sistema electroenergético nacional"
 END_FAILURE_TRIGGER = "100 %"
 
+BLOCK_COUNT = 6
+
+BLOCK_START_PATTERNS = [
+    r"(afect|déficit|fuera).*bloque\s*(no\.?|nº)?\s*{i}",
+    r"bloque\s*(no\.?|nº)?\s*{i}.*(afect|déficit|fuera)",
+]
+
+BLOCK_END_PATTERNS = [
+    r"(restablec|recuper|normaliz|cierra).*bloque\s*(no\.?|nº)?\s*{i}"
+]
+
+BLOCK_LIST_PATTERN = re.compile(r"bloques?:?\s*([1-6,\s]+)", re.IGNORECASE)
+
+def extract_blocks_from_list(text: str) -> set[int]:
+    match = BLOCK_LIST_PATTERN.search(text)
+    if not match:
+        return set()
+    return {int(b) for b in re.findall(r"[1-6]", match.group(1))}
+
+
+def block_start_detected(block: int, text: str) -> bool:
+    for pattern in BLOCK_START_PATTERNS:
+        if re.search(pattern.format(i=block), text):
+            return True
+    return False
+
+
+def block_end_detected(block: int, text: str) -> bool:
+    for pattern in BLOCK_END_PATTERNS:
+        if re.search(pattern.format(i=block), text):
+            return True
+    return False
+
 def analyze_data(year: int):
     """
     Analyze the UNE data for UNE-Unwrapped project and exports it to JSON on root path
@@ -235,6 +268,79 @@ def analyze_data(year: int):
     data.sen_analysis.mentions = mentions_count
     data.sen_analysis.total_failure_events = len(all_events)
     data.sen_analysis.failure_events = all_events
+
+    # ------------------------ BLOCKS - ESTIMATED AFFECTED SECONDS -------------------- #
+
+    block_states = {
+        i: {
+            "active": False,
+            "start": None,
+            "accumulated": 0
+        }
+        for i in range(1, BLOCK_COUNT + 1)
+    }
+
+    sen_active = False
+
+    for m in messages:
+        if not m.date_cuba_d or not m.text:
+            continue
+
+        text = m.text.lower()
+        t: datetime = m.date_cuba_d
+
+        listed_blocks = extract_blocks_from_list(text)
+        is_list_message = bool(listed_blocks)
+
+        if START_FAILURE_TRIGGER in text:
+            sen_active = True
+            for i in range(1, BLOCK_COUNT + 1):
+                state = block_states[i]
+                if state["active"]:
+                    state["accumulated"] += int((t - state["start"]).total_seconds())
+                    state["active"] = False
+                    state["start"] = None
+            continue
+
+        if END_FAILURE_TRIGGER in text and sen_active:
+            sen_active = False
+            continue
+
+        for i in range(1, BLOCK_COUNT + 1):
+            state = block_states[i]
+
+            if not state["active"] and block_start_detected(i, text):
+                state["active"] = True
+                state["start"] = t
+                continue
+
+            if not state["active"] and is_list_message and i in listed_blocks:
+                state["active"] = True
+                state["start"] = t
+                continue
+
+            if state["active"] and block_end_detected(i, text):
+                state["accumulated"] += int((t - state["start"]).total_seconds())
+                state["active"] = False
+                state["start"] = None
+                continue
+
+            if state["active"] and is_list_message and i not in listed_blocks:
+                state["accumulated"] += int((t - state["start"]).total_seconds())
+                state["active"] = False
+                state["start"] = None
+
+    last_date = messages[-1].date_cuba_d
+
+    for i in range(1, BLOCK_COUNT + 1):
+        state = block_states[i]
+        if state["active"] and state["start"] and last_date:
+            state["accumulated"] += int((last_date - state["start"]).total_seconds())
+
+    for i in range(1, BLOCK_COUNT + 1):
+        data.blocks_analysis[i - 1].estimated_affected_seconds = (
+            block_states[i]["accumulated"]
+        )
 
     # ----------------------------------------------- EXPORT ------------------------------------------- #
     __export_analysis_to_json(data)
