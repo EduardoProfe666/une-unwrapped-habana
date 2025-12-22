@@ -52,7 +52,7 @@ const GithubSupport: React.FC<{ accentColor: string }> = ({ accentColor }) => {
                             Este proyecto es código abierto y gratuito. Una estrella en GitHub ayuda a que más personas conozcan el estado del SEN en La Habana.
                         </p>
                     </div>
-                    
+
                     <a
                         href="https://github.com/EduardoProfe666/une-unwrapped-habana"
                         target="_blank"
