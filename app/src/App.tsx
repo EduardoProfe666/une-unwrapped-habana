@@ -184,7 +184,7 @@ function App() {
                                 <button
                                     key={year}
                                     onClick={() => setSelectedYear(year)}
-                                    className={`px-6 py-3 font-bold border-4 border-black text-lg transition-all shadow-[4px_4px_0px_0px_black] hover:shadow-none hover:translate-x-1 hover:translate-y-1 active:shadow-none ${
+                                    className={`px-6 py-3 font-bold border-4 border-black text-lg shadow-[4px_4px_0px_0px_black] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all active:shadow-none ${
                                         selectedYear === year ? `${theme.primary} text-white` : 'bg-white'
                                     }`}
                                 >

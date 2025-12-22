@@ -65,7 +65,7 @@ const ChartSection: React.FC<Props> = ({data, color}) => {
                     <button
                         key={type}
                         onClick={() => setChartType(type)}
-                        className={`group relative px-6 py-2 font-black uppercase tracking-tighter border-4 border-black transition-all ${
+                        className={`group relative px-6 py-2 font-black uppercase tracking-tighter border-4 border-black hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all active:shadow-none ${
                             chartType === type
                                 ? `${color} text-black shadow-[4px_4px_0px_0px_black]`
                                 : 'bg-white text-black hover:bg-gray-50 shadow-[2px_2px_0px_0px_black]'

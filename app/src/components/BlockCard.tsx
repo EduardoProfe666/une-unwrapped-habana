@@ -212,7 +212,7 @@ const BlockCard: React.FC<Props> = ({block, color, year}) => {
 
             <button
                 onClick={handleDownload}
-                className="group/btn self-center lg:self-end bg-white hover:bg-black hover:text-white text-black px-6 py-2 text-xs font-black flex items-center gap-2 transition-all border-4 border-black shadow-[4px_4px_0px_0px_black] active:shadow-none active:translate-x-1 active:translate-y-1"
+                className="group/btn self-center lg:self-end bg-white text-black px-6 py-2 text-xs font-black flex items-center gap-2 hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all border-4 border-black shadow-[4px_4px_0px_0px_black] active:shadow-none active:translate-x-1 active:translate-y-1"
             >
                 <Download size={14} strokeWidth={3}/>
                 <span>GUARDAR BLOQUE_{block.number}</span>
