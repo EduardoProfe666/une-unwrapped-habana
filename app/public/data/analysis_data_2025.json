@@ -1,5 +1,5 @@
 {
-    "sync_date": "2025-12-23T00:50:39.532948-05:00",
+    "sync_date": "2025-12-23T01:40:37.831315-05:00",
     "year": 2025,
     "first_message": {
         "id": 32200,
@@ -24,10 +24,10 @@
         "date_cuba": "2025-12-22 23:34:52",
         "date_cuba_d": "2025-12-22T23:34:52",
         "reactions": {
-            "👍": 2,
-            "👎": 20
+            "👍": 3,
+            "👎": 25
         },
-        "views": 2507,
+        "views": 3233,
         "replies": 2,
         "text": "🚨Consumidores del municipio de Playa se encuentran afectados por un disparo del circuito afectando : \"Calle 49 desde 28 hasta 38 (Kohly); Calle 47 desde 14 hasta 28; Calle 6 desde 1ra hasta 14; Calle 3ra desde 0 hasta 10 (Miramar) 🚨"
     },
@@ -63,14 +63,14 @@
         "text": "📣🚧Averías existentes hasta el momento\n\n🚨Averías Primarias\n📌Municipio: Habana del Este\n👉Dirección: Colina Villa Real, Villa Bacuranao, Celimar, Pepito Tey, Micro X (Puente Partido)\n\n📌Municipio: Cotorro\n👉Dirección: Cruz Verde, Amor, Paraíso, San Pedro, Vedado del Cotorro, La Torre (Puente Partido)\n\n➡️Averías Secundarias por transformador dañado:\n\n📌Municipio: 10 de octubre\n👉Dirección: San José e/ Luz y Altarriba. Lawton\n👉Dirección: Encarnación e/ Flores y San Benigno. Santos Suárez\n\n📌Municipio: Boyeros\n👉Dirección: 7 e/ 4 y 6. Santiago de las Vegas\n👉Dirección: 111 y 24. Sierra Maestra\n\n📌Municipio: Marianao\n👉Dirección: 45 e/ 114 y 116. Los Quemados\n\n📌Municipio: Plaza\n👉Dirección: Protestante e/ 2da y San Antonio. Dionisia\n👉Dirección: 13 e/ 16 y 18. Vedado\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Lisa\n👉Dirección:  39 e/ 268 y 270. Arroyo Arenas\n \n📌Municipio: Habana del Este\n👉Dirección:  Zona 1 Edif 34 (Técnico Extranjero). Alamar\n👉Dirección:  Zona 21 Edif 709, 710, 711, 712. Alamar                                                                                                                                                                                                                                                                                                                                                                                                                                                            👉Dirección:  Zona 11. Alamar\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Arroyo Naranjo\n👉Dirección:  Alday e/ Camuji y Cuba. Vieja Linda\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Guanabacoa\n👉Dirección:  Finca La Convita. Mi Gloria\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: San Miguel del Padrón\n👉Dirección:  Finca El Mamey. Revoledo",
         "count": 3460
     },
-    "total_views": 587796467,
-    "total_messages": 17046,
-    "total_erased_messages": 688,
-    "total_replies": 717079,
-    "total_reactions": 2282250,
-    "total_positive_reactions": 419630,
-    "total_negative_reactions": 1862620,
-    "avg_views": 34483,
+    "total_views": 587808613,
+    "total_messages": 17047,
+    "total_erased_messages": 689,
+    "total_replies": 717094,
+    "total_reactions": 2282318,
+    "total_positive_reactions": 419643,
+    "total_negative_reactions": 1862675,
+    "avg_views": 34482,
     "avg_replies": 42,
     "avg_reactions": 134,
     "avg_positive_reactions": 25,
@@ -88,7 +88,7 @@
         "9": 78915214,
         "10": 75118535,
         "11": 66428237,
-        "12": 57840503
+        "12": 57852649
     },
     "monthly_replies": {
         "1": 5679,
@@ -102,7 +102,7 @@
         "9": 123282,
         "10": 103746,
         "11": 65201,
-        "12": 81918
+        "12": 81933
     },
     "monthly_reactions": {
         "1": 14996,
@@ -116,7 +116,7 @@
         "9": 345058,
         "10": 362109,
         "11": 289514,
-        "12": 392764
+        "12": 392832
     },
     "monthly_messages": {
         "1": 810,
@@ -130,7 +130,7 @@
         "9": 1912,
         "10": 2029,
         "11": 1953,
-        "12": 1665
+        "12": 1666
     },
     "daily_messages": {
         "1": 27,
@@ -489,7 +489,7 @@
         "354": 86,
         "355": 55,
         "356": 98,
-        "357": 1,
+        "357": 2,
         "358": 0,
         "359": 0,
         "360": 0,
@@ -501,15 +501,15 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 11310,
+        "1": 11311,
         "2": 727,
         "3": 1696,
         "4": 341,
         "5": 2972
     },
     "distribution_reaction": {
-        "👎": 1862620,
-        "👍": 419630
+        "👎": 1862675,
+        "👍": 419643
     },
     "top3_most_viewed_messages": [
         {
@@ -745,10 +745,10 @@
             "declared_recoveries": 227,
             "declared_affectations": 817,
             "declared_emergencies": 283,
-            "estimated_affected_seconds": 6776930,
+            "estimated_affected_seconds": 6780589,
             "weekday_off_seconds": {
                 "0": 962996,
-                "1": 934771,
+                "1": 938430,
                 "2": 1003680,
                 "3": 936324,
                 "4": 776013,
@@ -757,7 +757,7 @@
             },
             "weekday_off_avg_seconds": {
                 "0": 18519.153846153848,
-                "1": 17976.365384615383,
+                "1": 18046.73076923077,
                 "2": 18937.35849056604,
                 "3": 18006.23076923077,
                 "4": 14923.326923076924,
