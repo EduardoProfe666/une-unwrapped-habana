@@ -36,54 +36,21 @@ export default defineConfig(({ mode }) => {
                     theme_color: '#f97316',
                     background_color: '#ffffff',
                     display: 'standalone',
-                    orientation: 'portrait',
                     scope: '/',
                     start_url: '/',
                     icons: [
-                         {
-                            src: 'pwa.png',
-                            sizes: '72x72',
-                            type: 'image/png',
-                            purpose: 'any maskable'
-                        },
-                         {
-                            src: 'pwa.png',
-                            sizes: '96x96',
-                            type: 'image/png',
-                            purpose: 'any maskable'
-                        },
-                         {
-                            src: 'pwa.png',
-                            sizes: '128x128',
-                            type: 'image/png',
-                            purpose: 'any maskable'
-                        },
                         {
-                            src: 'pwa.png',
-                            sizes: '144x144',
-                            type: 'image/png',
-                            purpose: 'any maskable'
-                        },
-                         {
-                            src: 'pwa.png',
-                            sizes: '152x152',
-                            type: 'image/png',
-                            purpose: 'any maskable'
-                        },
-                        {
-                            src: 'pwa.png',
+                            src: 'pwa-192x192.png',
                             sizes: '192x192',
-                            type: 'image/png',
-                            purpose: 'any maskable'
+                            type: 'image/png'
                         },
                         {
-                            src: 'pwa.png',
-                            sizes: '384x384',
-                            type: 'image/png',
-                            purpose: 'any maskable'
+                            src: 'pwa-512x512.png',
+                            sizes: '512x512',
+                            type: 'image/png'
                         },
                         {
-                            src: 'pwa.png',
+                            src: 'pwa-512x512.png',
                             sizes: '512x512',
                             type: 'image/png',
                             purpose: 'any maskable'
