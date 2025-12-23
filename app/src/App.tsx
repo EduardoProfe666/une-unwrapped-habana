@@ -241,7 +241,7 @@ function App() {
                     <main className="max-w-7xl mx-auto p-4 md:p-8 space-y-16">
                         <SectionHeader id="metrics-group" title="01_MÉTRICAS_BASE" color="bg-blue-400"/>
                         <div
-                            className="space-y-12 bg-blue-50/30 p-4 md:p-8 border-4 border-dashed border-blue-400/30 rounded-xl">
+                            className="space-y-12">
                             {/* TOTALS GRID */}
                             <div id="totals-grid">
                                 <Suspense fallback={<SectionLoader/>}>
@@ -337,7 +337,7 @@ function App() {
                         </div>
 
                         <SectionHeader id="analysis-group" title="03_ANÁLISIS_TEMPORAL" color="bg-green-400"/>
-                        <div className="space-y-16 bg-green-50/20 p-4 md:p-8 border-x-4 border-black">
+                        <div className="space-y-16">
                             {/* MONTHLY CHARTS */}
                             <div id="monthly-charts">
                                 <section>
