@@ -5,8 +5,9 @@ import {MessageSquare, ThumbsUp, TrendingUp} from 'lucide-react';
 import SectionLoader from "@/src/components/SectionLoader.tsx";
 import useYearAnalysis from "@/src/hooks/use-year-analysis.ts";
 import AppFooter from "@/src/components/AppFooter.tsx";
-import GithubSupport from "@/src/components/GithubSupport.tsx";
 
+const WeeklyBlockMatrix = lazy(() => import('@/src/components/WeeklyBlockMatrix.tsx'));
+const GithubSupport = lazy(() => import("@/src/components/GithubSupport.tsx"));
 const ReactionSpectrum = lazy(() => import("@/src/components/ReactionSpectrum.tsx"));
 const TopList = lazy(() => import("@/src/components/TopList.tsx"));
 const TotalsGrid = lazy(() => import("@/src/components/TotalsGrid.tsx"));
@@ -285,6 +286,13 @@ function App() {
                                                    year={selectedYear}/>
                                     ))}
                                 </div>
+                            </Suspense>
+                        </section>
+
+                        {/* Weekly Block Matrix */}
+                        <section className="mt-20">
+                            <Suspense fallback={<SectionLoader/>}>
+                                <WeeklyBlockMatrix blocks={data.blocks_analysis} year={selectedYear} />
                             </Suspense>
                         </section>
 

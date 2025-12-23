@@ -27,6 +27,8 @@ export interface BlockAnalysis {
   declared_affectations: number;
   declared_emergencies: number;
   estimated_affected_seconds: number;
+  weekday_off_seconds: Record<number, number>;
+  weekday_off_avg_seconds: Record<number, number>;
 }
 
 export interface SenFailureEvent {

@@ -60,3 +60,13 @@ body {
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
+.pattern-diagonal-lines {
+  background-image: repeating-linear-gradient(
+    45deg,
+    #000,
+    #000 10px,
+    #222 10px,
+    #222 20px
+  );
+}
