@@ -5,6 +5,7 @@ import {MessageSquare, ThumbsUp, TrendingUp} from 'lucide-react';
 import SectionLoader from "@/src/components/SectionLoader.tsx";
 import useYearAnalysis from "@/src/hooks/use-year-analysis.ts";
 import AppFooter from "@/src/components/AppFooter.tsx";
+import SectionHeader from "@/src/components/SectionHeader.tsx";
 
 const NavigationHub = lazy(() => import('@/src/components/NavigationHub.tsx'));
 const WeeklyBlockMatrix = lazy(() => import('@/src/components/WeeklyBlockMatrix.tsx'));
@@ -238,176 +239,190 @@ function App() {
                     </div>
                 ) : (
                     <main className="max-w-7xl mx-auto p-4 md:p-8 space-y-16">
-                        {/* TOTALS GRID */}
-                        <div id="totals-grid">
-                            <Suspense fallback={<SectionLoader/>}>
-                                <TotalsGrid
-                                    items={totals}
-                                    containerVariants={fastContainerVariants}
-                                    itemVariants={fastItemVariants}
-                                />
-                            </Suspense>
+                        <SectionHeader id="metrics-group" title="01_MÉTRICAS_BASE" color="bg-blue-400"/>
+                        <div
+                            className="space-y-12 bg-blue-50/30 p-4 md:p-8 border-4 border-dashed border-blue-400/30 rounded-xl">
+                            {/* TOTALS GRID */}
+                            <div id="totals-grid">
+                                <Suspense fallback={<SectionLoader/>}>
+                                    <TotalsGrid
+                                        items={totals}
+                                        containerVariants={fastContainerVariants}
+                                        itemVariants={fastItemVariants}
+                                    />
+                                </Suspense>
+                            </div>
+
+                            {/* AVERAGES */}
+                            <div id="averages">
+                                <Suspense fallback={<SectionLoader/>}>
+                                    <AveragesCard
+                                        accentClass={theme.accent}
+                                        avgViews={data.avg_views}
+                                        avgReactions={data.avg_reactions}
+                                        avgTextLength={data.avg_text_length}
+                                        avgPositive={data.avg_positive_reactions}
+                                        avgNegative={data.avg_negative_reactions}
+                                        year={selectedYear}
+                                    />
+                                </Suspense>
+                            </div>
+
+                            {/* DAILY ACTIVITY */}
+                            <div id="daily-activity">
+                                <Suspense fallback={<SectionLoader/>}>
+                                    <DailyActivity
+                                        dailyMessages={data.daily_messages}
+                                        colorClass={theme.primary}
+                                        year={selectedYear}
+                                    />
+                                </Suspense>
+                            </div>
                         </div>
 
-                        {/* AVERAGES */}
-                        <div id="averages">
-                            <Suspense fallback={<SectionLoader/>}>
-                                <AveragesCard
-                                    accentClass={theme.accent}
-                                    avgViews={data.avg_views}
-                                    avgReactions={data.avg_reactions}
-                                    avgTextLength={data.avg_text_length}
-                                    avgPositive={data.avg_positive_reactions}
-                                    avgNegative={data.avg_negative_reactions}
-                                    year={selectedYear}
-                                />
-                            </Suspense>
-                        </div>
-
-                        {/* DAILY ACTIVITY */}
-                        <div id="daily-activity">
-                            <Suspense fallback={<SectionLoader/>}>
-                                <DailyActivity
-                                    dailyMessages={data.daily_messages}
-                                    colorClass={theme.primary}
-                                    year={selectedYear}
-                                />
-                            </Suspense>
-                        </div>
 
                         {/* BLOCKS ANALYSIS */}
-                        <div id="blocks-analysis">
-                            <section className="mt-20">
-                                <div className="flex flex-col items-center mb-16 relative">
-                                    <div className="absolute top-1/2 left-0 w-full h-1 bg-black/10 -z-10"/>
+                        <SectionHeader id="infra-group" title="02_INFRAESTRUCTURA" color="bg-yellow-400"/>
+                        <div className="space-y-16">
+                            <div id="blocks-analysis">
+                                <section className="mt-20">
+                                    <div className="flex flex-col items-center mb-16 relative">
+                                        <div className="absolute top-1/2 left-0 w-full h-1 bg-black/10 -z-10"/>
 
-                                    <div
-                                        className="bg-white border-4 border-black px-8 py-3 shadow-[8px_8px_0px_0px_black] relative">
+                                        <div
+                                            className="bg-white border-4 border-black px-8 py-3 shadow-[8px_8px_0px_0px_black] relative">
                                     <span
                                         className="absolute -top-3 left-4 bg-black text-white text-[10px] font-black px-2 py-0.5 tracking-widest uppercase">
                                         System_Module: Bk
                                     </span>
-                                        <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter">
-                                            Resumen de Bloques
-                                        </h2>
+                                            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-tighter">
+                                                Resumen de Bloques
+                                            </h2>
+                                        </div>
                                     </div>
-                                </div>
 
+                                    <Suspense fallback={<SectionLoader/>}>
+                                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                            {data.blocks_analysis.map((block) => (
+                                                <BlockCard key={block.number} block={block} color={theme.accent}
+                                                           year={selectedYear}/>
+                                            ))}
+                                        </div>
+                                    </Suspense>
+                                </section>
+                            </div>
+
+                            {/* Weekly Block Matrix */}
+                            <div id="weekly-block-matrix">
+                                <section className="mt-20">
+                                    <Suspense fallback={<SectionLoader/>}>
+                                        <WeeklyBlockMatrix blocks={data.blocks_analysis} year={selectedYear}/>
+                                    </Suspense>
+                                </section>
+                            </div>
+
+                            {/* SEN ANALYSIS */}
+                            <div id="sen-status">
+                                <section className="bg-white neobrutal-border p-4 md:p-8 relative overflow-hidden">
+                                    <div className="absolute top-0 left-0 w-full h-2 bg-red-500"></div>
+                                    <div className="absolute bottom-0 left-0 w-full h-2 bg-red-500"></div>
+                                    <h2 className="text-4xl font-black text-center mb-12 text-red-600 uppercase tracking-widest">
+                                        Estado del SEN
+                                    </h2>
+                                    <Suspense fallback={<SectionLoader/>}>
+                                        <SenAnalysisSection analysis={data.sen_analysis}/>
+                                    </Suspense>
+                                </section>
+                            </div>
+                        </div>
+
+                        <SectionHeader id="analysis-group" title="03_ANÁLISIS_TEMPORAL" color="bg-green-400"/>
+                        <div className="space-y-16 bg-green-50/20 p-4 md:p-8 border-x-4 border-black">
+                            {/* MONTHLY CHARTS */}
+                            <div id="monthly-charts">
+                                <section>
+                                    <h2 className="text-4xl font-black mb-8 text-center bg-black text-white inline-block px-4 py-2 transform -rotate-2">
+                                        Tendencias Mensuales
+                                    </h2>
+                                    <Suspense fallback={<SectionLoader/>}>
+                                        <ChartSection data={data} color={theme.accent}/>
+                                    </Suspense>
+                                </section>
+                            </div>
+
+                            {/* DISTRIBUTION */}
+                            <div id="distribution">
                                 <Suspense fallback={<SectionLoader/>}>
-                                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                                        {data.blocks_analysis.map((block) => (
-                                            <BlockCard key={block.number} block={block} color={theme.accent}
-                                                       year={selectedYear}/>
+                                    <DistributionSection
+                                        distributionMessage={data.distribution_message}
+                                        totalMessages={data.total_messages}
+                                        totalReactions={data.total_reactions}
+                                        totalPositiveReactions={data.total_positive_reactions}
+                                        totalNegativeReactions={data.total_negative_reactions}
+                                        primaryColorClass={theme.primary}
+                                    />
+                                </Suspense>
+                            </div>
+
+                            {/*  REACTION SPECTRUM */}
+                            <div id="reaction-spectrum">
+                                <Suspense fallback={<SectionLoader/>}>
+                                    <ReactionSpectrum
+                                        distributionReaction={data.distribution_reaction}
+                                        totalReactions={data.total_reactions}
+                                        accentColor={theme.primary}
+                                        year={selectedYear}
+                                    />
+                                </Suspense>
+                            </div>
+                        </div>
+
+                        <SectionHeader id="social-group" title="04_SOCIAL_Y_TEXTO" color="bg-red-400"/>
+                        <div className="space-y-16">
+                            {/* WORD CLOUD */}
+                            <div id="word-cloud">
+                                <section>
+                                    <Suspense fallback={<SectionLoader/>}>
+                                        <WordCloud words={data.top25_most_repeated_words} color={theme.accent}/>
+                                    </Suspense>
+                                </section>
+                            </div>
+
+                            {/* Text Stats */}
+                            <div id="text-stats">
+                                <Suspense fallback={<SectionLoader/>}>
+                                    <FirstLastMessages
+                                        firstMessage={data.first_message}
+                                        lastMessage={data.last_message}
+                                    />
+                                </Suspense>
+                            </div>
+
+                            {/* EXTREMES (Shortest/Longest) */}
+                            <div id="extremes">
+                                <Suspense fallback={<SectionLoader/>}>
+                                    <ExtremeMessages
+                                        shortestMessage={data.shortest_message}
+                                        longestMessage={data.longest_message}
+                                    />
+                                </Suspense>
+                            </div>
+
+                            {/* TOP LISTS */}
+                            <div id="top-lists">
+                                <section className="space-y-16">
+                                    <Suspense fallback={<SectionLoader/>}>
+                                        {topLists.map(section => (
+                                            <TopList
+                                                key={section.title}
+                                                title={section.title}
+                                                items={section.items}
+                                                badgeColorClass={section.badgeColorClass}
+                                            />
                                         ))}
-                                    </div>
-                                </Suspense>
-                            </section>
-                        </div>
-
-                        {/* Weekly Block Matrix */}
-                        <div id="weekly-block-matrix">
-                        <section className="mt-20">
-                            <Suspense fallback={<SectionLoader/>}>
-                                <WeeklyBlockMatrix blocks={data.blocks_analysis} year={selectedYear}/>
-                            </Suspense>
-                        </section>
-                        </div>
-
-                        {/* SEN ANALYSIS */}
-                        <div id="sen-status">
-                            <section className="bg-white neobrutal-border p-4 md:p-8 relative overflow-hidden">
-                                <div className="absolute top-0 left-0 w-full h-2 bg-red-500"></div>
-                                <div className="absolute bottom-0 left-0 w-full h-2 bg-red-500"></div>
-                                <h2 className="text-4xl font-black text-center mb-12 text-red-600 uppercase tracking-widest">
-                                    Estado del SEN
-                                </h2>
-                                <Suspense fallback={<SectionLoader/>}>
-                                    <SenAnalysisSection analysis={data.sen_analysis}/>
-                                </Suspense>
-                            </section>
-                        </div>
-
-                        {/* MONTHLY CHARTS */}
-                        <div id="monthly-charts">
-                            <section>
-                                <h2 className="text-4xl font-black mb-8 text-center bg-black text-white inline-block px-4 py-2 transform -rotate-2">
-                                    Tendencias Mensuales
-                                </h2>
-                                <Suspense fallback={<SectionLoader/>}>
-                                    <ChartSection data={data} color={theme.accent}/>
-                                </Suspense>
-                            </section>
-                        </div>
-
-                        {/* DISTRIBUTION */}
-                        <div id="distribution">
-                            <Suspense fallback={<SectionLoader/>}>
-                                <DistributionSection
-                                    distributionMessage={data.distribution_message}
-                                    totalMessages={data.total_messages}
-                                    totalReactions={data.total_reactions}
-                                    totalPositiveReactions={data.total_positive_reactions}
-                                    totalNegativeReactions={data.total_negative_reactions}
-                                    primaryColorClass={theme.primary}
-                                />
-                            </Suspense>
-                        </div>
-
-                        {/*  REACTION SPECTRUM */}
-                        <div id="reaction-spectrum">
-                            <Suspense fallback={<SectionLoader/>}>
-                                <ReactionSpectrum
-                                    distributionReaction={data.distribution_reaction}
-                                    totalReactions={data.total_reactions}
-                                    accentColor={theme.primary}
-                                    year={selectedYear}
-                                />
-                            </Suspense>
-                        </div>
-
-                        {/* WORD CLOUD */}
-                        <div id="word-cloud">
-                            <section>
-                                <Suspense fallback={<SectionLoader/>}>
-                                    <WordCloud words={data.top25_most_repeated_words} color={theme.accent}/>
-                                </Suspense>
-                            </section>
-                        </div>
-
-                        {/* Text Stats */}
-                        <div id="text-stats">
-                            <Suspense fallback={<SectionLoader/>}>
-                                <FirstLastMessages
-                                    firstMessage={data.first_message}
-                                    lastMessage={data.last_message}
-                                />
-                            </Suspense>
-                        </div>
-
-                        {/* EXTREMES (Shortest/Longest) */}
-                        <div id="extremes">
-                            <Suspense fallback={<SectionLoader/>}>
-                                <ExtremeMessages
-                                    shortestMessage={data.shortest_message}
-                                    longestMessage={data.longest_message}
-                                />
-                            </Suspense>
-                        </div>
-
-                        {/* TOP LISTS */}
-                        <div id="top-lists">
-                            <section className="space-y-16">
-                                <Suspense fallback={<SectionLoader/>}>
-                                    {topLists.map(section => (
-                                        <TopList
-                                            key={section.title}
-                                            title={section.title}
-                                            items={section.items}
-                                            badgeColorClass={section.badgeColorClass}
-                                        />
-                                    ))}
-                                </Suspense>
-                            </section>
+                                    </Suspense>
+                                </section>
+                            </div>
                         </div>
 
                         <Suspense fallback={<SectionLoader/>}>
