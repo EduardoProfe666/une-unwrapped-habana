@@ -1,4 +1,5 @@
 import datetime
+import calendar
 import json
 from core.classes import UneAnalysis, TelegramMessageWithCount, TelegramMessage, SENAnalysis, SENFailureAnalysisEvent, \
     BlockAnalysis
@@ -49,36 +50,6 @@ BLOCK_END_PATTERNS = [
 BLOCK_LIST_PATTERN = re.compile(r"bloques?:?\s*([1-6,\s]+)", re.IGNORECASE)
 
 MAX_BLOCK_DURATION_SECONDS = 24 * 60 * 60
-
-def apply_block_safety_timeout(state: dict, current_time: datetime):
-    if state["active"] and state["start"]:
-        elapsed = (current_time - state["start"]).total_seconds()
-        if elapsed >= MAX_BLOCK_DURATION_SECONDS:
-            state["accumulated"] += MAX_BLOCK_DURATION_SECONDS
-            state["active"] = False
-            state["start"] = None
-            return True
-    return False
-
-def extract_blocks_from_list(text: str) -> set[int]:
-    match = BLOCK_LIST_PATTERN.search(text)
-    if not match:
-        return set()
-    return {int(b) for b in re.findall(r"[1-6]", match.group(1))}
-
-
-def block_start_detected(block: int, text: str) -> bool:
-    for pattern in BLOCK_START_PATTERNS:
-        if re.search(pattern.format(i=block), text):
-            return True
-    return False
-
-
-def block_end_detected(block: int, text: str) -> bool:
-    for pattern in BLOCK_END_PATTERNS:
-        if re.search(pattern.format(i=block), text):
-            return True
-    return False
 
 def analyze_data(year: int):
     """
@@ -283,6 +254,51 @@ def analyze_data(year: int):
 
     # ------------------------ BLOCKS - ESTIMATED AFFECTED SECONDS -------------------- #
 
+    block_monthly_off = {
+        i: {m: 0 for m in range(1, 13)}
+        for i in range(1, BLOCK_COUNT + 1)
+    }
+
+    block_weekday_off = {
+        i: {d: 0 for d in range(7)}
+        for i in range(1, BLOCK_COUNT + 1)
+    }
+
+    days_per_month = {
+        m: calendar.monthrange(year, m)[1]
+        for m in range(1, 13)
+    }
+
+    start_date = datetime.date(year, 1, 1)
+    total_days = 366 if calendar.isleap(year) else 365
+
+    weekday_counts = Counter(
+        (start_date + datetime.timedelta(days=i)).weekday()
+        for i in range(total_days)
+    )
+
+    def __accumulate_block_off(block: int, start: datetime.datetime, end: datetime.datetime):
+        daily_chunks = __distribute_seconds_by_day(start, end)
+
+        for day_dt, seconds in daily_chunks:
+            month = day_dt.month
+            weekday = day_dt.weekday()
+
+            block_monthly_off[block][month] += seconds
+            block_weekday_off[block][weekday] += seconds
+
+    def __apply_block_safety_timeout(state: dict, current_time: datetime.datetime, block_idx: int):
+        if state["active"] and state["start"]:
+            elapsed = (current_time - state["start"]).total_seconds()
+            if elapsed >= MAX_BLOCK_DURATION_SECONDS:
+                end_time = state["start"] + datetime.timedelta(seconds=MAX_BLOCK_DURATION_SECONDS)
+                __accumulate_block_off(block_idx, state["start"], end_time)
+                state["accumulated"] += MAX_BLOCK_DURATION_SECONDS
+                state["active"] = False
+                state["start"] = None
+                return True
+        return False
+
     block_states = {
         i: {
             "active": False,
@@ -299,9 +315,9 @@ def analyze_data(year: int):
             continue
 
         text = m.text.lower()
-        t: datetime = m.date_cuba_d
+        t: datetime.datetime = m.date_cuba_d
 
-        listed_blocks = extract_blocks_from_list(text)
+        listed_blocks = __extract_blocks_from_list(text)
         is_list_message = bool(listed_blocks)
 
         if START_FAILURE_TRIGGER in text:
@@ -309,6 +325,7 @@ def analyze_data(year: int):
             for i in range(1, BLOCK_COUNT + 1):
                 state = block_states[i]
                 if state["active"]:
+                    __accumulate_block_off(i, state["start"], t)
                     state["accumulated"] += int((t - state["start"]).total_seconds())
                     state["active"] = False
                     state["start"] = None
@@ -319,12 +336,12 @@ def analyze_data(year: int):
             continue
 
         for i in range(1, BLOCK_COUNT + 1):
-            apply_block_safety_timeout(block_states[i], t)
+            __apply_block_safety_timeout(block_states[i], t, i)
 
         for i in range(1, BLOCK_COUNT + 1):
             state = block_states[i]
 
-            if not state["active"] and block_start_detected(i, text):
+            if not state["active"] and __block_start_detected(i, text):
                 state["active"] = True
                 state["start"] = t
                 continue
@@ -334,13 +351,15 @@ def analyze_data(year: int):
                 state["start"] = t
                 continue
 
-            if state["active"] and block_end_detected(i, text):
+            if state["active"] and __block_end_detected(i, text):
+                __accumulate_block_off(i, state["start"], t)
                 state["accumulated"] += int((t - state["start"]).total_seconds())
                 state["active"] = False
                 state["start"] = None
                 continue
 
             if state["active"] and is_list_message and i not in listed_blocks:
+                __accumulate_block_off(i, state["start"], t)
                 state["accumulated"] += int((t - state["start"]).total_seconds())
                 state["active"] = False
                 state["start"] = None
@@ -350,10 +369,20 @@ def analyze_data(year: int):
     for i in range(1, BLOCK_COUNT + 1):
         state = block_states[i]
         if state["active"] and state["start"] and last_date:
+            __accumulate_block_off(i, state["start"], last_date)
             state["accumulated"] += int((last_date - state["start"]).total_seconds())
 
     for i in range(1, BLOCK_COUNT + 1):
-        data.blocks_analysis[i - 1].estimated_affected_seconds = (
+        block = data.blocks_analysis[i - 1]
+        block.weekday_off_seconds = block_weekday_off[i]
+        block.weekday_off_avg_seconds = {
+            d: (
+                block_weekday_off[i][d] / weekday_counts[d]
+                if weekday_counts[d] > 0 else 0
+            )
+            for d in range(7)
+        }
+        block.estimated_affected_seconds = (
             block_states[i]["accumulated"]
         )
 
@@ -386,3 +415,38 @@ def __export_analysis_to_json(analysis: UneAnalysis):
 
 def __to_msg_count(m: TelegramMessage, count_value: int) -> TelegramMessageWithCount:
     return TelegramMessageWithCount(**asdict(m), count=count_value)
+
+def __extract_blocks_from_list(text: str) -> set[int]:
+    match = BLOCK_LIST_PATTERN.search(text)
+    if not match:
+        return set()
+    return {int(b) for b in re.findall(r"[1-6]", match.group(1))}
+
+
+def __block_start_detected(block: int, text: str) -> bool:
+    for pattern in BLOCK_START_PATTERNS:
+        if re.search(pattern.format(i=block), text):
+            return True
+    return False
+
+
+def __block_end_detected(block: int, text: str) -> bool:
+    for pattern in BLOCK_END_PATTERNS:
+        if re.search(pattern.format(i=block), text):
+            return True
+    return False
+
+def __distribute_seconds_by_day(start: datetime.datetime, end: datetime.datetime):
+    result = []
+    current = start
+
+    while current < end:
+        next_day = (current + datetime.timedelta(days=1)).replace(
+            hour=0, minute=0, second=0, microsecond=0
+        )
+        segment_end = min(next_day, end)
+        seconds = int((segment_end - current).total_seconds())
+        result.append((current, seconds))
+        current = segment_end
+
+    return result

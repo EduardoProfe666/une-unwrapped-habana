@@ -63,6 +63,8 @@ class BlockAnalysis:
     declared_affectations: int = 0
     declared_emergencies: int = 0
     estimated_affected_seconds: int = 0
+    weekday_off_seconds: Dict[int, int] = field(default_factory=dict)
+    weekday_off_avg_seconds: Dict[int, float] = field(default_factory=dict)
 
 @dataclass
 class SENFailureAnalysisEvent:

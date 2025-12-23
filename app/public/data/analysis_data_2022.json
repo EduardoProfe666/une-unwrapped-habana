@@ -1,5 +1,5 @@
 {
-    "sync_date": "2025-12-22T18:42:29.656731-05:00",
+    "sync_date": "2025-12-22T19:33:36.195420-05:00",
     "year": 2022,
     "first_message": {
         "id": 3,
@@ -807,7 +807,25 @@
             "declared_recoveries": 10,
             "declared_affectations": 14,
             "declared_emergencies": 0,
-            "estimated_affected_seconds": 2202243
+            "estimated_affected_seconds": 2202243,
+            "weekday_off_seconds": {
+                "0": 338318,
+                "1": 132225,
+                "2": 158158,
+                "3": 277065,
+                "4": 387130,
+                "5": 387618,
+                "6": 521729
+            },
+            "weekday_off_avg_seconds": {
+                "0": 6506.115384615385,
+                "1": 2542.7884615384614,
+                "2": 3041.5,
+                "3": 5328.173076923077,
+                "4": 7444.807692307692,
+                "5": 7313.547169811321,
+                "6": 10033.25
+            }
         },
         {
             "number": 2,
@@ -815,7 +833,25 @@
             "declared_recoveries": 8,
             "declared_affectations": 13,
             "declared_emergencies": 1,
-            "estimated_affected_seconds": 1128665
+            "estimated_affected_seconds": 1128665,
+            "weekday_off_seconds": {
+                "0": 107924,
+                "1": 232619,
+                "2": 117229,
+                "3": 16792,
+                "4": 234184,
+                "5": 250522,
+                "6": 169395
+            },
+            "weekday_off_avg_seconds": {
+                "0": 2075.4615384615386,
+                "1": 4473.442307692308,
+                "2": 2254.403846153846,
+                "3": 322.9230769230769,
+                "4": 4503.538461538462,
+                "5": 4726.830188679245,
+                "6": 3257.596153846154
+            }
         },
         {
             "number": 3,
@@ -823,7 +859,25 @@
             "declared_recoveries": 6,
             "declared_affectations": 14,
             "declared_emergencies": 0,
-            "estimated_affected_seconds": 1069595
+            "estimated_affected_seconds": 1069595,
+            "weekday_off_seconds": {
+                "0": 95627,
+                "1": 201828,
+                "2": 146427,
+                "3": 175159,
+                "4": 73586,
+                "5": 162095,
+                "6": 214873
+            },
+            "weekday_off_avg_seconds": {
+                "0": 1838.9807692307693,
+                "1": 3881.3076923076924,
+                "2": 2815.903846153846,
+                "3": 3368.4423076923076,
+                "4": 1415.1153846153845,
+                "5": 3058.396226415094,
+                "6": 4132.173076923077
+            }
         },
         {
             "number": 4,
@@ -831,7 +885,25 @@
             "declared_recoveries": 3,
             "declared_affectations": 15,
             "declared_emergencies": 0,
-            "estimated_affected_seconds": 1592837
+            "estimated_affected_seconds": 1592837,
+            "weekday_off_seconds": {
+                "0": 254510,
+                "1": 318766,
+                "2": 375663,
+                "3": 166547,
+                "4": 122525,
+                "5": 166628,
+                "6": 188198
+            },
+            "weekday_off_avg_seconds": {
+                "0": 4894.423076923077,
+                "1": 6130.115384615385,
+                "2": 7224.288461538462,
+                "3": 3202.826923076923,
+                "4": 2356.25,
+                "5": 3143.9245283018868,
+                "6": 3619.1923076923076
+            }
         },
         {
             "number": 5,
@@ -839,7 +911,25 @@
             "declared_recoveries": 5,
             "declared_affectations": 0,
             "declared_emergencies": 0,
-            "estimated_affected_seconds": 86400
+            "estimated_affected_seconds": 86400,
+            "weekday_off_seconds": {
+                "0": 0,
+                "1": 54578,
+                "2": 31822,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0
+            },
+            "weekday_off_avg_seconds": {
+                "0": 0.0,
+                "1": 1049.576923076923,
+                "2": 611.9615384615385,
+                "3": 0.0,
+                "4": 0.0,
+                "5": 0.0,
+                "6": 0.0
+            }
         },
         {
             "number": 6,
@@ -847,7 +937,25 @@
             "declared_recoveries": 2,
             "declared_affectations": 0,
             "declared_emergencies": 0,
-            "estimated_affected_seconds": 0
+            "estimated_affected_seconds": 0,
+            "weekday_off_seconds": {
+                "0": 0,
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0
+            },
+            "weekday_off_avg_seconds": {
+                "0": 0.0,
+                "1": 0.0,
+                "2": 0.0,
+                "3": 0.0,
+                "4": 0.0,
+                "5": 0.0,
+                "6": 0.0
+            }
         }
     ],
     "sen_analysis": {
