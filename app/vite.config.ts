@@ -28,7 +28,7 @@ export default defineConfig(({ mode }) => {
             },
             VitePWA({
                 registerType: 'autoUpdate',
-                includeAssets: ['favicon.ico', 'apple-touch-icon.webp', 'logo.webp', 'banner.webp', 'fonts/*.woff2'],
+                includeAssets: ['favicon.ico', 'images/*.webp', 'images/*.svg', 'audio/*.mp3', 'fonts/*.woff2'],
                 manifest: {
                     name: 'UNE Unwrapped',
                     short_name: 'UNE Unwrapped',

@@ -1,4 +1,4 @@
-import React, {lazy, Suspense, useEffect, useMemo, useState} from 'react';
+import React, {lazy, Suspense, useEffect, useMemo, useRef, useState} from 'react';
 import {AnimatePresence, domAnimation, LazyMotion, m, Variants} from 'framer-motion';
 import {AVAILABLE_YEARS, YEAR_THEMES} from './common/constants.ts';
 import {MessageSquare, ThumbsUp, TrendingUp} from 'lucide-react';
@@ -34,6 +34,32 @@ function App() {
     );
 
     const [powerState, setPowerState] = useState<'ON' | 'OVERLOAD' | 'OFF'>('ON');
+    const audioRef = useRef<HTMLAudioElement | null>(null);
+    useEffect(() => {
+        audioRef.current = new Audio('/audio/choco.mp3');
+        audioRef.current.volume = 0.8;
+        audioRef.current.preload = 'auto';
+
+        return () => {
+            if (audioRef.current) {
+                audioRef.current.pause();
+                audioRef.current = null;
+            }
+        };
+    }, []);
+
+    useEffect(() => {
+        const audio = audioRef.current;
+        if (!audio) return;
+
+        if (powerState === 'OFF') {
+            audio.currentTime = 0;
+            audio.play().catch(e => console.error("Error playing audio:", e));
+        } else if (powerState === 'ON') {
+            audio.pause();
+            audio.currentTime = 0;
+        }
+    }, [powerState]);
 
     const triggerBlackout = () => {
         if (powerState === 'OFF') {
@@ -181,7 +207,7 @@ function App() {
                                     <p className="mt-4 text-white/30 animate-pulse">Toca en cualquier parte para arrancar la patana</p>
                                 </div>
 
-                                <div className="absolute inset-0 bg-[url('noise.svg')] opacity-20 mix-blend-overlay"></div>
+                                <div className="absolute inset-0 bg-[url('/images/noise.svg')] opacity-20 mix-blend-overlay"></div>
                             </m.div>
 
                             <m.div
@@ -234,7 +260,7 @@ function App() {
                         >
                             <div className="relative item">
                                 <m.img
-                                    src="/logo.webp"
+                                    src="/images/logo.webp"
                                     alt="Logo"
                                     width="360"
                                     height="360"

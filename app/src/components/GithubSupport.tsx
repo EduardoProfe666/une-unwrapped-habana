@@ -20,7 +20,7 @@ const GithubSupport: React.FC<{ accentColor: string }> = ({ accentColor }) => {
             <div className="bg-white border-4 border-black p-8 md:p-12 shadow-[16px_16px_0px_0px_black] max-w-4xl w-full relative overflow-hidden group/card">
 
                 <img
-                    src="/github-mark.svg"
+                    src="/images/github-mark.svg"
                     alt=""
                     className="absolute -right-10 -bottom-10 w-64 h-64 opacity-[0.03] -rotate-12 pointer-events-none group-hover/card:rotate-0 transition-transform duration-700"
                 />
@@ -31,7 +31,7 @@ const GithubSupport: React.FC<{ accentColor: string }> = ({ accentColor }) => {
                         <div className={`absolute inset-0 ${accentColor} blur-2xl opacity-20 animate-pulse`} />
                         <div className="relative bg-black p-6 border-4 border-black shadow-[4px_4px_0px_0px_#ccc]">
                             <img
-                                src="/github-mark.svg"
+                                src="/images/github-mark.svg"
                                 alt="GitHub Logo"
                                 className="w-16 h-16 invert"
                             />
