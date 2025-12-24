@@ -41,11 +41,11 @@ function App() {
             return;
         }
         setPowerState('OVERLOAD');
-        if (navigator.vibrate) navigator.vibrate([100, 50, 100, 50, 500]);
+        if (navigator.vibrate) navigator.vibrate([100, 50, 100, 50, 200, 100, 200, 100, 300, 100, 600]);
 
         setTimeout(() => {
             setPowerState('OFF');
-        }, 1500);
+        }, 2000);
     };
 
     const fastContainerVariants = useMemo<Variants>(() => ({
