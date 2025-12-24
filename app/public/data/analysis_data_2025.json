@@ -1,5 +1,5 @@
 {
-    "sync_date": "2025-12-23T18:42:15.091620-05:00",
+    "sync_date": "2025-12-23T20:59:34.267212-05:00",
     "year": 2025,
     "first_message": {
         "id": 32200,
@@ -17,19 +17,19 @@
         "text": "✅📣Restablecido el servicio en el Municipio de la Lisa, en la dirección:37 y 264-Arroyo Arenas📣✅"
     },
     "last_message": {
-        "id": 49983,
-        "link": "https://t.me/EmpresaElectricaDeLaHabana/49983",
-        "date_utc": "2025-12-23 23:16:45",
-        "date_utc_d": "2025-12-23T23:16:45",
-        "date_cuba": "2025-12-23 18:16:45",
-        "date_cuba_d": "2025-12-23T18:16:45",
+        "id": 49992,
+        "link": "https://t.me/EmpresaElectricaDeLaHabana/49992",
+        "date_utc": "2025-12-24 01:52:48",
+        "date_utc_d": "2025-12-24T01:52:48",
+        "date_cuba": "2025-12-23 20:52:48",
+        "date_cuba_d": "2025-12-23T20:52:48",
         "reactions": {
-            "👍": 14,
-            "👎": 300
+            "👍": 33,
+            "👎": 68
         },
-        "views": 6058,
-        "replies": 78,
-        "text": "⚡️Actualización de afectaciones por déficit en la capital.                                                                                            \nEn estos momentos se afectan 435 MW distribuidos en varios circuitos de los siguientes bloques:\n\n✅Bloque 1   03:50 Hrs\n✅Bloque 2   03:20 Hrs\n✅Bloque 3   03:15 Hrs\n✅Bloque 4   03:00 Hrs\n✅Bloque 5   00:45 Hrs\n✅Bloque 6   00:15 Hrs\n\n⚠️Están siendo afectados además CIRCUITOS DE EMERGENCIA (02:30) Horas, debido a la baja disponibilidad de generación. ⚠️\n\nEquipo de Comunicación \nEmpresa Eléctrica de La Habana⚡️"
+        "views": 2725,
+        "replies": 16,
+        "text": "✅ Comienza el restablecimiento del bloque 2 gradualmente  ✅"
     },
     "shortest_message": {
         "id": 33007,
@@ -63,18 +63,18 @@
         "text": "📣🚧Averías existentes hasta el momento\n\n🚨Averías Primarias\n📌Municipio: Habana del Este\n👉Dirección: Colina Villa Real, Villa Bacuranao, Celimar, Pepito Tey, Micro X (Puente Partido)\n\n📌Municipio: Cotorro\n👉Dirección: Cruz Verde, Amor, Paraíso, San Pedro, Vedado del Cotorro, La Torre (Puente Partido)\n\n➡️Averías Secundarias por transformador dañado:\n\n📌Municipio: 10 de octubre\n👉Dirección: San José e/ Luz y Altarriba. Lawton\n👉Dirección: Encarnación e/ Flores y San Benigno. Santos Suárez\n\n📌Municipio: Boyeros\n👉Dirección: 7 e/ 4 y 6. Santiago de las Vegas\n👉Dirección: 111 y 24. Sierra Maestra\n\n📌Municipio: Marianao\n👉Dirección: 45 e/ 114 y 116. Los Quemados\n\n📌Municipio: Plaza\n👉Dirección: Protestante e/ 2da y San Antonio. Dionisia\n👉Dirección: 13 e/ 16 y 18. Vedado\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Lisa\n👉Dirección:  39 e/ 268 y 270. Arroyo Arenas\n \n📌Municipio: Habana del Este\n👉Dirección:  Zona 1 Edif 34 (Técnico Extranjero). Alamar\n👉Dirección:  Zona 21 Edif 709, 710, 711, 712. Alamar                                                                                                                                                                                                                                                                                                                                                                                                                                                            👉Dirección:  Zona 11. Alamar\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Arroyo Naranjo\n👉Dirección:  Alday e/ Camuji y Cuba. Vieja Linda\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Guanabacoa\n👉Dirección:  Finca La Convita. Mi Gloria\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: San Miguel del Padrón\n👉Dirección:  Finca El Mamey. Revoledo",
         "count": 3460
     },
-    "total_views": 589160594,
-    "total_messages": 17095,
+    "total_views": 589480702,
+    "total_messages": 17104,
     "total_erased_messages": 691,
-    "total_replies": 718386,
-    "total_reactions": 2290721,
-    "total_positive_reactions": 420673,
-    "total_negative_reactions": 1870048,
+    "total_replies": 719062,
+    "total_reactions": 2295102,
+    "total_positive_reactions": 421103,
+    "total_negative_reactions": 1873999,
     "avg_views": 34464,
     "avg_replies": 42,
     "avg_reactions": 134,
     "avg_positive_reactions": 25,
-    "avg_negative_reactions": 109,
+    "avg_negative_reactions": 110,
     "avg_text_length": 269,
     "monthly_views": {
         "1": 10934809,
@@ -88,7 +88,7 @@
         "9": 78915214,
         "10": 75118535,
         "11": 66428237,
-        "12": 59204630
+        "12": 59524738
     },
     "monthly_replies": {
         "1": 5679,
@@ -102,7 +102,7 @@
         "9": 123282,
         "10": 103746,
         "11": 65201,
-        "12": 83225
+        "12": 83901
     },
     "monthly_reactions": {
         "1": 14996,
@@ -116,7 +116,7 @@
         "9": 345058,
         "10": 362109,
         "11": 289514,
-        "12": 401235
+        "12": 405616
     },
     "monthly_messages": {
         "1": 810,
@@ -130,7 +130,7 @@
         "9": 1912,
         "10": 2029,
         "11": 1953,
-        "12": 1714
+        "12": 1723
     },
     "daily_messages": {
         "1": 27,
@@ -489,7 +489,7 @@
         "354": 86,
         "355": 55,
         "356": 98,
-        "357": 50,
+        "357": 59,
         "358": 0,
         "359": 0,
         "360": 0,
@@ -501,15 +501,15 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 11326,
+        "1": 11329,
         "2": 732,
         "3": 1697,
         "4": 342,
-        "5": 2998
+        "5": 3004
     },
     "distribution_reaction": {
-        "👎": 1870048,
-        "👍": 420673
+        "👎": 1873999,
+        "👍": 421103
     },
     "top3_most_viewed_messages": [
         {
@@ -714,23 +714,23 @@
     "top25_most_repeated_words": {
         "municipio": 10649,
         "consumidores": 6670,
-        "bloque": 5899,
+        "bloque": 5919,
         "servicio": 5722,
-        "habana": 5589,
-        "afectados": 5223,
+        "habana": 5592,
+        "afectados": 5226,
         "dirección": 4421,
         "calle": 3232,
-        "mw": 3217,
-        "déficit": 2990,
+        "mw": 3220,
+        "déficit": 2994,
         "quejas": 2926,
         "boyeros": 2557,
         "clientes": 2434,
-        "generación": 2405,
+        "generación": 2409,
         "playa": 2378,
         "pendientes": 2311,
-        "sistema": 2247,
+        "sistema": 2248,
         "arroyo": 2246,
-        "emergencia": 2221,
+        "emergencia": 2224,
         "centro": 2202,
         "miguel": 2197,
         "naranjo": 2197,
@@ -741,14 +741,14 @@
     "blocks_analysis": [
         {
             "number": 1,
-            "mentions": 2313,
-            "declared_recoveries": 227,
-            "declared_affectations": 825,
-            "declared_emergencies": 291,
-            "estimated_affected_seconds": 6807489,
+            "mentions": 2317,
+            "declared_recoveries": 228,
+            "declared_affectations": 829,
+            "declared_emergencies": 293,
+            "estimated_affected_seconds": 6809822,
             "weekday_off_seconds": {
                 "0": 962996,
-                "1": 965330,
+                "1": 967663,
                 "2": 1003680,
                 "3": 936324,
                 "4": 776013,
@@ -757,7 +757,7 @@
             },
             "weekday_off_avg_seconds": {
                 "0": 18519.153846153848,
-                "1": 18564.03846153846,
+                "1": 18608.903846153848,
                 "2": 18937.35849056604,
                 "3": 18006.23076923077,
                 "4": 14923.326923076924,
@@ -767,10 +767,10 @@
         },
         {
             "number": 2,
-            "mentions": 2593,
-            "declared_recoveries": 160,
-            "declared_affectations": 792,
-            "declared_emergencies": 270,
+            "mentions": 2597,
+            "declared_recoveries": 161,
+            "declared_affectations": 796,
+            "declared_emergencies": 273,
             "estimated_affected_seconds": 5266932,
             "weekday_off_seconds": {
                 "0": 704646,
@@ -793,10 +793,10 @@
         },
         {
             "number": 3,
-            "mentions": 2112,
+            "mentions": 2115,
             "declared_recoveries": 164,
-            "declared_affectations": 770,
-            "declared_emergencies": 260,
+            "declared_affectations": 773,
+            "declared_emergencies": 263,
             "estimated_affected_seconds": 5428018,
             "weekday_off_seconds": {
                 "0": 601840,
@@ -819,10 +819,10 @@
         },
         {
             "number": 4,
-            "mentions": 2113,
+            "mentions": 2116,
             "declared_recoveries": 164,
-            "declared_affectations": 821,
-            "declared_emergencies": 292,
+            "declared_affectations": 824,
+            "declared_emergencies": 295,
             "estimated_affected_seconds": 5727677,
             "weekday_off_seconds": {
                 "0": 782412,
@@ -845,14 +845,14 @@
         },
         {
             "number": 5,
-            "mentions": 1928,
+            "mentions": 1931,
             "declared_recoveries": 127,
-            "declared_affectations": 774,
-            "declared_emergencies": 261,
-            "estimated_affected_seconds": 5334085,
+            "declared_affectations": 777,
+            "declared_emergencies": 264,
+            "estimated_affected_seconds": 5341115,
             "weekday_off_seconds": {
                 "0": 736703,
-                "1": 835007,
+                "1": 842037,
                 "2": 774784,
                 "3": 759456,
                 "4": 755073,
@@ -861,7 +861,7 @@
             },
             "weekday_off_avg_seconds": {
                 "0": 14167.365384615385,
-                "1": 16057.826923076924,
+                "1": 16193.01923076923,
                 "2": 14618.566037735849,
                 "3": 14604.923076923076,
                 "4": 14520.634615384615,
@@ -871,14 +871,14 @@
         },
         {
             "number": 6,
-            "mentions": 2117,
+            "mentions": 2122,
             "declared_recoveries": 135,
-            "declared_affectations": 731,
-            "declared_emergencies": 278,
-            "estimated_affected_seconds": 4308343,
+            "declared_affectations": 734,
+            "declared_emergencies": 281,
+            "estimated_affected_seconds": 4315373,
             "weekday_off_seconds": {
                 "0": 671884,
-                "1": 813416,
+                "1": 820446,
                 "2": 550694,
                 "3": 568257,
                 "4": 609175,
@@ -887,7 +887,7 @@
             },
             "weekday_off_avg_seconds": {
                 "0": 12920.846153846154,
-                "1": 15642.615384615385,
+                "1": 15777.807692307691,
                 "2": 10390.452830188678,
                 "3": 10928.01923076923,
                 "4": 11714.903846153846,
@@ -897,7 +897,7 @@
         }
     ],
     "sen_analysis": {
-        "mentions": 1141,
+        "mentions": 1142,
         "total_failure_events": 2,
         "failure_events": [
             {
