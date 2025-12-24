@@ -1,5 +1,5 @@
 import React, {lazy, Suspense, useEffect, useMemo, useState} from 'react';
-import {domAnimation, LazyMotion, m, Variants} from 'framer-motion';
+import {AnimatePresence, domAnimation, LazyMotion, m, Variants} from 'framer-motion';
 import {AVAILABLE_YEARS, YEAR_THEMES} from './common/constants.ts';
 import {MessageSquare, ThumbsUp, TrendingUp} from 'lucide-react';
 import SectionLoader from "@/src/components/SectionLoader.tsx";
@@ -32,6 +32,21 @@ function App() {
         () => YEAR_THEMES[selectedYear] ?? YEAR_THEMES[2025],
         [selectedYear]
     );
+
+    const [powerState, setPowerState] = useState<'ON' | 'OVERLOAD' | 'OFF'>('ON');
+
+    const triggerBlackout = () => {
+        if (powerState === 'OFF') {
+            setPowerState('ON');
+            return;
+        }
+        setPowerState('OVERLOAD');
+        if (navigator.vibrate) navigator.vibrate([100, 50, 100, 50, 500]);
+
+        setTimeout(() => {
+            setPowerState('OFF');
+        }, 1500);
+    };
 
     const fastContainerVariants = useMemo<Variants>(() => ({
         hidden: {},
@@ -138,6 +153,49 @@ function App() {
                     SYNC_OK: {new Date(data.sync_date).toLocaleString('es-CU')}
                 </div>
 
+                {/* Blackout Failure Easter Egg */}
+                <AnimatePresence>
+                    {powerState === 'OVERLOAD' && (
+                        <m.div
+                            initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
+                            className="fixed inset-0 z-[90] bg-red-500/20 pointer-events-none mix-blend-hard-light"
+                        >
+                            <div className="w-full h-full bg-[repeating-linear-gradient(45deg,transparent,transparent_10px,#000_10px,#000_12px)] opacity-20 animate-[pulse_0.2s_infinite]" />
+                        </m.div>
+                    )}
+
+                    {powerState === 'OFF' && (
+                        <>
+                            <m.div
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                exit={{ opacity: 0, transition: { duration: 2 } }}
+                                transition={{ duration: 0.1 }}
+                                className="fixed inset-0 z-[80] bg-black cursor-pointer"
+                                onClick={() => triggerBlackout()}
+                            >
+                                <div className="absolute bottom-10 left-10 font-mono text-xs text-gray-600 opacity-50">
+                                    <p>{'>'} COLAPSO_SEN_NO.666</p>
+                                    <p>{'>'} DISPARO_DAF</p>
+                                    <p>{'>'} TRABAJANDO_EN_BASE_A_ELLO... [FALLO]</p>
+                                    <p className="mt-4 text-white/30 animate-pulse">Toca en cualquier parte para arrancar la patana</p>
+                                </div>
+
+                                <div className="absolute inset-0 bg-[url('noise.svg')] opacity-20 mix-blend-overlay"></div>
+                            </m.div>
+
+                            <m.div
+                                className="fixed top-0 left-0 w-[400px] h-[400px] pointer-events-none z-[90]"
+                                animate={{ opacity: [0.2, 0.4, 0.1, 0.3] }}
+                                transition={{ duration: 4, repeat: Infinity, repeatType: "mirror" }}
+                                style={{
+                                    background: 'radial-gradient(circle at 100px 100px, rgba(255,255,255,0.15) 0%, transparent 60%)'
+                                }}
+                            />
+                        </>
+                    )}
+                </AnimatePresence>
+
                 {/* Scroll to Top */}
                 <m.button
                     initial={{opacity: 0, x: 20}}
@@ -163,16 +221,75 @@ function App() {
                              backgroundImage: 'radial-gradient(#000 2px, transparent 2px)',
                              backgroundSize: '30px 30px'
                          }}/>
-                    <div className="absolute top-8 left-8 flex items-center gap-4 group">
-                        <div className="relative">
-                            <img src="/logo.webp" alt="Logo" width="360" height="360"
-                                 className="h-14 w-14 p-1 bg-white border-4 border-black shadow-[4px_4px_0px_0px_black] group-hover:shadow-none group-hover:translate-x-1 group-hover:translate-y-1 transition-all"/>
-                        </div>
+                    <div className="absolute top-8 left-8 flex items-center gap-4 group z-[100]">
+                        <m.button
+                            onClick={triggerBlackout}
+                            animate={powerState === 'OVERLOAD' ? {
+                                x: [0, -5, 5, -5, 5, 0],
+                                rotate: [0, -5, 5, -10, 10, 0],
+                                scale: [1, 1.1, 0.9, 1.2, 1],
+                                transition: { duration: 0.3, repeat: Infinity }
+                            } : {}}
+                            className="relative cursor-pointer"
+                        >
+                            <div className="relative item">
+                                <m.img
+                                    src="/logo.webp"
+                                    alt="Logo"
+                                    width="360"
+                                    height="360"
+                                    className={`h-14 w-14 p-1 border-4 transition-all duration-300 relative z-20
+                                    ${powerState === 'ON' ? 'bg-white border-black shadow-[4px_4px_0px_0px_black] group-hover:shadow-none group-hover:translate-x-1 group-hover:translate-y-1' : ''}
+                                    ${powerState === 'OVERLOAD' ? 'bg-red-500 border-black invert sepia' : ''}
+                                    ${powerState === 'OFF' ? 'bg-black border-white/50 grayscale opacity-80' : ''}
+                                    `}
+                                    animate={powerState === 'OFF' ? {
+                                        opacity: [0.4, 1, 0.5, 0.8, 0.2, 1],
+                                        filter: [
+                                            'drop-shadow(0 0 0px rgba(255,255,255,0))',
+                                            'drop-shadow(0 0 15px rgba(255,255,255,0.6))',
+                                            'drop-shadow(0 0 5px rgba(255,255,255,0.2))'
+                                        ]
+                                    } : {}}
+                                    transition={powerState === 'OFF' ? {
+                                        duration: 3,
+                                        repeat: Infinity,
+                                        repeatType: "reverse",
+                                        ease: "easeInOut",
+                                        times: [0, 0.1, 0.2, 0.4, 0.8, 1]
+                                    } : {}}
+                                />
+
+                                {powerState === 'OVERLOAD' && (
+                                    <m.div
+                                        initial={{ scale: 1 }} animate={{ scale: 2, opacity: 0 }}
+                                        transition={{ duration: 0.5, repeat: Infinity }}
+                                        className="absolute inset-0 bg-yellow-400 -z-10 rounded-full"
+                                    />
+                                )}
+                            </div>
+                        </m.button>
+
                         <div className="flex flex-col">
-                            <span
-                                className="font-black text-2xl leading-none tracking-tighter italic">UNE_UNWRAPPED</span>
-                            <span
-                                className="text-[10px] font-bold bg-black text-white px-1 w-fit mt-1">HABANA_HUB</span>
+                            <span className={`font-black text-2xl leading-none tracking-tighter italic transition-all duration-300
+                                ${powerState === 'ON' ? 'text-black' : ''}
+                                ${powerState === 'OVERLOAD' ? 'text-red-600 animate-pulse scale-110' : ''}
+                                ${powerState === 'OFF' ? 'text-white/20 blur-[1px]' : ''}
+                            `}>
+                                {powerState === 'ON' && "UNE_UNWRAPPED"}
+                                {powerState === 'OVERLOAD' && "ERROR_CRÍTICO"}
+                                {powerState === 'OFF' && "APAGÓN"}
+                            </span>
+
+                            <span className={`text-[10px] font-bold px-1 w-fit mt-1 transition-all
+                                ${powerState === 'ON' ? 'bg-black text-white' : ''}
+                                ${powerState === 'OVERLOAD' ? 'bg-red-600 text-yellow-300 animate-bounce' : ''}
+                                ${powerState === 'OFF' ? 'bg-transparent text-white/10 border border-white/10' : ''}
+                            `}>
+                                {powerState === 'ON' && "HABANA_HUB"}
+                                {powerState === 'OVERLOAD' && "BAJÓN_VOLTAJE"}
+                                {powerState === 'OFF' && "OFFLINE"}
+                            </span>
                         </div>
                     </div>
 
