@@ -125,7 +125,7 @@ const NavigationHub: React.FC = () => {
                             animate={{opacity: 1}}
                             exit={{opacity: 0}}
                             onClick={() => setIsOpen(false)}
-                            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50"
+                            className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[100]"
                         />
 
                         <m.div
@@ -133,7 +133,7 @@ const NavigationHub: React.FC = () => {
                             animate={{x: 0, opacity: 1}}
                             exit={{x: '-100%', opacity: 0}}
                             transition={{type: "spring", damping: 25, stiffness: 200}}
-                            className="fixed top-0 left-0 h-full w-full md:w-[480px] bg-white border-r-4 border-black z-[60] overflow-y-auto shadow-[20px_0px_0px_0px_rgba(0,0,0,0.2)]"
+                            className="fixed top-0 left-0 h-full w-full md:w-[480px] bg-white border-r-4 border-black z-[101] overflow-y-auto shadow-[20px_0px_0px_0px_rgba(0,0,0,0.2)]"
                         >
                             <div
                                 className="sticky top-0 bg-black text-white p-6 flex justify-between items-center border-b-4 border-black z-10">

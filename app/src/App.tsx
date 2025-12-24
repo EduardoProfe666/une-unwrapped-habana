@@ -221,7 +221,7 @@ function App() {
                              backgroundImage: 'radial-gradient(#000 2px, transparent 2px)',
                              backgroundSize: '30px 30px'
                          }}/>
-                    <div className="absolute top-8 left-8 flex items-center gap-4 group z-[100]">
+                    <div className="absolute top-8 left-8 flex items-center gap-4 group z-[95]">
                         <m.button
                             onClick={triggerBlackout}
                             animate={powerState === 'OVERLOAD' ? {
