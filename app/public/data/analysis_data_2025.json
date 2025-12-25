@@ -1,5 +1,5 @@
 {
-    "sync_date": "2025-12-25T04:28:40.643556-05:00",
+    "sync_date": "2025-12-25T04:47:06.442635-05:00",
     "year": 2025,
     "first_message": {
         "id": 32200,
@@ -27,7 +27,7 @@
             "👍": 5,
             "👎": 35
         },
-        "views": 4763,
+        "views": 4941,
         "replies": 0,
         "text": "🚨‼️Consumidores del municipio Playa por **TRABAJOS OPERATIVOS** se afecta el servicio eléctrico en el siguiente cuadrante: Reparto Atabey, Granma, Calle 200,202 hasta 184 Siboney y Reparto Flores Al concluir quedará restablecido el servicio cuánto antes. Ofrecemos disculpas por las molestias ocasionadas. ‼️🚨"
     },
@@ -63,14 +63,14 @@
         "text": "📣🚧Averías existentes hasta el momento\n\n🚨Averías Primarias\n📌Municipio: Habana del Este\n👉Dirección: Colina Villa Real, Villa Bacuranao, Celimar, Pepito Tey, Micro X (Puente Partido)\n\n📌Municipio: Cotorro\n👉Dirección: Cruz Verde, Amor, Paraíso, San Pedro, Vedado del Cotorro, La Torre (Puente Partido)\n\n➡️Averías Secundarias por transformador dañado:\n\n📌Municipio: 10 de octubre\n👉Dirección: San José e/ Luz y Altarriba. Lawton\n👉Dirección: Encarnación e/ Flores y San Benigno. Santos Suárez\n\n📌Municipio: Boyeros\n👉Dirección: 7 e/ 4 y 6. Santiago de las Vegas\n👉Dirección: 111 y 24. Sierra Maestra\n\n📌Municipio: Marianao\n👉Dirección: 45 e/ 114 y 116. Los Quemados\n\n📌Municipio: Plaza\n👉Dirección: Protestante e/ 2da y San Antonio. Dionisia\n👉Dirección: 13 e/ 16 y 18. Vedado\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Lisa\n👉Dirección:  39 e/ 268 y 270. Arroyo Arenas\n \n📌Municipio: Habana del Este\n👉Dirección:  Zona 1 Edif 34 (Técnico Extranjero). Alamar\n👉Dirección:  Zona 21 Edif 709, 710, 711, 712. Alamar                                                                                                                                                                                                                                                                                                                                                                                                                                                            👉Dirección:  Zona 11. Alamar\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Arroyo Naranjo\n👉Dirección:  Alday e/ Camuji y Cuba. Vieja Linda\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Guanabacoa\n👉Dirección:  Finca La Convita. Mi Gloria\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: San Miguel del Padrón\n👉Dirección:  Finca El Mamey. Revoledo",
         "count": 3460
     },
-    "total_views": 592130329,
-    "total_messages": 17201,
+    "total_views": 592132937,
+    "total_messages": 17202,
     "total_erased_messages": 700,
     "total_replies": 723532,
-    "total_reactions": 2322785,
-    "total_positive_reactions": 423866,
+    "total_reactions": 2322787,
+    "total_positive_reactions": 423868,
     "total_negative_reactions": 1898919,
-    "avg_views": 34424,
+    "avg_views": 34422,
     "avg_replies": 42,
     "avg_reactions": 135,
     "avg_positive_reactions": 25,
@@ -88,7 +88,7 @@
         "9": 78915214,
         "10": 75118535,
         "11": 66428237,
-        "12": 62174365
+        "12": 62176973
     },
     "monthly_replies": {
         "1": 5679,
@@ -116,7 +116,7 @@
         "9": 345058,
         "10": 362109,
         "11": 289514,
-        "12": 433299
+        "12": 433301
     },
     "monthly_messages": {
         "1": 810,
@@ -130,7 +130,7 @@
         "9": 1912,
         "10": 2029,
         "11": 1953,
-        "12": 1820
+        "12": 1821
     },
     "daily_messages": {
         "1": 27,
@@ -491,7 +491,7 @@
         "356": 98,
         "357": 70,
         "358": 84,
-        "359": 2,
+        "359": 3,
         "360": 0,
         "361": 0,
         "362": 0,
@@ -501,7 +501,7 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 11354,
+        "1": 11355,
         "2": 740,
         "3": 1698,
         "4": 343,
@@ -509,7 +509,7 @@
     },
     "distribution_reaction": {
         "👎": 1898919,
-        "👍": 423866
+        "👍": 423868
     },
     "top3_most_viewed_messages": [
         {
@@ -875,12 +875,12 @@
             "declared_recoveries": 135,
             "declared_affectations": 754,
             "declared_emergencies": 289,
-            "estimated_affected_seconds": 4356923,
+            "estimated_affected_seconds": 4364378,
             "weekday_off_seconds": {
                 "0": 671884,
                 "1": 820446,
                 "2": 582937,
-                "3": 577564,
+                "3": 585019,
                 "4": 609175,
                 "5": 678847,
                 "6": 416070
@@ -889,7 +889,7 @@
                 "0": 12920.846153846154,
                 "1": 15777.807692307691,
                 "2": 10998.811320754718,
-                "3": 11107.0,
+                "3": 11250.365384615385,
                 "4": 11714.903846153846,
                 "5": 13054.75,
                 "6": 8001.346153846154
