@@ -1,5 +1,5 @@
 {
-    "sync_date": "2025-12-26T22:37:01.418467-05:00",
+    "sync_date": "2025-12-26T23:36:34.161946-05:00",
     "year": 2025,
     "first_message": {
         "id": 32200,
@@ -24,11 +24,11 @@
         "date_cuba": "2025-12-26 21:02:20",
         "date_cuba_d": "2025-12-26T21:02:20",
         "reactions": {
-            "👍": 357,
-            "👎": 37
+            "👍": 396,
+            "👎": 45
         },
-        "views": 8278,
-        "replies": 28,
+        "views": 10433,
+        "replies": 31,
         "text": "✅ Cerrado el déficit de la ciudad . ✅"
     },
     "shortest_message": {
@@ -63,14 +63,14 @@
         "text": "📣🚧Averías existentes hasta el momento\n\n🚨Averías Primarias\n📌Municipio: Habana del Este\n👉Dirección: Colina Villa Real, Villa Bacuranao, Celimar, Pepito Tey, Micro X (Puente Partido)\n\n📌Municipio: Cotorro\n👉Dirección: Cruz Verde, Amor, Paraíso, San Pedro, Vedado del Cotorro, La Torre (Puente Partido)\n\n➡️Averías Secundarias por transformador dañado:\n\n📌Municipio: 10 de octubre\n👉Dirección: San José e/ Luz y Altarriba. Lawton\n👉Dirección: Encarnación e/ Flores y San Benigno. Santos Suárez\n\n📌Municipio: Boyeros\n👉Dirección: 7 e/ 4 y 6. Santiago de las Vegas\n👉Dirección: 111 y 24. Sierra Maestra\n\n📌Municipio: Marianao\n👉Dirección: 45 e/ 114 y 116. Los Quemados\n\n📌Municipio: Plaza\n👉Dirección: Protestante e/ 2da y San Antonio. Dionisia\n👉Dirección: 13 e/ 16 y 18. Vedado\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Lisa\n👉Dirección:  39 e/ 268 y 270. Arroyo Arenas\n \n📌Municipio: Habana del Este\n👉Dirección:  Zona 1 Edif 34 (Técnico Extranjero). Alamar\n👉Dirección:  Zona 21 Edif 709, 710, 711, 712. Alamar                                                                                                                                                                                                                                                                                                                                                                                                                                                            👉Dirección:  Zona 11. Alamar\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Arroyo Naranjo\n👉Dirección:  Alday e/ Camuji y Cuba. Vieja Linda\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Guanabacoa\n👉Dirección:  Finca La Convita. Mi Gloria\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: San Miguel del Padrón\n👉Dirección:  Finca El Mamey. Revoledo",
         "count": 3460
     },
-    "total_views": 596105647,
-    "total_messages": 17350,
+    "total_views": 596135555,
+    "total_messages": 17351,
     "total_erased_messages": 704,
-    "total_replies": 729408,
-    "total_reactions": 2359532,
-    "total_positive_reactions": 428239,
-    "total_negative_reactions": 1931293,
-    "avg_views": 34358,
+    "total_replies": 729420,
+    "total_reactions": 2359773,
+    "total_positive_reactions": 428399,
+    "total_negative_reactions": 1931374,
+    "avg_views": 34357,
     "avg_replies": 42,
     "avg_reactions": 136,
     "avg_positive_reactions": 25,
@@ -88,7 +88,7 @@
         "9": 78915214,
         "10": 75118535,
         "11": 66428237,
-        "12": 66149683
+        "12": 66179591
     },
     "monthly_replies": {
         "1": 5679,
@@ -102,7 +102,7 @@
         "9": 123282,
         "10": 103746,
         "11": 65201,
-        "12": 94247
+        "12": 94259
     },
     "monthly_reactions": {
         "1": 14996,
@@ -116,7 +116,7 @@
         "9": 345058,
         "10": 362109,
         "11": 289514,
-        "12": 470046
+        "12": 470287
     },
     "monthly_messages": {
         "1": 810,
@@ -130,7 +130,7 @@
         "9": 1912,
         "10": 2029,
         "11": 1953,
-        "12": 1969
+        "12": 1970
     },
     "daily_messages": {
         "1": 27,
@@ -492,7 +492,7 @@
         "357": 70,
         "358": 84,
         "359": 59,
-        "360": 92,
+        "360": 93,
         "361": 0,
         "362": 0,
         "363": 0,
@@ -501,15 +501,15 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 11408,
+        "1": 11409,
         "2": 745,
         "3": 1700,
         "4": 345,
         "5": 3152
     },
     "distribution_reaction": {
-        "👎": 1931293,
-        "👍": 428239
+        "👎": 1931374,
+        "👍": 428399
     },
     "top3_most_viewed_messages": [
         {
@@ -823,13 +823,13 @@
             "declared_recoveries": 167,
             "declared_affectations": 878,
             "declared_emergencies": 317,
-            "estimated_affected_seconds": 5817309,
+            "estimated_affected_seconds": 5820926,
             "weekday_off_seconds": {
                 "0": 782412,
                 "1": 788518,
                 "2": 999808,
                 "3": 577970,
-                "4": 840793,
+                "4": 844410,
                 "5": 1068069,
                 "6": 759739
             },
@@ -838,7 +838,7 @@
                 "1": 15163.807692307691,
                 "2": 18864.30188679245,
                 "3": 11114.807692307691,
-                "4": 16169.096153846154,
+                "4": 16238.653846153846,
                 "5": 20539.78846153846,
                 "6": 14610.365384615385
             }
@@ -849,13 +849,13 @@
             "declared_recoveries": 129,
             "declared_affectations": 832,
             "declared_emergencies": 286,
-            "estimated_affected_seconds": 5464573,
+            "estimated_affected_seconds": 5468190,
             "weekday_off_seconds": {
                 "0": 736703,
                 "1": 842037,
                 "2": 798054,
                 "3": 805914,
-                "4": 808803,
+                "4": 812420,
                 "5": 876459,
                 "6": 596603
             },
@@ -864,7 +864,7 @@
                 "1": 16193.01923076923,
                 "2": 15057.622641509433,
                 "3": 15498.346153846154,
-                "4": 15553.903846153846,
+                "4": 15623.461538461539,
                 "5": 16854.98076923077,
                 "6": 11473.134615384615
             }
