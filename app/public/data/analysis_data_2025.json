@@ -1,5 +1,5 @@
 {
-    "sync_date": "2025-12-27T03:32:29.341871-05:00",
+    "sync_date": "2025-12-27T04:25:29.042225-05:00",
     "year": 2025,
     "first_message": {
         "id": 32200,
@@ -25,9 +25,9 @@
         "date_cuba_d": "2025-12-27T02:30:49",
         "reactions": {
             "👍": 2,
-            "👎": 5
+            "👎": 8
         },
-        "views": 737,
+        "views": 1198,
         "replies": 0,
         "text": "🚨🚧Consumidores del municipio Playa se detectó un transformador dañado en 10 e/ 1ra y 3ra , Miramar.🚨🚧"
     },
@@ -63,14 +63,14 @@
         "text": "📣🚧Averías existentes hasta el momento\n\n🚨Averías Primarias\n📌Municipio: Habana del Este\n👉Dirección: Colina Villa Real, Villa Bacuranao, Celimar, Pepito Tey, Micro X (Puente Partido)\n\n📌Municipio: Cotorro\n👉Dirección: Cruz Verde, Amor, Paraíso, San Pedro, Vedado del Cotorro, La Torre (Puente Partido)\n\n➡️Averías Secundarias por transformador dañado:\n\n📌Municipio: 10 de octubre\n👉Dirección: San José e/ Luz y Altarriba. Lawton\n👉Dirección: Encarnación e/ Flores y San Benigno. Santos Suárez\n\n📌Municipio: Boyeros\n👉Dirección: 7 e/ 4 y 6. Santiago de las Vegas\n👉Dirección: 111 y 24. Sierra Maestra\n\n📌Municipio: Marianao\n👉Dirección: 45 e/ 114 y 116. Los Quemados\n\n📌Municipio: Plaza\n👉Dirección: Protestante e/ 2da y San Antonio. Dionisia\n👉Dirección: 13 e/ 16 y 18. Vedado\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Lisa\n👉Dirección:  39 e/ 268 y 270. Arroyo Arenas\n \n📌Municipio: Habana del Este\n👉Dirección:  Zona 1 Edif 34 (Técnico Extranjero). Alamar\n👉Dirección:  Zona 21 Edif 709, 710, 711, 712. Alamar                                                                                                                                                                                                                                                                                                                                                                                                                                                            👉Dirección:  Zona 11. Alamar\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Arroyo Naranjo\n👉Dirección:  Alday e/ Camuji y Cuba. Vieja Linda\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Guanabacoa\n👉Dirección:  Finca La Convita. Mi Gloria\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: San Miguel del Padrón\n👉Dirección:  Finca El Mamey. Revoledo",
         "count": 3460
     },
-    "total_views": 596179560,
-    "total_messages": 17356,
+    "total_views": 596185519,
+    "total_messages": 17357,
     "total_erased_messages": 704,
-    "total_replies": 729435,
-    "total_reactions": 2360081,
-    "total_positive_reactions": 428563,
-    "total_negative_reactions": 1931518,
-    "avg_views": 34350,
+    "total_replies": 729436,
+    "total_reactions": 2360103,
+    "total_positive_reactions": 428569,
+    "total_negative_reactions": 1931534,
+    "avg_views": 34348,
     "avg_replies": 42,
     "avg_reactions": 136,
     "avg_positive_reactions": 25,
@@ -88,7 +88,7 @@
         "9": 78915214,
         "10": 75118535,
         "11": 66428237,
-        "12": 66223596
+        "12": 66229555
     },
     "monthly_replies": {
         "1": 5679,
@@ -102,7 +102,7 @@
         "9": 123282,
         "10": 103746,
         "11": 65201,
-        "12": 94274
+        "12": 94275
     },
     "monthly_reactions": {
         "1": 14996,
@@ -116,7 +116,7 @@
         "9": 345058,
         "10": 362109,
         "11": 289514,
-        "12": 470595
+        "12": 470617
     },
     "monthly_messages": {
         "1": 810,
@@ -130,7 +130,7 @@
         "9": 1912,
         "10": 2029,
         "11": 1953,
-        "12": 1975
+        "12": 1976
     },
     "daily_messages": {
         "1": 27,
@@ -493,7 +493,7 @@
         "358": 84,
         "359": 59,
         "360": 93,
-        "361": 5,
+        "361": 6,
         "362": 0,
         "363": 0,
         "364": 0,
@@ -501,15 +501,15 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 11414,
+        "1": 11415,
         "2": 745,
         "3": 1700,
         "4": 345,
         "5": 3152
     },
     "distribution_reaction": {
-        "👎": 1931518,
-        "👍": 428563
+        "👎": 1931534,
+        "👍": 428569
     },
     "top3_most_viewed_messages": [
         {
@@ -823,14 +823,14 @@
             "declared_recoveries": 167,
             "declared_affectations": 878,
             "declared_emergencies": 317,
-            "estimated_affected_seconds": 5835565,
+            "estimated_affected_seconds": 5839684,
             "weekday_off_seconds": {
                 "0": 782412,
                 "1": 788518,
                 "2": 999808,
                 "3": 577970,
                 "4": 847772,
-                "5": 1079346,
+                "5": 1083465,
                 "6": 759739
             },
             "weekday_off_avg_seconds": {
@@ -839,7 +839,7 @@
                 "2": 18864.30188679245,
                 "3": 11114.807692307691,
                 "4": 16303.307692307691,
-                "5": 20756.653846153848,
+                "5": 20835.865384615383,
                 "6": 14610.365384615385
             }
         },
@@ -849,14 +849,14 @@
             "declared_recoveries": 129,
             "declared_affectations": 832,
             "declared_emergencies": 286,
-            "estimated_affected_seconds": 5482829,
+            "estimated_affected_seconds": 5486948,
             "weekday_off_seconds": {
                 "0": 736703,
                 "1": 842037,
                 "2": 798054,
                 "3": 805914,
                 "4": 815782,
-                "5": 887736,
+                "5": 891855,
                 "6": 596603
             },
             "weekday_off_avg_seconds": {
@@ -865,7 +865,7 @@
                 "2": 15057.622641509433,
                 "3": 15498.346153846154,
                 "4": 15688.115384615385,
-                "5": 17071.846153846152,
+                "5": 17151.05769230769,
                 "6": 11473.134615384615
             }
         },
