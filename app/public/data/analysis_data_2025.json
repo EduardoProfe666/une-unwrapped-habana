@@ -1,5 +1,5 @@
 {
-    "sync_date": "2025-12-28T03:32:40.033469-05:00",
+    "sync_date": "2025-12-28T04:25:41.085292-05:00",
     "year": 2025,
     "first_message": {
         "id": 32200,
@@ -27,7 +27,7 @@
             "👍": 3,
             "👎": 33
         },
-        "views": 3671,
+        "views": 3992,
         "replies": 18,
         "text": "🚨‼️Consumidores del municipio San Miguel del Padrón,Rptos: Las Granjas, carretera del Pitirre desde García hasta 8 Vías, Mirta, Monterrey, San Juan de los Pinos, Luyano Moderno, La Corea y Alturas de Luyanó se encuentran afectados por Trabajos de ETECSA ‼️🚨"
     },
@@ -63,14 +63,14 @@
         "text": "📣🚧Averías existentes hasta el momento\n\n🚨Averías Primarias\n📌Municipio: Habana del Este\n👉Dirección: Colina Villa Real, Villa Bacuranao, Celimar, Pepito Tey, Micro X (Puente Partido)\n\n📌Municipio: Cotorro\n👉Dirección: Cruz Verde, Amor, Paraíso, San Pedro, Vedado del Cotorro, La Torre (Puente Partido)\n\n➡️Averías Secundarias por transformador dañado:\n\n📌Municipio: 10 de octubre\n👉Dirección: San José e/ Luz y Altarriba. Lawton\n👉Dirección: Encarnación e/ Flores y San Benigno. Santos Suárez\n\n📌Municipio: Boyeros\n👉Dirección: 7 e/ 4 y 6. Santiago de las Vegas\n👉Dirección: 111 y 24. Sierra Maestra\n\n📌Municipio: Marianao\n👉Dirección: 45 e/ 114 y 116. Los Quemados\n\n📌Municipio: Plaza\n👉Dirección: Protestante e/ 2da y San Antonio. Dionisia\n👉Dirección: 13 e/ 16 y 18. Vedado\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Lisa\n👉Dirección:  39 e/ 268 y 270. Arroyo Arenas\n \n📌Municipio: Habana del Este\n👉Dirección:  Zona 1 Edif 34 (Técnico Extranjero). Alamar\n👉Dirección:  Zona 21 Edif 709, 710, 711, 712. Alamar                                                                                                                                                                                                                                                                                                                                                                                                                                                            👉Dirección:  Zona 11. Alamar\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Arroyo Naranjo\n👉Dirección:  Alday e/ Camuji y Cuba. Vieja Linda\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Guanabacoa\n👉Dirección:  Finca La Convita. Mi Gloria\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: San Miguel del Padrón\n👉Dirección:  Finca El Mamey. Revoledo",
         "count": 3460
     },
-    "total_views": 597693395,
-    "total_messages": 17417,
+    "total_views": 597699500,
+    "total_messages": 17418,
     "total_erased_messages": 706,
     "total_replies": 730179,
-    "total_reactions": 2369224,
+    "total_reactions": 2369227,
     "total_positive_reactions": 431019,
-    "total_negative_reactions": 1938205,
-    "avg_views": 34317,
+    "total_negative_reactions": 1938208,
+    "avg_views": 34315,
     "avg_replies": 42,
     "avg_reactions": 136,
     "avg_positive_reactions": 25,
@@ -88,7 +88,7 @@
         "9": 78915214,
         "10": 75118535,
         "11": 66428237,
-        "12": 67737431
+        "12": 67743536
     },
     "monthly_replies": {
         "1": 5679,
@@ -116,7 +116,7 @@
         "9": 345058,
         "10": 362109,
         "11": 289514,
-        "12": 479738
+        "12": 479741
     },
     "monthly_messages": {
         "1": 810,
@@ -130,7 +130,7 @@
         "9": 1912,
         "10": 2029,
         "11": 1953,
-        "12": 2036
+        "12": 2037
     },
     "daily_messages": {
         "1": 27,
@@ -494,21 +494,21 @@
         "359": 59,
         "360": 93,
         "361": 64,
-        "362": 2,
+        "362": 3,
         "363": 0,
         "364": 0,
         "365": 0,
         "366": 0
     },
     "distribution_message": {
-        "1": 11440,
+        "1": 11441,
         "2": 745,
         "3": 1703,
         "4": 346,
         "5": 3183
     },
     "distribution_reaction": {
-        "👎": 1938205,
+        "👎": 1938208,
         "👍": 431019
     },
     "top3_most_viewed_messages": [
@@ -875,7 +875,7 @@
             "declared_recoveries": 136,
             "declared_affectations": 792,
             "declared_emergencies": 303,
-            "estimated_affected_seconds": 4481806,
+            "estimated_affected_seconds": 4485733,
             "weekday_off_seconds": {
                 "0": 671884,
                 "1": 820446,
@@ -883,7 +883,7 @@
                 "3": 642150,
                 "4": 649460,
                 "5": 689522,
-                "6": 425407
+                "6": 429334
             },
             "weekday_off_avg_seconds": {
                 "0": 12920.846153846154,
@@ -892,7 +892,7 @@
                 "3": 12349.038461538461,
                 "4": 12489.615384615385,
                 "5": 13260.038461538461,
-                "6": 8180.903846153846
+                "6": 8256.423076923076
             }
         }
     ],
