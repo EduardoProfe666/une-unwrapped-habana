@@ -1,5 +1,5 @@
 {
-    "sync_date": "2025-12-31T04:49:08.439903-05:00",
+    "sync_date": "2025-12-31T05:27:33.884036-05:00",
     "year": 2025,
     "first_message": {
         "id": 32200,
@@ -25,9 +25,9 @@
         "date_cuba_d": "2025-12-31T02:03:47",
         "reactions": {
             "👍": 3,
-            "👎": 4
+            "👎": 5
         },
-        "views": 1580,
+        "views": 1989,
         "replies": 1,
         "text": "🔔Consumidores del Municipio Playa se encuentran afectados por Trabajos Operativos en : Calle 13 desde 70 hasta 86; Calle 11 desde 74 hasta 98; 5taF desde 96 hasta 120 (Almendares); Calle 120 desde 5ta F hasta 23 (Cubanacan)🔔"
     },
@@ -63,14 +63,14 @@
         "text": "📣🚧Averías existentes hasta el momento\n\n🚨Averías Primarias\n📌Municipio: Habana del Este\n👉Dirección: Colina Villa Real, Villa Bacuranao, Celimar, Pepito Tey, Micro X (Puente Partido)\n\n📌Municipio: Cotorro\n👉Dirección: Cruz Verde, Amor, Paraíso, San Pedro, Vedado del Cotorro, La Torre (Puente Partido)\n\n➡️Averías Secundarias por transformador dañado:\n\n📌Municipio: 10 de octubre\n👉Dirección: San José e/ Luz y Altarriba. Lawton\n👉Dirección: Encarnación e/ Flores y San Benigno. Santos Suárez\n\n📌Municipio: Boyeros\n👉Dirección: 7 e/ 4 y 6. Santiago de las Vegas\n👉Dirección: 111 y 24. Sierra Maestra\n\n📌Municipio: Marianao\n👉Dirección: 45 e/ 114 y 116. Los Quemados\n\n📌Municipio: Plaza\n👉Dirección: Protestante e/ 2da y San Antonio. Dionisia\n👉Dirección: 13 e/ 16 y 18. Vedado\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Lisa\n👉Dirección:  39 e/ 268 y 270. Arroyo Arenas\n \n📌Municipio: Habana del Este\n👉Dirección:  Zona 1 Edif 34 (Técnico Extranjero). Alamar\n👉Dirección:  Zona 21 Edif 709, 710, 711, 712. Alamar                                                                                                                                                                                                                                                                                                                                                                                                                                                            👉Dirección:  Zona 11. Alamar\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Arroyo Naranjo\n👉Dirección:  Alday e/ Camuji y Cuba. Vieja Linda\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Guanabacoa\n👉Dirección:  Finca La Convita. Mi Gloria\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: San Miguel del Padrón\n👉Dirección:  Finca El Mamey. Revoledo",
         "count": 3460
     },
-    "total_views": 603219696,
-    "total_messages": 17617,
+    "total_views": 603225913,
+    "total_messages": 17618,
     "total_erased_messages": 714,
-    "total_replies": 736817,
-    "total_reactions": 2412439,
-    "total_positive_reactions": 436956,
-    "total_negative_reactions": 1975483,
-    "avg_views": 34241,
+    "total_replies": 736818,
+    "total_reactions": 2412462,
+    "total_positive_reactions": 436972,
+    "total_negative_reactions": 1975490,
+    "avg_views": 34239,
     "avg_replies": 42,
     "avg_reactions": 137,
     "avg_positive_reactions": 25,
@@ -88,7 +88,7 @@
         "9": 78915214,
         "10": 75118535,
         "11": 66428237,
-        "12": 73263732
+        "12": 73269949
     },
     "monthly_replies": {
         "1": 5679,
@@ -102,7 +102,7 @@
         "9": 123282,
         "10": 103746,
         "11": 65201,
-        "12": 101656
+        "12": 101657
     },
     "monthly_reactions": {
         "1": 14996,
@@ -116,7 +116,7 @@
         "9": 345058,
         "10": 362109,
         "11": 289514,
-        "12": 522953
+        "12": 522976
     },
     "monthly_messages": {
         "1": 810,
@@ -130,7 +130,7 @@
         "9": 1912,
         "10": 2029,
         "11": 1953,
-        "12": 2236
+        "12": 2237
     },
     "daily_messages": {
         "1": 27,
@@ -497,19 +497,19 @@
         "362": 72,
         "363": 76,
         "364": 45,
-        "365": 9,
+        "365": 10,
         "366": 0
     },
     "distribution_message": {
-        "1": 11532,
+        "1": 11533,
         "2": 763,
         "3": 1707,
         "4": 349,
         "5": 3266
     },
     "distribution_reaction": {
-        "👎": 1975483,
-        "👍": 436956
+        "👎": 1975490,
+        "👍": 436972
     },
     "top3_most_viewed_messages": [
         {
