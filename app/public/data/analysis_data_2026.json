@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-01T09:45:58.335749-05:00",
+    "sync_date": "2026-01-01T10:26:50.610889-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -10,26 +10,25 @@
         "date_cuba_d": "2026-01-01T03:51:21",
         "reactions": {
             "👍": 12,
-            "👎": 39
+            "👎": 41
         },
-        "views": 10423,
+        "views": 12363,
         "replies": 23,
         "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨"
     },
     "last_message": {
-        "id": 50547,
-        "link": "https://t.me/EmpresaElectricaDeLaHabana/50547",
-        "date_utc": "2026-01-01 14:13:56",
-        "date_utc_d": "2026-01-01T14:13:56",
-        "date_cuba": "2026-01-01 09:13:56",
-        "date_cuba_d": "2026-01-01T09:13:56",
+        "id": 50549,
+        "link": "https://t.me/EmpresaElectricaDeLaHabana/50549",
+        "date_utc": "2026-01-01 15:22:40",
+        "date_utc_d": "2026-01-01T15:22:40",
+        "date_cuba": "2026-01-01 10:22:40",
+        "date_cuba_d": "2026-01-01T10:22:40",
         "reactions": {
-            "👍": 12,
-            "👎": 16
+            "👎": 3
         },
-        "views": 3210,
-        "replies": 1,
-        "text": "⚡ Actualización del Sistema Electroenergético Nacional para el 1ro de enero de 2026.\n\nLeer más: https://www.unionelectrica.cu/nota-informativa/\n\n#UnidosXCuba #UniónEléctrica #UNE #NotaInformativa"
+        "views": 397,
+        "replies": 0,
+        "text": "✅Consumidores del municipio Cerro queda con servicio la **AVERÍA POR** **PRIMARIO PARTIDO** en la dirección:  Avenida Camagüey y 11( Casino Deportivo).  ✅"
     },
     "shortest_message": {
         "id": 50543,
@@ -39,10 +38,10 @@
         "date_cuba": "2026-01-01 06:06:47",
         "date_cuba_d": "2026-01-01T06:06:47",
         "reactions": {
-            "👍": 11,
-            "👎": 67
+            "👍": 12,
+            "👎": 69
         },
-        "views": 9629,
+        "views": 11661,
         "replies": 21,
         "text": "🚧📉Informamos que por Disparado Automático por Frecuencia (DAF) se ha afectado el servicio eléctrico en varios municipios🚧📉",
         "count": 122
@@ -55,29 +54,29 @@
         "date_cuba": "2026-01-01 07:21:13",
         "date_cuba_d": "2026-01-01T07:21:13",
         "reactions": {
-            "👍": 136,
-            "👎": 80
+            "👍": 169,
+            "👎": 89
         },
-        "views": 8710,
-        "replies": 25,
+        "views": 11015,
+        "replies": 26,
         "text": "NOTA INFORMATIVA\n\nEELH| En el día de ayer NO se afectó el servicio eléctrico en La Habana por Déficit.\nPara el día de hoy no se planifica afectación programada en la ciudad.\nEn caso de afectar el servicio sería por EMERGENCIA y se informará por los canales establecidos de la Empresa Eléctrica de La Habana.\nComo ya hemos explicado las posibles afectaciones sólo dependerán de las exigencias del SEN.",
         "count": 400
     },
-    "total_views": 48531,
-    "total_messages": 6,
+    "total_views": 65414,
+    "total_messages": 8,
     "total_erased_messages": 0,
-    "total_replies": 87,
-    "total_reactions": 449,
-    "total_positive_reactions": 185,
-    "total_negative_reactions": 264,
-    "avg_views": 8088,
-    "avg_replies": 14,
-    "avg_reactions": 75,
-    "avg_positive_reactions": 31,
-    "avg_negative_reactions": 44,
-    "avg_text_length": 201,
+    "total_replies": 92,
+    "total_reactions": 560,
+    "total_positive_reactions": 236,
+    "total_negative_reactions": 324,
+    "avg_views": 8177,
+    "avg_replies": 12,
+    "avg_reactions": 70,
+    "avg_positive_reactions": 30,
+    "avg_negative_reactions": 40,
+    "avg_text_length": 200,
     "monthly_views": {
-        "1": 48531,
+        "1": 65414,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -91,7 +90,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 87,
+        "1": 92,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -105,7 +104,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 449,
+        "1": 560,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -119,7 +118,7 @@
         "12": 0
     },
     "monthly_messages": {
-        "1": 6,
+        "1": 8,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -133,7 +132,7 @@
         "12": 0
     },
     "daily_messages": {
-        "1": 6,
+        "1": 8,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -501,15 +500,15 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 3,
+        "1": 4,
         "2": 1,
-        "3": 1,
+        "3": 2,
         "4": 1,
         "5": 0
     },
     "distribution_reaction": {
-        "👎": 264,
-        "👍": 185
+        "👎": 324,
+        "👍": 236
     },
     "top3_most_viewed_messages": [
         {
@@ -521,12 +520,12 @@
             "date_cuba_d": "2026-01-01T03:51:21",
             "reactions": {
                 "👍": 12,
-                "👎": 39
+                "👎": 41
             },
-            "views": 10423,
+            "views": 12363,
             "replies": 23,
             "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨",
-            "count": 10423
+            "count": 12363
         },
         {
             "id": 50544,
@@ -536,13 +535,13 @@
             "date_cuba": "2026-01-01 06:12:49",
             "date_cuba_d": "2026-01-01T06:12:49",
             "reactions": {
-                "👍": 6,
-                "👎": 34
+                "👍": 7,
+                "👎": 36
             },
-            "views": 9643,
+            "views": 11733,
             "replies": 15,
             "text": "📣Averías existentes hasta el momento\n\n🚨Averías Primarias:\n\n📌Municipio: Arroyo Naranjo\n👉Dirección: Afecta los repartos Párraga,Porvenir,La Esperanza,Alcázar y Capri.",
-            "count": 9643
+            "count": 11733
         },
         {
             "id": 50543,
@@ -552,13 +551,13 @@
             "date_cuba": "2026-01-01 06:06:47",
             "date_cuba_d": "2026-01-01T06:06:47",
             "reactions": {
-                "👍": 11,
-                "👎": 67
+                "👍": 12,
+                "👎": 69
             },
-            "views": 9629,
+            "views": 11661,
             "replies": 21,
             "text": "🚧📉Informamos que por Disparado Automático por Frecuencia (DAF) se ha afectado el servicio eléctrico en varios municipios🚧📉",
-            "count": 9629
+            "count": 11661
         }
     ],
     "top3_most_replied_messages": [
@@ -570,13 +569,13 @@
             "date_cuba": "2026-01-01 07:21:13",
             "date_cuba_d": "2026-01-01T07:21:13",
             "reactions": {
-                "👍": 136,
-                "👎": 80
+                "👍": 169,
+                "👎": 89
             },
-            "views": 8710,
-            "replies": 25,
+            "views": 11015,
+            "replies": 26,
             "text": "NOTA INFORMATIVA\n\nEELH| En el día de ayer NO se afectó el servicio eléctrico en La Habana por Déficit.\nPara el día de hoy no se planifica afectación programada en la ciudad.\nEn caso de afectar el servicio sería por EMERGENCIA y se informará por los canales establecidos de la Empresa Eléctrica de La Habana.\nComo ya hemos explicado las posibles afectaciones sólo dependerán de las exigencias del SEN.",
-            "count": 25
+            "count": 26
         },
         {
             "id": 50542,
@@ -587,9 +586,9 @@
             "date_cuba_d": "2026-01-01T03:51:21",
             "reactions": {
                 "👍": 12,
-                "👎": 39
+                "👎": 41
             },
-            "views": 10423,
+            "views": 12363,
             "replies": 23,
             "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨",
             "count": 23
@@ -602,10 +601,10 @@
             "date_cuba": "2026-01-01 06:06:47",
             "date_cuba_d": "2026-01-01T06:06:47",
             "reactions": {
-                "👍": 11,
-                "👎": 67
+                "👍": 12,
+                "👎": 69
             },
-            "views": 9629,
+            "views": 11661,
             "replies": 21,
             "text": "🚧📉Informamos que por Disparado Automático por Frecuencia (DAF) se ha afectado el servicio eléctrico en varios municipios🚧📉",
             "count": 21
@@ -620,13 +619,29 @@
             "date_cuba": "2026-01-01 07:21:13",
             "date_cuba_d": "2026-01-01T07:21:13",
             "reactions": {
-                "👍": 136,
-                "👎": 80
+                "👍": 169,
+                "👎": 89
             },
-            "views": 8710,
-            "replies": 25,
+            "views": 11015,
+            "replies": 26,
             "text": "NOTA INFORMATIVA\n\nEELH| En el día de ayer NO se afectó el servicio eléctrico en La Habana por Déficit.\nPara el día de hoy no se planifica afectación programada en la ciudad.\nEn caso de afectar el servicio sería por EMERGENCIA y se informará por los canales establecidos de la Empresa Eléctrica de La Habana.\nComo ya hemos explicado las posibles afectaciones sólo dependerán de las exigencias del SEN.",
-            "count": 136
+            "count": 169
+        },
+        {
+            "id": 50547,
+            "link": "https://t.me/EmpresaElectricaDeLaHabana/50547",
+            "date_utc": "2026-01-01 14:13:56",
+            "date_utc_d": "2026-01-01T14:13:56",
+            "date_cuba": "2026-01-01 09:13:56",
+            "date_cuba_d": "2026-01-01T09:13:56",
+            "reactions": {
+                "👍": 24,
+                "👎": 40
+            },
+            "views": 6281,
+            "replies": 5,
+            "text": "⚡ Actualización del Sistema Electroenergético Nacional para el 1ro de enero de 2026.\n\nLeer más: https://www.unionelectrica.cu/nota-informativa/\n\n#UnidosXCuba #UniónEléctrica #UNE #NotaInformativa",
+            "count": 24
         },
         {
             "id": 50542,
@@ -637,27 +652,11 @@
             "date_cuba_d": "2026-01-01T03:51:21",
             "reactions": {
                 "👍": 12,
-                "👎": 39
+                "👎": 41
             },
-            "views": 10423,
+            "views": 12363,
             "replies": 23,
             "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨",
-            "count": 12
-        },
-        {
-            "id": 50547,
-            "link": "https://t.me/EmpresaElectricaDeLaHabana/50547",
-            "date_utc": "2026-01-01 14:13:56",
-            "date_utc_d": "2026-01-01T14:13:56",
-            "date_cuba": "2026-01-01 09:13:56",
-            "date_cuba_d": "2026-01-01T09:13:56",
-            "reactions": {
-                "👍": 12,
-                "👎": 16
-            },
-            "views": 3210,
-            "replies": 1,
-            "text": "⚡ Actualización del Sistema Electroenergético Nacional para el 1ro de enero de 2026.\n\nLeer más: https://www.unionelectrica.cu/nota-informativa/\n\n#UnidosXCuba #UniónEléctrica #UNE #NotaInformativa",
             "count": 12
         }
     ],
@@ -670,13 +669,13 @@
             "date_cuba": "2026-01-01 07:21:13",
             "date_cuba_d": "2026-01-01T07:21:13",
             "reactions": {
-                "👍": 136,
-                "👎": 80
+                "👍": 169,
+                "👎": 89
             },
-            "views": 8710,
-            "replies": 25,
+            "views": 11015,
+            "replies": 26,
             "text": "NOTA INFORMATIVA\n\nEELH| En el día de ayer NO se afectó el servicio eléctrico en La Habana por Déficit.\nPara el día de hoy no se planifica afectación programada en la ciudad.\nEn caso de afectar el servicio sería por EMERGENCIA y se informará por los canales establecidos de la Empresa Eléctrica de La Habana.\nComo ya hemos explicado las posibles afectaciones sólo dependerán de las exigencias del SEN.",
-            "count": 80
+            "count": 89
         },
         {
             "id": 50543,
@@ -686,13 +685,13 @@
             "date_cuba": "2026-01-01 06:06:47",
             "date_cuba_d": "2026-01-01T06:06:47",
             "reactions": {
-                "👍": 11,
-                "👎": 67
+                "👍": 12,
+                "👎": 69
             },
-            "views": 9629,
+            "views": 11661,
             "replies": 21,
             "text": "🚧📉Informamos que por Disparado Automático por Frecuencia (DAF) se ha afectado el servicio eléctrico en varios municipios🚧📉",
-            "count": 67
+            "count": 69
         },
         {
             "id": 50542,
@@ -703,40 +702,40 @@
             "date_cuba_d": "2026-01-01T03:51:21",
             "reactions": {
                 "👍": 12,
-                "👎": 39
+                "👎": 41
             },
-            "views": 10423,
+            "views": 12363,
             "replies": 23,
             "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨",
-            "count": 39
+            "count": 41
         }
     ],
     "top25_most_repeated_words": {
-        "municipio": 3,
-        "servicio": 3,
-        "consumidores": 2,
-        "arroyo": 2,
-        "naranjo": 2,
-        "repartos": 2,
-        "párraga": 2,
-        "porvenir": 2,
-        "esperanza": 2,
-        "alcázar": 2,
-        "capri": 2,
+        "municipio": 6,
+        "dirección": 5,
+        "servicio": 4,
+        "averías": 4,
+        "consumidores": 3,
+        "arroyo": 3,
+        "naranjo": 3,
+        "repartos": 3,
+        "párraga": 3,
+        "porvenir": 3,
+        "esperanza": 3,
+        "alcázar": 3,
+        "capri": 3,
+        "cerro": 3,
+        "avenida": 3,
+        "camagüey": 3,
+        "casino": 3,
+        "deportivo": 3,
+        "avería": 2,
         "eléctrico": 2,
-        "averías": 2,
-        "dirección": 2,
-        "nota": 2,
-        "informativa": 2,
-        "día": 2,
-        "habana": 2,
-        "afectados": 1,
-        "avería": 1,
-        "primaria": 1,
-        "informamos": 1,
-        "disparado": 1,
-        "automático": 1,
-        "frecuencia": 1
+        "existentes": 2,
+        "momento": 2,
+        "primarias": 2,
+        "afecta": 2,
+        "nota": 2
     },
     "blocks_analysis": [
         {
