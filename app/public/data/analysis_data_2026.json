@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-01T06:22:45.583160-05:00",
+    "sync_date": "2026-01-01T06:42:22.494908-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -12,7 +12,7 @@
             "👍": 3,
             "👎": 19
         },
-        "views": 1895,
+        "views": 2230,
         "replies": 19,
         "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨"
     },
@@ -24,9 +24,9 @@
         "date_cuba": "2026-01-01 06:12:49",
         "date_cuba_d": "2026-01-01T06:12:49",
         "reactions": {
-            "👎": 2
+            "👎": 4
         },
-        "views": 427,
+        "views": 824,
         "replies": 1,
         "text": "📣Averías existentes hasta el momento\n\n🚨Averías Primarias:\n\n📌Municipio: Arroyo Naranjo\n👉Dirección: Afecta los repartos Párraga,Porvenir,La Esperanza,Alcázar y Capri."
     },
@@ -39,10 +39,10 @@
         "date_cuba_d": "2026-01-01T06:06:47",
         "reactions": {
             "👍": 1,
-            "👎": 28
+            "👎": 31
         },
-        "views": 701,
-        "replies": 10,
+        "views": 1098,
+        "replies": 13,
         "text": "🚧📉Informamos que por Disparado Automático por Frecuencia (DAF) se ha afectado el servicio eléctrico en varios municipios🚧📉",
         "count": 122
     },
@@ -54,28 +54,28 @@
         "date_cuba": "2026-01-01 06:12:49",
         "date_cuba_d": "2026-01-01T06:12:49",
         "reactions": {
-            "👎": 2
+            "👎": 4
         },
-        "views": 427,
+        "views": 824,
         "replies": 1,
         "text": "📣Averías existentes hasta el momento\n\n🚨Averías Primarias:\n\n📌Municipio: Arroyo Naranjo\n👉Dirección: Afecta los repartos Párraga,Porvenir,La Esperanza,Alcázar y Capri.",
         "count": 164
     },
-    "total_views": 3023,
+    "total_views": 4152,
     "total_messages": 3,
     "total_erased_messages": 0,
-    "total_replies": 30,
-    "total_reactions": 53,
+    "total_replies": 33,
+    "total_reactions": 58,
     "total_positive_reactions": 4,
-    "total_negative_reactions": 49,
-    "avg_views": 1008,
-    "avg_replies": 10,
-    "avg_reactions": 18,
+    "total_negative_reactions": 54,
+    "avg_views": 1384,
+    "avg_replies": 11,
+    "avg_reactions": 19,
     "avg_positive_reactions": 1,
-    "avg_negative_reactions": 16,
+    "avg_negative_reactions": 18,
     "avg_text_length": 148,
     "monthly_views": {
-        "1": 3023,
+        "1": 4152,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -89,7 +89,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 30,
+        "1": 33,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -103,7 +103,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 53,
+        "1": 58,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -506,7 +506,7 @@
         "5": 0
     },
     "distribution_reaction": {
-        "👎": 49,
+        "👎": 54,
         "👍": 4
     },
     "top3_most_viewed_messages": [
@@ -521,10 +521,10 @@
                 "👍": 3,
                 "👎": 19
             },
-            "views": 1895,
+            "views": 2230,
             "replies": 19,
             "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨",
-            "count": 1895
+            "count": 2230
         },
         {
             "id": 50543,
@@ -535,12 +535,12 @@
             "date_cuba_d": "2026-01-01T06:06:47",
             "reactions": {
                 "👍": 1,
-                "👎": 28
+                "👎": 31
             },
-            "views": 701,
-            "replies": 10,
+            "views": 1098,
+            "replies": 13,
             "text": "🚧📉Informamos que por Disparado Automático por Frecuencia (DAF) se ha afectado el servicio eléctrico en varios municipios🚧📉",
-            "count": 701
+            "count": 1098
         },
         {
             "id": 50544,
@@ -550,12 +550,12 @@
             "date_cuba": "2026-01-01 06:12:49",
             "date_cuba_d": "2026-01-01T06:12:49",
             "reactions": {
-                "👎": 2
+                "👎": 4
             },
-            "views": 427,
+            "views": 824,
             "replies": 1,
             "text": "📣Averías existentes hasta el momento\n\n🚨Averías Primarias:\n\n📌Municipio: Arroyo Naranjo\n👉Dirección: Afecta los repartos Párraga,Porvenir,La Esperanza,Alcázar y Capri.",
-            "count": 427
+            "count": 824
         }
     ],
     "top3_most_replied_messages": [
@@ -570,7 +570,7 @@
                 "👍": 3,
                 "👎": 19
             },
-            "views": 1895,
+            "views": 2230,
             "replies": 19,
             "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨",
             "count": 19
@@ -584,12 +584,12 @@
             "date_cuba_d": "2026-01-01T06:06:47",
             "reactions": {
                 "👍": 1,
-                "👎": 28
+                "👎": 31
             },
-            "views": 701,
-            "replies": 10,
+            "views": 1098,
+            "replies": 13,
             "text": "🚧📉Informamos que por Disparado Automático por Frecuencia (DAF) se ha afectado el servicio eléctrico en varios municipios🚧📉",
-            "count": 10
+            "count": 13
         },
         {
             "id": 50544,
@@ -599,9 +599,9 @@
             "date_cuba": "2026-01-01 06:12:49",
             "date_cuba_d": "2026-01-01T06:12:49",
             "reactions": {
-                "👎": 2
+                "👎": 4
             },
-            "views": 427,
+            "views": 824,
             "replies": 1,
             "text": "📣Averías existentes hasta el momento\n\n🚨Averías Primarias:\n\n📌Municipio: Arroyo Naranjo\n👉Dirección: Afecta los repartos Párraga,Porvenir,La Esperanza,Alcázar y Capri.",
             "count": 1
@@ -619,7 +619,7 @@
                 "👍": 3,
                 "👎": 19
             },
-            "views": 1895,
+            "views": 2230,
             "replies": 19,
             "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨",
             "count": 3
@@ -633,10 +633,10 @@
             "date_cuba_d": "2026-01-01T06:06:47",
             "reactions": {
                 "👍": 1,
-                "👎": 28
+                "👎": 31
             },
-            "views": 701,
-            "replies": 10,
+            "views": 1098,
+            "replies": 13,
             "text": "🚧📉Informamos que por Disparado Automático por Frecuencia (DAF) se ha afectado el servicio eléctrico en varios municipios🚧📉",
             "count": 1
         },
@@ -648,9 +648,9 @@
             "date_cuba": "2026-01-01 06:12:49",
             "date_cuba_d": "2026-01-01T06:12:49",
             "reactions": {
-                "👎": 2
+                "👎": 4
             },
-            "views": 427,
+            "views": 824,
             "replies": 1,
             "text": "📣Averías existentes hasta el momento\n\n🚨Averías Primarias:\n\n📌Municipio: Arroyo Naranjo\n👉Dirección: Afecta los repartos Párraga,Porvenir,La Esperanza,Alcázar y Capri.",
             "count": 0
@@ -666,12 +666,12 @@
             "date_cuba_d": "2026-01-01T06:06:47",
             "reactions": {
                 "👍": 1,
-                "👎": 28
+                "👎": 31
             },
-            "views": 701,
-            "replies": 10,
+            "views": 1098,
+            "replies": 13,
             "text": "🚧📉Informamos que por Disparado Automático por Frecuencia (DAF) se ha afectado el servicio eléctrico en varios municipios🚧📉",
-            "count": 28
+            "count": 31
         },
         {
             "id": 50542,
@@ -684,7 +684,7 @@
                 "👍": 3,
                 "👎": 19
             },
-            "views": 1895,
+            "views": 2230,
             "replies": 19,
             "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨",
             "count": 19
@@ -697,12 +697,12 @@
             "date_cuba": "2026-01-01 06:12:49",
             "date_cuba_d": "2026-01-01T06:12:49",
             "reactions": {
-                "👎": 2
+                "👎": 4
             },
-            "views": 427,
+            "views": 824,
             "replies": 1,
             "text": "📣Averías existentes hasta el momento\n\n🚨Averías Primarias:\n\n📌Municipio: Arroyo Naranjo\n👉Dirección: Afecta los repartos Párraga,Porvenir,La Esperanza,Alcázar y Capri.",
-            "count": 2
+            "count": 4
         }
     ],
     "top25_most_repeated_words": {
