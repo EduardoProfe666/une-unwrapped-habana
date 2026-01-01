@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-01T17:46:04.798123-05:00",
+    "sync_date": "2026-01-01T18:25:21.680943-05:00",
     "year": 2025,
     "first_message": {
         "id": 32200,
@@ -24,10 +24,10 @@
         "date_cuba": "2025-12-31 21:18:23",
         "date_cuba_d": "2025-12-31T21:18:23",
         "reactions": {
-            "👍": 542,
+            "👍": 544,
             "👎": 135
         },
-        "views": 31972,
+        "views": 32399,
         "replies": 88,
         "text": "🇨🇺 Actualización del Sistema Electroenergético Nacional."
     },
@@ -63,14 +63,14 @@
         "text": "📣🚧Averías existentes hasta el momento\n\n🚨Averías Primarias\n📌Municipio: Habana del Este\n👉Dirección: Colina Villa Real, Villa Bacuranao, Celimar, Pepito Tey, Micro X (Puente Partido)\n\n📌Municipio: Cotorro\n👉Dirección: Cruz Verde, Amor, Paraíso, San Pedro, Vedado del Cotorro, La Torre (Puente Partido)\n\n➡️Averías Secundarias por transformador dañado:\n\n📌Municipio: 10 de octubre\n👉Dirección: San José e/ Luz y Altarriba. Lawton\n👉Dirección: Encarnación e/ Flores y San Benigno. Santos Suárez\n\n📌Municipio: Boyeros\n👉Dirección: 7 e/ 4 y 6. Santiago de las Vegas\n👉Dirección: 111 y 24. Sierra Maestra\n\n📌Municipio: Marianao\n👉Dirección: 45 e/ 114 y 116. Los Quemados\n\n📌Municipio: Plaza\n👉Dirección: Protestante e/ 2da y San Antonio. Dionisia\n👉Dirección: 13 e/ 16 y 18. Vedado\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Lisa\n👉Dirección:  39 e/ 268 y 270. Arroyo Arenas\n \n📌Municipio: Habana del Este\n👉Dirección:  Zona 1 Edif 34 (Técnico Extranjero). Alamar\n👉Dirección:  Zona 21 Edif 709, 710, 711, 712. Alamar                                                                                                                                                                                                                                                                                                                                                                                                                                                            👉Dirección:  Zona 11. Alamar\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Arroyo Naranjo\n👉Dirección:  Alday e/ Camuji y Cuba. Vieja Linda\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: Guanabacoa\n👉Dirección:  Finca La Convita. Mi Gloria\n                                                                                                                                                                                                                                                                                                                                                                                                                                                                      📌Municipio: San Miguel del Padrón\n👉Dirección:  Finca El Mamey. Revoledo",
         "count": 3460
     },
-    "total_views": 603955925,
+    "total_views": 603960451,
     "total_messages": 17630,
     "total_erased_messages": 714,
     "total_replies": 737162,
-    "total_reactions": 2415440,
-    "total_positive_reactions": 438558,
+    "total_reactions": 2415443,
+    "total_positive_reactions": 438561,
     "total_negative_reactions": 1976882,
-    "avg_views": 34257,
+    "avg_views": 34258,
     "avg_replies": 42,
     "avg_reactions": 137,
     "avg_positive_reactions": 25,
@@ -88,7 +88,7 @@
         "9": 78915214,
         "10": 75118535,
         "11": 66428237,
-        "12": 73999961
+        "12": 74004487
     },
     "monthly_replies": {
         "1": 5679,
@@ -116,7 +116,7 @@
         "9": 345058,
         "10": 362109,
         "11": 289514,
-        "12": 525954
+        "12": 525957
     },
     "monthly_messages": {
         "1": 810,
@@ -509,7 +509,7 @@
     },
     "distribution_reaction": {
         "👎": 1976882,
-        "👍": 438558
+        "👍": 438561
     },
     "top3_most_viewed_messages": [
         {
