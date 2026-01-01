@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-01T04:49:38.960043-05:00",
+    "sync_date": "2026-01-01T05:28:18.580978-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -9,11 +9,11 @@
         "date_cuba": "2026-01-01 03:51:21",
         "date_cuba_d": "2026-01-01T03:51:21",
         "reactions": {
-            "👍": 2,
-            "👎": 7
+            "👍": 3,
+            "👎": 9
         },
-        "views": 539,
-        "replies": 3,
+        "views": 803,
+        "replies": 4,
         "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨"
     },
     "last_message": {
@@ -24,11 +24,11 @@
         "date_cuba": "2026-01-01 03:51:21",
         "date_cuba_d": "2026-01-01T03:51:21",
         "reactions": {
-            "👍": 2,
-            "👎": 7
+            "👍": 3,
+            "👎": 9
         },
-        "views": 539,
-        "replies": 3,
+        "views": 803,
+        "replies": 4,
         "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨"
     },
     "shortest_message": {
@@ -39,11 +39,11 @@
         "date_cuba": "2026-01-01 03:51:21",
         "date_cuba_d": "2026-01-01T03:51:21",
         "reactions": {
-            "👍": 2,
-            "👎": 7
+            "👍": 3,
+            "👎": 9
         },
-        "views": 539,
-        "replies": 3,
+        "views": 803,
+        "replies": 4,
         "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨",
         "count": 158
     },
@@ -55,29 +55,29 @@
         "date_cuba": "2026-01-01 03:51:21",
         "date_cuba_d": "2026-01-01T03:51:21",
         "reactions": {
-            "👍": 2,
-            "👎": 7
+            "👍": 3,
+            "👎": 9
         },
-        "views": 539,
-        "replies": 3,
+        "views": 803,
+        "replies": 4,
         "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨",
         "count": 158
     },
-    "total_views": 539,
+    "total_views": 803,
     "total_messages": 1,
     "total_erased_messages": 0,
-    "total_replies": 3,
-    "total_reactions": 9,
-    "total_positive_reactions": 2,
-    "total_negative_reactions": 7,
-    "avg_views": 539,
-    "avg_replies": 3,
-    "avg_reactions": 9,
-    "avg_positive_reactions": 2,
-    "avg_negative_reactions": 7,
+    "total_replies": 4,
+    "total_reactions": 12,
+    "total_positive_reactions": 3,
+    "total_negative_reactions": 9,
+    "avg_views": 803,
+    "avg_replies": 4,
+    "avg_reactions": 12,
+    "avg_positive_reactions": 3,
+    "avg_negative_reactions": 9,
     "avg_text_length": 158,
     "monthly_views": {
-        "1": 539,
+        "1": 803,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -91,7 +91,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 3,
+        "1": 4,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -105,7 +105,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 9,
+        "1": 12,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -508,8 +508,8 @@
         "5": 0
     },
     "distribution_reaction": {
-        "👎": 7,
-        "👍": 2
+        "👎": 9,
+        "👍": 3
     },
     "top3_most_viewed_messages": [
         {
@@ -520,13 +520,13 @@
             "date_cuba": "2026-01-01 03:51:21",
             "date_cuba_d": "2026-01-01T03:51:21",
             "reactions": {
-                "👍": 2,
-                "👎": 7
+                "👍": 3,
+                "👎": 9
             },
-            "views": 539,
-            "replies": 3,
+            "views": 803,
+            "replies": 4,
             "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨",
-            "count": 539
+            "count": 803
         }
     ],
     "top3_most_replied_messages": [
@@ -538,13 +538,13 @@
             "date_cuba": "2026-01-01 03:51:21",
             "date_cuba_d": "2026-01-01T03:51:21",
             "reactions": {
-                "👍": 2,
-                "👎": 7
+                "👍": 3,
+                "👎": 9
             },
-            "views": 539,
-            "replies": 3,
+            "views": 803,
+            "replies": 4,
             "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨",
-            "count": 3
+            "count": 4
         }
     ],
     "top3_most_positive_reaction_messages": [
@@ -556,13 +556,13 @@
             "date_cuba": "2026-01-01 03:51:21",
             "date_cuba_d": "2026-01-01T03:51:21",
             "reactions": {
-                "👍": 2,
-                "👎": 7
+                "👍": 3,
+                "👎": 9
             },
-            "views": 539,
-            "replies": 3,
+            "views": 803,
+            "replies": 4,
             "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨",
-            "count": 2
+            "count": 3
         }
     ],
     "top3_most_negative_reaction_messages": [
@@ -574,13 +574,13 @@
             "date_cuba": "2026-01-01 03:51:21",
             "date_cuba_d": "2026-01-01T03:51:21",
             "reactions": {
-                "👍": 2,
-                "👎": 7
+                "👍": 3,
+                "👎": 9
             },
-            "views": 539,
-            "replies": 3,
+            "views": 803,
+            "replies": 4,
             "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨",
-            "count": 7
+            "count": 9
         }
     ],
     "top25_most_repeated_words": {
