@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-01T04:30:09.751434-05:00",
+    "sync_date": "2026-01-01T04:49:38.960043-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -10,9 +10,9 @@
         "date_cuba_d": "2026-01-01T03:51:21",
         "reactions": {
             "👍": 2,
-            "👎": 4
+            "👎": 7
         },
-        "views": 410,
+        "views": 539,
         "replies": 3,
         "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨"
     },
@@ -25,9 +25,9 @@
         "date_cuba_d": "2026-01-01T03:51:21",
         "reactions": {
             "👍": 2,
-            "👎": 4
+            "👎": 7
         },
-        "views": 410,
+        "views": 539,
         "replies": 3,
         "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨"
     },
@@ -40,9 +40,9 @@
         "date_cuba_d": "2026-01-01T03:51:21",
         "reactions": {
             "👍": 2,
-            "👎": 4
+            "👎": 7
         },
-        "views": 410,
+        "views": 539,
         "replies": 3,
         "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨",
         "count": 158
@@ -56,28 +56,28 @@
         "date_cuba_d": "2026-01-01T03:51:21",
         "reactions": {
             "👍": 2,
-            "👎": 4
+            "👎": 7
         },
-        "views": 410,
+        "views": 539,
         "replies": 3,
         "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨",
         "count": 158
     },
-    "total_views": 410,
+    "total_views": 539,
     "total_messages": 1,
     "total_erased_messages": 0,
     "total_replies": 3,
-    "total_reactions": 6,
+    "total_reactions": 9,
     "total_positive_reactions": 2,
-    "total_negative_reactions": 4,
-    "avg_views": 410,
+    "total_negative_reactions": 7,
+    "avg_views": 539,
     "avg_replies": 3,
-    "avg_reactions": 6,
+    "avg_reactions": 9,
     "avg_positive_reactions": 2,
-    "avg_negative_reactions": 4,
+    "avg_negative_reactions": 7,
     "avg_text_length": 158,
     "monthly_views": {
-        "1": 410,
+        "1": 539,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -105,7 +105,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 6,
+        "1": 9,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -508,7 +508,7 @@
         "5": 0
     },
     "distribution_reaction": {
-        "👎": 4,
+        "👎": 7,
         "👍": 2
     },
     "top3_most_viewed_messages": [
@@ -521,12 +521,12 @@
             "date_cuba_d": "2026-01-01T03:51:21",
             "reactions": {
                 "👍": 2,
-                "👎": 4
+                "👎": 7
             },
-            "views": 410,
+            "views": 539,
             "replies": 3,
             "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨",
-            "count": 410
+            "count": 539
         }
     ],
     "top3_most_replied_messages": [
@@ -539,9 +539,9 @@
             "date_cuba_d": "2026-01-01T03:51:21",
             "reactions": {
                 "👍": 2,
-                "👎": 4
+                "👎": 7
             },
-            "views": 410,
+            "views": 539,
             "replies": 3,
             "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨",
             "count": 3
@@ -557,9 +557,9 @@
             "date_cuba_d": "2026-01-01T03:51:21",
             "reactions": {
                 "👍": 2,
-                "👎": 4
+                "👎": 7
             },
-            "views": 410,
+            "views": 539,
             "replies": 3,
             "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨",
             "count": 2
@@ -575,12 +575,12 @@
             "date_cuba_d": "2026-01-01T03:51:21",
             "reactions": {
                 "👍": 2,
-                "👎": 4
+                "👎": 7
             },
-            "views": 410,
+            "views": 539,
             "replies": 3,
             "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨",
-            "count": 4
+            "count": 7
         }
     ],
     "top25_most_repeated_words": {
