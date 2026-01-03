@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-03T10:42:57.655968-05:00",
+    "sync_date": "2026-01-03T11:30:37.427876-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -24,10 +24,10 @@
         "date_cuba": "2026-01-03 08:42:15",
         "date_cuba_d": "2026-01-03T08:42:15",
         "reactions": {
-            "👍": 3,
-            "👎": 11
+            "👍": 4,
+            "👎": 13
         },
-        "views": 8165,
+        "views": 10382,
         "replies": 0,
         "text": "📣Consumidores del municipio Playa se encuentran afectados por trabajos operativos en  :Calle 54 desde 17 hasta 41; Calle 25 desde 46 hasta 66 (Buenavista) 📣"
     },
@@ -63,21 +63,21 @@
         "text": "🚧📉Informamos que por Disparado Automático por Frecuencia (DAF) se ha afectado el servicio eléctrico en los siguientes municipios:\n\n📌Boyeros: 👉🏼Santiago de Las Vegas calle 204 hasta 188, 409 hasta 397, Guadalupe👉🏼Santiago, La Especial, El Tesi, La Unión, Lídice, Sempala, Cacahual, La Chata, Santa Susana👉🏼Santiago, Villa Nueva, Caridad, Sierra Maestra, La Unión, Comunidad Revolución, Lídice, Naroca, Rocío.\n\n📌Playa: 👉🏼Calle 25 desde 158 a 190, calle 190 de 194 hasta 5ta Reparto Náutico, Calle 9na desde 120 hasta 130 👉🏼Calle 28 desde 41 hasta 47; Calle 41 desde 9na hasta 24 (Kholy); Calle 10 desde 5ta hasta 9na (Kholy); Calle 12 desde 12 hasta 24 (Miramar)👉🏼\n\n📌Playa-Plaza: 👉🏼Hospitales Centro de Inv Clínico de Menores 24 y 45 Calle 47 desde 26 hasta 38 (Reparto Kholy); Cuadrante desde el Rio Almendares hasta Calle 20 desde Ave. 23 hasta Malecón, Cuadrante desde Calle 6 a 20 y desde Línea a Malecón\n\n📌Marianao: 👉🏼Calle 37 desde 130 hasta 100 , Los Quemados, calle 84 -86-88-90 desde 39a hasta 51, Santa Felicia Reparto Finlay y Alturas de  Belén \n\n📌Cerro: 👉🏼Calle Cristina desde 4 Caminos a san Joaquín, Ataré\n\n📌Cotorro: 👉🏼Dulce Nombre, Santa María del Rosario\n\n📌Habana del Este: Alamar:👉🏼Zonas: 6, 7, 8, 9, 10, 11, Micro 4👉🏼Zonas: 1, 2, 3, 5, 24, 8, 7👉🏼Zonas: 12, 14, 13, 19, 20, 21, 23, 24, 25👉🏼Justi, Agromar, Bajurayabo, Campo Florido, La Coca👉🏼Altura de Boca Ciega, Santa María del Mar, Villa Mégano, Ampliación de Marbella, Guanabo, Bello Monte, Villa del Mar.🚧📉",
         "count": 1476
     },
-    "total_views": 1491995,
-    "total_messages": 73,
+    "total_views": 1525178,
+    "total_messages": 74,
     "total_erased_messages": 4,
-    "total_replies": 678,
-    "total_reactions": 5845,
-    "total_positive_reactions": 1554,
-    "total_negative_reactions": 4291,
-    "avg_views": 20438,
+    "total_replies": 680,
+    "total_reactions": 5928,
+    "total_positive_reactions": 1579,
+    "total_negative_reactions": 4349,
+    "avg_views": 20611,
     "avg_replies": 9,
     "avg_reactions": 80,
     "avg_positive_reactions": 21,
     "avg_negative_reactions": 59,
-    "avg_text_length": 219,
+    "avg_text_length": 216,
     "monthly_views": {
-        "1": 1491995,
+        "1": 1525178,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -91,7 +91,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 678,
+        "1": 680,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -105,7 +105,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 5845,
+        "1": 5928,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -119,7 +119,7 @@
         "12": 0
     },
     "monthly_messages": {
-        "1": 73,
+        "1": 74,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -135,7 +135,7 @@
     "daily_messages": {
         "1": 32,
         "2": 30,
-        "3": 11,
+        "3": 12,
         "4": 0,
         "5": 0,
         "6": 0,
@@ -501,15 +501,15 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 47,
+        "1": 48,
         "2": 18,
         "3": 5,
         "4": 3,
         "5": 0
     },
     "distribution_reaction": {
-        "👎": 4291,
-        "👍": 1554
+        "👎": 4349,
+        "👍": 1579
     },
     "top3_most_viewed_messages": [
         {
@@ -521,12 +521,12 @@
             "date_cuba_d": "2026-01-02T07:16:20",
             "reactions": {
                 "👍": 86,
-                "👎": 588
+                "👎": 590
             },
-            "views": 28643,
+            "views": 28937,
             "replies": 129,
             "text": "NOTA INFORMATIVA \n\nEELH| En el día de ayer NO se afectó el servicio eléctrico en La Habana por Déficit.\nComo ya hemos explicado estas afectaciones sólo dependerán de las exigencias del SEN.",
-            "count": 28643
+            "count": 28937
         },
         {
             "id": 50542,
@@ -571,9 +571,9 @@
             "date_cuba_d": "2026-01-02T07:16:20",
             "reactions": {
                 "👍": 86,
-                "👎": 588
+                "👎": 590
             },
-            "views": 28643,
+            "views": 28937,
             "replies": 129,
             "text": "NOTA INFORMATIVA \n\nEELH| En el día de ayer NO se afectó el servicio eléctrico en La Habana por Déficit.\nComo ya hemos explicado estas afectaciones sólo dependerán de las exigencias del SEN.",
             "count": 129
@@ -587,9 +587,9 @@
             "date_cuba_d": "2026-01-02T15:32:55",
             "reactions": {
                 "👍": 34,
-                "👎": 487
+                "👎": 489
             },
-            "views": 22775,
+            "views": 23192,
             "replies": 91,
             "text": "🔴 15:07 || Fuera de línea la Unidad 5 de la CTE Diez de Octubre por baja cobertura de agua.",
             "count": 91
@@ -653,9 +653,9 @@
             "date_cuba_d": "2026-01-02T07:16:20",
             "reactions": {
                 "👍": 86,
-                "👎": 588
+                "👎": 590
             },
-            "views": 28643,
+            "views": 28937,
             "replies": 129,
             "text": "NOTA INFORMATIVA \n\nEELH| En el día de ayer NO se afectó el servicio eléctrico en La Habana por Déficit.\nComo ya hemos explicado estas afectaciones sólo dependerán de las exigencias del SEN.",
             "count": 86
@@ -671,12 +671,12 @@
             "date_cuba_d": "2026-01-02T07:16:20",
             "reactions": {
                 "👍": 86,
-                "👎": 588
+                "👎": 590
             },
-            "views": 28643,
+            "views": 28937,
             "replies": 129,
             "text": "NOTA INFORMATIVA \n\nEELH| En el día de ayer NO se afectó el servicio eléctrico en La Habana por Déficit.\nComo ya hemos explicado estas afectaciones sólo dependerán de las exigencias del SEN.",
-            "count": 588
+            "count": 590
         },
         {
             "id": 50600,
@@ -687,28 +687,28 @@
             "date_cuba_d": "2026-01-02T15:32:55",
             "reactions": {
                 "👍": 34,
-                "👎": 487
+                "👎": 489
             },
-            "views": 22775,
+            "views": 23192,
             "replies": 91,
             "text": "🔴 15:07 || Fuera de línea la Unidad 5 de la CTE Diez de Octubre por baja cobertura de agua.",
-            "count": 487
+            "count": 489
         },
         {
-            "id": 50593,
-            "link": "https://t.me/EmpresaElectricaDeLaHabana/50593",
-            "date_utc": "2026-01-02 15:29:58",
-            "date_utc_d": "2026-01-02T15:29:58",
-            "date_cuba": "2026-01-02 10:29:58",
-            "date_cuba_d": "2026-01-02T10:29:58",
+            "id": 50613,
+            "link": "https://t.me/EmpresaElectricaDeLaHabana/50613",
+            "date_utc": "2026-01-03 12:21:14",
+            "date_utc_d": "2026-01-03T12:21:14",
+            "date_cuba": "2026-01-03 07:21:14",
+            "date_cuba_d": "2026-01-03T07:21:14",
             "reactions": {
-                "👍": 25,
-                "👎": 136
+                "👍": 57,
+                "👎": 140
             },
-            "views": 26298,
-            "replies": 29,
-            "text": "⚡ Actualización del Sistema Electroenergético Nacional para el 2 de enero de 2026.\n\nLeer más: https://www.unionelectrica.cu/nota-informativa/\n\n#UnidosXCuba #UniónEléctrica #UNE #NotaInformativa",
-            "count": 136
+            "views": 13441,
+            "replies": 9,
+            "text": "NOTA INFORMATIVA \n\nEELH| En el día de ayer NO se afectó el servicio eléctrico en La Habana por Déficit.\nComo ya hemos explicado estas afectaciones sólo dependerán de las exigencias del SEN.",
+            "count": 140
         }
     ],
     "top25_most_repeated_words": {
