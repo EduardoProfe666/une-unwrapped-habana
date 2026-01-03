@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-03T07:50:02.940383-05:00",
+    "sync_date": "2026-01-03T08:32:34.815243-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -17,19 +17,18 @@
         "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨"
     },
     "last_message": {
-        "id": 50613,
-        "link": "https://t.me/EmpresaElectricaDeLaHabana/50613",
-        "date_utc": "2026-01-03 12:21:14",
-        "date_utc_d": "2026-01-03T12:21:14",
-        "date_cuba": "2026-01-03 07:21:14",
-        "date_cuba_d": "2026-01-03T07:21:14",
+        "id": 50615,
+        "link": "https://t.me/EmpresaElectricaDeLaHabana/50615",
+        "date_utc": "2026-01-03 13:21:21",
+        "date_utc_d": "2026-01-03T13:21:21",
+        "date_cuba": "2026-01-03 08:21:21",
+        "date_cuba_d": "2026-01-03T08:21:21",
         "reactions": {
-            "👍": 16,
-            "👎": 44
+            "👎": 4
         },
-        "views": 2257,
-        "replies": 4,
-        "text": "NOTA INFORMATIVA \n\nEELH| En el día de ayer NO se afectó el servicio eléctrico en La Habana por Déficit.\nComo ya hemos explicado estas afectaciones sólo dependerán de las exigencias del SEN."
+        "views": 1131,
+        "replies": 1,
+        "text": "📣Consumidores del municipio Playa se encuentran afectados por trabajos operativos en : Calle 9na desde 76 hasta 84; Calle 84 desde 3ra hasta 9na (Almendares); Calle 3ra desde 80 hasta 98; Calle 7ma desde 84 hasta 110; Calle 98 desde 7ma hasta 11\nQuerejeta, Almendares📣"
     },
     "shortest_message": {
         "id": 50551,
@@ -63,21 +62,21 @@
         "text": "🚧📉Informamos que por Disparado Automático por Frecuencia (DAF) se ha afectado el servicio eléctrico en los siguientes municipios:\n\n📌Boyeros: 👉🏼Santiago de Las Vegas calle 204 hasta 188, 409 hasta 397, Guadalupe👉🏼Santiago, La Especial, El Tesi, La Unión, Lídice, Sempala, Cacahual, La Chata, Santa Susana👉🏼Santiago, Villa Nueva, Caridad, Sierra Maestra, La Unión, Comunidad Revolución, Lídice, Naroca, Rocío.\n\n📌Playa: 👉🏼Calle 25 desde 158 a 190, calle 190 de 194 hasta 5ta Reparto Náutico, Calle 9na desde 120 hasta 130 👉🏼Calle 28 desde 41 hasta 47; Calle 41 desde 9na hasta 24 (Kholy); Calle 10 desde 5ta hasta 9na (Kholy); Calle 12 desde 12 hasta 24 (Miramar)👉🏼\n\n📌Playa-Plaza: 👉🏼Hospitales Centro de Inv Clínico de Menores 24 y 45 Calle 47 desde 26 hasta 38 (Reparto Kholy); Cuadrante desde el Rio Almendares hasta Calle 20 desde Ave. 23 hasta Malecón, Cuadrante desde Calle 6 a 20 y desde Línea a Malecón\n\n📌Marianao: 👉🏼Calle 37 desde 130 hasta 100 , Los Quemados, calle 84 -86-88-90 desde 39a hasta 51, Santa Felicia Reparto Finlay y Alturas de  Belén \n\n📌Cerro: 👉🏼Calle Cristina desde 4 Caminos a san Joaquín, Ataré\n\n📌Cotorro: 👉🏼Dulce Nombre, Santa María del Rosario\n\n📌Habana del Este: Alamar:👉🏼Zonas: 6, 7, 8, 9, 10, 11, Micro 4👉🏼Zonas: 1, 2, 3, 5, 24, 8, 7👉🏼Zonas: 12, 14, 13, 19, 20, 21, 23, 24, 25👉🏼Justi, Agromar, Bajurayabo, Campo Florido, La Coca👉🏼Altura de Boca Ciega, Santa María del Mar, Villa Mégano, Ampliación de Marbella, Guanabo, Bello Monte, Villa del Mar.🚧📉",
         "count": 1476
     },
-    "total_views": 1364919,
-    "total_messages": 68,
+    "total_views": 1394543,
+    "total_messages": 70,
     "total_erased_messages": 4,
-    "total_replies": 665,
-    "total_reactions": 5527,
-    "total_positive_reactions": 1481,
-    "total_negative_reactions": 4046,
-    "avg_views": 20072,
+    "total_replies": 669,
+    "total_reactions": 5606,
+    "total_positive_reactions": 1503,
+    "total_negative_reactions": 4103,
+    "avg_views": 19922,
     "avg_replies": 10,
-    "avg_reactions": 81,
-    "avg_positive_reactions": 22,
-    "avg_negative_reactions": 60,
-    "avg_text_length": 229,
+    "avg_reactions": 80,
+    "avg_positive_reactions": 21,
+    "avg_negative_reactions": 59,
+    "avg_text_length": 226,
     "monthly_views": {
-        "1": 1364919,
+        "1": 1394543,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -91,7 +90,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 665,
+        "1": 669,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -105,7 +104,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 5527,
+        "1": 5606,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -119,7 +118,7 @@
         "12": 0
     },
     "monthly_messages": {
-        "1": 68,
+        "1": 70,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -135,7 +134,7 @@
     "daily_messages": {
         "1": 32,
         "2": 30,
-        "3": 6,
+        "3": 8,
         "4": 0,
         "5": 0,
         "6": 0,
@@ -501,15 +500,15 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 42,
+        "1": 44,
         "2": 18,
         "3": 5,
         "4": 3,
         "5": 0
     },
     "distribution_reaction": {
-        "👎": 4046,
-        "👍": 1481
+        "👎": 4103,
+        "👍": 1503
     },
     "top3_most_viewed_messages": [
         {
@@ -523,10 +522,10 @@
                 "👍": 85,
                 "👎": 587
             },
-            "views": 27477,
-            "replies": 130,
+            "views": 27598,
+            "replies": 129,
             "text": "NOTA INFORMATIVA \n\nEELH| En el día de ayer NO se afectó el servicio eléctrico en La Habana por Déficit.\nComo ya hemos explicado estas afectaciones sólo dependerán de las exigencias del SEN.",
-            "count": 27477
+            "count": 27598
         },
         {
             "id": 50542,
@@ -573,10 +572,10 @@
                 "👍": 85,
                 "👎": 587
             },
-            "views": 27477,
-            "replies": 130,
+            "views": 27598,
+            "replies": 129,
             "text": "NOTA INFORMATIVA \n\nEELH| En el día de ayer NO se afectó el servicio eléctrico en La Habana por Déficit.\nComo ya hemos explicado estas afectaciones sólo dependerán de las exigencias del SEN.",
-            "count": 130
+            "count": 129
         },
         {
             "id": 50600,
@@ -589,7 +588,7 @@
                 "👍": 34,
                 "👎": 481
             },
-            "views": 20855,
+            "views": 21366,
             "replies": 91,
             "text": "🔴 15:07 || Fuera de línea la Unidad 5 de la CTE Diez de Octubre por baja cobertura de agua.",
             "count": 91
@@ -655,8 +654,8 @@
                 "👍": 85,
                 "👎": 587
             },
-            "views": 27477,
-            "replies": 130,
+            "views": 27598,
+            "replies": 129,
             "text": "NOTA INFORMATIVA \n\nEELH| En el día de ayer NO se afectó el servicio eléctrico en La Habana por Déficit.\nComo ya hemos explicado estas afectaciones sólo dependerán de las exigencias del SEN.",
             "count": 85
         }
@@ -673,8 +672,8 @@
                 "👍": 85,
                 "👎": 587
             },
-            "views": 27477,
-            "replies": 130,
+            "views": 27598,
+            "replies": 129,
             "text": "NOTA INFORMATIVA \n\nEELH| En el día de ayer NO se afectó el servicio eléctrico en La Habana por Déficit.\nComo ya hemos explicado estas afectaciones sólo dependerán de las exigencias del SEN.",
             "count": 587
         },
@@ -689,7 +688,7 @@
                 "👍": 34,
                 "👎": 481
             },
-            "views": 20855,
+            "views": 21366,
             "replies": 91,
             "text": "🔴 15:07 || Fuera de línea la Unidad 5 de la CTE Diez de Octubre por baja cobertura de agua.",
             "count": 481
@@ -705,25 +704,25 @@
                 "👍": 25,
                 "👎": 136
             },
-            "views": 25210,
+            "views": 25481,
             "replies": 29,
             "text": "⚡ Actualización del Sistema Electroenergético Nacional para el 2 de enero de 2026.\n\nLeer más: https://www.unionelectrica.cu/nota-informativa/\n\n#UnidosXCuba #UniónEléctrica #UNE #NotaInformativa",
             "count": 136
         }
     ],
     "top25_most_repeated_words": {
-        "calle": 71,
+        "calle": 76,
         "servicio": 35,
         "eléctrico": 30,
+        "municipio": 25,
         "ta": 25,
-        "municipio": 24,
         "zonas": 20,
-        "consumidores": 18,
+        "consumidores": 19,
+        "na": 19,
         "daf": 18,
         "habana": 18,
-        "na": 17,
+        "playa": 17,
         "frecuencia": 16,
-        "playa": 16,
         "santa": 16,
         "cerro": 15,
         "ha": 14,
