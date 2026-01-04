@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-04T14:40:06.028036-05:00",
+    "sync_date": "2026-01-04T15:28:37.219759-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -24,11 +24,11 @@
         "date_cuba": "2026-01-04 12:22:04",
         "date_cuba_d": "2026-01-04T12:22:04",
         "reactions": {
-            "👍": 9,
-            "👎": 75
+            "👍": 13,
+            "👎": 82
         },
-        "views": 10261,
-        "replies": 7,
+        "views": 12919,
+        "replies": 6,
         "text": "⚡ Actualización del Sistema Electroenergético Nacional para el 4 de enero de 2026.\n\nLeer más: https://www.unionelectrica.cu/nota-informativa/\n\n#UnidosXCuba #UniónEléctrica #UNE #NotaInformativa"
     },
     "shortest_message": {
@@ -42,7 +42,7 @@
             "👍": 52,
             "👎": 55
         },
-        "views": 21910,
+        "views": 22123,
         "replies": 0,
         "text": "✅Cerrado el bloque No.3✅",
         "count": 24
@@ -63,21 +63,21 @@
         "text": "🚧📉Informamos que por Disparado Automático por Frecuencia (DAF) se ha afectado el servicio eléctrico en los siguientes municipios:\n\n📌Boyeros: 👉🏼Santiago de Las Vegas calle 204 hasta 188, 409 hasta 397, Guadalupe👉🏼Santiago, La Especial, El Tesi, La Unión, Lídice, Sempala, Cacahual, La Chata, Santa Susana👉🏼Santiago, Villa Nueva, Caridad, Sierra Maestra, La Unión, Comunidad Revolución, Lídice, Naroca, Rocío.\n\n📌Playa: 👉🏼Calle 25 desde 158 a 190, calle 190 de 194 hasta 5ta Reparto Náutico, Calle 9na desde 120 hasta 130 👉🏼Calle 28 desde 41 hasta 47; Calle 41 desde 9na hasta 24 (Kholy); Calle 10 desde 5ta hasta 9na (Kholy); Calle 12 desde 12 hasta 24 (Miramar)👉🏼\n\n📌Playa-Plaza: 👉🏼Hospitales Centro de Inv Clínico de Menores 24 y 45 Calle 47 desde 26 hasta 38 (Reparto Kholy); Cuadrante desde el Rio Almendares hasta Calle 20 desde Ave. 23 hasta Malecón, Cuadrante desde Calle 6 a 20 y desde Línea a Malecón\n\n📌Marianao: 👉🏼Calle 37 desde 130 hasta 100 , Los Quemados, calle 84 -86-88-90 desde 39a hasta 51, Santa Felicia Reparto Finlay y Alturas de  Belén \n\n📌Cerro: 👉🏼Calle Cristina desde 4 Caminos a san Joaquín, Ataré\n\n📌Cotorro: 👉🏼Dulce Nombre, Santa María del Rosario\n\n📌Habana del Este: Alamar:👉🏼Zonas: 6, 7, 8, 9, 10, 11, Micro 4👉🏼Zonas: 1, 2, 3, 5, 24, 8, 7👉🏼Zonas: 12, 14, 13, 19, 20, 21, 23, 24, 25👉🏼Justi, Agromar, Bajurayabo, Campo Florido, La Coca👉🏼Altura de Boca Ciega, Santa María del Mar, Villa Mégano, Ampliación de Marbella, Guanabo, Bello Monte, Villa del Mar.🚧📉",
         "count": 1476
     },
-    "total_views": 3177934,
+    "total_views": 3214286,
     "total_messages": 144,
     "total_erased_messages": 7,
-    "total_replies": 1354,
-    "total_reactions": 14785,
-    "total_positive_reactions": 3593,
-    "total_negative_reactions": 11192,
-    "avg_views": 22069,
+    "total_replies": 1355,
+    "total_reactions": 14839,
+    "total_positive_reactions": 3616,
+    "total_negative_reactions": 11223,
+    "avg_views": 22321,
     "avg_replies": 9,
     "avg_reactions": 103,
     "avg_positive_reactions": 25,
     "avg_negative_reactions": 78,
     "avg_text_length": 181,
     "monthly_views": {
-        "1": 3177934,
+        "1": 3214286,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -91,7 +91,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 1354,
+        "1": 1355,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -105,7 +105,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 14785,
+        "1": 14839,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -508,8 +508,8 @@
         "5": 26
     },
     "distribution_reaction": {
-        "👎": 11192,
-        "👍": 3593
+        "👎": 11223,
+        "👍": 3616
     },
     "top3_most_viewed_messages": [
         {
@@ -639,7 +639,7 @@
                 "👍": 181,
                 "👎": 54
             },
-            "views": 18695,
+            "views": 19010,
             "replies": 14,
             "text": "✅Cerrado el déficit de la ciudad hasta el momento✅",
             "count": 181
