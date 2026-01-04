@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-04T10:24:31.597949-05:00",
+    "sync_date": "2026-01-04T10:42:22.629779-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -24,11 +24,11 @@
         "date_cuba": "2026-01-04 08:01:39",
         "date_cuba_d": "2026-01-04T08:01:39",
         "reactions": {
-            "👍": 16,
-            "👎": 181
+            "👍": 17,
+            "👎": 195
         },
-        "views": 12427,
-        "replies": 19,
+        "views": 13617,
+        "replies": 23,
         "text": "EELH👇| Programación de afectaciones por déficit de generación para esta semana del 5 al 11 de enero del 2026."
     },
     "shortest_message": {
@@ -42,7 +42,7 @@
             "👍": 49,
             "👎": 55
         },
-        "views": 20113,
+        "views": 20467,
         "replies": 0,
         "text": "✅Cerrado el bloque No.3✅",
         "count": 24
@@ -63,21 +63,21 @@
         "text": "🚧📉Informamos que por Disparado Automático por Frecuencia (DAF) se ha afectado el servicio eléctrico en los siguientes municipios:\n\n📌Boyeros: 👉🏼Santiago de Las Vegas calle 204 hasta 188, 409 hasta 397, Guadalupe👉🏼Santiago, La Especial, El Tesi, La Unión, Lídice, Sempala, Cacahual, La Chata, Santa Susana👉🏼Santiago, Villa Nueva, Caridad, Sierra Maestra, La Unión, Comunidad Revolución, Lídice, Naroca, Rocío.\n\n📌Playa: 👉🏼Calle 25 desde 158 a 190, calle 190 de 194 hasta 5ta Reparto Náutico, Calle 9na desde 120 hasta 130 👉🏼Calle 28 desde 41 hasta 47; Calle 41 desde 9na hasta 24 (Kholy); Calle 10 desde 5ta hasta 9na (Kholy); Calle 12 desde 12 hasta 24 (Miramar)👉🏼\n\n📌Playa-Plaza: 👉🏼Hospitales Centro de Inv Clínico de Menores 24 y 45 Calle 47 desde 26 hasta 38 (Reparto Kholy); Cuadrante desde el Rio Almendares hasta Calle 20 desde Ave. 23 hasta Malecón, Cuadrante desde Calle 6 a 20 y desde Línea a Malecón\n\n📌Marianao: 👉🏼Calle 37 desde 130 hasta 100 , Los Quemados, calle 84 -86-88-90 desde 39a hasta 51, Santa Felicia Reparto Finlay y Alturas de  Belén \n\n📌Cerro: 👉🏼Calle Cristina desde 4 Caminos a san Joaquín, Ataré\n\n📌Cotorro: 👉🏼Dulce Nombre, Santa María del Rosario\n\n📌Habana del Este: Alamar:👉🏼Zonas: 6, 7, 8, 9, 10, 11, Micro 4👉🏼Zonas: 1, 2, 3, 5, 24, 8, 7👉🏼Zonas: 12, 14, 13, 19, 20, 21, 23, 24, 25👉🏼Justi, Agromar, Bajurayabo, Campo Florido, La Coca👉🏼Altura de Boca Ciega, Santa María del Mar, Villa Mégano, Ampliación de Marbella, Guanabo, Bello Monte, Villa del Mar.🚧📉",
         "count": 1476
     },
-    "total_views": 2947296,
+    "total_views": 2968971,
     "total_messages": 137,
     "total_erased_messages": 7,
-    "total_replies": 1325,
-    "total_reactions": 14110,
-    "total_positive_reactions": 3376,
-    "total_negative_reactions": 10734,
-    "avg_views": 21513,
+    "total_replies": 1329,
+    "total_reactions": 14168,
+    "total_positive_reactions": 3387,
+    "total_negative_reactions": 10781,
+    "avg_views": 21671,
     "avg_replies": 10,
     "avg_reactions": 103,
     "avg_positive_reactions": 25,
-    "avg_negative_reactions": 78,
+    "avg_negative_reactions": 79,
     "avg_text_length": 186,
     "monthly_views": {
-        "1": 2947296,
+        "1": 2968971,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -91,7 +91,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 1325,
+        "1": 1329,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -105,7 +105,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 14110,
+        "1": 14168,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -508,8 +508,8 @@
         "5": 26
     },
     "distribution_reaction": {
-        "👎": 10734,
-        "👍": 3376
+        "👎": 10781,
+        "👍": 3387
     },
     "top3_most_viewed_messages": [
         {
@@ -605,7 +605,7 @@
                 "👍": 27,
                 "👎": 337
             },
-            "views": 26961,
+            "views": 27185,
             "replies": 64,
             "text": "🚨‼️Informamos a los clientes asociados al Bloque no.6 que a partir de este momento inicia la afectación por déficit de generación hasta las  9 pm aproximadamente  ‼️🚨",
             "count": 64
@@ -636,13 +636,13 @@
             "date_cuba": "2026-01-03 21:09:34",
             "date_cuba_d": "2026-01-03T21:09:34",
             "reactions": {
-                "👍": 177,
+                "👍": 178,
                 "👎": 54
             },
-            "views": 15671,
+            "views": 16048,
             "replies": 14,
             "text": "✅Cerrado el déficit de la ciudad hasta el momento✅",
-            "count": 177
+            "count": 178
         },
         {
             "id": 50551,
