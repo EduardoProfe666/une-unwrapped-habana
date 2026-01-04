@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-04T04:24:40.367945-05:00",
+    "sync_date": "2026-01-04T04:42:19.410946-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -27,7 +27,7 @@
             "👍": 2,
             "👎": 14
         },
-        "views": 2412,
+        "views": 2473,
         "replies": 0,
         "text": "📍Consumidores del municipio Boyeros quedan afectados por una averìa por transformador dañado en : Calle E / N y Pasaje Central afectando un Edificio.📍"
     },
@@ -42,7 +42,7 @@
             "👍": 46,
             "👎": 55
         },
-        "views": 17772,
+        "views": 17802,
         "replies": 0,
         "text": "✅Cerrado el bloque No.3✅",
         "count": 24
@@ -63,21 +63,21 @@
         "text": "🚧📉Informamos que por Disparado Automático por Frecuencia (DAF) se ha afectado el servicio eléctrico en los siguientes municipios:\n\n📌Boyeros: 👉🏼Santiago de Las Vegas calle 204 hasta 188, 409 hasta 397, Guadalupe👉🏼Santiago, La Especial, El Tesi, La Unión, Lídice, Sempala, Cacahual, La Chata, Santa Susana👉🏼Santiago, Villa Nueva, Caridad, Sierra Maestra, La Unión, Comunidad Revolución, Lídice, Naroca, Rocío.\n\n📌Playa: 👉🏼Calle 25 desde 158 a 190, calle 190 de 194 hasta 5ta Reparto Náutico, Calle 9na desde 120 hasta 130 👉🏼Calle 28 desde 41 hasta 47; Calle 41 desde 9na hasta 24 (Kholy); Calle 10 desde 5ta hasta 9na (Kholy); Calle 12 desde 12 hasta 24 (Miramar)👉🏼\n\n📌Playa-Plaza: 👉🏼Hospitales Centro de Inv Clínico de Menores 24 y 45 Calle 47 desde 26 hasta 38 (Reparto Kholy); Cuadrante desde el Rio Almendares hasta Calle 20 desde Ave. 23 hasta Malecón, Cuadrante desde Calle 6 a 20 y desde Línea a Malecón\n\n📌Marianao: 👉🏼Calle 37 desde 130 hasta 100 , Los Quemados, calle 84 -86-88-90 desde 39a hasta 51, Santa Felicia Reparto Finlay y Alturas de  Belén \n\n📌Cerro: 👉🏼Calle Cristina desde 4 Caminos a san Joaquín, Ataré\n\n📌Cotorro: 👉🏼Dulce Nombre, Santa María del Rosario\n\n📌Habana del Este: Alamar:👉🏼Zonas: 6, 7, 8, 9, 10, 11, Micro 4👉🏼Zonas: 1, 2, 3, 5, 24, 8, 7👉🏼Zonas: 12, 14, 13, 19, 20, 21, 23, 24, 25👉🏼Justi, Agromar, Bajurayabo, Campo Florido, La Coca👉🏼Altura de Boca Ciega, Santa María del Mar, Villa Mégano, Ampliación de Marbella, Guanabo, Bello Monte, Villa del Mar.🚧📉",
         "count": 1476
     },
-    "total_views": 2686729,
+    "total_views": 2688304,
     "total_messages": 129,
     "total_erased_messages": 7,
     "total_replies": 1285,
-    "total_reactions": 13266,
-    "total_positive_reactions": 3145,
-    "total_negative_reactions": 10121,
-    "avg_views": 20827,
+    "total_reactions": 13270,
+    "total_positive_reactions": 3146,
+    "total_negative_reactions": 10124,
+    "avg_views": 20840,
     "avg_replies": 10,
     "avg_reactions": 103,
     "avg_positive_reactions": 24,
     "avg_negative_reactions": 78,
     "avg_text_length": 192,
     "monthly_views": {
-        "1": 2686729,
+        "1": 2688304,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -105,7 +105,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 13266,
+        "1": 13270,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -508,8 +508,8 @@
         "5": 26
     },
     "distribution_reaction": {
-        "👎": 10121,
-        "👍": 3145
+        "👎": 10124,
+        "👍": 3146
     },
     "top3_most_viewed_messages": [
         {
@@ -605,7 +605,7 @@
                 "👍": 27,
                 "👎": 337
             },
-            "views": 25461,
+            "views": 25491,
             "replies": 64,
             "text": "🚨‼️Informamos a los clientes asociados al Bloque no.6 que a partir de este momento inicia la afectación por déficit de generación hasta las  9 pm aproximadamente  ‼️🚨",
             "count": 64
@@ -636,13 +636,13 @@
             "date_cuba": "2026-01-03 21:09:34",
             "date_cuba_d": "2026-01-03T21:09:34",
             "reactions": {
-                "👍": 162,
+                "👍": 163,
                 "👎": 47
             },
-            "views": 9917,
+            "views": 9977,
             "replies": 14,
             "text": "✅Cerrado el déficit de la ciudad hasta el momento✅",
-            "count": 162
+            "count": 163
         },
         {
             "id": 50551,
@@ -705,7 +705,7 @@
                 "👍": 25,
                 "👎": 385
             },
-            "views": 24809,
+            "views": 24839,
             "replies": 58,
             "text": "🚨‼️Informamos a los clientes asociados al Bloque no.3 que a partir de este momento inicia la afectación por déficit de generación hasta las  7pm aproximadamente  ‼️🚨",
             "count": 385
