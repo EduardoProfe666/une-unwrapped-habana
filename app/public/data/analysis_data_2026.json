@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-05T08:46:58.011211-05:00",
+    "sync_date": "2026-01-05T09:30:04.158703-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -24,11 +24,11 @@
         "date_cuba": "2026-01-05 08:35:29",
         "date_cuba_d": "2026-01-05T08:35:29",
         "reactions": {
-            "👍": 9,
-            "👎": 18
+            "👍": 20,
+            "👎": 55
         },
-        "views": 1531,
-        "replies": 0,
+        "views": 5779,
+        "replies": 4,
         "text": "NOTA INFORMATIVA\n\nEELH| En el día de ayer se afectó el servicio eléctrico en La Habana 02:48 horas. La máxima afectación fue de 189MW a las 6:20PM. Fue restablecida la afectación a las 7:38PM.\nEn la madrugada NO se afectó por Déficit.\nComo ya hemos explicado estas afectaciones sólo dependerán de las exigencias del SEN."
     },
     "shortest_message": {
@@ -63,21 +63,21 @@
         "text": "🚧📉Informamos que por Disparado Automático por Frecuencia (DAF) se ha afectado el servicio eléctrico en los siguientes municipios:\n\n📌Boyeros: 👉🏼Santiago de Las Vegas calle 204 hasta 188, 409 hasta 397, Guadalupe👉🏼Santiago, La Especial, El Tesi, La Unión, Lídice, Sempala, Cacahual, La Chata, Santa Susana👉🏼Santiago, Villa Nueva, Caridad, Sierra Maestra, La Unión, Comunidad Revolución, Lídice, Naroca, Rocío.\n\n📌Playa: 👉🏼Calle 25 desde 158 a 190, calle 190 de 194 hasta 5ta Reparto Náutico, Calle 9na desde 120 hasta 130 👉🏼Calle 28 desde 41 hasta 47; Calle 41 desde 9na hasta 24 (Kholy); Calle 10 desde 5ta hasta 9na (Kholy); Calle 12 desde 12 hasta 24 (Miramar)👉🏼\n\n📌Playa-Plaza: 👉🏼Hospitales Centro de Inv Clínico de Menores 24 y 45 Calle 47 desde 26 hasta 38 (Reparto Kholy); Cuadrante desde el Rio Almendares hasta Calle 20 desde Ave. 23 hasta Malecón, Cuadrante desde Calle 6 a 20 y desde Línea a Malecón\n\n📌Marianao: 👉🏼Calle 37 desde 130 hasta 100 , Los Quemados, calle 84 -86-88-90 desde 39a hasta 51, Santa Felicia Reparto Finlay y Alturas de  Belén \n\n📌Cerro: 👉🏼Calle Cristina desde 4 Caminos a san Joaquín, Ataré\n\n📌Cotorro: 👉🏼Dulce Nombre, Santa María del Rosario\n\n📌Habana del Este: Alamar:👉🏼Zonas: 6, 7, 8, 9, 10, 11, Micro 4👉🏼Zonas: 1, 2, 3, 5, 24, 8, 7👉🏼Zonas: 12, 14, 13, 19, 20, 21, 23, 24, 25👉🏼Justi, Agromar, Bajurayabo, Campo Florido, La Coca👉🏼Altura de Boca Ciega, Santa María del Mar, Villa Mégano, Ampliación de Marbella, Guanabo, Bello Monte, Villa del Mar.🚧📉",
         "count": 1476
     },
-    "total_views": 4092237,
+    "total_views": 4139451,
     "total_messages": 188,
     "total_erased_messages": 8,
-    "total_replies": 1736,
-    "total_reactions": 19482,
-    "total_positive_reactions": 4915,
-    "total_negative_reactions": 14567,
-    "avg_views": 21767,
+    "total_replies": 1742,
+    "total_reactions": 19663,
+    "total_positive_reactions": 4935,
+    "total_negative_reactions": 14728,
+    "avg_views": 22018,
     "avg_replies": 9,
-    "avg_reactions": 104,
+    "avg_reactions": 105,
     "avg_positive_reactions": 26,
-    "avg_negative_reactions": 77,
+    "avg_negative_reactions": 78,
     "avg_text_length": 178,
     "monthly_views": {
-        "1": 4092237,
+        "1": 4139451,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -91,7 +91,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 1736,
+        "1": 1742,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -105,7 +105,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 19482,
+        "1": 19663,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -508,8 +508,8 @@
         "5": 45
     },
     "distribution_reaction": {
-        "👎": 14567,
-        "👍": 4915
+        "👎": 14728,
+        "👍": 4935
     },
     "top3_most_viewed_messages": [
         {
@@ -653,9 +653,9 @@
             "date_cuba_d": "2026-01-04T19:38:16",
             "reactions": {
                 "👍": 174,
-                "👎": 48
+                "👎": 51
             },
-            "views": 14662,
+            "views": 15267,
             "replies": 22,
             "text": "✅Cerrado el déficit de la ciudad hasta el momento✅",
             "count": 174
