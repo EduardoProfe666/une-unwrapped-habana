@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-05T05:31:10.464366-05:00",
+    "sync_date": "2026-01-05T06:24:53.448238-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -17,18 +17,19 @@
         "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨"
     },
     "last_message": {
-        "id": 50728,
-        "link": "https://t.me/EmpresaElectricaDeLaHabana/50728",
-        "date_utc": "2026-01-05 07:49:38",
-        "date_utc_d": "2026-01-05T07:49:38",
-        "date_cuba": "2026-01-05 02:49:38",
-        "date_cuba_d": "2026-01-05T02:49:38",
+        "id": 50731,
+        "link": "https://t.me/EmpresaElectricaDeLaHabana/50731",
+        "date_utc": "2026-01-05 10:56:43",
+        "date_utc_d": "2026-01-05T10:56:43",
+        "date_cuba": "2026-01-05 05:56:43",
+        "date_cuba_d": "2026-01-05T05:56:43",
         "reactions": {
-            "👎": 7
+            "👍": 1,
+            "👎": 5
         },
-        "views": 1259,
-        "replies": 3,
-        "text": "🚨‼️Consumidores del municipio Cotorro,los repartos Lotería ,Alberro,Alturas de Lotería,La Portada,4 Caminos,Loma de Tierra  y zonas aledañas se encuentran afectados por un disparo por 33KV.‼️🚨"
+        "views": 862,
+        "replies": 0,
+        "text": "📣Averías existentes hasta el momento\n\n🚨Averías Secundarias :\n\n📌Municipio: Lisa\n👉Dirección: 44 y 255\n\n\n📌Municipio:10 de octubre\n👉Dirección: Calzada de Luyanó/ Reyes y Blanquizal. (Unificados a 110V)"
     },
     "shortest_message": {
         "id": 50647,
@@ -62,21 +63,21 @@
         "text": "🚧📉Informamos que por Disparado Automático por Frecuencia (DAF) se ha afectado el servicio eléctrico en los siguientes municipios:\n\n📌Boyeros: 👉🏼Santiago de Las Vegas calle 204 hasta 188, 409 hasta 397, Guadalupe👉🏼Santiago, La Especial, El Tesi, La Unión, Lídice, Sempala, Cacahual, La Chata, Santa Susana👉🏼Santiago, Villa Nueva, Caridad, Sierra Maestra, La Unión, Comunidad Revolución, Lídice, Naroca, Rocío.\n\n📌Playa: 👉🏼Calle 25 desde 158 a 190, calle 190 de 194 hasta 5ta Reparto Náutico, Calle 9na desde 120 hasta 130 👉🏼Calle 28 desde 41 hasta 47; Calle 41 desde 9na hasta 24 (Kholy); Calle 10 desde 5ta hasta 9na (Kholy); Calle 12 desde 12 hasta 24 (Miramar)👉🏼\n\n📌Playa-Plaza: 👉🏼Hospitales Centro de Inv Clínico de Menores 24 y 45 Calle 47 desde 26 hasta 38 (Reparto Kholy); Cuadrante desde el Rio Almendares hasta Calle 20 desde Ave. 23 hasta Malecón, Cuadrante desde Calle 6 a 20 y desde Línea a Malecón\n\n📌Marianao: 👉🏼Calle 37 desde 130 hasta 100 , Los Quemados, calle 84 -86-88-90 desde 39a hasta 51, Santa Felicia Reparto Finlay y Alturas de  Belén \n\n📌Cerro: 👉🏼Calle Cristina desde 4 Caminos a san Joaquín, Ataré\n\n📌Cotorro: 👉🏼Dulce Nombre, Santa María del Rosario\n\n📌Habana del Este: Alamar:👉🏼Zonas: 6, 7, 8, 9, 10, 11, Micro 4👉🏼Zonas: 1, 2, 3, 5, 24, 8, 7👉🏼Zonas: 12, 14, 13, 19, 20, 21, 23, 24, 25👉🏼Justi, Agromar, Bajurayabo, Campo Florido, La Coca👉🏼Altura de Boca Ciega, Santa María del Mar, Villa Mégano, Ampliación de Marbella, Guanabo, Bello Monte, Villa del Mar.🚧📉",
         "count": 1476
     },
-    "total_views": 3939253,
-    "total_messages": 180,
+    "total_views": 3956148,
+    "total_messages": 182,
     "total_erased_messages": 8,
-    "total_replies": 1718,
-    "total_reactions": 19045,
-    "total_positive_reactions": 4749,
-    "total_negative_reactions": 14296,
-    "avg_views": 21885,
-    "avg_replies": 10,
-    "avg_reactions": 106,
+    "total_replies": 1719,
+    "total_reactions": 19109,
+    "total_positive_reactions": 4777,
+    "total_negative_reactions": 14332,
+    "avg_views": 21737,
+    "avg_replies": 9,
+    "avg_reactions": 105,
     "avg_positive_reactions": 26,
     "avg_negative_reactions": 79,
-    "avg_text_length": 178,
+    "avg_text_length": 177,
     "monthly_views": {
-        "1": 3939253,
+        "1": 3956148,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -90,7 +91,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 1718,
+        "1": 1719,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -104,7 +105,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 19045,
+        "1": 19109,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -118,7 +119,7 @@
         "12": 0
     },
     "monthly_messages": {
-        "1": 180,
+        "1": 182,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -136,7 +137,7 @@
         "2": 30,
         "3": 62,
         "4": 53,
-        "5": 3,
+        "5": 5,
         "6": 0,
         "7": 0,
         "8": 0,
@@ -500,15 +501,15 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 103,
+        "1": 104,
         "2": 22,
-        "3": 6,
+        "3": 7,
         "4": 4,
         "5": 45
     },
     "distribution_reaction": {
-        "👎": 14296,
-        "👍": 4749
+        "👎": 14332,
+        "👍": 4777
     },
     "top3_most_viewed_messages": [
         {
@@ -522,10 +523,10 @@
                 "👍": 39,
                 "👎": 340
             },
-            "views": 32896,
+            "views": 32987,
             "replies": 32,
             "text": "EELH👇| Programación de afectaciones por déficit de generación para esta semana del 5 al 11 de enero del 2026.",
-            "count": 32896
+            "count": 32987
         },
         {
             "id": 50684,
@@ -538,10 +539,10 @@
                 "👍": 54,
                 "👎": 205
             },
-            "views": 31522,
+            "views": 31583,
             "replies": 7,
             "text": "NOTA INFORMATIVA\n\nEELH| En el día de ayer se afectó el servicio eléctrico en La Habana 04:38 horas. La máxima afectación fue de 238MW a las 6:20PM. Fue restablecida la afectación a las 9:08PM.\nEn la madrugada NO se afectó el servicio eléctrico por Déficit.\nComo ya hemos explicado estas afectaciones sólo dependerán de las exigencias del SEN.",
-            "count": 31522
+            "count": 31583
         },
         {
             "id": 50587,
@@ -651,13 +652,13 @@
             "date_cuba": "2026-01-04 19:38:16",
             "date_cuba_d": "2026-01-04T19:38:16",
             "reactions": {
-                "👍": 166,
-                "👎": 45
+                "👍": 167,
+                "👎": 46
             },
-            "views": 11964,
+            "views": 12298,
             "replies": 22,
             "text": "✅Cerrado el déficit de la ciudad hasta el momento✅",
-            "count": 166
+            "count": 167
         }
     ],
     "top3_most_negative_reaction_messages": [
@@ -715,7 +716,7 @@
         "bloque": 79,
         "horas": 51,
         "servicio": 50,
-        "municipio": 47,
+        "municipio": 49,
         "habana": 41,
         "déficit": 39,
         "consumidores": 37,
@@ -770,9 +771,9 @@
             "declared_recoveries": 0,
             "declared_affectations": 7,
             "declared_emergencies": 0,
-            "estimated_affected_seconds": 40072,
+            "estimated_affected_seconds": 44948,
             "weekday_off_seconds": {
-                "0": 16527,
+                "0": 21403,
                 "1": 0,
                 "2": 0,
                 "3": 0,
@@ -781,7 +782,7 @@
                 "6": 23545
             },
             "weekday_off_avg_seconds": {
-                "0": 317.8269230769231,
+                "0": 411.59615384615387,
                 "1": 0.0,
                 "2": 0.0,
                 "3": 0.0,
@@ -796,9 +797,9 @@
             "declared_recoveries": 0,
             "declared_affectations": 16,
             "declared_emergencies": 0,
-            "estimated_affected_seconds": 125305,
+            "estimated_affected_seconds": 130181,
             "weekday_off_seconds": {
-                "0": 16527,
+                "0": 21403,
                 "1": 0,
                 "2": 0,
                 "3": 0,
@@ -807,7 +808,7 @@
                 "6": 82130
             },
             "weekday_off_avg_seconds": {
-                "0": 317.8269230769231,
+                "0": 411.59615384615387,
                 "1": 0.0,
                 "2": 0.0,
                 "3": 0.0,
