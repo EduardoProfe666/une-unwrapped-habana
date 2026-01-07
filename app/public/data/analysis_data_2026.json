@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-07T13:40:02.448199-05:00",
+    "sync_date": "2026-01-07T14:24:40.661967-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -17,19 +17,19 @@
         "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨"
     },
     "last_message": {
-        "id": 50913,
-        "link": "https://t.me/EmpresaElectricaDeLaHabana/50913",
-        "date_utc": "2026-01-07 18:10:13",
-        "date_utc_d": "2026-01-07T18:10:13",
-        "date_cuba": "2026-01-07 13:10:13",
-        "date_cuba_d": "2026-01-07T13:10:13",
+        "id": 50916,
+        "link": "https://t.me/EmpresaElectricaDeLaHabana/50916",
+        "date_utc": "2026-01-07 19:12:32",
+        "date_utc_d": "2026-01-07T19:12:32",
+        "date_cuba": "2026-01-07 14:12:32",
+        "date_cuba_d": "2026-01-07T14:12:32",
         "reactions": {
             "👍": 5,
-            "👎": 16
+            "👎": 4
         },
-        "views": 3407,
-        "replies": 4,
-        "text": "🚨🔴Consumidores del municipio Guanabacoa se encuentra afectados por una vía libre de emergencia para realizar una poda en Reglita y Lidia Esther , La Hata y afectará : Roble, Reparto Militar, Fuentes blancas, Naranjo y Pomo de Oro.🚨🔴"
+        "views": 1196,
+        "replies": 0,
+        "text": "🚨🔴Consumidores del municipio Boyeros se detectó un primario partido en la Finca Lomo Tendido afectando : \"La Catalina, La Vigirita, La Castellana, Palmarito Fructuoso Rodríguez, La China, La Majagua, Angelita, Lomo Tendido, Rincón.🚨🔴"
     },
     "shortest_message": {
         "id": 50775,
@@ -63,21 +63,21 @@
         "text": "🚧📉Informamos que por Disparado Automático por Frecuencia (DAF) se ha afectado el servicio eléctrico en los siguientes municipios:\n\n📌Boyeros: 👉🏼Santiago de Las Vegas calle 204 hasta 188, 409 hasta 397, Guadalupe👉🏼Santiago, La Especial, El Tesi, La Unión, Lídice, Sempala, Cacahual, La Chata, Santa Susana👉🏼Santiago, Villa Nueva, Caridad, Sierra Maestra, La Unión, Comunidad Revolución, Lídice, Naroca, Rocío.\n\n📌Playa: 👉🏼Calle 25 desde 158 a 190, calle 190 de 194 hasta 5ta Reparto Náutico, Calle 9na desde 120 hasta 130 👉🏼Calle 28 desde 41 hasta 47; Calle 41 desde 9na hasta 24 (Kholy); Calle 10 desde 5ta hasta 9na (Kholy); Calle 12 desde 12 hasta 24 (Miramar)👉🏼\n\n📌Playa-Plaza: 👉🏼Hospitales Centro de Inv Clínico de Menores 24 y 45 Calle 47 desde 26 hasta 38 (Reparto Kholy); Cuadrante desde el Rio Almendares hasta Calle 20 desde Ave. 23 hasta Malecón, Cuadrante desde Calle 6 a 20 y desde Línea a Malecón\n\n📌Marianao: 👉🏼Calle 37 desde 130 hasta 100 , Los Quemados, calle 84 -86-88-90 desde 39a hasta 51, Santa Felicia Reparto Finlay y Alturas de  Belén \n\n📌Cerro: 👉🏼Calle Cristina desde 4 Caminos a san Joaquín, Ataré\n\n📌Cotorro: 👉🏼Dulce Nombre, Santa María del Rosario\n\n📌Habana del Este: Alamar:👉🏼Zonas: 6, 7, 8, 9, 10, 11, Micro 4👉🏼Zonas: 1, 2, 3, 5, 24, 8, 7👉🏼Zonas: 12, 14, 13, 19, 20, 21, 23, 24, 25👉🏼Justi, Agromar, Bajurayabo, Campo Florido, La Coca👉🏼Altura de Boca Ciega, Santa María del Mar, Villa Mégano, Ampliación de Marbella, Guanabo, Bello Monte, Villa del Mar.🚧📉",
         "count": 1476
     },
-    "total_views": 7675400,
-    "total_messages": 357,
+    "total_views": 7711839,
+    "total_messages": 359,
     "total_erased_messages": 16,
-    "total_replies": 3894,
-    "total_reactions": 36532,
-    "total_positive_reactions": 8016,
-    "total_negative_reactions": 28516,
-    "avg_views": 21500,
+    "total_replies": 3898,
+    "total_reactions": 36611,
+    "total_positive_reactions": 8046,
+    "total_negative_reactions": 28565,
+    "avg_views": 21481,
     "avg_replies": 11,
     "avg_reactions": 102,
     "avg_positive_reactions": 22,
     "avg_negative_reactions": 80,
     "avg_text_length": 195,
     "monthly_views": {
-        "1": 7675400,
+        "1": 7711839,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -91,7 +91,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 3894,
+        "1": 3898,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -105,7 +105,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 36532,
+        "1": 36611,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -119,7 +119,7 @@
         "12": 0
     },
     "monthly_messages": {
-        "1": 357,
+        "1": 359,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -139,7 +139,7 @@
         "4": 53,
         "5": 80,
         "6": 79,
-        "7": 21,
+        "7": 23,
         "8": 0,
         "9": 0,
         "10": 0,
@@ -501,15 +501,15 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 199,
+        "1": 201,
         "2": 38,
         "3": 15,
         "4": 7,
         "5": 98
     },
     "distribution_reaction": {
-        "👎": 28516,
-        "👍": 8016
+        "👎": 28565,
+        "👍": 8046
     },
     "top3_most_viewed_messages": [
         {
@@ -717,9 +717,9 @@
         "servicio": 137,
         "horas": 117,
         "habana": 98,
-        "municipio": 93,
+        "municipio": 94,
         "déficit": 90,
-        "consumidores": 86,
+        "consumidores": 87,
         "eléctrico": 75,
         "siguientes": 73,
         "informamos": 71,
@@ -849,11 +849,11 @@
             "declared_recoveries": 0,
             "declared_affectations": 26,
             "declared_emergencies": 6,
-            "estimated_affected_seconds": 208958,
+            "estimated_affected_seconds": 212527,
             "weekday_off_seconds": {
                 "0": 23814,
                 "1": 51161,
-                "2": 47583,
+                "2": 51152,
                 "3": 0,
                 "4": 0,
                 "5": 25242,
@@ -862,7 +862,7 @@
             "weekday_off_avg_seconds": {
                 "0": 457.96153846153845,
                 "1": 983.8653846153846,
-                "2": 915.0576923076923,
+                "2": 983.6923076923077,
                 "3": 0.0,
                 "4": 0.0,
                 "5": 485.4230769230769,
