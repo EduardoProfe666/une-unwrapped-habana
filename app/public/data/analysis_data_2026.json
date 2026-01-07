@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-07T01:41:13.029982-05:00",
+    "sync_date": "2026-01-07T02:30:10.293001-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -25,10 +25,10 @@
         "date_cuba_d": "2026-01-07T00:37:31",
         "reactions": {
             "👍": 1,
-            "👎": 6
+            "👎": 8
         },
-        "views": 918,
-        "replies": 2,
+        "views": 1257,
+        "replies": 4,
         "text": "‼️Consumidores del municipio Plaza, por disparo del circuito se afecta el servicio eléctrico en las áreas colindantes a: Ayestaran, Zequeira, Desagüe‼️"
     },
     "shortest_message": {
@@ -63,21 +63,21 @@
         "text": "🚧📉Informamos que por Disparado Automático por Frecuencia (DAF) se ha afectado el servicio eléctrico en los siguientes municipios:\n\n📌Boyeros: 👉🏼Santiago de Las Vegas calle 204 hasta 188, 409 hasta 397, Guadalupe👉🏼Santiago, La Especial, El Tesi, La Unión, Lídice, Sempala, Cacahual, La Chata, Santa Susana👉🏼Santiago, Villa Nueva, Caridad, Sierra Maestra, La Unión, Comunidad Revolución, Lídice, Naroca, Rocío.\n\n📌Playa: 👉🏼Calle 25 desde 158 a 190, calle 190 de 194 hasta 5ta Reparto Náutico, Calle 9na desde 120 hasta 130 👉🏼Calle 28 desde 41 hasta 47; Calle 41 desde 9na hasta 24 (Kholy); Calle 10 desde 5ta hasta 9na (Kholy); Calle 12 desde 12 hasta 24 (Miramar)👉🏼\n\n📌Playa-Plaza: 👉🏼Hospitales Centro de Inv Clínico de Menores 24 y 45 Calle 47 desde 26 hasta 38 (Reparto Kholy); Cuadrante desde el Rio Almendares hasta Calle 20 desde Ave. 23 hasta Malecón, Cuadrante desde Calle 6 a 20 y desde Línea a Malecón\n\n📌Marianao: 👉🏼Calle 37 desde 130 hasta 100 , Los Quemados, calle 84 -86-88-90 desde 39a hasta 51, Santa Felicia Reparto Finlay y Alturas de  Belén \n\n📌Cerro: 👉🏼Calle Cristina desde 4 Caminos a san Joaquín, Ataré\n\n📌Cotorro: 👉🏼Dulce Nombre, Santa María del Rosario\n\n📌Habana del Este: Alamar:👉🏼Zonas: 6, 7, 8, 9, 10, 11, Micro 4👉🏼Zonas: 1, 2, 3, 5, 24, 8, 7👉🏼Zonas: 12, 14, 13, 19, 20, 21, 23, 24, 25👉🏼Justi, Agromar, Bajurayabo, Campo Florido, La Coca👉🏼Altura de Boca Ciega, Santa María del Mar, Villa Mégano, Ampliación de Marbella, Guanabo, Bello Monte, Villa del Mar.🚧📉",
         "count": 1476
     },
-    "total_views": 7196449,
+    "total_views": 7200382,
     "total_messages": 338,
     "total_erased_messages": 13,
-    "total_replies": 3670,
-    "total_reactions": 35349,
-    "total_positive_reactions": 7756,
-    "total_negative_reactions": 27593,
-    "avg_views": 21291,
+    "total_replies": 3672,
+    "total_reactions": 35360,
+    "total_positive_reactions": 7757,
+    "total_negative_reactions": 27603,
+    "avg_views": 21303,
     "avg_replies": 11,
     "avg_reactions": 105,
     "avg_positive_reactions": 23,
     "avg_negative_reactions": 82,
     "avg_text_length": 196,
     "monthly_views": {
-        "1": 7196449,
+        "1": 7200382,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -91,7 +91,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 3670,
+        "1": 3672,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -105,7 +105,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 35349,
+        "1": 35360,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -508,8 +508,8 @@
         "5": 98
     },
     "distribution_reaction": {
-        "👎": 27593,
-        "👍": 7756
+        "👎": 27603,
+        "👍": 7757
     },
     "top3_most_viewed_messages": [
         {
