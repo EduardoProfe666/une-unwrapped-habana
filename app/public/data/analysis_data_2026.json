@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-08T05:54:20.840619-05:00",
+    "sync_date": "2026-01-08T06:25:30.548264-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -24,9 +24,10 @@
         "date_cuba": "2026-01-08 03:46:23",
         "date_cuba_d": "2026-01-08T03:46:23",
         "reactions": {
-            "👎": 4
+            "👍": 2,
+            "👎": 5
         },
-        "views": 1193,
+        "views": 2012,
         "replies": 0,
         "text": "✅Restablecido el servicio en el municipio Lisa que afectaba :  39/ 268 y 270. ✅"
     },
@@ -62,21 +63,21 @@
         "text": "🚧📉Informamos que por Disparado Automático por Frecuencia (DAF) se ha afectado el servicio eléctrico en los siguientes municipios:\n\n📌Boyeros: 👉🏼Santiago de Las Vegas calle 204 hasta 188, 409 hasta 397, Guadalupe👉🏼Santiago, La Especial, El Tesi, La Unión, Lídice, Sempala, Cacahual, La Chata, Santa Susana👉🏼Santiago, Villa Nueva, Caridad, Sierra Maestra, La Unión, Comunidad Revolución, Lídice, Naroca, Rocío.\n\n📌Playa: 👉🏼Calle 25 desde 158 a 190, calle 190 de 194 hasta 5ta Reparto Náutico, Calle 9na desde 120 hasta 130 👉🏼Calle 28 desde 41 hasta 47; Calle 41 desde 9na hasta 24 (Kholy); Calle 10 desde 5ta hasta 9na (Kholy); Calle 12 desde 12 hasta 24 (Miramar)👉🏼\n\n📌Playa-Plaza: 👉🏼Hospitales Centro de Inv Clínico de Menores 24 y 45 Calle 47 desde 26 hasta 38 (Reparto Kholy); Cuadrante desde el Rio Almendares hasta Calle 20 desde Ave. 23 hasta Malecón, Cuadrante desde Calle 6 a 20 y desde Línea a Malecón\n\n📌Marianao: 👉🏼Calle 37 desde 130 hasta 100 , Los Quemados, calle 84 -86-88-90 desde 39a hasta 51, Santa Felicia Reparto Finlay y Alturas de  Belén \n\n📌Cerro: 👉🏼Calle Cristina desde 4 Caminos a san Joaquín, Ataré\n\n📌Cotorro: 👉🏼Dulce Nombre, Santa María del Rosario\n\n📌Habana del Este: Alamar:👉🏼Zonas: 6, 7, 8, 9, 10, 11, Micro 4👉🏼Zonas: 1, 2, 3, 5, 24, 8, 7👉🏼Zonas: 12, 14, 13, 19, 20, 21, 23, 24, 25👉🏼Justi, Agromar, Bajurayabo, Campo Florido, La Coca👉🏼Altura de Boca Ciega, Santa María del Mar, Villa Mégano, Ampliación de Marbella, Guanabo, Bello Monte, Villa del Mar.🚧📉",
         "count": 1476
     },
-    "total_views": 8761829,
-    "total_messages": 418,
+    "total_views": 8777556,
+    "total_messages": 419,
     "total_erased_messages": 18,
-    "total_replies": 4857,
-    "total_reactions": 42474,
-    "total_positive_reactions": 9113,
-    "total_negative_reactions": 33361,
-    "avg_views": 20961,
+    "total_replies": 4861,
+    "total_reactions": 42543,
+    "total_positive_reactions": 9165,
+    "total_negative_reactions": 33378,
+    "avg_views": 20949,
     "avg_replies": 12,
     "avg_reactions": 102,
     "avg_positive_reactions": 22,
     "avg_negative_reactions": 80,
-    "avg_text_length": 189,
+    "avg_text_length": 188,
     "monthly_views": {
-        "1": 8761829,
+        "1": 8777556,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -90,7 +91,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 4857,
+        "1": 4861,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -104,7 +105,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 42474,
+        "1": 42543,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -118,7 +119,7 @@
         "12": 0
     },
     "monthly_messages": {
-        "1": 418,
+        "1": 419,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -139,7 +140,7 @@
         "5": 80,
         "6": 79,
         "7": 76,
-        "8": 6,
+        "8": 7,
         "9": 0,
         "10": 0,
         "11": 0,
@@ -500,15 +501,15 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 231,
+        "1": 232,
         "2": 38,
         "3": 16,
         "4": 7,
         "5": 126
     },
     "distribution_reaction": {
-        "👎": 33361,
-        "👍": 9113
+        "👎": 33378,
+        "👍": 9165
     },
     "top3_most_viewed_messages": [
         {
@@ -585,10 +586,10 @@
             "date_cuba": "2026-01-07 21:10:02",
             "date_cuba_d": "2026-01-07T21:10:02",
             "reactions": {
-                "👍": 14,
-                "👎": 215
+                "👍": 15,
+                "👎": 216
             },
-            "views": 10955,
+            "views": 11257,
             "replies": 107,
             "text": "⚡️Actualización de afectaciones por déficit en la capital.                                                                                            \nEn estos momentos se afectan 39 MW distribuidos en varios circuitos de los siguientes bloques:\n\n✅Bloque 2   03:33 Horas \n\nEquipo de Comunicación \nEmpresa Eléctrica de La Habana ⚡️",
             "count": 107
@@ -770,12 +771,12 @@
             "declared_recoveries": 0,
             "declared_affectations": 39,
             "declared_emergencies": 13,
-            "estimated_affected_seconds": 249404,
+            "estimated_affected_seconds": 252842,
             "weekday_off_seconds": {
                 "0": 82853,
                 "1": 84903,
                 "2": 39909,
-                "3": 18194,
+                "3": 21632,
                 "4": 0,
                 "5": 0,
                 "6": 23545
@@ -784,7 +785,7 @@
                 "0": 1593.326923076923,
                 "1": 1632.75,
                 "2": 767.4807692307693,
-                "3": 343.2830188679245,
+                "3": 408.1509433962264,
                 "4": 0.0,
                 "5": 0.0,
                 "6": 452.78846153846155
