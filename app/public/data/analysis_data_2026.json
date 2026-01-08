@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-08T14:24:32.110470-05:00",
+    "sync_date": "2026-01-08T14:42:01.679877-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -23,9 +23,12 @@
         "date_utc_d": "2026-01-08T19:19:27",
         "date_cuba": "2026-01-08 14:19:27",
         "date_cuba_d": "2026-01-08T14:19:27",
-        "reactions": {},
-        "views": 848,
-        "replies": 0,
+        "reactions": {
+            "👍": 2,
+            "👎": 7
+        },
+        "views": 2366,
+        "replies": 2,
         "text": "🚨‼️Consumidores del municipio Cerro,el consejo Latino se encuentra afectado en estos momentos por Trabajos Operativos.‼️🚨"
     },
     "shortest_message": {
@@ -60,21 +63,21 @@
         "text": "🚧📉Informamos que por Disparado Automático por Frecuencia (DAF) se ha afectado el servicio eléctrico en los siguientes municipios:\n\n📌Boyeros: 👉🏼Santiago de Las Vegas calle 204 hasta 188, 409 hasta 397, Guadalupe👉🏼Santiago, La Especial, El Tesi, La Unión, Lídice, Sempala, Cacahual, La Chata, Santa Susana👉🏼Santiago, Villa Nueva, Caridad, Sierra Maestra, La Unión, Comunidad Revolución, Lídice, Naroca, Rocío.\n\n📌Playa: 👉🏼Calle 25 desde 158 a 190, calle 190 de 194 hasta 5ta Reparto Náutico, Calle 9na desde 120 hasta 130 👉🏼Calle 28 desde 41 hasta 47; Calle 41 desde 9na hasta 24 (Kholy); Calle 10 desde 5ta hasta 9na (Kholy); Calle 12 desde 12 hasta 24 (Miramar)👉🏼\n\n📌Playa-Plaza: 👉🏼Hospitales Centro de Inv Clínico de Menores 24 y 45 Calle 47 desde 26 hasta 38 (Reparto Kholy); Cuadrante desde el Rio Almendares hasta Calle 20 desde Ave. 23 hasta Malecón, Cuadrante desde Calle 6 a 20 y desde Línea a Malecón\n\n📌Marianao: 👉🏼Calle 37 desde 130 hasta 100 , Los Quemados, calle 84 -86-88-90 desde 39a hasta 51, Santa Felicia Reparto Finlay y Alturas de  Belén \n\n📌Cerro: 👉🏼Calle Cristina desde 4 Caminos a san Joaquín, Ataré\n\n📌Cotorro: 👉🏼Dulce Nombre, Santa María del Rosario\n\n📌Habana del Este: Alamar:👉🏼Zonas: 6, 7, 8, 9, 10, 11, Micro 4👉🏼Zonas: 1, 2, 3, 5, 24, 8, 7👉🏼Zonas: 12, 14, 13, 19, 20, 21, 23, 24, 25👉🏼Justi, Agromar, Bajurayabo, Campo Florido, La Coca👉🏼Altura de Boca Ciega, Santa María del Mar, Villa Mégano, Ampliación de Marbella, Guanabo, Bello Monte, Villa del Mar.🚧📉",
         "count": 1476
     },
-    "total_views": 9209556,
+    "total_views": 9222852,
     "total_messages": 431,
     "total_erased_messages": 18,
-    "total_replies": 4950,
-    "total_reactions": 43407,
-    "total_positive_reactions": 9386,
-    "total_negative_reactions": 34021,
-    "avg_views": 21368,
+    "total_replies": 4952,
+    "total_reactions": 43426,
+    "total_positive_reactions": 9388,
+    "total_negative_reactions": 34038,
+    "avg_views": 21399,
     "avg_replies": 11,
     "avg_reactions": 101,
     "avg_positive_reactions": 22,
     "avg_negative_reactions": 79,
     "avg_text_length": 186,
     "monthly_views": {
-        "1": 9209556,
+        "1": 9222852,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -88,7 +91,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 4950,
+        "1": 4952,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -102,7 +105,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 43407,
+        "1": 43426,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -505,8 +508,8 @@
         "5": 126
     },
     "distribution_reaction": {
-        "👎": 34021,
-        "👍": 9386
+        "👎": 34038,
+        "👍": 9388
     },
     "top3_most_viewed_messages": [
         {
@@ -586,7 +589,7 @@
                 "👍": 18,
                 "👎": 222
             },
-            "views": 16487,
+            "views": 16669,
             "replies": 107,
             "text": "⚡️Actualización de afectaciones por déficit en la capital.                                                                                            \nEn estos momentos se afectan 39 MW distribuidos en varios circuitos de los siguientes bloques:\n\n✅Bloque 2   03:33 Horas \n\nEquipo de Comunicación \nEmpresa Eléctrica de La Habana ⚡️",
             "count": 107
