@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-08T09:30:47.161202-05:00",
+    "sync_date": "2026-01-08T10:32:00.508502-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -24,10 +24,10 @@
         "date_cuba": "2026-01-08 09:20:18",
         "date_cuba_d": "2026-01-08T09:20:18",
         "reactions": {
-            "👎": 1
+            "👎": 9
         },
-        "views": 1214,
-        "replies": 0,
+        "views": 5333,
+        "replies": 4,
         "text": "🚨‼️Consumidores del municipio Guabacoa,los repartos Debeche-Nalón se encuentran afectados por Trabajos Operativos.‼️🚨"
     },
     "shortest_message": {
@@ -62,21 +62,21 @@
         "text": "🚧📉Informamos que por Disparado Automático por Frecuencia (DAF) se ha afectado el servicio eléctrico en los siguientes municipios:\n\n📌Boyeros: 👉🏼Santiago de Las Vegas calle 204 hasta 188, 409 hasta 397, Guadalupe👉🏼Santiago, La Especial, El Tesi, La Unión, Lídice, Sempala, Cacahual, La Chata, Santa Susana👉🏼Santiago, Villa Nueva, Caridad, Sierra Maestra, La Unión, Comunidad Revolución, Lídice, Naroca, Rocío.\n\n📌Playa: 👉🏼Calle 25 desde 158 a 190, calle 190 de 194 hasta 5ta Reparto Náutico, Calle 9na desde 120 hasta 130 👉🏼Calle 28 desde 41 hasta 47; Calle 41 desde 9na hasta 24 (Kholy); Calle 10 desde 5ta hasta 9na (Kholy); Calle 12 desde 12 hasta 24 (Miramar)👉🏼\n\n📌Playa-Plaza: 👉🏼Hospitales Centro de Inv Clínico de Menores 24 y 45 Calle 47 desde 26 hasta 38 (Reparto Kholy); Cuadrante desde el Rio Almendares hasta Calle 20 desde Ave. 23 hasta Malecón, Cuadrante desde Calle 6 a 20 y desde Línea a Malecón\n\n📌Marianao: 👉🏼Calle 37 desde 130 hasta 100 , Los Quemados, calle 84 -86-88-90 desde 39a hasta 51, Santa Felicia Reparto Finlay y Alturas de  Belén \n\n📌Cerro: 👉🏼Calle Cristina desde 4 Caminos a san Joaquín, Ataré\n\n📌Cotorro: 👉🏼Dulce Nombre, Santa María del Rosario\n\n📌Habana del Este: Alamar:👉🏼Zonas: 6, 7, 8, 9, 10, 11, Micro 4👉🏼Zonas: 1, 2, 3, 5, 24, 8, 7👉🏼Zonas: 12, 14, 13, 19, 20, 21, 23, 24, 25👉🏼Justi, Agromar, Bajurayabo, Campo Florido, La Coca👉🏼Altura de Boca Ciega, Santa María del Mar, Villa Mégano, Ampliación de Marbella, Guanabo, Bello Monte, Villa del Mar.🚧📉",
         "count": 1476
     },
-    "total_views": 8959418,
+    "total_views": 9022428,
     "total_messages": 426,
     "total_erased_messages": 18,
-    "total_replies": 4900,
-    "total_reactions": 43058,
-    "total_positive_reactions": 9297,
-    "total_negative_reactions": 33761,
-    "avg_views": 21031,
+    "total_replies": 4919,
+    "total_reactions": 43130,
+    "total_positive_reactions": 9305,
+    "total_negative_reactions": 33825,
+    "avg_views": 21179,
     "avg_replies": 12,
     "avg_reactions": 101,
     "avg_positive_reactions": 22,
     "avg_negative_reactions": 79,
     "avg_text_length": 187,
     "monthly_views": {
-        "1": 8959418,
+        "1": 9022428,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -90,7 +90,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 4900,
+        "1": 4919,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -104,7 +104,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 43058,
+        "1": 43130,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -507,8 +507,8 @@
         "5": 126
     },
     "distribution_reaction": {
-        "👎": 33761,
-        "👍": 9297
+        "👎": 33825,
+        "👍": 9305
     },
     "top3_most_viewed_messages": [
         {
@@ -588,7 +588,7 @@
                 "👍": 17,
                 "👎": 221
             },
-            "views": 13796,
+            "views": 14714,
             "replies": 107,
             "text": "⚡️Actualización de afectaciones por déficit en la capital.                                                                                            \nEn estos momentos se afectan 39 MW distribuidos en varios circuitos de los siguientes bloques:\n\n✅Bloque 2   03:33 Horas \n\nEquipo de Comunicación \nEmpresa Eléctrica de La Habana ⚡️",
             "count": 107
