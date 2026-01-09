@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-09T04:33:34.105327-05:00",
+    "sync_date": "2026-01-09T05:29:21.584625-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -17,18 +17,16 @@
         "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨"
     },
     "last_message": {
-        "id": 51025,
-        "link": "https://t.me/EmpresaElectricaDeLaHabana/51025",
-        "date_utc": "2026-01-09 08:56:13",
-        "date_utc_d": "2026-01-09T08:56:13",
-        "date_cuba": "2026-01-09 03:56:13",
-        "date_cuba_d": "2026-01-09T03:56:13",
-        "reactions": {
-            "👎": 2
-        },
-        "views": 306,
-        "replies": 1,
-        "text": "🚨‼️Con servicio los consumidores del municipio San Miguel del Padrón en los repartos Barrio Obrero,Jacomino,California y María Cristina que se encontraban afectados por una avería primaria en :Calle Paula/Velázquez y Vista Hermosa.‼️🚨"
+        "id": 51027,
+        "link": "https://t.me/EmpresaElectricaDeLaHabana/51027",
+        "date_utc": "2026-01-09 10:23:36",
+        "date_utc_d": "2026-01-09T10:23:36",
+        "date_cuba": "2026-01-09 05:23:36",
+        "date_cuba_d": "2026-01-09T05:23:36",
+        "reactions": {},
+        "views": 93,
+        "replies": 0,
+        "text": "‼️Consumidores del municipio Habana del este de encuentran afectados en Alamar por disparo por DAF‼️"
     },
     "shortest_message": {
         "id": 50775,
@@ -62,21 +60,21 @@
         "text": "🚧📉Informamos que por Disparado Automático por Frecuencia (DAF) se ha afectado el servicio eléctrico en los siguientes municipios:\n\n📌Boyeros: 👉🏼Santiago de Las Vegas calle 204 hasta 188, 409 hasta 397, Guadalupe👉🏼Santiago, La Especial, El Tesi, La Unión, Lídice, Sempala, Cacahual, La Chata, Santa Susana👉🏼Santiago, Villa Nueva, Caridad, Sierra Maestra, La Unión, Comunidad Revolución, Lídice, Naroca, Rocío.\n\n📌Playa: 👉🏼Calle 25 desde 158 a 190, calle 190 de 194 hasta 5ta Reparto Náutico, Calle 9na desde 120 hasta 130 👉🏼Calle 28 desde 41 hasta 47; Calle 41 desde 9na hasta 24 (Kholy); Calle 10 desde 5ta hasta 9na (Kholy); Calle 12 desde 12 hasta 24 (Miramar)👉🏼\n\n📌Playa-Plaza: 👉🏼Hospitales Centro de Inv Clínico de Menores 24 y 45 Calle 47 desde 26 hasta 38 (Reparto Kholy); Cuadrante desde el Rio Almendares hasta Calle 20 desde Ave. 23 hasta Malecón, Cuadrante desde Calle 6 a 20 y desde Línea a Malecón\n\n📌Marianao: 👉🏼Calle 37 desde 130 hasta 100 , Los Quemados, calle 84 -86-88-90 desde 39a hasta 51, Santa Felicia Reparto Finlay y Alturas de  Belén \n\n📌Cerro: 👉🏼Calle Cristina desde 4 Caminos a san Joaquín, Ataré\n\n📌Cotorro: 👉🏼Dulce Nombre, Santa María del Rosario\n\n📌Habana del Este: Alamar:👉🏼Zonas: 6, 7, 8, 9, 10, 11, Micro 4👉🏼Zonas: 1, 2, 3, 5, 24, 8, 7👉🏼Zonas: 12, 14, 13, 19, 20, 21, 23, 24, 25👉🏼Justi, Agromar, Bajurayabo, Campo Florido, La Coca👉🏼Altura de Boca Ciega, Santa María del Mar, Villa Mégano, Ampliación de Marbella, Guanabo, Bello Monte, Villa del Mar.🚧📉",
         "count": 1476
     },
-    "total_views": 9948624,
-    "total_messages": 466,
+    "total_views": 9955750,
+    "total_messages": 468,
     "total_erased_messages": 18,
-    "total_replies": 5324,
-    "total_reactions": 47567,
-    "total_positive_reactions": 10339,
-    "total_negative_reactions": 37228,
-    "avg_views": 21349,
+    "total_replies": 5327,
+    "total_reactions": 47577,
+    "total_positive_reactions": 10343,
+    "total_negative_reactions": 37234,
+    "avg_views": 21273,
     "avg_replies": 11,
     "avg_reactions": 102,
     "avg_positive_reactions": 22,
     "avg_negative_reactions": 80,
     "avg_text_length": 185,
     "monthly_views": {
-        "1": 9948624,
+        "1": 9955750,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -90,7 +88,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 5324,
+        "1": 5327,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -104,7 +102,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 47567,
+        "1": 47577,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -118,7 +116,7 @@
         "12": 0
     },
     "monthly_messages": {
-        "1": 466,
+        "1": 468,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -140,7 +138,7 @@
         "6": 79,
         "7": 76,
         "8": 51,
-        "9": 3,
+        "9": 5,
         "10": 0,
         "11": 0,
         "12": 0,
@@ -500,15 +498,15 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 253,
-        "2": 38,
+        "1": 254,
+        "2": 39,
         "3": 18,
         "4": 8,
         "5": 149
     },
     "distribution_reaction": {
-        "👎": 37228,
-        "👍": 10339
+        "👎": 37234,
+        "👍": 10343
     },
     "top3_most_viewed_messages": [
         {
@@ -716,12 +714,12 @@
         "calle": 159,
         "servicio": 155,
         "déficit": 130,
-        "habana": 122,
-        "municipio": 118,
-        "consumidores": 101,
+        "habana": 123,
+        "municipio": 119,
+        "consumidores": 102,
         "siguientes": 96,
         "informamos": 91,
-        "afectados": 84,
+        "afectados": 85,
         "eléctrico": 78,
         "actualización": 77,
         "afectaciones": 72,
@@ -822,13 +820,13 @@
             "declared_recoveries": 1,
             "declared_affectations": 32,
             "declared_emergencies": 0,
-            "estimated_affected_seconds": 174838,
+            "estimated_affected_seconds": 180081,
             "weekday_off_seconds": {
                 "0": 25771,
                 "1": 24242,
                 "2": 9447,
                 "3": 14805,
-                "4": 14173,
+                "4": 19416,
                 "5": 25880,
                 "6": 60520
             },
@@ -837,7 +835,7 @@
                 "1": 466.1923076923077,
                 "2": 181.67307692307693,
                 "3": 279.33962264150944,
-                "4": 272.5576923076923,
+                "4": 373.38461538461536,
                 "5": 497.6923076923077,
                 "6": 1163.8461538461538
             }
