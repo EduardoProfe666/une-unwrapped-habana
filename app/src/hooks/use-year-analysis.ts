@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {UneAnalysis} from "@/src/common/types.ts";
+import {UneAnalysis} from "@/src/lib/types.ts";
 
 export default function useYearAnalysis(selectedYear: number) {
     const [data, setData] = useState<UneAnalysis | null>(null)

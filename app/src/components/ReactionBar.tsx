@@ -1,5 +1,5 @@
 import React from 'react';
-import {formatNumber} from '@/src/common/utils';
+import {formatNumber} from '@/src/lib/utils';
 import {m} from 'framer-motion';
 
 interface ReactionBarProps {

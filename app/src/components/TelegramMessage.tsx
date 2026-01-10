@@ -1,5 +1,5 @@
 import React, {useMemo} from 'react';
-import {TelegramMessage as ITelegramMessage} from '../common/types.ts';
+import {TelegramMessage as ITelegramMessage} from '@/src/lib/types.ts';
 import {ExternalLink, Eye, MessageCircle, Hash} from 'lucide-react';
 import {m} from 'framer-motion';
 

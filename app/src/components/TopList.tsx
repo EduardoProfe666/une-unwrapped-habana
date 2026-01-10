@@ -1,6 +1,6 @@
-import { TelegramMessage as TelegramMessageType } from "@/src/common/types.ts";
+import { TelegramMessage as TelegramMessageType } from "@/src/lib/types.ts";
 import React, { memo } from "react";
-import { formatNumber } from "@/src/common/utils.ts";
+import { formatNumber } from "@/src/lib/utils.ts";
 import TelegramMessage from "@/src/components/TelegramMessage.tsx";
 import { m } from "framer-motion";
 

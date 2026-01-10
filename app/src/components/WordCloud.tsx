@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import { AnimatePresence, m } from 'framer-motion';
-import { formatNumber } from "@/src/common/utils.ts";
+import { formatNumber } from "@/src/lib/utils.ts";
 
 interface Props {
   words: Record<string, number>;

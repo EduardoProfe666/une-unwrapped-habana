@@ -1,9 +1,9 @@
 import React, {useCallback, useMemo, useRef, useState} from 'react';
-import {BlockAnalysis} from '../common/types.ts';
+import {BlockAnalysis} from '@/src/lib/types.ts';
 import {Activity, AlertTriangle, CheckCircle, Download, ShieldAlert, Zap, Clock, Timer} from 'lucide-react';
 import * as htmlToImage from 'html-to-image';
 import {AnimatePresence, m} from 'framer-motion';
-import {formatDuration} from '../common/utils.ts';
+import {formatDuration} from '@/src/lib/utils.ts';
 
 interface Props {
     block: BlockAnalysis;

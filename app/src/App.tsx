@@ -1,6 +1,6 @@
 import React, {lazy, Suspense, useEffect, useMemo, useRef, useState} from 'react';
 import {AnimatePresence, domAnimation, LazyMotion, m, Variants} from 'framer-motion';
-import {AVAILABLE_YEARS, YEAR_THEMES} from './common/constants.ts';
+import {AVAILABLE_YEARS, YEAR_THEMES} from '@/src/lib/constants.ts';
 import {MessageSquare, ThumbsUp, TrendingUp} from 'lucide-react';
 import SectionLoader from "@/src/components/SectionLoader.tsx";
 import useYearAnalysis from "@/src/hooks/use-year-analysis.ts";
@@ -334,15 +334,45 @@ function App() {
 
                         <div className="flex flex-wrap gap-4 justify-center">
                             {AVAILABLE_YEARS.map(year => (
-                                <button
-                                    key={year}
-                                    onClick={() => setSelectedYear(year)}
-                                    className={`px-6 py-3 font-bold cursor-pointer border-4 border-black text-lg shadow-[4px_4px_0px_0px_black] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all active:shadow-none ${
-                                        selectedYear === year ? `${theme.primary} text-white` : 'bg-white'
-                                    }`}
-                                >
-                                    {year}
-                                </button>
+                                <div key={year} className="relative group">
+                                    <button
+                                        onClick={() => setSelectedYear(year)}
+                                        className={`px-6 py-3 font-bold cursor-pointer border-4 border-black text-lg shadow-[4px_4px_0px_0px_black] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all active:shadow-none relative overflow-visible ${
+                                            selectedYear === year ? `${theme.primary} text-white` : 'bg-white'
+                                        }`}
+                                    >
+                                        {year}
+
+                                        {year === 2026 && (
+                                            <m.div
+                                                className="absolute -top-4 -right-6 bg-red-600 text-white text-[10px] font-black px-2 py-0.5 border-2 border-black shadow-[2px_2px_0px_0px_black] z-30 pointer-events-none"
+                                                initial={{ rotate: 15 }}
+                                                animate={{
+                                                    scale: [1, 1.05, 1]
+                                                }}
+                                                whileHover={{
+                                                    scale: 1.2,
+                                                    rotate: -5,
+                                                    backgroundColor: "#000",
+                                                    transition: { type: "spring", stiffness: 400 }
+                                                }}
+                                                transition={{
+                                                    scale: { repeat: Infinity, duration: 2 }
+                                                }}
+                                            >
+                                    <span className="flex items-center gap-1">
+                                        <span className="animate-pulse">●</span> PREVIEW
+                                    </span>
+                                            </m.div>
+                                        )}
+                                    </button>
+
+                                    {year === 2026 && (
+                                        <div className="absolute top-full mt-4 left-1/2 -translate-x-1/2 w-max opacity-0 group-hover:opacity-100 transition-all duration-200 pointer-events-none bg-black text-white text-[10px] font-mono px-3 py-1 border-2 border-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] z-[110]">
+                                            <span className="text-yellow-400">ADVERTENCIA:</span> DATOS_INCOMPLETOS
+                                        </div>
+                                    )}
+                                </div>
                             ))}
                         </div>
                     </m.div>

@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import { m, AnimatePresence } from 'framer-motion';
-import { BlockAnalysis } from '../common/types';
-import { formatDuration } from '../common/utils';
+import { BlockAnalysis } from '@/src/lib/types';
+import { formatDuration } from '@/src/lib/utils';
 import { Calendar, Clock, BarChart3, AlertOctagon } from 'lucide-react';
 
 interface Props {

@@ -1,6 +1,6 @@
 import React, { memo } from 'react';
 import { m, Variants } from 'framer-motion';
-import { formatNumber } from '@/src/common/utils';
+import { formatNumber } from '@/src/lib/utils';
 import { LucideIcon } from 'lucide-react'; // Importamos el tipo de Lucide
 
 interface TotalItem {

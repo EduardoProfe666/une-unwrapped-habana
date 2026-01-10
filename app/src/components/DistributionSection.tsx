@@ -1,5 +1,5 @@
 import React, {memo, useMemo} from 'react';
-import {MESSAGE_TYPE_DESCRIPTIONS, MESSAGE_TYPE_LABELS} from '@/src/common/constants';
+import {MESSAGE_TYPE_DESCRIPTIONS, MESSAGE_TYPE_LABELS} from '@/src/lib/constants';
 import ReactionBar from "@/src/components/ReactionBar.tsx";
 
 interface DistributionSectionProps {

@@ -1,6 +1,6 @@
 import React, {useMemo} from 'react';
-import {SenAnalysis} from '../common/types.ts';
-import {formatDate, formatDuration} from '../common/utils.ts';
+import {SenAnalysis} from '@/src/lib/types.ts';
+import {formatDate, formatDuration} from '@/src/lib/utils.ts';
 import {AlertOctagon, Clock, Zap, Activity} from 'lucide-react';
 import {m} from 'framer-motion';
 import TelegramMessage from './TelegramMessage.tsx';
