@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-13T17:50:00.084182-05:00",
+    "sync_date": "2026-01-13T18:26:49.874509-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -24,11 +24,11 @@
         "date_cuba": "2026-01-13 17:40:10",
         "date_cuba_d": "2026-01-13T17:40:10",
         "reactions": {
-            "👍": 1,
-            "👎": 10
+            "👍": 4,
+            "👎": 35
         },
-        "views": 1521,
-        "replies": 7,
+        "views": 6667,
+        "replies": 18,
         "text": "🚧📉Informamos que por Disparado Automático por Frecuencia (DAF) se ha afectado el servicio eléctrico en los siguientes municipios:\n\n👉🏻Habana del Este: Zonas: 6,7,8,9,10,11 Micro 4. 👉🏻Zonas: 12, 14, 13, 19, 20, 21, 23, 24, 25. 👉🏻Zonas: 1, 2, 3, 5, 24, 8, 7.\n\n👉🏻Playa: Calle 25 desde 158 a 190, calle 190 de 194 hasta 5ta Reparto Náutico, Calle 9na desde 120 hasta 130.\n\n👉🏻Boyeros: Santiago, La Especial, El Tesi, La Unión, Lídice, Sempala, Cacahual, La Chata, Santa Susana.\n👉🏻Santiago de Las Vegas calle 204 hasta 188, 409 hasta 397, Guadalupe.👉🏻Santiago, Villanueva, Caridad, Sierra Maestra, La Unión, Comunidad Revolución, Lídice, Naroca, Roció.📉🚧"
     },
     "shortest_message": {
@@ -63,21 +63,21 @@
         "text": "🚧📉Informamos que por Disparado Automático por Frecuencia (DAF) se ha afectado el servicio eléctrico en los siguientes municipios:\n\n📌Boyeros: 👉🏼Santiago de Las Vegas calle 204 hasta 188, 409 hasta 397, Guadalupe👉🏼Santiago, La Especial, El Tesi, La Unión, Lídice, Sempala, Cacahual, La Chata, Santa Susana👉🏼Santiago, Villa Nueva, Caridad, Sierra Maestra, La Unión, Comunidad Revolución, Lídice, Naroca, Rocío.\n\n📌Playa: 👉🏼Calle 25 desde 158 a 190, calle 190 de 194 hasta 5ta Reparto Náutico, Calle 9na desde 120 hasta 130 👉🏼Calle 28 desde 41 hasta 47; Calle 41 desde 9na hasta 24 (Kholy); Calle 10 desde 5ta hasta 9na (Kholy); Calle 12 desde 12 hasta 24 (Miramar)👉🏼\n\n📌Playa-Plaza: 👉🏼Hospitales Centro de Inv Clínico de Menores 24 y 45 Calle 47 desde 26 hasta 38 (Reparto Kholy); Cuadrante desde el Rio Almendares hasta Calle 20 desde Ave. 23 hasta Malecón, Cuadrante desde Calle 6 a 20 y desde Línea a Malecón\n\n📌Marianao: 👉🏼Calle 37 desde 130 hasta 100 , Los Quemados, calle 84 -86-88-90 desde 39a hasta 51, Santa Felicia Reparto Finlay y Alturas de  Belén \n\n📌Cerro: 👉🏼Calle Cristina desde 4 Caminos a san Joaquín, Ataré\n\n📌Cotorro: 👉🏼Dulce Nombre, Santa María del Rosario\n\n📌Habana del Este: Alamar:👉🏼Zonas: 6, 7, 8, 9, 10, 11, Micro 4👉🏼Zonas: 1, 2, 3, 5, 24, 8, 7👉🏼Zonas: 12, 14, 13, 19, 20, 21, 23, 24, 25👉🏼Justi, Agromar, Bajurayabo, Campo Florido, La Coca👉🏼Altura de Boca Ciega, Santa María del Mar, Villa Mégano, Ampliación de Marbella, Guanabo, Bello Monte, Villa del Mar.🚧📉",
         "count": 1476
     },
-    "total_views": 16356060,
+    "total_views": 16419021,
     "total_messages": 816,
     "total_erased_messages": 37,
-    "total_replies": 8983,
-    "total_reactions": 79401,
-    "total_positive_reactions": 16760,
-    "total_negative_reactions": 62641,
-    "avg_views": 20044,
+    "total_replies": 9007,
+    "total_reactions": 79738,
+    "total_positive_reactions": 16790,
+    "total_negative_reactions": 62948,
+    "avg_views": 20121,
     "avg_replies": 11,
-    "avg_reactions": 97,
+    "avg_reactions": 98,
     "avg_positive_reactions": 21,
     "avg_negative_reactions": 77,
     "avg_text_length": 195,
     "monthly_views": {
-        "1": 16356060,
+        "1": 16419021,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -91,7 +91,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 8983,
+        "1": 9007,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -105,7 +105,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 79401,
+        "1": 79738,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -508,8 +508,8 @@
         "5": 274
     },
     "distribution_reaction": {
-        "👎": 62641,
-        "👍": 16760
+        "👎": 62948,
+        "👍": 16790
     },
     "top3_most_viewed_messages": [
         {
