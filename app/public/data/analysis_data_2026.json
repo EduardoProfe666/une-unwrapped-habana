@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-13T07:57:59.223856-05:00",
+    "sync_date": "2026-01-13T08:48:36.344101-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -17,18 +17,18 @@
         "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨"
     },
     "last_message": {
-        "id": 51346,
-        "link": "https://t.me/EmpresaElectricaDeLaHabana/51346",
-        "date_utc": "2026-01-13 12:52:24",
-        "date_utc_d": "2026-01-13T12:52:24",
-        "date_cuba": "2026-01-13 07:52:24",
-        "date_cuba_d": "2026-01-13T07:52:24",
+        "id": 51352,
+        "link": "https://t.me/EmpresaElectricaDeLaHabana/51352",
+        "date_utc": "2026-01-13 13:44:09",
+        "date_utc_d": "2026-01-13T13:44:09",
+        "date_cuba": "2026-01-13 08:44:09",
+        "date_cuba_d": "2026-01-13T08:44:09",
         "reactions": {
-            "👎": 4
+            "👎": 5
         },
-        "views": 311,
+        "views": 613,
         "replies": 1,
-        "text": "‼️Consumidores del municipio Playa, se afecta el servicio eléctrico en la siguiente dirección: 72 e/ 21 y 23. Reparto-Buena Vista,  por  Vía Libre de Emergencia debido a un Poste en Combustión. Se realizan las acciones pertinentes para el restablecimiento del servicio.‼️🚨"
+        "text": "‼️🚨Consumidores del municipio San Miguel del Padrón, se encuentran afectados por TRABAJOS OPERATIOS, los siguientes repartos: Reparto los Ángeles, Rocafol, La Rosalía, La Fernanda y Juanelo.‼️🚨"
     },
     "shortest_message": {
         "id": 50775,
@@ -62,21 +62,21 @@
         "text": "🚧📉Informamos que por Disparado Automático por Frecuencia (DAF) se ha afectado el servicio eléctrico en los siguientes municipios:\n\n📌Boyeros: 👉🏼Santiago de Las Vegas calle 204 hasta 188, 409 hasta 397, Guadalupe👉🏼Santiago, La Especial, El Tesi, La Unión, Lídice, Sempala, Cacahual, La Chata, Santa Susana👉🏼Santiago, Villa Nueva, Caridad, Sierra Maestra, La Unión, Comunidad Revolución, Lídice, Naroca, Rocío.\n\n📌Playa: 👉🏼Calle 25 desde 158 a 190, calle 190 de 194 hasta 5ta Reparto Náutico, Calle 9na desde 120 hasta 130 👉🏼Calle 28 desde 41 hasta 47; Calle 41 desde 9na hasta 24 (Kholy); Calle 10 desde 5ta hasta 9na (Kholy); Calle 12 desde 12 hasta 24 (Miramar)👉🏼\n\n📌Playa-Plaza: 👉🏼Hospitales Centro de Inv Clínico de Menores 24 y 45 Calle 47 desde 26 hasta 38 (Reparto Kholy); Cuadrante desde el Rio Almendares hasta Calle 20 desde Ave. 23 hasta Malecón, Cuadrante desde Calle 6 a 20 y desde Línea a Malecón\n\n📌Marianao: 👉🏼Calle 37 desde 130 hasta 100 , Los Quemados, calle 84 -86-88-90 desde 39a hasta 51, Santa Felicia Reparto Finlay y Alturas de  Belén \n\n📌Cerro: 👉🏼Calle Cristina desde 4 Caminos a san Joaquín, Ataré\n\n📌Cotorro: 👉🏼Dulce Nombre, Santa María del Rosario\n\n📌Habana del Este: Alamar:👉🏼Zonas: 6, 7, 8, 9, 10, 11, Micro 4👉🏼Zonas: 1, 2, 3, 5, 24, 8, 7👉🏼Zonas: 12, 14, 13, 19, 20, 21, 23, 24, 25👉🏼Justi, Agromar, Bajurayabo, Campo Florido, La Coca👉🏼Altura de Boca Ciega, Santa María del Mar, Villa Mégano, Ampliación de Marbella, Guanabo, Bello Monte, Villa del Mar.🚧📉",
         "count": 1476
     },
-    "total_views": 15482748,
-    "total_messages": 775,
-    "total_erased_messages": 30,
-    "total_replies": 8579,
-    "total_reactions": 76008,
-    "total_positive_reactions": 16293,
-    "total_negative_reactions": 59715,
-    "avg_views": 19978,
+    "total_views": 15556692,
+    "total_messages": 779,
+    "total_erased_messages": 32,
+    "total_replies": 8609,
+    "total_reactions": 76209,
+    "total_positive_reactions": 16330,
+    "total_negative_reactions": 59879,
+    "avg_views": 19970,
     "avg_replies": 11,
     "avg_reactions": 98,
     "avg_positive_reactions": 21,
     "avg_negative_reactions": 77,
     "avg_text_length": 190,
     "monthly_views": {
-        "1": 15482748,
+        "1": 15556692,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -90,7 +90,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 8579,
+        "1": 8609,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -104,7 +104,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 76008,
+        "1": 76209,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -118,7 +118,7 @@
         "12": 0
     },
     "monthly_messages": {
-        "1": 775,
+        "1": 779,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -144,7 +144,7 @@
         "10": 58,
         "11": 66,
         "12": 97,
-        "13": 21,
+        "13": 25,
         "14": 0,
         "15": 0,
         "16": 0,
@@ -500,15 +500,15 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 408,
+        "1": 412,
         "2": 56,
         "3": 34,
         "4": 13,
         "5": 264
     },
     "distribution_reaction": {
-        "👎": 59715,
-        "👍": 16293
+        "👎": 59879,
+        "👍": 16330
     },
     "top3_most_viewed_messages": [
         {
@@ -670,12 +670,12 @@
             "date_cuba_d": "2026-01-12T21:21:17",
             "reactions": {
                 "👍": 18,
-                "👎": 1113
+                "👎": 1115
             },
-            "views": 11565,
+            "views": 13078,
             "replies": 51,
             "text": "⚡️Actualización de afectaciones por déficit en la capital.                                                                                            \nEn estos momentos se afectan 27 MW distribuidos en varios circuitos de los bloques:\n\n✅Bloque 3     04:40 Hrs\n\n\n\nEquipo de Comunicación \nEmpresa Eléctrica de La Habana⚡️",
-            "count": 1113
+            "count": 1115
         },
         {
             "id": 50587,
@@ -715,24 +715,24 @@
         "servicio": 248,
         "calle": 247,
         "déficit": 226,
-        "municipio": 219,
+        "municipio": 222,
         "habana": 217,
         "horas": 208,
-        "consumidores": 180,
+        "consumidores": 183,
         "informamos": 144,
-        "afectados": 138,
-        "actualización": 138,
+        "afectados": 141,
+        "actualización": 139,
         "afectaciones": 131,
         "hrs": 131,
+        "siguientes": 126,
         "mw": 126,
         "empresa": 125,
         "eléctrica": 124,
-        "siguientes": 124,
         "circuitos": 122,
         "equipo": 122,
         "comunicación": 122,
+        "momentos": 121,
         "varios": 120,
-        "momentos": 120,
         "eléctrico": 119,
         "capital": 117,
         "afectan": 117
@@ -796,10 +796,10 @@
             "declared_recoveries": 1,
             "declared_affectations": 77,
             "declared_emergencies": 5,
-            "estimated_affected_seconds": 383901,
+            "estimated_affected_seconds": 387006,
             "weekday_off_seconds": {
                 "0": 96402,
-                "1": 114404,
+                "1": 117509,
                 "2": 24582,
                 "3": 2583,
                 "4": 8858,
@@ -808,7 +808,7 @@
             },
             "weekday_off_avg_seconds": {
                 "0": 1853.8846153846155,
-                "1": 2200.076923076923,
+                "1": 2259.7884615384614,
                 "2": 472.7307692307692,
                 "3": 48.735849056603776,
                 "4": 170.34615384615384,
@@ -896,7 +896,7 @@
         }
     ],
     "sen_analysis": {
-        "mentions": 39,
+        "mentions": 40,
         "total_failure_events": 0,
         "failure_events": []
     }
