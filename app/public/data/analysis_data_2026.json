@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-13T02:29:36.346281-05:00",
+    "sync_date": "2026-01-13T02:47:51.682561-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -17,18 +17,18 @@
         "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨"
     },
     "last_message": {
-        "id": 51330,
-        "link": "https://t.me/EmpresaElectricaDeLaHabana/51330",
-        "date_utc": "2026-01-13 06:18:05",
-        "date_utc_d": "2026-01-13T06:18:05",
-        "date_cuba": "2026-01-13 01:18:05",
-        "date_cuba_d": "2026-01-13T01:18:05",
+        "id": 51332,
+        "link": "https://t.me/EmpresaElectricaDeLaHabana/51332",
+        "date_utc": "2026-01-13 07:45:32",
+        "date_utc_d": "2026-01-13T07:45:32",
+        "date_cuba": "2026-01-13 02:45:32",
+        "date_cuba_d": "2026-01-13T02:45:32",
         "reactions": {
-            "👎": 5
+            "👍": 1
         },
-        "views": 671,
-        "replies": 6,
-        "text": "🚨‼️Consumidores del municipio Cerro, San Benigno hasta Macedonia, Vía Blanca hasta Calzada de Buenos Aires, Agua Dulce desde San Indalecio hasta Carbajal, Calzada de Buenos Aires desde Agua Dulce hasta Macedonia, Calzada de Vía Blanca hasta Resguardo, Avenida Albear hasta Cerezo  se encuentran afectados por un disparo del circuito.‼️🚨"
+        "views": 32,
+        "replies": 0,
+        "text": "🚨‼️Consumidores del municipio Guanabacoa, se encuentra afectados por un  transformador dañado en Máximo Gómez / Fasseolo y  Seulino,‼️🚨"
     },
     "shortest_message": {
         "id": 50775,
@@ -62,21 +62,21 @@
         "text": "🚧📉Informamos que por Disparado Automático por Frecuencia (DAF) se ha afectado el servicio eléctrico en los siguientes municipios:\n\n📌Boyeros: 👉🏼Santiago de Las Vegas calle 204 hasta 188, 409 hasta 397, Guadalupe👉🏼Santiago, La Especial, El Tesi, La Unión, Lídice, Sempala, Cacahual, La Chata, Santa Susana👉🏼Santiago, Villa Nueva, Caridad, Sierra Maestra, La Unión, Comunidad Revolución, Lídice, Naroca, Rocío.\n\n📌Playa: 👉🏼Calle 25 desde 158 a 190, calle 190 de 194 hasta 5ta Reparto Náutico, Calle 9na desde 120 hasta 130 👉🏼Calle 28 desde 41 hasta 47; Calle 41 desde 9na hasta 24 (Kholy); Calle 10 desde 5ta hasta 9na (Kholy); Calle 12 desde 12 hasta 24 (Miramar)👉🏼\n\n📌Playa-Plaza: 👉🏼Hospitales Centro de Inv Clínico de Menores 24 y 45 Calle 47 desde 26 hasta 38 (Reparto Kholy); Cuadrante desde el Rio Almendares hasta Calle 20 desde Ave. 23 hasta Malecón, Cuadrante desde Calle 6 a 20 y desde Línea a Malecón\n\n📌Marianao: 👉🏼Calle 37 desde 130 hasta 100 , Los Quemados, calle 84 -86-88-90 desde 39a hasta 51, Santa Felicia Reparto Finlay y Alturas de  Belén \n\n📌Cerro: 👉🏼Calle Cristina desde 4 Caminos a san Joaquín, Ataré\n\n📌Cotorro: 👉🏼Dulce Nombre, Santa María del Rosario\n\n📌Habana del Este: Alamar:👉🏼Zonas: 6, 7, 8, 9, 10, 11, Micro 4👉🏼Zonas: 1, 2, 3, 5, 24, 8, 7👉🏼Zonas: 12, 14, 13, 19, 20, 21, 23, 24, 25👉🏼Justi, Agromar, Bajurayabo, Campo Florido, La Coca👉🏼Altura de Boca Ciega, Santa María del Mar, Villa Mégano, Ampliación de Marbella, Guanabo, Bello Monte, Villa del Mar.🚧📉",
         "count": 1476
     },
-    "total_views": 15349700,
-    "total_messages": 759,
+    "total_views": 15351370,
+    "total_messages": 761,
     "total_erased_messages": 30,
-    "total_replies": 8519,
-    "total_reactions": 75536,
-    "total_positive_reactions": 16146,
-    "total_negative_reactions": 59390,
-    "avg_views": 20224,
+    "total_replies": 8521,
+    "total_reactions": 75550,
+    "total_positive_reactions": 16151,
+    "total_negative_reactions": 59399,
+    "avg_views": 20173,
     "avg_replies": 11,
-    "avg_reactions": 100,
+    "avg_reactions": 99,
     "avg_positive_reactions": 21,
     "avg_negative_reactions": 78,
     "avg_text_length": 190,
     "monthly_views": {
-        "1": 15349700,
+        "1": 15351370,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -90,7 +90,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 8519,
+        "1": 8521,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -104,7 +104,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 75536,
+        "1": 75550,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -118,7 +118,7 @@
         "12": 0
     },
     "monthly_messages": {
-        "1": 759,
+        "1": 761,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -144,7 +144,7 @@
         "10": 58,
         "11": 66,
         "12": 97,
-        "13": 5,
+        "13": 7,
         "14": 0,
         "15": 0,
         "16": 0,
@@ -500,15 +500,15 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 396,
+        "1": 398,
         "2": 56,
         "3": 31,
         "4": 12,
         "5": 264
     },
     "distribution_reaction": {
-        "👎": 59390,
-        "👍": 16146
+        "👎": 59399,
+        "👍": 16151
     },
     "top3_most_viewed_messages": [
         {
@@ -672,7 +672,7 @@
                 "👍": 15,
                 "👎": 1106
             },
-            "views": 9448,
+            "views": 9508,
             "replies": 51,
             "text": "⚡️Actualización de afectaciones por déficit en la capital.                                                                                            \nEn estos momentos se afectan 27 MW distribuidos en varios circuitos de los bloques:\n\n✅Bloque 3     04:40 Hrs\n\n\n\nEquipo de Comunicación \nEmpresa Eléctrica de La Habana⚡️",
             "count": 1106
@@ -716,12 +716,12 @@
         "servicio": 240,
         "déficit": 225,
         "habana": 213,
-        "municipio": 207,
+        "municipio": 208,
         "horas": 207,
-        "consumidores": 171,
+        "consumidores": 172,
         "informamos": 144,
         "actualización": 138,
-        "afectados": 133,
+        "afectados": 134,
         "hrs": 131,
         "afectaciones": 130,
         "mw": 125,
@@ -796,10 +796,10 @@
             "declared_recoveries": 1,
             "declared_affectations": 77,
             "declared_emergencies": 5,
-            "estimated_affected_seconds": 360242,
+            "estimated_affected_seconds": 365489,
             "weekday_off_seconds": {
                 "0": 96402,
-                "1": 90745,
+                "1": 95992,
                 "2": 24582,
                 "3": 2583,
                 "4": 8858,
@@ -808,7 +808,7 @@
             },
             "weekday_off_avg_seconds": {
                 "0": 1853.8846153846155,
-                "1": 1745.0961538461538,
+                "1": 1846.0,
                 "2": 472.7307692307692,
                 "3": 48.735849056603776,
                 "4": 170.34615384615384,
