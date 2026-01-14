@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-14T18:22:19.916618-05:00",
+    "sync_date": "2026-01-14T18:42:03.153779-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -24,10 +24,11 @@
         "date_cuba": "2026-01-14 18:13:26",
         "date_cuba_d": "2026-01-14T18:13:26",
         "reactions": {
-            "👎": 118
+            "👍": 7,
+            "👎": 317
         },
-        "views": 3333,
-        "replies": 24,
+        "views": 8170,
+        "replies": 65,
         "text": "🚧Queremos informar a los consumidores de la capital que en este momento se afecta el servicio eléctrico en varios circuitos de distintos municipios por Disparo Automático por Frecuencia ( DAF)🚧"
     },
     "shortest_message": {
@@ -62,21 +63,21 @@
         "text": "🚧📉Informamos que por Disparado Automático por Frecuencia (DAF) se ha afectado el servicio eléctrico en los siguientes municipios:\n\n📌Boyeros: 👉🏼Santiago de Las Vegas calle 204 hasta 188, 409 hasta 397, Guadalupe👉🏼Santiago, La Especial, El Tesi, La Unión, Lídice, Sempala, Cacahual, La Chata, Santa Susana👉🏼Santiago, Villa Nueva, Caridad, Sierra Maestra, La Unión, Comunidad Revolución, Lídice, Naroca, Rocío.\n\n📌Playa: 👉🏼Calle 25 desde 158 a 190, calle 190 de 194 hasta 5ta Reparto Náutico, Calle 9na desde 120 hasta 130 👉🏼Calle 28 desde 41 hasta 47; Calle 41 desde 9na hasta 24 (Kholy); Calle 10 desde 5ta hasta 9na (Kholy); Calle 12 desde 12 hasta 24 (Miramar)👉🏼\n\n📌Playa-Plaza: 👉🏼Hospitales Centro de Inv Clínico de Menores 24 y 45 Calle 47 desde 26 hasta 38 (Reparto Kholy); Cuadrante desde el Rio Almendares hasta Calle 20 desde Ave. 23 hasta Malecón, Cuadrante desde Calle 6 a 20 y desde Línea a Malecón\n\n📌Marianao: 👉🏼Calle 37 desde 130 hasta 100 , Los Quemados, calle 84 -86-88-90 desde 39a hasta 51, Santa Felicia Reparto Finlay y Alturas de  Belén \n\n📌Cerro: 👉🏼Calle Cristina desde 4 Caminos a san Joaquín, Ataré\n\n📌Cotorro: 👉🏼Dulce Nombre, Santa María del Rosario\n\n📌Habana del Este: Alamar:👉🏼Zonas: 6, 7, 8, 9, 10, 11, Micro 4👉🏼Zonas: 1, 2, 3, 5, 24, 8, 7👉🏼Zonas: 12, 14, 13, 19, 20, 21, 23, 24, 25👉🏼Justi, Agromar, Bajurayabo, Campo Florido, La Coca👉🏼Altura de Boca Ciega, Santa María del Mar, Villa Mégano, Ampliación de Marbella, Guanabo, Bello Monte, Villa del Mar.🚧📉",
         "count": 1476
     },
-    "total_views": 18288308,
+    "total_views": 18327908,
     "total_messages": 899,
     "total_erased_messages": 48,
-    "total_replies": 11594,
-    "total_reactions": 94491,
-    "total_positive_reactions": 18645,
-    "total_negative_reactions": 75846,
-    "avg_views": 20343,
+    "total_replies": 11661,
+    "total_reactions": 95032,
+    "total_positive_reactions": 18677,
+    "total_negative_reactions": 76355,
+    "avg_views": 20387,
     "avg_replies": 13,
-    "avg_reactions": 105,
+    "avg_reactions": 106,
     "avg_positive_reactions": 21,
-    "avg_negative_reactions": 84,
+    "avg_negative_reactions": 85,
     "avg_text_length": 200,
     "monthly_views": {
-        "1": 18288308,
+        "1": 18327908,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -90,7 +91,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 11594,
+        "1": 11661,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -104,7 +105,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 94491,
+        "1": 95032,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -507,8 +508,8 @@
         "5": 312
     },
     "distribution_reaction": {
-        "👎": 75846,
-        "👍": 18645
+        "👎": 76355,
+        "👍": 18677
     },
     "top3_most_viewed_messages": [
         {
@@ -578,6 +579,22 @@
             "count": 135
         },
         {
+            "id": 51486,
+            "link": "https://t.me/EmpresaElectricaDeLaHabana/51486",
+            "date_utc": "2026-01-14 22:28:48",
+            "date_utc_d": "2026-01-14T22:28:48",
+            "date_cuba": "2026-01-14 17:28:48",
+            "date_cuba_d": "2026-01-14T17:28:48",
+            "reactions": {
+                "👍": 15,
+                "👎": 462
+            },
+            "views": 16062,
+            "replies": 131,
+            "text": "🚨‼️Informamos a los clientes asociados al Bloque No.6 que comienza la afectación por déficit de generación por **EMERGENCIA**‼️🚨",
+            "count": 131
+        },
+        {
             "id": 50587,
             "link": "https://t.me/EmpresaElectricaDeLaHabana/50587",
             "date_utc": "2026-01-02 12:16:20",
@@ -592,22 +609,6 @@
             "replies": 128,
             "text": "NOTA INFORMATIVA \n\nEELH| En el día de ayer NO se afectó el servicio eléctrico en La Habana por Déficit.\nComo ya hemos explicado estas afectaciones sólo dependerán de las exigencias del SEN.",
             "count": 128
-        },
-        {
-            "id": 51486,
-            "link": "https://t.me/EmpresaElectricaDeLaHabana/51486",
-            "date_utc": "2026-01-14 22:28:48",
-            "date_utc_d": "2026-01-14T22:28:48",
-            "date_cuba": "2026-01-14 17:28:48",
-            "date_cuba_d": "2026-01-14T17:28:48",
-            "reactions": {
-                "👍": 12,
-                "👎": 419
-            },
-            "views": 13039,
-            "replies": 126,
-            "text": "🚨‼️Informamos a los clientes asociados al Bloque No.6 que comienza la afectación por déficit de generación por **EMERGENCIA**‼️🚨",
-            "count": 126
         }
     ],
     "top3_most_positive_reaction_messages": [
