@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-17T08:32:10.590506-05:00",
+    "sync_date": "2026-01-17T09:23:30.208714-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -17,18 +17,19 @@
         "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨"
     },
     "last_message": {
-        "id": 51789,
-        "link": "https://t.me/EmpresaElectricaDeLaHabana/51789",
-        "date_utc": "2026-01-17 13:28:46",
-        "date_utc_d": "2026-01-17T13:28:46",
-        "date_cuba": "2026-01-17 08:28:46",
-        "date_cuba_d": "2026-01-17T08:28:46",
+        "id": 51792,
+        "link": "https://t.me/EmpresaElectricaDeLaHabana/51792",
+        "date_utc": "2026-01-17 14:09:36",
+        "date_utc_d": "2026-01-17T14:09:36",
+        "date_cuba": "2026-01-17 09:09:36",
+        "date_cuba_d": "2026-01-17T09:09:36",
         "reactions": {
-            "👍": 1
+            "👍": 4,
+            "👎": 3
         },
-        "views": 521,
+        "views": 1524,
         "replies": 0,
-        "text": "📣Consumidores del municipio Centro Habana, se encuentran afectados por Trabajos Operativos en el siguiente cuadrante: De Plasencia hasta Márquez González y de Estrella hasta Carlos III, Márquez González hasta Escobar y de Peñalver hasta Carlos III. Al concluir quedara restablecido el servicio.Ofrecemos disculpas ante las molestias ocasionadas. 📣"
+        "text": "🚨📣Consumidores del municipio Centro Habana, se  afecta el servicio por Vía Libre Planificada en el siguiente cuadrante:  desde Calle Hospital a Soledad y desde Carlos III a San Lázaro . Al concluir quedara restablecido el servicio. Ofrecemos disculpas ante las molestias ocasionadas. 📣🚨"
     },
     "shortest_message": {
         "id": 50775,
@@ -62,21 +63,21 @@
         "text": "📣Averías existentes hasta el momento📣\n\n➡️Averías Primarias ⬅️\nPor puente primario partido \n\n📌Municipio: Cerro \n👉Dirección: Colon desde Whaschinton hasta Vía Blanca, Vía Blanca Rotonda hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Primelle hasta Calzada de Palatino, Santa Catalina hasta Fomento, Ocujes desde Santa Catalina hasta Ave de La Ceiba, Calzada de Palatino hasta Fomento, Palmar hasta Santa Lugarda, Bella Vista hasta Recreo\n\n\n📌Municipio:Playa  \n👉Dirección : Calle 96 y 5ta F Afectando , Calle 13 desde 70 hasta 86; Calle 11 desde 74 hasta 98; 5taF desde 96 hasta 120 (Almendares); Calle 120 desde 5ta F hasta 23 (Cubanacan)\nDirección : Calle 46 desde 5taA hasta 39A; Calle 5taA desde 36 hasta 66; Calle 7ma desde 24 hasta 40 (Reparto Sierra)\n\n👉Dirección :Calle 46 desde 5taA hasta 39A; Calle 5taA desde 36 hasta 66; Calle 7ma desde 24 hasta 40 (Reparto Sierra)\n\n\n📌Municipio: Guanabacoa \n👉Dirección: Apodaca e/ Fray Alonzo y Cadena afectando Mambi, Garrido, Centro de Guanabacoa\n \n\nCircuitos Disparados por tormenta \n\n‼️Municipio : Cerro \n👉Dirección : \"Vía Blanca desde 1ra hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Santa Catalina desde Primelle hasta Independencia Independencia desde Rotonda hasta Palmar, Independencia hasta Rambla, Colón hasta 14,\"Colon desde Whaschinton hasta Vía Blanca, Vía Blanca Rotonda hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Primelle hasta Calzada de Palatino, Santa Catalina hasta Fomento, Ocujes desde Santa Catalina hasta Ave de La Ceiba, Calzada de Palatino hasta Fomento, Palmar hasta Santa Lugarda, Bella Vista hasta Recreo\n\n\n‼️Municipio :Alamar \n👉Dirección : \"Zonas: Colina Villa Real, CelimarZonas: 12, 14, 13, 19, 20, 21, 23, 24, 25Zonas: 1, 2, 3, 5, 24, 8, 7 ,Zona Franca de Berroa\n\n‼️Municipio :Plaza \n👉Dirección :\"Cuadrante desde Calle 4 hasta A, 11 hasta Malecón",
         "count": 1877
     },
-    "total_views": 24055951,
-    "total_messages": 1187,
-    "total_erased_messages": 61,
-    "total_replies": 19207,
-    "total_reactions": 138491,
-    "total_positive_reactions": 24312,
-    "total_negative_reactions": 114179,
-    "avg_views": 20266,
+    "total_views": 24117311,
+    "total_messages": 1189,
+    "total_erased_messages": 62,
+    "total_replies": 19233,
+    "total_reactions": 138725,
+    "total_positive_reactions": 24364,
+    "total_negative_reactions": 114361,
+    "avg_views": 20284,
     "avg_replies": 16,
     "avg_reactions": 117,
     "avg_positive_reactions": 20,
     "avg_negative_reactions": 96,
     "avg_text_length": 211,
     "monthly_views": {
-        "1": 24055951,
+        "1": 24117311,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -90,7 +91,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 19207,
+        "1": 19233,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -104,7 +105,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 138491,
+        "1": 138725,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -118,7 +119,7 @@
         "12": 0
     },
     "monthly_messages": {
-        "1": 1187,
+        "1": 1189,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -148,7 +149,7 @@
         "14": 71,
         "15": 144,
         "16": 113,
-        "17": 10,
+        "17": 12,
         "18": 0,
         "19": 0,
         "20": 0,
@@ -500,15 +501,15 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 605,
+        "1": 607,
         "2": 83,
         "3": 52,
         "4": 17,
         "5": 430
     },
     "distribution_reaction": {
-        "👎": 114179,
-        "👍": 24312
+        "👎": 114361,
+        "👍": 24364
     },
     "top3_most_viewed_messages": [
         {
@@ -713,14 +714,14 @@
     "top25_most_repeated_words": {
         "bloque": 858,
         "hrs": 415,
-        "calle": 399,
-        "municipio": 377,
+        "calle": 400,
+        "municipio": 379,
         "déficit": 374,
-        "servicio": 365,
-        "habana": 335,
-        "consumidores": 282,
+        "servicio": 368,
+        "habana": 336,
+        "consumidores": 284,
         "circuitos": 267,
-        "afectados": 254,
+        "afectados": 255,
         "horas": 237,
         "informamos": 231,
         "actualización": 228,
@@ -729,7 +730,7 @@
         "varios": 210,
         "momentos": 210,
         "empresa": 209,
-        "siguientes": 207,
+        "siguientes": 208,
         "eléctrica": 205,
         "equipo": 203,
         "comunicación": 203,
@@ -822,14 +823,14 @@
             "declared_recoveries": 3,
             "declared_affectations": 141,
             "declared_emergencies": 25,
-            "estimated_affected_seconds": 504022,
+            "estimated_affected_seconds": 506472,
             "weekday_off_seconds": {
                 "0": 41662,
                 "1": 43576,
                 "2": 43386,
                 "3": 47371,
                 "4": 111467,
-                "5": 78715,
+                "5": 81165,
                 "6": 137845
             },
             "weekday_off_avg_seconds": {
@@ -838,7 +839,7 @@
                 "2": 834.3461538461538,
                 "3": 893.7924528301887,
                 "4": 2143.596153846154,
-                "5": 1513.75,
+                "5": 1560.8653846153845,
                 "6": 2650.8653846153848
             }
         },
