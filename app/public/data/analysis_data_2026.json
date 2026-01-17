@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-17T10:24:47.504102-05:00",
+    "sync_date": "2026-01-17T10:43:12.360243-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -23,9 +23,11 @@
         "date_utc_d": "2026-01-17T15:23:59",
         "date_cuba": "2026-01-17 10:23:59",
         "date_cuba_d": "2026-01-17T10:23:59",
-        "reactions": {},
-        "views": 1,
-        "replies": 0,
+        "reactions": {
+            "👎": 21
+        },
+        "views": 1889,
+        "replies": 8,
         "text": "🚧📉Informamos que por Disparado Automático por Frecuencia (DAF) se ha afectado el servicio eléctrico en los siguientes municipios: \n\n👉🏻 Habana del Este: Zonas: 12, 14, 13, 19, 20, 21, 23, 24, 25. 👉🏼Zonas: 1, 2, 3, 5, 24, 8, 7.👉🏼Zonas: 6, 7, 8, 9, 10, 11, Micro 4. 📉🚧"
     },
     "shortest_message": {
@@ -60,21 +62,21 @@
         "text": "📣Averías existentes hasta el momento📣\n\n➡️Averías Primarias ⬅️\nPor puente primario partido \n\n📌Municipio: Cerro \n👉Dirección: Colon desde Whaschinton hasta Vía Blanca, Vía Blanca Rotonda hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Primelle hasta Calzada de Palatino, Santa Catalina hasta Fomento, Ocujes desde Santa Catalina hasta Ave de La Ceiba, Calzada de Palatino hasta Fomento, Palmar hasta Santa Lugarda, Bella Vista hasta Recreo\n\n\n📌Municipio:Playa  \n👉Dirección : Calle 96 y 5ta F Afectando , Calle 13 desde 70 hasta 86; Calle 11 desde 74 hasta 98; 5taF desde 96 hasta 120 (Almendares); Calle 120 desde 5ta F hasta 23 (Cubanacan)\nDirección : Calle 46 desde 5taA hasta 39A; Calle 5taA desde 36 hasta 66; Calle 7ma desde 24 hasta 40 (Reparto Sierra)\n\n👉Dirección :Calle 46 desde 5taA hasta 39A; Calle 5taA desde 36 hasta 66; Calle 7ma desde 24 hasta 40 (Reparto Sierra)\n\n\n📌Municipio: Guanabacoa \n👉Dirección: Apodaca e/ Fray Alonzo y Cadena afectando Mambi, Garrido, Centro de Guanabacoa\n \n\nCircuitos Disparados por tormenta \n\n‼️Municipio : Cerro \n👉Dirección : \"Vía Blanca desde 1ra hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Santa Catalina desde Primelle hasta Independencia Independencia desde Rotonda hasta Palmar, Independencia hasta Rambla, Colón hasta 14,\"Colon desde Whaschinton hasta Vía Blanca, Vía Blanca Rotonda hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Primelle hasta Calzada de Palatino, Santa Catalina hasta Fomento, Ocujes desde Santa Catalina hasta Ave de La Ceiba, Calzada de Palatino hasta Fomento, Palmar hasta Santa Lugarda, Bella Vista hasta Recreo\n\n\n‼️Municipio :Alamar \n👉Dirección : \"Zonas: Colina Villa Real, CelimarZonas: 12, 14, 13, 19, 20, 21, 23, 24, 25Zonas: 1, 2, 3, 5, 24, 8, 7 ,Zona Franca de Berroa\n\n‼️Municipio :Plaza \n👉Dirección :\"Cuadrante desde Calle 4 hasta A, 11 hasta Malecón",
         "count": 1877
     },
-    "total_views": 24183009,
+    "total_views": 24210515,
     "total_messages": 1191,
     "total_erased_messages": 62,
-    "total_replies": 19246,
-    "total_reactions": 138915,
-    "total_positive_reactions": 24416,
-    "total_negative_reactions": 114499,
-    "avg_views": 20305,
+    "total_replies": 19256,
+    "total_reactions": 138989,
+    "total_positive_reactions": 24422,
+    "total_negative_reactions": 114567,
+    "avg_views": 20328,
     "avg_replies": 16,
     "avg_reactions": 117,
     "avg_positive_reactions": 21,
     "avg_negative_reactions": 96,
     "avg_text_length": 211,
     "monthly_views": {
-        "1": 24183009,
+        "1": 24210515,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -88,7 +90,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 19246,
+        "1": 19256,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -102,7 +104,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 138915,
+        "1": 138989,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -505,8 +507,8 @@
         "5": 430
     },
     "distribution_reaction": {
-        "👎": 114499,
-        "👍": 24416
+        "👎": 114567,
+        "👍": 24422
     },
     "top3_most_viewed_messages": [
         {
