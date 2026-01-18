@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-18T04:44:13.692465-05:00",
+    "sync_date": "2026-01-18T05:26:48.184494-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -24,10 +24,10 @@
         "date_cuba": "2026-01-18 02:11:35",
         "date_cuba_d": "2026-01-18T02:11:35",
         "reactions": {
-            "👍": 7,
-            "👎": 51
+            "👍": 9,
+            "👎": 56
         },
-        "views": 1899,
+        "views": 2325,
         "replies": 10,
         "text": "🚧📣 Cerrado el Déficit de Generación en la Ciudad. 🚧📣"
     },
@@ -63,21 +63,21 @@
         "text": "📣Averías existentes hasta el momento📣\n\n➡️Averías Primarias ⬅️\nPor puente primario partido \n\n📌Municipio: Cerro \n👉Dirección: Colon desde Whaschinton hasta Vía Blanca, Vía Blanca Rotonda hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Primelle hasta Calzada de Palatino, Santa Catalina hasta Fomento, Ocujes desde Santa Catalina hasta Ave de La Ceiba, Calzada de Palatino hasta Fomento, Palmar hasta Santa Lugarda, Bella Vista hasta Recreo\n\n\n📌Municipio:Playa  \n👉Dirección : Calle 96 y 5ta F Afectando , Calle 13 desde 70 hasta 86; Calle 11 desde 74 hasta 98; 5taF desde 96 hasta 120 (Almendares); Calle 120 desde 5ta F hasta 23 (Cubanacan)\nDirección : Calle 46 desde 5taA hasta 39A; Calle 5taA desde 36 hasta 66; Calle 7ma desde 24 hasta 40 (Reparto Sierra)\n\n👉Dirección :Calle 46 desde 5taA hasta 39A; Calle 5taA desde 36 hasta 66; Calle 7ma desde 24 hasta 40 (Reparto Sierra)\n\n\n📌Municipio: Guanabacoa \n👉Dirección: Apodaca e/ Fray Alonzo y Cadena afectando Mambi, Garrido, Centro de Guanabacoa\n \n\nCircuitos Disparados por tormenta \n\n‼️Municipio : Cerro \n👉Dirección : \"Vía Blanca desde 1ra hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Santa Catalina desde Primelle hasta Independencia Independencia desde Rotonda hasta Palmar, Independencia hasta Rambla, Colón hasta 14,\"Colon desde Whaschinton hasta Vía Blanca, Vía Blanca Rotonda hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Primelle hasta Calzada de Palatino, Santa Catalina hasta Fomento, Ocujes desde Santa Catalina hasta Ave de La Ceiba, Calzada de Palatino hasta Fomento, Palmar hasta Santa Lugarda, Bella Vista hasta Recreo\n\n\n‼️Municipio :Alamar \n👉Dirección : \"Zonas: Colina Villa Real, CelimarZonas: 12, 14, 13, 19, 20, 21, 23, 24, 25Zonas: 1, 2, 3, 5, 24, 8, 7 ,Zona Franca de Berroa\n\n‼️Municipio :Plaza \n👉Dirección :\"Cuadrante desde Calle 4 hasta A, 11 hasta Malecón",
         "count": 1877
     },
-    "total_views": 26045668,
+    "total_views": 26051796,
     "total_messages": 1263,
     "total_erased_messages": 73,
-    "total_replies": 22954,
-    "total_reactions": 158560,
-    "total_positive_reactions": 26351,
-    "total_negative_reactions": 132209,
-    "avg_views": 20622,
+    "total_replies": 22955,
+    "total_reactions": 158587,
+    "total_positive_reactions": 26366,
+    "total_negative_reactions": 132221,
+    "avg_views": 20627,
     "avg_replies": 18,
     "avg_reactions": 126,
     "avg_positive_reactions": 21,
     "avg_negative_reactions": 105,
     "avg_text_length": 216,
     "monthly_views": {
-        "1": 26045668,
+        "1": 26051796,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -91,7 +91,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 22954,
+        "1": 22955,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -105,7 +105,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 158560,
+        "1": 158587,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -508,8 +508,8 @@
         "5": 470
     },
     "distribution_reaction": {
-        "👎": 132209,
-        "👍": 26351
+        "👎": 132221,
+        "👍": 26366
     },
     "top3_most_viewed_messages": [
         {
@@ -523,10 +523,10 @@
                 "👍": 41,
                 "👎": 1578
             },
-            "views": 37773,
+            "views": 37847,
             "replies": 506,
             "text": "⚡️Actualización de afectaciones por déficit en la capital\nEn estos momentos se afectan 412 MW distribuidos en varios circuitos de los siguientes bloques:\n\n✅Bloque 2   6:47 Hrs\n✅Bloque 3   6:08 Hrs\n✅Bloque 4   4:28 Hrs\n✅Bloque 5   4:07 Hrs\n✅Bloque 6   3:55 Hrs\n✅Bloque 1   2:39 Hrs\n\n  \n⚠️Están siendo afectados además CIRCUITOS DE EMERGENCIA (2:27) Horas, debido a la baja disponibilidad de generación. ⚠️\n\n\n Equipo de Comunicación \nEmpresa Eléctrica de La Habana⚡️",
-            "count": 37773
+            "count": 37847
         },
         {
             "id": 51849,
@@ -539,10 +539,10 @@
                 "👍": 27,
                 "👎": 634
             },
-            "views": 35340,
+            "views": 35381,
             "replies": 67,
             "text": "⚡️Actualización de afectaciones por déficit en la capital\nEn estos momentos se afectan 368 MW distribuidos en varios circuitos de los siguientes bloques:\n\n✅Bloque 2   6:25 Hrs\n✅Bloque 3   5:46 Hrs\n✅Bloque 4   4:05 Hrs\n✅Bloque 5   3:45 Hrs\n✅Bloque 6   3:36 Hrs\n✅Bloque 1   2:17 Hrs\n\n  \n⚠️Están siendo afectados además CIRCUITOS DE EMERGENCIA (2:05) Horas, debido a la baja disponibilidad de generación. ⚠️\n\n\n Equipo de Comunicación \nEmpresa Eléctrica de La Habana⚡️",
-            "count": 35340
+            "count": 35381
         },
         {
             "id": 51846,
@@ -555,10 +555,10 @@
                 "👍": 25,
                 "👎": 643
             },
-            "views": 33668,
+            "views": 33709,
             "replies": 119,
             "text": "⚡️Actualización de afectaciones por déficit en la capital\nEn estos momentos se afectan 358 MW distribuidos en varios circuitos de los siguientes bloques:\n\n✅Bloque 2   5:52 Hrs\n✅Bloque 3   5:12 Hrs\n✅Bloque 4   3:32 Hrs\n✅Bloque 5   3:12 Hrs\n✅Bloque 6   3:03 Hrs\n✅Bloque 1   1:45 Hrs\n\n  \n⚠️Están siendo afectados además CIRCUITOS DE EMERGENCIA (1:28) horas, debido a la baja disponibilidad de generación. ⚠️\n\n\n Equipo de Comunicación \nEmpresa Eléctrica de La Habana⚡️",
-            "count": 33668
+            "count": 33709
         }
     ],
     "top3_most_replied_messages": [
@@ -573,7 +573,7 @@
                 "👍": 41,
                 "👎": 1578
             },
-            "views": 37773,
+            "views": 37847,
             "replies": 506,
             "text": "⚡️Actualización de afectaciones por déficit en la capital\nEn estos momentos se afectan 412 MW distribuidos en varios circuitos de los siguientes bloques:\n\n✅Bloque 2   6:47 Hrs\n✅Bloque 3   6:08 Hrs\n✅Bloque 4   4:28 Hrs\n✅Bloque 5   4:07 Hrs\n✅Bloque 6   3:55 Hrs\n✅Bloque 1   2:39 Hrs\n\n  \n⚠️Están siendo afectados además CIRCUITOS DE EMERGENCIA (2:27) Horas, debido a la baja disponibilidad de generación. ⚠️\n\n\n Equipo de Comunicación \nEmpresa Eléctrica de La Habana⚡️",
             "count": 506
@@ -589,7 +589,7 @@
                 "👍": 146,
                 "👎": 773
             },
-            "views": 20350,
+            "views": 20532,
             "replies": 459,
             "text": "📣‼️Informamos a los clientes asociados al Bloque No. 1, que inicia de forma gradual el restablecimiento del servicio.‼️📣",
             "count": 459
@@ -605,7 +605,7 @@
                 "👍": 34,
                 "👎": 999
             },
-            "views": 28050,
+            "views": 28176,
             "replies": 313,
             "text": "⚡️Actualización de afectaciones por déficit en la capital\nEn estos momentos se afectan 303 MW distribuidos en varios circuitos de los siguientes bloques:\n  \n✅Bloque 4   7:01 Hrs\n✅Bloque 5   6:40 Hrs\n✅Bloque 6   6:32 Hrs\n✅Bloque 1   5:13 Hrs\n\n  \n⚠️Están siendo afectados además CIRCUITOS DE EMERGENCIA (5:01) Horas, debido a la baja disponibilidad de generación. ⚠️\n\n\n Equipo de Comunicación \nEmpresa Eléctrica de La Habana⚡️",
             "count": 313
@@ -673,7 +673,7 @@
                 "👍": 41,
                 "👎": 1578
             },
-            "views": 37773,
+            "views": 37847,
             "replies": 506,
             "text": "⚡️Actualización de afectaciones por déficit en la capital\nEn estos momentos se afectan 412 MW distribuidos en varios circuitos de los siguientes bloques:\n\n✅Bloque 2   6:47 Hrs\n✅Bloque 3   6:08 Hrs\n✅Bloque 4   4:28 Hrs\n✅Bloque 5   4:07 Hrs\n✅Bloque 6   3:55 Hrs\n✅Bloque 1   2:39 Hrs\n\n  \n⚠️Están siendo afectados además CIRCUITOS DE EMERGENCIA (2:27) Horas, debido a la baja disponibilidad de generación. ⚠️\n\n\n Equipo de Comunicación \nEmpresa Eléctrica de La Habana⚡️",
             "count": 1578
@@ -705,7 +705,7 @@
                 "👍": 34,
                 "👎": 999
             },
-            "views": 28050,
+            "views": 28176,
             "replies": 313,
             "text": "⚡️Actualización de afectaciones por déficit en la capital\nEn estos momentos se afectan 303 MW distribuidos en varios circuitos de los siguientes bloques:\n  \n✅Bloque 4   7:01 Hrs\n✅Bloque 5   6:40 Hrs\n✅Bloque 6   6:32 Hrs\n✅Bloque 1   5:13 Hrs\n\n  \n⚠️Están siendo afectados además CIRCUITOS DE EMERGENCIA (5:01) Horas, debido a la baja disponibilidad de generación. ⚠️\n\n\n Equipo de Comunicación \nEmpresa Eléctrica de La Habana⚡️",
             "count": 999
