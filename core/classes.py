@@ -18,7 +18,7 @@ class TelegramMessage:
     date_cuba: str = ""
     date_cuba_d: datetime = None
     reactions: Dict[str, int] = field(default_factory=dict)
-    views: int = 0
+    views: int  = 0
     replies: int = 0
     text: str = ""
 
