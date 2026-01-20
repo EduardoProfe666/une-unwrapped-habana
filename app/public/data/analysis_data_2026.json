@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-20T03:39:16.041454-05:00",
+    "sync_date": "2026-01-20T04:38:10.215755-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -17,19 +17,18 @@
         "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨"
     },
     "last_message": {
-        "id": 52071,
-        "link": "https://t.me/EmpresaElectricaDeLaHabana/52071",
-        "date_utc": "2026-01-20 05:53:21",
-        "date_utc_d": "2026-01-20T05:53:21",
-        "date_cuba": "2026-01-20 00:53:21",
-        "date_cuba_d": "2026-01-20T00:53:21",
+        "id": 52077,
+        "link": "https://t.me/EmpresaElectricaDeLaHabana/52077",
+        "date_utc": "2026-01-20 09:35:39",
+        "date_utc_d": "2026-01-20T09:35:39",
+        "date_cuba": "2026-01-20 04:35:39",
+        "date_cuba_d": "2026-01-20T04:35:39",
         "reactions": {
-            "👍": 7,
-            "👎": 26
+            "👎": 1
         },
-        "views": 2117,
-        "replies": 20,
-        "text": "‼️\n¿Qué es un disparo de circuito y porque ocurre?\nLos disparos de circuito tienen diferentes aristas todas con distintos significados, es decir que ocurren por diferentes causas. Entre ellas encontramos:\n\n-Disparo de Circuito con Recierre: El conocido por los clientes como “quita y pon de corriente” es un tipo de protección utilizada mundialmente a partir del 80% aproximadamente de las interrupciones eléctricas son transitorias. Este fenómeno lo hace una sola vez ante un evento de red y no es dañino para para nuestros equipos electrodomésticos. \n\n-Disparo Automático por Frecuencia (DAF):  El disparo por DAF ocurre cuando la frecuencia llega a valores mínimos permisibles que ponen en peligro la estabilidad del mismo y como protección desconecta varios circuitos de la Capital. Los mismo restablecen a medida que se vaya recuperando la frecuencia que tiene un valor de 60hz o ciclos por segundo.\n\n-Disparo de Circuito por Sobrecarga: Este ocurre mayormente en los horarios pico y en verano, ya que las altas temperaturas generan elevados consumos en la población y como consecuencia de ello fallas en los circuitos.\n\n-Disparo de Circuito por Posible Avería: Este fenómeno ocurre cuando existe una falla en algún circuito, ya sea soterrado, aéreo o en una subestación. Estas, a pesar de que son mucho más frecuentes cuando existe algún evento climatológico, pueden ocurrir en cualquier momento del día o la noche, ya que son situaciones que no cuentan con programación.‼️"
+        "views": 33,
+        "replies": 0,
+        "text": "✅Restablecido el servicio en el municipio Playa que afectaba : 76 / 29E y 29C , Buena Vista✅"
     },
     "shortest_message": {
         "id": 50775,
@@ -63,21 +62,21 @@
         "text": "📣Averías existentes hasta el momento📣\n\n➡️Averías Primarias ⬅️\nPor puente primario partido \n\n📌Municipio: Cerro \n👉Dirección: Colon desde Whaschinton hasta Vía Blanca, Vía Blanca Rotonda hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Primelle hasta Calzada de Palatino, Santa Catalina hasta Fomento, Ocujes desde Santa Catalina hasta Ave de La Ceiba, Calzada de Palatino hasta Fomento, Palmar hasta Santa Lugarda, Bella Vista hasta Recreo\n\n\n📌Municipio:Playa  \n👉Dirección : Calle 96 y 5ta F Afectando , Calle 13 desde 70 hasta 86; Calle 11 desde 74 hasta 98; 5taF desde 96 hasta 120 (Almendares); Calle 120 desde 5ta F hasta 23 (Cubanacan)\nDirección : Calle 46 desde 5taA hasta 39A; Calle 5taA desde 36 hasta 66; Calle 7ma desde 24 hasta 40 (Reparto Sierra)\n\n👉Dirección :Calle 46 desde 5taA hasta 39A; Calle 5taA desde 36 hasta 66; Calle 7ma desde 24 hasta 40 (Reparto Sierra)\n\n\n📌Municipio: Guanabacoa \n👉Dirección: Apodaca e/ Fray Alonzo y Cadena afectando Mambi, Garrido, Centro de Guanabacoa\n \n\nCircuitos Disparados por tormenta \n\n‼️Municipio : Cerro \n👉Dirección : \"Vía Blanca desde 1ra hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Santa Catalina desde Primelle hasta Independencia Independencia desde Rotonda hasta Palmar, Independencia hasta Rambla, Colón hasta 14,\"Colon desde Whaschinton hasta Vía Blanca, Vía Blanca Rotonda hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Primelle hasta Calzada de Palatino, Santa Catalina hasta Fomento, Ocujes desde Santa Catalina hasta Ave de La Ceiba, Calzada de Palatino hasta Fomento, Palmar hasta Santa Lugarda, Bella Vista hasta Recreo\n\n\n‼️Municipio :Alamar \n👉Dirección : \"Zonas: Colina Villa Real, CelimarZonas: 12, 14, 13, 19, 20, 21, 23, 24, 25Zonas: 1, 2, 3, 5, 24, 8, 7 ,Zona Franca de Berroa\n\n‼️Municipio :Plaza \n👉Dirección :\"Cuadrante desde Calle 4 hasta A, 11 hasta Malecón",
         "count": 1877
     },
-    "total_views": 30816352,
-    "total_messages": 1452,
+    "total_views": 30826500,
+    "total_messages": 1455,
     "total_erased_messages": 81,
-    "total_replies": 29805,
-    "total_reactions": 203565,
-    "total_positive_reactions": 30832,
-    "total_negative_reactions": 172733,
-    "avg_views": 21223,
-    "avg_replies": 21,
+    "total_replies": 29811,
+    "total_reactions": 203591,
+    "total_positive_reactions": 30833,
+    "total_negative_reactions": 172758,
+    "avg_views": 21187,
+    "avg_replies": 20,
     "avg_reactions": 140,
     "avg_positive_reactions": 21,
     "avg_negative_reactions": 119,
     "avg_text_length": 213,
     "monthly_views": {
-        "1": 30816352,
+        "1": 30826500,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -91,7 +90,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 29805,
+        "1": 29811,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -105,7 +104,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 203565,
+        "1": 203591,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -119,7 +118,7 @@
         "12": 0
     },
     "monthly_messages": {
-        "1": 1452,
+        "1": 1455,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -152,7 +151,7 @@
         "17": 80,
         "18": 87,
         "19": 100,
-        "20": 8,
+        "20": 11,
         "21": 0,
         "22": 0,
         "23": 0,
@@ -501,15 +500,15 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 723,
+        "1": 726,
         "2": 107,
         "3": 57,
         "4": 19,
         "5": 546
     },
     "distribution_reaction": {
-        "👎": 172733,
-        "👍": 30832
+        "👎": 172758,
+        "👍": 30833
     },
     "top3_most_viewed_messages": [
         {
@@ -716,12 +715,12 @@
         "hrs": 654,
         "déficit": 485,
         "calle": 456,
-        "servicio": 444,
-        "municipio": 433,
-        "habana": 428,
+        "servicio": 445,
+        "municipio": 436,
+        "habana": 429,
         "circuitos": 373,
-        "consumidores": 331,
-        "afectados": 331,
+        "consumidores": 333,
+        "afectados": 333,
         "actualización": 295,
         "informamos": 294,
         "siguientes": 285,
@@ -823,10 +822,10 @@
             "declared_recoveries": 3,
             "declared_affectations": 185,
             "declared_emergencies": 44,
-            "estimated_affected_seconds": 660979,
+            "estimated_affected_seconds": 665998,
             "weekday_off_seconds": {
                 "0": 69838,
-                "1": 55096,
+                "1": 60115,
                 "2": 43386,
                 "3": 47371,
                 "4": 111467,
@@ -835,7 +834,7 @@
             },
             "weekday_off_avg_seconds": {
                 "0": 1343.0384615384614,
-                "1": 1059.5384615384614,
+                "1": 1156.0576923076924,
                 "2": 834.3461538461538,
                 "3": 893.7924528301887,
                 "4": 2143.596153846154,
