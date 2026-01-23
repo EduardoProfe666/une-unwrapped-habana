@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-23T18:27:19.840853-05:00",
+    "sync_date": "2026-01-23T18:45:38.490578-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -24,11 +24,11 @@
         "date_cuba": "2026-01-23 17:54:45",
         "date_cuba_d": "2026-01-23T17:54:45",
         "reactions": {
-            "👍": 10,
-            "👎": 242
+            "👍": 15,
+            "👎": 374
         },
-        "views": 7289,
-        "replies": 39,
+        "views": 10915,
+        "replies": 58,
         "text": "⚡️Actualización de afectaciones por déficit en la capital.\nEn estos momentos se afectan 301 MW distribuidos en varios circuitos del siguiente bloque:\n\n✅Bloque 3         04:14 Hrs \n✅Bloque 4         03:18 Hrs \n✅Bloque 5         02:24 Hrs \n✅Bloque 6         01:19 Hrs \n✅Bloque 1         01:05 Hrs \n✅Bloque 2         00:58 Hrs \n\n⚠️Están siendo afectados además **CIRCUITOS DE EMERGENCIA** (01:32 Hrs) debido a la baja disponibilidad de generación⚠️\n\nEquipo de Comunicación \nEmpresa Eléctrica de La Habana⚡️"
     },
     "shortest_message": {
@@ -63,21 +63,21 @@
         "text": "📣Averías existentes hasta el momento📣\n\n➡️Averías Primarias ⬅️\nPor puente primario partido \n\n📌Municipio: Cerro \n👉Dirección: Colon desde Whaschinton hasta Vía Blanca, Vía Blanca Rotonda hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Primelle hasta Calzada de Palatino, Santa Catalina hasta Fomento, Ocujes desde Santa Catalina hasta Ave de La Ceiba, Calzada de Palatino hasta Fomento, Palmar hasta Santa Lugarda, Bella Vista hasta Recreo\n\n\n📌Municipio:Playa  \n👉Dirección : Calle 96 y 5ta F Afectando , Calle 13 desde 70 hasta 86; Calle 11 desde 74 hasta 98; 5taF desde 96 hasta 120 (Almendares); Calle 120 desde 5ta F hasta 23 (Cubanacan)\nDirección : Calle 46 desde 5taA hasta 39A; Calle 5taA desde 36 hasta 66; Calle 7ma desde 24 hasta 40 (Reparto Sierra)\n\n👉Dirección :Calle 46 desde 5taA hasta 39A; Calle 5taA desde 36 hasta 66; Calle 7ma desde 24 hasta 40 (Reparto Sierra)\n\n\n📌Municipio: Guanabacoa \n👉Dirección: Apodaca e/ Fray Alonzo y Cadena afectando Mambi, Garrido, Centro de Guanabacoa\n \n\nCircuitos Disparados por tormenta \n\n‼️Municipio : Cerro \n👉Dirección : \"Vía Blanca desde 1ra hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Santa Catalina desde Primelle hasta Independencia Independencia desde Rotonda hasta Palmar, Independencia hasta Rambla, Colón hasta 14,\"Colon desde Whaschinton hasta Vía Blanca, Vía Blanca Rotonda hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Primelle hasta Calzada de Palatino, Santa Catalina hasta Fomento, Ocujes desde Santa Catalina hasta Ave de La Ceiba, Calzada de Palatino hasta Fomento, Palmar hasta Santa Lugarda, Bella Vista hasta Recreo\n\n\n‼️Municipio :Alamar \n👉Dirección : \"Zonas: Colina Villa Real, CelimarZonas: 12, 14, 13, 19, 20, 21, 23, 24, 25Zonas: 1, 2, 3, 5, 24, 8, 7 ,Zona Franca de Berroa\n\n‼️Municipio :Plaza \n👉Dirección :\"Cuadrante desde Calle 4 hasta A, 11 hasta Malecón",
         "count": 1877
     },
-    "total_views": 41561494,
+    "total_views": 41598405,
     "total_messages": 1828,
     "total_erased_messages": 106,
-    "total_replies": 44646,
-    "total_reactions": 306515,
-    "total_positive_reactions": 40239,
-    "total_negative_reactions": 266276,
-    "avg_views": 22736,
+    "total_replies": 44670,
+    "total_reactions": 306918,
+    "total_positive_reactions": 40288,
+    "total_negative_reactions": 266630,
+    "avg_views": 22756,
     "avg_replies": 24,
     "avg_reactions": 168,
     "avg_positive_reactions": 22,
     "avg_negative_reactions": 146,
     "avg_text_length": 216,
     "monthly_views": {
-        "1": 41561494,
+        "1": 41598405,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -91,7 +91,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 44646,
+        "1": 44670,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -105,7 +105,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 306515,
+        "1": 306918,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -508,8 +508,8 @@
         "5": 733
     },
     "distribution_reaction": {
-        "👎": 266276,
-        "👍": 40239
+        "👎": 266630,
+        "👍": 40288
     },
     "top3_most_viewed_messages": [
         {
