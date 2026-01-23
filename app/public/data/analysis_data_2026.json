@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-23T02:30:19.224357-05:00",
+    "sync_date": "2026-01-23T02:49:08.167888-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -24,11 +24,11 @@
         "date_cuba": "2026-01-23 02:25:41",
         "date_cuba_d": "2026-01-23T02:25:41",
         "reactions": {
-            "👍": 3,
-            "👎": 80
+            "👍": 8,
+            "👎": 204
         },
-        "views": 972,
-        "replies": 10,
+        "views": 3250,
+        "replies": 59,
         "text": "⚡️Actualización de afectaciones por déficit en la capital.\nEn estos momentos se afectan 171MW distribuidos en varios circuitos del:\n\n\n✅Bloque 1        10:35Hrs\n✅Bloque 2        10:20Hrs\n✅Bloque 3          0:10Hrs\n\n⚠️Están siendo afectados además **CIRCUITOS DE EMERGENCIA** (10:05Hrs) debido a la baja disponibilidad de generación⚠️\n\nEquipo de Comunicación \nEmpresa Eléctrica de La Habana⚡️"
     },
     "shortest_message": {
@@ -63,21 +63,21 @@
         "text": "📣Averías existentes hasta el momento📣\n\n➡️Averías Primarias ⬅️\nPor puente primario partido \n\n📌Municipio: Cerro \n👉Dirección: Colon desde Whaschinton hasta Vía Blanca, Vía Blanca Rotonda hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Primelle hasta Calzada de Palatino, Santa Catalina hasta Fomento, Ocujes desde Santa Catalina hasta Ave de La Ceiba, Calzada de Palatino hasta Fomento, Palmar hasta Santa Lugarda, Bella Vista hasta Recreo\n\n\n📌Municipio:Playa  \n👉Dirección : Calle 96 y 5ta F Afectando , Calle 13 desde 70 hasta 86; Calle 11 desde 74 hasta 98; 5taF desde 96 hasta 120 (Almendares); Calle 120 desde 5ta F hasta 23 (Cubanacan)\nDirección : Calle 46 desde 5taA hasta 39A; Calle 5taA desde 36 hasta 66; Calle 7ma desde 24 hasta 40 (Reparto Sierra)\n\n👉Dirección :Calle 46 desde 5taA hasta 39A; Calle 5taA desde 36 hasta 66; Calle 7ma desde 24 hasta 40 (Reparto Sierra)\n\n\n📌Municipio: Guanabacoa \n👉Dirección: Apodaca e/ Fray Alonzo y Cadena afectando Mambi, Garrido, Centro de Guanabacoa\n \n\nCircuitos Disparados por tormenta \n\n‼️Municipio : Cerro \n👉Dirección : \"Vía Blanca desde 1ra hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Santa Catalina desde Primelle hasta Independencia Independencia desde Rotonda hasta Palmar, Independencia hasta Rambla, Colón hasta 14,\"Colon desde Whaschinton hasta Vía Blanca, Vía Blanca Rotonda hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Primelle hasta Calzada de Palatino, Santa Catalina hasta Fomento, Ocujes desde Santa Catalina hasta Ave de La Ceiba, Calzada de Palatino hasta Fomento, Palmar hasta Santa Lugarda, Bella Vista hasta Recreo\n\n\n‼️Municipio :Alamar \n👉Dirección : \"Zonas: Colina Villa Real, CelimarZonas: 12, 14, 13, 19, 20, 21, 23, 24, 25Zonas: 1, 2, 3, 5, 24, 8, 7 ,Zona Franca de Berroa\n\n‼️Municipio :Plaza \n👉Dirección :\"Cuadrante desde Calle 4 hasta A, 11 hasta Malecón",
         "count": 1877
     },
-    "total_views": 39647887,
+    "total_views": 39670054,
     "total_messages": 1766,
     "total_erased_messages": 103,
-    "total_replies": 43288,
-    "total_reactions": 290993,
-    "total_positive_reactions": 38713,
-    "total_negative_reactions": 252280,
-    "avg_views": 22451,
+    "total_replies": 43349,
+    "total_reactions": 291274,
+    "total_positive_reactions": 38728,
+    "total_negative_reactions": 252546,
+    "avg_views": 22463,
     "avg_replies": 25,
     "avg_reactions": 165,
     "avg_positive_reactions": 22,
     "avg_negative_reactions": 143,
     "avg_text_length": 217,
     "monthly_views": {
-        "1": 39647887,
+        "1": 39670054,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -91,7 +91,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 43288,
+        "1": 43349,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -105,7 +105,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 290993,
+        "1": 291274,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -508,8 +508,8 @@
         "5": 692
     },
     "distribution_reaction": {
-        "👎": 252280,
-        "👍": 38713
+        "👎": 252546,
+        "👍": 38728
     },
     "top3_most_viewed_messages": [
         {
@@ -603,12 +603,12 @@
             "date_cuba_d": "2026-01-22T22:29:17",
             "reactions": {
                 "👍": 30,
-                "👎": 1417
+                "👎": 1418
             },
-            "views": 25680,
-            "replies": 405,
+            "views": 26092,
+            "replies": 406,
             "text": "⚡️Actualización de afectaciones por déficit en la capital.\nEn estos momentos se afectan 304MW distribuidos en varios circuitos del:\n\n✅Bloque 3    9:15Hrs\n✅Bloque 4    7:45Hrs\n✅Bloque 5    7:35Hrs\n✅Bloque 6    7:10Hrs\n✅Bloque 1    6:45Hrs\n✅Bloque 2    6:25Hrs\n\n⚠️Están siendo afectados además **CIRCUITOS DE EMERGENCIA** (6:10Hrs) debido a la baja disponibilidad de generación⚠️\n\nEquipo de Comunicación \nEmpresa Eléctrica de La Habana⚡️",
-            "count": 405
+            "count": 406
         }
     ],
     "top3_most_positive_reaction_messages": [
@@ -703,12 +703,12 @@
             "date_cuba_d": "2026-01-22T22:29:17",
             "reactions": {
                 "👍": 30,
-                "👎": 1417
+                "👎": 1418
             },
-            "views": 25680,
-            "replies": 405,
+            "views": 26092,
+            "replies": 406,
             "text": "⚡️Actualización de afectaciones por déficit en la capital.\nEn estos momentos se afectan 304MW distribuidos en varios circuitos del:\n\n✅Bloque 3    9:15Hrs\n✅Bloque 4    7:45Hrs\n✅Bloque 5    7:35Hrs\n✅Bloque 6    7:10Hrs\n✅Bloque 1    6:45Hrs\n✅Bloque 2    6:25Hrs\n\n⚠️Están siendo afectados además **CIRCUITOS DE EMERGENCIA** (6:10Hrs) debido a la baja disponibilidad de generación⚠️\n\nEquipo de Comunicación \nEmpresa Eléctrica de La Habana⚡️",
-            "count": 1417
+            "count": 1418
         }
     ],
     "top25_most_repeated_words": {
