@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-23T09:31:01.685307-05:00",
+    "sync_date": "2026-01-23T10:31:53.306327-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -24,11 +24,11 @@
         "date_cuba": "2026-01-23 08:57:05",
         "date_cuba_d": "2026-01-23T08:57:05",
         "reactions": {
-            "👍": 42,
-            "👎": 76
+            "👍": 73,
+            "👎": 141
         },
-        "views": 6375,
-        "replies": 2,
+        "views": 13052,
+        "replies": 8,
         "text": "🚧📌Cerrado el Déficit de la Ciudad en su totalidad hasta el momento.🚧📌"
     },
     "shortest_message": {
@@ -63,21 +63,21 @@
         "text": "📣Averías existentes hasta el momento📣\n\n➡️Averías Primarias ⬅️\nPor puente primario partido \n\n📌Municipio: Cerro \n👉Dirección: Colon desde Whaschinton hasta Vía Blanca, Vía Blanca Rotonda hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Primelle hasta Calzada de Palatino, Santa Catalina hasta Fomento, Ocujes desde Santa Catalina hasta Ave de La Ceiba, Calzada de Palatino hasta Fomento, Palmar hasta Santa Lugarda, Bella Vista hasta Recreo\n\n\n📌Municipio:Playa  \n👉Dirección : Calle 96 y 5ta F Afectando , Calle 13 desde 70 hasta 86; Calle 11 desde 74 hasta 98; 5taF desde 96 hasta 120 (Almendares); Calle 120 desde 5ta F hasta 23 (Cubanacan)\nDirección : Calle 46 desde 5taA hasta 39A; Calle 5taA desde 36 hasta 66; Calle 7ma desde 24 hasta 40 (Reparto Sierra)\n\n👉Dirección :Calle 46 desde 5taA hasta 39A; Calle 5taA desde 36 hasta 66; Calle 7ma desde 24 hasta 40 (Reparto Sierra)\n\n\n📌Municipio: Guanabacoa \n👉Dirección: Apodaca e/ Fray Alonzo y Cadena afectando Mambi, Garrido, Centro de Guanabacoa\n \n\nCircuitos Disparados por tormenta \n\n‼️Municipio : Cerro \n👉Dirección : \"Vía Blanca desde 1ra hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Santa Catalina desde Primelle hasta Independencia Independencia desde Rotonda hasta Palmar, Independencia hasta Rambla, Colón hasta 14,\"Colon desde Whaschinton hasta Vía Blanca, Vía Blanca Rotonda hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Primelle hasta Calzada de Palatino, Santa Catalina hasta Fomento, Ocujes desde Santa Catalina hasta Ave de La Ceiba, Calzada de Palatino hasta Fomento, Palmar hasta Santa Lugarda, Bella Vista hasta Recreo\n\n\n‼️Municipio :Alamar \n👉Dirección : \"Zonas: Colina Villa Real, CelimarZonas: 12, 14, 13, 19, 20, 21, 23, 24, 25Zonas: 1, 2, 3, 5, 24, 8, 7 ,Zona Franca de Berroa\n\n‼️Municipio :Plaza \n👉Dirección :\"Cuadrante desde Calle 4 hasta A, 11 hasta Malecón",
         "count": 1877
     },
-    "total_views": 40465349,
-    "total_messages": 1797,
+    "total_views": 40571955,
+    "total_messages": 1798,
     "total_erased_messages": 103,
-    "total_replies": 43970,
-    "total_reactions": 298143,
-    "total_positive_reactions": 39348,
-    "total_negative_reactions": 258795,
-    "avg_views": 22518,
+    "total_replies": 43980,
+    "total_reactions": 298907,
+    "total_positive_reactions": 39522,
+    "total_negative_reactions": 259385,
+    "avg_views": 22565,
     "avg_replies": 24,
     "avg_reactions": 166,
     "avg_positive_reactions": 22,
     "avg_negative_reactions": 144,
     "avg_text_length": 217,
     "monthly_views": {
-        "1": 40465349,
+        "1": 40571955,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -91,7 +91,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 43970,
+        "1": 43980,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -105,7 +105,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 298143,
+        "1": 298907,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -119,7 +119,7 @@
         "12": 0
     },
     "monthly_messages": {
-        "1": 1797,
+        "1": 1798,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -155,7 +155,7 @@
         "20": 111,
         "21": 108,
         "22": 94,
-        "23": 40,
+        "23": 41,
         "24": 0,
         "25": 0,
         "26": 0,
@@ -501,15 +501,15 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 858,
+        "1": 859,
         "2": 138,
         "3": 65,
         "4": 23,
         "5": 713
     },
     "distribution_reaction": {
-        "👎": 258795,
-        "👍": 39348
+        "👎": 259385,
+        "👍": 39522
     },
     "top3_most_viewed_messages": [
         {
@@ -536,29 +536,29 @@
             "date_cuba": "2026-01-22 21:24:47",
             "date_cuba_d": "2026-01-22T21:24:47",
             "reactions": {
-                "👍": 32,
-                "👎": 523
+                "👍": 34,
+                "👎": 525
             },
-            "views": 38825,
-            "replies": 228,
+            "views": 39128,
+            "replies": 227,
             "text": "✅ Consumidores del municipio Arroyo Naranjo, **ha quedado restablecido el servicio **de los clientes afectados por la avería primaria por cruceta partida en Carretera de Managua esquina 1ra que afectaba las áreas colindantes a las calles 2da desde C hasta Concepción, Concepción desde A hasta Carretera del Lucero, Carretera del Lucero desde Calzada de Managua hasta Mártires de Girón, calle Miguel Biondi desde Concepción hasta Calzada de Managua, Calzada de Managua desde Lira hasta Pilar, Avenida Menocal desde Calzada de Managua hasta República, Delgado desde Calzada de Managua hasta 7ma ✅",
-            "count": 38825
+            "count": 39128
         },
         {
-            "id": 52276,
-            "link": "https://t.me/EmpresaElectricaDeLaHabana/52276",
-            "date_utc": "2026-01-21 23:30:05",
-            "date_utc_d": "2026-01-21T23:30:05",
-            "date_cuba": "2026-01-21 18:30:05",
-            "date_cuba_d": "2026-01-21T18:30:05",
+            "id": 52392,
+            "link": "https://t.me/EmpresaElectricaDeLaHabana/52392",
+            "date_utc": "2026-01-23 01:58:00",
+            "date_utc_d": "2026-01-23T01:58:00",
+            "date_cuba": "2026-01-22 20:58:00",
+            "date_cuba_d": "2026-01-22T20:58:00",
             "reactions": {
-                "👍": 16,
-                "👎": 264
+                "👍": 24,
+                "👎": 1130
             },
-            "views": 38052,
-            "replies": 102,
-            "text": "✅Cerrado el disparo por DAF en:\n\n\n👉🏻Boyeros \"Santiago de Las Vegas calle 204 hasta 188, 409 hasta 397, Guadalupe\". 👉🏻Santiago, La Especial, El Tessi, La Unión, Lídice, Cempala, Cacahual, La Chata, Santa Susana. 👉🏻Santiago, Villa Nueva, Caridad, Sierra Maestra, La Unión, Comunidad Revolución, Lídice, Naroca, Rocío.\n\n\n👉🏻 Playa: Calle 25 desde 158 a 190, calle 190 de 194 hasta 5ta Reparto Náutico, Calle 9na desde 120 hasta 130.\n\n\n👉🏻 Cerro: Calle Cristina desde 4 Caminos a san Joaquín, Ataré.\n\n\nHabana del Este: Zonas: 6, 7, 8, 9, 10, 11, Micro 4. 👉🏻Zonas: 1, 2, 3, 5, 24, 8, 7. 👉🏻Zonas: 12, 14, 13, 19, 20, 21, 23, 24, 25. 👉🏻 Justi, Agromar, Bajurayabo, Campo Florido, La Coca. 👉🏻Altura de Boca Ciega, Santa María del Mar, Villa Mégano.✅",
-            "count": 38052
+            "views": 38267,
+            "replies": 181,
+            "text": "⚡️Actualización de afectaciones por déficit en la capital.\nEn estos momentos se afectan 352MW distribuidos en varios circuitos del:\n\n✅Bloque 3    7:50Hrs\n✅Bloque 4    6:15Hrs\n✅Bloque 5    6:05Hrs\n✅Bloque 6    5:45Hrs\n✅Bloque 1    5:15Hrs\n✅Bloque 2    5:00Hrs\n\n⚠️Están siendo afectados además **CIRCUITOS DE EMERGENCIA** (4:40Hrs) debido a la baja disponibilidad de generación⚠️\n\nEquipo de Comunicación \nEmpresa Eléctrica de La Habana⚡️",
+            "count": 38267
         }
     ],
     "top3_most_replied_messages": [
@@ -602,10 +602,10 @@
             "date_cuba": "2026-01-22 22:29:17",
             "date_cuba_d": "2026-01-22T22:29:17",
             "reactions": {
-                "👍": 33,
-                "👎": 1472
+                "👍": 35,
+                "👎": 1476
             },
-            "views": 34572,
+            "views": 35176,
             "replies": 406,
             "text": "⚡️Actualización de afectaciones por déficit en la capital.\nEn estos momentos se afectan 304MW distribuidos en varios circuitos del:\n\n✅Bloque 3    9:15Hrs\n✅Bloque 4    7:45Hrs\n✅Bloque 5    7:35Hrs\n✅Bloque 6    7:10Hrs\n✅Bloque 1    6:45Hrs\n✅Bloque 2    6:25Hrs\n\n⚠️Están siendo afectados además **CIRCUITOS DE EMERGENCIA** (6:10Hrs) debido a la baja disponibilidad de generación⚠️\n\nEquipo de Comunicación \nEmpresa Eléctrica de La Habana⚡️",
             "count": 406
@@ -702,13 +702,13 @@
             "date_cuba": "2026-01-22 22:29:17",
             "date_cuba_d": "2026-01-22T22:29:17",
             "reactions": {
-                "👍": 33,
-                "👎": 1472
+                "👍": 35,
+                "👎": 1476
             },
-            "views": 34572,
+            "views": 35176,
             "replies": 406,
             "text": "⚡️Actualización de afectaciones por déficit en la capital.\nEn estos momentos se afectan 304MW distribuidos en varios circuitos del:\n\n✅Bloque 3    9:15Hrs\n✅Bloque 4    7:45Hrs\n✅Bloque 5    7:35Hrs\n✅Bloque 6    7:10Hrs\n✅Bloque 1    6:45Hrs\n✅Bloque 2    6:25Hrs\n\n⚠️Están siendo afectados además **CIRCUITOS DE EMERGENCIA** (6:10Hrs) debido a la baja disponibilidad de generación⚠️\n\nEquipo de Comunicación \nEmpresa Eléctrica de La Habana⚡️",
-            "count": 1472
+            "count": 1476
         }
     ],
     "top25_most_repeated_words": {
@@ -745,13 +745,13 @@
             "declared_recoveries": 5,
             "declared_affectations": 256,
             "declared_emergencies": 98,
-            "estimated_affected_seconds": 717413,
+            "estimated_affected_seconds": 721036,
             "weekday_off_seconds": {
                 "0": 10248,
                 "1": 137535,
                 "2": 155945,
                 "3": 65167,
-                "4": 63916,
+                "4": 67539,
                 "5": 140494,
                 "6": 144108
             },
@@ -760,7 +760,7 @@
                 "1": 2644.903846153846,
                 "2": 2998.9423076923076,
                 "3": 1229.566037735849,
-                "4": 1229.1538461538462,
+                "4": 1298.826923076923,
                 "5": 2701.8076923076924,
                 "6": 2771.3076923076924
             }
