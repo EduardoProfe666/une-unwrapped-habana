@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-25T18:44:08.042629-05:00",
+    "sync_date": "2026-01-25T21:21:59.561893-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -17,19 +17,16 @@
         "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨"
     },
     "last_message": {
-        "id": 52691,
-        "link": "https://t.me/EmpresaElectricaDeLaHabana/52691",
-        "date_utc": "2026-01-25 23:39:57",
-        "date_utc_d": "2026-01-25T23:39:57",
-        "date_cuba": "2026-01-25 18:39:57",
-        "date_cuba_d": "2026-01-25T18:39:57",
-        "reactions": {
-            "👍": 73,
-            "👎": 26
-        },
-        "views": 2128,
-        "replies": 13,
-        "text": "🚨‼️Informamos a los clientes asociados al Bloque No.4 afectados por déficit de EMERGENCIA, que a partir de este momento inicia de forma gradual el restablecimiento del servicio.‼️🚨"
+        "id": 52710,
+        "link": "https://t.me/EmpresaElectricaDeLaHabana/52710",
+        "date_utc": "2026-01-26 02:21:32",
+        "date_utc_d": "2026-01-26T02:21:32",
+        "date_cuba": "2026-01-25 21:21:32",
+        "date_cuba_d": "2026-01-25T21:21:32",
+        "reactions": {},
+        "views": 1,
+        "replies": 0,
+        "text": "✅Cerrado el Bloque No. 6 en su totalidad.✅"
     },
     "shortest_message": {
         "id": 50775,
@@ -63,21 +60,21 @@
         "text": "📣Averías existentes hasta el momento📣\n\n➡️Averías Primarias ⬅️\nPor puente primario partido \n\n📌Municipio: Cerro \n👉Dirección: Colon desde Whaschinton hasta Vía Blanca, Vía Blanca Rotonda hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Primelle hasta Calzada de Palatino, Santa Catalina hasta Fomento, Ocujes desde Santa Catalina hasta Ave de La Ceiba, Calzada de Palatino hasta Fomento, Palmar hasta Santa Lugarda, Bella Vista hasta Recreo\n\n\n📌Municipio:Playa  \n👉Dirección : Calle 96 y 5ta F Afectando , Calle 13 desde 70 hasta 86; Calle 11 desde 74 hasta 98; 5taF desde 96 hasta 120 (Almendares); Calle 120 desde 5ta F hasta 23 (Cubanacan)\nDirección : Calle 46 desde 5taA hasta 39A; Calle 5taA desde 36 hasta 66; Calle 7ma desde 24 hasta 40 (Reparto Sierra)\n\n👉Dirección :Calle 46 desde 5taA hasta 39A; Calle 5taA desde 36 hasta 66; Calle 7ma desde 24 hasta 40 (Reparto Sierra)\n\n\n📌Municipio: Guanabacoa \n👉Dirección: Apodaca e/ Fray Alonzo y Cadena afectando Mambi, Garrido, Centro de Guanabacoa\n \n\nCircuitos Disparados por tormenta \n\n‼️Municipio : Cerro \n👉Dirección : \"Vía Blanca desde 1ra hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Santa Catalina desde Primelle hasta Independencia Independencia desde Rotonda hasta Palmar, Independencia hasta Rambla, Colón hasta 14,\"Colon desde Whaschinton hasta Vía Blanca, Vía Blanca Rotonda hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Primelle hasta Calzada de Palatino, Santa Catalina hasta Fomento, Ocujes desde Santa Catalina hasta Ave de La Ceiba, Calzada de Palatino hasta Fomento, Palmar hasta Santa Lugarda, Bella Vista hasta Recreo\n\n\n‼️Municipio :Alamar \n👉Dirección : \"Zonas: Colina Villa Real, CelimarZonas: 12, 14, 13, 19, 20, 21, 23, 24, 25Zonas: 1, 2, 3, 5, 24, 8, 7 ,Zona Franca de Berroa\n\n‼️Municipio :Plaza \n👉Dirección :\"Cuadrante desde Calle 4 hasta A, 11 hasta Malecón",
         "count": 1877
     },
-    "total_views": 48051657,
-    "total_messages": 2035,
-    "total_erased_messages": 115,
-    "total_replies": 53712,
-    "total_reactions": 368079,
-    "total_positive_reactions": 45837,
-    "total_negative_reactions": 322242,
-    "avg_views": 23613,
-    "avg_replies": 26,
-    "avg_reactions": 181,
+    "total_views": 48586343,
+    "total_messages": 2049,
+    "total_erased_messages": 120,
+    "total_replies": 54366,
+    "total_reactions": 372476,
+    "total_positive_reactions": 47343,
+    "total_negative_reactions": 325133,
+    "avg_views": 23712,
+    "avg_replies": 27,
+    "avg_reactions": 182,
     "avg_positive_reactions": 23,
-    "avg_negative_reactions": 158,
+    "avg_negative_reactions": 159,
     "avg_text_length": 221,
     "monthly_views": {
-        "1": 48051657,
+        "1": 48586343,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -91,7 +88,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 53712,
+        "1": 54366,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -105,7 +102,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 368079,
+        "1": 372476,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -119,7 +116,7 @@
         "12": 0
     },
     "monthly_messages": {
-        "1": 2035,
+        "1": 2049,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -157,7 +154,7 @@
         "22": 94,
         "23": 91,
         "24": 100,
-        "25": 87,
+        "25": 101,
         "26": 0,
         "27": 0,
         "28": 0,
@@ -501,15 +498,15 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 946,
-        "2": 156,
-        "3": 75,
+        "1": 949,
+        "2": 159,
+        "3": 76,
         "4": 25,
-        "5": 833
+        "5": 840
     },
     "distribution_reaction": {
-        "👎": 322242,
-        "👍": 45837
+        "👎": 325133,
+        "👍": 47343
     },
     "top3_most_viewed_messages": [
         {
@@ -613,6 +610,38 @@
     ],
     "top3_most_positive_reaction_messages": [
         {
+            "id": 52701,
+            "link": "https://t.me/EmpresaElectricaDeLaHabana/52701",
+            "date_utc": "2026-01-26 01:06:24",
+            "date_utc_d": "2026-01-26T01:06:24",
+            "date_cuba": "2026-01-25 20:06:24",
+            "date_cuba_d": "2026-01-25T20:06:24",
+            "reactions": {
+                "👍": 326,
+                "👎": 164
+            },
+            "views": 21305,
+            "replies": 114,
+            "text": "🚨‼️Informamos a los clientes asociados al Bloque No.6 afectados por déficit de EMERGENCIA, que a partir de este momento inicia de forma gradual el restablecimiento del servicio.‼️🚨",
+            "count": 326
+        },
+        {
+            "id": 52691,
+            "link": "https://t.me/EmpresaElectricaDeLaHabana/52691",
+            "date_utc": "2026-01-25 23:39:57",
+            "date_utc_d": "2026-01-25T23:39:57",
+            "date_cuba": "2026-01-25 18:39:57",
+            "date_cuba_d": "2026-01-25T18:39:57",
+            "reactions": {
+                "👍": 315,
+                "👎": 126
+            },
+            "views": 27741,
+            "replies": 47,
+            "text": "🚨‼️Informamos a los clientes asociados al Bloque No.4 afectados por déficit de EMERGENCIA, que a partir de este momento inicia de forma gradual el restablecimiento del servicio.‼️🚨",
+            "count": 315
+        },
+        {
             "id": 50545,
             "link": "https://t.me/EmpresaElectricaDeLaHabana/50545",
             "date_utc": "2026-01-01 12:21:13",
@@ -627,38 +656,6 @@
             "replies": 32,
             "text": "NOTA INFORMATIVA\n\nEELH| En el día de ayer NO se afectó el servicio eléctrico en La Habana por Déficit.\nPara el día de hoy no se planifica afectación programada en la ciudad.\nEn caso de afectar el servicio sería por EMERGENCIA y se informará por los canales establecidos de la Empresa Eléctrica de La Habana.\nComo ya hemos explicado las posibles afectaciones sólo dependerán de las exigencias del SEN.",
             "count": 297
-        },
-        {
-            "id": 52488,
-            "link": "https://t.me/EmpresaElectricaDeLaHabana/52488",
-            "date_utc": "2026-01-24 02:03:54",
-            "date_utc_d": "2026-01-24T02:03:54",
-            "date_cuba": "2026-01-23 21:03:54",
-            "date_cuba_d": "2026-01-23T21:03:54",
-            "reactions": {
-                "👍": 214,
-                "👎": 324
-            },
-            "views": 34967,
-            "replies": 91,
-            "text": "🚨‼️Informamos a los clientes asociados al Bloque No.4 afectados por déficit de Generación, que a partir de este momento inicia de forma gradual el restablecimiento del servicio‼️🚨",
-            "count": 214
-        },
-        {
-            "id": 52646,
-            "link": "https://t.me/EmpresaElectricaDeLaHabana/52646",
-            "date_utc": "2026-01-25 14:23:10",
-            "date_utc_d": "2026-01-25T14:23:10",
-            "date_cuba": "2026-01-25 09:23:10",
-            "date_cuba_d": "2026-01-25T09:23:10",
-            "reactions": {
-                "👍": 193,
-                "👎": 166
-            },
-            "views": 32693,
-            "replies": 27,
-            "text": "🚧📌Cerrado el Déficit de Generación de la Ciudad en su totalidad hasta el momento.🚧📌",
-            "count": 193
         }
     ],
     "top3_most_negative_reaction_messages": [
@@ -712,40 +709,40 @@
         }
     ],
     "top25_most_repeated_words": {
-        "bloque": 1863,
-        "hrs": 1262,
-        "déficit": 762,
+        "bloque": 1877,
+        "hrs": 1273,
+        "déficit": 766,
+        "habana": 640,
         "calle": 640,
-        "habana": 634,
-        "circuitos": 630,
-        "servicio": 620,
-        "municipio": 558,
-        "afectados": 545,
-        "emergencia": 462,
-        "generación": 454,
-        "informamos": 449,
-        "actualización": 441,
-        "mw": 440,
-        "consumidores": 435,
-        "empresa": 423,
-        "momentos": 422,
-        "afectaciones": 416,
-        "varios": 413,
-        "eléctrica": 410,
-        "comunicación": 406,
-        "equipo": 405,
-        "capital": 402,
-        "afectan": 397,
-        "distribuidos": 394
+        "circuitos": 634,
+        "servicio": 624,
+        "municipio": 563,
+        "afectados": 551,
+        "emergencia": 466,
+        "generación": 456,
+        "informamos": 453,
+        "actualización": 443,
+        "mw": 442,
+        "consumidores": 439,
+        "empresa": 425,
+        "momentos": 424,
+        "afectaciones": 418,
+        "varios": 415,
+        "eléctrica": 412,
+        "comunicación": 408,
+        "equipo": 407,
+        "capital": 404,
+        "afectan": 399,
+        "distribuidos": 396
     },
     "blocks_analysis": [
         {
             "number": 1,
-            "mentions": 466,
+            "mentions": 471,
             "declared_recoveries": 5,
-            "declared_affectations": 300,
-            "declared_emergencies": 132,
-            "estimated_affected_seconds": 771476,
+            "declared_affectations": 302,
+            "declared_emergencies": 134,
+            "estimated_affected_seconds": 781171,
             "weekday_off_seconds": {
                 "0": 10248,
                 "1": 137535,
@@ -753,7 +750,7 @@
                 "3": 65167,
                 "4": 94830,
                 "5": 149861,
-                "6": 157890
+                "6": 167585
             },
             "weekday_off_avg_seconds": {
                 "0": 197.07692307692307,
@@ -762,16 +759,16 @@
                 "3": 1229.566037735849,
                 "4": 1823.6538461538462,
                 "5": 2881.9423076923076,
-                "6": 3036.346153846154
+                "6": 3222.7884615384614
             }
         },
         {
             "number": 2,
-            "mentions": 448,
+            "mentions": 453,
             "declared_recoveries": 5,
-            "declared_affectations": 278,
-            "declared_emergencies": 124,
-            "estimated_affected_seconds": 717928,
+            "declared_affectations": 280,
+            "declared_emergencies": 126,
+            "estimated_affected_seconds": 727623,
             "weekday_off_seconds": {
                 "0": 91071,
                 "1": 142998,
@@ -779,7 +776,7 @@
                 "3": 127609,
                 "4": 67717,
                 "5": 51449,
-                "6": 114963
+                "6": 124658
             },
             "weekday_off_avg_seconds": {
                 "0": 1751.3653846153845,
@@ -788,16 +785,16 @@
                 "3": 2407.7169811320755,
                 "4": 1302.25,
                 "5": 989.4038461538462,
-                "6": 2210.826923076923
+                "6": 2397.269230769231
             }
         },
         {
             "number": 3,
-            "mentions": 451,
+            "mentions": 456,
             "declared_recoveries": 6,
-            "declared_affectations": 302,
-            "declared_emergencies": 129,
-            "estimated_affected_seconds": 900835,
+            "declared_affectations": 304,
+            "declared_emergencies": 131,
+            "estimated_affected_seconds": 910530,
             "weekday_off_seconds": {
                 "0": 126211,
                 "1": 204579,
@@ -805,7 +802,7 @@
                 "3": 90596,
                 "4": 67477,
                 "5": 87685,
-                "6": 176169
+                "6": 185864
             },
             "weekday_off_avg_seconds": {
                 "0": 2427.1346153846152,
@@ -814,16 +811,16 @@
                 "3": 1709.3584905660377,
                 "4": 1297.6346153846155,
                 "5": 1686.25,
-                "6": 3387.8653846153848
+                "6": 3574.3076923076924
             }
         },
         {
             "number": 4,
-            "mentions": 434,
+            "mentions": 438,
             "declared_recoveries": 5,
-            "declared_affectations": 297,
+            "declared_affectations": 298,
             "declared_emergencies": 122,
-            "estimated_affected_seconds": 887409,
+            "estimated_affected_seconds": 897104,
             "weekday_off_seconds": {
                 "0": 69838,
                 "1": 105134,
@@ -831,7 +828,7 @@
                 "3": 99235,
                 "4": 151445,
                 "5": 129099,
-                "6": 222709
+                "6": 232404
             },
             "weekday_off_avg_seconds": {
                 "0": 1343.0384615384614,
@@ -840,16 +837,16 @@
                 "3": 1872.3584905660377,
                 "4": 2912.403846153846,
                 "5": 2482.673076923077,
-                "6": 4282.865384615385
+                "6": 4469.307692307692
             }
         },
         {
             "number": 5,
-            "mentions": 434,
+            "mentions": 440,
             "declared_recoveries": 4,
-            "declared_affectations": 291,
-            "declared_emergencies": 129,
-            "estimated_affected_seconds": 822456,
+            "declared_affectations": 294,
+            "declared_emergencies": 131,
+            "estimated_affected_seconds": 832151,
             "weekday_off_seconds": {
                 "0": 37033,
                 "1": 135285,
@@ -857,7 +854,7 @@
                 "3": 116238,
                 "4": 84842,
                 "5": 77138,
-                "6": 201010
+                "6": 210705
             },
             "weekday_off_avg_seconds": {
                 "0": 712.1730769230769,
@@ -866,16 +863,16 @@
                 "3": 2193.169811320755,
                 "4": 1631.576923076923,
                 "5": 1483.423076923077,
-                "6": 3865.576923076923
+                "6": 4052.019230769231
             }
         },
         {
             "number": 6,
-            "mentions": 442,
+            "mentions": 449,
             "declared_recoveries": 2,
-            "declared_affectations": 292,
-            "declared_emergencies": 128,
-            "estimated_affected_seconds": 842529,
+            "declared_affectations": 296,
+            "declared_emergencies": 131,
+            "estimated_affected_seconds": 852224,
             "weekday_off_seconds": {
                 "0": 105426,
                 "1": 168735,
@@ -883,7 +880,7 @@
                 "3": 70780,
                 "4": 93538,
                 "5": 83256,
-                "6": 200100
+                "6": 209795
             },
             "weekday_off_avg_seconds": {
                 "0": 2027.423076923077,
@@ -892,7 +889,7 @@
                 "3": 1335.4716981132076,
                 "4": 1798.8076923076924,
                 "5": 1601.076923076923,
-                "6": 3848.076923076923
+                "6": 4034.519230769231
             }
         }
     ],
