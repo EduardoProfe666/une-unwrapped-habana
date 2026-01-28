@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-28T00:33:31.540523-05:00",
+    "sync_date": "2026-01-28T01:43:32.294144-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -25,10 +25,10 @@
         "date_cuba_d": "2026-01-27T23:00:02",
         "reactions": {
             "👍": 5,
-            "👎": 21
+            "👎": 25
         },
-        "views": 4948,
-        "replies": 2,
+        "views": 6227,
+        "replies": 3,
         "text": "Vías libres, 28 de enero"
     },
     "shortest_message": {
@@ -63,21 +63,21 @@
         "text": "📣Averías existentes hasta el momento📣\n\n➡️Averías Primarias ⬅️\nPor puente primario partido \n\n📌Municipio: Cerro \n👉Dirección: Colon desde Whaschinton hasta Vía Blanca, Vía Blanca Rotonda hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Primelle hasta Calzada de Palatino, Santa Catalina hasta Fomento, Ocujes desde Santa Catalina hasta Ave de La Ceiba, Calzada de Palatino hasta Fomento, Palmar hasta Santa Lugarda, Bella Vista hasta Recreo\n\n\n📌Municipio:Playa  \n👉Dirección : Calle 96 y 5ta F Afectando , Calle 13 desde 70 hasta 86; Calle 11 desde 74 hasta 98; 5taF desde 96 hasta 120 (Almendares); Calle 120 desde 5ta F hasta 23 (Cubanacan)\nDirección : Calle 46 desde 5taA hasta 39A; Calle 5taA desde 36 hasta 66; Calle 7ma desde 24 hasta 40 (Reparto Sierra)\n\n👉Dirección :Calle 46 desde 5taA hasta 39A; Calle 5taA desde 36 hasta 66; Calle 7ma desde 24 hasta 40 (Reparto Sierra)\n\n\n📌Municipio: Guanabacoa \n👉Dirección: Apodaca e/ Fray Alonzo y Cadena afectando Mambi, Garrido, Centro de Guanabacoa\n \n\nCircuitos Disparados por tormenta \n\n‼️Municipio : Cerro \n👉Dirección : \"Vía Blanca desde 1ra hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Santa Catalina desde Primelle hasta Independencia Independencia desde Rotonda hasta Palmar, Independencia hasta Rambla, Colón hasta 14,\"Colon desde Whaschinton hasta Vía Blanca, Vía Blanca Rotonda hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Primelle hasta Calzada de Palatino, Santa Catalina hasta Fomento, Ocujes desde Santa Catalina hasta Ave de La Ceiba, Calzada de Palatino hasta Fomento, Palmar hasta Santa Lugarda, Bella Vista hasta Recreo\n\n\n‼️Municipio :Alamar \n👉Dirección : \"Zonas: Colina Villa Real, CelimarZonas: 12, 14, 13, 19, 20, 21, 23, 24, 25Zonas: 1, 2, 3, 5, 24, 8, 7 ,Zona Franca de Berroa\n\n‼️Municipio :Plaza \n👉Dirección :\"Cuadrante desde Calle 4 hasta A, 11 hasta Malecón",
         "count": 1877
     },
-    "total_views": 54376681,
-    "total_messages": 2274,
+    "total_views": 54396567,
+    "total_messages": 2275,
     "total_erased_messages": 130,
-    "total_replies": 60258,
-    "total_reactions": 415578,
-    "total_positive_reactions": 54142,
-    "total_negative_reactions": 361436,
-    "avg_views": 23912,
+    "total_replies": 60271,
+    "total_reactions": 415657,
+    "total_positive_reactions": 54165,
+    "total_negative_reactions": 361492,
+    "avg_views": 23911,
     "avg_replies": 26,
     "avg_reactions": 183,
     "avg_positive_reactions": 24,
     "avg_negative_reactions": 159,
     "avg_text_length": 218,
     "monthly_views": {
-        "1": 54376681,
+        "1": 54396567,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -91,7 +91,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 60258,
+        "1": 60271,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -105,7 +105,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 415578,
+        "1": 415657,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -119,7 +119,7 @@
         "12": 0
     },
     "monthly_messages": {
-        "1": 2274,
+        "1": 2275,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -160,7 +160,7 @@
         "25": 112,
         "26": 111,
         "27": 102,
-        "28": 1,
+        "28": 2,
         "29": 0,
         "30": 0,
         "31": 0,
@@ -501,15 +501,15 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 1055,
+        "1": 1056,
         "2": 163,
         "3": 78,
         "4": 27,
         "5": 951
     },
     "distribution_reaction": {
-        "👎": 361436,
-        "👍": 54142
+        "👎": 361492,
+        "👍": 54165
     },
     "top3_most_viewed_messages": [
         {
@@ -875,11 +875,11 @@
             "declared_recoveries": 3,
             "declared_affectations": 333,
             "declared_emergencies": 150,
-            "estimated_affected_seconds": 957738,
+            "estimated_affected_seconds": 961369,
             "weekday_off_seconds": {
                 "0": 171965,
                 "1": 198142,
-                "2": 120754,
+                "2": 124385,
                 "3": 70780,
                 "4": 93538,
                 "5": 83256,
@@ -888,7 +888,7 @@
             "weekday_off_avg_seconds": {
                 "0": 3307.019230769231,
                 "1": 3810.423076923077,
-                "2": 2322.1923076923076,
+                "2": 2392.019230769231,
                 "3": 1335.4716981132076,
                 "4": 1798.8076923076924,
                 "5": 1601.076923076923,
