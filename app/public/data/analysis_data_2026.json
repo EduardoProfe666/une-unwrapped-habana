@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-29T10:06:40.888906-05:00",
+    "sync_date": "2026-01-29T11:03:35.290096-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -17,19 +17,19 @@
         "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨"
     },
     "last_message": {
-        "id": 53030,
-        "link": "https://t.me/EmpresaElectricaDeLaHabana/53030",
-        "date_utc": "2026-01-29 14:38:55",
-        "date_utc_d": "2026-01-29T14:38:55",
-        "date_cuba": "2026-01-29 09:38:55",
-        "date_cuba_d": "2026-01-29T09:38:55",
+        "id": 53033,
+        "link": "https://t.me/EmpresaElectricaDeLaHabana/53033",
+        "date_utc": "2026-01-29 15:51:29",
+        "date_utc_d": "2026-01-29T15:51:29",
+        "date_cuba": "2026-01-29 10:51:29",
+        "date_cuba_d": "2026-01-29T10:51:29",
         "reactions": {
             "👍": 6,
-            "👎": 27
+            "👎": 7
         },
-        "views": 5186,
-        "replies": 11,
-        "text": "🚨‼️Consumidores del municipio Cotorro, el reparto Las Delicias se encuentra afectado por una Vía Libre de Emergencia. Al concluir quedará restablecido el servicio cuanto antes. Ofrecemos disculpas por las molestias ocasionadas.‼️🚨"
+        "views": 2134,
+        "replies": 3,
+        "text": "‼️Consumidores del municipio Regla, en el reparto Casablanca se afecta el servicio eléctrico por Trabajos Operativos. Al concluir quedará restablecido el servicio eléctrico, disculpen las molestias ocasionadas‼️🚨"
     },
     "shortest_message": {
         "id": 50775,
@@ -63,13 +63,13 @@
         "text": "📣Averías existentes hasta el momento📣\n\n➡️Averías Primarias ⬅️\nPor puente primario partido \n\n📌Municipio: Cerro \n👉Dirección: Colon desde Whaschinton hasta Vía Blanca, Vía Blanca Rotonda hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Primelle hasta Calzada de Palatino, Santa Catalina hasta Fomento, Ocujes desde Santa Catalina hasta Ave de La Ceiba, Calzada de Palatino hasta Fomento, Palmar hasta Santa Lugarda, Bella Vista hasta Recreo\n\n\n📌Municipio:Playa  \n👉Dirección : Calle 96 y 5ta F Afectando , Calle 13 desde 70 hasta 86; Calle 11 desde 74 hasta 98; 5taF desde 96 hasta 120 (Almendares); Calle 120 desde 5ta F hasta 23 (Cubanacan)\nDirección : Calle 46 desde 5taA hasta 39A; Calle 5taA desde 36 hasta 66; Calle 7ma desde 24 hasta 40 (Reparto Sierra)\n\n👉Dirección :Calle 46 desde 5taA hasta 39A; Calle 5taA desde 36 hasta 66; Calle 7ma desde 24 hasta 40 (Reparto Sierra)\n\n\n📌Municipio: Guanabacoa \n👉Dirección: Apodaca e/ Fray Alonzo y Cadena afectando Mambi, Garrido, Centro de Guanabacoa\n \n\nCircuitos Disparados por tormenta \n\n‼️Municipio : Cerro \n👉Dirección : \"Vía Blanca desde 1ra hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Santa Catalina desde Primelle hasta Independencia Independencia desde Rotonda hasta Palmar, Independencia hasta Rambla, Colón hasta 14,\"Colon desde Whaschinton hasta Vía Blanca, Vía Blanca Rotonda hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Primelle hasta Calzada de Palatino, Santa Catalina hasta Fomento, Ocujes desde Santa Catalina hasta Ave de La Ceiba, Calzada de Palatino hasta Fomento, Palmar hasta Santa Lugarda, Bella Vista hasta Recreo\n\n\n‼️Municipio :Alamar \n👉Dirección : \"Zonas: Colina Villa Real, CelimarZonas: 12, 14, 13, 19, 20, 21, 23, 24, 25Zonas: 1, 2, 3, 5, 24, 8, 7 ,Zona Franca de Berroa\n\n‼️Municipio :Plaza \n👉Dirección :\"Cuadrante desde Calle 4 hasta A, 11 hasta Malecón",
         "count": 1877
     },
-    "total_views": 57000819,
-    "total_messages": 2355,
+    "total_views": 57072642,
+    "total_messages": 2358,
     "total_erased_messages": 134,
-    "total_replies": 63542,
-    "total_reactions": 439204,
-    "total_positive_reactions": 56764,
-    "total_negative_reactions": 382440,
+    "total_replies": 63582,
+    "total_reactions": 439409,
+    "total_positive_reactions": 56780,
+    "total_negative_reactions": 382629,
     "avg_views": 24204,
     "avg_replies": 27,
     "avg_reactions": 186,
@@ -77,7 +77,7 @@
     "avg_negative_reactions": 162,
     "avg_text_length": 217,
     "monthly_views": {
-        "1": 57000819,
+        "1": 57072642,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -91,7 +91,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 63542,
+        "1": 63582,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -105,7 +105,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 439204,
+        "1": 439409,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -119,7 +119,7 @@
         "12": 0
     },
     "monthly_messages": {
-        "1": 2355,
+        "1": 2358,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -161,7 +161,7 @@
         "26": 111,
         "27": 102,
         "28": 70,
-        "29": 12,
+        "29": 15,
         "30": 0,
         "31": 0,
         "32": 0,
@@ -501,15 +501,15 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 1095,
+        "1": 1098,
         "2": 167,
         "3": 83,
         "4": 29,
         "5": 981
     },
     "distribution_reaction": {
-        "👎": 382440,
-        "👍": 56764
+        "👎": 382629,
+        "👍": 56780
     },
     "top3_most_viewed_messages": [
         {
@@ -523,10 +523,10 @@
                 "👍": 25,
                 "👎": 380
             },
-            "views": 40819,
+            "views": 40851,
             "replies": 69,
             "text": "Utiliza nuestras plataformas de pago Transfermóvil y Enzona",
-            "count": 40819
+            "count": 40851
         },
         {
             "id": 51850,
@@ -717,16 +717,16 @@
         "déficit": 904,
         "circuitos": 751,
         "habana": 723,
-        "servicio": 701,
+        "servicio": 705,
         "calle": 678,
         "afectados": 656,
-        "municipio": 648,
+        "municipio": 650,
         "emergencia": 588,
         "generación": 552,
         "informamos": 523,
         "mw": 516,
         "actualización": 512,
-        "consumidores": 504,
+        "consumidores": 506,
         "empresa": 497,
         "momentos": 493,
         "varios": 482,
@@ -767,7 +767,7 @@
         },
         {
             "number": 2,
-            "mentions": 513,
+            "mentions": 514,
             "declared_recoveries": 5,
             "declared_affectations": 328,
             "declared_emergencies": 157,
@@ -819,7 +819,7 @@
         },
         {
             "number": 4,
-            "mentions": 495,
+            "mentions": 496,
             "declared_recoveries": 5,
             "declared_affectations": 346,
             "declared_emergencies": 155,
@@ -871,7 +871,7 @@
         },
         {
             "number": 6,
-            "mentions": 509,
+            "mentions": 510,
             "declared_recoveries": 3,
             "declared_affectations": 345,
             "declared_emergencies": 162,
