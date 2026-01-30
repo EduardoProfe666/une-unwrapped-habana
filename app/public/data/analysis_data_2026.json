@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-30T13:51:58.035416-05:00",
+    "sync_date": "2026-01-30T14:36:26.205698-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -17,19 +17,18 @@
         "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨"
     },
     "last_message": {
-        "id": 53165,
-        "link": "https://t.me/EmpresaElectricaDeLaHabana/53165",
-        "date_utc": "2026-01-30 18:17:31",
-        "date_utc_d": "2026-01-30T18:17:31",
-        "date_cuba": "2026-01-30 13:17:31",
-        "date_cuba_d": "2026-01-30T13:17:31",
+        "id": 53169,
+        "link": "https://t.me/EmpresaElectricaDeLaHabana/53169",
+        "date_utc": "2026-01-30 19:30:02",
+        "date_utc_d": "2026-01-30T19:30:02",
+        "date_cuba": "2026-01-30 14:30:02",
+        "date_cuba_d": "2026-01-30T14:30:02",
         "reactions": {
-            "👍": 8,
-            "👎": 275
+            "👎": 116
         },
-        "views": 8813,
-        "replies": 77,
-        "text": "⚡️Actualización de afectaciones por déficit en la capital.\nEn estos momentos se afectan 252MW distribuidos en varios circuitos de los siguientes bloques:\n\n✅Bloque 6   07:05 Hrs\n✅Bloque 1   06:55 Hrs \n✅Bloque 2   06:40 Hrs\n✅Bloque 3   00:10 Hrs\n\n⚠️Están siendo afectados además CIRCUITOS DE EMERGENCIA (06:25 Hrs) debido a la baja disponibilidad de generación.⚠️\n\nEquipo de Comunicación \nEmpresa Eléctrica de La Habana⚡️"
+        "views": 3325,
+        "replies": 47,
+        "text": "🚨📣Informamos a los clientes asociados al Bloque no. 5 que a partir de este momento inicia la afectación por déficit de generación de **EMERGENCIA**.📣🚨"
     },
     "shortest_message": {
         "id": 50775,
@@ -63,21 +62,21 @@
         "text": "📣Averías existentes hasta el momento📣\n\n➡️Averías Primarias ⬅️\nPor puente primario partido \n\n📌Municipio: Cerro \n👉Dirección: Colon desde Whaschinton hasta Vía Blanca, Vía Blanca Rotonda hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Primelle hasta Calzada de Palatino, Santa Catalina hasta Fomento, Ocujes desde Santa Catalina hasta Ave de La Ceiba, Calzada de Palatino hasta Fomento, Palmar hasta Santa Lugarda, Bella Vista hasta Recreo\n\n\n📌Municipio:Playa  \n👉Dirección : Calle 96 y 5ta F Afectando , Calle 13 desde 70 hasta 86; Calle 11 desde 74 hasta 98; 5taF desde 96 hasta 120 (Almendares); Calle 120 desde 5ta F hasta 23 (Cubanacan)\nDirección : Calle 46 desde 5taA hasta 39A; Calle 5taA desde 36 hasta 66; Calle 7ma desde 24 hasta 40 (Reparto Sierra)\n\n👉Dirección :Calle 46 desde 5taA hasta 39A; Calle 5taA desde 36 hasta 66; Calle 7ma desde 24 hasta 40 (Reparto Sierra)\n\n\n📌Municipio: Guanabacoa \n👉Dirección: Apodaca e/ Fray Alonzo y Cadena afectando Mambi, Garrido, Centro de Guanabacoa\n \n\nCircuitos Disparados por tormenta \n\n‼️Municipio : Cerro \n👉Dirección : \"Vía Blanca desde 1ra hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Santa Catalina desde Primelle hasta Independencia Independencia desde Rotonda hasta Palmar, Independencia hasta Rambla, Colón hasta 14,\"Colon desde Whaschinton hasta Vía Blanca, Vía Blanca Rotonda hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Primelle hasta Calzada de Palatino, Santa Catalina hasta Fomento, Ocujes desde Santa Catalina hasta Ave de La Ceiba, Calzada de Palatino hasta Fomento, Palmar hasta Santa Lugarda, Bella Vista hasta Recreo\n\n\n‼️Municipio :Alamar \n👉Dirección : \"Zonas: Colina Villa Real, CelimarZonas: 12, 14, 13, 19, 20, 21, 23, 24, 25Zonas: 1, 2, 3, 5, 24, 8, 7 ,Zona Franca de Berroa\n\n‼️Municipio :Plaza \n👉Dirección :\"Cuadrante desde Calle 4 hasta A, 11 hasta Malecón",
         "count": 1877
     },
-    "total_views": 59889781,
-    "total_messages": 2472,
+    "total_views": 59990129,
+    "total_messages": 2476,
     "total_erased_messages": 152,
-    "total_replies": 65462,
-    "total_reactions": 460491,
-    "total_positive_reactions": 59887,
-    "total_negative_reactions": 400604,
-    "avg_views": 24227,
-    "avg_replies": 26,
-    "avg_reactions": 186,
+    "total_replies": 65740,
+    "total_reactions": 461821,
+    "total_positive_reactions": 59943,
+    "total_negative_reactions": 401878,
+    "avg_views": 24229,
+    "avg_replies": 27,
+    "avg_reactions": 187,
     "avg_positive_reactions": 24,
     "avg_negative_reactions": 162,
     "avg_text_length": 222,
     "monthly_views": {
-        "1": 59889781,
+        "1": 59990129,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -91,7 +90,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 65462,
+        "1": 65740,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -105,7 +104,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 460491,
+        "1": 461821,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -119,7 +118,7 @@
         "12": 0
     },
     "monthly_messages": {
-        "1": 2472,
+        "1": 2476,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -162,7 +161,7 @@
         "27": 102,
         "28": 70,
         "29": 90,
-        "30": 39,
+        "30": 43,
         "31": 0,
         "32": 0,
         "33": 0,
@@ -505,11 +504,11 @@
         "2": 186,
         "3": 86,
         "4": 30,
-        "5": 1036
+        "5": 1040
     },
     "distribution_reaction": {
-        "👎": 400604,
-        "👍": 59887
+        "👎": 401878,
+        "👍": 59943
     },
     "top3_most_viewed_messages": [
         {
@@ -712,46 +711,46 @@
         }
     ],
     "top25_most_repeated_words": {
-        "bloque": 2320,
-        "hrs": 1640,
-        "déficit": 961,
-        "circuitos": 799,
-        "habana": 775,
+        "bloque": 2331,
+        "hrs": 1651,
+        "déficit": 965,
+        "circuitos": 803,
+        "habana": 777,
         "calle": 746,
         "servicio": 740,
-        "afectados": 688,
+        "afectados": 690,
         "municipio": 676,
-        "emergencia": 636,
-        "generación": 592,
-        "informamos": 559,
-        "mw": 547,
-        "actualización": 541,
+        "emergencia": 640,
+        "generación": 596,
+        "informamos": 561,
+        "mw": 549,
+        "actualización": 543,
         "consumidores": 530,
-        "empresa": 527,
-        "momentos": 523,
-        "varios": 509,
-        "eléctrica": 509,
-        "afectaciones": 508,
-        "comunicación": 505,
-        "equipo": 504,
-        "capital": 497,
-        "afectan": 489,
-        "distribuidos": 486
+        "empresa": 529,
+        "momentos": 525,
+        "varios": 511,
+        "eléctrica": 511,
+        "afectaciones": 510,
+        "comunicación": 507,
+        "equipo": 506,
+        "capital": 499,
+        "afectan": 491,
+        "distribuidos": 488
     },
     "blocks_analysis": [
         {
             "number": 1,
-            "mentions": 581,
+            "mentions": 583,
             "declared_recoveries": 6,
-            "declared_affectations": 381,
-            "declared_emergencies": 184,
-            "estimated_affected_seconds": 1058387,
+            "declared_affectations": 383,
+            "declared_emergencies": 186,
+            "estimated_affected_seconds": 1062738,
             "weekday_off_seconds": {
                 "0": 95147,
                 "1": 179611,
                 "2": 217996,
                 "3": 119479,
-                "4": 119200,
+                "4": 123551,
                 "5": 149861,
                 "6": 177093
             },
@@ -760,24 +759,24 @@
                 "1": 3454.0576923076924,
                 "2": 4192.2307692307695,
                 "3": 2254.3207547169814,
-                "4": 2292.3076923076924,
+                "4": 2375.980769230769,
                 "5": 2881.9423076923076,
                 "6": 3405.6346153846152
             }
         },
         {
             "number": 2,
-            "mentions": 558,
+            "mentions": 560,
             "declared_recoveries": 5,
-            "declared_affectations": 352,
-            "declared_emergencies": 171,
-            "estimated_affected_seconds": 1038526,
+            "declared_affectations": 354,
+            "declared_emergencies": 173,
+            "estimated_affected_seconds": 1042877,
             "weekday_off_seconds": {
                 "0": 174832,
                 "1": 196656,
                 "2": 186646,
                 "3": 179209,
-                "4": 115568,
+                "4": 119919,
                 "5": 51449,
                 "6": 134166
             },
@@ -786,24 +785,24 @@
                 "1": 3781.846153846154,
                 "2": 3589.346153846154,
                 "3": 3381.301886792453,
-                "4": 2222.4615384615386,
+                "4": 2306.1346153846152,
                 "5": 989.4038461538462,
                 "6": 2580.1153846153848
             }
         },
         {
             "number": 3,
-            "mentions": 552,
+            "mentions": 554,
             "declared_recoveries": 8,
-            "declared_affectations": 370,
-            "declared_emergencies": 178,
-            "estimated_affected_seconds": 1199155,
+            "declared_affectations": 372,
+            "declared_emergencies": 180,
+            "estimated_affected_seconds": 1203506,
             "weekday_off_seconds": {
                 "0": 207445,
                 "1": 254903,
                 "2": 212259,
                 "3": 146822,
-                "4": 94669,
+                "4": 99020,
                 "5": 87685,
                 "6": 195372
             },
@@ -812,24 +811,24 @@
                 "1": 4901.9807692307695,
                 "2": 4081.903846153846,
                 "3": 2770.2264150943397,
-                "4": 1820.5576923076924,
+                "4": 1904.2307692307693,
                 "5": 1686.25,
                 "6": 3757.153846153846
             }
         },
         {
             "number": 4,
-            "mentions": 534,
+            "mentions": 536,
             "declared_recoveries": 5,
-            "declared_affectations": 365,
-            "declared_emergencies": 170,
-            "estimated_affected_seconds": 1139680,
+            "declared_affectations": 367,
+            "declared_emergencies": 172,
+            "estimated_affected_seconds": 1144031,
             "weekday_off_seconds": {
                 "0": 142594,
                 "1": 125349,
                 "2": 173743,
                 "3": 149249,
-                "4": 177734,
+                "4": 182085,
                 "5": 129099,
                 "6": 241912
             },
@@ -838,17 +837,17 @@
                 "1": 2410.5576923076924,
                 "2": 3341.2115384615386,
                 "3": 2816.0188679245284,
-                "4": 3417.9615384615386,
+                "4": 3501.6346153846152,
                 "5": 2482.673076923077,
                 "6": 4652.153846153846
             }
         },
         {
             "number": 5,
-            "mentions": 524,
+            "mentions": 525,
             "declared_recoveries": 5,
-            "declared_affectations": 352,
-            "declared_emergencies": 173,
+            "declared_affectations": 353,
+            "declared_emergencies": 174,
             "estimated_affected_seconds": 1069259,
             "weekday_off_seconds": {
                 "0": 106837,
@@ -871,17 +870,17 @@
         },
         {
             "number": 6,
-            "mentions": 558,
+            "mentions": 560,
             "declared_recoveries": 3,
-            "declared_affectations": 372,
-            "declared_emergencies": 178,
-            "estimated_affected_seconds": 1102770,
+            "declared_affectations": 374,
+            "declared_emergencies": 180,
+            "estimated_affected_seconds": 1107121,
             "weekday_off_seconds": {
                 "0": 171965,
                 "1": 198142,
                 "2": 197447,
                 "3": 114066,
-                "4": 118591,
+                "4": 122942,
                 "5": 83256,
                 "6": 219303
             },
@@ -890,7 +889,7 @@
                 "1": 3810.423076923077,
                 "2": 3797.0576923076924,
                 "3": 2152.188679245283,
-                "4": 2280.596153846154,
+                "4": 2364.269230769231,
                 "5": 1601.076923076923,
                 "6": 4217.365384615385
             }
