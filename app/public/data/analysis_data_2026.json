@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-31T07:58:28.399550-05:00",
+    "sync_date": "2026-01-31T08:47:28.270620-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -24,10 +24,11 @@
         "date_cuba": "2026-01-31 07:40:11",
         "date_cuba_d": "2026-01-31T07:40:11",
         "reactions": {
-            "👎": 8
+            "👍": 3,
+            "👎": 31
         },
-        "views": 3120,
-        "replies": 2,
+        "views": 9279,
+        "replies": 6,
         "text": "🚧📉Informamos que por Disparo Automático por Frecuencia (DAF) se ha afectado el servicio eléctrico en: \n\n👉🏻 Habana del Este: zonas 1; 2; 3; de la 5 a la 14; 19; 20; 21; 23; 24📉🚧"
     },
     "shortest_message": {
@@ -62,21 +63,21 @@
         "text": "📣Averías existentes hasta el momento📣\n\n➡️Averías Primarias ⬅️\nPor puente primario partido \n\n📌Municipio: Cerro \n👉Dirección: Colon desde Whaschinton hasta Vía Blanca, Vía Blanca Rotonda hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Primelle hasta Calzada de Palatino, Santa Catalina hasta Fomento, Ocujes desde Santa Catalina hasta Ave de La Ceiba, Calzada de Palatino hasta Fomento, Palmar hasta Santa Lugarda, Bella Vista hasta Recreo\n\n\n📌Municipio:Playa  \n👉Dirección : Calle 96 y 5ta F Afectando , Calle 13 desde 70 hasta 86; Calle 11 desde 74 hasta 98; 5taF desde 96 hasta 120 (Almendares); Calle 120 desde 5ta F hasta 23 (Cubanacan)\nDirección : Calle 46 desde 5taA hasta 39A; Calle 5taA desde 36 hasta 66; Calle 7ma desde 24 hasta 40 (Reparto Sierra)\n\n👉Dirección :Calle 46 desde 5taA hasta 39A; Calle 5taA desde 36 hasta 66; Calle 7ma desde 24 hasta 40 (Reparto Sierra)\n\n\n📌Municipio: Guanabacoa \n👉Dirección: Apodaca e/ Fray Alonzo y Cadena afectando Mambi, Garrido, Centro de Guanabacoa\n \n\nCircuitos Disparados por tormenta \n\n‼️Municipio : Cerro \n👉Dirección : \"Vía Blanca desde 1ra hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Santa Catalina desde Primelle hasta Independencia Independencia desde Rotonda hasta Palmar, Independencia hasta Rambla, Colón hasta 14,\"Colon desde Whaschinton hasta Vía Blanca, Vía Blanca Rotonda hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Primelle hasta Calzada de Palatino, Santa Catalina hasta Fomento, Ocujes desde Santa Catalina hasta Ave de La Ceiba, Calzada de Palatino hasta Fomento, Palmar hasta Santa Lugarda, Bella Vista hasta Recreo\n\n\n‼️Municipio :Alamar \n👉Dirección : \"Zonas: Colina Villa Real, CelimarZonas: 12, 14, 13, 19, 20, 21, 23, 24, 25Zonas: 1, 2, 3, 5, 24, 8, 7 ,Zona Franca de Berroa\n\n‼️Municipio :Plaza \n👉Dirección :\"Cuadrante desde Calle 4 hasta A, 11 hasta Malecón",
         "count": 1877
     },
-    "total_views": 61282731,
-    "total_messages": 2517,
+    "total_views": 61355933,
+    "total_messages": 2518,
     "total_erased_messages": 153,
-    "total_replies": 67748,
-    "total_reactions": 473364,
-    "total_positive_reactions": 61155,
-    "total_negative_reactions": 412209,
-    "avg_views": 24348,
+    "total_replies": 67759,
+    "total_reactions": 473555,
+    "total_positive_reactions": 61197,
+    "total_negative_reactions": 412358,
+    "avg_views": 24367,
     "avg_replies": 27,
     "avg_reactions": 188,
     "avg_positive_reactions": 24,
     "avg_negative_reactions": 164,
     "avg_text_length": 222,
     "monthly_views": {
-        "1": 61282731,
+        "1": 61355933,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -90,7 +91,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 67748,
+        "1": 67759,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -104,7 +105,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 473364,
+        "1": 473555,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -118,7 +119,7 @@
         "12": 0
     },
     "monthly_messages": {
-        "1": 2517,
+        "1": 2518,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -162,7 +163,7 @@
         "28": 70,
         "29": 90,
         "30": 79,
-        "31": 5,
+        "31": 6,
         "32": 0,
         "33": 0,
         "34": 0,
@@ -500,15 +501,15 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 1149,
+        "1": 1150,
         "2": 189,
         "3": 91,
         "4": 31,
         "5": 1057
     },
     "distribution_reaction": {
-        "👎": 412209,
-        "👍": 61155
+        "👎": 412358,
+        "👍": 61197
     },
     "top3_most_viewed_messages": [
         {
@@ -770,14 +771,14 @@
             "declared_recoveries": 5,
             "declared_affectations": 361,
             "declared_emergencies": 180,
-            "estimated_affected_seconds": 1099961,
+            "estimated_affected_seconds": 1101219,
             "weekday_off_seconds": {
                 "0": 174832,
                 "1": 196656,
                 "2": 186646,
                 "3": 179209,
                 "4": 149392,
-                "5": 79060,
+                "5": 80318,
                 "6": 134166
             },
             "weekday_off_avg_seconds": {
@@ -786,7 +787,7 @@
                 "2": 3589.346153846154,
                 "3": 3381.301886792453,
                 "4": 2872.923076923077,
-                "5": 1520.3846153846155,
+                "5": 1544.576923076923,
                 "6": 2580.1153846153848
             }
         },
@@ -848,14 +849,14 @@
             "declared_recoveries": 5,
             "declared_affectations": 365,
             "declared_emergencies": 182,
-            "estimated_affected_seconds": 1131068,
+            "estimated_affected_seconds": 1132326,
             "weekday_off_seconds": {
                 "0": 106837,
                 "1": 155174,
                 "2": 234649,
                 "3": 165769,
                 "4": 143677,
-                "5": 104749,
+                "5": 106007,
                 "6": 220213
             },
             "weekday_off_avg_seconds": {
@@ -864,7 +865,7 @@
                 "2": 4512.4807692307695,
                 "3": 3127.7169811320755,
                 "4": 2763.019230769231,
-                "5": 2014.4038461538462,
+                "5": 2038.5961538461538,
                 "6": 4234.865384615385
             }
         },
