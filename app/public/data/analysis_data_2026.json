@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-01-31T00:23:52.842675-05:00",
+    "sync_date": "2026-01-31T01:01:39.959304-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -25,10 +25,10 @@
         "date_cuba_d": "2026-01-30T23:27:37",
         "reactions": {
             "👍": 1,
-            "👎": 15
+            "👎": 18
         },
-        "views": 4020,
-        "replies": 2,
+        "views": 5332,
+        "replies": 4,
         "text": "📣Averías existentes hasta el momento\n\n 🚨**Cable fallo**\n\n📌Municipio: Habana del Este    \n👉Dirección: Camilo Cienfuegos.\n\n 🚨**Transformador dañado\n**\n📌Municipio: Boyeros\n👉Dirección: 116 entre 281 y 283, Calabazar.\n\nEquipo de Comunicación \nEmpresa Eléctrica de La Habana📣"
     },
     "shortest_message": {
@@ -63,21 +63,21 @@
         "text": "📣Averías existentes hasta el momento📣\n\n➡️Averías Primarias ⬅️\nPor puente primario partido \n\n📌Municipio: Cerro \n👉Dirección: Colon desde Whaschinton hasta Vía Blanca, Vía Blanca Rotonda hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Primelle hasta Calzada de Palatino, Santa Catalina hasta Fomento, Ocujes desde Santa Catalina hasta Ave de La Ceiba, Calzada de Palatino hasta Fomento, Palmar hasta Santa Lugarda, Bella Vista hasta Recreo\n\n\n📌Municipio:Playa  \n👉Dirección : Calle 96 y 5ta F Afectando , Calle 13 desde 70 hasta 86; Calle 11 desde 74 hasta 98; 5taF desde 96 hasta 120 (Almendares); Calle 120 desde 5ta F hasta 23 (Cubanacan)\nDirección : Calle 46 desde 5taA hasta 39A; Calle 5taA desde 36 hasta 66; Calle 7ma desde 24 hasta 40 (Reparto Sierra)\n\n👉Dirección :Calle 46 desde 5taA hasta 39A; Calle 5taA desde 36 hasta 66; Calle 7ma desde 24 hasta 40 (Reparto Sierra)\n\n\n📌Municipio: Guanabacoa \n👉Dirección: Apodaca e/ Fray Alonzo y Cadena afectando Mambi, Garrido, Centro de Guanabacoa\n \n\nCircuitos Disparados por tormenta \n\n‼️Municipio : Cerro \n👉Dirección : \"Vía Blanca desde 1ra hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Santa Catalina desde Primelle hasta Independencia Independencia desde Rotonda hasta Palmar, Independencia hasta Rambla, Colón hasta 14,\"Colon desde Whaschinton hasta Vía Blanca, Vía Blanca Rotonda hasta Primelle, Primelle desde Vía Blanca hasta Santa Catalina, Primelle hasta Calzada de Palatino, Santa Catalina hasta Fomento, Ocujes desde Santa Catalina hasta Ave de La Ceiba, Calzada de Palatino hasta Fomento, Palmar hasta Santa Lugarda, Bella Vista hasta Recreo\n\n\n‼️Municipio :Alamar \n👉Dirección : \"Zonas: Colina Villa Real, CelimarZonas: 12, 14, 13, 19, 20, 21, 23, 24, 25Zonas: 1, 2, 3, 5, 24, 8, 7 ,Zona Franca de Berroa\n\n‼️Municipio :Plaza \n👉Dirección :\"Cuadrante desde Calle 4 hasta A, 11 hasta Malecón",
         "count": 1877
     },
-    "total_views": 61084877,
+    "total_views": 61099664,
     "total_messages": 2512,
     "total_erased_messages": 153,
-    "total_replies": 67700,
-    "total_reactions": 472752,
-    "total_positive_reactions": 61054,
-    "total_negative_reactions": 411698,
-    "avg_views": 24317,
+    "total_replies": 67702,
+    "total_reactions": 472818,
+    "total_positive_reactions": 61065,
+    "total_negative_reactions": 411753,
+    "avg_views": 24323,
     "avg_replies": 27,
     "avg_reactions": 188,
     "avg_positive_reactions": 24,
     "avg_negative_reactions": 164,
     "avg_text_length": 222,
     "monthly_views": {
-        "1": 61084877,
+        "1": 61099664,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -91,7 +91,7 @@
         "12": 0
     },
     "monthly_replies": {
-        "1": 67700,
+        "1": 67702,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -105,7 +105,7 @@
         "12": 0
     },
     "monthly_reactions": {
-        "1": 472752,
+        "1": 472818,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -508,8 +508,8 @@
         "5": 1057
     },
     "distribution_reaction": {
-        "👎": 411698,
-        "👍": 61054
+        "👎": 411753,
+        "👍": 61065
     },
     "top3_most_viewed_messages": [
         {
