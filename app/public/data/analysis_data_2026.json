@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-02-06T14:22:33.263659-05:00",
+    "sync_date": "2026-02-06T14:57:32.192019-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -24,10 +24,11 @@
         "date_cuba": "2026-02-06 14:10:31",
         "date_cuba_d": "2026-02-06T14:10:31",
         "reactions": {
-            "👎": 8
+            "👍": 3,
+            "👎": 20
         },
-        "views": 2733,
-        "replies": 3,
+        "views": 7601,
+        "replies": 11,
         "text": "✅Cerrado el DAF en:\n\n👉🏻 Habana del Este: Zonas: 6, 7, 8, 9, 10, 11, Micro 4. 👉🏼Zonas: 12, 14, 13, 19, 20, 21, 23, 24, 25. 👉🏼Justi, Agromar, Bajurayabo, Campo Florido, La Coca. 👉🏼Altura de Boca Ciega, Santa María del Mar, Villa Mégano.\n\n👉🏻Cerro: Cristina desde Cuatro Caminos hasta San Joaquín, Ataré.\n\n👉🏻Playa: Calle 25 desde 158 a 190, calle 190 de 194 hasta 5ta Reparto Náutico, Calle 9na desde 120 hasta 130.✅"
     },
     "shortest_message": {
@@ -62,14 +63,14 @@
         "text": "📣Averías existentes hasta el momento\n\n🚨Averías Primarias:\n\n📌Municipio: Guanabacoa \n👉Dirección: Real y Callejón Matoso\n\n📌Municipio: Playa \n👉Dirección: 1ra B / 298 y 300, Santa Fe\n 👉Dirección: parte del Rpto Querejeta\n\n📌Municipio: Lisa \n👉Dirección: 61 y 222.\n\n📌Municipio:  Centro Habana\n👉Dirección: Belascoain / Ánimas y Laguna. \n\n📌Municipio: Habana del Este \n👉Dirección: Granja Tivo Tivo Carretera Jaruco Km1 ½  Rpto Trinidad.\n\n🚨Averías Secundarias por transformador dañado:\n\n📌Municipio: Playa \n👉Dirección: Calle 62 / 7ma y 5ta B  \n👉Dirección: 1ra A / 156 y 156 A \n👉Dirección: 66 / 9na y 11.\n📌Municipio: Boyeros\n👉Dirección: Aldabo / Cisneros y Finlay\n👉Dirección: Pasaje A / Perla y Final\n\n📌Municipio: Centro Habana\n👉Dirección: Hospital / Humboldt y 23 , Cayo Hueso \n\n📌Municipio: Arroyo Naranjo\n👉Dirección: calle E / 1ra y 2da ,Poey.\n\n📌Municipio: Lisa\n👉Dirección: Finca Las Colmenas , Carretera Guatao\n👉Dirección: 236 / 35 y 39.\n\n\n🚨Circuitos disparados en:🚨\n\n📌Municipio: Guanabacoa\n👉Dirección: Ricabal, La Lima, Santa Fe, La Caridad, Bacuranao, Alecrín\n\n📌Municipio: Boyeros\n👉Dirección: Santiago de las Vegas\n\n📌Municipio: Cerro\n👉Dirección: Vía Blanca de Infanta a Chaples, Chaples desde Vía Blanca a Palmar, Palmar de Palatino a Suzarte, Suzarte de Palmar a Santa Catalina, Lazada desde San Juan Bosco hasta 3ra, Vento Oeste hasta 3ra, Lazada hasta Avenida del Este, Avenida del Este desde Vento Oeste hasta Avenida de La Ceiba, Avenida del Norte desde Avenida del Este hasta Lazada Norte 1, Primelles desde Avenida Norte hasta calle Interior, Avenida Este hasta Aranguren, Blanquita hasta 11\n👉Dirección: Washington desde Infanta hasta Colón, Colón desde Washington hasta Calzada del Cerro, Puentes Grandes desde Independencia hasta Ulloa, Recursos hasta Ciclo Vía, Tejar hasta Almendares\n👉Dirección: Callejón de Los Perros desde Línea del Ferrocarril hasta Camagüey, Camagüey desde 13 hasta Independencia, Canal hasta 13 y Camagüey, Independencia desde Camagüey hasta A\n📌Municipio: Plaza\n👉Dirección: Hospitales 2 desde 27 hasta 19; 19 desde 2 hasta 8, B desde 21 hasta 1ra, B desde A hasta D, C desde 13 hasta 1ra, 7ma desde A hasta M, 5ta y 3ra desde B hasta G, 9na hasta Malecón, A hasta K, 11 desde G hasta L\n📌Municipio: 10 de Octubre \n👉Dirección: Calzada de Vento desde Línea del Ferrocarril hasta Camagüey, Calles desde Acosta hasta Carmen y desde Figueroa hasta Párraga, calles desde Úrsula hasta Carmen y desde Gelabert hasta Goicuria en Sevillano.\n📌Municipio: Boyeros\n👉Dirección: Parajón , Trigal\n📌Municipio: 10 de Octubre\n👉Dirección: Parte de Santo Suarez cuadrante desde Acosta hasta Altarriba y Calzada 10 de Octubre hasta Porvenir\n📌Municipio: Habana del Este \n👉Dirección: Cojimar\n👉Dirección: Ampliación de Marbella, Guanabo, Bello Monte, Villa del Mar,\n👉Dirección: Zona Franca de Berroa\n👉Dirección: Alamar, Zonas: 6, 7, 8, 9, 10, 11, Micro 4\n📌Municipio: San Miguel del Padrón\n👉Dirección: Martín Pérez, Ciudamar, Carolina, Altura de Luyanó\n📌Municipio: Lisa\n👉Dirección : Palenque , Hueco ,Altura de la Lisa \n📌Municipio: Marianao\n👉Dirección : Zamora",
         "count": 3056
     },
-    "total_views": 76348829,
+    "total_views": 76406542,
     "total_messages": 3116,
     "total_erased_messages": 200,
-    "total_replies": 82625,
-    "total_reactions": 582020,
-    "total_positive_reactions": 76996,
-    "total_negative_reactions": 505024,
-    "avg_views": 24502,
+    "total_replies": 82640,
+    "total_reactions": 582082,
+    "total_positive_reactions": 77013,
+    "total_negative_reactions": 505069,
+    "avg_views": 24521,
     "avg_replies": 27,
     "avg_reactions": 187,
     "avg_positive_reactions": 25,
@@ -77,7 +78,7 @@
     "avg_text_length": 231,
     "monthly_views": {
         "1": 63920288,
-        "2": 12428541,
+        "2": 12486254,
         "3": 0,
         "4": 0,
         "5": 0,
@@ -91,7 +92,7 @@
     },
     "monthly_replies": {
         "1": 71075,
-        "2": 11550,
+        "2": 11565,
         "3": 0,
         "4": 0,
         "5": 0,
@@ -105,7 +106,7 @@
     },
     "monthly_reactions": {
         "1": 492625,
-        "2": 89395,
+        "2": 89457,
         "3": 0,
         "4": 0,
         "5": 0,
@@ -507,8 +508,8 @@
         "5": 1274
     },
     "distribution_reaction": {
-        "👎": 505024,
-        "👍": 76996
+        "👎": 505069,
+        "👍": 77013
     },
     "top3_most_viewed_messages": [
         {
