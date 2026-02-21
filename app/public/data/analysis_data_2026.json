@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-02-21T09:31:45.343689-05:00",
+    "sync_date": "2026-02-21T10:30:26.738567-05:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -17,16 +17,19 @@
         "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨"
     },
     "last_message": {
-        "id": 55090,
-        "link": "https://t.me/EmpresaElectricaDeLaHabana/55090",
-        "date_utc": "2026-02-21 14:28:47",
-        "date_utc_d": "2026-02-21T14:28:47",
-        "date_cuba": "2026-02-21 09:28:47",
-        "date_cuba_d": "2026-02-21T09:28:47",
-        "reactions": {},
-        "views": 579,
-        "replies": 0,
-        "text": "🚨‼️Consumidores del municipio Plaza,de calle 18 desde 11 hasta Zapata, 23 desde 14 hasta 24, Nuevo Vedado de 25 hasta 47 y de 22 hasta 36, de 26 hasta Bellavista y de Santa Ana hasta Tulipán se encuentran afectados por Trabajos Operativos.‼️🚨"
+        "id": 55092,
+        "link": "https://t.me/EmpresaElectricaDeLaHabana/55092",
+        "date_utc": "2026-02-21 15:00:13",
+        "date_utc_d": "2026-02-21T15:00:13",
+        "date_cuba": "2026-02-21 10:00:13",
+        "date_cuba_d": "2026-02-21T10:00:13",
+        "reactions": {
+            "👍": 1,
+            "👎": 10
+        },
+        "views": 2748,
+        "replies": 2,
+        "text": "🚨‼️Consumidores del municipio Marianao,se encuentran afectados por un transformador dañado en la siguiente dirección: Callejón del Cojo,Finca Las Marianitas.‼️🚨"
     },
     "shortest_message": {
         "id": 50775,
@@ -60,14 +63,14 @@
         "text": "📣Averías existentes hasta el momento\n\n🚨Averías Primarias:\n\n📌Municipio: Guanabacoa \n👉Dirección: Real y Callejón Matoso\n\n📌Municipio: Playa \n👉Dirección: 1ra B / 298 y 300, Santa Fe\n 👉Dirección: parte del Rpto Querejeta\n\n📌Municipio: Lisa \n👉Dirección: 61 y 222.\n\n📌Municipio:  Centro Habana\n👉Dirección: Belascoain / Ánimas y Laguna. \n\n📌Municipio: Habana del Este \n👉Dirección: Granja Tivo Tivo Carretera Jaruco Km1 ½  Rpto Trinidad.\n\n🚨Averías Secundarias por transformador dañado:\n\n📌Municipio: Playa \n👉Dirección: Calle 62 / 7ma y 5ta B  \n👉Dirección: 1ra A / 156 y 156 A \n👉Dirección: 66 / 9na y 11.\n📌Municipio: Boyeros\n👉Dirección: Aldabo / Cisneros y Finlay\n👉Dirección: Pasaje A / Perla y Final\n\n📌Municipio: Centro Habana\n👉Dirección: Hospital / Humboldt y 23 , Cayo Hueso \n\n📌Municipio: Arroyo Naranjo\n👉Dirección: calle E / 1ra y 2da ,Poey.\n\n📌Municipio: Lisa\n👉Dirección: Finca Las Colmenas , Carretera Guatao\n👉Dirección: 236 / 35 y 39.\n\n\n🚨Circuitos disparados en:🚨\n\n📌Municipio: Guanabacoa\n👉Dirección: Ricabal, La Lima, Santa Fe, La Caridad, Bacuranao, Alecrín\n\n📌Municipio: Boyeros\n👉Dirección: Santiago de las Vegas\n\n📌Municipio: Cerro\n👉Dirección: Vía Blanca de Infanta a Chaples, Chaples desde Vía Blanca a Palmar, Palmar de Palatino a Suzarte, Suzarte de Palmar a Santa Catalina, Lazada desde San Juan Bosco hasta 3ra, Vento Oeste hasta 3ra, Lazada hasta Avenida del Este, Avenida del Este desde Vento Oeste hasta Avenida de La Ceiba, Avenida del Norte desde Avenida del Este hasta Lazada Norte 1, Primelles desde Avenida Norte hasta calle Interior, Avenida Este hasta Aranguren, Blanquita hasta 11\n👉Dirección: Washington desde Infanta hasta Colón, Colón desde Washington hasta Calzada del Cerro, Puentes Grandes desde Independencia hasta Ulloa, Recursos hasta Ciclo Vía, Tejar hasta Almendares\n👉Dirección: Callejón de Los Perros desde Línea del Ferrocarril hasta Camagüey, Camagüey desde 13 hasta Independencia, Canal hasta 13 y Camagüey, Independencia desde Camagüey hasta A\n📌Municipio: Plaza\n👉Dirección: Hospitales 2 desde 27 hasta 19; 19 desde 2 hasta 8, B desde 21 hasta 1ra, B desde A hasta D, C desde 13 hasta 1ra, 7ma desde A hasta M, 5ta y 3ra desde B hasta G, 9na hasta Malecón, A hasta K, 11 desde G hasta L\n📌Municipio: 10 de Octubre \n👉Dirección: Calzada de Vento desde Línea del Ferrocarril hasta Camagüey, Calles desde Acosta hasta Carmen y desde Figueroa hasta Párraga, calles desde Úrsula hasta Carmen y desde Gelabert hasta Goicuria en Sevillano.\n📌Municipio: Boyeros\n👉Dirección: Parajón , Trigal\n📌Municipio: 10 de Octubre\n👉Dirección: Parte de Santo Suarez cuadrante desde Acosta hasta Altarriba y Calzada 10 de Octubre hasta Porvenir\n📌Municipio: Habana del Este \n👉Dirección: Cojimar\n👉Dirección: Ampliación de Marbella, Guanabo, Bello Monte, Villa del Mar,\n👉Dirección: Zona Franca de Berroa\n👉Dirección: Alamar, Zonas: 6, 7, 8, 9, 10, 11, Micro 4\n📌Municipio: San Miguel del Padrón\n👉Dirección: Martín Pérez, Ciudamar, Carolina, Altura de Luyanó\n📌Municipio: Lisa\n👉Dirección : Palenque , Hueco ,Altura de la Lisa \n📌Municipio: Marianao\n👉Dirección : Zamora",
         "count": 3056
     },
-    "total_views": 103422961,
-    "total_messages": 4284,
+    "total_views": 103486241,
+    "total_messages": 4285,
     "total_erased_messages": 266,
-    "total_replies": 101788,
-    "total_reactions": 749716,
-    "total_positive_reactions": 104933,
-    "total_negative_reactions": 644783,
-    "avg_views": 24142,
+    "total_replies": 101798,
+    "total_reactions": 749947,
+    "total_positive_reactions": 104962,
+    "total_negative_reactions": 644985,
+    "avg_views": 24151,
     "avg_replies": 24,
     "avg_reactions": 175,
     "avg_positive_reactions": 24,
@@ -75,7 +78,7 @@
     "avg_text_length": 237,
     "monthly_views": {
         "1": 63920288,
-        "2": 39502673,
+        "2": 39565953,
         "3": 0,
         "4": 0,
         "5": 0,
@@ -89,7 +92,7 @@
     },
     "monthly_replies": {
         "1": 71075,
-        "2": 30713,
+        "2": 30723,
         "3": 0,
         "4": 0,
         "5": 0,
@@ -103,7 +106,7 @@
     },
     "monthly_reactions": {
         "1": 492625,
-        "2": 257091,
+        "2": 257322,
         "3": 0,
         "4": 0,
         "5": 0,
@@ -117,7 +120,7 @@
     },
     "monthly_messages": {
         "1": 2615,
-        "2": 1669,
+        "2": 1670,
         "3": 0,
         "4": 0,
         "5": 0,
@@ -181,7 +184,7 @@
         "49": 92,
         "50": 81,
         "51": 74,
-        "52": 33,
+        "52": 34,
         "53": 0,
         "54": 0,
         "55": 0,
@@ -498,15 +501,15 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 1900,
+        "1": 1901,
         "2": 379,
         "3": 167,
         "4": 54,
         "5": 1784
     },
     "distribution_reaction": {
-        "👎": 644783,
-        "👍": 104933
+        "👎": 644985,
+        "👍": 104962
     },
     "top3_most_viewed_messages": [
         {
@@ -717,11 +720,11 @@
         "circuitos": 1388,
         "habana": 1369,
         "emergencia": 1321,
-        "municipio": 1252,
-        "afectados": 1246,
+        "municipio": 1253,
+        "afectados": 1247,
         "generación": 1126,
         "informamos": 1100,
-        "consumidores": 984,
+        "consumidores": 985,
         "mw": 940,
         "clientes": 935,
         "actualización": 920,
@@ -742,14 +745,14 @@
             "declared_recoveries": 8,
             "declared_affectations": 637,
             "declared_emergencies": 352,
-            "estimated_affected_seconds": 2432753,
+            "estimated_affected_seconds": 2434574,
             "weekday_off_seconds": {
                 "0": 308206,
                 "1": 392870,
                 "2": 383114,
                 "3": 273110,
                 "4": 382746,
-                "5": 303156,
+                "5": 304977,
                 "6": 389551
             },
             "weekday_off_avg_seconds": {
@@ -758,7 +761,7 @@
                 "2": 7367.576923076923,
                 "3": 5153.018867924528,
                 "4": 7360.5,
-                "5": 5829.923076923077,
+                "5": 5864.942307692308,
                 "6": 7491.365384615385
             }
         },
@@ -768,14 +771,14 @@
             "declared_recoveries": 8,
             "declared_affectations": 604,
             "declared_emergencies": 326,
-            "estimated_affected_seconds": 2460859,
+            "estimated_affected_seconds": 2462680,
             "weekday_off_seconds": {
                 "0": 390832,
                 "1": 379079,
                 "2": 382575,
                 "3": 380144,
                 "4": 349783,
-                "5": 261043,
+                "5": 262864,
                 "6": 317403
             },
             "weekday_off_avg_seconds": {
@@ -784,7 +787,7 @@
                 "2": 7357.211538461538,
                 "3": 7172.528301886792,
                 "4": 6726.596153846154,
-                "5": 5020.057692307692,
+                "5": 5055.076923076923,
                 "6": 6103.903846153846
             }
         },
@@ -794,14 +797,14 @@
             "declared_recoveries": 10,
             "declared_affectations": 630,
             "declared_emergencies": 331,
-            "estimated_affected_seconds": 2540187,
+            "estimated_affected_seconds": 2542008,
             "weekday_off_seconds": {
                 "0": 439754,
                 "1": 412702,
                 "2": 420607,
                 "3": 360153,
                 "4": 335798,
-                "5": 214614,
+                "5": 216435,
                 "6": 356559
             },
             "weekday_off_avg_seconds": {
@@ -810,7 +813,7 @@
                 "2": 8088.596153846154,
                 "3": 6795.33962264151,
                 "4": 6457.653846153846,
-                "5": 4127.192307692308,
+                "5": 4162.211538461538,
                 "6": 6856.903846153846
             }
         },
@@ -820,14 +823,14 @@
             "declared_recoveries": 12,
             "declared_affectations": 624,
             "declared_emergencies": 323,
-            "estimated_affected_seconds": 2573715,
+            "estimated_affected_seconds": 2575536,
             "weekday_off_seconds": {
                 "0": 367425,
                 "1": 292147,
                 "2": 366900,
                 "3": 349370,
                 "4": 424678,
-                "5": 371838,
+                "5": 373659,
                 "6": 401357
             },
             "weekday_off_avg_seconds": {
@@ -836,7 +839,7 @@
                 "2": 7055.7692307692305,
                 "3": 6591.88679245283,
                 "4": 8166.884615384615,
-                "5": 7150.7307692307695,
+                "5": 7185.75,
                 "6": 7718.403846153846
             }
         },
@@ -872,14 +875,14 @@
             "declared_recoveries": 6,
             "declared_affectations": 633,
             "declared_emergencies": 352,
-            "estimated_affected_seconds": 2520936,
+            "estimated_affected_seconds": 2522757,
             "weekday_off_seconds": {
                 "0": 391243,
                 "1": 376620,
                 "2": 386312,
                 "3": 297887,
                 "4": 383085,
-                "5": 330576,
+                "5": 332397,
                 "6": 355213
             },
             "weekday_off_avg_seconds": {
@@ -888,7 +891,7 @@
                 "2": 7429.076923076923,
                 "3": 5620.509433962264,
                 "4": 7367.0192307692305,
-                "5": 6357.2307692307695,
+                "5": 6392.25,
                 "6": 6831.0192307692305
             }
         }
