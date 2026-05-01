@@ -31,3 +31,4 @@ dist-ssr
 *.sw?
 *.pyc
 app/public/sitemap.xml
+/.claude
