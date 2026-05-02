@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-05-01T19:58:17.397646-04:00",
+    "sync_date": "2026-05-01T22:30:54.645946-04:00",
     "year": 2024,
     "first_message": {
         "id": 19617,
@@ -502,11 +502,11 @@
         "366": 28
     },
     "distribution_message": {
-        "1": 10444,
-        "2": 230,
-        "3": 936,
-        "4": 235,
-        "5": 103
+        "1": 6699,
+        "2": 231,
+        "3": 3121,
+        "4": 1370,
+        "5": 527
     },
     "distribution_reaction": {
         "👍": 216940,
@@ -757,112 +757,112 @@
     "blocks_analysis": [
         {
             "number": 1,
-            "mentions": 1383,
-            "declared_recoveries": 19,
-            "declared_affectations": 19,
-            "declared_emergencies": 1,
-            "estimated_affected_seconds": 1535624,
+            "mentions": 39,
+            "declared_recoveries": 3,
+            "declared_affectations": 36,
+            "declared_emergencies": 0,
+            "estimated_affected_seconds": 1925253,
             "weekday_off_seconds": {
-                "0": 71449,
-                "1": 145974,
-                "2": 146228,
-                "3": 248850,
-                "4": 407623,
-                "5": 349648,
-                "6": 165852
+                "0": 47893,
+                "1": 153989,
+                "2": 220516,
+                "3": 354016,
+                "4": 460539,
+                "5": 431550,
+                "6": 256750
             },
             "weekday_off_avg_seconds": {
-                "0": 1348.0943396226414,
-                "1": 2754.2264150943397,
-                "2": 2812.076923076923,
-                "3": 4785.576923076923,
-                "4": 7838.903846153846,
-                "5": 6724.0,
-                "6": 3189.4615384615386
+                "0": 903.6415094339623,
+                "1": 2905.4528301886794,
+                "2": 4240.692307692308,
+                "3": 6808.0,
+                "4": 8856.51923076923,
+                "5": 8299.038461538461,
+                "6": 4937.5
             }
         },
         {
             "number": 2,
-            "mentions": 1444,
-            "declared_recoveries": 21,
-            "declared_affectations": 10,
-            "declared_emergencies": 1,
-            "estimated_affected_seconds": 971009,
+            "mentions": 27,
+            "declared_recoveries": 2,
+            "declared_affectations": 25,
+            "declared_emergencies": 0,
+            "estimated_affected_seconds": 1555200,
             "weekday_off_seconds": {
-                "0": 13086,
-                "1": 168016,
-                "2": 109462,
-                "3": 170865,
-                "4": 145806,
-                "5": 263306,
-                "6": 100468
+                "0": 83095,
+                "1": 280386,
+                "2": 173197,
+                "3": 278047,
+                "4": 244657,
+                "5": 346306,
+                "6": 149512
             },
             "weekday_off_avg_seconds": {
-                "0": 246.9056603773585,
-                "1": 3170.1132075471696,
-                "2": 2105.0384615384614,
-                "3": 3285.8653846153848,
-                "4": 2803.9615384615386,
-                "5": 5063.576923076923,
-                "6": 1932.076923076923
+                "0": 1567.8301886792453,
+                "1": 5290.301886792453,
+                "2": 3330.7115384615386,
+                "3": 5347.057692307692,
+                "4": 4704.942307692308,
+                "5": 6659.7307692307695,
+                "6": 2875.230769230769
             }
         },
         {
             "number": 3,
-            "mentions": 1039,
-            "declared_recoveries": 20,
-            "declared_affectations": 19,
-            "declared_emergencies": 2,
-            "estimated_affected_seconds": 1489409,
+            "mentions": 33,
+            "declared_recoveries": 1,
+            "declared_affectations": 32,
+            "declared_emergencies": 0,
+            "estimated_affected_seconds": 1728000,
             "weekday_off_seconds": {
-                "0": 123557,
-                "1": 241909,
-                "2": 79620,
-                "3": 174630,
+                "0": 181920,
+                "1": 229696,
+                "2": 108990,
+                "3": 258824,
                 "4": 378067,
-                "5": 311676,
-                "6": 179950
+                "5": 361237,
+                "6": 209266
             },
             "weekday_off_avg_seconds": {
-                "0": 2331.264150943396,
-                "1": 4564.320754716981,
-                "2": 1531.1538461538462,
-                "3": 3358.269230769231,
+                "0": 3432.4528301886794,
+                "1": 4333.88679245283,
+                "2": 2095.9615384615386,
+                "3": 4977.384615384615,
                 "4": 7270.5192307692305,
-                "5": 5993.7692307692305,
-                "6": 3460.576923076923
+                "5": 6946.865384615385,
+                "6": 4024.346153846154
             }
         },
         {
             "number": 4,
-            "mentions": 902,
-            "declared_recoveries": 21,
-            "declared_affectations": 7,
-            "declared_emergencies": 1,
-            "estimated_affected_seconds": 1141182,
+            "mentions": 28,
+            "declared_recoveries": 2,
+            "declared_affectations": 26,
+            "declared_emergencies": 0,
+            "estimated_affected_seconds": 1568286,
             "weekday_off_seconds": {
                 "0": 49555,
-                "1": 47907,
-                "2": 111873,
-                "3": 80545,
-                "4": 282633,
-                "5": 399881,
-                "6": 168788
+                "1": 102000,
+                "2": 179561,
+                "3": 166323,
+                "4": 361968,
+                "5": 503004,
+                "6": 205875
             },
             "weekday_off_avg_seconds": {
                 "0": 935.0,
-                "1": 903.9056603773585,
-                "2": 2151.403846153846,
-                "3": 1548.9423076923076,
-                "4": 5435.25,
-                "5": 7690.0192307692305,
-                "6": 3245.923076923077
+                "1": 1924.5283018867924,
+                "2": 3453.096153846154,
+                "3": 3198.519230769231,
+                "4": 6960.923076923077,
+                "5": 9673.153846153846,
+                "6": 3959.1346153846152
             }
         },
         {
             "number": 5,
-            "mentions": 877,
-            "declared_recoveries": 14,
+            "mentions": 0,
+            "declared_recoveries": 0,
             "declared_affectations": 0,
             "declared_emergencies": 0,
             "estimated_affected_seconds": 0,
@@ -887,8 +887,8 @@
         },
         {
             "number": 6,
-            "mentions": 941,
-            "declared_recoveries": 12,
+            "mentions": 0,
+            "declared_recoveries": 0,
             "declared_affectations": 0,
             "declared_emergencies": 0,
             "estimated_affected_seconds": 0,
@@ -913,8 +913,83 @@
         }
     ],
     "sen_analysis": {
-        "mentions": 739,
-        "total_failure_events": 0,
-        "failure_events": []
+        "mentions": 29,
+        "total_failure_events": 2,
+        "failure_events": [
+            {
+                "start_date": "2024-10-18 12:49:57",
+                "start_date_d": "2024-10-18T12:49:57",
+                "start_message": {
+                    "id": 29769,
+                    "link": "https://t.me/EmpresaElectricaDeLaHabana/29769",
+                    "date_utc": "2024-10-18 16:49:57",
+                    "date_utc_d": "2024-10-18T16:49:57",
+                    "date_cuba": "2024-10-18 12:49:57",
+                    "date_cuba_d": "2024-10-18T12:49:57",
+                    "reactions": {
+                        "👍": 158,
+                        "👎": 1090
+                    },
+                    "views": 35821,
+                    "replies": 2,
+                    "text": "Nota del Ministerio de Energía y Minas de Cuba:\nTras la salida imprevista de la CTE Antonio Guiteras, a las 11 de mañana de hoy se produjo la desconexión total del Sistema Electroenergético Nacional. \nLa Unión Eléctrica trabaja en su restablecimiento."
+                },
+                "end_date": "2024-10-18 19:09:20",
+                "end_date_d": "2024-10-18T19:09:20",
+                "end_message": {
+                    "id": 29776,
+                    "link": "https://t.me/EmpresaElectricaDeLaHabana/29776",
+                    "date_utc": "2024-10-18 23:09:20",
+                    "date_utc_d": "2024-10-18T23:09:20",
+                    "date_cuba": "2024-10-18 19:09:20",
+                    "date_cuba_d": "2024-10-18T19:09:20",
+                    "reactions": {
+                        "👍": 298,
+                        "👎": 201
+                    },
+                    "views": 26705,
+                    "replies": 0,
+                    "text": "En este minuto se continúa trabajando desde el Despacho Provincial de Carga de nuestra empresa. Habaneros los eléctricos no descansaremos hasta restablecer el servicio al 100% de la población."
+                },
+                "estimated_duration_seconds": 22763
+            },
+            {
+                "start_date": "2024-10-19 06:38:01",
+                "start_date_d": "2024-10-19T06:38:01",
+                "start_message": {
+                    "id": 29820,
+                    "link": "https://t.me/EmpresaElectricaDeLaHabana/29820",
+                    "date_utc": "2024-10-19 10:38:01",
+                    "date_utc_d": "2024-10-19T10:38:01",
+                    "date_cuba": "2024-10-19 06:38:01",
+                    "date_cuba_d": "2024-10-19T06:38:01",
+                    "reactions": {
+                        "👍": 220,
+                        "👎": 1959
+                    },
+                    "views": 59906,
+                    "replies": 0,
+                    "text": "🚨Nota Informativa  de la mañana de hoy a las 6:15 am se produjo nuevamente la desconexión total del Sistema Electroenergético Nacional. \nLa Unión Eléctrica trabaja en su restablecimiento🚨."
+                },
+                "end_date": "2024-11-07 09:24:44",
+                "end_date_d": "2024-11-07T09:24:44",
+                "end_message": {
+                    "id": 30442,
+                    "link": "https://t.me/EmpresaElectricaDeLaHabana/30442",
+                    "date_utc": "2024-11-07 14:24:44",
+                    "date_utc_d": "2024-11-07T14:24:44",
+                    "date_cuba": "2024-11-07 09:24:44",
+                    "date_cuba_d": "2024-11-07T09:24:44",
+                    "reactions": {
+                        "👍": 199,
+                        "👎": 140
+                    },
+                    "views": 31941,
+                    "replies": 0,
+                    "text": "En noche y madrugada, avanzó estrategia para gradual recuperación del SEN, desconectado este miércoles, en medio de rachas de vientos superiores a los 100 Km/H. En las últimas horas, fue posible llevar energía a Guiteras y a Nuevitas, para iniciar respectivos procesos de arranque. Más de 10 islas de Generación emergente, dan cobertura en Centro, Oriente y en Pinar del Río.  En horario diurno, desde que amanezca... Especialistas comenzarán recorridos en zonas de Occidente, afectadas por Huracán de gran intensidad Rafael, para diagnosticar daños y comenzar de inmediato, recuperación"
+                },
+                "estimated_duration_seconds": 86400
+            }
+        ]
     }
 }

@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-05-01T19:58:29.496225-04:00",
+    "sync_date": "2026-05-01T22:47:46.379384-04:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -498,11 +498,11 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 3985,
-        "2": 1464,
-        "3": 400,
-        "4": 118,
-        "5": 3668
+        "1": 1439,
+        "2": 1465,
+        "3": 2195,
+        "4": 298,
+        "5": 4238
     },
     "distribution_reaction": {
         "👎": 1555702,
@@ -738,164 +738,239 @@
     "blocks_analysis": [
         {
             "number": 1,
-            "mentions": 2015,
-            "declared_recoveries": 53,
-            "declared_affectations": 1385,
-            "declared_emergencies": 790,
-            "estimated_affected_seconds": 5974871,
+            "mentions": 1497,
+            "declared_recoveries": 13,
+            "declared_affectations": 1484,
+            "declared_emergencies": 0,
+            "estimated_affected_seconds": 8250983,
             "weekday_off_seconds": {
-                "0": 942887,
-                "1": 723108,
-                "2": 925178,
-                "3": 818208,
-                "4": 898521,
-                "5": 826355,
-                "6": 840614
+                "0": 1215308,
+                "1": 1160525,
+                "2": 1291840,
+                "3": 1247301,
+                "4": 1188297,
+                "5": 1046816,
+                "6": 1100896
             },
             "weekday_off_avg_seconds": {
-                "0": 18132.44230769231,
-                "1": 13905.923076923076,
-                "2": 17791.884615384617,
-                "3": 15437.88679245283,
-                "4": 17279.25,
-                "5": 15891.442307692309,
-                "6": 16165.653846153846
+                "0": 23371.30769230769,
+                "1": 22317.78846153846,
+                "2": 24843.076923076922,
+                "3": 23533.98113207547,
+                "4": 22851.865384615383,
+                "5": 20131.076923076922,
+                "6": 21171.076923076922
             }
         },
         {
             "number": 2,
-            "mentions": 2081,
-            "declared_recoveries": 14,
-            "declared_affectations": 1368,
-            "declared_emergencies": 758,
-            "estimated_affected_seconds": 6039344,
+            "mentions": 1449,
+            "declared_recoveries": 21,
+            "declared_affectations": 1428,
+            "declared_emergencies": 0,
+            "estimated_affected_seconds": 8209689,
             "weekday_off_seconds": {
-                "0": 855430,
-                "1": 779742,
-                "2": 890497,
-                "3": 927927,
-                "4": 1003544,
-                "5": 815075,
-                "6": 767129
+                "0": 1211603,
+                "1": 1261355,
+                "2": 1304148,
+                "3": 1186039,
+                "4": 1132858,
+                "5": 1101471,
+                "6": 1012215
             },
             "weekday_off_avg_seconds": {
-                "0": 16450.576923076922,
-                "1": 14995.038461538461,
-                "2": 17124.94230769231,
-                "3": 17508.056603773584,
-                "4": 19298.923076923078,
-                "5": 15674.51923076923,
-                "6": 14752.48076923077
+                "0": 23300.05769230769,
+                "1": 24256.826923076922,
+                "2": 25079.76923076923,
+                "3": 22378.094339622643,
+                "4": 21785.73076923077,
+                "5": 21182.134615384617,
+                "6": 19465.673076923078
             }
         },
         {
             "number": 3,
-            "mentions": 1969,
-            "declared_recoveries": 22,
-            "declared_affectations": 1363,
-            "declared_emergencies": 753,
-            "estimated_affected_seconds": 6164109,
+            "mentions": 1433,
+            "declared_recoveries": 21,
+            "declared_affectations": 1412,
+            "declared_emergencies": 0,
+            "estimated_affected_seconds": 8291901,
             "weekday_off_seconds": {
-                "0": 986150,
-                "1": 780904,
-                "2": 953133,
-                "3": 835026,
-                "4": 913388,
-                "5": 815366,
-                "6": 880142
+                "0": 1277589,
+                "1": 1269599,
+                "2": 1212495,
+                "3": 1114234,
+                "4": 1219749,
+                "5": 1028004,
+                "6": 1170231
             },
             "weekday_off_avg_seconds": {
-                "0": 18964.423076923078,
-                "1": 15017.384615384615,
-                "2": 18329.48076923077,
-                "3": 15755.207547169812,
-                "4": 17565.153846153848,
-                "5": 15680.115384615385,
-                "6": 16925.80769230769
+                "0": 24569.01923076923,
+                "1": 24415.365384615383,
+                "2": 23317.21153846154,
+                "3": 21023.283018867925,
+                "4": 23456.71153846154,
+                "5": 19769.30769230769,
+                "6": 22504.44230769231
             }
         },
         {
             "number": 4,
-            "mentions": 2082,
-            "declared_recoveries": 18,
-            "declared_affectations": 1376,
-            "declared_emergencies": 751,
-            "estimated_affected_seconds": 6095021,
+            "mentions": 1432,
+            "declared_recoveries": 12,
+            "declared_affectations": 1420,
+            "declared_emergencies": 0,
+            "estimated_affected_seconds": 8293280,
             "weekday_off_seconds": {
-                "0": 867598,
-                "1": 737768,
-                "2": 874769,
-                "3": 707901,
-                "4": 1060050,
-                "5": 912990,
-                "6": 933945
+                "0": 1127350,
+                "1": 1258666,
+                "2": 1261587,
+                "3": 1186124,
+                "4": 1281036,
+                "5": 998858,
+                "6": 1179659
             },
             "weekday_off_avg_seconds": {
-                "0": 16684.576923076922,
-                "1": 14187.846153846154,
-                "2": 16822.48076923077,
-                "3": 13356.622641509433,
-                "4": 20385.576923076922,
-                "5": 17557.5,
-                "6": 17960.48076923077
+                "0": 21679.80769230769,
+                "1": 24205.115384615383,
+                "2": 24261.28846153846,
+                "3": 22379.69811320755,
+                "4": 24635.30769230769,
+                "5": 19208.80769230769,
+                "6": 22685.75
             }
         },
         {
             "number": 5,
-            "mentions": 1940,
-            "declared_recoveries": 22,
-            "declared_affectations": 1373,
-            "declared_emergencies": 786,
-            "estimated_affected_seconds": 6062823,
+            "mentions": 1433,
+            "declared_recoveries": 17,
+            "declared_affectations": 1416,
+            "declared_emergencies": 0,
+            "estimated_affected_seconds": 8132692,
             "weekday_off_seconds": {
-                "0": 820318,
-                "1": 803071,
-                "2": 964174,
-                "3": 900842,
-                "4": 929107,
-                "5": 800086,
-                "6": 845225
+                "0": 1141873,
+                "1": 1261007,
+                "2": 1249847,
+                "3": 1155970,
+                "4": 1227727,
+                "5": 1031757,
+                "6": 1064511
             },
             "weekday_off_avg_seconds": {
-                "0": 15775.346153846154,
-                "1": 15443.673076923076,
-                "2": 18541.80769230769,
-                "3": 16997.01886792453,
-                "4": 17867.44230769231,
-                "5": 15386.26923076923,
-                "6": 16254.326923076924
+                "0": 21959.096153846152,
+                "1": 24250.134615384617,
+                "2": 24035.51923076923,
+                "3": 21810.754716981133,
+                "4": 23610.134615384617,
+                "5": 19841.48076923077,
+                "6": 20471.365384615383
             }
         },
         {
             "number": 6,
-            "mentions": 2115,
-            "declared_recoveries": 13,
-            "declared_affectations": 1401,
-            "declared_emergencies": 817,
-            "estimated_affected_seconds": 6119920,
+            "mentions": 1457,
+            "declared_recoveries": 14,
+            "declared_affectations": 1443,
+            "declared_emergencies": 0,
+            "estimated_affected_seconds": 8401935,
             "weekday_off_seconds": {
-                "0": 976613,
-                "1": 849317,
-                "2": 848752,
-                "3": 764346,
-                "4": 987625,
-                "5": 810874,
-                "6": 882393
+                "0": 1167320,
+                "1": 1265584,
+                "2": 1198291,
+                "3": 1272718,
+                "4": 1164026,
+                "5": 1158173,
+                "6": 1175823
             },
             "weekday_off_avg_seconds": {
-                "0": 18781.01923076923,
-                "1": 16333.01923076923,
-                "2": 16322.153846153846,
-                "3": 14421.622641509433,
-                "4": 18992.78846153846,
-                "5": 15593.73076923077,
-                "6": 16969.096153846152
+                "0": 22448.46153846154,
+                "1": 24338.153846153848,
+                "2": 23044.05769230769,
+                "3": 24013.54716981132,
+                "4": 22385.115384615383,
+                "5": 22272.55769230769,
+                "6": 22611.98076923077
             }
         }
     ],
     "sen_analysis": {
-        "mentions": 395,
-        "total_failure_events": 0,
-        "failure_events": []
+        "mentions": 56,
+        "total_failure_events": 2,
+        "failure_events": [
+            {
+                "start_date": "2026-03-04 13:06:12",
+                "start_date_d": "2026-03-04T13:06:12",
+                "start_message": {
+                    "id": 56125,
+                    "link": "https://t.me/EmpresaElectricaDeLaHabana/56125",
+                    "date_utc": "2026-03-04 18:06:12",
+                    "date_utc_d": "2026-03-04T18:06:12",
+                    "date_cuba": "2026-03-04 13:06:12",
+                    "date_cuba_d": "2026-03-04T13:06:12",
+                    "reactions": {
+                        "👍": 112,
+                        "👎": 1827
+                    },
+                    "views": 55061,
+                    "replies": 171,
+                    "text": "🚨 #AHORA || Se produjo una desconexión del Sistema Electroenergético Nacional desde Camagüey hasta Pinar del Río. La desconexión se debe a la salida inesperada de la CTE Antonio Guiteras por un salidero en la caldera a las 12:41. Ya se encuentran activados todos los protocolos para el restablecimiento del SEN."
+                },
+                "end_date": "2026-03-17 14:27:30",
+                "end_date_d": "2026-03-17T14:27:30",
+                "end_message": {
+                    "id": 57318,
+                    "link": "https://t.me/EmpresaElectricaDeLaHabana/57318",
+                    "date_utc": "2026-03-17 18:27:30",
+                    "date_utc_d": "2026-03-17T18:27:30",
+                    "date_cuba": "2026-03-17 14:27:30",
+                    "date_cuba_d": "2026-03-17T14:27:30",
+                    "reactions": {
+                        "👍": 113,
+                        "👎": 765
+                    },
+                    "views": 50480,
+                    "replies": 269,
+                    "text": "EELH|| Operación del Sistema Eléctrico Capitalino:\nA las 2:00 PM se han restablecido:\n\n✅ 157 circuitos de distribución que benefician a 475 176 clientes (302.98MW) para el 55.09% en la ciudad.\n\n🔰Ya se encuentran restablecidos al 100% las Subestaciones, servicios vitales de salud (hospitales) y las fuentes de abasto de agua fundamentales.\n\n⚠️ Según  las condiciones del SEN se realiza el  restablecimiento y rotación de  circuitos y bloques.\n\nℹ️ Seguiremos manteniéndolos al tanto de las informaciones emitidas por nuestra empresa en los canales oficiales o a través del servicio 18888."
+                },
+                "estimated_duration_seconds": 86400
+            },
+            {
+                "start_date": "2026-03-21 19:22:03",
+                "start_date_d": "2026-03-21T19:22:03",
+                "start_message": {
+                    "id": 57673,
+                    "link": "https://t.me/EmpresaElectricaDeLaHabana/57673",
+                    "date_utc": "2026-03-21 23:22:03",
+                    "date_utc_d": "2026-03-21T23:22:03",
+                    "date_cuba": "2026-03-21 19:22:03",
+                    "date_cuba_d": "2026-03-21T19:22:03",
+                    "reactions": {
+                        "👍": 126,
+                        "👎": 3074
+                    },
+                    "views": 66629,
+                    "replies": 426,
+                    "text": "🔴 #AHORA || A las 6:32 ocurrió una desconexión total del Sistema Electroenergético Nacional. Continuaremos informando."
+                },
+                "end_date": "2026-03-22 18:06:12",
+                "end_date_d": "2026-03-22T18:06:12",
+                "end_message": {
+                    "id": 57693,
+                    "link": "https://t.me/EmpresaElectricaDeLaHabana/57693",
+                    "date_utc": "2026-03-22 22:06:12",
+                    "date_utc_d": "2026-03-22T22:06:12",
+                    "date_cuba": "2026-03-22 18:06:12",
+                    "date_cuba_d": "2026-03-22T18:06:12",
+                    "reactions": {
+                        "👍": 77,
+                        "👎": 1075
+                    },
+                    "views": 50523,
+                    "replies": 237,
+                    "text": "EELH|| Aclaramos a la población que en Nota Informativa de las 5:30 pm se les informó que se encuentran restablecidos al 100% los servicios vitales a la población (hospitales y fuentes de abasto de agua fundamentales).\n\n⚠️Sigue persistiendo el déficit de generación, por lo que se encuentra la totalidad de los bloques afectados hasta el momento.\n\nℹ️Seguiremos informando desde nuestras cuentas institucionales o a través del servicio 18888."
+                },
+                "estimated_duration_seconds": 81849
+            }
+        ]
     }
 }

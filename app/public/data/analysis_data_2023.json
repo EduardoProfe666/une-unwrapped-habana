@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-05-01T19:58:10.695033-04:00",
+    "sync_date": "2026-05-01T22:23:23.812518-04:00",
     "year": 2023,
     "first_message": {
         "id": 6715,
@@ -503,11 +503,11 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 11350,
-        "2": 209,
-        "3": 371,
-        "4": 313,
-        "5": 0
+        "1": 8224,
+        "2": 207,
+        "3": 1919,
+        "4": 1641,
+        "5": 252
     },
     "distribution_reaction": {
         "👍": 59915,
@@ -782,9 +782,9 @@
     "blocks_analysis": [
         {
             "number": 1,
-            "mentions": 1257,
-            "declared_recoveries": 1,
-            "declared_affectations": 1,
+            "mentions": 0,
+            "declared_recoveries": 0,
+            "declared_affectations": 0,
             "declared_emergencies": 0,
             "estimated_affected_seconds": 0,
             "weekday_off_seconds": {
@@ -808,8 +808,8 @@
         },
         {
             "number": 2,
-            "mentions": 1156,
-            "declared_recoveries": 1,
+            "mentions": 0,
+            "declared_recoveries": 0,
             "declared_affectations": 0,
             "declared_emergencies": 0,
             "estimated_affected_seconds": 0,
@@ -834,8 +834,8 @@
         },
         {
             "number": 3,
-            "mentions": 886,
-            "declared_recoveries": 1,
+            "mentions": 0,
+            "declared_recoveries": 0,
             "declared_affectations": 0,
             "declared_emergencies": 0,
             "estimated_affected_seconds": 0,
@@ -860,8 +860,8 @@
         },
         {
             "number": 4,
-            "mentions": 708,
-            "declared_recoveries": 1,
+            "mentions": 0,
+            "declared_recoveries": 0,
             "declared_affectations": 0,
             "declared_emergencies": 0,
             "estimated_affected_seconds": 0,
@@ -886,8 +886,8 @@
         },
         {
             "number": 5,
-            "mentions": 805,
-            "declared_recoveries": 1,
+            "mentions": 0,
+            "declared_recoveries": 0,
             "declared_affectations": 0,
             "declared_emergencies": 0,
             "estimated_affected_seconds": 0,
@@ -912,8 +912,8 @@
         },
         {
             "number": 6,
-            "mentions": 810,
-            "declared_recoveries": 1,
+            "mentions": 0,
+            "declared_recoveries": 0,
             "declared_affectations": 0,
             "declared_emergencies": 0,
             "estimated_affected_seconds": 0,
@@ -938,7 +938,7 @@
         }
     ],
     "sen_analysis": {
-        "mentions": 808,
+        "mentions": 5,
         "total_failure_events": 0,
         "failure_events": []
     }
