@@ -32,9 +32,10 @@ from core.ai.taxonomy import (
 logger = logging.getLogger(__name__)
 
 
-# Max characters fed to the classifier. mDeBERTa handles ~1024 tokens; with the
-# typical Spanish ~1.6 chars/token this gives a comfortable margin.
-_MAX_CHARS = 1500
+# Max characters fed to the classifier. UNE messages are short (median ~300
+# chars). Truncating to 800 keeps virtually all real content while halving
+# attention cost vs. the original 1500.
+_MAX_CHARS = 800
 
 
 def _normalize(text: str) -> str:
@@ -114,6 +115,104 @@ _RE_ZONE_TERM = re.compile(
     re.IGNORECASE,
 )
 _RE_BLOCK_TERM = re.compile(r"\bbloque(?:s)?\b", re.IGNORECASE)
+
+
+# ----- FAST-PATH: strong, mutually-exclusive regex matches that determine the
+# category with high certainty. When one of these triggers we can skip the
+# zero-shot classifier entirely (which is the slow part of the pipeline,
+# ~15 forward passes per message). The classifier is kept as fallback for
+# anything ambiguous.
+
+# Domain terms that should appear in any operationally-relevant UNE message.
+# Texts without any of these almost always belong to general_info / institutional.
+# Plurals + verb conjugations are handled with `\w*` suffixes where the stem is
+# unambiguous.
+_DOMAIN_TERMS = re.compile(
+    r"\b(?:bloques?|circuitos?|servicio\s+el[eé]ctric[oa]s?|electricidad|corriente|"
+    r"sistema\s+electroenerg[eé]tico|sistema\s+el[eé]ctrico\s+nacional|sen\b|"
+    r"disparo\w*|disparad[oa]\s+autom[aá]tic[oa]|aver[ií]a\w*|transformador\w*|"
+    r"subestaci[oó]n\w*|generaci[oó]n|demanda|disponibilidad|d[eé]ficit|"
+    r"afectaci[oó]n\w*|afect\w*|restablec\w*|recuperac\w*|recuperad\w*|mantenimiento\w*|"
+    r"fuera\s+de\s+servicio|horario\s+pico|cte\s+|termoel[eé]ctrica\w*|sincroniz\w*|"
+    r"daf\b|\d+\s*mw\b|mw\b|sali[oó]\s+de\s+servicio|entr[oó]\s+en\s+l[ií]nea|"
+    r"fall[oa]\w*|apag[oó]n\w*|descargas?\s+el[eé]ctricas?|fuertes?\s+vientos?|"
+    r"tormenta\w*|cicl[oó]n\w*|hurac[aá]n\w*|en\s+el\s+d[ií]a\s+de\s+ayer|"
+    r"pron[oó]stico|reparto\w*|consejo\s+popular|municipios?)\b",
+    re.IGNORECASE,
+)
+
+
+def has_domain_signal(text: str) -> bool:
+    """True if the message contains at least one term from the electrical-grid domain."""
+    return bool(_DOMAIN_TERMS.search(text)) if text else False
+
+
+def fast_path_category(text: str) -> tuple[str, float] | None:
+    """
+    Returns (category_id, confidence) when the text contains an unambiguous
+    domain marker, else None.
+    """
+    if not text:
+        return None
+
+    # Negative fast-path: no domain term at all → general institutional info.
+    if not _DOMAIN_TERMS.search(text):
+        return ("general_info", 0.7)
+
+    if _RE_DAF.search(text):
+        return ("daf", 0.95)
+
+    has_sen_failure = bool(_RE_SEN_FAILURE.search(text))
+    has_sen_recovery = bool(_RE_SEN_RECOVERY.search(text)) or bool(_RE_SEN_PERCENT.search(text))
+
+    if has_sen_failure and not has_sen_recovery:
+        return ("sen_failure", 0.95)
+    if has_sen_recovery and not has_sen_failure:
+        return ("sen_recovery", 0.85)
+
+    has_daily_resume = bool(_RE_DAILY_RESUME.search(text))
+    has_daily_forecast = bool(_RE_DAILY_FORECAST.search(text))
+    if has_daily_resume and not has_daily_forecast:
+        return ("daily_resume", 0.9)
+    if has_daily_forecast and not has_daily_resume:
+        return ("daily_forecast", 0.85)
+
+    if _RE_SCHEDULED_MAINT.search(text):
+        return ("scheduled_maintenance", 0.9)
+
+    has_block_recovery = bool(_RE_BLOCK_RECOVERY.search(text))
+    has_block_affectation = bool(
+        _RE_BLOCK_AFFECTATION.search(text) or _RE_BLOCK_AFFECTATION_REV.search(text)
+    )
+    if has_block_recovery and not has_block_affectation:
+        return ("block_recovery", 0.85)
+    if has_block_affectation and not has_block_recovery:
+        return ("block_affectation", 0.85)
+
+    if _RE_CIRCUIT_FAILURE.search(text):
+        return ("circuit_failure", 0.85)
+
+    # Thermal unit mention + state verb: skip classifier.
+    if _RE_THERMAL_UNIT.search(text) and _RE_THERMAL_VERBS.search(text):
+        return ("thermal_unit_status", 0.8)
+
+    # Pure apology with no operational marker.
+    if _RE_APOLOGY.search(text):
+        ops_signals = (
+            _RE_DAF.search(text)
+            or _RE_SEN_FAILURE.search(text)
+            or _RE_SEN_RECOVERY.search(text)
+            or _RE_BLOCK_RECOVERY.search(text)
+            or _RE_BLOCK_AFFECTATION.search(text)
+            or _RE_CIRCUIT_FAILURE.search(text)
+        )
+        if not ops_signals:
+            return ("apology_communication", 0.75)
+
+    if _RE_WEATHER.search(text):
+        return ("weather_impact", 0.8)
+
+    return None
 
 
 def _apply_heuristics(text: str, top1_id: str, top1_score: float, pairs: list[tuple[str, float]]) -> tuple[str, float, str | None]:
@@ -220,15 +319,28 @@ def _truncate(text: str) -> str:
 def classify(text: str, classifier=None) -> CategoryResult:
     """
     Classify a single message. If `classifier` is None, the singleton is loaded.
+    Strong-signal regex matches short-circuit the model entirely.
     """
+    text = (text or "").strip()
+    if not text:
+        return CategoryResult(category="general_info", confidence=0.0, low_confidence=True)
+
+    # Fast-path: skip the model if the text contains an unambiguous marker.
+    fp = fast_path_category(text)
+    if fp is not None:
+        cid, conf = fp
+        label = CATEGORIES_BY_ID[cid].label if cid in CATEGORIES_BY_ID else cid
+        return CategoryResult(
+            category=cid,
+            confidence=conf,
+            subcategories=[{"id": cid, "label": label, "score": round(conf, 4)}],
+            low_confidence=False,
+        )
+
     if classifier is None:
         from core.ai.models import get_zero_shot_classifier
 
         classifier = get_zero_shot_classifier()
-
-    text = (text or "").strip()
-    if not text:
-        return CategoryResult(category="general_info", confidence=0.0, low_confidence=True)
 
     hypotheses = get_hypotheses()
     truncated = _truncate(text)

@@ -13,6 +13,11 @@ on:
         required: false
         default: ''
         type: string
+      batch_size:
+        description: 'Inference batch size (default 128)'
+        required: false
+        default: '128'
+        type: string
 
 jobs:
   decide-matrix:
@@ -32,8 +37,10 @@ jobs:
   backfill:
     needs: decide-matrix
     runs-on: ubuntu-latest
-    timeout-minutes: 350
-    # Avoid concurrent commits to telegram_messages.db across years.
+    timeout-minutes: 60
+    # Serialize commits to avoid telegram_messages.db merge conflicts.
+    # Jobs still run sequentially across years (max-parallel: 1) but each
+    # one is now ~3-10 min instead of hours.
     concurrency:
       group: backfill-ai-db
       cancel-in-progress: false
@@ -50,6 +57,11 @@ jobs:
       HF_HOME: ${{ github.workspace }}/.cache/huggingface
       TRANSFORMERS_OFFLINE: "0"
       HF_HUB_OFFLINE: "0"
+      # Force ONNX Runtime to use all logical cores; tokenizers parallelism off
+      # since we batch at the pipeline level.
+      OMP_NUM_THREADS: "4"
+      MKL_NUM_THREADS: "4"
+      TOKENIZERS_PARALLELISM: "false"
 
     steps:
       - name: Check out the repository
@@ -75,9 +87,9 @@ jobs:
             hf-models-
 
       - name: Install dependencies
-        run: uv sync
+        run: uv sync --frozen
 
-      - name: Warm AI models
+      - name: Warm AI models (cache miss only)
         run: uv run python -m core.ai.models
 
       - name: Pull latest before processing
@@ -88,11 +100,11 @@ jobs:
 
       - name: Backfill AI analysis for ${{ matrix.year }}
         run: |
+          ARGS="--year ${{ matrix.year }} --batch-size ${{ github.event.inputs.batch_size || '128' }}"
           if [ -n "${{ github.event.inputs.max_messages }}" ]; then
-            uv run python scripts/backfill_ai.py --year ${{ matrix.year }} --max-messages ${{ github.event.inputs.max_messages }}
-          else
-            uv run python scripts/backfill_ai.py --year ${{ matrix.year }}
+            ARGS="$ARGS --max-messages ${{ github.event.inputs.max_messages }}"
           fi
+          uv run python scripts/backfill_ai.py $ARGS
         env:
           CHANNEL_USERNAME: ${{ secrets.CHANNEL_USERNAME }}
 
@@ -106,5 +118,17 @@ jobs:
         run: |
           git pull --rebase origin "${{ github.ref_name }}" || true
           git add telegram_messages.db "app/public/data/analysis_data_${{ matrix.year }}.json"
-          git diff --quiet && git diff --staged --quiet || \
-            (git commit -m "AI backfill ${{ matrix.year }}: $(date -u)" && git push)
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No changes to commit for ${{ matrix.year }}."
+          else
+            git commit -m "AI backfill ${{ matrix.year }}: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            for i in 1 2 3; do
+              if git push; then
+                echo "Push succeeded on attempt $i"
+                exit 0
+              fi
+              echo "Push failed (attempt $i); rebasing and retrying..."
+              git pull --rebase origin "${{ github.ref_name }}"
+            done
+            echo "Push failed after 3 attempts." && exit 1
+          fi
