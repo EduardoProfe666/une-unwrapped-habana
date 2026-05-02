@@ -212,6 +212,16 @@ def fast_path_category(text: str) -> tuple[str, float] | None:
     if _RE_WEATHER.search(text):
         return ("weather_impact", 0.8)
 
+    # Zone recovery: explicit zone term + recovery verb + no block + no thermal unit.
+    if (
+        _RE_RECOVERY_VERB.search(text)
+        and _RE_ZONE_TERM.search(text)
+        and not _RE_BLOCK_TERM.search(text)
+        and not _RE_THERMAL_UNIT.search(text)
+        and not _RE_SEN_RECOVERY.search(text)
+    ):
+        return ("zone_recovery", 0.8)
+
     return None
 
 
@@ -261,15 +271,16 @@ def _apply_heuristics(text: str, top1_id: str, top1_score: float, pairs: list[tu
         if top1_id not in {"block_affectation", "block_recovery", "sen_failure", "sen_recovery", "daf"}:
             return ("block_affectation", max(top1_score, 0.75), "regex:block_affectation")
 
-    # Zone recovery: recovery verb + zone term + NO block reference.
+    # Zone recovery: recovery verb + zone term + NO block reference + NO thermal unit.
     if (
         _RE_RECOVERY_VERB.search(text)
         and _RE_ZONE_TERM.search(text)
         and not _RE_BLOCK_TERM.search(text)
         and not _RE_SEN_FAILURE.search(text)
+        and not _RE_THERMAL_UNIT.search(text)
     ):
-        if top1_id in {"block_recovery"}:
-            return ("zone_recovery", max(top1_score, 0.75), "regex:zone_recovery")
+        if top1_id in {"block_recovery", "thermal_unit_status", "zone_outage", "general_info"}:
+            return ("zone_recovery", max(top1_score, 0.8), "regex:zone_recovery")
 
     # Thermal unit named + state verb (override even when classifier picked daf).
     if _RE_THERMAL_UNIT.search(text) and _RE_THERMAL_VERBS.search(text):
