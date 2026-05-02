@@ -3,6 +3,7 @@ import {animate, AnimatePresence, m, useMotionValue} from 'framer-motion';
 import {AlertOctagon, Bolt, ChevronLeft, ChevronRight, Crown, Film, Pause, Play, Sparkles, Trophy, X, Zap} from 'lucide-react';
 import type {AffectedZone, BlockAnalysis, UneAnalysis} from '@/src/lib/types';
 import AnimatedCounter from '@/src/components/AnimatedCounter.tsx';
+import {formatDuration} from '@/src/lib/utils.ts';
 
 interface Props {
     data: UneAnalysis;
@@ -151,16 +152,19 @@ const YearWrapped: React.FC<Props> = ({data, primaryColorClass}) => {
             });
         }
 
-        // 7. Most affected block
+        // 7. Most affected block — by REAL DOWNTIME (estimated_affected_seconds),
+        //    not by mention count. The block that spent more hours without power.
         const peakBlock = (data.blocks_analysis ?? []).reduce<BlockAnalysis | null>(
-            (acc, b) => (acc == null || b.declared_affectations > acc.declared_affectations ? b : acc),
+            (acc, b) => (
+                acc == null || (b.estimated_affected_seconds ?? 0) > (acc.estimated_affected_seconds ?? 0) ? b : acc
+            ),
             null
         );
-        if (peakBlock) {
+        if (peakBlock && (peakBlock.estimated_affected_seconds ?? 0) > 0) {
             out.push({
                 title: 'Bloque más golpeado',
                 headline: <>BLOQUE <span className="text-yellow-300">{peakBlock.number}</span></>,
-                sub: `${peakBlock.declared_affectations.toLocaleString()} afectaciones registradas`,
+                sub: `${formatDuration(peakBlock.estimated_affected_seconds)} sin servicio eléctrico`,
                 bg: 'bg-orange-600',
                 Icon: AlertOctagon,
             });

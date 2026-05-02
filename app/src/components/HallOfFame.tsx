@@ -85,17 +85,28 @@ const HallOfFame: React.FC<Props> = ({data, primaryColorClass}) => {
             });
         }
 
-        // 4. Most affected block
+        // 4. Most affected block — ranked by ESTIMATED TIME WITHOUT POWER, not by
+        //    the count of times it was mentioned. The truly worst block is the one
+        //    that spent more hours/days disconnected, regardless of message volume.
         const blocks = data.blocks_analysis ?? [];
         const peakBlock = blocks.reduce<BlockAnalysis | null>(
-            (acc, b) => (acc == null || b.declared_affectations > acc.declared_affectations ? b : acc),
+            (acc, b) => (
+                acc == null || (b.estimated_affected_seconds ?? 0) > (acc.estimated_affected_seconds ?? 0) ? b : acc
+            ),
             null
         );
-        if (peakBlock) {
+        if (peakBlock && (peakBlock.estimated_affected_seconds ?? 0) > 0) {
+            const totalSec = peakBlock.estimated_affected_seconds;
+            const days = Math.floor(totalSec / 86400);
+            const hours = Math.floor((totalSec % 86400) / 3600);
+            // Compact display that fits the card: "23d" or "23d 4h" or "8h"
+            const compact = days > 0
+                ? (hours > 0 ? `${days}d ${hours}h` : `${days}d`)
+                : `${hours}h`;
             out.push({
                 label: 'BLOQUE MÁS GOLPEADO',
-                value: peakBlock.declared_affectations,
-                sub: `Bloque ${peakBlock.number} · afectaciones`,
+                value: compact,
+                sub: `Bloque ${peakBlock.number} · sin servicio`,
                 Icon: AlertOctagon,
                 bg: 'bg-yellow-400',
                 text: 'text-black',
