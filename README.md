@@ -22,7 +22,7 @@
   <p>Una plataforma interactiva para visualizar y analizar el resumen anual de la situación eléctrica en La Habana, de acuerdo con el canal oficial de Telegram de la UNE.</p>
 </div>
 
-![logo](/app/public/banner.webp)
+![logo](/app/public/banner.png)
 
 ## 📝 Descripción
 

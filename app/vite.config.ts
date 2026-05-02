@@ -54,9 +54,9 @@ export default defineConfig(({ mode }) => {
                     ],
                     screenshots: [
                         {
-                            src: 'banner.webp',
-                            sizes: '2878x1422',
-                            type: 'image/webp',
+                            src: 'banner.png',
+                            sizes: '1731x909',
+                            type: 'image/png',
                             form_factor: 'wide',
                             label: 'Vista general del dashboard UNE Unwrapped',
                         },

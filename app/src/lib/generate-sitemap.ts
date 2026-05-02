@@ -51,7 +51,7 @@ const urls: UrlEntry[] = [
         priority: 1.0,
         images: [
             {
-                loc: `${baseUrl}/banner.webp`,
+                loc: `${baseUrl}/banner.png`,
                 title: 'UNE Unwrapped',
                 caption: 'Dashboard del Sistema Electroenergético Nacional en La Habana',
             },
