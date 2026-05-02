@@ -215,7 +215,7 @@ function App() {
     }, []);
 
     if (!data) return <div
-        className="min-h-screen flex items-center justify-center font-bold text-2xl">CARGANDO...</div>;
+        className="min-h-screen flex items-center justify-center font-black text-2xl text-black bg-[#fdf6e3] uppercase tracking-tighter italic">CARGANDO...</div>;
 
     return (
         <LazyMotion features={domAnimation}>
