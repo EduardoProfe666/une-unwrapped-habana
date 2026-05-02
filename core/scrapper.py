@@ -7,21 +7,45 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-__api_id = int(os.getenv("API_ID"))
-__api_hash = os.getenv("API_HASH")
-__api_session = os.getenv("API_SESSION")
-__phone = os.getenv("PHONE")
-__channel_username = os.getenv("CHANNEL_USERNAME")
-__session = StringSession(__api_session) if __api_session else 'session_name'
+
+
+def _telegram_credentials():
+    """
+    Read Telegram credentials lazily so the module is importable in workflows
+    that don't have these secrets (e.g. backfill-ai.yml). Raises a clear error
+    only when a function that actually needs Telegram is invoked.
+    """
+    api_id_raw = os.getenv("API_ID")
+    api_hash = os.getenv("API_HASH")
+    api_session = os.getenv("API_SESSION")
+    phone = os.getenv("PHONE")
+    channel_username = os.getenv("CHANNEL_USERNAME")
+
+    if not api_id_raw:
+        raise RuntimeError(
+            "API_ID env var is missing. Telegram functions require API_ID, API_HASH, "
+            "API_SESSION, PHONE and CHANNEL_USERNAME secrets."
+        )
+
+    api_id = int(api_id_raw)
+    session = StringSession(api_session) if api_session else 'session_name'
+    return api_id, api_hash, session, phone, channel_username
+
+
+def _channel_username() -> str:
+    """Lightweight accessor used by code that only needs the channel name (e.g. links)."""
+    return os.getenv("CHANNEL_USERNAME") or ""
+
 
 def process_all_messages():
     """
     Process all messages from telegram channel and store them on database
     """
+    api_id, api_hash, session, _phone, channel_username = _telegram_credentials()
     conn = setup_database()
 
-    with TelegramClient(__session, __api_id, __api_hash) as client:
-        for message in client.iter_messages(__channel_username, reverse=True):
+    with TelegramClient(session, api_id, api_hash) as client:
+        for message in client.iter_messages(channel_username, reverse=True):
             __process_message(conn, message)
         conn.close()
 
@@ -29,9 +53,10 @@ def process_latest_messages():
     """
     Process latest 50 messages from telegram channel and store them on database
     """
+    api_id, api_hash, session, _phone, channel_username = _telegram_credentials()
     conn = setup_database()
-    with TelegramClient(__session, __api_id, __api_hash) as client:
-        messages = client.get_messages(__channel_username, limit=50)
+    with TelegramClient(session, api_id, api_hash) as client:
+        messages = client.get_messages(channel_username, limit=50)
 
         for message in messages:
             __process_message(conn, message)

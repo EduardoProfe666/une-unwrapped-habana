@@ -4,14 +4,21 @@ from telethon import TelegramClient
 from telethon.sessions import StringSession
 
 load_dotenv()
-__api_id = int(os.getenv("API_ID"))
-__api_hash = os.getenv("API_HASH")
+
 
 def session_generator():
     """
-        Prints out the session from Telegram (API_SESSION) according to API_ID and API_HASH
+        Prints out the session from Telegram (API_SESSION) according to API_ID and API_HASH.
+        Reads env vars lazily so importing this module doesn't require Telegram secrets.
     """
-    with TelegramClient(StringSession(), __api_id, __api_hash) as client:
+    api_id_raw = os.getenv("API_ID")
+    api_hash = os.getenv("API_HASH")
+    if not api_id_raw or not api_hash:
+        raise RuntimeError(
+            "API_ID and API_HASH must be set to generate a session."
+        )
+    api_id = int(api_id_raw)
+    with TelegramClient(StringSession(), api_id, api_hash) as client:
         print("Your string session is:")
         print(client.session.save())
 

@@ -93,10 +93,14 @@ jobs:
           else
             uv run python scripts/backfill_ai.py --year ${{ matrix.year }}
           fi
+        env:
+          CHANNEL_USERNAME: ${{ secrets.CHANNEL_USERNAME }}
 
       - name: Re-run analyzer for ${{ matrix.year }}
         run: |
           uv run python -c "from core import analyze_data; analyze_data(${{ matrix.year }})"
+        env:
+          CHANNEL_USERNAME: ${{ secrets.CHANNEL_USERNAME }}
 
       - name: Commit and Push changes
         run: |

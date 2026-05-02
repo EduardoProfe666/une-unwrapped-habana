@@ -7,7 +7,11 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-__channel_username = os.getenv("CHANNEL_USERNAME")
+
+
+def _channel_username() -> str:
+    """Read CHANNEL_USERNAME lazily so the module loads in workflows that don't set it."""
+    return os.getenv("CHANNEL_USERNAME") or ""
 
 def setup_database():
     """
@@ -137,7 +141,7 @@ def get_messages_by_year(year: int) -> list[TelegramMessage]:
     return data
 
 def construct_link_by_id(message_id):
-    return f"https://t.me/{__channel_username}/{message_id}"
+    return f"https://t.me/{_channel_username()}/{message_id}"
 
 
 def get_year_range() -> tuple[int, int]:
