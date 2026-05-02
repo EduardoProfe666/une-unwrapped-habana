@@ -8,6 +8,7 @@ import AppFooter from "@/src/components/AppFooter.tsx";
 import SectionHeader from "@/src/components/SectionHeader.tsx";
 
 const NavigationHub = lazy(() => import('@/src/components/NavigationHub.tsx'));
+const SyncStatus = lazy(() => import('@/src/components/SyncStatus.tsx'));
 const WeeklyBlockMatrix = lazy(() => import('@/src/components/WeeklyBlockMatrix.tsx'));
 const GithubSupport = lazy(() => import("@/src/components/GithubSupport.tsx"));
 const ReactionSpectrum = lazy(() => import("@/src/components/ReactionSpectrum.tsx"));
@@ -197,52 +198,10 @@ function App() {
         <LazyMotion features={domAnimation}>
             <div className={`min-h-screen ${theme.bg} text-black transition-colors duration-500 relative`}>
 
-                {/* Sync Date Corner */}
-                <m.div
-                    initial={{opacity: 0, y: -10, x: 10}}
-                    animate={{opacity: 0.55, y: 0, x: 0}}
-                    whileHover={{opacity: 1, y: 0, x: 0, scale: 1.02}}
-                    transition={{duration: 0.4, ease: [0.22, 1, 0.36, 1]}}
-                    className="fixed top-0 right-0 z-50 bg-black text-white text-[10px] font-mono border-l-2 border-b-2 border-white/20 group cursor-default"
-                >
-                    <div className="px-3 py-2 flex items-center gap-2">
-                        {/* Live signal indicator */}
-                        <span className="relative flex items-center justify-center">
-                            <m.span
-                                className="absolute w-2 h-2 rounded-full bg-green-400"
-                                animate={{scale: [1, 2, 1], opacity: [0.6, 0, 0.6]}}
-                                transition={{duration: 2, repeat: Infinity, ease: 'easeOut'}}
-                            />
-                            <span className="relative w-2 h-2 rounded-full bg-green-400 border border-white/30"/>
-                        </span>
-
-                        <span className="font-black tracking-widest">SYNC_OK</span>
-                        <span className="opacity-40">:</span>
-                        <span className="font-black">
-                            {new Date(data.sync_date).toLocaleString('es-CU')}
-                        </span>
-
-                        {/* Mini signal bars on the right */}
-                        <div className="hidden md:flex items-end gap-0.5 h-3 ml-1 opacity-70 group-hover:opacity-100 transition-opacity">
-                            {[0, 1, 2, 3].map(i => (
-                                <m.span
-                                    key={i}
-                                    className="w-0.5 bg-green-400"
-                                    animate={{height: ['30%', '100%', '30%']}}
-                                    transition={{duration: 1.4, delay: i * 0.12, repeat: Infinity, ease: 'easeInOut'}}
-                                    style={{minHeight: 2}}
-                                />
-                            ))}
-                        </div>
-                    </div>
-
-                    {/* Animated bottom scanline */}
-                    <m.div
-                        className="absolute bottom-0 left-0 right-0 h-px bg-green-400/60"
-                        animate={{scaleX: [0, 1, 0], originX: [0, 0.5, 1]}}
-                        transition={{duration: 3, repeat: Infinity, ease: 'easeInOut'}}
-                    />
-                </m.div>
+                {/* Sync status corner — live countdown to next hourly sync */}
+                <Suspense fallback={null}>
+                    <SyncStatus syncDate={data.sync_date}/>
+                </Suspense>
 
                 {/* Blackout Failure Easter Egg */}
                 <AnimatePresence>
