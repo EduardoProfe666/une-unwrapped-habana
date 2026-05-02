@@ -487,85 +487,8 @@ function App() {
                     </div>
                 ) : (
                     <main className="max-w-7xl mx-auto p-4 md:p-8 space-y-16">
-                        <SectionHeader id="metrics-group" title="01_MÉTRICAS_BASE" color="bg-blue-400"/>
-                        <div
-                            className="space-y-12">
-                            {/* TOTALS GRID */}
-                            <div id="totals-grid">
-                                <Suspense fallback={<SectionLoader/>}>
-                                    <TotalsGrid
-                                        items={totals}
-                                        containerVariants={fastContainerVariants}
-                                        itemVariants={fastItemVariants}
-                                    />
-                                </Suspense>
-                            </div>
-
-                            {/* AVERAGES */}
-                            <div id="averages">
-                                <Suspense fallback={<SectionLoader/>}>
-                                    <AveragesCard
-                                        accentClass={theme.accent}
-                                        avgViews={data.avg_views}
-                                        avgReactions={data.avg_reactions}
-                                        avgTextLength={data.avg_text_length}
-                                        avgPositive={data.avg_positive_reactions}
-                                        avgNegative={data.avg_negative_reactions}
-                                        year={selectedYear}
-                                    />
-                                </Suspense>
-                            </div>
-
-                            {/* DAILY ACTIVITY */}
-                            <div id="daily-activity">
-                                <Suspense fallback={<SectionLoader/>}>
-                                    <DailyActivity
-                                        dailyMessages={data.daily_messages}
-                                        colorClass={theme.primary}
-                                        year={selectedYear}
-                                    />
-                                </Suspense>
-                            </div>
-
-                            {/* SEVERITY CALENDAR (AI) */}
-                            {data.daily_severity && Object.keys(data.daily_severity).length > 0 && (
-                                <div id="severity-calendar">
-                                    <Suspense fallback={<SectionLoader/>}>
-                                        <SeverityCalendar
-                                            dailySeverity={data.daily_severity}
-                                            year={selectedYear}
-                                            accentClass={theme.accent}
-                                        />
-                                    </Suspense>
-                                </div>
-                            )}
-                        </div>
-
-                        {/* HIGHLIGHT / WORST DAY + CALMEST DAY */}
-                        {(data.worst_day || data.calmest_day) && (
-                            <>
-                                <SectionHeader id="story-group" title="02_HITOS_DEL_AÑO" color="bg-fuchsia-400"/>
-                                <div className="space-y-12">
-                                    {data.worst_day && (
-                                        <div id="worst-day">
-                                            <Suspense fallback={<SectionLoader/>}>
-                                                <WorstDayHero worstDay={data.worst_day}/>
-                                            </Suspense>
-                                        </div>
-                                    )}
-                                    {data.calmest_day && (
-                                        <div id="calmest-day">
-                                            <Suspense fallback={<SectionLoader/>}>
-                                                <CalmestDayHero calmestDay={data.calmest_day}/>
-                                            </Suspense>
-                                        </div>
-                                    )}
-                                </div>
-                            </>
-                        )}
-
-                        {/* WRAPPED — records, health, hall of fame, predictor */}
-                        <SectionHeader id="wrapped-group" title="03_WRAPPED" color="bg-violet-400"/>
+                        {/* 01 — WRAPPED FIRST (Spotify-style hook: STORY MODE button on top) */}
+                        <SectionHeader id="wrapped-group" title="01_WRAPPED" color="bg-violet-400"/>
                         <div className="space-y-12">
                             <div id="year-wrapped">
                                 <Suspense fallback={<SectionLoader/>}>
@@ -599,6 +522,79 @@ function App() {
                                 </div>
                             )}
                         </div>
+
+                        {/* 02 — MÉTRICAS BASE (foundational numbers) */}
+                        <SectionHeader id="metrics-group" title="02_MÉTRICAS_BASE" color="bg-blue-400"/>
+                        <div className="space-y-12">
+                            <div id="totals-grid">
+                                <Suspense fallback={<SectionLoader/>}>
+                                    <TotalsGrid
+                                        items={totals}
+                                        containerVariants={fastContainerVariants}
+                                        itemVariants={fastItemVariants}
+                                    />
+                                </Suspense>
+                            </div>
+
+                            <div id="averages">
+                                <Suspense fallback={<SectionLoader/>}>
+                                    <AveragesCard
+                                        accentClass={theme.accent}
+                                        avgViews={data.avg_views}
+                                        avgReactions={data.avg_reactions}
+                                        avgTextLength={data.avg_text_length}
+                                        avgPositive={data.avg_positive_reactions}
+                                        avgNegative={data.avg_negative_reactions}
+                                        year={selectedYear}
+                                    />
+                                </Suspense>
+                            </div>
+
+                            <div id="daily-activity">
+                                <Suspense fallback={<SectionLoader/>}>
+                                    <DailyActivity
+                                        dailyMessages={data.daily_messages}
+                                        colorClass={theme.primary}
+                                        year={selectedYear}
+                                    />
+                                </Suspense>
+                            </div>
+                        </div>
+
+                        {/* 03 — HITOS DEL AÑO (severity calendar sets the scene → worst → calmest) */}
+                        {((data.daily_severity && Object.keys(data.daily_severity).length > 0) || data.worst_day || data.calmest_day) && (
+                            <>
+                                <SectionHeader id="story-group" title="03_HITOS_DEL_AÑO" color="bg-fuchsia-400"/>
+                                <div className="space-y-12">
+                                    {/* SEVERITY CALENDAR — yearly heatmap that contextualizes the heroes below */}
+                                    {data.daily_severity && Object.keys(data.daily_severity).length > 0 && (
+                                        <div id="severity-calendar">
+                                            <Suspense fallback={<SectionLoader/>}>
+                                                <SeverityCalendar
+                                                    dailySeverity={data.daily_severity}
+                                                    year={selectedYear}
+                                                    accentClass={theme.accent}
+                                                />
+                                            </Suspense>
+                                        </div>
+                                    )}
+                                    {data.worst_day && (
+                                        <div id="worst-day">
+                                            <Suspense fallback={<SectionLoader/>}>
+                                                <WorstDayHero worstDay={data.worst_day}/>
+                                            </Suspense>
+                                        </div>
+                                    )}
+                                    {data.calmest_day && (
+                                        <div id="calmest-day">
+                                            <Suspense fallback={<SectionLoader/>}>
+                                                <CalmestDayHero calmestDay={data.calmest_day}/>
+                                            </Suspense>
+                                        </div>
+                                    )}
+                                </div>
+                            </>
+                        )}
 
                         {/* BLOCKS ANALYSIS */}
                         <SectionHeader id="infra-group" title="04_INFRAESTRUCTURA" color="bg-yellow-400"/>
@@ -745,7 +741,7 @@ function App() {
                                 </section>
                             </div>
 
-                            {/* POWER TIMELINE (AI) */}
+                            {/* POWER TIMELINE (AI) — power numbers over time */}
                             {data.power_timeline && data.power_timeline.length > 0 && (
                                 <div id="power-timeline">
                                     <Suspense fallback={<SectionLoader/>}>
@@ -757,7 +753,25 @@ function App() {
                                 </div>
                             )}
 
-                            {/* DISTRIBUTION */}
+                            {/* CATEGORY STREAMGRAPH — categories over time (continues the time-series flow) */}
+                            {data.ai_categories_monthly && Object.keys(data.ai_categories_monthly).length > 0 && (
+                                <div id="category-streamgraph">
+                                    <Suspense fallback={<SectionLoader/>}>
+                                        <CategoryStreamgraph categoriesMonthly={data.ai_categories_monthly}/>
+                                    </Suspense>
+                                </div>
+                            )}
+
+                            {/* SENTIMENT TIMELINE — sentiment over time */}
+                            {data.sentiment_monthly && Object.keys(data.sentiment_monthly).length > 0 && (
+                                <div id="sentiment">
+                                    <Suspense fallback={<SectionLoader/>}>
+                                        <SentimentTimeline sentimentMonthly={data.sentiment_monthly} primaryColorClass={theme.primary}/>
+                                    </Suspense>
+                                </div>
+                            )}
+
+                            {/* DISTRIBUTION — static category breakdown after the time-series block */}
                             <div id="distribution">
                                 <Suspense fallback={<SectionLoader/>}>
                                     <DistributionSection
@@ -771,24 +785,6 @@ function App() {
                                     />
                                 </Suspense>
                             </div>
-
-                            {/* CATEGORY STREAMGRAPH */}
-                            {data.ai_categories_monthly && Object.keys(data.ai_categories_monthly).length > 0 && (
-                                <div id="category-streamgraph">
-                                    <Suspense fallback={<SectionLoader/>}>
-                                        <CategoryStreamgraph categoriesMonthly={data.ai_categories_monthly}/>
-                                    </Suspense>
-                                </div>
-                            )}
-
-                            {/* SENTIMENT TIMELINE */}
-                            {data.sentiment_monthly && Object.keys(data.sentiment_monthly).length > 0 && (
-                                <div id="sentiment">
-                                    <Suspense fallback={<SectionLoader/>}>
-                                        <SentimentTimeline sentimentMonthly={data.sentiment_monthly} primaryColorClass={theme.primary}/>
-                                    </Suspense>
-                                </div>
-                            )}
 
                             {/*  REACTION SPECTRUM */}
                             <div id="reaction-spectrum">
@@ -805,7 +801,7 @@ function App() {
 
                         <SectionHeader id="social-group" title="07_SOCIAL_Y_TEXTO" color="bg-red-400"/>
                         <div className="space-y-16">
-                            {/* WORD CLOUD */}
+                            {/* WORD CLOUD — visual hook of the year's vocabulary */}
                             <div id="word-cloud">
                                 <section>
                                     <Suspense fallback={<SectionLoader/>}>
@@ -814,7 +810,16 @@ function App() {
                                 </section>
                             </div>
 
-                            {/* Text Stats */}
+                            {/* TOP QUOTES — punchiest text of the year, comes right after word cloud */}
+                            {data.top_quotes && data.top_quotes.length > 0 && (
+                                <div id="top-quotes">
+                                    <Suspense fallback={<SectionLoader/>}>
+                                        <TopQuotes quotes={data.top_quotes} primaryColorClass={theme.primary}/>
+                                    </Suspense>
+                                </div>
+                            )}
+
+                            {/* FIRST / LAST messages — chronological bookends */}
                             <div id="text-stats">
                                 <Suspense fallback={<SectionLoader/>}>
                                     <FirstLastMessages
@@ -834,16 +839,7 @@ function App() {
                                 </Suspense>
                             </div>
 
-                            {/* TOP QUOTES */}
-                            {data.top_quotes && data.top_quotes.length > 0 && (
-                                <div id="top-quotes">
-                                    <Suspense fallback={<SectionLoader/>}>
-                                        <TopQuotes quotes={data.top_quotes} primaryColorClass={theme.primary}/>
-                                    </Suspense>
-                                </div>
-                            )}
-
-                            {/* TOP LISTS */}
+                            {/* TOP LISTS — ranking finale */}
                             <div id="top-lists">
                                 <section className="space-y-16">
                                     <Suspense fallback={<SectionLoader/>}>

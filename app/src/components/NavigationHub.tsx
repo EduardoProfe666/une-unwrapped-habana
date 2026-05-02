@@ -45,25 +45,7 @@ interface SectionGroup {
 
 const SECTIONS: SectionGroup[] = [
     {
-        title: "01_MÉTRICAS_BASE",
-        color: "bg-blue-400",
-        links: [
-            {id: "totals-grid", label: "Resumen General", icon: Hash},
-            {id: "averages", label: "Medias por Mensaje", icon: TrendingUp},
-            {id: "daily-activity", label: "Flujo de Mensajes", icon: BarChart2},
-            {id: "severity-calendar", label: "Calendario de Severidad", icon: CalendarDays},
-        ]
-    },
-    {
-        title: "02_HITOS_DEL_AÑO",
-        color: "bg-fuchsia-400",
-        links: [
-            {id: "worst-day", label: "El Peor Día", icon: Skull},
-            {id: "calmest-day", label: "El Día más Calmo", icon: Leaf},
-        ]
-    },
-    {
-        title: "03_WRAPPED",
+        title: "01_WRAPPED",
         color: "bg-violet-400",
         links: [
             {id: "year-wrapped", label: "Year Wrapped", icon: Film},
@@ -71,6 +53,24 @@ const SECTIONS: SectionGroup[] = [
             {id: "hall-of-fame", label: "Hall of Fame", icon: Trophy},
             {id: "days-counter", label: "Contador del SEN", icon: Award},
             {id: "predictor", label: "Apagómetro", icon: Cpu},
+        ]
+    },
+    {
+        title: "02_MÉTRICAS_BASE",
+        color: "bg-blue-400",
+        links: [
+            {id: "totals-grid", label: "Resumen General", icon: Hash},
+            {id: "averages", label: "Medias por Mensaje", icon: TrendingUp},
+            {id: "daily-activity", label: "Flujo de Mensajes", icon: BarChart2},
+        ]
+    },
+    {
+        title: "03_HITOS_DEL_AÑO",
+        color: "bg-fuchsia-400",
+        links: [
+            {id: "severity-calendar", label: "Calendario de Severidad", icon: CalendarDays},
+            {id: "worst-day", label: "El Peor Día", icon: Skull},
+            {id: "calmest-day", label: "El Día más Calmo", icon: Leaf},
         ]
     },
     {
@@ -100,9 +100,9 @@ const SECTIONS: SectionGroup[] = [
         links: [
             {id: "monthly-charts", label: "Evolución Mensual", icon: TrendingUp},
             {id: "power-timeline", label: "Demanda vs Disponibilidad", icon: Bolt},
-            {id: "distribution", label: "Tipos de Mensajes", icon: BarChart2},
             {id: "category-streamgraph", label: "Marea de Categorías", icon: Waves},
             {id: "sentiment", label: "Termómetro Frustración", icon: HeartPulse},
+            {id: "distribution", label: "Tipos de Mensajes", icon: BarChart2},
             {id: "reaction-spectrum", label: "Espectro de Reacciones", icon: MousePointer2},
         ]
     },
