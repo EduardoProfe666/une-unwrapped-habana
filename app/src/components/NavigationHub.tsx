@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useCallback, useEffect, useMemo, useState} from 'react';
 import {AnimatePresence, m} from 'framer-motion';
 import {
     Activity,
@@ -30,6 +30,7 @@ import {
     X,
     Zap,
 } from 'lucide-react';
+import {rafThrottle} from '@/src/lib/utils.ts';
 
 interface SectionLink {
     id: string;
@@ -119,34 +120,75 @@ const SECTIONS: SectionGroup[] = [
     }
 ];
 
+// Flatten section IDs once at module-load. Used by the scroll observer
+// instead of rebuilding the list on every scroll tick.
+const ALL_SECTION_IDS: string[] = SECTIONS.flatMap(g => g.links.map(l => l.id));
+
 const NavigationHub: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [activeSection, setActiveSection] = useState<string>('');
 
+    // IntersectionObserver is far cheaper than calling getBoundingClientRect on
+    // ~30 elements per scroll tick. We mark a section "active" when it enters
+    // the upper half of the viewport.
     useEffect(() => {
-        const handleScroll = () => {
-            const sections = SECTIONS.flatMap(g => g.links.map(l => l.id));
-            const current = sections.find(section => {
-                const element = document.getElementById(section);
-                if (element) {
-                    const rect = element.getBoundingClientRect();
-                    return rect.top >= 0 && rect.top <= window.innerHeight / 2;
+        if (typeof IntersectionObserver === 'undefined') {
+            // Fallback: throttled scroll observer
+            let lastActive = '';
+            const handle = rafThrottle(() => {
+                const half = window.innerHeight / 2;
+                for (const id of ALL_SECTION_IDS) {
+                    const el = document.getElementById(id);
+                    if (!el) continue;
+                    const top = el.getBoundingClientRect().top;
+                    if (top >= 0 && top <= half) {
+                        if (id !== lastActive) {
+                            lastActive = id;
+                            setActiveSection(id);
+                        }
+                        return;
+                    }
                 }
-                return false;
             });
-            if (current) setActiveSection(current);
-        };
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+            window.addEventListener('scroll', handle, {passive: true});
+            return () => window.removeEventListener('scroll', handle);
+        }
+
+        // Use IntersectionObserver for cheaper "is in upper half of viewport" checks
+        const observer = new IntersectionObserver(
+            (entries) => {
+                // Find the topmost entry that's currently intersecting in the upper half
+                const visible = entries
+                    .filter(e => e.isIntersecting)
+                    .map(e => ({id: e.target.id, top: e.boundingClientRect.top}))
+                    .sort((a, b) => Math.abs(a.top) - Math.abs(b.top));
+                if (visible.length > 0) setActiveSection(visible[0].id);
+            },
+            {
+                // Trigger when the section enters the top 50% of the viewport
+                rootMargin: '0px 0px -50% 0px',
+                threshold: 0,
+            }
+        );
+
+        const elements = ALL_SECTION_IDS
+            .map(id => document.getElementById(id))
+            .filter((el): el is HTMLElement => el != null);
+        elements.forEach(el => observer.observe(el));
+
+        return () => observer.disconnect();
     }, []);
 
-    const scrollTo = (id: string) => {
+    const scrollTo = useCallback((id: string) => {
         const element = document.getElementById(id);
         if (element) {
             element.scrollIntoView({behavior: 'smooth'});
             setIsOpen(false);
         }
-    };
+    }, []);
+
+    const handleClose = useCallback(() => setIsOpen(false), []);
+    const handleOpen = useCallback(() => setIsOpen(true), []);
 
     return (
         <>
@@ -154,7 +196,7 @@ const NavigationHub: React.FC = () => {
                 initial={{scale: 0}}
                 animate={{scale: 1}}
                 whileTap={{scale: 0.95}}
-                onClick={() => setIsOpen(true)}
+                onClick={handleOpen}
                 className="fixed bottom-8 left-4 md:left-8 z-40 bg-white text-black border-4 border-black p-3 md:p-4 shadow-[4px_4px_0px_0px_black] transition-all group hover:translate-x-1 hover:translate-y-1 hover:shadow-none cursor-pointer"
             >
                 <div className="flex items-center gap-2">
@@ -175,7 +217,7 @@ const NavigationHub: React.FC = () => {
                             initial={{opacity: 0}}
                             animate={{opacity: 1}}
                             exit={{opacity: 0}}
-                            onClick={() => setIsOpen(false)}
+                            onClick={handleClose}
                             className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[100]"
                         />
 
@@ -195,7 +237,7 @@ const NavigationHub: React.FC = () => {
                                     <p className="text-[10px] font-mono opacity-60">SYSTEM_DIRECTORY_V1.0</p>
                                 </div>
                                 <button
-                                    onClick={() => setIsOpen(false)}
+                                    onClick={handleClose}
                                     className="cursor-pointer bg-white text-black p-2 border-2 border-black hover:rotate-10 transition-transform duration-100"
                                 >
                                     <X size={24} strokeWidth={3}/>

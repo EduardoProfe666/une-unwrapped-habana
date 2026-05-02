@@ -70,3 +70,15 @@ body {
     #222 20px
   );
 }
+
+/* Respect users who prefer reduced motion: kill all CSS-driven loops, marquees,
+ * and decorative transforms. Framer-motion ships its own opt-in via
+ * useReducedMotion() — this only handles plain CSS animations + transitions. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

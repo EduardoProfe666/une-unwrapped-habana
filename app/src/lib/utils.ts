@@ -48,3 +48,22 @@ export const formatDate = (dateStr: string): string => {
     return dateStr;
   }
 };
+
+/**
+ * Wraps a callback so it fires at most once per animation frame.
+ * Use for scroll/resize/mousemove handlers — coalesces bursts of events
+ * into one call per frame, dropping the work the browser doesn't need.
+ */
+export const rafThrottle = <T extends (...args: never[]) => void>(fn: T): T => {
+  let pending = false;
+  let lastArgs: unknown[] | null = null;
+  return ((...args: unknown[]) => {
+    lastArgs = args;
+    if (pending) return;
+    pending = true;
+    requestAnimationFrame(() => {
+      pending = false;
+      if (lastArgs) fn(...(lastArgs as Parameters<T>));
+    });
+  }) as T;
+};

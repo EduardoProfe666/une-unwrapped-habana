@@ -1,16 +1,55 @@
-import React, { useEffect, useState } from 'react';
-import { Star } from 'lucide-react';
+import React, {memo, useEffect, useState} from 'react';
+import {Star} from 'lucide-react';
 
-const GithubSupport: React.FC<{ accentColor: string }> = ({ accentColor }) => {
-    const [stars, setStars] = useState<number | null>(null);
+const STARS_CACHE_KEY = 'une-gh-stars';
+const STARS_CACHE_TTL_MS = 30 * 60 * 1000; // 30 minutes
+
+interface CachedStars {
+    count: number;
+    fetchedAt: number;
+}
+
+const readCachedStars = (): number | null => {
+    try {
+        const raw = sessionStorage.getItem(STARS_CACHE_KEY);
+        if (!raw) return null;
+        const parsed = JSON.parse(raw) as CachedStars;
+        if (Date.now() - parsed.fetchedAt > STARS_CACHE_TTL_MS) return null;
+        return parsed.count;
+    } catch {
+        return null;
+    }
+};
+
+const writeCachedStars = (count: number) => {
+    try {
+        sessionStorage.setItem(STARS_CACHE_KEY, JSON.stringify({count, fetchedAt: Date.now()}));
+    } catch {
+        /* sessionStorage may be disabled — silently ignore */
+    }
+};
+
+const GithubSupport: React.FC<{accentColor: string}> = ({accentColor}) => {
+    const [stars, setStars] = useState<number | null>(() => readCachedStars());
 
     useEffect(() => {
-        fetch('https://api.github.com/repos/EduardoProfe666/une-unwrapped-habana')
+        // Skip the network call when we already have a fresh cached value.
+        if (stars != null) return;
+
+        const controller = new AbortController();
+        fetch('https://api.github.com/repos/EduardoProfe666/une-unwrapped-habana', {signal: controller.signal})
             .then(res => res.json())
             .then(data => {
-                setStars(data.stargazers_count ? data.stargazers_count : 0)
+                const count = data.stargazers_count ?? 0;
+                setStars(count);
+                writeCachedStars(count);
             })
-            .catch(() => setStars(null));
+            .catch(err => {
+                if (err.name !== 'AbortError') setStars(null);
+            });
+
+        return () => controller.abort();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (
@@ -22,6 +61,10 @@ const GithubSupport: React.FC<{ accentColor: string }> = ({ accentColor }) => {
                 <img
                     src="/images/github-mark.svg"
                     alt=""
+                    width="256"
+                    height="256"
+                    loading="lazy"
+                    decoding="async"
                     className="absolute -right-10 -bottom-10 w-64 h-64 opacity-[0.03] -rotate-12 pointer-events-none group-hover/card:rotate-0 transition-transform duration-700"
                 />
 
@@ -33,6 +76,10 @@ const GithubSupport: React.FC<{ accentColor: string }> = ({ accentColor }) => {
                             <img
                                 src="/images/github-mark.svg"
                                 alt="GitHub Logo"
+                                width="64"
+                                height="64"
+                                loading="lazy"
+                                decoding="async"
                                 className="w-16 h-16 invert"
                             />
                         </div>
@@ -73,7 +120,7 @@ const GithubSupport: React.FC<{ accentColor: string }> = ({ accentColor }) => {
 
                             <div className="bg-black w-full py-2 px-4 flex justify-center items-center border-2 border-white/20 shadow-inner">
                                 <span className="text-5xl md:text-7xl font-mono tracking-tighter text-yellow-400 z-20 relative italic animate-pulse">
-                                    {stars ? stars.toString().padStart(2, '0') : '--'}
+                                    {stars != null ? stars.toString().padStart(2, '0') : '--'}
                                 </span>
                             </div>
 
@@ -88,4 +135,4 @@ const GithubSupport: React.FC<{ accentColor: string }> = ({ accentColor }) => {
     );
 };
 
-export default GithubSupport;
+export default memo(GithubSupport);

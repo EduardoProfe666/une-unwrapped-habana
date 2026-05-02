@@ -1,11 +1,21 @@
-import React, {lazy, Suspense, useEffect, useMemo, useRef, useState} from 'react';
+import React, {lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState} from 'react';
 import {AnimatePresence, domAnimation, LazyMotion, m, Variants} from 'framer-motion';
 import {AVAILABLE_YEARS, YEAR_THEMES} from '@/src/lib/constants.ts';
 import {MessageSquare, ThumbsUp, TrendingUp} from 'lucide-react';
 import SectionLoader from "@/src/components/SectionLoader.tsx";
-import useYearAnalysis from "@/src/hooks/use-year-analysis.ts";
+import useYearAnalysis, {prefetchYearAnalysis} from "@/src/hooks/use-year-analysis.ts";
 import AppFooter from "@/src/components/AppFooter.tsx";
 import SectionHeader from "@/src/components/SectionHeader.tsx";
+import {rafThrottle} from "@/src/lib/utils.ts";
+
+// Module-level constants — avoid re-creating these style objects on every render
+const HERO_DOT_PATTERN: React.CSSProperties = {
+    backgroundImage: 'radial-gradient(#000 2px, transparent 2px)',
+    backgroundSize: '30px 30px',
+};
+const BLACKOUT_HALO: React.CSSProperties = {
+    background: 'radial-gradient(circle at 100px 100px, rgba(255,255,255,0.15) 0%, transparent 60%)',
+};
 
 const NavigationHub = lazy(() => import('@/src/components/NavigationHub.tsx'));
 const SyncStatus = lazy(() => import('@/src/components/SyncStatus.tsx'));
@@ -61,10 +71,8 @@ function App() {
     const [powerState, setPowerState] = useState<'ON' | 'OVERLOAD' | 'OFF'>('ON');
     const audioRef = useRef<HTMLAudioElement | null>(null);
     useEffect(() => {
-        audioRef.current = new Audio('/audio/choco.mp3');
-        audioRef.current.volume = 0.8;
-        audioRef.current.preload = 'auto';
-
+        // Lazy-init the audio element only on first play. preload="none" so the
+        // ~50KB mp3 isn't downloaded for users who never trigger the easter egg.
         return () => {
             if (audioRef.current) {
                 audioRef.current.pause();
@@ -74,30 +82,28 @@ function App() {
     }, []);
 
     useEffect(() => {
-        const audio = audioRef.current;
-        if (!audio) return;
-
         if (powerState === 'OFF') {
-            audio.currentTime = 0;
-            audio.play().catch(e => console.error("Error playing audio:", e));
-        } else if (powerState === 'ON') {
-            audio.pause();
-            audio.currentTime = 0;
+            if (!audioRef.current) {
+                audioRef.current = new Audio('/audio/choco.mp3');
+                audioRef.current.volume = 0.8;
+                audioRef.current.preload = 'none';
+            }
+            audioRef.current.currentTime = 0;
+            audioRef.current.play().catch(e => console.error("Error playing audio:", e));
+        } else if (powerState === 'ON' && audioRef.current) {
+            audioRef.current.pause();
+            audioRef.current.currentTime = 0;
         }
     }, [powerState]);
 
-    const triggerBlackout = () => {
-        if (powerState === 'OFF') {
-            setPowerState('ON');
-            return;
-        }
-        setPowerState('OVERLOAD');
-        if (navigator.vibrate) navigator.vibrate([100, 50, 100, 50, 200, 100, 200, 100, 300, 100, 600]);
-
-        setTimeout(() => {
-            setPowerState('OFF');
-        }, 2000);
-    };
+    const triggerBlackout = useCallback(() => {
+        setPowerState(prev => {
+            if (prev === 'OFF') return 'ON';
+            if (navigator.vibrate) navigator.vibrate([100, 50, 100, 50, 200, 100, 200, 100, 300, 100, 600]);
+            window.setTimeout(() => setPowerState('OFF'), 2000);
+            return 'OVERLOAD';
+        });
+    }, []);
 
     const fastContainerVariants = useMemo<Variants>(() => ({
         hidden: {},
@@ -176,19 +182,30 @@ function App() {
         [data]
     );
 
-    const scrollToFooter = () => {
+    const scrollToFooter = useCallback(() => {
         window.scrollTo({
             top: document.documentElement.scrollHeight,
             behavior: 'smooth'
         });
-    };
+    }, []);
 
+    const scrollToTop = useCallback(() => {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    }, []);
+
+    // RAF-throttled — coalesces scroll bursts into one update per frame.
+    // Also avoids redundant setState calls when the threshold doesn't change.
     useEffect(() => {
-        const handleScroll = () => {
-            setShowScrollTop(window.scrollY > 400);
-        };
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+        let visible = false;
+        const update = rafThrottle(() => {
+            const next = window.scrollY > 400;
+            if (next !== visible) {
+                visible = next;
+                setShowScrollTop(next);
+            }
+        });
+        window.addEventListener('scroll', update, {passive: true});
+        return () => window.removeEventListener('scroll', update);
     }, []);
 
     if (!data) return <div
@@ -238,9 +255,7 @@ function App() {
                                 className="fixed top-0 left-0 w-[400px] h-[400px] pointer-events-none z-[90]"
                                 animate={{ opacity: [0.2, 0.4, 0.1, 0.3] }}
                                 transition={{ duration: 4, repeat: Infinity, repeatType: "mirror" }}
-                                style={{
-                                    background: 'radial-gradient(circle at 100px 100px, rgba(255,255,255,0.15) 0%, transparent 60%)'
-                                }}
+                                style={BLACKOUT_HALO}
                             />
                         </>
                     )}
@@ -254,7 +269,7 @@ function App() {
                         x: showScrollTop ? 0 : 20,
                         pointerEvents: showScrollTop ? 'auto' : 'none'
                     }}
-                    onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
+                    onClick={scrollToTop}
                     className={`fixed cursor-pointer bottom-8 right-8 z-[100] p-4 ${theme.primary} border-4 border-black shadow-[4px_4px_0px_0px_black] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all group`}
                 >
                     <div className="flex flex-col items-center leading-none">
@@ -266,11 +281,7 @@ function App() {
                 {/* Hero Section */}
                 <header
                     className="min-h-[80vh] flex flex-col items-center justify-center p-6 relative overflow-hidden border-b-4 border-black bg-white">
-                    <div className="absolute inset-0 opacity-[0.05] pointer-events-none"
-                         style={{
-                             backgroundImage: 'radial-gradient(#000 2px, transparent 2px)',
-                             backgroundSize: '30px 30px'
-                         }}/>
+                    <div className="absolute inset-0 opacity-[0.05] pointer-events-none" style={HERO_DOT_PATTERN}/>
                     <div className="absolute top-8 left-8 flex items-center gap-4 group z-[95]">
                         <m.button
                             onClick={triggerBlackout}
@@ -361,6 +372,8 @@ function App() {
                                 <div key={year} className="relative group">
                                     <button
                                         onClick={() => setSelectedYear(year)}
+                                        onMouseEnter={() => prefetchYearAnalysis(year)}
+                                        onFocus={() => prefetchYearAnalysis(year)}
                                         className={`px-6 py-3 font-bold cursor-pointer border-4 border-black text-lg shadow-[4px_4px_0px_0px_black] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all active:shadow-none relative overflow-visible ${
                                             selectedYear === year ? `${theme.primary} text-white` : 'bg-white'
                                         }`}

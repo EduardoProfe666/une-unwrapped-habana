@@ -90,6 +90,12 @@ export default defineConfig(({ mode }) => {
                             if (id.includes('recharts')) return 'vendor-charts';
                             if (id.includes('framer-motion')) return 'vendor-motion';
                             if (id.includes('lucide-react')) return 'vendor-icons';
+                            // html-to-image is dynamically imported only on click —
+                            // returning undefined lets Rollup put it in its own
+                            // async chunk instead of forcing it into vendor-core.
+                            if (id.includes('html-to-image')) return undefined;
+                            // Vercel telemetry is also lazy-loaded after first paint.
+                            if (id.includes('@vercel')) return undefined;
                             return 'vendor-core';
                         }
                     }

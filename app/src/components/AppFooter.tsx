@@ -89,7 +89,7 @@ const AppFooter: React.FC<AppFooterProps> = ({year, color}) => {
                     <span>&copy; {new Date().getFullYear()} UNE_UNWRAPPED_HABANA_PROJECT</span>
                 </div>
                 <div className="flex gap-8 opacity-50">
-                    <span>BUILD: 2.5.0</span>
+                    <span>BUILD: 3.1.0</span>
                     <span>ESTADO: <span className="text-green-400">OPERACIONAL</span></span>
                 </div>
             </div>
