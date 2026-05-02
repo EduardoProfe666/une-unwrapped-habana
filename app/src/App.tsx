@@ -33,6 +33,20 @@ const WorstDayHero = lazy(() => import('@/src/components/WorstDayHero.tsx'));
 const GridStatusBanner = lazy(() => import('@/src/components/GridStatusBanner.tsx'));
 const BlockExplorer = lazy(() => import('@/src/components/BlockExplorer.tsx'));
 
+// WRAPPED / records sections
+const HallOfFame = lazy(() => import('@/src/components/HallOfFame.tsx'));
+const DaysWithoutBlackout = lazy(() => import('@/src/components/DaysWithoutBlackout.tsx'));
+const HealthScore = lazy(() => import('@/src/components/HealthScore.tsx'));
+const CalmestDayHero = lazy(() => import('@/src/components/CalmestDayHero.tsx'));
+const WeeklyHeatmap = lazy(() => import('@/src/components/WeeklyHeatmap.tsx'));
+const SentimentTimeline = lazy(() => import('@/src/components/SentimentTimeline.tsx'));
+const TopQuotes = lazy(() => import('@/src/components/TopQuotes.tsx'));
+const BlocksRadar = lazy(() => import('@/src/components/BlocksRadar.tsx'));
+const CategoryStreamgraph = lazy(() => import('@/src/components/CategoryStreamgraph.tsx'));
+const BlackoutPredictor = lazy(() => import('@/src/components/BlackoutPredictor.tsx'));
+const LiveTicker = lazy(() => import('@/src/components/LiveTicker.tsx'));
+const YearWrapped = lazy(() => import('@/src/components/YearWrapped.tsx'));
+
 function App() {
     const [selectedYear, setSelectedYear] = useState<number>(2025);
     const {data, loading} = useYearAnalysis(selectedYear);
@@ -457,6 +471,11 @@ function App() {
                     <GridStatusBanner status={data.live_grid_status} year={selectedYear}/>
                 </Suspense>
 
+                {/* Live ticker bar */}
+                <Suspense fallback={null}>
+                    <LiveTicker data={data} primaryColorClass={theme.primary}/>
+                </Suspense>
+
                 {loading ? (
                     <div className="h-screen flex items-center justify-center">
                         <div className="text-center space-y-4">
@@ -522,22 +541,67 @@ function App() {
                             )}
                         </div>
 
-                        {/* HIGHLIGHT / WORST DAY */}
-                        {data.worst_day && (
+                        {/* HIGHLIGHT / WORST DAY + CALMEST DAY */}
+                        {(data.worst_day || data.calmest_day) && (
                             <>
-                                <SectionHeader id="story-group" title="02_HITO_DEL_AÑO" color="bg-fuchsia-400"/>
+                                <SectionHeader id="story-group" title="02_HITOS_DEL_AÑO" color="bg-fuchsia-400"/>
                                 <div className="space-y-12">
-                                    <div id="worst-day">
-                                        <Suspense fallback={<SectionLoader/>}>
-                                            <WorstDayHero worstDay={data.worst_day}/>
-                                        </Suspense>
-                                    </div>
+                                    {data.worst_day && (
+                                        <div id="worst-day">
+                                            <Suspense fallback={<SectionLoader/>}>
+                                                <WorstDayHero worstDay={data.worst_day}/>
+                                            </Suspense>
+                                        </div>
+                                    )}
+                                    {data.calmest_day && (
+                                        <div id="calmest-day">
+                                            <Suspense fallback={<SectionLoader/>}>
+                                                <CalmestDayHero calmestDay={data.calmest_day}/>
+                                            </Suspense>
+                                        </div>
+                                    )}
                                 </div>
                             </>
                         )}
 
+                        {/* WRAPPED — records, health, hall of fame, predictor */}
+                        <SectionHeader id="wrapped-group" title="03_WRAPPED" color="bg-violet-400"/>
+                        <div className="space-y-12">
+                            <div id="year-wrapped">
+                                <Suspense fallback={<SectionLoader/>}>
+                                    <YearWrapped data={data} primaryColorClass={theme.primary} secondaryColorClass={theme.secondary}/>
+                                </Suspense>
+                            </div>
+                            {data.health_score != null && (
+                                <div id="health-score">
+                                    <Suspense fallback={<SectionLoader/>}>
+                                        <HealthScore score={data.health_score} breakdown={data.health_breakdown}/>
+                                    </Suspense>
+                                </div>
+                            )}
+                            <div id="hall-of-fame">
+                                <Suspense fallback={<SectionLoader/>}>
+                                    <HallOfFame data={data} primaryColorClass={theme.primary}/>
+                                </Suspense>
+                            </div>
+                            {data.year_records && (
+                                <div id="days-counter">
+                                    <Suspense fallback={<SectionLoader/>}>
+                                        <DaysWithoutBlackout records={data.year_records}/>
+                                    </Suspense>
+                                </div>
+                            )}
+                            {data.blackout_probability_now != null && (
+                                <div id="predictor">
+                                    <Suspense fallback={<SectionLoader/>}>
+                                        <BlackoutPredictor probability={data.blackout_probability_now}/>
+                                    </Suspense>
+                                </div>
+                            )}
+                        </div>
+
                         {/* BLOCKS ANALYSIS */}
-                        <SectionHeader id="infra-group" title="03_INFRAESTRUCTURA" color="bg-yellow-400"/>
+                        <SectionHeader id="infra-group" title="04_INFRAESTRUCTURA" color="bg-yellow-400"/>
                         <div className="space-y-16">
                             <div id="blocks-analysis">
                                 <section className="mt-20">
@@ -576,6 +640,15 @@ function App() {
                                             primaryColorClass={theme.primary}
                                             secondaryColorClass={theme.secondary}
                                         />
+                                    </Suspense>
+                                </div>
+                            )}
+
+                            {/* BLOCKS RADAR */}
+                            {data.blocks_analysis && data.blocks_analysis.length > 0 && (
+                                <div id="blocks-radar">
+                                    <Suspense fallback={<SectionLoader/>}>
+                                        <BlocksRadar blocks={data.blocks_analysis} primaryColorClass={theme.primary}/>
                                     </Suspense>
                                 </div>
                             )}
@@ -620,7 +693,7 @@ function App() {
                         {((data.affected_zones && data.affected_zones.length > 0) ||
                           (data.hour_of_day_severity && Object.keys(data.hour_of_day_severity).length > 0)) && (
                             <>
-                                <SectionHeader id="geo-group" title="04_GEOGRAFÍA_Y_RITMO" color="bg-cyan-400"/>
+                                <SectionHeader id="geo-group" title="05_GEOGRAFÍA_Y_RITMO" color="bg-cyan-400"/>
                                 <div className="space-y-16">
                                     {data.affected_zones && data.affected_zones.length > 0 && (
                                         <div id="affected-zones">
@@ -643,11 +716,22 @@ function App() {
                                             </Suspense>
                                         </div>
                                     )}
+
+                                    {data.weekly_hourly_severity && Object.keys(data.weekly_hourly_severity).length > 0 && (
+                                        <div id="weekly-heatmap">
+                                            <Suspense fallback={<SectionLoader/>}>
+                                                <WeeklyHeatmap
+                                                    weeklyHourlySeverity={data.weekly_hourly_severity}
+                                                    primaryColorClass={theme.primary}
+                                                />
+                                            </Suspense>
+                                        </div>
+                                    )}
                                 </div>
                             </>
                         )}
 
-                        <SectionHeader id="analysis-group" title="05_ANÁLISIS_TEMPORAL" color="bg-green-400"/>
+                        <SectionHeader id="analysis-group" title="06_ANÁLISIS_TEMPORAL" color="bg-green-400"/>
                         <div className="space-y-16">
                             {/* MONTHLY CHARTS */}
                             <div id="monthly-charts">
@@ -688,6 +772,24 @@ function App() {
                                 </Suspense>
                             </div>
 
+                            {/* CATEGORY STREAMGRAPH */}
+                            {data.ai_categories_monthly && Object.keys(data.ai_categories_monthly).length > 0 && (
+                                <div id="category-streamgraph">
+                                    <Suspense fallback={<SectionLoader/>}>
+                                        <CategoryStreamgraph categoriesMonthly={data.ai_categories_monthly}/>
+                                    </Suspense>
+                                </div>
+                            )}
+
+                            {/* SENTIMENT TIMELINE */}
+                            {data.sentiment_monthly && Object.keys(data.sentiment_monthly).length > 0 && (
+                                <div id="sentiment">
+                                    <Suspense fallback={<SectionLoader/>}>
+                                        <SentimentTimeline sentimentMonthly={data.sentiment_monthly} primaryColorClass={theme.primary}/>
+                                    </Suspense>
+                                </div>
+                            )}
+
                             {/*  REACTION SPECTRUM */}
                             <div id="reaction-spectrum">
                                 <Suspense fallback={<SectionLoader/>}>
@@ -701,7 +803,7 @@ function App() {
                             </div>
                         </div>
 
-                        <SectionHeader id="social-group" title="06_SOCIAL_Y_TEXTO" color="bg-red-400"/>
+                        <SectionHeader id="social-group" title="07_SOCIAL_Y_TEXTO" color="bg-red-400"/>
                         <div className="space-y-16">
                             {/* WORD CLOUD */}
                             <div id="word-cloud">
@@ -731,6 +833,15 @@ function App() {
                                     />
                                 </Suspense>
                             </div>
+
+                            {/* TOP QUOTES */}
+                            {data.top_quotes && data.top_quotes.length > 0 && (
+                                <div id="top-quotes">
+                                    <Suspense fallback={<SectionLoader/>}>
+                                        <TopQuotes quotes={data.top_quotes} primaryColorClass={theme.primary}/>
+                                    </Suspense>
+                                </div>
+                            )}
 
                             {/* TOP LISTS */}
                             <div id="top-lists">

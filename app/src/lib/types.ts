@@ -104,6 +104,33 @@ export interface WorstDay {
   sample_summary: string;
 }
 
+export interface CalmestDay {
+  date: string;
+  total_events: number;
+  sample_message_id: number;
+}
+
+export interface YearRecords {
+  longest_clean_streak_days: number;
+  longest_clean_streak_start: string;
+  longest_clean_streak_end: string;
+  days_since_sen_failure: number | null;
+  days_since_critical_event: number | null;
+  days_since_block_affectation: number | null;
+  last_sen_failure_date: string;
+  last_critical_event_date: string;
+  last_block_affectation_date: string;
+}
+
+export interface TopQuote {
+  message_id: number;
+  text_preview: string;
+  date: string;
+  views: number;
+  reactions_total: number;
+  metric: 'views' | 'replies' | 'reactions' | string;
+}
+
 export interface UneAnalysis {
   sync_date: string;
   year: number;
@@ -155,6 +182,18 @@ export interface UneAnalysis {
   hour_of_day_severity?: Record<string, number>;
   worst_day?: WorstDay | null;
   live_grid_status?: SenStatus;
+
+  // Wrapped sections
+  calmest_day?: CalmestDay | null;
+  year_records?: YearRecords | null;
+  health_score?: number;
+  health_breakdown?: Record<string, number>;
+  avg_ai_confidence?: number;
+  weekly_hourly_severity?: Record<string, number>;
+  ai_categories_monthly?: Record<string, number[]>;
+  sentiment_monthly?: Record<string, number>;
+  top_quotes?: TopQuote[];
+  blackout_probability_now?: number;
 }
 
 export type YearTheme = {

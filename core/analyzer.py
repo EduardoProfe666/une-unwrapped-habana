@@ -13,6 +13,9 @@ from core.classes import (
     PowerPoint,
     ThermalPlantStats,
     WorstDay,
+    CalmestDay,
+    YearRecords,
+    TopQuote,
 )
 from core.database import get_messages_by_year
 from dataclasses import asdict
@@ -861,6 +864,246 @@ def _populate_ai_sections(
 
     # ---------------- live_grid_status ---------------- #
     data.live_grid_status = last_sen_status
+
+    # ---------------- new wrapped sections ---------------- #
+    _populate_wrapped_sections(data, messages, sorted_msgs, ai_map, daily_critical, severity_by_day)
+
+
+def _populate_wrapped_sections(
+    data: UneAnalysis,
+    messages: list[TelegramMessage],
+    sorted_msgs: list[TelegramMessage],
+    ai_map: dict,
+    daily_critical: dict[str, dict],
+    severity_by_day: dict[int, int],
+) -> None:
+    """Compute records, health score, weekly heatmap, sentiment, top quotes, etc."""
+    year = data.year
+
+    # ---- year_records: longest clean streak + days since markers ---- #
+    is_leap = (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)
+    total_days = 366 if is_leap else 365
+
+    # Date string per day-of-year for this year
+    def doy_to_date(doy: int) -> datetime.date:
+        return datetime.date(year, 1, 1) + datetime.timedelta(days=doy - 1)
+
+    # Determine which days are "clean" (no high/critical events)
+    # severity_by_day: doy -> rank (1=low, 2=med, 3=high, 4=crit). missing = no events.
+    longest_streak = 0
+    streak_start = None
+    streak_end = None
+    cur_streak = 0
+    cur_start = None
+    today_doy_cap = total_days  # streak runs over the entire year
+
+    last_critical_doy: int | None = None
+    last_block_aff_doy: int | None = None
+
+    for doy in range(1, total_days + 1):
+        rank = severity_by_day.get(doy, 0)
+        is_clean = rank < 3  # high+ counts as a non-clean day
+        if is_clean:
+            if cur_streak == 0:
+                cur_start = doy
+            cur_streak += 1
+            if cur_streak > longest_streak:
+                longest_streak = cur_streak
+                streak_start = cur_start
+                streak_end = doy
+        else:
+            cur_streak = 0
+            cur_start = None
+            if rank >= 4:  # critical
+                last_critical_doy = doy
+
+    # Last block affectation date (any day with at least one affected block in critical/medium events)
+    for m in sorted_msgs:
+        ai = ai_map.get(m.id)
+        if ai is None or ai.ai_failed:
+            continue
+        if ai.affected_blocks and m.date_cuba_d:
+            doy = m.date_cuba_d.timetuple().tm_yday
+            if last_block_aff_doy is None or doy > last_block_aff_doy:
+                last_block_aff_doy = doy
+
+    # Last SEN failure
+    last_sen_failure_doy: int | None = None
+    for fe in (data.sen_analysis.failure_events if data.sen_analysis else []):
+        if fe.start_date_d and fe.start_date_d.year == year:
+            d = fe.start_date_d.timetuple().tm_yday
+            if last_sen_failure_doy is None or d > last_sen_failure_doy:
+                last_sen_failure_doy = d
+
+    # "Today reference" inside the year — last day with any data is the tail of the year analyzed.
+    last_known_doy = max((m.date_cuba_d.timetuple().tm_yday for m in messages if m.date_cuba_d), default=total_days)
+
+    def days_since(doy: int | None) -> int | None:
+        if doy is None:
+            return None
+        return max(0, last_known_doy - doy)
+
+    records = YearRecords(
+        longest_clean_streak_days=longest_streak,
+        longest_clean_streak_start=doy_to_date(streak_start).isoformat() if streak_start else "",
+        longest_clean_streak_end=doy_to_date(streak_end).isoformat() if streak_end else "",
+        days_since_sen_failure=days_since(last_sen_failure_doy),
+        days_since_critical_event=days_since(last_critical_doy),
+        days_since_block_affectation=days_since(last_block_aff_doy),
+        last_sen_failure_date=doy_to_date(last_sen_failure_doy).isoformat() if last_sen_failure_doy else "",
+        last_critical_event_date=doy_to_date(last_critical_doy).isoformat() if last_critical_doy else "",
+        last_block_affectation_date=doy_to_date(last_block_aff_doy).isoformat() if last_block_aff_doy else "",
+    )
+    data.year_records = records
+
+    # ---- calmest_day ---- #
+    if daily_critical:
+        # Look for a day with 0 critical AND lowest high events
+        candidates = [
+            (k, v) for k, v in daily_critical.items()
+            if v["critical"] == 0 and v["high"] <= 1
+        ]
+        if candidates:
+            calm_key, calm_val = min(candidates, key=lambda kv: (kv[1]["high"], kv[1]["critical"]))
+            data.calmest_day = CalmestDay(
+                date=calm_key,
+                total_events=calm_val["high"] + calm_val["critical"],
+                sample_message_id=calm_val.get("msg_id", 0) or 0,
+            )
+
+    # ---- weekly_hourly_severity (7×24 = 168 cells, weekday=0 Monday) ---- #
+    weekly_hourly: Counter = Counter()
+    for m in sorted_msgs:
+        ai = ai_map.get(m.id)
+        if ai is None or ai.ai_failed or m.date_cuba_d is None:
+            continue
+        if (ai.severity or "") in {"high", "critical"}:
+            wd = m.date_cuba_d.weekday()  # Monday=0
+            hr = m.date_cuba_d.hour
+            weekly_hourly[f"{wd}-{hr}"] += 1
+    data.weekly_hourly_severity = dict(weekly_hourly)
+
+    # ---- ai_categories_monthly (12 monthly counts per category) ---- #
+    monthly_cats: dict[str, list[int]] = {}
+    for m in sorted_msgs:
+        ai = ai_map.get(m.id)
+        if ai is None or ai.ai_failed or m.date_cuba_d is None:
+            continue
+        cat = ai.category or "general_info"
+        if cat not in monthly_cats:
+            monthly_cats[cat] = [0] * 12
+        monthly_cats[cat][m.date_cuba_d.month - 1] += 1
+    data.ai_categories_monthly = monthly_cats
+
+    # ---- avg_ai_confidence ---- #
+    confidences = [
+        ai.category_confidence or 0
+        for ai in ai_map.values()
+        if ai is not None and not ai.ai_failed
+    ]
+    data.avg_ai_confidence = round(sum(confidences) / len(confidences), 4) if confidences else 0.0
+
+    # ---- sentiment_monthly: ratio negative reactions / total per month ---- #
+    POSITIVE_EMOJIS_LOCAL = {'👍', '👏', '😁', '❤', '🙏'}
+    NEGATIVE_EMOJIS_LOCAL = {'👎', '🤬', '😱', '😢'}
+    monthly_neg: dict[int, int] = {m: 0 for m in range(1, 13)}
+    monthly_total: dict[int, int] = {m: 0 for m in range(1, 13)}
+    for m in messages:
+        if not m.date_cuba_d:
+            continue
+        month = m.date_cuba_d.month
+        for emoji, count in (m.reactions or {}).items():
+            monthly_total[month] += count
+            if emoji in NEGATIVE_EMOJIS_LOCAL:
+                monthly_neg[month] += count
+            elif emoji in POSITIVE_EMOJIS_LOCAL:
+                # already counted in total
+                pass
+    data.sentiment_monthly = {
+        mo: round(monthly_neg[mo] / monthly_total[mo], 4) if monthly_total[mo] > 0 else 0.0
+        for mo in range(1, 13)
+    }
+
+    # ---- top_quotes (5 from existing top lists, with text preview) ---- #
+    quotes: list[TopQuote] = []
+    seen_ids: set[int] = set()
+    for src_list, metric_name in [
+        (data.top3_most_viewed_messages or [], 'views'),
+        (data.top3_most_replied_messages or [], 'replies'),
+        (data.top3_most_positive_reaction_messages or [], 'reactions'),
+        (data.top3_most_negative_reaction_messages or [], 'reactions'),
+    ]:
+        for tm in src_list:
+            if tm.id in seen_ids:
+                continue
+            seen_ids.add(tm.id)
+            preview = (tm.text or "").strip().replace("\n", " ")
+            if len(preview) > 280:
+                preview = preview[:277] + "..."
+            quotes.append(
+                TopQuote(
+                    message_id=tm.id,
+                    text_preview=preview,
+                    date=tm.date_cuba or "",
+                    views=tm.views or 0,
+                    reactions_total=sum((tm.reactions or {}).values()),
+                    metric=metric_name,
+                )
+            )
+            if len(quotes) >= 5:
+                break
+        if len(quotes) >= 5:
+            break
+    data.top_quotes = quotes
+
+    # ---- health_score (0..100) ---- #
+    # Components:
+    #  - clean_pct: % of days with no high/critical events (0..100, 30 weight)
+    #  - recovery_ratio: recoveries vs affectations across blocks (0..100, 25 weight)
+    #  - sen_penalty: 100 - 10 per total_failure_events (0..100, 25 weight, capped)
+    #  - sentiment_score: 100 - 100*avg_negative_ratio (0..100, 20 weight)
+    days_with_events = sum(1 for r in severity_by_day.values() if r >= 3)
+    clean_pct = max(0, 100 - round(100 * days_with_events / max(1, total_days)))
+
+    total_aff = sum(b.declared_affectations for b in (data.blocks_analysis or []))
+    total_rec = sum(b.declared_recoveries for b in (data.blocks_analysis or []))
+    recovery_ratio = round(min(100, 100 * total_rec / total_aff)) if total_aff > 0 else 50
+
+    sen_events = data.sen_analysis.total_failure_events if data.sen_analysis else 0
+    sen_penalty = max(0, 100 - sen_events * 10)
+
+    avg_neg = (
+        sum(data.sentiment_monthly.values()) / max(1, len([v for v in data.sentiment_monthly.values() if v > 0]))
+        if data.sentiment_monthly else 0
+    )
+    sentiment_score = round(max(0, 100 - 100 * avg_neg))
+
+    health_score = round(
+        0.30 * clean_pct
+        + 0.25 * recovery_ratio
+        + 0.25 * sen_penalty
+        + 0.20 * sentiment_score
+    )
+    data.health_score = max(0, min(100, health_score))
+    data.health_breakdown = {
+        "clean_pct": clean_pct,
+        "recovery_ratio": recovery_ratio,
+        "sen_penalty": sen_penalty,
+        "sentiment_score": sentiment_score,
+    }
+
+    # ---- blackout_probability_now: based on this weekday + hour from the year's data ---- #
+    # Use the most recent date in the year as "now reference"
+    if last_known_doy:
+        ref_date = doy_to_date(last_known_doy)
+        ref_wd = ref_date.weekday()
+        # Sample what hour the user is most likely to look (peak hour based on data)
+        peak_hour = max(data.hour_of_day_severity.items(), key=lambda kv: kv[1])[0] if data.hour_of_day_severity else 18
+        bucket_key = f"{ref_wd}-{peak_hour}"
+        bucket_count = data.weekly_hourly_severity.get(bucket_key, 0)
+        max_bucket = max(data.weekly_hourly_severity.values()) if data.weekly_hourly_severity else 1
+        prob = round(min(100, max(0, 100 * bucket_count / max(1, max_bucket))))
+        data.blackout_probability_now = prob
 
 
 def _touch_zone(zones: dict, kind: str, name: str, is_aff: bool, is_rec: bool) -> None:

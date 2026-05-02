@@ -188,6 +188,39 @@ class WorstDay:
 
 
 @dataclass
+class CalmestDay:
+    """Calmest day of the year — no critical events, ideally also low high events."""
+    date: str = ""
+    total_events: int = 0
+    sample_message_id: int = 0
+
+
+@dataclass
+class YearRecords:
+    """Notable streaks and last-event timestamps used by the 'days without blackout' counter."""
+    longest_clean_streak_days: int = 0           # mayor racha sin eventos high/critical
+    longest_clean_streak_start: str = ""
+    longest_clean_streak_end: str = ""
+    days_since_sen_failure: Optional[int] = None      # días desde la última desconexión total
+    days_since_critical_event: Optional[int] = None   # días desde el último evento critical
+    days_since_block_affectation: Optional[int] = None
+    last_sen_failure_date: str = ""
+    last_critical_event_date: str = ""
+    last_block_affectation_date: str = ""
+
+
+@dataclass
+class TopQuote:
+    """A simple flattened reference to a top message used as a poster."""
+    message_id: int = 0
+    text_preview: str = ""   # primeros ~280 chars
+    date: str = ""
+    views: int = 0
+    reactions_total: int = 0
+    metric: str = ""         # 'views' | 'reactions' | 'replies' — quién lo coronó como top
+
+
+@dataclass
 class UneAnalysis:
     """
     UNE Analysis class with all the data for UNE-Unwrapped project.
@@ -251,3 +284,15 @@ class UneAnalysis:
     hour_of_day_severity: Dict[int, int] = field(default_factory=dict)  # 0..23 → critical+high count
     worst_day: Optional[WorstDay] = None
     live_grid_status: str = "unknown"  # last-known sen_status in the year
+
+    # ---- New Wrapped-style sections (additive, all optional) ----
+    calmest_day: Optional[CalmestDay] = None
+    year_records: Optional[YearRecords] = None
+    health_score: int = 0  # 0..100 — overall grid health
+    health_breakdown: Dict[str, int] = field(default_factory=dict)  # components feeding the score
+    avg_ai_confidence: float = 0.0  # mean classifier confidence
+    weekly_hourly_severity: Dict[str, int] = field(default_factory=dict)  # "wd-hour" e.g. "0-18" → count of high+critical
+    ai_categories_monthly: Dict[str, List[int]] = field(default_factory=dict)  # category → 12 monthly counts
+    sentiment_monthly: Dict[int, float] = field(default_factory=dict)  # month → ratio negativas / totales (0..1)
+    top_quotes: List[TopQuote] = field(default_factory=list)
+    blackout_probability_now: int = 0  # 0..100 — for the "predictor" widget at this weekday/hour

@@ -9,16 +9,24 @@ import {
     CalendarDays,
     Clock,
     Compass,
+    Cpu,
     Factory,
+    Film,
     Hash,
+    HeartPulse,
+    Hexagon,
     Layers,
+    Leaf,
     Map,
     MapPinned,
     MessageSquare,
     MousePointer2,
+    Quote,
     Search,
     Skull,
+    Trophy,
     TrendingUp,
+    Waves,
     X,
     Zap,
 } from 'lucide-react';
@@ -47,46 +55,63 @@ const SECTIONS: SectionGroup[] = [
         ]
     },
     {
-        title: "02_HITO_DEL_AÑO",
+        title: "02_HITOS_DEL_AÑO",
         color: "bg-fuchsia-400",
         links: [
             {id: "worst-day", label: "El Peor Día", icon: Skull},
+            {id: "calmest-day", label: "El Día más Calmo", icon: Leaf},
         ]
     },
     {
-        title: "03_INFRAESTRUCTURA",
+        title: "03_WRAPPED",
+        color: "bg-violet-400",
+        links: [
+            {id: "year-wrapped", label: "Year Wrapped", icon: Film},
+            {id: "health-score", label: "Health Score", icon: HeartPulse},
+            {id: "hall-of-fame", label: "Hall of Fame", icon: Trophy},
+            {id: "days-counter", label: "Contador del SEN", icon: Award},
+            {id: "predictor", label: "Apagómetro", icon: Cpu},
+        ]
+    },
+    {
+        title: "04_INFRAESTRUCTURA",
         color: "bg-yellow-400",
         links: [
             {id: "blocks-analysis", label: "Resumen por Bloque", icon: Layers},
             {id: "block-explorer", label: "Explorador de Bloques", icon: Compass},
+            {id: "blocks-radar", label: "Radar de Bloques", icon: Hexagon},
             {id: "weekly-block-matrix", label: "Matriz Semanal", icon: Calendar},
             {id: "sen-status", label: "Estado del SEN", icon: Zap},
             {id: "thermal-units", label: "Centrales Termoeléctricas", icon: Factory},
         ]
     },
     {
-        title: "04_GEOGRAFÍA_Y_RITMO",
+        title: "05_GEOGRAFÍA_Y_RITMO",
         color: "bg-cyan-400",
         links: [
             {id: "affected-zones", label: "Mapa de Afectaciones", icon: MapPinned},
             {id: "hour-clock", label: "Ritmo del Año", icon: Activity},
+            {id: "weekly-heatmap", label: "Mapa Día × Hora", icon: CalendarDays},
         ]
     },
     {
-        title: "05_ANÁLISIS_TEMPORAL",
+        title: "06_ANÁLISIS_TEMPORAL",
         color: "bg-green-400",
         links: [
             {id: "monthly-charts", label: "Evolución Mensual", icon: TrendingUp},
             {id: "power-timeline", label: "Demanda vs Disponibilidad", icon: Bolt},
             {id: "distribution", label: "Tipos de Mensajes", icon: BarChart2},
+            {id: "category-streamgraph", label: "Marea de Categorías", icon: Waves},
+            {id: "sentiment", label: "Termómetro Frustración", icon: HeartPulse},
             {id: "reaction-spectrum", label: "Espectro de Reacciones", icon: MousePointer2},
         ]
     },
     {
-        title: "06_SOCIAL_Y_TEXTO",
+        title: "07_SOCIAL_Y_TEXTO",
         color: "bg-red-400",
         links: [
             {id: "word-cloud", label: "Nube de Conceptos", icon: MessageSquare},
+            {id: "top-quotes", label: "Frases del Año", icon: Quote},
             {id: "text-stats", label: "Hitos Temporales", icon: Clock},
             {id: "extremes", label: "Longitud Crítica", icon: Search},
             {id: "top-lists", label: "Rankings de Impacto", icon: Award},
