@@ -19,6 +19,7 @@ const BLACKOUT_HALO: React.CSSProperties = {
 
 const NavigationHub = lazy(() => import('@/src/components/NavigationHub.tsx'));
 const SyncStatus = lazy(() => import('@/src/components/SyncStatus.tsx'));
+const PwaUpdatePrompt = lazy(() => import('@/src/components/PwaUpdatePrompt.tsx'));
 const WeeklyBlockMatrix = lazy(() => import('@/src/components/WeeklyBlockMatrix.tsx'));
 const GithubSupport = lazy(() => import("@/src/components/GithubSupport.tsx"));
 const ReactionSpectrum = lazy(() => import("@/src/components/ReactionSpectrum.tsx"));
@@ -839,6 +840,12 @@ function App() {
                 <Suspense fallback={<SectionLoader/>}>
                     <NavigationHub/>
                 </Suspense>
+
+                {/* PWA update toast — appears when a new service worker is waiting */}
+                <Suspense fallback={null}>
+                    <PwaUpdatePrompt/>
+                </Suspense>
+
                 {/* Footer */}
                 <AppFooter
                     year={selectedYear}

@@ -27,7 +27,9 @@ export default defineConfig(({ mode }) => {
                 },
             },
             VitePWA({
-                registerType: 'autoUpdate',
+                // 'prompt' keeps the new service worker in "waiting" state until
+                // the user clicks our custom toast — see PwaUpdatePrompt.tsx.
+                registerType: 'prompt',
                 includeAssets: ['favicon.ico', 'images/*.webp', 'images/*.svg', 'audio/*.mp3', 'fonts/*.woff2'],
                 manifest: {
                     name: 'UNE Unwrapped',
