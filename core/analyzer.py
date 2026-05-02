@@ -9,10 +9,6 @@ from core.classes import (
     SENAnalysis,
     SENFailureAnalysisEvent,
     BlockAnalysis,
-    AffectedZoneAnalysis,
-    PowerMetricsPoint,
-    EventTimelineEntry,
-    MentionedUnitAnalysis,
 )
 from core.database import get_messages_by_year
 from dataclasses import asdict
@@ -474,192 +470,239 @@ def __distribute_seconds_by_day(start: datetime.datetime, end: datetime.datetime
 
 
 # --------------------------------- AI ENRICHMENT ----------------------------------- #
+#
+# We do NOT add new fields to the JSON. Instead, when AI analyses are available
+# in the `message_ai_analysis` table, we use them to OVERWRITE the legacy
+# fields (`distribution_message`, `blocks_analysis`, `sen_analysis`) with more
+# precise numbers derived from the model.
+#
+# JSON shape stays identical to the original — the frontend keeps working as is,
+# but the figures it shows reflect the IA-derived classification.
 
 
-# Heuristic cap to avoid run-away "still affected" intervals when no recovery is reported
-# (mirrors MAX_BLOCK_DURATION_SECONDS used for blocks).
-_AI_ZONE_MAX_GAP_SECONDS = 24 * 60 * 60
+# Map AI category id → legacy MessageType (1..5) used in `distribution_message`.
+# Legacy types:
+#   1 = GENERAL_INFORMATION
+#   2 = DAF
+#   3 = FAILURE_BY_ZONE
+#   4 = DAILY_RESUME
+#   5 = BLOCK_INFORMATION
+_AI_CAT_TO_LEGACY_TYPE: dict[str, int] = {
+    "general_info":          1,
+    "apology_communication": 1,
+    "weather_impact":        1,
+    "scheduled_maintenance": 1,
+    "thermal_unit_status":   1,
+    "daily_forecast":        1,
+    "daf":                   2,
+    "circuit_failure":       3,
+    "zone_outage":           3,
+    "zone_recovery":         3,
+    "daily_resume":          4,
+    "block_affectation":     5,
+    "block_recovery":        5,
+    "sen_failure":           5,
+    "sen_recovery":          5,
+}
 
 
 def __apply_ai_enrichment(data: UneAnalysis, messages: list[TelegramMessage]):
     """
-    Pulls AI analyses for the current year from the DB and aggregates them into
-    additional fields on `data`. Pre-existing fields are never modified.
+    When AI analyses are available, recompute `distribution_message`,
+    `blocks_analysis`, and `sen_analysis` using them. This keeps the JSON
+    shape identical to the original but with figures derived from the model
+    instead of brittle regex.
+
+    Falls back silently to the legacy values already computed if no AI rows
+    exist for this year.
     """
     from core.ai.db import get_ai_analyses_by_year
-    from core.ai import MODEL_VERSION
 
     ai_map = get_ai_analyses_by_year(data.year)
     if not ai_map:
-        data.ai_model_version = MODEL_VERSION
         return
 
-    cat_counts: Counter[str] = Counter()
-    event_counts: Counter[str] = Counter()
-    severity_counts: Counter[str] = Counter()
-
-    # Sort messages chronologically for timeline-style aggregations.
     sorted_msgs = [m for m in messages if m.date_cuba_d]
     sorted_msgs.sort(key=lambda m: m.date_cuba_d)
 
-    # Zone aggregation containers.
-    zones: dict[tuple[str, str], dict] = {}  # (kind, name) -> {mentions, aff, rec, last_aff_dt, accumulated}
-    units: dict[str, dict] = {}  # canonical -> {plant, mentions, failure, recovery}
-    power_timeline: list[PowerMetricsPoint] = []
-    events: list[EventTimelineEntry] = []
+    # ---------------- distribution_message (refined) ---------------- #
+    legacy_dist = {1: 0, 2: 0, 3: 0, 4: 0, 5: 0}
+    for m in messages:
+        ai = ai_map.get(m.id)
+        if ai is None or ai.ai_failed:
+            # Keep the legacy regex bucket if we have no successful AI row.
+            # We re-classify with the same regex used originally to avoid
+            # double-counting (the legacy block already counted these).
+            legacy_dist[_legacy_classify_text(m.text or "")] += 1
+            continue
+        legacy_dist[_AI_CAT_TO_LEGACY_TYPE.get(ai.category or "general_info", 1)] += 1
+    data.distribution_message = legacy_dist
 
-    processed = 0
-    failed = 0
+    # ---------------- blocks_analysis (refined) ---------------- #
+    # Reset counters; we'll rebuild from AI data exclusively.
+    blocks: list[BlockAnalysis] = [BlockAnalysis(number=i) for i in range(1, BLOCK_COUNT + 1)]
+
+    for m in messages:
+        ai = ai_map.get(m.id)
+        if ai is None or ai.ai_failed:
+            continue
+        affected = set(ai.affected_blocks or [])
+        recovered = set(ai.recovered_blocks or [])
+        is_critical = (ai.severity or "") == "critical"
+
+        for i in affected:
+            if 1 <= i <= BLOCK_COUNT:
+                blk = blocks[i - 1]
+                blk.mentions += 1
+                blk.declared_affectations += 1
+                if is_critical:
+                    blk.declared_emergencies += 1
+        for i in recovered:
+            if 1 <= i <= BLOCK_COUNT:
+                blk = blocks[i - 1]
+                blk.mentions += 1
+                blk.declared_recoveries += 1
+
+    # estimated_affected_seconds + weekday_off_seconds — derive from AI events.
+    blocks = _compute_block_durations_from_ai(blocks, sorted_msgs, ai_map, data.year)
+
+    data.blocks_analysis = blocks
+
+    # ---------------- sen_analysis (refined) ---------------- #
+    sen = SENAnalysis()
+    sen.mentions = sum(
+        1
+        for m in messages
+        if (ai := ai_map.get(m.id)) is not None
+        and not ai.ai_failed
+        and (ai.sen_status in {"active_failure", "recovering", "normal"} or ai.category in {"sen_failure", "sen_recovery"})
+    )
+
+    failure_events: list[SENFailureAnalysisEvent] = []
+    open_event: SENFailureAnalysisEvent | None = None
+    for m in sorted_msgs:
+        ai = ai_map.get(m.id)
+        if ai is None or ai.ai_failed:
+            continue
+        if open_event is None and ai.category == "sen_failure":
+            open_event = SENFailureAnalysisEvent(
+                start_date=m.date_cuba,
+                start_date_d=m.date_cuba_d,
+                start_message=m,
+            )
+            continue
+        if open_event is not None and (
+            ai.sen_status == "normal"
+            or (ai.category == "sen_recovery" and "100" in (m.text or ""))
+        ):
+            open_event.end_date = m.date_cuba
+            open_event.end_date_d = m.date_cuba_d
+            open_event.end_message = m
+            if open_event.start_date_d and open_event.end_date_d:
+                duration = (open_event.end_date_d - open_event.start_date_d).total_seconds()
+                # Cap at 24h as a safety bound (same heuristic as legacy code).
+                open_event.estimated_duration_seconds = min(int(duration), MAX_BLOCK_DURATION_SECONDS)
+            failure_events.append(open_event)
+            open_event = None
+
+    sen.failure_events = failure_events
+    sen.total_failure_events = len(failure_events)
+    data.sen_analysis = sen
+
+
+def _legacy_classify_text(text: str) -> int:
+    """Replicates the regex classifier used in the original analyzer body."""
+    text_lower = (text or "").lower()
+    if not text_lower:
+        return 1
+    if "disparado automático por frecuencia" in text_lower or "daf" in text_lower:
+        return 2
+    if (
+        "disparo del circuito" in text_lower
+        or "averías primarias" in text_lower
+        or "averías secundarias" in text_lower
+        or "transformadores dañados" in text_lower
+    ):
+        return 3
+    if "en el día de ayer" in text_lower:
+        return 4
+    if re.search(r'\b(bloque|b|bloque no\.?)[ \.#]*([1-6])', text_lower, re.IGNORECASE):
+        return 5
+    return 1
+
+
+def _compute_block_durations_from_ai(
+    blocks: list[BlockAnalysis],
+    sorted_msgs: list[TelegramMessage],
+    ai_map: dict,
+    year: int,
+):
+    """
+    Derive per-block off-time using AI affected/recovered events. For each block
+    we walk the chronological stream, opening an interval on each affectation
+    and closing it on the next recovery (or capping at MAX_BLOCK_DURATION_SECONDS).
+    """
+    block_monthly_off = {i: {m: 0 for m in range(1, 13)} for i in range(1, BLOCK_COUNT + 1)}
+    block_weekday_off = {i: {d: 0 for d in range(7)} for i in range(1, BLOCK_COUNT + 1)}
+
+    start_date = datetime.date(year, 1, 1)
+    total_days = 366 if calendar.isleap(year) else 365
+    weekday_counts = Counter(
+        (start_date + datetime.timedelta(days=i)).weekday() for i in range(total_days)
+    )
+
+    open_starts: dict[int, datetime.datetime] = {}
+    accumulated: dict[int, int] = {i: 0 for i in range(1, BLOCK_COUNT + 1)}
+
+    def _accumulate(block: int, start: datetime.datetime, end: datetime.datetime):
+        if end <= start:
+            return
+        for day_dt, seconds in __distribute_seconds_by_day(start, end):
+            block_monthly_off[block][day_dt.month] += seconds
+            block_weekday_off[block][day_dt.weekday()] += seconds
 
     for m in sorted_msgs:
         ai = ai_map.get(m.id)
-        if not ai:
+        if ai is None or ai.ai_failed:
+            continue
+        t = m.date_cuba_d
+        if t is None:
             continue
 
-        if ai.ai_failed:
-            failed += 1
-            continue
-        processed += 1
+        # Safety: close out any interval that has been open longer than the cap.
+        for i in range(1, BLOCK_COUNT + 1):
+            start = open_starts.get(i)
+            if start is not None and (t - start).total_seconds() >= MAX_BLOCK_DURATION_SECONDS:
+                end = start + datetime.timedelta(seconds=MAX_BLOCK_DURATION_SECONDS)
+                _accumulate(i, start, end)
+                accumulated[i] += MAX_BLOCK_DURATION_SECONDS
+                open_starts.pop(i, None)
 
-        cat_counts[ai.category or "general_info"] += 1
-        if ai.event_type:
-            event_counts[ai.event_type] += 1
-        if ai.severity:
-            severity_counts[ai.severity] += 1
+        for i in ai.affected_blocks or []:
+            if 1 <= i <= BLOCK_COUNT and i not in open_starts:
+                open_starts[i] = t
 
-        # Helper to update a zone entry.
-        def _touch_zone(kind: str, name: str, is_affectation: bool, is_recovery: bool, t: datetime.datetime):
-            key = (kind, name)
-            entry = zones.get(key)
-            if entry is None:
-                entry = {
-                    "mentions": 0,
-                    "affectation_count": 0,
-                    "recovery_count": 0,
-                    "last_aff_dt": None,
-                    "accumulated": 0,
-                }
-                zones[key] = entry
-            entry["mentions"] += 1
-            if is_affectation:
-                entry["affectation_count"] += 1
-                if entry["last_aff_dt"] is None:
-                    entry["last_aff_dt"] = t
-            if is_recovery:
-                entry["recovery_count"] += 1
-                if entry["last_aff_dt"] is not None:
-                    delta = (t - entry["last_aff_dt"]).total_seconds()
-                    if 0 < delta <= _AI_ZONE_MAX_GAP_SECONDS:
-                        entry["accumulated"] += int(delta)
-                    entry["last_aff_dt"] = None
+        for i in ai.recovered_blocks or []:
+            if 1 <= i <= BLOCK_COUNT and i in open_starts:
+                start = open_starts.pop(i)
+                _accumulate(i, start, t)
+                accumulated[i] += int((t - start).total_seconds())
 
-        is_affectation = (ai.event_type or "") in {"failure", "blackout", "scheduled_cut"}
-        is_recovery = (ai.event_type or "") == "recovery"
+    # Close any still-open intervals at the last message.
+    if sorted_msgs:
+        last_t = sorted_msgs[-1].date_cuba_d
+        for i, start in list(open_starts.items()):
+            if last_t and last_t > start:
+                _accumulate(i, start, last_t)
+                accumulated[i] += int((last_t - start).total_seconds())
 
-        for prov in ai.affected_provinces or []:
-            _touch_zone("province", prov, is_affectation, is_recovery, m.date_cuba_d)
-        for muni in ai.affected_municipalities or []:
-            _touch_zone("municipality", muni, is_affectation, is_recovery, m.date_cuba_d)
-        for circuit in ai.mentioned_circuits or []:
-            _touch_zone("circuit", circuit, is_affectation, is_recovery, m.date_cuba_d)
+    for blk in blocks:
+        i = blk.number
+        blk.weekday_off_seconds = block_weekday_off[i]
+        blk.weekday_off_avg_seconds = {
+            d: (block_weekday_off[i][d] / weekday_counts[d] if weekday_counts[d] > 0 else 0.0)
+            for d in range(7)
+        }
+        blk.estimated_affected_seconds = accumulated[i]
 
-        for u in ai.mentioned_units or []:
-            canonical = (u.get("canonical") or "").strip() if isinstance(u, dict) else ""
-            plant = (u.get("plant") or canonical) if isinstance(u, dict) else canonical
-            if not canonical:
-                continue
-            ue = units.get(canonical)
-            if ue is None:
-                ue = {"plant": plant, "mentions": 0, "failure": 0, "recovery": 0}
-                units[canonical] = ue
-            ue["mentions"] += 1
-            if is_affectation:
-                ue["failure"] += 1
-            if is_recovery:
-                ue["recovery"] += 1
-
-        if any(
-            v is not None
-            for v in (
-                ai.power_demand_mw,
-                ai.power_availability_mw,
-                ai.power_deficit_mw,
-                ai.peak_forecast_mw,
-            )
-        ):
-            power_timeline.append(
-                PowerMetricsPoint(
-                    date=m.date_cuba or "",
-                    demand_mw=ai.power_demand_mw,
-                    availability_mw=ai.power_availability_mw,
-                    deficit_mw=ai.power_deficit_mw,
-                    peak_forecast_mw=ai.peak_forecast_mw,
-                    source_message_id=m.id,
-                )
-            )
-
-        if (ai.severity or "low") in {"medium", "high", "critical"} or (
-            (ai.event_type or "") in {"failure", "recovery", "blackout"}
-        ):
-            zones_for_event: list[str] = []
-            zones_for_event.extend(ai.affected_municipalities or [])
-            zones_for_event.extend(ai.affected_provinces or [])
-            events.append(
-                EventTimelineEntry(
-                    date=m.date_cuba or "",
-                    event_type=ai.event_type or "other",
-                    category=ai.category or "general_info",
-                    severity=ai.severity or "low",
-                    summary=ai.summary or "",
-                    message_id=m.id,
-                    affected_blocks=list(ai.affected_blocks or []),
-                    affected_zones=zones_for_event[:6],
-                )
-            )
-
-    data.ai_distribution_categories = dict(
-        sorted(cat_counts.items(), key=lambda x: x[1], reverse=True)
-    )
-    data.ai_distribution_event_types = dict(
-        sorted(event_counts.items(), key=lambda x: x[1], reverse=True)
-    )
-    data.ai_distribution_severity = dict(
-        sorted(severity_counts.items(), key=lambda x: x[1], reverse=True)
-    )
-
-    data.affected_zones_analysis = sorted(
-        [
-            AffectedZoneAnalysis(
-                name=name,
-                kind=kind,
-                mention_count=info["mentions"],
-                affectation_count=info["affectation_count"],
-                recovery_count=info["recovery_count"],
-                total_estimated_seconds=info["accumulated"],
-            )
-            for (kind, name), info in zones.items()
-        ],
-        key=lambda z: z.mention_count,
-        reverse=True,
-    )
-
-    data.mentioned_units_analysis = sorted(
-        [
-            MentionedUnitAnalysis(
-                canonical_name=name,
-                plant=info["plant"],
-                mentions=info["mentions"],
-                failure_mentions=info["failure"],
-                recovery_mentions=info["recovery"],
-            )
-            for name, info in units.items()
-        ],
-        key=lambda u: u.mentions,
-        reverse=True,
-    )
-
-    data.power_metrics_timeline = power_timeline
-    data.events_timeline = events
-    data.ai_model_version = MODEL_VERSION
-    data.ai_messages_processed = processed
-    data.ai_messages_failed = failed
+    return blocks

@@ -124,47 +124,6 @@ class MessageAIAnalysis:
 
 
 @dataclass
-class AffectedZoneAnalysis:
-    name: str = ""
-    kind: str = ""  # province | municipality | circuit
-    mention_count: int = 0
-    affectation_count: int = 0
-    recovery_count: int = 0
-    total_estimated_seconds: int = 0
-
-
-@dataclass
-class PowerMetricsPoint:
-    date: str = ""
-    demand_mw: Optional[int] = None
-    availability_mw: Optional[int] = None
-    deficit_mw: Optional[int] = None
-    peak_forecast_mw: Optional[int] = None
-    source_message_id: int = 0
-
-
-@dataclass
-class EventTimelineEntry:
-    date: str = ""
-    event_type: str = ""
-    category: str = ""
-    severity: str = ""
-    summary: str = ""
-    message_id: int = 0
-    affected_blocks: List[int] = field(default_factory=list)
-    affected_zones: List[str] = field(default_factory=list)
-
-
-@dataclass
-class MentionedUnitAnalysis:
-    canonical_name: str = ""
-    plant: str = ""
-    mentions: int = 0
-    failure_mentions: int = 0
-    recovery_mentions: int = 0
-
-
-@dataclass
 class UneAnalysis:
     """
     UNE Analysis class with all the data for UNE-Unwrapped project.
@@ -216,15 +175,3 @@ class UneAnalysis:
     # EXTRA ANALYSIS
     blocks_analysis: list[BlockAnalysis] = field(default_factory=list)
     sen_analysis: SENAnalysis = None
-
-    # AI ENRICHMENT (additive, all optional with defaults)
-    ai_distribution_categories: Dict[str, int] = field(default_factory=dict)
-    ai_distribution_event_types: Dict[str, int] = field(default_factory=dict)
-    ai_distribution_severity: Dict[str, int] = field(default_factory=dict)
-    affected_zones_analysis: list[AffectedZoneAnalysis] = field(default_factory=list)
-    power_metrics_timeline: list[PowerMetricsPoint] = field(default_factory=list)
-    events_timeline: list[EventTimelineEntry] = field(default_factory=list)
-    mentioned_units_analysis: list[MentionedUnitAnalysis] = field(default_factory=list)
-    ai_model_version: str = ""
-    ai_messages_processed: int = 0
-    ai_messages_failed: int = 0

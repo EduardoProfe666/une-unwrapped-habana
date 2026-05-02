@@ -7,10 +7,6 @@ from core.classes import (
     BlockAnalysis,
     SENFailureAnalysisEvent,
     MessageAIAnalysis,
-    AffectedZoneAnalysis,
-    PowerMetricsPoint,
-    EventTimelineEntry,
-    MentionedUnitAnalysis,
 )
 from core.database import get_year_range, setup_database, save_message_to_db, get_messages_by_year
 from core.scrapper import process_latest_messages, process_all_messages
