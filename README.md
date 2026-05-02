@@ -117,6 +117,43 @@ Si este resumen te ha parecido interesante, útil o simplemente te gusta la inic
 >   # process_all_messages()
 >   ```
 
+#### Procesamiento con IA (clasificación + extracción de metadata)
+
+El backend incluye una capa de IA (`core/ai/`) que clasifica cada mensaje en
+una taxonomía rica (15 categorías) y extrae metadata estructurada
+(bloques afectados/recuperados, provincias, municipios, MW de déficit/demanda,
+horarios, unidades termoeléctricas, etc.) usando dos modelos HuggingFace
+ejecutándose localmente, sin APIs externas:
+
+- Zero-shot classification: `MoritzLaurer/mDeBERTa-v3-base-mnli-xnli`
+- NER en español: `mrm8488/bert-spanish-cased-finetuned-ner`
+
+Los resultados se guardan en la tabla `message_ai_analysis` y enriquecen el
+JSON anual de cada año con campos adicionales (sin tocar los existentes).
+
+**Backend automático según hardware:**
+- Con GPU CUDA → PyTorch fp16 en GPU (Colab T4: ~5-10 ms/msg).
+- Sin GPU → ONNX Runtime int8 cuantizado (CPU 4 cores: ~250 ms/msg con fast-path).
+
+**Backfill incremental local (CPU):**
+```bash
+uv run python scripts/backfill_ai.py --year 2024 --max-messages 500
+```
+
+**Backfill completo en Google Colab GPU (recomendado para histórico):**
+1. Abre [`notebooks/backfill_ai_colab.ipynb`](notebooks/backfill_ai_colab.ipynb) en Colab.
+2. `Entorno de ejecución` → GPU (T4).
+3. Ejecuta todas las celdas: clona el repo, descarga modelos, procesa todo el histórico (~6-12 min en T4 para 60k mensajes) y descarga un zip con `telegram_messages.db` y los JSONs.
+4. En tu máquina, aplica los resultados:
+   ```bash
+   python scripts/apply_colab_results.py /ruta/a/une_backfill_<ts>.zip
+   ```
+5. Revisa `git diff` y commitea cuando estés conforme.
+
+**Backfill desde GitHub Actions:**
+- Workflow `.github/workflows/backfill-ai.yml` (manual via *Run workflow*).
+- Workflow `.github/workflows/sync.yml` corre el procesamiento incremental cada 12h.
+
 ### Frontend
 
 #### Requisitos Previos

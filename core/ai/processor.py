@@ -296,12 +296,17 @@ def process_batch(
             classifier_pipeline = get_zero_shot_classifier()
 
         hypotheses = get_hypotheses()
+        # Larger batches on GPU (T4 has 16GB VRAM): up to 128 texts × 15 hypotheses
+        # fits comfortably in fp16. On CPU keep batches smaller to stay below 4GB RAM.
+        from core.ai.models import detect_backend
+        gpu = detect_backend() == "gpu"
+        bs_classifier = min(128 if gpu else 32, len(pending_texts))
         try:
             raw_results = classifier_pipeline(
                 pending_texts,
                 candidate_labels=hypotheses,
                 multi_label=True,
-                batch_size=min(32, len(pending_texts)),
+                batch_size=bs_classifier,
             )
         except Exception as exc:  # noqa: BLE001
             logger.warning(
@@ -336,8 +341,11 @@ def process_batch(
             from core.ai.models import get_ner_pipeline
 
             ner_pipeline = get_ner_pipeline()
+        from core.ai.models import detect_backend
+        gpu = detect_backend() == "gpu"
+        bs_ner = min(128 if gpu else 32, len(ner_inputs))
         try:
-            ner_raw = ner_pipeline(ner_inputs, batch_size=min(32, len(ner_inputs)))
+            ner_raw = ner_pipeline(ner_inputs, batch_size=bs_ner)
             if isinstance(ner_raw, dict):
                 ner_raw = [ner_raw]
             for k, ents in enumerate(ner_raw):
