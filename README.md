@@ -12,7 +12,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://une-unwrapped-habana.vercel.app" target="_blank">Demo en Vivo</a> |
+    <a href="https://une-unwrapped.vercel.app" target="_blank">Demo en Vivo</a> |
     <a href="#descripción">Descripción</a> |
     <a href="#instalación">Instalación</a>
   </h3>
@@ -39,7 +39,7 @@ Después, programé un script para procesar esa información y generar los
 
 Finalmente, desarrollé una aplicación web con una estética neobrutalista
 para presentar estos resultados de una manera mucho más amigable y visual.
-Puedes ver el resultado final funcionando en [este enlace](https://une-unwrapped-habana.vercel.app).
+Puedes ver el resultado final funcionando en [este enlace](https://une-unwrapped.vercel.app).
 
 > [!WARNING]
 > Los resúmenes anuales de los datos extraídos no deben tomarse como 
@@ -61,7 +61,7 @@ con un estilo visual que rompe un poco con el flat design de siempre.
 
 ## 🚀 Demo en Vivo
 
-La aplicación está desplegada y disponible en: [une-unwrapped-habana.vercel.app](https://une-unwrapped-habana.vercel.app/)
+La aplicación está desplegada y disponible en: [une-unwrapped.vercel.app](https://une-unwrapped.vercel.app/)
 
 ## 🌟 Apoya el proyecto
 

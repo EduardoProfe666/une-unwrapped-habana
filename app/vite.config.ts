@@ -32,42 +32,99 @@ export default defineConfig(({ mode }) => {
                 registerType: 'prompt',
                 includeAssets: ['favicon.ico', 'images/*.webp', 'images/*.svg', 'audio/*.mp3', 'fonts/*.woff2'],
                 manifest: {
-                    name: 'UNE Unwrapped',
+                    name: 'UNE Unwrapped — Resumen anual del SEN de La Habana',
                     short_name: 'UNE Unwrapped',
-                    description: 'Estadísticas anuales del estado del SEN capitalino',
+                    description: 'Dashboard interactivo del Sistema Electroenergético Nacional en La Habana. Análisis anual de apagones, bloques, déficit y mensajes oficiales.',
                     theme_color: '#f97316',
                     background_color: '#ffffff',
                     display: 'standalone',
+                    display_override: ['standalone', 'minimal-ui', 'browser'],
+                    orientation: 'any',
                     scope: '/',
                     start_url: '/',
+                    id: '/',
+                    lang: 'es-CU',
+                    dir: 'ltr',
+                    categories: ['news', 'utilities', 'productivity', 'government'],
+                    prefer_related_applications: false,
                     icons: [
+                        {src: 'pwa-192x192.png', sizes: '192x192', type: 'image/png', purpose: 'any'},
+                        {src: 'pwa-512x512.png', sizes: '512x512', type: 'image/png', purpose: 'any'},
+                        {src: 'pwa-512x512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable'},
+                    ],
+                    screenshots: [
                         {
-                            src: 'pwa-192x192.png',
-                            sizes: '192x192',
-                            type: 'image/png'
+                            src: 'banner.webp',
+                            sizes: '2878x1422',
+                            type: 'image/webp',
+                            form_factor: 'wide',
+                            label: 'Vista general del dashboard UNE Unwrapped',
+                        },
+                    ],
+                    shortcuts: [
+                        {
+                            name: 'Year Wrapped 2025',
+                            short_name: 'Wrapped 2025',
+                            description: 'Resumen anual del SEN en formato historia',
+                            url: '/?year=2025#year-wrapped',
+                            icons: [{src: 'pwa-192x192.png', sizes: '192x192'}],
                         },
                         {
-                            src: 'pwa-512x512.png',
-                            sizes: '512x512',
-                            type: 'image/png'
+                            name: 'Health Score',
+                            short_name: 'Health',
+                            description: 'Salud global del sistema en una sola métrica',
+                            url: '/#health-score',
+                            icons: [{src: 'pwa-192x192.png', sizes: '192x192'}],
                         },
                         {
-                            src: 'pwa-512x512.png',
-                            sizes: '512x512',
-                            type: 'image/png',
-                            purpose: 'any maskable'
-                        }
-                    ]
+                            name: 'Mapa de afectaciones',
+                            short_name: 'Mapa',
+                            description: 'Provincias y municipios más afectados',
+                            url: '/#affected-zones',
+                            icons: [{src: 'pwa-192x192.png', sizes: '192x192'}],
+                        },
+                    ],
                 },
                 workbox: {
                     globPatterns: ['**/*.{js,css,html,ico,png,svg,webp,woff2}'],
                     cleanupOutdatedCaches: true,
-                }
+                    navigateFallback: '/index.html',
+                    navigateFallbackDenylist: [/^\/sitemap\.xml/, /^\/robots\.txt/, /^\/data\//],
+                },
             }),
             {
                 name: 'generate-robots-txt',
                 closeBundle() {
-                    const robotsContent = `User-agent: *\nAllow: /\n\nSitemap: ${baseUrl.replace(/\/$/, '')}/sitemap.xml`;
+                    const sitemapUrl = `${baseUrl.replace(/\/$/, '')}/sitemap.xml`;
+                    // Permissive but explicit — helps SEO crawlers index everything,
+                    // while keeping the SW + workbox internals out of search results.
+                    const robotsContent = [
+                        '# UNE Unwrapped — robots.txt',
+                        '# Public dashboard, all content is freely indexable.',
+                        '',
+                        'User-agent: *',
+                        'Allow: /',
+                        'Disallow: /sw.js',
+                        'Disallow: /workbox-*.js',
+                        'Disallow: /registerSW.js',
+                        '',
+                        '# Slow down aggressive crawlers a bit',
+                        'User-agent: AhrefsBot',
+                        'Crawl-delay: 10',
+                        '',
+                        'User-agent: SemrushBot',
+                        'Crawl-delay: 10',
+                        '',
+                        '# Allow Google rich result fetcher to read assets for previews',
+                        'User-agent: Googlebot',
+                        'Allow: /',
+                        '',
+                        'User-agent: Googlebot-Image',
+                        'Allow: /',
+                        '',
+                        `Sitemap: ${sitemapUrl}`,
+                        '',
+                    ].join('\n');
                     const outputPath = path.resolve(__dirname, 'dist/robots.txt');
 
                     if (fs.existsSync(path.resolve(__dirname, 'dist'))) {

@@ -1,36 +1,185 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CU" dir="ltr">
 <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
 
-    <meta name="theme-color" content="#f97316" />
-
-    <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.webp">
-    <link rel="canonical" href="%VITE_BASE_URL%">
-    <link rel="preload" href="/fonts/space-grotesk-v22-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="/fonts/space-grotesk-v22-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-
-    <title>UNE Unwrapped</title>
-    <meta name="description" content="Estadísticas anuales del estado del SEN capitalino"/>
-    <meta name="keywords" content="UNE, Unwrapped, estadísticas, resumen anual, datos"/>
+    <!-- ─────────── Primary metadata ─────────── -->
+    <title>UNE Unwrapped — Resumen anual del SEN de La Habana</title>
+    <meta name="description" content="Dashboard interactivo del Sistema Electroenergético Nacional (SEN) en La Habana. Análisis año a año de apagones, bloques, déficit y mensajes oficiales — extraídos del canal de Telegram de la Empresa Eléctrica."/>
+    <meta name="keywords" content="UNE, SEN, apagones Cuba, La Habana, bloques de apagón, déficit eléctrico, Empresa Eléctrica, Telegram, dashboard, estadísticas eléctricas, Sistema Electroenergético Nacional, resumen anual, datos abiertos"/>
     <meta name="author" content="EduardoProfe666"/>
+    <meta name="application-name" content="UNE Unwrapped"/>
+    <meta name="generator" content="Vite + React"/>
+    <meta name="rating" content="general"/>
+    <meta name="referrer" content="strict-origin-when-cross-origin"/>
+
+    <!-- Tell crawlers we want everything indexed, with rich previews -->
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+    <meta name="bingbot" content="index, follow"/>
     <meta name="google-site-verification" content="PunhdoIZrfNnlcr5asDutXWjevsUjr6xBHQBfbns6WQ" />
 
+    <!-- ─────────── Geo-targeting (La Habana, Cuba) ─────────── -->
+    <meta name="geo.region" content="CU-03"/>
+    <meta name="geo.placename" content="La Habana, Cuba"/>
+    <meta name="geo.position" content="23.1136;-82.3666"/>
+    <meta name="ICBM" content="23.1136, -82.3666"/>
+
+    <!-- ─────────── Theme & PWA ─────────── -->
+    <meta name="theme-color" content="#f97316" media="(prefers-color-scheme: light)"/>
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)"/>
+    <meta name="color-scheme" content="light dark"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="apple-mobile-web-app-title" content="UNE Unwrapped"/>
+    <meta name="msapplication-TileColor" content="#f97316"/>
+    <meta name="msapplication-tap-highlight" content="no"/>
+
+    <!-- ─────────── Icons ─────────── -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="icon" type="image/webp" sizes="any" href="/images/logo.webp"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.webp"/>
+    <link rel="mask-icon" href="/images/logo.webp" color="#f97316"/>
+
+    <!-- ─────────── Canonical & alternates ─────────── -->
+    <link rel="canonical" href="%VITE_BASE_URL%"/>
+    <link rel="alternate" hreflang="es-CU" href="%VITE_BASE_URL%"/>
+    <link rel="alternate" hreflang="es" href="%VITE_BASE_URL%"/>
+    <link rel="alternate" hreflang="x-default" href="%VITE_BASE_URL%"/>
+
+    <!-- ─────────── Preloads ─────────── -->
+    <link rel="preconnect" href="https://api.github.com" crossorigin/>
+    <link rel="dns-prefetch" href="https://api.github.com"/>
+    <link rel="preload" href="/fonts/space-grotesk-v22-latin-regular.woff2" as="font" type="font/woff2" crossorigin/>
+    <link rel="preload" href="/fonts/space-grotesk-v22-latin-700.woff2" as="font" type="font/woff2" crossorigin/>
+    <link rel="preload" href="/data/analysis_data_2025.json" as="fetch" type="application/json" crossorigin/>
+
+    <!-- ─────────── Open Graph (Facebook / LinkedIn / WhatsApp / Telegram) ─────────── -->
     <meta property="og:type" content="website"/>
-    <meta property="og:url" content="%VITE_BASE_URL%/"/>
-    <meta property="og:title" content="UNE Unwrapped"/>
-    <meta property="og:site_name" content="UNE Unwrapped">
-    <meta property="og:description" content="Estadísticas anuales del estado del SEN capitalino"/>
+    <meta property="og:site_name" content="UNE Unwrapped"/>
+    <meta property="og:url" content="%VITE_BASE_URL%"/>
+    <meta property="og:title" content="UNE Unwrapped — Resumen anual del SEN de La Habana"/>
+    <meta property="og:description" content="Dashboard interactivo del SEN en La Habana. Análisis año a año de apagones, bloques, déficit y mensajes oficiales."/>
     <meta property="og:image" content="%VITE_BASE_URL%/banner.webp"/>
-    <meta property="twitter:card" content="summary_large_image"/>
-    <meta property="twitter:url" content="%VITE_BASE_URL%/"/>
-    <meta property="twitter:title" content="UNE Unwrapped"/>
-    <meta property="twitter:description" content="Estadísticas anuales del estado del SEN capitalino"/>
-    <meta property="twitter:image" content="%VITE_BASE_URL%/banner.webp"/>
+    <meta property="og:image:secure_url" content="%VITE_BASE_URL%/banner.webp"/>
+    <meta property="og:image:type" content="image/webp"/>
+    <meta property="og:image:width" content="2878"/>
+    <meta property="og:image:height" content="1422"/>
+    <meta property="og:image:alt" content="Vista del dashboard UNE Unwrapped con estadísticas del Sistema Electroenergético Nacional"/>
+    <meta property="og:locale" content="es_CU"/>
+    <meta property="og:locale:alternate" content="es_ES"/>
+
+    <!-- ─────────── Twitter / X ─────────── -->
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:url" content="%VITE_BASE_URL%"/>
+    <meta name="twitter:title" content="UNE Unwrapped — Resumen anual del SEN de La Habana"/>
+    <meta name="twitter:description" content="Dashboard interactivo del SEN en La Habana. Análisis año a año de apagones, bloques, déficit y mensajes oficiales."/>
+    <meta name="twitter:image" content="%VITE_BASE_URL%/banner.webp"/>
+    <meta name="twitter:image:alt" content="Vista del dashboard UNE Unwrapped"/>
+    <meta name="twitter:creator" content="@EduardoProfe666"/>
+    <meta name="twitter:site" content="@EduardoProfe666"/>
+
+    <!-- ─────────── Structured data (JSON-LD) ─────────── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "%VITE_BASE_URL%#website",
+          "url": "%VITE_BASE_URL%",
+          "name": "UNE Unwrapped",
+          "alternateName": "UNE Unwrapped Habana",
+          "description": "Dashboard interactivo del Sistema Electroenergético Nacional (SEN) en La Habana, Cuba. Análisis año a año de apagones, bloques, déficit y mensajes oficiales extraídos del canal de Telegram de la Empresa Eléctrica.",
+          "inLanguage": "es-CU",
+          "publisher": {"@id": "%VITE_BASE_URL%#publisher"}
+        },
+        {
+          "@type": "WebApplication",
+          "@id": "%VITE_BASE_URL%#webapp",
+          "name": "UNE Unwrapped",
+          "url": "%VITE_BASE_URL%",
+          "applicationCategory": "DataVisualizationApplication",
+          "applicationSubCategory": "Energy / Public services",
+          "operatingSystem": "Any (PWA)",
+          "browserRequirements": "Requires JavaScript. Requires HTML5.",
+          "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+          "isAccessibleForFree": true,
+          "inLanguage": "es-CU",
+          "image": "%VITE_BASE_URL%/banner.webp",
+          "screenshot": "%VITE_BASE_URL%/banner.webp",
+          "creator": {"@id": "%VITE_BASE_URL%#publisher"},
+          "about": [
+            {"@type": "Thing", "name": "Sistema Electroenergético Nacional"},
+            {"@type": "Thing", "name": "Apagones en Cuba"},
+            {"@type": "Thing", "name": "Bloques de apagón"},
+            {"@type": "Thing", "name": "Empresa Eléctrica de La Habana"}
+          ],
+          "featureList": [
+            "Resumen anual estilo Wrapped",
+            "Health Score del SEN",
+            "Hall of Fame de récords del año",
+            "Mapa de afectaciones por provincia y municipio",
+            "Análisis por bloque (1-6)",
+            "Calendario de severidad",
+            "Apagómetro - probabilidad horaria",
+            "Categorización de mensajes por IA",
+            "PWA - funciona offline"
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "%VITE_BASE_URL%#publisher",
+          "name": "EduardoProfe666",
+          "url": "https://github.com/EduardoProfe666",
+          "sameAs": [
+            "https://github.com/EduardoProfe666",
+            "https://github.com/EduardoProfe666/une-unwrapped-habana"
+          ]
+        },
+        {
+          "@type": "Dataset",
+          "@id": "%VITE_BASE_URL%#dataset",
+          "name": "UNE Unwrapped — Mensajes oficiales del canal de la Empresa Eléctrica de La Habana",
+          "description": "Conjunto de datos derivado del análisis de mensajes oficiales publicados en el canal de Telegram de la Empresa Eléctrica de La Habana, con clasificación, métricas y agregaciones anuales del estado del SEN.",
+          "url": "%VITE_BASE_URL%",
+          "license": "https://github.com/EduardoProfe666/une-unwrapped-habana/blob/main/LICENSE",
+          "creator": {"@id": "%VITE_BASE_URL%#publisher"},
+          "isAccessibleForFree": true,
+          "inLanguage": "es-CU",
+          "spatialCoverage": {
+            "@type": "Place",
+            "name": "La Habana, Cuba",
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 23.1136,
+              "longitude": -82.3666
+            }
+          },
+          "keywords": ["SEN", "apagones", "La Habana", "Cuba", "energía", "bloques", "déficit eléctrico"],
+          "distribution": [
+            {
+              "@type": "DataDownload",
+              "encodingFormat": "application/json",
+              "contentUrl": "%VITE_BASE_URL%/data/analysis_data_2025.json"
+            }
+          ]
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
+<noscript>
+    <div style="padding: 2rem; font-family: monospace; max-width: 720px; margin: 0 auto; text-align: center; line-height: 1.5;">
+        <h1 style="font-weight: 900; text-transform: uppercase; letter-spacing: -0.02em;">UNE Unwrapped</h1>
+        <p>Este dashboard requiere JavaScript para funcionar. Activa JS en tu navegador o consulta el código fuente en
+            <a href="https://github.com/EduardoProfe666/une-unwrapped-habana">GitHub</a>.</p>
+    </div>
+</noscript>
 <div id="root"></div>
 <script type="module" src="/index.tsx"></script>
 </body>

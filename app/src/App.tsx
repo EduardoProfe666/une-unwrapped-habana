@@ -4,6 +4,7 @@ import {AVAILABLE_YEARS, YEAR_THEMES} from '@/src/lib/constants.ts';
 import {MessageSquare, ThumbsUp, TrendingUp} from 'lucide-react';
 import SectionLoader from "@/src/components/SectionLoader.tsx";
 import useYearAnalysis, {prefetchYearAnalysis} from "@/src/hooks/use-year-analysis.ts";
+import useSeo from "@/src/hooks/use-seo.ts";
 import AppFooter from "@/src/components/AppFooter.tsx";
 import SectionHeader from "@/src/components/SectionHeader.tsx";
 import {rafThrottle} from "@/src/lib/utils.ts";
@@ -63,6 +64,10 @@ function App() {
     const [selectedYear, setSelectedYear] = useState<number>(2025);
     const {data, loading} = useYearAnalysis(selectedYear);
     const [showScrollTop, setShowScrollTop] = useState(false);
+
+    // Update <title>, description meta family, and inject year-specific
+    // Dataset JSON-LD so social cards + search snippets reflect the active year
+    useSeo(selectedYear, data);
 
     const theme = useMemo(
         () => YEAR_THEMES[selectedYear] ?? YEAR_THEMES[2025],
