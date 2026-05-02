@@ -1,8 +1,19 @@
 import datetime
 import calendar
 import json
-from core.classes import UneAnalysis, TelegramMessageWithCount, TelegramMessage, SENAnalysis, SENFailureAnalysisEvent, \
-    BlockAnalysis
+import logging
+from core.classes import (
+    UneAnalysis,
+    TelegramMessageWithCount,
+    TelegramMessage,
+    SENAnalysis,
+    SENFailureAnalysisEvent,
+    BlockAnalysis,
+    AffectedZoneAnalysis,
+    PowerMetricsPoint,
+    EventTimelineEntry,
+    MentionedUnitAnalysis,
+)
 from core.database import get_messages_by_year
 from dataclasses import asdict
 from collections import Counter
@@ -10,6 +21,8 @@ import re
 from zoneinfo import ZoneInfo
 
 from core.serializers import UneAnalysisEncoder
+
+logger = logging.getLogger(__name__)
 
 POSITIVE_EMOJIS = {'👍', '👏', '😁', '❤', '🙏'}
 NEGATIVE_EMOJIS = {'👎', '🤬', '😱', '😢'}
@@ -386,6 +399,14 @@ def analyze_data(year: int):
             block_states[i]["accumulated"]
         )
 
+    # ----------------------------------------------- AI ENRICHMENT ------------------------------------ #
+    # Additive section: pulls per-message AI analysis from `message_ai_analysis` (if present)
+    # and aggregates new fields onto `data`. Never mutates pre-existing fields.
+    try:
+        __apply_ai_enrichment(data, messages)
+    except Exception as e:
+        logger.warning("AI enrichment skipped due to error: %s", e)
+
     # ----------------------------------------------- EXPORT ------------------------------------------- #
     __export_analysis_to_json(data)
 
@@ -450,3 +471,195 @@ def __distribute_seconds_by_day(start: datetime.datetime, end: datetime.datetime
         current = segment_end
 
     return result
+
+
+# --------------------------------- AI ENRICHMENT ----------------------------------- #
+
+
+# Heuristic cap to avoid run-away "still affected" intervals when no recovery is reported
+# (mirrors MAX_BLOCK_DURATION_SECONDS used for blocks).
+_AI_ZONE_MAX_GAP_SECONDS = 24 * 60 * 60
+
+
+def __apply_ai_enrichment(data: UneAnalysis, messages: list[TelegramMessage]):
+    """
+    Pulls AI analyses for the current year from the DB and aggregates them into
+    additional fields on `data`. Pre-existing fields are never modified.
+    """
+    from core.ai.db import get_ai_analyses_by_year
+    from core.ai import MODEL_VERSION
+
+    ai_map = get_ai_analyses_by_year(data.year)
+    if not ai_map:
+        data.ai_model_version = MODEL_VERSION
+        return
+
+    cat_counts: Counter[str] = Counter()
+    event_counts: Counter[str] = Counter()
+    severity_counts: Counter[str] = Counter()
+
+    # Sort messages chronologically for timeline-style aggregations.
+    sorted_msgs = [m for m in messages if m.date_cuba_d]
+    sorted_msgs.sort(key=lambda m: m.date_cuba_d)
+
+    # Zone aggregation containers.
+    zones: dict[tuple[str, str], dict] = {}  # (kind, name) -> {mentions, aff, rec, last_aff_dt, accumulated}
+    units: dict[str, dict] = {}  # canonical -> {plant, mentions, failure, recovery}
+    power_timeline: list[PowerMetricsPoint] = []
+    events: list[EventTimelineEntry] = []
+
+    processed = 0
+    failed = 0
+
+    for m in sorted_msgs:
+        ai = ai_map.get(m.id)
+        if not ai:
+            continue
+
+        if ai.ai_failed:
+            failed += 1
+            continue
+        processed += 1
+
+        cat_counts[ai.category or "general_info"] += 1
+        if ai.event_type:
+            event_counts[ai.event_type] += 1
+        if ai.severity:
+            severity_counts[ai.severity] += 1
+
+        # Helper to update a zone entry.
+        def _touch_zone(kind: str, name: str, is_affectation: bool, is_recovery: bool, t: datetime.datetime):
+            key = (kind, name)
+            entry = zones.get(key)
+            if entry is None:
+                entry = {
+                    "mentions": 0,
+                    "affectation_count": 0,
+                    "recovery_count": 0,
+                    "last_aff_dt": None,
+                    "accumulated": 0,
+                }
+                zones[key] = entry
+            entry["mentions"] += 1
+            if is_affectation:
+                entry["affectation_count"] += 1
+                if entry["last_aff_dt"] is None:
+                    entry["last_aff_dt"] = t
+            if is_recovery:
+                entry["recovery_count"] += 1
+                if entry["last_aff_dt"] is not None:
+                    delta = (t - entry["last_aff_dt"]).total_seconds()
+                    if 0 < delta <= _AI_ZONE_MAX_GAP_SECONDS:
+                        entry["accumulated"] += int(delta)
+                    entry["last_aff_dt"] = None
+
+        is_affectation = (ai.event_type or "") in {"failure", "blackout", "scheduled_cut"}
+        is_recovery = (ai.event_type or "") == "recovery"
+
+        for prov in ai.affected_provinces or []:
+            _touch_zone("province", prov, is_affectation, is_recovery, m.date_cuba_d)
+        for muni in ai.affected_municipalities or []:
+            _touch_zone("municipality", muni, is_affectation, is_recovery, m.date_cuba_d)
+        for circuit in ai.mentioned_circuits or []:
+            _touch_zone("circuit", circuit, is_affectation, is_recovery, m.date_cuba_d)
+
+        for u in ai.mentioned_units or []:
+            canonical = (u.get("canonical") or "").strip() if isinstance(u, dict) else ""
+            plant = (u.get("plant") or canonical) if isinstance(u, dict) else canonical
+            if not canonical:
+                continue
+            ue = units.get(canonical)
+            if ue is None:
+                ue = {"plant": plant, "mentions": 0, "failure": 0, "recovery": 0}
+                units[canonical] = ue
+            ue["mentions"] += 1
+            if is_affectation:
+                ue["failure"] += 1
+            if is_recovery:
+                ue["recovery"] += 1
+
+        if any(
+            v is not None
+            for v in (
+                ai.power_demand_mw,
+                ai.power_availability_mw,
+                ai.power_deficit_mw,
+                ai.peak_forecast_mw,
+            )
+        ):
+            power_timeline.append(
+                PowerMetricsPoint(
+                    date=m.date_cuba or "",
+                    demand_mw=ai.power_demand_mw,
+                    availability_mw=ai.power_availability_mw,
+                    deficit_mw=ai.power_deficit_mw,
+                    peak_forecast_mw=ai.peak_forecast_mw,
+                    source_message_id=m.id,
+                )
+            )
+
+        if (ai.severity or "low") in {"medium", "high", "critical"} or (
+            (ai.event_type or "") in {"failure", "recovery", "blackout"}
+        ):
+            zones_for_event: list[str] = []
+            zones_for_event.extend(ai.affected_municipalities or [])
+            zones_for_event.extend(ai.affected_provinces or [])
+            events.append(
+                EventTimelineEntry(
+                    date=m.date_cuba or "",
+                    event_type=ai.event_type or "other",
+                    category=ai.category or "general_info",
+                    severity=ai.severity or "low",
+                    summary=ai.summary or "",
+                    message_id=m.id,
+                    affected_blocks=list(ai.affected_blocks or []),
+                    affected_zones=zones_for_event[:6],
+                )
+            )
+
+    data.ai_distribution_categories = dict(
+        sorted(cat_counts.items(), key=lambda x: x[1], reverse=True)
+    )
+    data.ai_distribution_event_types = dict(
+        sorted(event_counts.items(), key=lambda x: x[1], reverse=True)
+    )
+    data.ai_distribution_severity = dict(
+        sorted(severity_counts.items(), key=lambda x: x[1], reverse=True)
+    )
+
+    data.affected_zones_analysis = sorted(
+        [
+            AffectedZoneAnalysis(
+                name=name,
+                kind=kind,
+                mention_count=info["mentions"],
+                affectation_count=info["affectation_count"],
+                recovery_count=info["recovery_count"],
+                total_estimated_seconds=info["accumulated"],
+            )
+            for (kind, name), info in zones.items()
+        ],
+        key=lambda z: z.mention_count,
+        reverse=True,
+    )
+
+    data.mentioned_units_analysis = sorted(
+        [
+            MentionedUnitAnalysis(
+                canonical_name=name,
+                plant=info["plant"],
+                mentions=info["mentions"],
+                failure_mentions=info["failure"],
+                recovery_mentions=info["recovery"],
+            )
+            for name, info in units.items()
+        ],
+        key=lambda u: u.mentions,
+        reverse=True,
+    )
+
+    data.power_metrics_timeline = power_timeline
+    data.events_timeline = events
+    data.ai_model_version = MODEL_VERSION
+    data.ai_messages_processed = processed
+    data.ai_messages_failed = failed

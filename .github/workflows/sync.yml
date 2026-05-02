@@ -8,8 +8,14 @@ on:
 jobs:
   update-data:
     runs-on: ubuntu-latest
+    timeout-minutes: 50
     permissions:
       contents: write
+
+    env:
+      HF_HOME: ${{ github.workspace }}/.cache/huggingface
+      TRANSFORMERS_OFFLINE: "0"
+      HF_HUB_OFFLINE: "0"
 
     steps:
       - name: Check out the repository
@@ -25,8 +31,21 @@ jobs:
         with:
           enable-cache: true
 
+      - name: Cache HuggingFace models
+        uses: actions/cache@v4
+        with:
+          path: ${{ github.workspace }}/.cache/huggingface
+          key: hf-models-${{ runner.os }}-${{ hashFiles('pyproject.toml', 'core/ai/models.py', 'core/ai/taxonomy.py') }}
+          restore-keys: |
+            hf-models-${{ runner.os }}-
+            hf-models-
+
       - name: Install dependencies
         run: uv sync
+
+      - name: Warm AI models
+        run: uv run python -m core.ai.models
+        continue-on-error: true
 
       - name: Sync and update data
         run: uv run python main.py

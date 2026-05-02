@@ -38,6 +38,10 @@ def setup_database():
         )
     ''')
     conn.commit()
+
+    from core.ai.db import setup_ai_table
+    setup_ai_table(conn)
+
     return conn
 
 

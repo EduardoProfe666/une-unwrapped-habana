@@ -1,6 +1,6 @@
 [project]
 name = "une-unwrapped-habana"
-version = "2.5.0"
+version = "2.6.0"
 description = "⚡ UNE Unwrapped - Resumen Eléctrico de La Habana"
 readme = "README.md"
 requires-python = ">=3.13"
@@ -12,4 +12,11 @@ dependencies = [
     "rsa==4.9.1",
     "telethon==1.42.0",
     "tzdata==2025.3",
+    "transformers>=4.46,<5.0",
+    "optimum[onnxruntime]>=1.24,<2.0",
+    "onnxruntime>=1.20,<2.0",
+    "torch>=2.6,<2.8",
+    "huggingface-hub>=0.26,<1.0",
+    "numpy>=1.26,<3.0",
+    "psutil>=6.0,<8.0",
 ]

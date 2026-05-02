@@ -1,0 +1,106 @@
+name: Backfill AI analysis
+
+on:
+  workflow_dispatch:
+    inputs:
+      year:
+        description: 'Year to process (or "all" for matrix over 2022-2026)'
+        required: true
+        default: 'all'
+        type: string
+      max_messages:
+        description: 'Optional cap on messages per job (leave empty for no cap)'
+        required: false
+        default: ''
+        type: string
+
+jobs:
+  decide-matrix:
+    runs-on: ubuntu-latest
+    outputs:
+      years: ${{ steps.set.outputs.years }}
+    steps:
+      - id: set
+        name: Build year matrix
+        run: |
+          if [ "${{ github.event.inputs.year }}" = "all" ]; then
+            echo 'years=["2022","2023","2024","2025","2026"]' >> "$GITHUB_OUTPUT"
+          else
+            echo 'years=["${{ github.event.inputs.year }}"]' >> "$GITHUB_OUTPUT"
+          fi
+
+  backfill:
+    needs: decide-matrix
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    # Avoid concurrent commits to telegram_messages.db across years.
+    concurrency:
+      group: backfill-ai-db
+      cancel-in-progress: false
+    permissions:
+      contents: write
+
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        year: ${{ fromJSON(needs.decide-matrix.outputs.years) }}
+
+    env:
+      HF_HOME: ${{ github.workspace }}/.cache/huggingface
+      TRANSFORMERS_OFFLINE: "0"
+      HF_HUB_OFFLINE: "0"
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
+      - name: Cache HuggingFace models
+        uses: actions/cache@v4
+        with:
+          path: ${{ github.workspace }}/.cache/huggingface
+          key: hf-models-${{ runner.os }}-${{ hashFiles('pyproject.toml', 'core/ai/models.py', 'core/ai/taxonomy.py') }}
+          restore-keys: |
+            hf-models-${{ runner.os }}-
+            hf-models-
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Warm AI models
+        run: uv run python -m core.ai.models
+
+      - name: Pull latest before processing
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git pull --rebase origin "${{ github.ref_name }}" || true
+
+      - name: Backfill AI analysis for ${{ matrix.year }}
+        run: |
+          if [ -n "${{ github.event.inputs.max_messages }}" ]; then
+            uv run python scripts/backfill_ai.py --year ${{ matrix.year }} --max-messages ${{ github.event.inputs.max_messages }}
+          else
+            uv run python scripts/backfill_ai.py --year ${{ matrix.year }}
+          fi
+
+      - name: Re-run analyzer for ${{ matrix.year }}
+        run: |
+          uv run python -c "from core import analyze_data; analyze_data(${{ matrix.year }})"
+
+      - name: Commit and Push changes
+        run: |
+          git pull --rebase origin "${{ github.ref_name }}" || true
+          git add telegram_messages.db "app/public/data/analysis_data_${{ matrix.year }}.json"
+          git diff --quiet && git diff --staged --quiet || \
+            (git commit -m "AI backfill ${{ matrix.year }}: $(date -u)" && git push)

@@ -1,6 +1,6 @@
 from dataclasses import dataclass, field
 from datetime import datetime
-from typing import Dict
+from typing import Any, Dict, List, Optional
 from enum import Enum
 
 
@@ -88,6 +88,82 @@ class SENAnalysis:
     total_failure_events: int = 0
     failure_events: list[SENFailureAnalysisEvent] = field(default_factory=list)
 
+
+# ------------------------- AI ENRICHMENT DATACLASSES ------------------------- #
+
+@dataclass
+class MessageAIAnalysis:
+    """
+    AI-derived analysis for a single Telegram message. Mirrors the
+    `message_ai_analysis` SQLite table.
+    """
+    message_id: int = 0
+    category: str = "general_info"
+    category_confidence: float = 0.0
+    subcategories: List[Dict[str, Any]] = field(default_factory=list)
+    sen_status: Optional[str] = None
+    affected_blocks: List[int] = field(default_factory=list)
+    recovered_blocks: List[int] = field(default_factory=list)
+    affected_provinces: List[str] = field(default_factory=list)
+    affected_municipalities: List[str] = field(default_factory=list)
+    mentioned_circuits: List[str] = field(default_factory=list)
+    mentioned_units: List[Dict[str, Any]] = field(default_factory=list)
+    power_demand_mw: Optional[int] = None
+    power_availability_mw: Optional[int] = None
+    power_deficit_mw: Optional[int] = None
+    peak_forecast_mw: Optional[int] = None
+    mentioned_times: List[Dict[str, Any]] = field(default_factory=list)
+    severity: Optional[str] = None
+    event_type: Optional[str] = None
+    summary: str = ""
+    raw_features: Dict[str, Any] = field(default_factory=dict)
+    model_version: str = ""
+    ai_failed: bool = False
+    ai_error: Optional[str] = None
+    processed_at: str = ""
+
+
+@dataclass
+class AffectedZoneAnalysis:
+    name: str = ""
+    kind: str = ""  # province | municipality | circuit
+    mention_count: int = 0
+    affectation_count: int = 0
+    recovery_count: int = 0
+    total_estimated_seconds: int = 0
+
+
+@dataclass
+class PowerMetricsPoint:
+    date: str = ""
+    demand_mw: Optional[int] = None
+    availability_mw: Optional[int] = None
+    deficit_mw: Optional[int] = None
+    peak_forecast_mw: Optional[int] = None
+    source_message_id: int = 0
+
+
+@dataclass
+class EventTimelineEntry:
+    date: str = ""
+    event_type: str = ""
+    category: str = ""
+    severity: str = ""
+    summary: str = ""
+    message_id: int = 0
+    affected_blocks: List[int] = field(default_factory=list)
+    affected_zones: List[str] = field(default_factory=list)
+
+
+@dataclass
+class MentionedUnitAnalysis:
+    canonical_name: str = ""
+    plant: str = ""
+    mentions: int = 0
+    failure_mentions: int = 0
+    recovery_mentions: int = 0
+
+
 @dataclass
 class UneAnalysis:
     """
@@ -140,3 +216,15 @@ class UneAnalysis:
     # EXTRA ANALYSIS
     blocks_analysis: list[BlockAnalysis] = field(default_factory=list)
     sen_analysis: SENAnalysis = None
+
+    # AI ENRICHMENT (additive, all optional with defaults)
+    ai_distribution_categories: Dict[str, int] = field(default_factory=dict)
+    ai_distribution_event_types: Dict[str, int] = field(default_factory=dict)
+    ai_distribution_severity: Dict[str, int] = field(default_factory=dict)
+    affected_zones_analysis: list[AffectedZoneAnalysis] = field(default_factory=list)
+    power_metrics_timeline: list[PowerMetricsPoint] = field(default_factory=list)
+    events_timeline: list[EventTimelineEntry] = field(default_factory=list)
+    mentioned_units_analysis: list[MentionedUnitAnalysis] = field(default_factory=list)
+    ai_model_version: str = ""
+    ai_messages_processed: int = 0
+    ai_messages_failed: int = 0
