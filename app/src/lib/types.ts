@@ -20,6 +20,11 @@ export enum MessageType {
   BLOCK_INFORMATION = 5
 }
 
+export interface BlockTopZone {
+  name: string;
+  count: number;
+}
+
 export interface BlockAnalysis {
   number: number;
   mentions: number;
@@ -29,6 +34,17 @@ export interface BlockAnalysis {
   estimated_affected_seconds: number;
   weekday_off_seconds: Record<number, number>;
   weekday_off_avg_seconds: Record<number, number>;
+
+  // AI-derived detailed stats (optional)
+  monthly_affectations?: Record<string, number>;
+  hourly_affectations?: Record<string, number>;
+  severity_breakdown?: Record<string, number>;
+  co_occurrences?: Record<string, number>;
+  top_municipalities?: BlockTopZone[];
+  top_circuits?: BlockTopZone[];
+  worst_day_date?: string;
+  worst_day_events?: number;
+  avg_deficit_mw?: number | null;
 }
 
 export interface SenFailureEvent {
@@ -47,6 +63,47 @@ export interface SenAnalysis {
   failure_events: SenFailureEvent[];
 }
 
+// ---- AI ENRICHMENT types ---- //
+
+export type Severity = "low" | "medium" | "high" | "critical";
+export type SenStatus = "normal" | "active_failure" | "recovering" | "unknown";
+
+export interface AffectedZone {
+  name: string;
+  kind: "province" | "municipality" | "circuit";
+  mentions: number;
+  affectations: number;
+  recoveries: number;
+}
+
+export interface PowerPoint {
+  date: string;
+  demand: number | null;
+  availability: number | null;
+  deficit: number | null;
+  is_forecast: boolean;
+}
+
+export interface ThermalPlantStats {
+  canonical: string;
+  city: string;
+  mentions: number;
+  failures: number;
+  recoveries: number;
+  monthly_activity: number[];
+  last_status: SenStatus;
+}
+
+export interface WorstDay {
+  date: string;
+  critical_events: number;
+  high_events: number;
+  affected_blocks_count: number;
+  deficit_mw: number | null;
+  sample_message_id: number;
+  sample_summary: string;
+}
+
 export interface UneAnalysis {
   sync_date: string;
   year: number;
@@ -54,7 +111,7 @@ export interface UneAnalysis {
   last_message: TelegramMessage;
   shortest_message: TelegramMessage;
   longest_message: TelegramMessage;
-  
+
   total_views: number;
   total_messages: number;
   total_erased_messages: number;
@@ -62,14 +119,14 @@ export interface UneAnalysis {
   total_reactions: number;
   total_positive_reactions: number;
   total_negative_reactions: number;
-  
+
   avg_views: number;
   avg_replies: number;
   avg_reactions: number;
   avg_positive_reactions: number;
   avg_negative_reactions: number;
   avg_text_length: number;
-  
+
   monthly_views: Record<string, number>;
   monthly_replies: Record<string, number>;
   monthly_reactions: Record<string, number>;
@@ -78,16 +135,26 @@ export interface UneAnalysis {
 
   distribution_message: Record<string, number>;
   distribution_reaction: Record<string, number>;
-  
+
   top3_most_viewed_messages: TelegramMessage[];
   top3_most_replied_messages: TelegramMessage[];
   top3_most_positive_reaction_messages: TelegramMessage[];
   top3_most_negative_reaction_messages: TelegramMessage[];
-  
+
   top25_most_repeated_words: Record<string, number>;
-  
+
   blocks_analysis: BlockAnalysis[];
   sen_analysis: SenAnalysis;
+
+  // AI enrichment (optional — empty/null when no AI rows exist for the year)
+  ai_categories_distribution?: Record<string, number>;
+  affected_zones?: AffectedZone[];
+  daily_severity?: Record<string, Severity>;
+  power_timeline?: PowerPoint[];
+  thermal_units?: ThermalPlantStats[];
+  hour_of_day_severity?: Record<string, number>;
+  worst_day?: WorstDay | null;
+  live_grid_status?: SenStatus;
 }
 
 export type YearTheme = {

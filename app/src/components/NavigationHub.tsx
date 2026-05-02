@@ -1,19 +1,26 @@
 import React, {useEffect, useState} from 'react';
 import {AnimatePresence, m} from 'framer-motion';
 import {
+    Activity,
     Award,
     BarChart2,
+    Bolt,
     Calendar,
+    CalendarDays,
     Clock,
+    Compass,
+    Factory,
     Hash,
     Layers,
     Map,
+    MapPinned,
     MessageSquare,
     MousePointer2,
     Search,
+    Skull,
     TrendingUp,
     X,
-    Zap
+    Zap,
 } from 'lucide-react';
 
 interface SectionLink {
@@ -36,28 +43,47 @@ const SECTIONS: SectionGroup[] = [
             {id: "totals-grid", label: "Resumen General", icon: Hash},
             {id: "averages", label: "Medias por Mensaje", icon: TrendingUp},
             {id: "daily-activity", label: "Flujo de Mensajes", icon: BarChart2},
+            {id: "severity-calendar", label: "Calendario de Severidad", icon: CalendarDays},
         ]
     },
     {
-        title: "02_INFRAESTRUCTURA",
+        title: "02_HITO_DEL_AÑO",
+        color: "bg-fuchsia-400",
+        links: [
+            {id: "worst-day", label: "El Peor Día", icon: Skull},
+        ]
+    },
+    {
+        title: "03_INFRAESTRUCTURA",
         color: "bg-yellow-400",
         links: [
             {id: "blocks-analysis", label: "Resumen por Bloque", icon: Layers},
+            {id: "block-explorer", label: "Explorador de Bloques", icon: Compass},
             {id: "weekly-block-matrix", label: "Matriz Semanal", icon: Calendar},
             {id: "sen-status", label: "Estado del SEN", icon: Zap},
+            {id: "thermal-units", label: "Centrales Termoeléctricas", icon: Factory},
         ]
     },
     {
-        title: "03_ANÁLISIS_TEMPORAL",
+        title: "04_GEOGRAFÍA_Y_RITMO",
+        color: "bg-cyan-400",
+        links: [
+            {id: "affected-zones", label: "Mapa de Afectaciones", icon: MapPinned},
+            {id: "hour-clock", label: "Ritmo del Año", icon: Activity},
+        ]
+    },
+    {
+        title: "05_ANÁLISIS_TEMPORAL",
         color: "bg-green-400",
         links: [
             {id: "monthly-charts", label: "Evolución Mensual", icon: TrendingUp},
+            {id: "power-timeline", label: "Demanda vs Disponibilidad", icon: Bolt},
             {id: "distribution", label: "Tipos de Mensajes", icon: BarChart2},
             {id: "reaction-spectrum", label: "Espectro de Reacciones", icon: MousePointer2},
         ]
     },
     {
-        title: "04_SOCIAL_Y_TEXTO",
+        title: "06_SOCIAL_Y_TEXTO",
         color: "bg-red-400",
         links: [
             {id: "word-cloud", label: "Nube de Conceptos", icon: MessageSquare},

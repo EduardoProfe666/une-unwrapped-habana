@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-05-02T10:54:04.723773-04:00",
+    "sync_date": "2026-05-02T10:59:29.155587-04:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -763,7 +763,106 @@
                 "4": 22851.865384615383,
                 "5": 20131.076923076922,
                 "6": 21171.076923076922
-            }
+            },
+            "monthly_affectations": {
+                "1": 427,
+                "2": 324,
+                "3": 450,
+                "4": 283,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0,
+                "10": 0,
+                "11": 0,
+                "12": 0
+            },
+            "hourly_affectations": {
+                "0": 37,
+                "1": 37,
+                "2": 31,
+                "3": 23,
+                "4": 19,
+                "5": 38,
+                "6": 94,
+                "7": 67,
+                "8": 70,
+                "9": 36,
+                "10": 35,
+                "11": 53,
+                "12": 44,
+                "13": 40,
+                "14": 59,
+                "15": 64,
+                "16": 83,
+                "17": 123,
+                "18": 126,
+                "19": 128,
+                "20": 100,
+                "21": 67,
+                "22": 52,
+                "23": 58
+            },
+            "severity_breakdown": {
+                "medium": 435,
+                "high": 1012,
+                "low": 37
+            },
+            "co_occurrences": {
+                "3": 789,
+                "4": 744,
+                "5": 750,
+                "6": 837,
+                "2": 904
+            },
+            "top_municipalities": [
+                {
+                    "name": "Habana del Este",
+                    "count": 256
+                },
+                {
+                    "name": "Guanabacoa",
+                    "count": 4
+                },
+                {
+                    "name": "Regla",
+                    "count": 4
+                },
+                {
+                    "name": "Playa",
+                    "count": 3
+                },
+                {
+                    "name": "Diez de Octubre",
+                    "count": 3
+                },
+                {
+                    "name": "Cerro",
+                    "count": 2
+                }
+            ],
+            "top_circuits": [
+                {
+                    "name": "Lawton",
+                    "count": 1
+                },
+                {
+                    "name": "La Víbora",
+                    "count": 1
+                },
+                {
+                    "name": "Santos Suárez",
+                    "count": 1
+                },
+                {
+                    "name": "Sevillano",
+                    "count": 1
+                }
+            ],
+            "worst_day_date": "2026-04-06",
+            "worst_day_events": 30,
+            "avg_deficit_mw": 230
         },
         {
             "number": 2,
@@ -789,7 +888,94 @@
                 "4": 21785.73076923077,
                 "5": 21182.134615384617,
                 "6": 19465.673076923078
-            }
+            },
+            "monthly_affectations": {
+                "1": 400,
+                "2": 314,
+                "3": 438,
+                "4": 276,
+                "5": 0,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0,
+                "10": 0,
+                "11": 0,
+                "12": 0
+            },
+            "hourly_affectations": {
+                "0": 39,
+                "1": 43,
+                "2": 28,
+                "3": 18,
+                "4": 23,
+                "5": 35,
+                "6": 94,
+                "7": 72,
+                "8": 60,
+                "9": 34,
+                "10": 36,
+                "11": 47,
+                "12": 38,
+                "13": 37,
+                "14": 59,
+                "15": 64,
+                "16": 81,
+                "17": 116,
+                "18": 118,
+                "19": 126,
+                "20": 96,
+                "21": 63,
+                "22": 56,
+                "23": 45
+            },
+            "severity_breakdown": {
+                "medium": 396,
+                "high": 1001,
+                "low": 31
+            },
+            "co_occurrences": {
+                "1": 904,
+                "6": 739,
+                "3": 876,
+                "4": 748,
+                "5": 709
+            },
+            "top_municipalities": [
+                {
+                    "name": "Habana del Este",
+                    "count": 249
+                },
+                {
+                    "name": "Playa",
+                    "count": 2
+                },
+                {
+                    "name": "Diez de Octubre",
+                    "count": 2
+                },
+                {
+                    "name": "Cerro",
+                    "count": 2
+                },
+                {
+                    "name": "Plaza de la Revolución",
+                    "count": 1
+                }
+            ],
+            "top_circuits": [
+                {
+                    "name": "La Víbora",
+                    "count": 1
+                },
+                {
+                    "name": "Santos Suárez",
+                    "count": 1
+                }
+            ],
+            "worst_day_date": "2026-04-06",
+            "worst_day_events": 27,
+            "avg_deficit_mw": 232
         },
         {
             "number": 3,
@@ -815,7 +1001,111 @@
                 "4": 23702.153846153848,
                 "5": 20506.634615384617,
                 "6": 22504.44230769231
-            }
+            },
+            "monthly_affectations": {
+                "1": 410,
+                "2": 320,
+                "3": 419,
+                "4": 263,
+                "5": 7,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0,
+                "10": 0,
+                "11": 0,
+                "12": 0
+            },
+            "hourly_affectations": {
+                "0": 33,
+                "1": 35,
+                "2": 24,
+                "3": 24,
+                "4": 19,
+                "5": 34,
+                "6": 91,
+                "7": 75,
+                "8": 66,
+                "9": 43,
+                "10": 27,
+                "11": 40,
+                "12": 39,
+                "13": 46,
+                "14": 48,
+                "15": 61,
+                "16": 84,
+                "17": 112,
+                "18": 121,
+                "19": 116,
+                "20": 116,
+                "21": 70,
+                "22": 61,
+                "23": 34
+            },
+            "severity_breakdown": {
+                "medium": 403,
+                "high": 977,
+                "low": 38,
+                "critical": 1
+            },
+            "co_occurrences": {
+                "4": 850,
+                "5": 724,
+                "6": 694,
+                "1": 789,
+                "2": 876
+            },
+            "top_municipalities": [
+                {
+                    "name": "Habana del Este",
+                    "count": 250
+                },
+                {
+                    "name": "Arroyo Naranjo",
+                    "count": 5
+                },
+                {
+                    "name": "Playa",
+                    "count": 3
+                },
+                {
+                    "name": "Cerro",
+                    "count": 2
+                },
+                {
+                    "name": "Diez de Octubre",
+                    "count": 1
+                },
+                {
+                    "name": "Centro Habana",
+                    "count": 1
+                }
+            ],
+            "top_circuits": [
+                {
+                    "name": "La Víbora",
+                    "count": 3
+                },
+                {
+                    "name": "Mantilla",
+                    "count": 1
+                },
+                {
+                    "name": "Párraga",
+                    "count": 1
+                },
+                {
+                    "name": "Casino Deportivo",
+                    "count": 1
+                },
+                {
+                    "name": "La Esperanza",
+                    "count": 1
+                }
+            ],
+            "worst_day_date": "2026-01-18",
+            "worst_day_events": 23,
+            "avg_deficit_mw": 230
         },
         {
             "number": 4,
@@ -841,7 +1131,87 @@
                 "4": 24914.51923076923,
                 "5": 19946.134615384617,
                 "6": 22685.75
-            }
+            },
+            "monthly_affectations": {
+                "1": 403,
+                "2": 300,
+                "3": 447,
+                "4": 269,
+                "5": 8,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0,
+                "10": 0,
+                "11": 0,
+                "12": 0
+            },
+            "hourly_affectations": {
+                "0": 38,
+                "1": 18,
+                "2": 21,
+                "3": 20,
+                "4": 20,
+                "5": 46,
+                "6": 83,
+                "7": 69,
+                "8": 75,
+                "9": 40,
+                "10": 35,
+                "11": 47,
+                "12": 39,
+                "13": 38,
+                "14": 53,
+                "15": 70,
+                "16": 86,
+                "17": 106,
+                "18": 114,
+                "19": 113,
+                "20": 113,
+                "21": 75,
+                "22": 61,
+                "23": 47
+            },
+            "severity_breakdown": {
+                "medium": 416,
+                "high": 982,
+                "low": 28,
+                "critical": 1
+            },
+            "co_occurrences": {
+                "3": 850,
+                "5": 860,
+                "6": 742,
+                "1": 744,
+                "2": 748
+            },
+            "top_municipalities": [
+                {
+                    "name": "Habana del Este",
+                    "count": 248
+                },
+                {
+                    "name": "Playa",
+                    "count": 2
+                },
+                {
+                    "name": "San Miguel del Padrón",
+                    "count": 1
+                },
+                {
+                    "name": "Guanabacoa",
+                    "count": 1
+                }
+            ],
+            "top_circuits": [
+                {
+                    "name": "San Matías",
+                    "count": 1
+                }
+            ],
+            "worst_day_date": "2026-04-06",
+            "worst_day_events": 27,
+            "avg_deficit_mw": 226
         },
         {
             "number": 5,
@@ -867,7 +1237,95 @@
                 "4": 23889.346153846152,
                 "5": 20578.80769230769,
                 "6": 20471.365384615383
-            }
+            },
+            "monthly_affectations": {
+                "1": 380,
+                "2": 318,
+                "3": 443,
+                "4": 274,
+                "5": 7,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0,
+                "10": 0,
+                "11": 0,
+                "12": 0
+            },
+            "hourly_affectations": {
+                "0": 38,
+                "1": 36,
+                "2": 28,
+                "3": 27,
+                "4": 25,
+                "5": 43,
+                "6": 81,
+                "7": 67,
+                "8": 69,
+                "9": 42,
+                "10": 28,
+                "11": 41,
+                "12": 36,
+                "13": 27,
+                "14": 49,
+                "15": 68,
+                "16": 89,
+                "17": 110,
+                "18": 117,
+                "19": 119,
+                "20": 107,
+                "21": 66,
+                "22": 59,
+                "23": 50
+            },
+            "severity_breakdown": {
+                "medium": 430,
+                "high": 955,
+                "low": 36,
+                "critical": 1
+            },
+            "co_occurrences": {
+                "3": 724,
+                "4": 860,
+                "6": 836,
+                "1": 750,
+                "2": 709
+            },
+            "top_municipalities": [
+                {
+                    "name": "Habana del Este",
+                    "count": 249
+                },
+                {
+                    "name": "Arroyo Naranjo",
+                    "count": 3
+                },
+                {
+                    "name": "La Lisa",
+                    "count": 3
+                },
+                {
+                    "name": "Guanabacoa",
+                    "count": 2
+                },
+                {
+                    "name": "Diez de Octubre",
+                    "count": 2
+                }
+            ],
+            "top_circuits": [
+                {
+                    "name": "La Víbora",
+                    "count": 2
+                },
+                {
+                    "name": "Mantilla",
+                    "count": 2
+                }
+            ],
+            "worst_day_date": "2026-04-06",
+            "worst_day_events": 27,
+            "avg_deficit_mw": 226
         },
         {
             "number": 6,
@@ -893,7 +1351,106 @@
                 "4": 22647.403846153848,
                 "5": 23009.884615384617,
                 "6": 22611.98076923077
-            }
+            },
+            "monthly_affectations": {
+                "1": 396,
+                "2": 325,
+                "3": 451,
+                "4": 268,
+                "5": 6,
+                "6": 0,
+                "7": 0,
+                "8": 0,
+                "9": 0,
+                "10": 0,
+                "11": 0,
+                "12": 0
+            },
+            "hourly_affectations": {
+                "0": 34,
+                "1": 36,
+                "2": 27,
+                "3": 24,
+                "4": 23,
+                "5": 44,
+                "6": 87,
+                "7": 71,
+                "8": 68,
+                "9": 39,
+                "10": 31,
+                "11": 42,
+                "12": 43,
+                "13": 39,
+                "14": 47,
+                "15": 58,
+                "16": 86,
+                "17": 116,
+                "18": 122,
+                "19": 117,
+                "20": 110,
+                "21": 73,
+                "22": 59,
+                "23": 50
+            },
+            "severity_breakdown": {
+                "medium": 457,
+                "high": 956,
+                "low": 33
+            },
+            "co_occurrences": {
+                "3": 694,
+                "4": 742,
+                "5": 836,
+                "1": 837,
+                "2": 739
+            },
+            "top_municipalities": [
+                {
+                    "name": "Habana del Este",
+                    "count": 259
+                },
+                {
+                    "name": "Arroyo Naranjo",
+                    "count": 6
+                },
+                {
+                    "name": "Regla",
+                    "count": 3
+                },
+                {
+                    "name": "La Lisa",
+                    "count": 2
+                },
+                {
+                    "name": "Guanabacoa",
+                    "count": 2
+                },
+                {
+                    "name": "Centro Habana",
+                    "count": 1
+                }
+            ],
+            "top_circuits": [
+                {
+                    "name": "La Víbora",
+                    "count": 4
+                },
+                {
+                    "name": "Mantilla",
+                    "count": 2
+                },
+                {
+                    "name": "Párraga",
+                    "count": 1
+                },
+                {
+                    "name": "San Matías",
+                    "count": 1
+                }
+            ],
+            "worst_day_date": "2026-04-06",
+            "worst_day_events": 31,
+            "avg_deficit_mw": 230
         }
     ],
     "sen_analysis": {
@@ -975,5 +1532,1296 @@
                 "estimated_duration_seconds": 81849
             }
         ]
-    }
+    },
+    "ai_categories_distribution": {
+        "block_affectation": 3941,
+        "circuit_failure": 1974,
+        "daf": 1471,
+        "daily_resume": 299,
+        "thermal_unit_status": 292,
+        "block_recovery": 277,
+        "zone_recovery": 235,
+        "apology_communication": 196,
+        "general_info": 169,
+        "sen_recovery": 22,
+        "sen_failure": 6,
+        "scheduled_maintenance": 5,
+        "weather_impact": 3,
+        "daily_forecast": 2
+    },
+    "affected_zones": [
+        {
+            "name": "La Habana",
+            "kind": "province",
+            "mentions": 3330,
+            "affectations": 2167,
+            "recoveries": 35
+        },
+        {
+            "name": "Habana del Este",
+            "kind": "municipality",
+            "mentions": 2814,
+            "affectations": 1942,
+            "recoveries": 65
+        },
+        {
+            "name": "Playa",
+            "kind": "municipality",
+            "mentions": 914,
+            "affectations": 224,
+            "recoveries": 48
+        },
+        {
+            "name": "Arroyo Naranjo",
+            "kind": "municipality",
+            "mentions": 349,
+            "affectations": 221,
+            "recoveries": 36
+        },
+        {
+            "name": "Boyeros",
+            "kind": "municipality",
+            "mentions": 579,
+            "affectations": 225,
+            "recoveries": 29
+        },
+        {
+            "name": "San Miguel del Padrón",
+            "kind": "municipality",
+            "mentions": 294,
+            "affectations": 188,
+            "recoveries": 36
+        },
+        {
+            "name": "La Lisa",
+            "kind": "municipality",
+            "mentions": 293,
+            "affectations": 186,
+            "recoveries": 29
+        },
+        {
+            "name": "Plaza de la Revolución",
+            "kind": "municipality",
+            "mentions": 334,
+            "affectations": 188,
+            "recoveries": 22
+        },
+        {
+            "name": "Guanabacoa",
+            "kind": "municipality",
+            "mentions": 244,
+            "affectations": 180,
+            "recoveries": 30
+        },
+        {
+            "name": "Diez de Octubre",
+            "kind": "municipality",
+            "mentions": 263,
+            "affectations": 148,
+            "recoveries": 30
+        },
+        {
+            "name": "Cerro",
+            "kind": "municipality",
+            "mentions": 555,
+            "affectations": 130,
+            "recoveries": 30
+        },
+        {
+            "name": "Marianao",
+            "kind": "municipality",
+            "mentions": 321,
+            "affectations": 119,
+            "recoveries": 21
+        },
+        {
+            "name": "Luyanó",
+            "kind": "circuit",
+            "mentions": 126,
+            "affectations": 80,
+            "recoveries": 9
+        },
+        {
+            "name": "Centro Habana",
+            "kind": "municipality",
+            "mentions": 123,
+            "affectations": 72,
+            "recoveries": 14
+        },
+        {
+            "name": "Cotorro",
+            "kind": "municipality",
+            "mentions": 203,
+            "affectations": 61,
+            "recoveries": 12
+        },
+        {
+            "name": "Regla",
+            "kind": "municipality",
+            "mentions": 91,
+            "affectations": 56,
+            "recoveries": 15
+        },
+        {
+            "name": "La Víbora",
+            "kind": "circuit",
+            "mentions": 106,
+            "affectations": 53,
+            "recoveries": 15
+        },
+        {
+            "name": "Santa Fe",
+            "kind": "circuit",
+            "mentions": 313,
+            "affectations": 53,
+            "recoveries": 7
+        },
+        {
+            "name": "Santiago de Cuba",
+            "kind": "province",
+            "mentions": 313,
+            "affectations": 41,
+            "recoveries": 7
+        },
+        {
+            "name": "Vedado",
+            "kind": "circuit",
+            "mentions": 87,
+            "affectations": 43,
+            "recoveries": 4
+        },
+        {
+            "name": "Cienfuegos",
+            "kind": "province",
+            "mentions": 60,
+            "affectations": 43,
+            "recoveries": 4
+        },
+        {
+            "name": "California",
+            "kind": "circuit",
+            "mentions": 56,
+            "affectations": 37,
+            "recoveries": 9
+        },
+        {
+            "name": "Dolores",
+            "kind": "circuit",
+            "mentions": 64,
+            "affectations": 36,
+            "recoveries": 8
+        },
+        {
+            "name": "Párraga",
+            "kind": "circuit",
+            "mentions": 84,
+            "affectations": 38,
+            "recoveries": 3
+        },
+        {
+            "name": "Sevillano",
+            "kind": "circuit",
+            "mentions": 76,
+            "affectations": 33,
+            "recoveries": 5
+        },
+        {
+            "name": "Camagüey",
+            "kind": "province",
+            "mentions": 85,
+            "affectations": 26,
+            "recoveries": 9
+        },
+        {
+            "name": "Habana Vieja",
+            "kind": "municipality",
+            "mentions": 55,
+            "affectations": 29,
+            "recoveries": 6
+        },
+        {
+            "name": "Miramar",
+            "kind": "circuit",
+            "mentions": 155,
+            "affectations": 30,
+            "recoveries": 4
+        },
+        {
+            "name": "Lawton",
+            "kind": "circuit",
+            "mentions": 44,
+            "affectations": 30,
+            "recoveries": 4
+        },
+        {
+            "name": "Porvenir",
+            "kind": "circuit",
+            "mentions": 43,
+            "affectations": 30,
+            "recoveries": 3
+        },
+        {
+            "name": "La Cumbre",
+            "kind": "circuit",
+            "mentions": 42,
+            "affectations": 27,
+            "recoveries": 4
+        },
+        {
+            "name": "Mantilla",
+            "kind": "circuit",
+            "mentions": 38,
+            "affectations": 27,
+            "recoveries": 4
+        },
+        {
+            "name": "Tejas",
+            "kind": "circuit",
+            "mentions": 40,
+            "affectations": 28,
+            "recoveries": 2
+        },
+        {
+            "name": "Jaimanitas",
+            "kind": "circuit",
+            "mentions": 274,
+            "affectations": 24,
+            "recoveries": 5
+        },
+        {
+            "name": "Santos Suárez",
+            "kind": "circuit",
+            "mentions": 42,
+            "affectations": 20,
+            "recoveries": 7
+        },
+        {
+            "name": "Guanabo",
+            "kind": "circuit",
+            "mentions": 306,
+            "affectations": 25,
+            "recoveries": 0
+        },
+        {
+            "name": "Alcázar",
+            "kind": "circuit",
+            "mentions": 34,
+            "affectations": 20,
+            "recoveries": 2
+        },
+        {
+            "name": "Capri",
+            "kind": "circuit",
+            "mentions": 34,
+            "affectations": 20,
+            "recoveries": 2
+        },
+        {
+            "name": "La Esperanza",
+            "kind": "circuit",
+            "mentions": 24,
+            "affectations": 17,
+            "recoveries": 4
+        },
+        {
+            "name": "Alamar",
+            "kind": "circuit",
+            "mentions": 62,
+            "affectations": 19,
+            "recoveries": 1
+        }
+    ],
+    "daily_severity": {
+        "1": "high",
+        "2": "high",
+        "3": "high",
+        "4": "high",
+        "5": "high",
+        "6": "high",
+        "7": "high",
+        "8": "high",
+        "9": "high",
+        "10": "high",
+        "11": "high",
+        "12": "high",
+        "13": "high",
+        "14": "high",
+        "15": "high",
+        "16": "high",
+        "17": "high",
+        "18": "high",
+        "19": "high",
+        "20": "high",
+        "21": "high",
+        "22": "high",
+        "23": "high",
+        "24": "high",
+        "25": "high",
+        "26": "high",
+        "27": "high",
+        "28": "high",
+        "29": "high",
+        "30": "high",
+        "31": "high",
+        "32": "high",
+        "33": "high",
+        "34": "high",
+        "35": "high",
+        "36": "high",
+        "37": "high",
+        "38": "high",
+        "39": "high",
+        "40": "high",
+        "41": "high",
+        "42": "high",
+        "43": "high",
+        "44": "high",
+        "45": "high",
+        "46": "high",
+        "47": "high",
+        "48": "high",
+        "49": "high",
+        "50": "high",
+        "51": "high",
+        "52": "high",
+        "53": "high",
+        "54": "high",
+        "55": "high",
+        "56": "high",
+        "57": "high",
+        "58": "high",
+        "59": "high",
+        "60": "high",
+        "61": "high",
+        "62": "high",
+        "63": "critical",
+        "64": "high",
+        "65": "high",
+        "66": "high",
+        "67": "high",
+        "68": "high",
+        "69": "high",
+        "70": "high",
+        "71": "high",
+        "72": "high",
+        "73": "high",
+        "74": "high",
+        "75": "critical",
+        "76": "high",
+        "77": "high",
+        "78": "critical",
+        "79": "high",
+        "80": "critical",
+        "81": "high",
+        "82": "high",
+        "83": "high",
+        "84": "high",
+        "85": "high",
+        "86": "high",
+        "87": "high",
+        "88": "high",
+        "89": "high",
+        "90": "high",
+        "91": "high",
+        "92": "high",
+        "93": "high",
+        "94": "high",
+        "95": "high",
+        "96": "high",
+        "97": "high",
+        "98": "high",
+        "99": "high",
+        "100": "high",
+        "101": "high",
+        "102": "high",
+        "103": "high",
+        "104": "high",
+        "105": "high",
+        "106": "high",
+        "107": "high",
+        "108": "high",
+        "109": "high",
+        "110": "high",
+        "111": "high",
+        "112": "medium",
+        "113": "high",
+        "114": "high",
+        "115": "high",
+        "116": "high",
+        "117": "high",
+        "118": "high",
+        "119": "high",
+        "120": "high",
+        "121": "critical",
+        "122": "critical"
+    },
+    "power_timeline": [
+        {
+            "date": "2026-01-04 07:54:31",
+            "demand": null,
+            "availability": null,
+            "deficit": 238,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-01-05 08:35:29",
+            "demand": null,
+            "availability": null,
+            "deficit": 189,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-01-06 06:44:02",
+            "demand": null,
+            "availability": null,
+            "deficit": 222,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-01-07 06:56:50",
+            "demand": null,
+            "availability": null,
+            "deficit": 196,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-01-08 06:55:13",
+            "demand": null,
+            "availability": null,
+            "deficit": 196,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-01-09 06:48:27",
+            "demand": null,
+            "availability": null,
+            "deficit": 243,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-01-10 08:15:23",
+            "demand": null,
+            "availability": null,
+            "deficit": 242,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-01-11 07:03:09",
+            "demand": null,
+            "availability": null,
+            "deficit": 215,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-01-12 07:07:11",
+            "demand": null,
+            "availability": null,
+            "deficit": 225,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-01-13 07:10:56",
+            "demand": null,
+            "availability": null,
+            "deficit": 268,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-01-14 07:30:02",
+            "demand": null,
+            "availability": null,
+            "deficit": 303,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-01-15 06:37:02",
+            "demand": null,
+            "availability": null,
+            "deficit": 277,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-01-16 08:40:06",
+            "demand": null,
+            "availability": 185,
+            "deficit": 353,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-01-17 07:32:54",
+            "demand": null,
+            "availability": null,
+            "deficit": 388,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-01-18 07:45:17",
+            "demand": null,
+            "availability": null,
+            "deficit": 412,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-01-19 06:58:05",
+            "demand": null,
+            "availability": null,
+            "deficit": 359,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-01-20 07:03:02",
+            "demand": null,
+            "availability": 164,
+            "deficit": 363,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-01-21 07:27:48",
+            "demand": null,
+            "availability": 189,
+            "deficit": 334,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-01-22 07:35:29",
+            "demand": null,
+            "availability": 138,
+            "deficit": 346,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-01-23 08:55:03",
+            "demand": null,
+            "availability": 168,
+            "deficit": 388,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-01-24 07:45:56",
+            "demand": null,
+            "availability": 280,
+            "deficit": 303,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-01-25 08:03:42",
+            "demand": null,
+            "availability": 183,
+            "deficit": 448,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-01-26 08:16:23",
+            "demand": null,
+            "availability": null,
+            "deficit": 383,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-01-27 07:26:42",
+            "demand": null,
+            "availability": null,
+            "deficit": 80,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-01-28 07:25:53",
+            "demand": null,
+            "availability": null,
+            "deficit": 80,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-01-29 07:21:01",
+            "demand": null,
+            "availability": null,
+            "deficit": 80,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-01-30 07:25:43",
+            "demand": null,
+            "availability": null,
+            "deficit": 80,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-01-31 07:03:11",
+            "demand": null,
+            "availability": null,
+            "deficit": 80,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-02-02 07:06:20",
+            "demand": null,
+            "availability": null,
+            "deficit": 80,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-02-03 07:59:54",
+            "demand": null,
+            "availability": null,
+            "deficit": 80,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-02-04 07:11:42",
+            "demand": null,
+            "availability": null,
+            "deficit": 80,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-02-05 07:46:49",
+            "demand": null,
+            "availability": null,
+            "deficit": 75,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-02-05 08:49:08",
+            "demand": null,
+            "availability": 1824,
+            "deficit": null,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-02-06 08:36:28",
+            "demand": null,
+            "availability": 1844,
+            "deficit": null,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-02-10 07:47:49",
+            "demand": null,
+            "availability": null,
+            "deficit": 75,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-02-11 07:54:02",
+            "demand": null,
+            "availability": null,
+            "deficit": 75,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-02-12 08:11:34",
+            "demand": null,
+            "availability": null,
+            "deficit": 72,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-02-27 06:42:51",
+            "demand": null,
+            "availability": null,
+            "deficit": 345,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-02-28 07:42:50",
+            "demand": null,
+            "availability": null,
+            "deficit": 234,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-03-01 07:38:27",
+            "demand": null,
+            "availability": null,
+            "deficit": 181,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-03-02 07:12:14",
+            "demand": null,
+            "availability": null,
+            "deficit": 191,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-03-03 07:45:53",
+            "demand": null,
+            "availability": null,
+            "deficit": 360,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-03-04 07:21:18",
+            "demand": null,
+            "availability": null,
+            "deficit": 325,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-03-06 09:18:31",
+            "demand": null,
+            "availability": null,
+            "deficit": 433,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-03-11 07:19:49",
+            "demand": null,
+            "availability": null,
+            "deficit": 359,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-03-12 09:02:37",
+            "demand": null,
+            "availability": null,
+            "deficit": 333,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-03-13 09:17:35",
+            "demand": null,
+            "availability": null,
+            "deficit": 406,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-03-15 08:14:10",
+            "demand": null,
+            "availability": null,
+            "deficit": 343,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-03-16 08:06:03",
+            "demand": null,
+            "availability": null,
+            "deficit": 339,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-03-18 10:57:45",
+            "demand": null,
+            "availability": null,
+            "deficit": 407,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-03-19 08:42:28",
+            "demand": null,
+            "availability": null,
+            "deficit": 326,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-03-19 09:16:48",
+            "demand": 1280,
+            "availability": null,
+            "deficit": 3000,
+            "is_forecast": true
+        },
+        {
+            "date": "2026-03-20 08:50:04",
+            "demand": null,
+            "availability": null,
+            "deficit": 322,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-03-21 07:51:01",
+            "demand": null,
+            "availability": null,
+            "deficit": 290,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-03-24 07:49:26",
+            "demand": null,
+            "availability": null,
+            "deficit": 380,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-03-25 06:37:14",
+            "demand": null,
+            "availability": null,
+            "deficit": 330,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-03-26 07:44:14",
+            "demand": null,
+            "availability": null,
+            "deficit": 432,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-03-27 08:31:37",
+            "demand": null,
+            "availability": null,
+            "deficit": 403,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-03-28 08:21:34",
+            "demand": null,
+            "availability": null,
+            "deficit": 284,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-03-29 08:08:41",
+            "demand": null,
+            "availability": null,
+            "deficit": 235,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-03-30 07:38:31",
+            "demand": null,
+            "availability": null,
+            "deficit": 210,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-03-31 10:05:46",
+            "demand": null,
+            "availability": null,
+            "deficit": 379,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-04-01 07:21:51",
+            "demand": null,
+            "availability": null,
+            "deficit": 426,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-04-02 07:44:59",
+            "demand": null,
+            "availability": null,
+            "deficit": 205,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-04-03 08:31:01",
+            "demand": null,
+            "availability": null,
+            "deficit": 237,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-04-04 08:43:51",
+            "demand": null,
+            "availability": null,
+            "deficit": 265,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-04-05 07:55:52",
+            "demand": null,
+            "availability": null,
+            "deficit": 224,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-04-06 07:52:50",
+            "demand": null,
+            "availability": null,
+            "deficit": 273,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-04-07 08:19:59",
+            "demand": null,
+            "availability": null,
+            "deficit": 358,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-04-08 08:32:53",
+            "demand": null,
+            "availability": null,
+            "deficit": 312,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-04-09 08:29:25",
+            "demand": null,
+            "availability": null,
+            "deficit": 361,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-04-11 08:34:47",
+            "demand": null,
+            "availability": null,
+            "deficit": 305,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-04-12 08:45:53",
+            "demand": null,
+            "availability": null,
+            "deficit": 149,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-04-13 07:39:15",
+            "demand": null,
+            "availability": null,
+            "deficit": 245,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-04-14 08:36:49",
+            "demand": null,
+            "availability": null,
+            "deficit": 319,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-04-15 07:38:50",
+            "demand": null,
+            "availability": null,
+            "deficit": 374,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-04-16 08:00:09",
+            "demand": null,
+            "availability": null,
+            "deficit": 270,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-04-17 07:57:35",
+            "demand": null,
+            "availability": null,
+            "deficit": 406,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-04-18 08:24:45",
+            "demand": null,
+            "availability": null,
+            "deficit": 299,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-04-19 07:24:35",
+            "demand": null,
+            "availability": null,
+            "deficit": 30,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-04-26 07:10:09",
+            "demand": null,
+            "availability": null,
+            "deficit": 79,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-04-27 07:24:30",
+            "demand": null,
+            "availability": null,
+            "deficit": 64,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-04-28 08:23:35",
+            "demand": null,
+            "availability": null,
+            "deficit": 171,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-04-29 08:05:42",
+            "demand": null,
+            "availability": null,
+            "deficit": 167,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-04-30 07:36:37",
+            "demand": null,
+            "availability": null,
+            "deficit": 96,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-05-01 09:28:18",
+            "demand": null,
+            "availability": null,
+            "deficit": 384,
+            "is_forecast": false
+        },
+        {
+            "date": "2026-05-02 08:20:07",
+            "demand": null,
+            "availability": null,
+            "deficit": 186,
+            "is_forecast": false
+        }
+    ],
+    "thermal_units": [
+        {
+            "canonical": "CTE Carlos Manuel de Céspedes (Cienfuegos)",
+            "city": "Cienfuegos",
+            "mentions": 36,
+            "failures": 21,
+            "recoveries": 5,
+            "monthly_activity": [
+                9,
+                4,
+                15,
+                7,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "last_status": "normal"
+        },
+        {
+            "canonical": "CTE Máximo Gómez (Mariel)",
+            "city": "Artemisa",
+            "mentions": 41,
+            "failures": 23,
+            "recoveries": 3,
+            "monthly_activity": [
+                23,
+                3,
+                4,
+                11,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "last_status": "active_failure"
+        },
+        {
+            "canonical": "CTE Antonio Guiteras",
+            "city": "Matanzas",
+            "mentions": 50,
+            "failures": 21,
+            "recoveries": 1,
+            "monthly_activity": [
+                1,
+                14,
+                18,
+                17,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "last_status": "active_failure"
+        },
+        {
+            "canonical": "CTE Antonio Maceo (Renté)",
+            "city": "Santiago de Cuba",
+            "mentions": 43,
+            "failures": 19,
+            "recoveries": 0,
+            "monthly_activity": [
+                17,
+                20,
+                3,
+                3,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "last_status": "active_failure"
+        },
+        {
+            "canonical": "CTE 10 de Octubre (Nuevitas)",
+            "city": "Camagüey",
+            "mentions": 24,
+            "failures": 8,
+            "recoveries": 3,
+            "monthly_activity": [
+                14,
+                0,
+                7,
+                3,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "last_status": "normal"
+        },
+        {
+            "canonical": "CTE Lidio Ramón Pérez (Felton)",
+            "city": "Holguín",
+            "mentions": 11,
+            "failures": 6,
+            "recoveries": 1,
+            "monthly_activity": [
+                5,
+                4,
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "last_status": "normal"
+        },
+        {
+            "canonical": "CTE Otto Parellada (Tallapiedra)",
+            "city": "La Habana",
+            "mentions": 1,
+            "failures": 1,
+            "recoveries": 0,
+            "monthly_activity": [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "last_status": "active_failure"
+        },
+        {
+            "canonical": "CTE Antonio Maceo (Renté) U6",
+            "city": "Santiago de Cuba",
+            "mentions": 2,
+            "failures": 0,
+            "recoveries": 0,
+            "monthly_activity": [
+                2,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "last_status": "unknown"
+        },
+        {
+            "canonical": "CTE Antonio Maceo (Renté) U3",
+            "city": "Santiago de Cuba",
+            "mentions": 2,
+            "failures": 0,
+            "recoveries": 0,
+            "monthly_activity": [
+                0,
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "last_status": "unknown"
+        },
+        {
+            "canonical": "CTE Carlos Manuel de Céspedes (Cienfuegos) U3",
+            "city": "Cienfuegos",
+            "mentions": 1,
+            "failures": 0,
+            "recoveries": 0,
+            "monthly_activity": [
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+            ],
+            "last_status": "unknown"
+        }
+    ],
+    "hour_of_day_severity": {
+        "0": 64,
+        "1": 51,
+        "2": 31,
+        "3": 34,
+        "4": 17,
+        "5": 68,
+        "6": 128,
+        "7": 81,
+        "8": 72,
+        "9": 69,
+        "10": 112,
+        "11": 111,
+        "12": 94,
+        "13": 92,
+        "14": 127,
+        "15": 115,
+        "16": 127,
+        "17": 180,
+        "18": 182,
+        "19": 138,
+        "20": 124,
+        "21": 102,
+        "22": 82,
+        "23": 57
+    },
+    "worst_day": {
+        "date": "2026-03-04",
+        "critical_events": 2,
+        "high_events": 13,
+        "affected_blocks_count": 6,
+        "deficit_mw": 325,
+        "sample_message_id": 56125,
+        "sample_summary": "Desconexión total del SEN"
+    },
+    "live_grid_status": "normal"
 }

@@ -53,6 +53,12 @@ class TelegramMessageWithCount(TelegramMessage):
     count: int = 0
 
 @dataclass
+class BlockTopZone:
+    name: str = ""
+    count: int = 0
+
+
+@dataclass
 class BlockAnalysis:
     """
     Block Analysis class with all the necessary attributes.
@@ -65,6 +71,17 @@ class BlockAnalysis:
     estimated_affected_seconds: int = 0
     weekday_off_seconds: Dict[int, int] = field(default_factory=dict)
     weekday_off_avg_seconds: Dict[int, float] = field(default_factory=dict)
+
+    # AI-derived detailed stats (compact). Only populated when AI rows exist.
+    monthly_affectations: Dict[int, int] = field(default_factory=dict)  # 1..12 → count
+    hourly_affectations: Dict[int, int] = field(default_factory=dict)   # 0..23 → count
+    severity_breakdown: Dict[str, int] = field(default_factory=dict)    # severity → count
+    co_occurrences: Dict[int, int] = field(default_factory=dict)        # other_block → count
+    top_municipalities: List[BlockTopZone] = field(default_factory=list)
+    top_circuits: List[BlockTopZone] = field(default_factory=list)
+    worst_day_date: str = ""
+    worst_day_events: int = 0
+    avg_deficit_mw: Optional[int] = None  # avg power_deficit_mw across affectations of this block
 
 @dataclass
 class SENFailureAnalysisEvent:
@@ -123,6 +140,53 @@ class MessageAIAnalysis:
     processed_at: str = ""
 
 
+# ---- AI ENRICHMENT export-ready dataclasses (compact, JSON-serializable) ---- #
+
+
+@dataclass
+class AffectedZone:
+    """Aggregated counts for a province / municipality / circuit."""
+    name: str = ""
+    kind: str = ""  # province | municipality | circuit
+    mentions: int = 0
+    affectations: int = 0
+    recoveries: int = 0
+
+
+@dataclass
+class PowerPoint:
+    """Single point in the power-metrics timeline (date + MW snapshot)."""
+    date: str = ""
+    demand: Optional[int] = None
+    availability: Optional[int] = None
+    deficit: Optional[int] = None
+    is_forecast: bool = False  # True if from daily_forecast, False from daily_resume
+
+
+@dataclass
+class ThermalPlantStats:
+    """Per-CTE stats for the ranking section."""
+    canonical: str = ""
+    city: str = ""
+    mentions: int = 0
+    failures: int = 0
+    recoveries: int = 0
+    monthly_activity: List[int] = field(default_factory=list)  # length 12
+    last_status: str = "unknown"  # active_failure | recovering | normal | unknown
+
+
+@dataclass
+class WorstDay:
+    """Single worst day of the year by critical-event count."""
+    date: str = ""
+    critical_events: int = 0
+    high_events: int = 0
+    affected_blocks_count: int = 0
+    deficit_mw: Optional[int] = None
+    sample_message_id: int = 0
+    sample_summary: str = ""
+
+
 @dataclass
 class UneAnalysis:
     """
@@ -175,3 +239,15 @@ class UneAnalysis:
     # EXTRA ANALYSIS
     blocks_analysis: list[BlockAnalysis] = field(default_factory=list)
     sen_analysis: SENAnalysis = None
+
+    # AI ENRICHMENT — compact additive sections, populated by `__apply_ai_enrichment`
+    # when the `message_ai_analysis` table has rows for this year. Defaults preserve
+    # backwards compatibility (the frontend tolerates them being empty/null).
+    ai_categories_distribution: Dict[str, int] = field(default_factory=dict)
+    affected_zones: List[AffectedZone] = field(default_factory=list)
+    daily_severity: Dict[int, str] = field(default_factory=dict)  # day-of-year → severity
+    power_timeline: List[PowerPoint] = field(default_factory=list)
+    thermal_units: List[ThermalPlantStats] = field(default_factory=list)
+    hour_of_day_severity: Dict[int, int] = field(default_factory=dict)  # 0..23 → critical+high count
+    worst_day: Optional[WorstDay] = None
+    live_grid_status: str = "unknown"  # last-known sen_status in the year

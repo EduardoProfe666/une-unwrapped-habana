@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-05-02T10:53:58.400387-04:00",
+    "sync_date": "2026-05-02T10:59:26.131032-04:00",
     "year": 2025,
     "first_message": {
         "id": 32200,
@@ -763,7 +763,82 @@
                 "4": 30837.134615384617,
                 "5": 36695.846153846156,
                 "6": 36135.480769230766
-            }
+            },
+            "monthly_affectations": {
+                "1": 0,
+                "2": 1,
+                "3": 1,
+                "4": 2,
+                "5": 8,
+                "6": 45,
+                "7": 48,
+                "8": 60,
+                "9": 76,
+                "10": 169,
+                "11": 187,
+                "12": 370
+            },
+            "hourly_affectations": {
+                "0": 36,
+                "1": 30,
+                "2": 26,
+                "3": 14,
+                "4": 12,
+                "5": 21,
+                "6": 34,
+                "7": 43,
+                "8": 22,
+                "9": 11,
+                "10": 42,
+                "11": 28,
+                "12": 15,
+                "13": 12,
+                "14": 75,
+                "15": 51,
+                "16": 78,
+                "17": 57,
+                "18": 68,
+                "19": 107,
+                "20": 41,
+                "21": 31,
+                "22": 49,
+                "23": 64
+            },
+            "severity_breakdown": {
+                "low": 371,
+                "medium": 294,
+                "high": 302
+            },
+            "co_occurrences": {
+                "2": 388,
+                "3": 380,
+                "4": 338,
+                "5": 316,
+                "6": 318
+            },
+            "top_municipalities": [
+                {
+                    "name": "Habana del Este",
+                    "count": 120
+                },
+                {
+                    "name": "Playa",
+                    "count": 1
+                },
+                {
+                    "name": "Guanabacoa",
+                    "count": 1
+                }
+            ],
+            "top_circuits": [
+                {
+                    "name": "Miramar",
+                    "count": 1
+                }
+            ],
+            "worst_day_date": "2025-12-02",
+            "worst_day_events": 24,
+            "avg_deficit_mw": 163
         },
         {
             "number": 2,
@@ -789,7 +864,86 @@
                 "4": 31042.403846153848,
                 "5": 35361.67307692308,
                 "6": 34260.78846153846
-            }
+            },
+            "monthly_affectations": {
+                "1": 1,
+                "2": 1,
+                "3": 0,
+                "4": 2,
+                "5": 7,
+                "6": 38,
+                "7": 49,
+                "8": 64,
+                "9": 64,
+                "10": 151,
+                "11": 196,
+                "12": 364
+            },
+            "hourly_affectations": {
+                "0": 28,
+                "1": 27,
+                "2": 22,
+                "3": 16,
+                "4": 10,
+                "5": 19,
+                "6": 31,
+                "7": 45,
+                "8": 25,
+                "9": 14,
+                "10": 47,
+                "11": 25,
+                "12": 11,
+                "13": 18,
+                "14": 64,
+                "15": 61,
+                "16": 76,
+                "17": 70,
+                "18": 62,
+                "19": 110,
+                "20": 47,
+                "21": 35,
+                "22": 31,
+                "23": 43
+            },
+            "severity_breakdown": {
+                "low": 343,
+                "medium": 265,
+                "high": 329
+            },
+            "co_occurrences": {
+                "1": 388,
+                "3": 380,
+                "4": 360,
+                "5": 353,
+                "6": 332
+            },
+            "top_municipalities": [
+                {
+                    "name": "Habana del Este",
+                    "count": 107
+                },
+                {
+                    "name": "Plaza de la Revolución",
+                    "count": 2
+                },
+                {
+                    "name": "Diez de Octubre",
+                    "count": 1
+                },
+                {
+                    "name": "Playa",
+                    "count": 1
+                }
+            ],
+            "top_circuits": [
+                {
+                    "name": "Vedado",
+                    "count": 2
+                }
+            ],
+            "worst_day_date": "2025-12-02",
+            "worst_day_events": 23,
+            "avg_deficit_mw": 165
         },
         {
             "number": 3,
@@ -815,7 +969,86 @@
                 "4": 32199.5,
                 "5": 37824.307692307695,
                 "6": 34341.67307692308
-            }
+            },
+            "monthly_affectations": {
+                "1": 0,
+                "2": 0,
+                "3": 1,
+                "4": 2,
+                "5": 6,
+                "6": 35,
+                "7": 46,
+                "8": 57,
+                "9": 72,
+                "10": 152,
+                "11": 184,
+                "12": 387
+            },
+            "hourly_affectations": {
+                "0": 25,
+                "1": 17,
+                "2": 14,
+                "3": 13,
+                "4": 14,
+                "5": 16,
+                "6": 34,
+                "7": 40,
+                "8": 34,
+                "9": 16,
+                "10": 46,
+                "11": 21,
+                "12": 9,
+                "13": 15,
+                "14": 64,
+                "15": 63,
+                "16": 73,
+                "17": 66,
+                "18": 59,
+                "19": 113,
+                "20": 52,
+                "21": 39,
+                "22": 51,
+                "23": 48
+            },
+            "severity_breakdown": {
+                "low": 349,
+                "medium": 265,
+                "high": 328
+            },
+            "co_occurrences": {
+                "4": 388,
+                "1": 380,
+                "2": 380,
+                "5": 328,
+                "6": 307
+            },
+            "top_municipalities": [
+                {
+                    "name": "Habana del Este",
+                    "count": 95
+                },
+                {
+                    "name": "Playa",
+                    "count": 5
+                },
+                {
+                    "name": "Cotorro",
+                    "count": 1
+                },
+                {
+                    "name": "Arroyo Naranjo",
+                    "count": 1
+                }
+            ],
+            "top_circuits": [
+                {
+                    "name": "Mantilla",
+                    "count": 1
+                }
+            ],
+            "worst_day_date": "2025-12-02",
+            "worst_day_events": 27,
+            "avg_deficit_mw": 166
         },
         {
             "number": 4,
@@ -841,7 +1074,98 @@
                 "4": 30739.94230769231,
                 "5": 39207.03846153846,
                 "6": 33537.32692307692
-            }
+            },
+            "monthly_affectations": {
+                "1": 1,
+                "2": 1,
+                "3": 2,
+                "4": 3,
+                "5": 5,
+                "6": 41,
+                "7": 53,
+                "8": 62,
+                "9": 77,
+                "10": 169,
+                "11": 211,
+                "12": 362
+            },
+            "hourly_affectations": {
+                "0": 27,
+                "1": 19,
+                "2": 28,
+                "3": 16,
+                "4": 12,
+                "5": 22,
+                "6": 41,
+                "7": 51,
+                "8": 34,
+                "9": 26,
+                "10": 39,
+                "11": 23,
+                "12": 9,
+                "13": 8,
+                "14": 70,
+                "15": 60,
+                "16": 74,
+                "17": 68,
+                "18": 65,
+                "19": 123,
+                "20": 51,
+                "21": 30,
+                "22": 45,
+                "23": 46
+            },
+            "severity_breakdown": {
+                "low": 352,
+                "medium": 283,
+                "high": 352
+            },
+            "co_occurrences": {
+                "3": 388,
+                "1": 338,
+                "2": 360,
+                "5": 387,
+                "6": 389
+            },
+            "top_municipalities": [
+                {
+                    "name": "Habana del Este",
+                    "count": 109
+                },
+                {
+                    "name": "Playa",
+                    "count": 5
+                },
+                {
+                    "name": "Guanabacoa",
+                    "count": 2
+                },
+                {
+                    "name": "Diez de Octubre",
+                    "count": 1
+                },
+                {
+                    "name": "San Miguel del Padrón",
+                    "count": 1
+                },
+                {
+                    "name": "Plaza de la Revolución",
+                    "count": 1
+                }
+            ],
+            "top_circuits": [
+                {
+                    "name": "Miramar",
+                    "count": 3
+                },
+                {
+                    "name": "Vedado",
+                    "count": 1
+                }
+            ],
+            "worst_day_date": "2025-12-02",
+            "worst_day_events": 27,
+            "avg_deficit_mw": 164
         },
         {
             "number": 5,
@@ -867,7 +1191,102 @@
                 "4": 29680.423076923078,
                 "5": 37500.0,
                 "6": 27938.826923076922
-            }
+            },
+            "monthly_affectations": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 4,
+                "6": 36,
+                "7": 59,
+                "8": 61,
+                "9": 68,
+                "10": 152,
+                "11": 183,
+                "12": 358
+            },
+            "hourly_affectations": {
+                "0": 28,
+                "1": 15,
+                "2": 24,
+                "3": 13,
+                "4": 19,
+                "5": 15,
+                "6": 31,
+                "7": 42,
+                "8": 22,
+                "9": 22,
+                "10": 48,
+                "11": 28,
+                "12": 12,
+                "13": 11,
+                "14": 59,
+                "15": 49,
+                "16": 72,
+                "17": 64,
+                "18": 59,
+                "19": 99,
+                "20": 65,
+                "21": 35,
+                "22": 44,
+                "23": 45
+            },
+            "severity_breakdown": {
+                "medium": 270,
+                "low": 320,
+                "high": 331
+            },
+            "co_occurrences": {
+                "4": 387,
+                "1": 316,
+                "2": 353,
+                "3": 328,
+                "6": 400
+            },
+            "top_municipalities": [
+                {
+                    "name": "Habana del Este",
+                    "count": 94
+                },
+                {
+                    "name": "Guanabacoa",
+                    "count": 3
+                },
+                {
+                    "name": "Playa",
+                    "count": 2
+                },
+                {
+                    "name": "Diez de Octubre",
+                    "count": 1
+                },
+                {
+                    "name": "La Lisa",
+                    "count": 1
+                },
+                {
+                    "name": "San Miguel del Padrón",
+                    "count": 1
+                }
+            ],
+            "top_circuits": [
+                {
+                    "name": "Santa Fe",
+                    "count": 1
+                },
+                {
+                    "name": "Miramar",
+                    "count": 1
+                },
+                {
+                    "name": "Mantilla",
+                    "count": 1
+                }
+            ],
+            "worst_day_date": "2025-12-29",
+            "worst_day_events": 23,
+            "avg_deficit_mw": 163
         },
         {
             "number": 6,
@@ -893,7 +1312,82 @@
                 "4": 23950.28846153846,
                 "5": 26748.923076923078,
                 "6": 24418.076923076922
-            }
+            },
+            "monthly_affectations": {
+                "1": 0,
+                "2": 0,
+                "3": 0,
+                "4": 0,
+                "5": 0,
+                "6": 0,
+                "7": 31,
+                "8": 59,
+                "9": 77,
+                "10": 145,
+                "11": 211,
+                "12": 345
+            },
+            "hourly_affectations": {
+                "0": 19,
+                "1": 14,
+                "2": 16,
+                "3": 14,
+                "4": 14,
+                "5": 18,
+                "6": 31,
+                "7": 47,
+                "8": 25,
+                "9": 14,
+                "10": 41,
+                "11": 16,
+                "12": 12,
+                "13": 9,
+                "14": 61,
+                "15": 39,
+                "16": 83,
+                "17": 53,
+                "18": 56,
+                "19": 100,
+                "20": 56,
+                "21": 46,
+                "22": 38,
+                "23": 46
+            },
+            "severity_breakdown": {
+                "low": 302,
+                "medium": 247,
+                "high": 319
+            },
+            "co_occurrences": {
+                "2": 332,
+                "3": 307,
+                "5": 400,
+                "1": 318,
+                "4": 389
+            },
+            "top_municipalities": [
+                {
+                    "name": "Habana del Este",
+                    "count": 65
+                },
+                {
+                    "name": "San Miguel del Padrón",
+                    "count": 1
+                },
+                {
+                    "name": "Playa",
+                    "count": 1
+                }
+            ],
+            "top_circuits": [
+                {
+                    "name": "California",
+                    "count": 1
+                }
+            ],
+            "worst_day_date": "2025-12-29",
+            "worst_day_events": 24,
+            "avg_deficit_mw": 165
         }
     ],
     "sen_analysis": {
@@ -975,5 +1469,3434 @@
                 "estimated_duration_seconds": 41343
             }
         ]
-    }
+    },
+    "ai_categories_distribution": {
+        "circuit_failure": 5710,
+        "block_affectation": 2729,
+        "block_recovery": 1219,
+        "daily_resume": 998,
+        "thermal_unit_status": 937,
+        "apology_communication": 867,
+        "daf": 764,
+        "zone_recovery": 608,
+        "general_info": 524,
+        "daily_forecast": 120,
+        "scheduled_maintenance": 84,
+        "weather_impact": 37,
+        "sen_recovery": 19,
+        "sen_failure": 2
+    },
+    "affected_zones": [
+        {
+            "name": "La Habana",
+            "kind": "province",
+            "mentions": 4151,
+            "affectations": 2269,
+            "recoveries": 122
+        },
+        {
+            "name": "Habana del Este",
+            "kind": "municipality",
+            "mentions": 3017,
+            "affectations": 1611,
+            "recoveries": 99
+        },
+        {
+            "name": "Boyeros",
+            "kind": "municipality",
+            "mentions": 2388,
+            "affectations": 1296,
+            "recoveries": 93
+        },
+        {
+            "name": "Playa",
+            "kind": "municipality",
+            "mentions": 2367,
+            "affectations": 1267,
+            "recoveries": 107
+        },
+        {
+            "name": "Arroyo Naranjo",
+            "kind": "municipality",
+            "mentions": 2182,
+            "affectations": 1211,
+            "recoveries": 74
+        },
+        {
+            "name": "Guanabacoa",
+            "kind": "municipality",
+            "mentions": 1992,
+            "affectations": 1079,
+            "recoveries": 45
+        },
+        {
+            "name": "San Miguel del Padrón",
+            "kind": "municipality",
+            "mentions": 1921,
+            "affectations": 995,
+            "recoveries": 44
+        },
+        {
+            "name": "Diez de Octubre",
+            "kind": "municipality",
+            "mentions": 1781,
+            "affectations": 943,
+            "recoveries": 65
+        },
+        {
+            "name": "Plaza de la Revolución",
+            "kind": "municipality",
+            "mentions": 1821,
+            "affectations": 933,
+            "recoveries": 74
+        },
+        {
+            "name": "La Lisa",
+            "kind": "municipality",
+            "mentions": 1775,
+            "affectations": 928,
+            "recoveries": 49
+        },
+        {
+            "name": "Cerro",
+            "kind": "municipality",
+            "mentions": 1591,
+            "affectations": 751,
+            "recoveries": 42
+        },
+        {
+            "name": "Marianao",
+            "kind": "municipality",
+            "mentions": 1395,
+            "affectations": 730,
+            "recoveries": 43
+        },
+        {
+            "name": "Centro Habana",
+            "kind": "municipality",
+            "mentions": 1329,
+            "affectations": 587,
+            "recoveries": 30
+        },
+        {
+            "name": "Cotorro",
+            "kind": "municipality",
+            "mentions": 945,
+            "affectations": 467,
+            "recoveries": 18
+        },
+        {
+            "name": "Regla",
+            "kind": "municipality",
+            "mentions": 715,
+            "affectations": 395,
+            "recoveries": 12
+        },
+        {
+            "name": "Luyanó",
+            "kind": "circuit",
+            "mentions": 315,
+            "affectations": 221,
+            "recoveries": 24
+        },
+        {
+            "name": "Santiago de Cuba",
+            "kind": "province",
+            "mentions": 360,
+            "affectations": 180,
+            "recoveries": 23
+        },
+        {
+            "name": "Vedado",
+            "kind": "circuit",
+            "mentions": 271,
+            "affectations": 184,
+            "recoveries": 18
+        },
+        {
+            "name": "Habana Vieja",
+            "kind": "municipality",
+            "mentions": 512,
+            "affectations": 178,
+            "recoveries": 14
+        },
+        {
+            "name": "Alamar",
+            "kind": "circuit",
+            "mentions": 374,
+            "affectations": 165,
+            "recoveries": 8
+        },
+        {
+            "name": "Porvenir",
+            "kind": "circuit",
+            "mentions": 198,
+            "affectations": 143,
+            "recoveries": 19
+        },
+        {
+            "name": "Santa Fe",
+            "kind": "circuit",
+            "mentions": 179,
+            "affectations": 128,
+            "recoveries": 21
+        },
+        {
+            "name": "Cojímar",
+            "kind": "circuit",
+            "mentions": 167,
+            "affectations": 137,
+            "recoveries": 9
+        },
+        {
+            "name": "Miramar",
+            "kind": "circuit",
+            "mentions": 184,
+            "affectations": 113,
+            "recoveries": 16
+        },
+        {
+            "name": "Lawton",
+            "kind": "circuit",
+            "mentions": 147,
+            "affectations": 115,
+            "recoveries": 9
+        },
+        {
+            "name": "La Víbora",
+            "kind": "circuit",
+            "mentions": 121,
+            "affectations": 86,
+            "recoveries": 10
+        },
+        {
+            "name": "Cienfuegos",
+            "kind": "province",
+            "mentions": 154,
+            "affectations": 90,
+            "recoveries": 1
+        },
+        {
+            "name": "Dolores",
+            "kind": "circuit",
+            "mentions": 124,
+            "affectations": 79,
+            "recoveries": 7
+        },
+        {
+            "name": "Mantilla",
+            "kind": "circuit",
+            "mentions": 83,
+            "affectations": 67,
+            "recoveries": 4
+        },
+        {
+            "name": "Párraga",
+            "kind": "circuit",
+            "mentions": 84,
+            "affectations": 62,
+            "recoveries": 8
+        },
+        {
+            "name": "Guanabo",
+            "kind": "circuit",
+            "mentions": 161,
+            "affectations": 62,
+            "recoveries": 7
+        },
+        {
+            "name": "Calabazar",
+            "kind": "circuit",
+            "mentions": 75,
+            "affectations": 59,
+            "recoveries": 10
+        },
+        {
+            "name": "Camagüey",
+            "kind": "province",
+            "mentions": 88,
+            "affectations": 61,
+            "recoveries": 4
+        },
+        {
+            "name": "California",
+            "kind": "circuit",
+            "mentions": 80,
+            "affectations": 53,
+            "recoveries": 5
+        },
+        {
+            "name": "Sevillano",
+            "kind": "circuit",
+            "mentions": 75,
+            "affectations": 52,
+            "recoveries": 6
+        },
+        {
+            "name": "Tejas",
+            "kind": "circuit",
+            "mentions": 80,
+            "affectations": 52,
+            "recoveries": 3
+        },
+        {
+            "name": "La Cumbre",
+            "kind": "circuit",
+            "mentions": 74,
+            "affectations": 45,
+            "recoveries": 3
+        },
+        {
+            "name": "Jaimanitas",
+            "kind": "circuit",
+            "mentions": 60,
+            "affectations": 44,
+            "recoveries": 3
+        },
+        {
+            "name": "San Matías",
+            "kind": "circuit",
+            "mentions": 70,
+            "affectations": 41,
+            "recoveries": 5
+        },
+        {
+            "name": "Villa Clara",
+            "kind": "province",
+            "mentions": 50,
+            "affectations": 39,
+            "recoveries": 6
+        }
+    ],
+    "daily_severity": {
+        "1": "high",
+        "2": "medium",
+        "3": "high",
+        "4": "high",
+        "5": "high",
+        "6": "medium",
+        "7": "high",
+        "8": "high",
+        "9": "high",
+        "10": "medium",
+        "11": "high",
+        "12": "high",
+        "13": "high",
+        "14": "high",
+        "15": "high",
+        "16": "high",
+        "17": "critical",
+        "18": "high",
+        "19": "high",
+        "20": "critical",
+        "21": "critical",
+        "22": "critical",
+        "23": "high",
+        "24": "high",
+        "25": "high",
+        "26": "medium",
+        "27": "high",
+        "28": "high",
+        "29": "medium",
+        "30": "medium",
+        "31": "critical",
+        "32": "critical",
+        "33": "critical",
+        "34": "medium",
+        "35": "critical",
+        "36": "critical",
+        "37": "high",
+        "38": "medium",
+        "39": "critical",
+        "40": "high",
+        "41": "critical",
+        "42": "medium",
+        "43": "critical",
+        "44": "critical",
+        "45": "medium",
+        "46": "medium",
+        "47": "medium",
+        "48": "critical",
+        "49": "critical",
+        "50": "medium",
+        "51": "critical",
+        "52": "critical",
+        "53": "medium",
+        "54": "low",
+        "55": "critical",
+        "56": "critical",
+        "57": "critical",
+        "58": "medium",
+        "59": "critical",
+        "60": "high",
+        "61": "high",
+        "62": "medium",
+        "63": "critical",
+        "64": "critical",
+        "65": "critical",
+        "66": "medium",
+        "67": "high",
+        "68": "high",
+        "69": "critical",
+        "70": "medium",
+        "71": "critical",
+        "72": "critical",
+        "73": "high",
+        "74": "critical",
+        "75": "high",
+        "76": "critical",
+        "77": "high",
+        "78": "high",
+        "79": "critical",
+        "80": "critical",
+        "81": "high",
+        "82": "high",
+        "83": "high",
+        "84": "critical",
+        "85": "high",
+        "86": "critical",
+        "87": "critical",
+        "88": "medium",
+        "89": "medium",
+        "90": "high",
+        "91": "critical",
+        "92": "critical",
+        "93": "high",
+        "94": "high",
+        "95": "medium",
+        "96": "high",
+        "97": "high",
+        "98": "medium",
+        "99": "critical",
+        "100": "medium",
+        "101": "high",
+        "102": "medium",
+        "103": "medium",
+        "104": "critical",
+        "105": "critical",
+        "106": "medium",
+        "107": "critical",
+        "108": "critical",
+        "109": "medium",
+        "110": "medium",
+        "111": "critical",
+        "112": "high",
+        "113": "high",
+        "114": "high",
+        "115": "high",
+        "116": "high",
+        "117": "high",
+        "118": "critical",
+        "119": "critical",
+        "120": "critical",
+        "121": "critical",
+        "122": "high",
+        "123": "high",
+        "124": "medium",
+        "125": "critical",
+        "126": "high",
+        "127": "critical",
+        "128": "critical",
+        "129": "critical",
+        "130": "high",
+        "131": "high",
+        "132": "critical",
+        "133": "critical",
+        "134": "critical",
+        "135": "critical",
+        "136": "high",
+        "137": "high",
+        "138": "high",
+        "139": "critical",
+        "140": "critical",
+        "141": "critical",
+        "142": "critical",
+        "143": "critical",
+        "144": "high",
+        "145": "medium",
+        "146": "high",
+        "147": "critical",
+        "148": "critical",
+        "149": "critical",
+        "150": "high",
+        "151": "critical",
+        "152": "critical",
+        "153": "critical",
+        "154": "critical",
+        "155": "critical",
+        "156": "high",
+        "157": "critical",
+        "158": "critical",
+        "159": "critical",
+        "160": "critical",
+        "161": "critical",
+        "162": "critical",
+        "163": "critical",
+        "164": "critical",
+        "165": "critical",
+        "166": "critical",
+        "167": "critical",
+        "168": "critical",
+        "169": "critical",
+        "170": "critical",
+        "171": "critical",
+        "172": "critical",
+        "173": "critical",
+        "174": "critical",
+        "175": "critical",
+        "176": "critical",
+        "177": "critical",
+        "178": "critical",
+        "179": "critical",
+        "180": "critical",
+        "181": "critical",
+        "182": "critical",
+        "183": "critical",
+        "184": "critical",
+        "185": "critical",
+        "186": "critical",
+        "187": "critical",
+        "188": "critical",
+        "189": "critical",
+        "190": "critical",
+        "191": "critical",
+        "192": "critical",
+        "193": "critical",
+        "194": "critical",
+        "195": "critical",
+        "196": "critical",
+        "197": "critical",
+        "198": "critical",
+        "199": "critical",
+        "200": "critical",
+        "201": "critical",
+        "202": "critical",
+        "203": "critical",
+        "204": "critical",
+        "205": "critical",
+        "206": "critical",
+        "207": "critical",
+        "208": "critical",
+        "209": "critical",
+        "210": "critical",
+        "211": "critical",
+        "212": "critical",
+        "213": "critical",
+        "214": "critical",
+        "215": "critical",
+        "216": "high",
+        "217": "high",
+        "218": "critical",
+        "219": "critical",
+        "220": "critical",
+        "221": "critical",
+        "222": "critical",
+        "223": "critical",
+        "224": "critical",
+        "225": "critical",
+        "226": "critical",
+        "227": "critical",
+        "228": "critical",
+        "229": "critical",
+        "230": "critical",
+        "231": "critical",
+        "232": "critical",
+        "233": "critical",
+        "234": "critical",
+        "235": "critical",
+        "236": "high",
+        "237": "critical",
+        "238": "critical",
+        "239": "critical",
+        "240": "critical",
+        "241": "critical",
+        "242": "critical",
+        "243": "critical",
+        "244": "critical",
+        "245": "critical",
+        "246": "critical",
+        "247": "critical",
+        "248": "critical",
+        "249": "critical",
+        "250": "critical",
+        "251": "critical",
+        "252": "critical",
+        "253": "critical",
+        "254": "high",
+        "255": "critical",
+        "256": "critical",
+        "257": "critical",
+        "258": "critical",
+        "259": "critical",
+        "260": "critical",
+        "261": "critical",
+        "262": "critical",
+        "263": "critical",
+        "264": "critical",
+        "265": "critical",
+        "266": "high",
+        "267": "high",
+        "268": "high",
+        "269": "high",
+        "270": "high",
+        "271": "high",
+        "272": "high",
+        "273": "high",
+        "274": "high",
+        "275": "high",
+        "276": "high",
+        "277": "high",
+        "278": "high",
+        "279": "high",
+        "280": "high",
+        "281": "high",
+        "282": "high",
+        "283": "high",
+        "284": "critical",
+        "285": "high",
+        "286": "high",
+        "287": "high",
+        "288": "high",
+        "289": "high",
+        "290": "high",
+        "291": "high",
+        "292": "high",
+        "293": "high",
+        "294": "high",
+        "295": "high",
+        "296": "high",
+        "297": "high",
+        "298": "high",
+        "299": "high",
+        "300": "high",
+        "301": "high",
+        "302": "high",
+        "303": "high",
+        "304": "high",
+        "305": "high",
+        "306": "high",
+        "307": "high",
+        "308": "high",
+        "309": "high",
+        "310": "high",
+        "311": "critical",
+        "312": "high",
+        "313": "high",
+        "314": "high",
+        "315": "high",
+        "316": "high",
+        "317": "high",
+        "318": "high",
+        "319": "high",
+        "320": "high",
+        "321": "high",
+        "322": "high",
+        "323": "critical",
+        "324": "critical",
+        "325": "critical",
+        "326": "critical",
+        "327": "critical",
+        "328": "critical",
+        "329": "high",
+        "330": "high",
+        "331": "high",
+        "332": "high",
+        "333": "high",
+        "334": "high",
+        "335": "high",
+        "336": "high",
+        "337": "critical",
+        "338": "high",
+        "339": "high",
+        "340": "high",
+        "341": "high",
+        "342": "high",
+        "343": "high",
+        "344": "high",
+        "345": "high",
+        "346": "high",
+        "347": "high",
+        "348": "high",
+        "349": "high",
+        "350": "high",
+        "351": "high",
+        "352": "high",
+        "353": "high",
+        "354": "high",
+        "355": "high",
+        "356": "high",
+        "357": "high",
+        "358": "high",
+        "359": "critical",
+        "360": "high",
+        "361": "high",
+        "362": "high",
+        "363": "critical",
+        "364": "medium",
+        "365": "medium"
+    },
+    "power_timeline": [
+        {
+            "date": "2025-01-03 09:53:50",
+            "demand": 2161,
+            "availability": 2211,
+            "deficit": 660,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-01-04 09:21:57",
+            "demand": 2120,
+            "availability": 2170,
+            "deficit": 800,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-01-05 10:57:25",
+            "demand": 2077,
+            "availability": 2127,
+            "deficit": 767,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-01-07 10:35:50",
+            "demand": 1950,
+            "availability": 1960,
+            "deficit": 1160,
+            "is_forecast": true
+        },
+        {
+            "date": "2025-01-08 09:26:33",
+            "demand": 1880,
+            "availability": 2130,
+            "deficit": 1040,
+            "is_forecast": true
+        },
+        {
+            "date": "2025-01-09 10:01:29",
+            "demand": 2200,
+            "availability": 2200,
+            "deficit": 770,
+            "is_forecast": true
+        },
+        {
+            "date": "2025-01-13 12:44:39",
+            "demand": 2110,
+            "availability": null,
+            "deficit": 890,
+            "is_forecast": true
+        },
+        {
+            "date": "2025-01-17 12:03:04",
+            "demand": null,
+            "availability": 1820,
+            "deficit": 1550,
+            "is_forecast": true
+        },
+        {
+            "date": "2025-01-22 10:28:22",
+            "demand": 1830,
+            "availability": 2080,
+            "deficit": 2315,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-01-27 09:42:37",
+            "demand": 2000,
+            "availability": 1909,
+            "deficit": 1411,
+            "is_forecast": true
+        },
+        {
+            "date": "2025-02-02 10:47:49",
+            "demand": 1675,
+            "availability": 1600,
+            "deficit": 3200,
+            "is_forecast": true
+        },
+        {
+            "date": "2025-02-04 09:53:06",
+            "demand": 3350,
+            "availability": 1706,
+            "deficit": 2300,
+            "is_forecast": true
+        },
+        {
+            "date": "2025-02-05 12:25:11",
+            "demand": 3250,
+            "availability": 1685,
+            "deficit": 2350,
+            "is_forecast": true
+        },
+        {
+            "date": "2025-02-08 10:17:06",
+            "demand": 3300,
+            "availability": 2005,
+            "deficit": 2250,
+            "is_forecast": true
+        },
+        {
+            "date": "2025-02-09 09:17:54",
+            "demand": 2126,
+            "availability": 1898,
+            "deficit": 1422,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-02-10 09:56:44",
+            "demand": 3300,
+            "availability": 1845,
+            "deficit": 2210,
+            "is_forecast": true
+        },
+        {
+            "date": "2025-02-12 09:08:33",
+            "demand": 3290,
+            "availability": 1490,
+            "deficit": 2300,
+            "is_forecast": true
+        },
+        {
+            "date": "2025-02-13 09:03:43",
+            "demand": 3200,
+            "availability": 1460,
+            "deficit": 2300,
+            "is_forecast": true
+        },
+        {
+            "date": "2025-02-17 08:50:55",
+            "demand": 3280,
+            "availability": 1830,
+            "deficit": 2410,
+            "is_forecast": true
+        },
+        {
+            "date": "2025-02-18 08:54:59",
+            "demand": 3350,
+            "availability": 1800,
+            "deficit": 2400,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-02-20 09:35:24",
+            "demand": 3250,
+            "availability": 1810,
+            "deficit": 2530,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-02-21 16:42:38",
+            "demand": 3250,
+            "availability": 1756,
+            "deficit": 2310,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-02-24 09:12:53",
+            "demand": 3150,
+            "availability": 1484,
+            "deficit": 1736,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-02-25 14:46:49",
+            "demand": 3080,
+            "availability": 1558,
+            "deficit": 2320,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-02-26 09:05:01",
+            "demand": 3200,
+            "availability": 1629,
+            "deficit": 2220,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-02-28 10:52:33",
+            "demand": 3250,
+            "availability": 1695,
+            "deficit": 2315,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-03-04 08:16:36",
+            "demand": 3200,
+            "availability": 1593,
+            "deficit": 2380,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-03-05 09:39:58",
+            "demand": 3280,
+            "availability": 1624,
+            "deficit": 2380,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-03-06 14:21:27",
+            "demand": 3200,
+            "availability": 1926,
+            "deficit": 2480,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-03-10 09:10:20",
+            "demand": 3200,
+            "availability": 1760,
+            "deficit": 2400,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-03-12 08:24:23",
+            "demand": 3000,
+            "availability": 1775,
+            "deficit": 1950,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-03-13 10:10:20",
+            "demand": 3250,
+            "availability": 1875,
+            "deficit": 2150,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-03-14 13:48:09",
+            "demand": 2280,
+            "availability": 1940,
+            "deficit": 1492,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-03-17 16:45:07",
+            "demand": 2600,
+            "availability": 1995,
+            "deficit": 1601,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-03-20 10:47:06",
+            "demand": 3150,
+            "availability": 1880,
+            "deficit": 1920,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-03-21 12:07:41",
+            "demand": 3150,
+            "availability": 1980,
+            "deficit": 2060,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-03-24 09:04:15",
+            "demand": 2200,
+            "availability": 1897,
+            "deficit": 1475,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-03-25 11:17:53",
+            "demand": 3260,
+            "availability": 1940,
+            "deficit": 2540,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-03-27 10:56:03",
+            "demand": 2450,
+            "availability": 1835,
+            "deficit": 1528,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-03-28 09:17:42",
+            "demand": 3275,
+            "availability": 1850,
+            "deficit": 2310,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-04-01 09:05:48",
+            "demand": 3380,
+            "availability": 1870,
+            "deficit": 2700,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-04-02 12:20:05",
+            "demand": 3400,
+            "availability": 1910,
+            "deficit": 2895,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-04-09 09:37:19",
+            "demand": 3400,
+            "availability": 1930,
+            "deficit": 2520,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-04-14 08:54:16",
+            "demand": 3250,
+            "availability": 1838,
+            "deficit": 2155,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-04-15 09:30:02",
+            "demand": 3390,
+            "availability": 1820,
+            "deficit": 2395,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-04-17 09:09:23",
+            "demand": 3400,
+            "availability": 1769,
+            "deficit": 2570,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-04-18 14:19:12",
+            "demand": 3400,
+            "availability": 2035,
+            "deficit": 2650,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-04-21 09:05:33",
+            "demand": 3450,
+            "availability": 1652,
+            "deficit": 2700,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-04-28 10:00:04",
+            "demand": 3300,
+            "availability": 1947,
+            "deficit": 2580,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-04-29 10:24:03",
+            "demand": 3420,
+            "availability": 1870,
+            "deficit": 2710,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-04-30 09:46:00",
+            "demand": 2880,
+            "availability": 1940,
+            "deficit": 1639,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-05-01 10:42:05",
+            "demand": 3150,
+            "availability": 2035,
+            "deficit": 2450,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-05-05 12:36:52",
+            "demand": 3400,
+            "availability": 1855,
+            "deficit": 2725,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-05-07 09:26:48",
+            "demand": 2800,
+            "availability": 1780,
+            "deficit": 1708,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-05-08 10:23:45",
+            "demand": 3380,
+            "availability": 1910,
+            "deficit": 2850,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-05-09 08:43:01",
+            "demand": 3400,
+            "availability": 1858,
+            "deficit": 2800,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-05-12 10:42:10",
+            "demand": 2850,
+            "availability": 1910,
+            "deficit": 1510,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-05-13 11:14:10",
+            "demand": 3320,
+            "availability": 1940,
+            "deficit": 2900,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-05-14 10:16:27",
+            "demand": 3280,
+            "availability": 2020,
+            "deficit": 2900,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-05-15 10:04:46",
+            "demand": 3380,
+            "availability": 1990,
+            "deficit": 2875,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-05-19 08:58:03",
+            "demand": 3450,
+            "availability": 1875,
+            "deficit": 2810,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-05-20 09:14:01",
+            "demand": 3480,
+            "availability": 1850,
+            "deficit": 2870,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-05-21 09:19:59",
+            "demand": 3500,
+            "availability": 1800,
+            "deficit": 2950,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-05-22 11:20:12",
+            "demand": 3480,
+            "availability": 1960,
+            "deficit": 2940,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-05-23 11:40:42",
+            "demand": 3480,
+            "availability": 2020,
+            "deficit": 3060,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-05-27 10:15:59",
+            "demand": 3480,
+            "availability": 2040,
+            "deficit": 2980,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-05-28 10:40:54",
+            "demand": 3480,
+            "availability": 2055,
+            "deficit": 3000,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-05-29 09:40:43",
+            "demand": 3550,
+            "availability": 2068,
+            "deficit": 3050,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-05-31 10:05:30",
+            "demand": 3450,
+            "availability": 1900,
+            "deficit": 2920,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-06-01 08:22:54",
+            "demand": 2888,
+            "availability": 90,
+            "deficit": 1590,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-06-02 10:05:02",
+            "demand": 3450,
+            "availability": 1840,
+            "deficit": 2920,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-06-03 09:14:41",
+            "demand": 3400,
+            "availability": 2198,
+            "deficit": 2920,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-06-04 09:29:33",
+            "demand": 3300,
+            "availability": 2080,
+            "deficit": 2620,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-06-06 09:38:06",
+            "demand": 3450,
+            "availability": 2040,
+            "deficit": 2940,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-06-07 08:23:42",
+            "demand": 3450,
+            "availability": 2010,
+            "deficit": 2895,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-06-08 08:14:46",
+            "demand": null,
+            "availability": 1990,
+            "deficit": 2800,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-06-09 09:12:37",
+            "demand": null,
+            "availability": 2000,
+            "deficit": 2850,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-06-10 08:23:44",
+            "demand": null,
+            "availability": 1940,
+            "deficit": 3440,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-06-11 08:47:17",
+            "demand": null,
+            "availability": 1930,
+            "deficit": 2940,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-06-12 08:49:57",
+            "demand": null,
+            "availability": 1775,
+            "deficit": 2750,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-06-13 08:59:34",
+            "demand": null,
+            "availability": 1795,
+            "deficit": 2800,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-06-14 09:34:08",
+            "demand": null,
+            "availability": 1930,
+            "deficit": 2880,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-06-15 08:08:07",
+            "demand": null,
+            "availability": 1845,
+            "deficit": 2948,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-06-16 09:01:04",
+            "demand": null,
+            "availability": 1890,
+            "deficit": 2965,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-06-17 10:29:53",
+            "demand": null,
+            "availability": 1870,
+            "deficit": 2755,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-06-18 08:12:03",
+            "demand": 3000,
+            "availability": 1841,
+            "deficit": 3500,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-06-19 08:36:35",
+            "demand": 2980,
+            "availability": 1880,
+            "deficit": 1690,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-06-20 08:32:26",
+            "demand": 2980,
+            "availability": 1910,
+            "deficit": 1730,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-06-21 08:39:33",
+            "demand": 3120,
+            "availability": 1850,
+            "deficit": 1838,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-06-22 10:45:05",
+            "demand": 2958,
+            "availability": 1820,
+            "deficit": 1880,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-06-23 08:45:30",
+            "demand": 3000,
+            "availability": 1850,
+            "deficit": 1770,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-06-24 08:38:36",
+            "demand": 3050,
+            "availability": 1830,
+            "deficit": 1790,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-06-25 08:13:13",
+            "demand": 3070,
+            "availability": 1805,
+            "deficit": 1882,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-06-26 08:20:08",
+            "demand": 3570,
+            "availability": 1815,
+            "deficit": 2900,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-06-27 08:30:35",
+            "demand": 3570,
+            "availability": 1930,
+            "deficit": 2800,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-06-28 08:19:33",
+            "demand": null,
+            "availability": 1693,
+            "deficit": 2900,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-06-29 08:50:35",
+            "demand": null,
+            "availability": 1917,
+            "deficit": 3100,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-06-30 09:53:03",
+            "demand": 3580,
+            "availability": 2055,
+            "deficit": 3100,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-01 09:01:35",
+            "demand": 3500,
+            "availability": 1995,
+            "deficit": 3010,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-02 09:00:00",
+            "demand": 3550,
+            "availability": 2055,
+            "deficit": 2900,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-03 08:18:24",
+            "demand": 3550,
+            "availability": 1970,
+            "deficit": 2990,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-03 09:42:19",
+            "demand": null,
+            "availability": null,
+            "deficit": 164,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-04 08:31:19",
+            "demand": null,
+            "availability": 2135,
+            "deficit": 3150,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-04 09:48:33",
+            "demand": null,
+            "availability": null,
+            "deficit": 87,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-05 08:24:55",
+            "demand": null,
+            "availability": null,
+            "deficit": 54,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-05 09:05:27",
+            "demand": 3650,
+            "availability": 2075,
+            "deficit": 3020,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-06 07:46:03",
+            "demand": null,
+            "availability": null,
+            "deficit": 77,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-06 09:12:33",
+            "demand": 3600,
+            "availability": 2135,
+            "deficit": 3000,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-07 09:07:21",
+            "demand": 3550,
+            "availability": 2250,
+            "deficit": 2870,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-08 08:33:44",
+            "demand": null,
+            "availability": null,
+            "deficit": 69,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-09 08:34:46",
+            "demand": 3680,
+            "availability": 2120,
+            "deficit": 3200,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-10 07:54:52",
+            "demand": null,
+            "availability": null,
+            "deficit": 52,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-10 08:42:12",
+            "demand": 3680,
+            "availability": 2265,
+            "deficit": 3000,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-11 08:54:33",
+            "demand": 3580,
+            "availability": 2305,
+            "deficit": 3100,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-12 07:57:17",
+            "demand": 3650,
+            "availability": 2180,
+            "deficit": 3050,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-12 08:52:54",
+            "demand": null,
+            "availability": null,
+            "deficit": 60,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-13 08:52:22",
+            "demand": null,
+            "availability": null,
+            "deficit": 60,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-14 08:50:43",
+            "demand": 3680,
+            "availability": 1925,
+            "deficit": 2750,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-15 08:49:15",
+            "demand": 3670,
+            "availability": 1970,
+            "deficit": 3120,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-15 09:09:57",
+            "demand": null,
+            "availability": null,
+            "deficit": 53,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-16 08:51:00",
+            "demand": 3700,
+            "availability": 1920,
+            "deficit": 3140,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-17 08:06:19",
+            "demand": 3660,
+            "availability": 1665,
+            "deficit": 2860,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-17 10:11:33",
+            "demand": null,
+            "availability": null,
+            "deficit": 165,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-18 07:54:40",
+            "demand": null,
+            "availability": null,
+            "deficit": 101,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-18 08:36:08",
+            "demand": 3580,
+            "availability": 2055,
+            "deficit": 3070,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-19 09:08:22",
+            "demand": 3650,
+            "availability": 2200,
+            "deficit": 3200,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-19 10:12:06",
+            "demand": null,
+            "availability": null,
+            "deficit": 66,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-20 08:31:21",
+            "demand": 3700,
+            "availability": 1936,
+            "deficit": 3273,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-21 08:09:52",
+            "demand": 3700,
+            "availability": 2007,
+            "deficit": 3050,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-22 08:25:26",
+            "demand": 3680,
+            "availability": 2054,
+            "deficit": 3308,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-23 07:50:11",
+            "demand": null,
+            "availability": null,
+            "deficit": 95,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-23 08:23:50",
+            "demand": 3620,
+            "availability": 1866,
+            "deficit": 3100,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-24 07:14:47",
+            "demand": null,
+            "availability": null,
+            "deficit": 70,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-24 08:20:19",
+            "demand": 3600,
+            "availability": 1920,
+            "deficit": 3130,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-25 06:58:34",
+            "demand": null,
+            "availability": null,
+            "deficit": 98,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-25 08:15:23",
+            "demand": 3210,
+            "availability": 2110,
+            "deficit": 3500,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-26 07:35:18",
+            "demand": null,
+            "availability": null,
+            "deficit": 56,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-26 09:55:10",
+            "demand": 3160,
+            "availability": 2090,
+            "deficit": 3650,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-27 08:16:38",
+            "demand": 3230,
+            "availability": 2095,
+            "deficit": 3700,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-28 07:19:50",
+            "demand": null,
+            "availability": null,
+            "deficit": 123,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-28 08:36:21",
+            "demand": 3225,
+            "availability": 2060,
+            "deficit": 1710,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-29 07:37:28",
+            "demand": null,
+            "availability": null,
+            "deficit": 126,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-29 08:23:09",
+            "demand": 3650,
+            "availability": 1916,
+            "deficit": 3070,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-30 07:51:15",
+            "demand": null,
+            "availability": null,
+            "deficit": 117,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-30 08:56:34",
+            "demand": 3650,
+            "availability": 1928,
+            "deficit": 3120,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-31 07:05:04",
+            "demand": null,
+            "availability": null,
+            "deficit": 102,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-07-31 08:31:38",
+            "demand": 3650,
+            "availability": 1919,
+            "deficit": 3150,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-01 08:30:12",
+            "demand": 3650,
+            "availability": 1895,
+            "deficit": 3226,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-02 08:03:19",
+            "demand": null,
+            "availability": null,
+            "deficit": 107,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-02 10:18:25",
+            "demand": 3700,
+            "availability": 2022,
+            "deficit": 3245,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-03 08:27:31",
+            "demand": 3700,
+            "availability": 2095,
+            "deficit": 3200,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-04 08:57:43",
+            "demand": null,
+            "availability": null,
+            "deficit": 76,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-05 07:39:16",
+            "demand": null,
+            "availability": null,
+            "deficit": 128,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-06 07:13:12",
+            "demand": null,
+            "availability": null,
+            "deficit": 159,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-06 08:24:48",
+            "demand": 3750,
+            "availability": 2010,
+            "deficit": 3050,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-07 08:45:51",
+            "demand": 3000,
+            "availability": 1985,
+            "deficit": 3150,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-08 07:24:20",
+            "demand": null,
+            "availability": null,
+            "deficit": 110,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-08 09:44:48",
+            "demand": 3700,
+            "availability": 2040,
+            "deficit": 3150,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-09 07:36:21",
+            "demand": null,
+            "availability": null,
+            "deficit": 48,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-09 10:16:14",
+            "demand": 3600,
+            "availability": 2150,
+            "deficit": 2624,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-10 08:55:14",
+            "demand": 3450,
+            "availability": 2130,
+            "deficit": 2483,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-11 08:13:48",
+            "demand": 3450,
+            "availability": 2170,
+            "deficit": 2558,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-12 07:42:37",
+            "demand": null,
+            "availability": null,
+            "deficit": 68,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-12 08:11:43",
+            "demand": 3450,
+            "availability": 2155,
+            "deficit": 2795,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-13 07:20:58",
+            "demand": null,
+            "availability": null,
+            "deficit": 64,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-13 08:18:40",
+            "demand": 3600,
+            "availability": 2195,
+            "deficit": 2917,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-14 07:46:47",
+            "demand": null,
+            "availability": null,
+            "deficit": 55,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-15 07:25:25",
+            "demand": null,
+            "availability": null,
+            "deficit": 65,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-15 09:17:09",
+            "demand": 3700,
+            "availability": 2050,
+            "deficit": 3150,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-16 09:11:13",
+            "demand": null,
+            "availability": null,
+            "deficit": 52,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-16 10:38:12",
+            "demand": 3800,
+            "availability": 2195,
+            "deficit": 3527,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-17 07:25:54",
+            "demand": null,
+            "availability": null,
+            "deficit": 145,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-17 08:59:39",
+            "demand": 3800,
+            "availability": 2155,
+            "deficit": 3120,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-18 07:49:49",
+            "demand": null,
+            "availability": null,
+            "deficit": 58,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-18 08:01:30",
+            "demand": 3800,
+            "availability": 2100,
+            "deficit": 3160,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-18 10:27:39",
+            "demand": 3800,
+            "availability": 2100,
+            "deficit": 3160,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-19 07:50:53",
+            "demand": null,
+            "availability": null,
+            "deficit": 74,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-19 08:06:09",
+            "demand": 3800,
+            "availability": 2050,
+            "deficit": 3290,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-20 07:04:03",
+            "demand": null,
+            "availability": null,
+            "deficit": 119,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-20 08:41:23",
+            "demand": 3800,
+            "availability": 2080,
+            "deficit": 3340,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-20 10:01:17",
+            "demand": 3800,
+            "availability": 2080,
+            "deficit": 3340,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-21 07:36:12",
+            "demand": null,
+            "availability": null,
+            "deficit": 154,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-21 08:07:35",
+            "demand": 3800,
+            "availability": 2240,
+            "deficit": 3315,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-22 06:52:21",
+            "demand": null,
+            "availability": null,
+            "deficit": 65,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-22 07:50:21",
+            "demand": 3850,
+            "availability": 2220,
+            "deficit": 3230,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-23 07:31:19",
+            "demand": null,
+            "availability": null,
+            "deficit": 59,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-23 11:54:53",
+            "demand": 3000,
+            "availability": 2260,
+            "deficit": 3800,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-24 07:43:07",
+            "demand": null,
+            "availability": null,
+            "deficit": 57,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-25 07:53:45",
+            "demand": 3294,
+            "availability": 2120,
+            "deficit": 3840,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-26 08:18:04",
+            "demand": null,
+            "availability": null,
+            "deficit": 56,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-26 11:13:10",
+            "demand": 3800,
+            "availability": 2230,
+            "deficit": 3345,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-27 07:03:58",
+            "demand": null,
+            "availability": null,
+            "deficit": 99,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-27 08:47:13",
+            "demand": 3780,
+            "availability": 2080,
+            "deficit": 3225,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-28 09:38:15",
+            "demand": 3760,
+            "availability": 2080,
+            "deficit": 3170,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-29 06:35:29",
+            "demand": null,
+            "availability": null,
+            "deficit": 57,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-29 08:50:53",
+            "demand": 3750,
+            "availability": 2215,
+            "deficit": 3006,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-30 07:43:45",
+            "demand": null,
+            "availability": null,
+            "deficit": 66,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-30 08:45:31",
+            "demand": 2976,
+            "availability": 2085,
+            "deficit": 3650,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-31 07:25:30",
+            "demand": null,
+            "availability": null,
+            "deficit": 43,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-08-31 08:51:42",
+            "demand": 3097,
+            "availability": 2085,
+            "deficit": 1635,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-01 07:50:02",
+            "demand": null,
+            "availability": null,
+            "deficit": 130,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-01 10:22:57",
+            "demand": 3750,
+            "availability": 1930,
+            "deficit": 3100,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-02 07:54:05",
+            "demand": null,
+            "availability": null,
+            "deficit": 238,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-02 08:11:36",
+            "demand": 3750,
+            "availability": 1961,
+            "deficit": 3070,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-03 07:48:40",
+            "demand": null,
+            "availability": null,
+            "deficit": 117,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-03 09:37:45",
+            "demand": 3600,
+            "availability": 1943,
+            "deficit": 3090,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-04 07:32:29",
+            "demand": null,
+            "availability": null,
+            "deficit": 113,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-04 11:56:48",
+            "demand": 3550,
+            "availability": 1890,
+            "deficit": 2825,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-05 08:20:50",
+            "demand": null,
+            "availability": null,
+            "deficit": 65,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-05 09:24:24",
+            "demand": 3500,
+            "availability": 1799,
+            "deficit": 2900,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-06 07:13:36",
+            "demand": null,
+            "availability": null,
+            "deficit": 206,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-06 08:44:46",
+            "demand": 2860,
+            "availability": 1861,
+            "deficit": 1905,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-07 07:28:42",
+            "demand": null,
+            "availability": null,
+            "deficit": 177,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-07 08:36:45",
+            "demand": 3450,
+            "availability": 1810,
+            "deficit": 2885,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-08 07:39:06",
+            "demand": null,
+            "availability": null,
+            "deficit": 217,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-08 08:00:13",
+            "demand": 3450,
+            "availability": 1910,
+            "deficit": 2795,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-09 08:32:49",
+            "demand": null,
+            "availability": null,
+            "deficit": 128,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-09 09:40:18",
+            "demand": 3550,
+            "availability": 1950,
+            "deficit": 2935,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-10 07:44:06",
+            "demand": null,
+            "availability": null,
+            "deficit": 135,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-10 08:44:13",
+            "demand": 2950,
+            "availability": 1780,
+            "deficit": 3500,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-12 09:34:32",
+            "demand": null,
+            "availability": 1775,
+            "deficit": 2810,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-13 09:20:04",
+            "demand": 3400,
+            "availability": 1939,
+            "deficit": 2693,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-14 06:44:03",
+            "demand": null,
+            "availability": null,
+            "deficit": 171,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-14 10:02:32",
+            "demand": 3500,
+            "availability": 1852,
+            "deficit": 2870,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-15 07:10:43",
+            "demand": null,
+            "availability": null,
+            "deficit": 238,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-15 09:01:49",
+            "demand": 3550,
+            "availability": 1981,
+            "deficit": 2940,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-16 08:46:23",
+            "demand": null,
+            "availability": null,
+            "deficit": 181,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-17 07:36:00",
+            "demand": null,
+            "availability": null,
+            "deficit": 384,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-17 08:50:11",
+            "demand": 3500,
+            "availability": 2052,
+            "deficit": 2750,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-18 07:49:44",
+            "demand": null,
+            "availability": null,
+            "deficit": 155,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-18 08:10:49",
+            "demand": 3450,
+            "availability": 1885,
+            "deficit": 2679,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-19 07:35:44",
+            "demand": null,
+            "availability": null,
+            "deficit": 129,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-19 08:19:39",
+            "demand": 3450,
+            "availability": 1826,
+            "deficit": 2820,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-20 07:56:28",
+            "demand": null,
+            "availability": null,
+            "deficit": 225,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-20 09:32:59",
+            "demand": 2896,
+            "availability": 1882,
+            "deficit": 1795,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-21 07:30:23",
+            "demand": null,
+            "availability": null,
+            "deficit": 258,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-21 09:28:27",
+            "demand": 3000,
+            "availability": 2010,
+            "deficit": 1710,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-22 07:34:21",
+            "demand": null,
+            "availability": null,
+            "deficit": 227,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-22 09:02:51",
+            "demand": 3500,
+            "availability": 1910,
+            "deficit": 3000,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-23 07:29:06",
+            "demand": null,
+            "availability": null,
+            "deficit": 63,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-24 07:25:51",
+            "demand": null,
+            "availability": null,
+            "deficit": 173,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-25 07:29:27",
+            "demand": null,
+            "availability": null,
+            "deficit": 119,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-26 07:51:20",
+            "demand": null,
+            "availability": null,
+            "deficit": 158,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-27 10:07:52",
+            "demand": null,
+            "availability": null,
+            "deficit": 237,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-28 06:06:51",
+            "demand": null,
+            "availability": null,
+            "deficit": 146,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-29 07:54:16",
+            "demand": null,
+            "availability": null,
+            "deficit": 301,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-09-30 08:40:56",
+            "demand": null,
+            "availability": null,
+            "deficit": 170,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-10-01 08:12:57",
+            "demand": null,
+            "availability": null,
+            "deficit": 267,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-10-02 07:49:03",
+            "demand": null,
+            "availability": null,
+            "deficit": 341,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-10-03 09:07:50",
+            "demand": null,
+            "availability": null,
+            "deficit": 410,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-10-04 08:25:18",
+            "demand": null,
+            "availability": null,
+            "deficit": 210,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-10-05 06:13:22",
+            "demand": null,
+            "availability": null,
+            "deficit": 125,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-10-06 07:15:11",
+            "demand": null,
+            "availability": null,
+            "deficit": 126,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-10-07 08:11:06",
+            "demand": null,
+            "availability": null,
+            "deficit": 138,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-10-08 07:05:09",
+            "demand": null,
+            "availability": null,
+            "deficit": 179,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-10-09 07:35:24",
+            "demand": null,
+            "availability": null,
+            "deficit": 198,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-10-10 08:11:30",
+            "demand": null,
+            "availability": null,
+            "deficit": 104,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-10-11 07:38:06",
+            "demand": null,
+            "availability": null,
+            "deficit": 100,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-10-12 08:27:39",
+            "demand": null,
+            "availability": null,
+            "deficit": 120,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-10-13 07:24:40",
+            "demand": null,
+            "availability": null,
+            "deficit": 161,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-10-14 07:21:12",
+            "demand": null,
+            "availability": null,
+            "deficit": 179,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-10-15 06:42:59",
+            "demand": null,
+            "availability": null,
+            "deficit": 223,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-10-16 06:50:25",
+            "demand": null,
+            "availability": null,
+            "deficit": 190,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-10-18 07:14:01",
+            "demand": null,
+            "availability": null,
+            "deficit": 52,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-10-19 07:57:12",
+            "demand": null,
+            "availability": null,
+            "deficit": 58,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-10-20 07:38:32",
+            "demand": null,
+            "availability": null,
+            "deficit": 50,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-10-21 06:39:23",
+            "demand": null,
+            "availability": null,
+            "deficit": 158,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-10-22 06:52:43",
+            "demand": null,
+            "availability": null,
+            "deficit": 137,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-10-23 07:50:04",
+            "demand": null,
+            "availability": null,
+            "deficit": 174,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-10-24 07:24:02",
+            "demand": null,
+            "availability": null,
+            "deficit": 210,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-10-25 08:06:27",
+            "demand": null,
+            "availability": null,
+            "deficit": 168,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-10-26 08:19:01",
+            "demand": null,
+            "availability": 84,
+            "deficit": 243,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-10-27 09:06:37",
+            "demand": null,
+            "availability": 122,
+            "deficit": 268,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-10-28 07:36:26",
+            "demand": null,
+            "availability": 84,
+            "deficit": 162,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-10-30 08:23:07",
+            "demand": null,
+            "availability": null,
+            "deficit": 214,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-10-31 08:07:29",
+            "demand": null,
+            "availability": null,
+            "deficit": 158,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-01 07:56:49",
+            "demand": null,
+            "availability": null,
+            "deficit": 81,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-02 06:07:22",
+            "demand": null,
+            "availability": null,
+            "deficit": 173,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-03 06:57:44",
+            "demand": null,
+            "availability": null,
+            "deficit": 206,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-04 07:52:57",
+            "demand": null,
+            "availability": null,
+            "deficit": 137,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-05 08:25:13",
+            "demand": null,
+            "availability": null,
+            "deficit": 147,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-05 19:28:51",
+            "demand": null,
+            "availability": 100,
+            "deficit": null,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-06 08:08:04",
+            "demand": null,
+            "availability": null,
+            "deficit": 174,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-07 07:46:13",
+            "demand": null,
+            "availability": null,
+            "deficit": 157,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-08 08:36:37",
+            "demand": null,
+            "availability": null,
+            "deficit": 155,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-09 07:26:08",
+            "demand": null,
+            "availability": null,
+            "deficit": 215,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-10 07:32:35",
+            "demand": null,
+            "availability": null,
+            "deficit": 216,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-11 07:50:56",
+            "demand": null,
+            "availability": null,
+            "deficit": 276,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-12 07:52:06",
+            "demand": null,
+            "availability": null,
+            "deficit": 213,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-13 07:02:31",
+            "demand": null,
+            "availability": null,
+            "deficit": 232,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-14 07:00:54",
+            "demand": null,
+            "availability": null,
+            "deficit": 226,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-15 07:54:30",
+            "demand": null,
+            "availability": null,
+            "deficit": 200,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-16 08:32:29",
+            "demand": null,
+            "availability": null,
+            "deficit": 140,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-17 07:11:09",
+            "demand": null,
+            "availability": null,
+            "deficit": 256,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-18 07:25:16",
+            "demand": null,
+            "availability": null,
+            "deficit": 270,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-19 07:06:05",
+            "demand": null,
+            "availability": null,
+            "deficit": 337,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-19 08:20:47",
+            "demand": 2404,
+            "availability": 1747,
+            "deficit": 1775,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-20 08:13:04",
+            "demand": 2460,
+            "availability": 1964,
+            "deficit": 1776,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-20 09:32:04",
+            "demand": null,
+            "availability": null,
+            "deficit": 431,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-21 07:30:09",
+            "demand": null,
+            "availability": null,
+            "deficit": 294,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-21 08:32:04",
+            "demand": 2480,
+            "availability": 1790,
+            "deficit": 1605,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-22 07:40:23",
+            "demand": null,
+            "availability": null,
+            "deficit": 291,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-22 09:50:13",
+            "demand": 2320,
+            "availability": 1707,
+            "deficit": 1685,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-23 07:29:44",
+            "demand": null,
+            "availability": null,
+            "deficit": 164,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-23 08:57:31",
+            "demand": 2214,
+            "availability": 1733,
+            "deficit": 1735,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-24 07:52:39",
+            "demand": null,
+            "availability": null,
+            "deficit": 232,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-24 09:17:10",
+            "demand": 2400,
+            "availability": 1700,
+            "deficit": 1625,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-25 06:35:29",
+            "demand": null,
+            "availability": null,
+            "deficit": 226,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-26 07:25:22",
+            "demand": null,
+            "availability": null,
+            "deficit": 262,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-27 08:32:14",
+            "demand": null,
+            "availability": null,
+            "deficit": 256,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-28 07:51:22",
+            "demand": null,
+            "availability": null,
+            "deficit": 290,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-29 07:31:25",
+            "demand": null,
+            "availability": null,
+            "deficit": 234,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-11-30 06:36:52",
+            "demand": null,
+            "availability": null,
+            "deficit": 287,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-12-01 06:38:57",
+            "demand": null,
+            "availability": null,
+            "deficit": 281,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-12-04 07:34:19",
+            "demand": null,
+            "availability": null,
+            "deficit": 318,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-12-05 07:54:41",
+            "demand": null,
+            "availability": null,
+            "deficit": 271,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-12-06 07:32:56",
+            "demand": null,
+            "availability": null,
+            "deficit": 355,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-12-08 09:32:10",
+            "demand": null,
+            "availability": null,
+            "deficit": 404,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-12-09 08:48:24",
+            "demand": null,
+            "availability": null,
+            "deficit": 485,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-12-10 07:17:11",
+            "demand": null,
+            "availability": null,
+            "deficit": 328,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-12-11 08:14:55",
+            "demand": null,
+            "availability": null,
+            "deficit": 237,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-12-12 07:14:01",
+            "demand": null,
+            "availability": null,
+            "deficit": 154,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-12-13 08:04:16",
+            "demand": null,
+            "availability": null,
+            "deficit": 243,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-12-14 07:26:18",
+            "demand": null,
+            "availability": null,
+            "deficit": 210,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-12-15 07:57:09",
+            "demand": null,
+            "availability": null,
+            "deficit": 217,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-12-16 08:02:20",
+            "demand": null,
+            "availability": null,
+            "deficit": 386,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-12-17 06:51:32",
+            "demand": null,
+            "availability": null,
+            "deficit": 408,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-12-18 07:32:22",
+            "demand": null,
+            "availability": null,
+            "deficit": 282,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-12-19 05:58:15",
+            "demand": null,
+            "availability": null,
+            "deficit": 334,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-12-20 07:18:52",
+            "demand": null,
+            "availability": null,
+            "deficit": 321,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-12-21 08:12:27",
+            "demand": null,
+            "availability": null,
+            "deficit": 273,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-12-22 07:13:46",
+            "demand": null,
+            "availability": null,
+            "deficit": 206,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-12-23 08:28:51",
+            "demand": null,
+            "availability": null,
+            "deficit": 249,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-12-24 07:40:39",
+            "demand": null,
+            "availability": null,
+            "deficit": 435,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-12-25 07:45:19",
+            "demand": null,
+            "availability": null,
+            "deficit": 218,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-12-25 09:33:32",
+            "demand": 1365,
+            "availability": null,
+            "deficit": 3300,
+            "is_forecast": true
+        },
+        {
+            "date": "2025-12-26 07:04:49",
+            "demand": null,
+            "availability": null,
+            "deficit": 419,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-12-27 07:37:30",
+            "demand": null,
+            "availability": null,
+            "deficit": 154,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-12-28 08:15:28",
+            "demand": null,
+            "availability": null,
+            "deficit": 274,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-12-29 07:14:43",
+            "demand": null,
+            "availability": null,
+            "deficit": 397,
+            "is_forecast": false
+        },
+        {
+            "date": "2025-12-29 11:24:57",
+            "demand": 1488,
+            "availability": null,
+            "deficit": 3250,
+            "is_forecast": true
+        },
+        {
+            "date": "2025-12-30 06:35:33",
+            "demand": null,
+            "availability": null,
+            "deficit": 317,
+            "is_forecast": false
+        }
+    ],
+    "thermal_units": [
+        {
+            "canonical": "CTE Máximo Gómez (Mariel)",
+            "city": "Artemisa",
+            "mentions": 103,
+            "failures": 51,
+            "recoveries": 3,
+            "monthly_activity": [
+                3,
+                0,
+                8,
+                1,
+                0,
+                6,
+                10,
+                18,
+                10,
+                12,
+                11,
+                24
+            ],
+            "last_status": "active_failure"
+        },
+        {
+            "canonical": "CTE Antonio Guiteras",
+            "city": "Matanzas",
+            "mentions": 72,
+            "failures": 44,
+            "recoveries": 1,
+            "monthly_activity": [
+                3,
+                3,
+                3,
+                1,
+                10,
+                6,
+                10,
+                6,
+                5,
+                8,
+                6,
+                11
+            ],
+            "last_status": "active_failure"
+        },
+        {
+            "canonical": "CTE Antonio Maceo (Renté)",
+            "city": "Santiago de Cuba",
+            "mentions": 116,
+            "failures": 28,
+            "recoveries": 1,
+            "monthly_activity": [
+                12,
+                3,
+                6,
+                1,
+                3,
+                7,
+                2,
+                5,
+                13,
+                20,
+                20,
+                24
+            ],
+            "last_status": "active_failure"
+        },
+        {
+            "canonical": "CTE Carlos Manuel de Céspedes (Cienfuegos)",
+            "city": "Cienfuegos",
+            "mentions": 73,
+            "failures": 26,
+            "recoveries": 0,
+            "monthly_activity": [
+                4,
+                1,
+                5,
+                1,
+                9,
+                7,
+                3,
+                7,
+                9,
+                7,
+                11,
+                9
+            ],
+            "last_status": "active_failure"
+        },
+        {
+            "canonical": "CTE 10 de Octubre (Nuevitas)",
+            "city": "Camagüey",
+            "mentions": 61,
+            "failures": 17,
+            "recoveries": 0,
+            "monthly_activity": [
+                7,
+                2,
+                2,
+                0,
+                3,
+                7,
+                3,
+                3,
+                5,
+                8,
+                7,
+                14
+            ],
+            "last_status": "active_failure"
+        },
+        {
+            "canonical": "CTE Lidio Ramón Pérez (Felton)",
+            "city": "Holguín",
+            "mentions": 63,
+            "failures": 15,
+            "recoveries": 1,
+            "monthly_activity": [
+                12,
+                2,
+                7,
+                1,
+                3,
+                7,
+                0,
+                1,
+                4,
+                4,
+                11,
+                11
+            ],
+            "last_status": "active_failure"
+        },
+        {
+            "canonical": "CTE Otto Parellada (Tallapiedra)",
+            "city": "La Habana",
+            "mentions": 8,
+            "failures": 1,
+            "recoveries": 1,
+            "monthly_activity": [
+                0,
+                0,
+                0,
+                4,
+                0,
+                0,
+                1,
+                1,
+                2,
+                0,
+                0,
+                0
+            ],
+            "last_status": "normal"
+        },
+        {
+            "canonical": "CTE 10 de Octubre (Nuevitas) U6",
+            "city": "Camagüey",
+            "mentions": 3,
+            "failures": 2,
+            "recoveries": 0,
+            "monthly_activity": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1
+            ],
+            "last_status": "active_failure"
+        },
+        {
+            "canonical": "CTE Antonio Maceo (Renté) U5",
+            "city": "Santiago de Cuba",
+            "mentions": 4,
+            "failures": 2,
+            "recoveries": 0,
+            "monthly_activity": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                1,
+                1
+            ],
+            "last_status": "active_failure"
+        },
+        {
+            "canonical": "CTE Antonio Maceo (Renté) U6",
+            "city": "Santiago de Cuba",
+            "mentions": 2,
+            "failures": 1,
+            "recoveries": 0,
+            "monthly_activity": [
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "last_status": "active_failure"
+        },
+        {
+            "canonical": "CTE Máximo Gómez (Mariel) U6",
+            "city": "Artemisa",
+            "mentions": 3,
+            "failures": 1,
+            "recoveries": 0,
+            "monthly_activity": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                0,
+                0,
+                1,
+                0,
+                0,
+                0
+            ],
+            "last_status": "active_failure"
+        },
+        {
+            "canonical": "CTE Antonio Maceo (Renté) U3",
+            "city": "Santiago de Cuba",
+            "mentions": 2,
+            "failures": 1,
+            "recoveries": 0,
+            "monthly_activity": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1,
+                0,
+                1,
+                0
+            ],
+            "last_status": "active_failure"
+        },
+        {
+            "canonical": "CTE Ernesto Che Guevara",
+            "city": "Matanzas",
+            "mentions": 5,
+            "failures": 0,
+            "recoveries": 0,
+            "monthly_activity": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                4,
+                0,
+                1
+            ],
+            "last_status": "unknown"
+        },
+        {
+            "canonical": "CTE Lidio Ramón Pérez (Felton) U1",
+            "city": "Holguín",
+            "mentions": 3,
+            "failures": 0,
+            "recoveries": 0,
+            "monthly_activity": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                2,
+                1,
+                0
+            ],
+            "last_status": "unknown"
+        },
+        {
+            "canonical": "CTE Carlos Manuel de Céspedes (Cienfuegos) U3",
+            "city": "Cienfuegos",
+            "mentions": 1,
+            "failures": 0,
+            "recoveries": 0,
+            "monthly_activity": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                1
+            ],
+            "last_status": "unknown"
+        }
+    ],
+    "hour_of_day_severity": {
+        "0": 47,
+        "1": 34,
+        "2": 101,
+        "3": 19,
+        "4": 6,
+        "5": 60,
+        "6": 217,
+        "7": 38,
+        "8": 118,
+        "9": 102,
+        "10": 193,
+        "11": 72,
+        "12": 68,
+        "13": 54,
+        "14": 156,
+        "15": 83,
+        "16": 126,
+        "17": 112,
+        "18": 224,
+        "19": 116,
+        "20": 79,
+        "21": 52,
+        "22": 167,
+        "23": 41
+    },
+    "worst_day": {
+        "date": "2025-11-20",
+        "critical_events": 2,
+        "high_events": 17,
+        "affected_blocks_count": 6,
+        "deficit_mw": 1776,
+        "sample_message_id": 47530,
+        "sample_summary": "Resumen del día anterior — demanda 2460 MW — disponibilidad 1964 MW"
+    },
+    "live_grid_status": "normal"
 }

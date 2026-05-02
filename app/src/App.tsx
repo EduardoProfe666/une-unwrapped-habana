@@ -23,6 +23,16 @@ const BlockCard = lazy(() => import('@/src/components/BlockCard.tsx'));
 const DistributionSection = lazy(() => import('@/src/components/DistributionSection'));
 const DailyActivity = lazy(() => import('@/src/components/DailyActivity.tsx'));
 
+// AI ENRICHMENT sections
+const SeverityCalendar = lazy(() => import('@/src/components/SeverityCalendar.tsx'));
+const AffectedZonesMap = lazy(() => import('@/src/components/AffectedZonesMap.tsx'));
+const PowerTimelineChart = lazy(() => import('@/src/components/PowerTimelineChart.tsx'));
+const ThermalPlantsRanking = lazy(() => import('@/src/components/ThermalPlantsRanking.tsx'));
+const HourOfDayClock = lazy(() => import('@/src/components/HourOfDayClock.tsx'));
+const WorstDayHero = lazy(() => import('@/src/components/WorstDayHero.tsx'));
+const GridStatusBanner = lazy(() => import('@/src/components/GridStatusBanner.tsx'));
+const BlockExplorer = lazy(() => import('@/src/components/BlockExplorer.tsx'));
+
 function App() {
     const [selectedYear, setSelectedYear] = useState<number>(2025);
     const {data, loading} = useYearAnalysis(selectedYear);
@@ -174,10 +184,51 @@ function App() {
             <div className={`min-h-screen ${theme.bg} text-black transition-colors duration-500 relative`}>
 
                 {/* Sync Date Corner */}
-                <div
-                    className="fixed top-0 right-0 p-2 z-50 hover:opacity-70 opacity-45 bg-black text-white text-[10px] font-mono border-l-2 border-b-2 border-white/20">
-                    SYNC_OK: {new Date(data.sync_date).toLocaleString('es-CU')}
-                </div>
+                <m.div
+                    initial={{opacity: 0, y: -10, x: 10}}
+                    animate={{opacity: 0.55, y: 0, x: 0}}
+                    whileHover={{opacity: 1, y: 0, x: 0, scale: 1.02}}
+                    transition={{duration: 0.4, ease: [0.22, 1, 0.36, 1]}}
+                    className="fixed top-0 right-0 z-50 bg-black text-white text-[10px] font-mono border-l-2 border-b-2 border-white/20 group cursor-default"
+                >
+                    <div className="px-3 py-2 flex items-center gap-2">
+                        {/* Live signal indicator */}
+                        <span className="relative flex items-center justify-center">
+                            <m.span
+                                className="absolute w-2 h-2 rounded-full bg-green-400"
+                                animate={{scale: [1, 2, 1], opacity: [0.6, 0, 0.6]}}
+                                transition={{duration: 2, repeat: Infinity, ease: 'easeOut'}}
+                            />
+                            <span className="relative w-2 h-2 rounded-full bg-green-400 border border-white/30"/>
+                        </span>
+
+                        <span className="font-black tracking-widest">SYNC_OK</span>
+                        <span className="opacity-40">:</span>
+                        <span className="font-black">
+                            {new Date(data.sync_date).toLocaleString('es-CU')}
+                        </span>
+
+                        {/* Mini signal bars on the right */}
+                        <div className="hidden md:flex items-end gap-0.5 h-3 ml-1 opacity-70 group-hover:opacity-100 transition-opacity">
+                            {[0, 1, 2, 3].map(i => (
+                                <m.span
+                                    key={i}
+                                    className="w-0.5 bg-green-400"
+                                    animate={{height: ['30%', '100%', '30%']}}
+                                    transition={{duration: 1.4, delay: i * 0.12, repeat: Infinity, ease: 'easeInOut'}}
+                                    style={{minHeight: 2}}
+                                />
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Animated bottom scanline */}
+                    <m.div
+                        className="absolute bottom-0 left-0 right-0 h-px bg-green-400/60"
+                        animate={{scaleX: [0, 1, 0], originX: [0, 0.5, 1]}}
+                        transition={{duration: 3, repeat: Infinity, ease: 'easeInOut'}}
+                    />
+                </m.div>
 
                 {/* Blackout Failure Easter Egg */}
                 <AnimatePresence>
@@ -401,6 +452,11 @@ function App() {
                     </div>
                 </section>
 
+                {/* Live SEN status banner (AI-derived) */}
+                <Suspense fallback={null}>
+                    <GridStatusBanner status={data.live_grid_status} year={selectedYear}/>
+                </Suspense>
+
                 {loading ? (
                     <div className="h-screen flex items-center justify-center">
                         <div className="text-center space-y-4">
@@ -451,11 +507,37 @@ function App() {
                                     />
                                 </Suspense>
                             </div>
+
+                            {/* SEVERITY CALENDAR (AI) */}
+                            {data.daily_severity && Object.keys(data.daily_severity).length > 0 && (
+                                <div id="severity-calendar">
+                                    <Suspense fallback={<SectionLoader/>}>
+                                        <SeverityCalendar
+                                            dailySeverity={data.daily_severity}
+                                            year={selectedYear}
+                                            accentClass={theme.accent}
+                                        />
+                                    </Suspense>
+                                </div>
+                            )}
                         </div>
 
+                        {/* HIGHLIGHT / WORST DAY */}
+                        {data.worst_day && (
+                            <>
+                                <SectionHeader id="story-group" title="02_HITO_DEL_AÑO" color="bg-fuchsia-400"/>
+                                <div className="space-y-12">
+                                    <div id="worst-day">
+                                        <Suspense fallback={<SectionLoader/>}>
+                                            <WorstDayHero worstDay={data.worst_day}/>
+                                        </Suspense>
+                                    </div>
+                                </div>
+                            </>
+                        )}
 
                         {/* BLOCKS ANALYSIS */}
-                        <SectionHeader id="infra-group" title="02_INFRAESTRUCTURA" color="bg-yellow-400"/>
+                        <SectionHeader id="infra-group" title="03_INFRAESTRUCTURA" color="bg-yellow-400"/>
                         <div className="space-y-16">
                             <div id="blocks-analysis">
                                 <section className="mt-20">
@@ -485,6 +567,19 @@ function App() {
                                 </section>
                             </div>
 
+                            {/* BLOCK EXPLORER (AI) */}
+                            {data.blocks_analysis && data.blocks_analysis.length > 0 && (
+                                <div id="block-explorer">
+                                    <Suspense fallback={<SectionLoader/>}>
+                                        <BlockExplorer
+                                            blocks={data.blocks_analysis}
+                                            primaryColorClass={theme.primary}
+                                            secondaryColorClass={theme.secondary}
+                                        />
+                                    </Suspense>
+                                </div>
+                            )}
+
                             {/* Weekly Block Matrix */}
                             <div id="weekly-block-matrix">
                                 <section className="mt-20">
@@ -507,9 +602,52 @@ function App() {
                                     </Suspense>
                                 </section>
                             </div>
+
+                            {/* THERMAL PLANTS RANKING (AI) */}
+                            {data.thermal_units && data.thermal_units.length > 0 && (
+                                <div id="thermal-units">
+                                    <Suspense fallback={<SectionLoader/>}>
+                                        <ThermalPlantsRanking
+                                            units={data.thermal_units}
+                                            primaryColorClass={theme.primary}
+                                        />
+                                    </Suspense>
+                                </div>
+                            )}
                         </div>
 
-                        <SectionHeader id="analysis-group" title="03_ANÁLISIS_TEMPORAL" color="bg-green-400"/>
+                        {/* GEOGRAFÍA + RITMO */}
+                        {((data.affected_zones && data.affected_zones.length > 0) ||
+                          (data.hour_of_day_severity && Object.keys(data.hour_of_day_severity).length > 0)) && (
+                            <>
+                                <SectionHeader id="geo-group" title="04_GEOGRAFÍA_Y_RITMO" color="bg-cyan-400"/>
+                                <div className="space-y-16">
+                                    {data.affected_zones && data.affected_zones.length > 0 && (
+                                        <div id="affected-zones">
+                                            <Suspense fallback={<SectionLoader/>}>
+                                                <AffectedZonesMap
+                                                    zones={data.affected_zones}
+                                                    primaryColorClass={theme.primary}
+                                                />
+                                            </Suspense>
+                                        </div>
+                                    )}
+
+                                    {data.hour_of_day_severity && Object.keys(data.hour_of_day_severity).length > 0 && (
+                                        <div id="hour-clock">
+                                            <Suspense fallback={<SectionLoader/>}>
+                                                <HourOfDayClock
+                                                    hourOfDaySeverity={data.hour_of_day_severity}
+                                                    primaryColorClass={theme.primary}
+                                                />
+                                            </Suspense>
+                                        </div>
+                                    )}
+                                </div>
+                            </>
+                        )}
+
+                        <SectionHeader id="analysis-group" title="05_ANÁLISIS_TEMPORAL" color="bg-green-400"/>
                         <div className="space-y-16">
                             {/* MONTHLY CHARTS */}
                             <div id="monthly-charts">
@@ -523,11 +661,24 @@ function App() {
                                 </section>
                             </div>
 
+                            {/* POWER TIMELINE (AI) */}
+                            {data.power_timeline && data.power_timeline.length > 0 && (
+                                <div id="power-timeline">
+                                    <Suspense fallback={<SectionLoader/>}>
+                                        <PowerTimelineChart
+                                            powerTimeline={data.power_timeline}
+                                            primaryColorClass={theme.primary}
+                                        />
+                                    </Suspense>
+                                </div>
+                            )}
+
                             {/* DISTRIBUTION */}
                             <div id="distribution">
                                 <Suspense fallback={<SectionLoader/>}>
                                     <DistributionSection
                                         distributionMessage={data.distribution_message}
+                                        aiCategoriesDistribution={data.ai_categories_distribution}
                                         totalMessages={data.total_messages}
                                         totalReactions={data.total_reactions}
                                         totalPositiveReactions={data.total_positive_reactions}
@@ -550,7 +701,7 @@ function App() {
                             </div>
                         </div>
 
-                        <SectionHeader id="social-group" title="04_SOCIAL_Y_TEXTO" color="bg-red-400"/>
+                        <SectionHeader id="social-group" title="06_SOCIAL_Y_TEXTO" color="bg-red-400"/>
                         <div className="space-y-16">
                             {/* WORD CLOUD */}
                             <div id="word-cloud">

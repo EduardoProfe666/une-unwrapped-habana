@@ -9,6 +9,10 @@ from core.classes import (
     SENAnalysis,
     SENFailureAnalysisEvent,
     BlockAnalysis,
+    AffectedZone,
+    PowerPoint,
+    ThermalPlantStats,
+    WorstDay,
 )
 from core.database import get_messages_by_year
 from dataclasses import asdict
@@ -566,6 +570,9 @@ def __apply_ai_enrichment(data: UneAnalysis, messages: list[TelegramMessage]):
     # estimated_affected_seconds + weekday_off_seconds — derive from AI events.
     blocks = _compute_block_durations_from_ai(blocks, sorted_msgs, ai_map, data.year)
 
+    # Detailed AI stats per block (monthly/hourly/zones/co-occurrences/severity/worst day)
+    blocks = _compute_block_detailed_stats(blocks, sorted_msgs, ai_map)
+
     data.blocks_analysis = blocks
 
     # ---------------- sen_analysis (refined) ---------------- #
@@ -608,6 +615,265 @@ def __apply_ai_enrichment(data: UneAnalysis, messages: list[TelegramMessage]):
     sen.failure_events = failure_events
     sen.total_failure_events = len(failure_events)
     data.sen_analysis = sen
+
+    # ---------------- new compact AI sections (additive) ---------------- #
+    _populate_ai_sections(data, messages, sorted_msgs, ai_map)
+
+
+# ---------------- helpers for the new AI-derived sections ---------------- #
+
+
+_AI_CATEGORY_LABELS_ES: dict[str, str] = {
+    "general_info":          "Información general",
+    "apology_communication": "Comunicación / disculpa",
+    "weather_impact":        "Impacto meteorológico",
+    "scheduled_maintenance": "Mantenimiento programado",
+    "thermal_unit_status":   "Estado unidad termoeléctrica",
+    "daily_forecast":        "Pronóstico diario",
+    "daily_resume":          "Resumen diario",
+    "daf":                   "Disparado Automático por Frecuencia",
+    "circuit_failure":       "Falla de circuito local",
+    "zone_outage":           "Afectación zonal",
+    "zone_recovery":         "Recuperación zonal",
+    "block_affectation":     "Afectación de bloque",
+    "block_recovery":        "Restablecimiento de bloque",
+    "sen_failure":           "Desconexión total del SEN",
+    "sen_recovery":          "Restablecimiento del SEN",
+}
+
+
+_SEVERITY_RANK = {"low": 1, "medium": 2, "high": 3, "critical": 4}
+
+
+def _build_thermal_city_lookup() -> dict[str, str]:
+    """Map canonical CTE name → city, sourced from the gazetteer."""
+    try:
+        from core.ai.gazetteer import THERMAL_PLANTS_CUBA
+        return {p.canonical: (p.extra.get("city") or "") for p in THERMAL_PLANTS_CUBA}
+    except Exception:
+        return {}
+
+
+_THERMAL_CITY = _build_thermal_city_lookup()
+
+
+def _populate_ai_sections(
+    data: UneAnalysis,
+    messages: list[TelegramMessage],
+    sorted_msgs: list[TelegramMessage],
+    ai_map: dict,
+) -> None:
+    """Compute the compact AI sections that the frontend will render."""
+    cat_counts: Counter[str] = Counter()
+    severity_counts: Counter[int, int] = Counter()  # day_of_year -> max severity rank
+    severity_by_day: dict[int, int] = {}
+    hour_counts: Counter[int] = Counter()
+    zones: dict[tuple[str, str], dict] = {}
+    units: dict[str, dict] = {}
+    power: list[PowerPoint] = []
+    last_sen_status: str = "unknown"
+
+    daily_critical: dict[str, dict] = {}  # date_str -> {critical, high, blocks, deficit, msg_id, summary}
+
+    for m in sorted_msgs:
+        ai = ai_map.get(m.id)
+        if ai is None or ai.ai_failed:
+            continue
+        cat_counts[ai.category or "general_info"] += 1
+
+        # severity heatmap by day_of_year
+        if m.date_cuba_d:
+            doy = m.date_cuba_d.timetuple().tm_yday
+            rank = _SEVERITY_RANK.get(ai.severity or "low", 1)
+            cur = severity_by_day.get(doy, 0)
+            if rank > cur:
+                severity_by_day[doy] = rank
+
+            # hour-of-day count for critical/high events
+            if (ai.severity or "") in {"high", "critical"}:
+                hour_counts[m.date_cuba_d.hour] += 1
+
+            # daily aggregation for "worst day"
+            day_key = m.date_cuba[:10] if m.date_cuba else ""
+            if day_key:
+                d = daily_critical.setdefault(
+                    day_key,
+                    {
+                        "critical": 0,
+                        "high": 0,
+                        "blocks": set(),
+                        "deficit": None,
+                        "msg_id": 0,
+                        "summary": "",
+                    },
+                )
+                if (ai.severity or "") == "critical":
+                    d["critical"] += 1
+                elif (ai.severity or "") == "high":
+                    d["high"] += 1
+                for b in ai.affected_blocks or []:
+                    if 1 <= b <= 6:
+                        d["blocks"].add(b)
+                if ai.power_deficit_mw and (d["deficit"] is None or ai.power_deficit_mw > d["deficit"]):
+                    d["deficit"] = ai.power_deficit_mw
+                if (ai.severity or "") == "critical" and not d["msg_id"]:
+                    d["msg_id"] = m.id
+                    d["summary"] = ai.summary or ""
+
+        # zones (provinces, municipalities, circuits)
+        is_aff = (ai.event_type or "") in {"failure", "blackout", "scheduled_cut"}
+        is_rec = (ai.event_type or "") == "recovery"
+        for prov in ai.affected_provinces or []:
+            _touch_zone(zones, "province", prov, is_aff, is_rec)
+        for muni in ai.affected_municipalities or []:
+            _touch_zone(zones, "municipality", muni, is_aff, is_rec)
+        for circ in ai.mentioned_circuits or []:
+            _touch_zone(zones, "circuit", circ, is_aff, is_rec)
+
+        # thermal units
+        for u in ai.mentioned_units or []:
+            if not isinstance(u, dict):
+                continue
+            canonical = (u.get("canonical") or "").strip()
+            if not canonical:
+                continue
+            # Resolve the underlying plant name for unit-level entries (e.g. "CTE Felton U2")
+            plant_name = u.get("plant") or canonical
+            city = _THERMAL_CITY.get(canonical) or _THERMAL_CITY.get(plant_name) or ""
+            ue = units.setdefault(
+                canonical,
+                {
+                    "city": city,
+                    "mentions": 0,
+                    "failures": 0,
+                    "recoveries": 0,
+                    "monthly": [0] * 12,
+                    "last_status": "unknown",
+                },
+            )
+            ue["mentions"] += 1
+            if is_aff:
+                ue["failures"] += 1
+                ue["last_status"] = "active_failure"
+            elif is_rec:
+                ue["recoveries"] += 1
+                ue["last_status"] = "normal"
+            if m.date_cuba_d:
+                ue["monthly"][m.date_cuba_d.month - 1] += 1
+
+        # power timeline — restricted to authoritative reports (daily_resume + daily_forecast)
+        # to keep the JSON compact. Random in-message MW mentions add noise.
+        if (
+            ai.category in {"daily_resume", "daily_forecast"}
+            and any(
+                v is not None
+                for v in (ai.power_demand_mw, ai.power_availability_mw, ai.power_deficit_mw)
+            )
+        ):
+            power.append(
+                PowerPoint(
+                    date=m.date_cuba or "",
+                    demand=ai.power_demand_mw,
+                    availability=ai.power_availability_mw,
+                    deficit=ai.power_deficit_mw,
+                    is_forecast=(ai.category == "daily_forecast"),
+                )
+            )
+
+        # latest sen_status seen
+        if ai.sen_status and ai.sen_status != "unknown":
+            last_sen_status = ai.sen_status
+
+    # ---------------- distribution: 15 AI categories ---------------- #
+    data.ai_categories_distribution = dict(
+        sorted(cat_counts.items(), key=lambda x: x[1], reverse=True)
+    )
+
+    # ---------------- daily_severity (string per day) ---------------- #
+    rank_to_label = {1: "low", 2: "medium", 3: "high", 4: "critical"}
+    data.daily_severity = {
+        doy: rank_to_label.get(rank, "low") for doy, rank in severity_by_day.items()
+    }
+
+    # ---------------- hour_of_day_severity ---------------- #
+    data.hour_of_day_severity = {h: hour_counts.get(h, 0) for h in range(24)}
+
+    # ---------------- zones (drop pure-mention noise; sort by impact) ---------------- #
+    zones_list = [
+        AffectedZone(
+            name=name,
+            kind=kind,
+            mentions=info["mentions"],
+            affectations=info["affectations"],
+            recoveries=info["recoveries"],
+        )
+        for (kind, name), info in zones.items()
+        if info["affectations"] + info["recoveries"] > 0
+    ]
+    zones_list.sort(key=lambda z: (z.affectations + z.recoveries, z.mentions), reverse=True)
+    data.affected_zones = zones_list[:40]
+
+    # ---------------- thermal_units ---------------- #
+    data.thermal_units = sorted(
+        [
+            ThermalPlantStats(
+                canonical=name,
+                city=info["city"],
+                mentions=info["mentions"],
+                failures=info["failures"],
+                recoveries=info["recoveries"],
+                monthly_activity=info["monthly"],
+                last_status=info["last_status"],
+            )
+            for name, info in units.items()
+        ],
+        key=lambda u: u.failures + u.recoveries,
+        reverse=True,
+    )
+
+    # ---------------- power_timeline (de-duplicated by hour, latest wins) ---------------- #
+    # Restricted to daily_resume + daily_forecast above, so this is naturally small
+    # (~1-2 per day). Dedup by YYYY-MM-DD HH bucket, keeping the last record.
+    seen_buckets: dict[str, PowerPoint] = {}
+    for p in power:
+        bucket = p.date[:13] if p.date else ""
+        seen_buckets[bucket] = p
+    power_dedup = list(seen_buckets.values())
+    power_dedup.sort(key=lambda p: p.date)
+    data.power_timeline = power_dedup
+
+    # ---------------- worst_day ---------------- #
+    if daily_critical:
+        worst_key, worst = max(
+            daily_critical.items(),
+            key=lambda kv: (kv[1]["critical"], kv[1]["high"], len(kv[1]["blocks"])),
+        )
+        if worst["critical"] > 0 or worst["high"] >= 3:
+            data.worst_day = WorstDay(
+                date=worst_key,
+                critical_events=worst["critical"],
+                high_events=worst["high"],
+                affected_blocks_count=len(worst["blocks"]),
+                deficit_mw=worst["deficit"],
+                sample_message_id=worst["msg_id"],
+                sample_summary=worst["summary"],
+            )
+
+    # ---------------- live_grid_status ---------------- #
+    data.live_grid_status = last_sen_status
+
+
+def _touch_zone(zones: dict, kind: str, name: str, is_aff: bool, is_rec: bool) -> None:
+    key = (kind, name)
+    e = zones.get(key)
+    if e is None:
+        e = {"mentions": 0, "affectations": 0, "recoveries": 0}
+        zones[key] = e
+    e["mentions"] += 1
+    if is_aff:
+        e["affectations"] += 1
+    if is_rec:
+        e["recoveries"] += 1
 
 
 def _legacy_classify_text(text: str) -> int:
@@ -704,5 +970,86 @@ def _compute_block_durations_from_ai(
             for d in range(7)
         }
         blk.estimated_affected_seconds = accumulated[i]
+
+    return blocks
+
+
+def _compute_block_detailed_stats(
+    blocks: list[BlockAnalysis],
+    sorted_msgs: list[TelegramMessage],
+    ai_map: dict,
+) -> list[BlockAnalysis]:
+    """
+    Per-block detailed stats derived from AI analyses:
+      - monthly_affectations (1..12)
+      - hourly_affectations (0..23)
+      - severity_breakdown
+      - co_occurrences with other blocks (1..6)
+      - top_municipalities and top_circuits (top 6 each)
+      - worst_day_date + worst_day_events
+      - avg_deficit_mw
+    """
+    from core.classes import BlockTopZone
+
+    # per-block accumulators
+    monthly: dict[int, dict[int, int]] = {i: {m: 0 for m in range(1, 13)} for i in range(1, BLOCK_COUNT + 1)}
+    hourly: dict[int, dict[int, int]] = {i: {h: 0 for h in range(24)} for i in range(1, BLOCK_COUNT + 1)}
+    severity: dict[int, Counter[str]] = {i: Counter() for i in range(1, BLOCK_COUNT + 1)}
+    cooc: dict[int, Counter[int]] = {i: Counter() for i in range(1, BLOCK_COUNT + 1)}
+    munis: dict[int, Counter[str]] = {i: Counter() for i in range(1, BLOCK_COUNT + 1)}
+    circuits: dict[int, Counter[str]] = {i: Counter() for i in range(1, BLOCK_COUNT + 1)}
+    daily: dict[int, Counter[str]] = {i: Counter() for i in range(1, BLOCK_COUNT + 1)}
+    deficits: dict[int, list[int]] = {i: [] for i in range(1, BLOCK_COUNT + 1)}
+
+    for m in sorted_msgs:
+        ai = ai_map.get(m.id)
+        if ai is None or ai.ai_failed:
+            continue
+        affected = [b for b in (ai.affected_blocks or []) if 1 <= b <= BLOCK_COUNT]
+        if not affected:
+            continue
+
+        date = m.date_cuba_d
+        sev = ai.severity or "low"
+        deficit = ai.power_deficit_mw
+
+        for b in affected:
+            if date is not None:
+                monthly[b][date.month] += 1
+                hourly[b][date.hour] += 1
+                day_key = m.date_cuba[:10] if m.date_cuba else ""
+                if day_key:
+                    daily[b][day_key] += 1
+            severity[b][sev] += 1
+            for other in affected:
+                if other != b:
+                    cooc[b][other] += 1
+            for muni in (ai.affected_municipalities or []):
+                if muni:
+                    munis[b][muni] += 1
+            for circ in (ai.mentioned_circuits or []):
+                if circ:
+                    circuits[b][circ] += 1
+            if deficit is not None:
+                deficits[b].append(int(deficit))
+
+    for blk in blocks:
+        i = blk.number
+        blk.monthly_affectations = monthly[i]
+        blk.hourly_affectations = hourly[i]
+        blk.severity_breakdown = dict(severity[i])
+        blk.co_occurrences = dict(cooc[i])
+        blk.top_municipalities = [
+            BlockTopZone(name=name, count=count) for name, count in munis[i].most_common(6)
+        ]
+        blk.top_circuits = [
+            BlockTopZone(name=name, count=count) for name, count in circuits[i].most_common(6)
+        ]
+        if daily[i]:
+            worst_day, worst_count = daily[i].most_common(1)[0]
+            blk.worst_day_date = worst_day
+            blk.worst_day_events = worst_count
+        if deficits[i]:
+            blk.avg_deficit_mw = round(sum(deficits[i]) / len(deficits[i]))
 
     return blocks
