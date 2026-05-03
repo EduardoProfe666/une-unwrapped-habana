@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-05-02T19:51:55.136126-04:00",
+    "sync_date": "2026-05-02T20:57:56.502747-04:00",
     "year": 2024,
     "first_message": {
         "id": 19617,
@@ -761,24 +761,24 @@
             "declared_recoveries": 3,
             "declared_affectations": 36,
             "declared_emergencies": 0,
-            "estimated_affected_seconds": 1925253,
+            "estimated_affected_seconds": 2746053,
             "weekday_off_seconds": {
-                "0": 47893,
-                "1": 153989,
-                "2": 220516,
-                "3": 354016,
-                "4": 460539,
-                "5": 431550,
-                "6": 256750
+                "0": 55762,
+                "1": 188796,
+                "2": 319026,
+                "3": 436699,
+                "4": 683448,
+                "5": 565338,
+                "6": 496984
             },
             "weekday_off_avg_seconds": {
-                "0": 903.6415094339623,
-                "1": 2905.4528301886794,
-                "2": 4240.692307692308,
-                "3": 6808.0,
-                "4": 8856.51923076923,
-                "5": 8299.038461538461,
-                "6": 4937.5
+                "0": 1052.1132075471698,
+                "1": 3562.188679245283,
+                "2": 6135.115384615385,
+                "3": 8398.057692307691,
+                "4": 13143.23076923077,
+                "5": 10871.884615384615,
+                "6": 9557.384615384615
             },
             "monthly_affectations": {
                 "1": 0,
@@ -847,24 +847,24 @@
             "declared_recoveries": 2,
             "declared_affectations": 25,
             "declared_emergencies": 0,
-            "estimated_affected_seconds": 1555200,
+            "estimated_affected_seconds": 2203200,
             "weekday_off_seconds": {
-                "0": 83095,
-                "1": 280386,
-                "2": 173197,
-                "3": 278047,
-                "4": 244657,
-                "5": 346306,
-                "6": 149512
+                "0": 89745,
+                "1": 322626,
+                "2": 252162,
+                "3": 304720,
+                "4": 395520,
+                "5": 409220,
+                "6": 429207
             },
             "weekday_off_avg_seconds": {
-                "0": 1567.8301886792453,
-                "1": 5290.301886792453,
-                "2": 3330.7115384615386,
-                "3": 5347.057692307692,
-                "4": 4704.942307692308,
-                "5": 6659.7307692307695,
-                "6": 2875.230769230769
+                "0": 1693.301886792453,
+                "1": 6087.2830188679245,
+                "2": 4849.2692307692305,
+                "3": 5860.0,
+                "4": 7606.153846153846,
+                "5": 7869.615384615385,
+                "6": 8253.98076923077
             },
             "monthly_affectations": {
                 "1": 0,
@@ -933,24 +933,24 @@
             "declared_recoveries": 1,
             "declared_affectations": 32,
             "declared_emergencies": 0,
-            "estimated_affected_seconds": 1728000,
+            "estimated_affected_seconds": 2332800,
             "weekday_off_seconds": {
-                "0": 181920,
-                "1": 229696,
-                "2": 108990,
-                "3": 258824,
-                "4": 378067,
-                "5": 361237,
-                "6": 209266
+                "0": 219959,
+                "1": 394103,
+                "2": 160583,
+                "3": 338285,
+                "4": 490391,
+                "5": 448973,
+                "6": 280506
             },
             "weekday_off_avg_seconds": {
-                "0": 3432.4528301886794,
-                "1": 4333.88679245283,
-                "2": 2095.9615384615386,
-                "3": 4977.384615384615,
-                "4": 7270.5192307692305,
-                "5": 6946.865384615385,
-                "6": 4024.346153846154
+                "0": 4150.169811320755,
+                "1": 7435.905660377359,
+                "2": 3088.1346153846152,
+                "3": 6505.4807692307695,
+                "4": 9430.596153846154,
+                "5": 8634.096153846154,
+                "6": 5394.346153846154
             },
             "monthly_affectations": {
                 "1": 0,
@@ -1019,24 +1019,24 @@
             "declared_recoveries": 2,
             "declared_affectations": 26,
             "declared_emergencies": 0,
-            "estimated_affected_seconds": 1568286,
+            "estimated_affected_seconds": 1957086,
             "weekday_off_seconds": {
-                "0": 49555,
+                "0": 92755,
                 "1": 102000,
-                "2": 179561,
-                "3": 166323,
-                "4": 361968,
-                "5": 503004,
-                "6": 205875
+                "2": 265961,
+                "3": 252723,
+                "4": 401509,
+                "5": 637008,
+                "6": 205130
             },
             "weekday_off_avg_seconds": {
-                "0": 935.0,
+                "0": 1750.0943396226414,
                 "1": 1924.5283018867924,
-                "2": 3453.096153846154,
-                "3": 3198.519230769231,
-                "4": 6960.923076923077,
-                "5": 9673.153846153846,
-                "6": 3959.1346153846152
+                "2": 5114.634615384615,
+                "3": 4860.057692307692,
+                "4": 7721.326923076923,
+                "5": 12250.153846153846,
+                "6": 3944.8076923076924
             },
             "monthly_affectations": {
                 "1": 0,
@@ -1322,7 +1322,7 @@
                     "replies": 0,
                     "text": "En noche y madrugada, avanzó estrategia para gradual recuperación del SEN, desconectado este miércoles, en medio de rachas de vientos superiores a los 100 Km/H. En las últimas horas, fue posible llevar energía a Guiteras y a Nuevitas, para iniciar respectivos procesos de arranque. Más de 10 islas de Generación emergente, dan cobertura en Centro, Oriente y en Pinar del Río.  En horario diurno, desde que amanezca... Especialistas comenzarán recorridos en zonas de Occidente, afectadas por Huracán de gran intensidad Rafael, para diagnosticar daños y comenzar de inmediato, recuperación"
                 },
-                "estimated_duration_seconds": 86400
+                "estimated_duration_seconds": 129600
             }
         ]
     },

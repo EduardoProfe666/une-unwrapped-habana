@@ -65,7 +65,7 @@ BLOCK_END_PATTERNS = [
 
 BLOCK_LIST_PATTERN = re.compile(r"bloques?:?\s*([1-6,\s]+)", re.IGNORECASE)
 
-MAX_BLOCK_DURATION_SECONDS = 24 * 60 * 60
+MAX_BLOCK_DURATION_SECONDS = 36 * 60 * 60
 
 def analyze_data(year: int):
     """

@@ -21,6 +21,7 @@ const BLACKOUT_HALO: React.CSSProperties = {
 const NavigationHub = lazy(() => import('@/src/components/NavigationHub.tsx'));
 const SyncStatus = lazy(() => import('@/src/components/SyncStatus.tsx'));
 const PwaUpdatePrompt = lazy(() => import('@/src/components/PwaUpdatePrompt.tsx'));
+const HistoricalUnwrapped = lazy(() => import('@/src/components/HistoricalUnwrapped.tsx'));
 const WeeklyBlockMatrix = lazy(() => import('@/src/components/WeeklyBlockMatrix.tsx'));
 const GithubSupport = lazy(() => import("@/src/components/GithubSupport.tsx"));
 const ReactionSpectrum = lazy(() => import("@/src/components/ReactionSpectrum.tsx"));
@@ -417,6 +418,14 @@ function App() {
                                     )}
                                 </div>
                             ))}
+                        </div>
+
+                        {/* Cross-year aggregate — opens a modal with all-time records, sibling
+                            of the year selector (it's effectively "ALL years" at once) */}
+                        <div className="mt-6 md:mt-8 flex justify-center">
+                            <Suspense fallback={null}>
+                                <HistoricalUnwrapped/>
+                            </Suspense>
                         </div>
                     </m.div>
 

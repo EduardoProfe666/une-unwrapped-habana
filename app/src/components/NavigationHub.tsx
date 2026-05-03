@@ -15,6 +15,7 @@ import {
     Hash,
     HeartPulse,
     Hexagon,
+    History,
     Layers,
     Leaf,
     Map,
@@ -50,6 +51,7 @@ const SECTIONS: SectionGroup[] = [
         color: "bg-violet-400",
         links: [
             {id: "year-wrapped", label: "Year Wrapped", icon: Film},
+            {id: "historical-unwrapped", label: "Histórico Global", icon: History},
             {id: "health-score", label: "Health Score", icon: HeartPulse},
             {id: "hall-of-fame", label: "Hall of Fame", icon: Trophy},
             {id: "days-counter", label: "Contador del SEN", icon: Award},

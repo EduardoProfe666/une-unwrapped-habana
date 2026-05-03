@@ -53,6 +53,16 @@ export function prefetchYearAnalysis(year: number): void {
     fetchYear(year).catch(() => {/* silent */});
 }
 
+/**
+ * Imperative getter for one year's analysis. Returns the cached value if
+ * present, otherwise kicks off a fetch (deduplicated via the inflight map)
+ * and returns its promise. Used by the all-years aggregator hook so it
+ * shares the same cache as the per-year hook.
+ */
+export function getYearAnalysis(year: number): Promise<UneAnalysis> {
+    return fetchYear(year);
+}
+
 export default function useYearAnalysis(selectedYear: number) {
     // Synchronous initial state when cache is warm — avoids a render with null data
     const [data, setData] = useState<UneAnalysis | null>(() => cache.get(selectedYear) ?? null);
