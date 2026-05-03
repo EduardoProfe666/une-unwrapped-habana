@@ -279,8 +279,85 @@ const TrajectorySection: React.FC<{perYear: YearSummary[]}> = memo(({perYear}) =
                 )}
             </div>
 
-            {/* Polaroid timeline: year cards connected by delta arrows */}
-            <div className="flex items-stretch justify-between gap-1 md:gap-2 px-1">
+            {/* MOBILE: vertical stack of full-width year cards connected by
+                down-arrow + delta chips. Avoids the squashed/overlapping
+                layout the horizontal polaroids produce on narrow screens. */}
+            <div className="flex md:hidden flex-col gap-2">
+                {perYear.map((y, i) => {
+                    const score = y.healthScore;
+                    const next = i < perYear.length - 1 ? perYear[i + 1] : null;
+                    const delta = (next && score != null && next.healthScore != null)
+                        ? next.healthScore - score
+                        : null;
+                    const cardBg = score != null ? scoreBarColor(score) : 'bg-gray-300';
+
+                    const DeltaIcon = delta == null ? Minus
+                        : delta > 0 ? TrendingUp
+                        : delta < 0 ? TrendingDown : Minus;
+                    const deltaCls = delta == null ? 'bg-gray-300 text-gray-800'
+                        : delta > 5 ? 'bg-emerald-400 text-emerald-950'
+                        : delta > 0 ? 'bg-lime-300 text-lime-950'
+                        : delta < -5 ? 'bg-red-500 text-white'
+                        : delta < 0 ? 'bg-orange-400 text-orange-950'
+                        : 'bg-gray-300 text-gray-800';
+
+                    return (
+                        <React.Fragment key={y.year}>
+                            <m.div
+                                initial={{opacity: 0, x: -16}}
+                                animate={{opacity: 1, x: 0}}
+                                transition={{delay: 0.05 * i, type: 'spring', stiffness: 260, damping: 22}}
+                                className={`${cardBg} text-black border-4 border-black shadow-[4px_4px_0_0_black] px-4 py-3 flex items-center justify-between gap-3`}
+                            >
+                                <div className="flex flex-col">
+                                    <div className="text-[8px] font-mono uppercase tracking-widest font-black opacity-80 leading-none">
+                                        AÑO
+                                    </div>
+                                    <div className="font-black text-3xl italic leading-none tracking-tighter mt-1">
+                                        {y.year}
+                                    </div>
+                                </div>
+                                <div className="flex flex-col items-end">
+                                    <div className="text-[8px] font-mono uppercase tracking-widest font-black opacity-80 leading-none">
+                                        Health
+                                    </div>
+                                    <div className="font-black text-3xl italic tabular-nums leading-none tracking-tighter mt-1">
+                                        {score ?? '—'}
+                                        <span className="text-base opacity-70">/100</span>
+                                    </div>
+                                </div>
+                            </m.div>
+
+                            {/* Down arrow + delta chip between cards */}
+                            {i < perYear.length - 1 && (
+                                <m.div
+                                    initial={{opacity: 0, scale: 0}}
+                                    animate={{opacity: 1, scale: 1}}
+                                    transition={{delay: 0.05 * i + 0.2, type: 'spring', stiffness: 300, damping: 18}}
+                                    className="flex items-center justify-center gap-2 self-center"
+                                >
+                                    <m.div
+                                        animate={{y: [0, 3, 0]}}
+                                        transition={{duration: 1.6, repeat: Infinity, ease: 'easeInOut', delay: i * 0.15}}
+                                        className="text-black"
+                                    >
+                                        <ChevronRight size={20} strokeWidth={3} className="rotate-90"/>
+                                    </m.div>
+                                    {delta != null && (
+                                        <div className={`${deltaCls} border-2 border-black px-2 py-0.5 flex items-center gap-1 shadow-[2px_2px_0_0_black] text-[11px] font-black tabular-nums whitespace-nowrap`}>
+                                            <DeltaIcon size={11} strokeWidth={3}/>
+                                            {delta > 0 ? '+' : ''}{delta}
+                                        </div>
+                                    )}
+                                </m.div>
+                            )}
+                        </React.Fragment>
+                    );
+                })}
+            </div>
+
+            {/* DESKTOP (md+): horizontal polaroid timeline with arrows between cards */}
+            <div className="hidden md:flex items-stretch justify-between gap-2 px-1">
                 {perYear.map((y, i) => {
                     const score = y.healthScore;
                     const next = i < perYear.length - 1 ? perYear[i + 1] : null;
@@ -309,19 +386,19 @@ const TrajectorySection: React.FC<{perYear: YearSummary[]}> = memo(({perYear}) =
                                 animate={{opacity: 1, y: 0, rotate: tilt}}
                                 transition={{delay: 0.07 * i, type: 'spring', stiffness: 260, damping: 20}}
                                 whileHover={{rotate: 0, y: -4, scale: 1.06}}
-                                className={`${cardBg} text-black border-4 border-black shadow-[4px_4px_0_0_black] flex flex-col items-center justify-between flex-1 min-w-0 px-1.5 md:px-2 py-2.5 md:py-3 cursor-default`}
+                                className={`${cardBg} text-black border-4 border-black shadow-[4px_4px_0_0_black] flex flex-col items-center justify-between flex-1 min-w-0 px-2 py-3 cursor-default`}
                             >
-                                <div className="text-[8px] md:text-[9px] font-mono uppercase tracking-widest font-black opacity-80 leading-none">
+                                <div className="text-[9px] font-mono uppercase tracking-widest font-black opacity-80 leading-none">
                                     AÑO
                                 </div>
-                                <div className="font-black text-lg md:text-xl italic leading-none tracking-tighter mt-0.5">
+                                <div className="font-black text-xl italic leading-none tracking-tighter mt-0.5">
                                     {y.year}
                                 </div>
                                 <div className="border-t-2 border-black/40 w-full my-1.5"/>
-                                <div className="font-black text-2xl md:text-3xl italic tabular-nums leading-none tracking-tighter">
+                                <div className="font-black text-3xl italic tabular-nums leading-none tracking-tighter">
                                     {score ?? '—'}
                                 </div>
-                                <div className="text-[8px] md:text-[9px] font-mono opacity-70 leading-none mt-0.5">
+                                <div className="text-[9px] font-mono opacity-70 leading-none mt-0.5">
                                     /100
                                 </div>
                             </m.div>
@@ -342,7 +419,7 @@ const TrajectorySection: React.FC<{perYear: YearSummary[]}> = memo(({perYear}) =
                                         <ChevronRight size={20} strokeWidth={3}/>
                                     </m.div>
                                     {delta != null && (
-                                        <div className={`${deltaCls} border-2 border-black px-1.5 py-0.5 flex items-center gap-0.5 shadow-[2px_2px_0_0_black] text-[9px] md:text-[10px] font-black tabular-nums whitespace-nowrap`}>
+                                        <div className={`${deltaCls} border-2 border-black px-1.5 py-0.5 flex items-center gap-0.5 shadow-[2px_2px_0_0_black] text-[10px] font-black tabular-nums whitespace-nowrap`}>
                                             <DeltaIcon size={10} strokeWidth={3}/>
                                             {delta > 0 ? '+' : ''}{delta}
                                         </div>

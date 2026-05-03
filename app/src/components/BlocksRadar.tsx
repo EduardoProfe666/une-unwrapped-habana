@@ -8,11 +8,13 @@ interface Props {
     primaryColorClass: string;
 }
 
+// Five operational dimensions — declared_emergencies dropped because the field
+// is virtually always 0 in the dataset and was creating an empty downward
+// spike + unreadable bottom label.
 const AXES = [
     {key: 'mentions',                   label: 'Menciones'},
     {key: 'declared_affectations',      label: 'Afectaciones'},
     {key: 'declared_recoveries',        label: 'Recuperaciones'},
-    {key: 'declared_emergencies',       label: 'Emergencias'},
     {key: 'estimated_affected_seconds', label: 'Tiempo afectado'},
     {key: 'avg_deficit_mw',             label: 'Déficit medio'},
 ] as const;
@@ -30,6 +32,15 @@ const BLOCK_COLORS = [
 const CX = 200;
 const CY = 200;
 const R = 130;
+// ViewBox with 90px breathing room on every side so the radar polygon is
+// comfortably centered AND the HTML axis labels (positioned at R+52 in
+// viewBox coords) sit naturally inside the % container without crashing
+// into the polygon outline. Labels are rendered as HTML overlay (see
+// render), but their %-coords still derive from this viewBox.
+const VB_MIN_X = -90;
+const VB_MIN_Y = -90;
+const VB_W = 580;
+const VB_H = 580;
 const angleAt = (i: number, total: number) => (i / total) * Math.PI * 2 - Math.PI / 2;
 const polar = (a: number, dist: number) => ({x: CX + Math.cos(a) * dist, y: CY + Math.sin(a) * dist});
 
@@ -198,23 +209,27 @@ const BlocksRadar: React.FC<Props> = ({blocks}) => {
                         Radar de Bloques
                     </h2>
                     <p className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">
-                        Comparativa de los 6 bloques en {AXES.length} dimensiones, normalizada al máximo del año
+                        Comparativa de los 6 bloques en {AXES.length} dimensiones clave, normalizada al máximo del año
                     </p>
                 </div>
                 <div className="font-mono text-[10px] font-black opacity-25 hidden md:block">REF_INT_RADAR</div>
             </header>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center relative z-10">
-                {/* Radar SVG */}
+                {/* Radar SVG + HTML axis labels overlaid */}
                 <div className="lg:col-span-2 flex justify-center">
+                    <div
+                        className="relative w-full max-w-md"
+                        style={{aspectRatio: `${VB_W} / ${VB_H}`}}
+                    >
                     <m.svg
                         ref={svgRef}
                         initial={{opacity: 0, rotate: -8, scale: 0.92}}
                         whileInView={{opacity: 1, rotate: 0, scale: 1}}
                         viewport={{once: true, amount: 0.3}}
                         transition={{duration: 0.7, ease: [0.22, 1, 0.36, 1]}}
-                        viewBox="0 0 400 400"
-                        className="w-full max-w-md h-auto"
+                        viewBox={`${VB_MIN_X} ${VB_MIN_Y} ${VB_W} ${VB_H}`}
+                        className="absolute inset-0 w-full h-full"
                     >
                         {/* Concentric polygons — staggered fade in from inside out */}
                         {[0.25, 0.5, 0.75, 1].map((scale, idx) => {
@@ -255,30 +270,6 @@ const BlocksRadar: React.FC<Props> = ({blocks}) => {
                                     viewport={{once: true}}
                                     transition={{delay: 0.4 + i * 0.05, duration: 0.4, ease: 'easeOut'}}
                                 />
-                            );
-                        })}
-
-                        {/* Axis labels — pop in around the perimeter */}
-                        {AXES.map((ax, i) => {
-                            const labelR = R + 26;
-                            const p = polar(angleAt(i, AXES.length), labelR);
-                            return (
-                                <m.text
-                                    key={ax.key}
-                                    x={p.x}
-                                    y={p.y + 3}
-                                    textAnchor="middle"
-                                    fontSize="10"
-                                    fontFamily="monospace"
-                                    fontWeight="900"
-                                    fill="rgba(0,0,0,0.7)"
-                                    initial={{opacity: 0, y: p.y + 13}}
-                                    whileInView={{opacity: 1, y: p.y + 3}}
-                                    viewport={{once: true}}
-                                    transition={{delay: 0.6 + i * 0.06, duration: 0.4}}
-                                >
-                                    {ax.label}
-                                </m.text>
                             );
                         })}
 
@@ -329,14 +320,91 @@ const BlocksRadar: React.FC<Props> = ({blocks}) => {
                             transition={{duration: 2.6, repeat: Infinity, ease: 'easeOut'}}
                         />
 
-                        {/* Center text */}
-                        <text x={CX} y={CY - 10} textAnchor="middle" fontSize="9" fontWeight="900" fontFamily="monospace" fill="rgba(0,0,0,0.4)">
+                        {/* Center text — same white halo treatment so the label
+                            stays readable when polygons overlap the center. */}
+                        <text
+                            x={CX} y={CY - 10}
+                            textAnchor="middle"
+                            fontSize="9" fontWeight="900" fontFamily="monospace"
+                            fill="#000"
+                            stroke="#fff"
+                            strokeWidth={3}
+                            strokeLinejoin="round"
+                            style={{paintOrder: 'stroke'}}
+                            opacity={0.7}
+                        >
                             BLOQUES
                         </text>
-                        <text x={CX} y={CY + 18} textAnchor="middle" fontSize="13" fontWeight="900" fontFamily="monospace" fill="rgba(0,0,0,0.55)">
+                        <text
+                            x={CX} y={CY + 18}
+                            textAnchor="middle"
+                            fontSize="13" fontWeight="900" fontFamily="monospace"
+                            fill="#000"
+                            stroke="#fff"
+                            strokeWidth={3.5}
+                            strokeLinejoin="round"
+                            style={{paintOrder: 'stroke'}}
+                            opacity={0.85}
+                        >
                             1—6
                         </text>
                     </m.svg>
+
+                    {/* HTML axis labels — overlaid on top of the SVG via the
+                        relative wrapper. They live OUTSIDE the SVG so neither
+                        viewBox clipping nor polygon fill can hide them.
+
+                        IMPORTANT: positioning lives on a plain <div> wrapper
+                        because framer-motion's `scale`/`opacity` animations
+                        compose into `transform`, which would overwrite our
+                        own translate() and collapse the pill onto its anchor
+                        (the bug that made DÉFICIT MEDIO sit inside the
+                        polygon). The animated <m.span> nests inside and only
+                        handles the entrance scale + opacity. */}
+                    {AXES.map((ax, i) => {
+                        const angle = angleAt(i, AXES.length);
+                        const labelR = R + 52;
+                        const xVB = CX + Math.cos(angle) * labelR;
+                        const yVB = CY + Math.sin(angle) * labelR;
+                        const xPct = ((xVB - VB_MIN_X) / VB_W) * 100;
+                        const yPct = ((yVB - VB_MIN_Y) / VB_H) * 100;
+                        const cosA = Math.cos(angle);
+                        const sinA = Math.sin(angle);
+                        // Translate anchors each pill to the side of the
+                        // anchor that matches its quadrant, plus a 6px hard
+                        // offset so the pill never touches the radar.
+                        const PAD = 6;
+                        const tx =
+                            cosA > 0.3 ? `${PAD}px` :
+                            cosA < -0.3 ? `calc(-100% - ${PAD}px)` :
+                            '-50%';
+                        const ty =
+                            sinA > 0.5 ? `${PAD}px` :
+                            sinA < -0.5 ? `calc(-100% - ${PAD}px)` :
+                            '-50%';
+                        return (
+                            <div
+                                key={ax.key}
+                                className="absolute z-10 pointer-events-none"
+                                style={{
+                                    left: `${xPct}%`,
+                                    top: `${yPct}%`,
+                                    transform: `translate(${tx}, ${ty})`,
+                                }}
+                            >
+                                <m.span
+                                    initial={{opacity: 0, scale: 0.6}}
+                                    whileInView={{opacity: 1, scale: 1}}
+                                    viewport={{once: true}}
+                                    transition={{delay: 0.65 + i * 0.07, type: 'spring', stiffness: 320, damping: 18}}
+                                    className="block font-mono font-black text-[10px] md:text-[11px] uppercase tracking-tight whitespace-nowrap px-2 py-0.5 bg-white border-2 border-black shadow-[2px_2px_0_0_black] text-black"
+                                >
+                                    {ax.label}
+                                </m.span>
+                            </div>
+                        );
+                    })}
+                    </div>
                 </div>
 
                 {/* Legend / toggles */}
