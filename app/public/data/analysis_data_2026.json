@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-06-23T23:55:40.670501-04:00",
+    "sync_date": "2026-06-24T03:45:50.407742-04:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -17,16 +17,19 @@
         "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨"
     },
     "last_message": {
-        "id": 66727,
-        "link": "https://t.me/EmpresaElectricaDeLaHabana/66727",
-        "date_utc": "2026-06-24 03:54:59",
-        "date_utc_d": "2026-06-24T03:54:59",
-        "date_cuba": "2026-06-23 23:54:59",
-        "date_cuba_d": "2026-06-23T23:54:59",
-        "reactions": {},
-        "views": 1,
-        "replies": 0,
-        "text": "‼️Consumidores del municipio Guanabacoa, por **disparo del circuito por** **posible avería** se afecta el servicio eléctrico en Alturas de Vía Blanca, Habana Nueva, La Cotorra, Villa1, Modelo ‼️"
+        "id": 66745,
+        "link": "https://t.me/EmpresaElectricaDeLaHabana/66745",
+        "date_utc": "2026-06-24 07:25:55",
+        "date_utc_d": "2026-06-24T07:25:55",
+        "date_cuba": "2026-06-24 03:25:55",
+        "date_cuba_d": "2026-06-24T03:25:55",
+        "reactions": {
+            "👍": 1,
+            "👎": 18
+        },
+        "views": 890,
+        "replies": 10,
+        "text": "✅Consumidores del municipio Arroyo Naranjo, queda restablecido el servicio eléctrico afectado por transformador dañado en Avenida Rosario entre A y B, Rosario✅"
     },
     "shortest_message": {
         "id": 61112,
@@ -60,14 +63,14 @@
         "text": "**📣Averías existentes hasta el momento**\n** **\n**🚨Soterrada: (Cable Fallo)**\n** **\n📌Municipio: San Miguel del Padrón\n📉Afecta: San Juan de los Pinos, Residencial San Miguel, Alturas de San Miguel, Núñez, Afán, Las Granjas y Mirta.\n** **\n**🚨Subestación Apolo     (continúan las labores)**\n**\n📌Municipio: 10 de Octubre\n📉Afecta: **Repartos Vista Alegre** **y Lawton**, **Calle Córdoba desde Milán hasta LFC, Callejón del Matadero hasta San Francisco, Calle Concepción desde LFC hasta 8va; 8va desde San Francisco hasta calle B; B desde 8va hasta calle 13, Luz a Línea de Ferrocarril y desde C hasta H, Cuadrante de Calle Dolores hasta C y Calle 14 hasta 17.** **Calle Giral desde 2da hasta Dos Ríos, 22 desde Dos Ríos hasta Concepción, Concepción desde 18 hasta 25,19 desde Concepción hasta  Pocito, Tejar desde 16 hasta 21; 16 desde Dolores hasta D, D desde 14 hasta porvenir. En Santo Suárez: Felipe Poey desde Libertad hasta General Lacret. Párraga desde Libertad hasta General Lacret. Estrada Palma y Luis Estévez desde Felipe Poey hasta Calzada de 10 de Octubre. Las calles San Francisco, Centurión. Avenida Morell, Alfredo Zayas y Luz. Calles San Carlos, Eulalia e Iznaga. En Lawton: calle San Luis desde Remedio hasta Luz. San José desde Colina hasta Luz. Delicias desde Tres Palacios hasta Luz. Cuadrante de la calle Altarriba y calle E hasta Avenida de Acosta y Calzada de 10 de Octubre hasta Porvenir. Cuadrante entre Milagros, Figueroa, Vista Alegre y 10 de Octubre, tambien 10 de Octubre, San Leonardo Lourdes y Kesell. Parte del Sevillano**\n\n📌Municipio: Arroyo Naranjo**\n📉**Afecta: **Víbora Park, Santa Amalia, Lubumba, Poey, La Palma. En los repartos Portocarrero y El Moro: calle C a Portocarrero, 2da a Holguín. Cuadrante de Portocarrero hasta Carretera del Lucero y Rodríguez de Armas hasta Santa Flora; las calles Miguel Biondi entre Santa Flora y Santa Hortensia. En Mantilla: Cuadrante de Tamarindo hasta Carretera del Cuervo. Mártires de Girón hasta Don Tomás. Barrio Azul: Cuadrante de Santa Isabel hasta Lincoln y Maceo hasta Gómez. Cuadrante de calle 1ra desde Maceo hasta Calzada de Bejucal. Calles 1ra y Jackson hasta Calzada de Bejucal. Calzada de Bejucal desde Calzada de Managua hasta Calzada de Vieja Linda, Montejo: Calzada de Bejucal a San Agustín y Martí a Cortez. Mamey: Cuadrante de San Juan a Estrella y Calzada de Bejucal a Esperanza. Fraternidad, Calleja, San Agustín.\n** **\n**🚨Cable fallo:**\n** **\n📌Municipio: Marianao\n📉Afecta los repartos: Coco Solo, Los Quemados, Los Ángeles, Las Yaguas.\n** **\n**🚨Primario partido:**\n\n📌Municipio: Lisa\n👉Dirección: 236 y 23\n📉Afecta: calle 230 desde 15 hasta 23, La Coronela.\n** **\n**🚨Puente partido:**\n** **\n📌Municipio: Centro Habana/Vieja\n📉Afecta: Águila hasta Egido, Avenida La Pesquera hasta Monte. Puerta Cerrada hasta Diaria, Águila hasta Belascoain.\n** **\n**🚨Transformador Dañado:**\n \n📌Municipio: Boyeros\n👉Dirección: Avenida República entre Las Granjas y Nacional, Aldabó.\n👉Dirección: 6ta entre Soto y Cuervo, El Cuervo.\n \n📌Municipio: Regla\n👉Dirección: Adriano entre Fresneda y Agramonte.\n \n📌Municipio: Plaza\n👉Dirección: Ulloa entre Santa Teresa y Reparto.\n \n📌Municipio: Cerro\n👉Dirección: Victoria entre América y Rambla, Martí.\n👉Dirección: Palmares entre Independencia y América, Martí.\n👉Dirección: Pedroso entre Cruz Padre e Infanta, Latino.\n👉Dirección: San Joaquín entre Estévez y Santa Rosa.\n \n📌Municipio: Guanabacoa\n👉Dirección: Pepe Antonio entre Luz y Maceo, Villa 2.\n👉Dirección: Bertemati entre Jesús María y Cadena, Villa 2.\n👉Dirección: Corral Falso entre Gloria y San Antonio\n👉Dirección: C entre 1ra y 2da.\n👉Dirección: 8na entre 3ra y 5ta, Mañana.\n \n📌Municipio: Marianao\n👉Dirección: 124 entre 47 y 49, Coco Solo.\n👉Dirección: 82 entre 39A y 41.\n \n📌Municipio: Habana del Este\n👉Dirección: 12 y Finca Los Almendros, Guiteras.\n \n📌Municipio: Playa\n👉Dirección: 180 entre 1ra y 5ta, Flores.\n\n📌Municipio: 10 de Octubre\n👉Dirección: Cortina entre Carmen y Vista Alegre\n \n📌Municipio: Lisa\n👉Dirección: 188 entre 31 y 33, La Corbata.\n\nGrupo de Comunicación\nEmpresa Eléctrica de La Habana📣",
         "count": 4059
     },
-    "total_views": 357310988,
-    "total_messages": 15142,
+    "total_views": 357486112,
+    "total_messages": 15160,
     "total_erased_messages": 1044,
-    "total_replies": 375464,
-    "total_reactions": 2639038,
-    "total_positive_reactions": 319992,
-    "total_negative_reactions": 2319046,
-    "avg_views": 23597,
+    "total_replies": 375861,
+    "total_reactions": 2640469,
+    "total_positive_reactions": 320139,
+    "total_negative_reactions": 2320330,
+    "avg_views": 23581,
     "avg_replies": 25,
     "avg_reactions": 174,
     "avg_positive_reactions": 21,
@@ -79,7 +82,7 @@
         "3": 73096645,
         "4": 50358967,
         "5": 68384000,
-        "6": 48850432,
+        "6": 49025556,
         "7": 0,
         "8": 0,
         "9": 0,
@@ -93,7 +96,7 @@
         "3": 81140,
         "4": 45598,
         "5": 75908,
-        "6": 61546,
+        "6": 61943,
         "7": 0,
         "8": 0,
         "9": 0,
@@ -107,7 +110,7 @@
         "3": 613209,
         "4": 349504,
         "5": 500955,
-        "6": 348674,
+        "6": 350105,
         "7": 0,
         "8": 0,
         "9": 0,
@@ -121,7 +124,7 @@
         "3": 2522,
         "4": 2126,
         "5": 3243,
-        "6": 2313,
+        "6": 2331,
         "7": 0,
         "8": 0,
         "9": 0,
@@ -303,8 +306,8 @@
         "171": 115,
         "172": 89,
         "173": 112,
-        "174": 107,
-        "175": 0,
+        "174": 108,
+        "175": 17,
         "176": 0,
         "177": 0,
         "178": 0,
@@ -498,15 +501,15 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 2214,
+        "1": 2215,
         "2": 2539,
-        "3": 4156,
+        "3": 4168,
         "4": 457,
-        "5": 5776
+        "5": 5781
     },
     "distribution_reaction": {
-        "👎": 2319046,
-        "👍": 319992
+        "👎": 2320330,
+        "👍": 320139
     },
     "top3_most_viewed_messages": [
         {
@@ -709,44 +712,44 @@
         }
     ],
     "top25_most_repeated_words": {
-        "bloque": 13662,
-        "servicio": 6319,
-        "calle": 6223,
-        "horas": 6144,
-        "municipio": 6120,
-        "minutos": 6116,
-        "déficit": 5838,
-        "circuitos": 5583,
+        "bloque": 13671,
+        "servicio": 6332,
+        "calle": 6233,
+        "horas": 6151,
+        "municipio": 6127,
+        "minutos": 6123,
+        "déficit": 5840,
+        "circuitos": 5591,
         "hrs": 5529,
-        "habana": 5051,
-        "afectados": 4874,
-        "emergencia": 4765,
-        "consumidores": 4550,
-        "informamos": 4089,
-        "eléctrico": 4068,
+        "habana": 5058,
+        "afectados": 4875,
+        "emergencia": 4766,
+        "consumidores": 4560,
+        "informamos": 4092,
+        "eléctrico": 4078,
         "clientes": 3975,
-        "generación": 3854,
-        "santa": 3648,
-        "siguientes": 3583,
-        "mw": 3223,
-        "varios": 3220,
-        "empresa": 3190,
-        "capital": 3107,
+        "generación": 3857,
+        "santa": 3649,
+        "siguientes": 3587,
+        "mw": 3224,
+        "varios": 3221,
+        "empresa": 3192,
+        "capital": 3108,
         "momento": 3105,
         "dirección": 3044
     },
     "blocks_analysis": [
         {
             "number": 1,
-            "mentions": 2293,
+            "mentions": 2294,
             "declared_recoveries": 21,
-            "declared_affectations": 2272,
+            "declared_affectations": 2273,
             "declared_emergencies": 34,
-            "estimated_affected_seconds": 12767518,
+            "estimated_affected_seconds": 12780174,
             "weekday_off_seconds": {
                 "0": 1903249,
-                "1": 1896643,
-                "2": 1848840,
+                "1": 1896944,
+                "2": 1861195,
                 "3": 1816548,
                 "4": 1833022,
                 "5": 1629818,
@@ -754,8 +757,8 @@
             },
             "weekday_off_avg_seconds": {
                 "0": 36600.942307692305,
-                "1": 36473.903846153844,
-                "2": 35554.61538461538,
+                "1": 36479.692307692305,
+                "2": 35792.21153846154,
                 "3": 34274.49056603773,
                 "4": 35250.42307692308,
                 "5": 31342.653846153848,
@@ -767,7 +770,7 @@
                 "3": 450,
                 "4": 283,
                 "5": 475,
-                "6": 313,
+                "6": 314,
                 "7": 0,
                 "8": 0,
                 "9": 0,
@@ -776,7 +779,7 @@
                 "12": 0
             },
             "hourly_affectations": {
-                "0": 78,
+                "0": 79,
                 "1": 69,
                 "2": 59,
                 "3": 54,
@@ -803,16 +806,16 @@
             },
             "severity_breakdown": {
                 "medium": 745,
-                "high": 1331,
+                "high": 1332,
                 "low": 162,
                 "critical": 34
             },
             "co_occurrences": {
-                "3": 1303,
-                "4": 1259,
-                "5": 1255,
-                "6": 1359,
-                "2": 1421
+                "3": 1304,
+                "4": 1260,
+                "5": 1256,
+                "6": 1360,
+                "2": 1422
             },
             "top_municipalities": [
                 {
@@ -872,15 +875,15 @@
         },
         {
             "number": 2,
-            "mentions": 2193,
+            "mentions": 2194,
             "declared_recoveries": 30,
-            "declared_affectations": 2163,
+            "declared_affectations": 2164,
             "declared_emergencies": 32,
-            "estimated_affected_seconds": 12516708,
+            "estimated_affected_seconds": 12529364,
             "weekday_off_seconds": {
                 "0": 1854854,
-                "1": 1933175,
-                "2": 1783256,
+                "1": 1933476,
+                "2": 1795611,
                 "3": 1783444,
                 "4": 1868555,
                 "5": 1534607,
@@ -888,8 +891,8 @@
             },
             "weekday_off_avg_seconds": {
                 "0": 35670.269230769234,
-                "1": 37176.442307692305,
-                "2": 34293.38461538462,
+                "1": 37182.230769230766,
+                "2": 34530.980769230766,
                 "3": 33649.88679245283,
                 "4": 35933.75,
                 "5": 29511.673076923078,
@@ -901,7 +904,7 @@
                 "3": 438,
                 "4": 276,
                 "5": 431,
-                "6": 304,
+                "6": 305,
                 "7": 0,
                 "8": 0,
                 "9": 0,
@@ -910,7 +913,7 @@
                 "12": 0
             },
             "hourly_affectations": {
-                "0": 81,
+                "0": 82,
                 "1": 71,
                 "2": 61,
                 "3": 38,
@@ -937,16 +940,16 @@
             },
             "severity_breakdown": {
                 "medium": 700,
-                "high": 1283,
+                "high": 1284,
                 "low": 148,
                 "critical": 32
             },
             "co_occurrences": {
-                "1": 1421,
-                "6": 1198,
-                "3": 1351,
-                "4": 1224,
-                "5": 1189
+                "1": 1422,
+                "6": 1199,
+                "3": 1352,
+                "4": 1225,
+                "5": 1190
             },
             "top_municipalities": [
                 {
@@ -1006,15 +1009,15 @@
         },
         {
             "number": 3,
-            "mentions": 2198,
+            "mentions": 2199,
             "declared_recoveries": 28,
-            "declared_affectations": 2170,
+            "declared_affectations": 2171,
             "declared_emergencies": 34,
-            "estimated_affected_seconds": 12893084,
+            "estimated_affected_seconds": 12900755,
             "weekday_off_seconds": {
                 "0": 1867657,
-                "1": 2004018,
-                "2": 1833712,
+                "1": 2004319,
+                "2": 1841082,
                 "3": 1777038,
                 "4": 1843541,
                 "5": 1772311,
@@ -1022,8 +1025,8 @@
             },
             "weekday_off_avg_seconds": {
                 "0": 35916.480769230766,
-                "1": 38538.807692307695,
-                "2": 35263.692307692305,
+                "1": 38544.596153846156,
+                "2": 35405.42307692308,
                 "3": 33529.018867924526,
                 "4": 35452.71153846154,
                 "5": 34082.903846153844,
@@ -1035,7 +1038,7 @@
                 "3": 419,
                 "4": 263,
                 "5": 460,
-                "6": 298,
+                "6": 299,
                 "7": 0,
                 "8": 0,
                 "9": 0,
@@ -1044,7 +1047,7 @@
                 "12": 0
             },
             "hourly_affectations": {
-                "0": 74,
+                "0": 75,
                 "1": 69,
                 "2": 53,
                 "3": 55,
@@ -1071,16 +1074,16 @@
             },
             "severity_breakdown": {
                 "medium": 696,
-                "high": 1281,
+                "high": 1282,
                 "low": 159,
                 "critical": 34
             },
             "co_occurrences": {
-                "4": 1354,
-                "5": 1217,
-                "6": 1181,
-                "1": 1303,
-                "2": 1351
+                "4": 1355,
+                "5": 1218,
+                "6": 1182,
+                "1": 1304,
+                "2": 1352
             },
             "top_municipalities": [
                 {
@@ -1140,15 +1143,15 @@
         },
         {
             "number": 4,
-            "mentions": 2194,
-            "declared_recoveries": 21,
-            "declared_affectations": 2173,
+            "mentions": 2198,
+            "declared_recoveries": 24,
+            "declared_affectations": 2174,
             "declared_emergencies": 35,
-            "estimated_affected_seconds": 12773175,
+            "estimated_affected_seconds": 12774378,
             "weekday_off_seconds": {
                 "0": 1841173,
-                "1": 1946300,
-                "2": 1770212,
+                "1": 1946601,
+                "2": 1771114,
                 "3": 1782292,
                 "4": 1895201,
                 "5": 1559782,
@@ -1156,8 +1159,8 @@
             },
             "weekday_off_avg_seconds": {
                 "0": 35407.17307692308,
-                "1": 37428.846153846156,
-                "2": 34042.53846153846,
+                "1": 37434.63461538462,
+                "2": 34059.88461538462,
                 "3": 33628.15094339623,
                 "4": 36446.17307692308,
                 "5": 29995.80769230769,
@@ -1169,7 +1172,7 @@
                 "3": 447,
                 "4": 269,
                 "5": 455,
-                "6": 299,
+                "6": 300,
                 "7": 0,
                 "8": 0,
                 "9": 0,
@@ -1178,7 +1181,7 @@
                 "12": 0
             },
             "hourly_affectations": {
-                "0": 76,
+                "0": 77,
                 "1": 52,
                 "2": 50,
                 "3": 49,
@@ -1205,16 +1208,16 @@
             },
             "severity_breakdown": {
                 "medium": 711,
-                "high": 1290,
+                "high": 1291,
                 "low": 137,
                 "critical": 35
             },
             "co_occurrences": {
-                "3": 1354,
-                "5": 1360,
-                "6": 1235,
-                "1": 1259,
-                "2": 1224
+                "3": 1355,
+                "5": 1361,
+                "6": 1236,
+                "1": 1260,
+                "2": 1225
             },
             "top_municipalities": [
                 {
@@ -1262,19 +1265,19 @@
             ],
             "worst_day_date": "2026-04-06",
             "worst_day_events": 27,
-            "avg_deficit_mw": 251
+            "avg_deficit_mw": 252
         },
         {
             "number": 5,
-            "mentions": 2186,
+            "mentions": 2187,
             "declared_recoveries": 22,
-            "declared_affectations": 2164,
+            "declared_affectations": 2165,
             "declared_emergencies": 38,
-            "estimated_affected_seconds": 12440830,
+            "estimated_affected_seconds": 12453486,
             "weekday_off_seconds": {
                 "0": 1723491,
-                "1": 1892707,
-                "2": 1765368,
+                "1": 1893008,
+                "2": 1777723,
                 "3": 1852410,
                 "4": 1749842,
                 "5": 1720815,
@@ -1282,8 +1285,8 @@
             },
             "weekday_off_avg_seconds": {
                 "0": 33144.057692307695,
-                "1": 36398.21153846154,
-                "2": 33949.38461538462,
+                "1": 36404.0,
+                "2": 34186.980769230766,
                 "3": 34951.1320754717,
                 "4": 33650.807692307695,
                 "5": 33092.596153846156,
@@ -1295,7 +1298,7 @@
                 "3": 443,
                 "4": 274,
                 "5": 439,
-                "6": 310,
+                "6": 311,
                 "7": 0,
                 "8": 0,
                 "9": 0,
@@ -1304,7 +1307,7 @@
                 "12": 0
             },
             "hourly_affectations": {
-                "0": 74,
+                "0": 75,
                 "1": 63,
                 "2": 56,
                 "3": 50,
@@ -1331,16 +1334,16 @@
             },
             "severity_breakdown": {
                 "medium": 719,
-                "high": 1249,
+                "high": 1250,
                 "low": 158,
                 "critical": 38
             },
             "co_occurrences": {
-                "3": 1217,
-                "4": 1360,
-                "6": 1305,
-                "1": 1255,
-                "2": 1189
+                "3": 1218,
+                "4": 1361,
+                "6": 1306,
+                "1": 1256,
+                "2": 1190
             },
             "top_municipalities": [
                 {
@@ -1400,15 +1403,15 @@
         },
         {
             "number": 6,
-            "mentions": 2196,
+            "mentions": 2197,
             "declared_recoveries": 20,
-            "declared_affectations": 2176,
+            "declared_affectations": 2177,
             "declared_emergencies": 37,
-            "estimated_affected_seconds": 12863066,
+            "estimated_affected_seconds": 12875722,
             "weekday_off_seconds": {
                 "0": 1895883,
-                "1": 1868660,
-                "2": 1792468,
+                "1": 1868961,
+                "2": 1804823,
                 "3": 1820521,
                 "4": 1819748,
                 "5": 1803714,
@@ -1416,8 +1419,8 @@
             },
             "weekday_off_avg_seconds": {
                 "0": 36459.28846153846,
-                "1": 35935.769230769234,
-                "2": 34470.53846153846,
+                "1": 35941.557692307695,
+                "2": 34708.13461538462,
                 "3": 34349.45283018868,
                 "4": 34995.153846153844,
                 "5": 34686.807692307695,
@@ -1429,7 +1432,7 @@
                 "3": 451,
                 "4": 268,
                 "5": 447,
-                "6": 289,
+                "6": 290,
                 "7": 0,
                 "8": 0,
                 "9": 0,
@@ -1438,7 +1441,7 @@
                 "12": 0
             },
             "hourly_affectations": {
-                "0": 72,
+                "0": 73,
                 "1": 61,
                 "2": 51,
                 "3": 47,
@@ -1465,16 +1468,16 @@
             },
             "severity_breakdown": {
                 "medium": 728,
-                "high": 1254,
+                "high": 1255,
                 "low": 157,
                 "critical": 37
             },
             "co_occurrences": {
-                "3": 1181,
-                "4": 1235,
-                "5": 1305,
-                "1": 1359,
-                "2": 1198
+                "3": 1182,
+                "4": 1236,
+                "5": 1306,
+                "1": 1360,
+                "2": 1199
             },
             "top_municipalities": [
                 {
@@ -1522,11 +1525,11 @@
             ],
             "worst_day_date": "2026-04-06",
             "worst_day_events": 31,
-            "avg_deficit_mw": 253
+            "avg_deficit_mw": 254
         }
     ],
     "sen_analysis": {
-        "mentions": 309,
+        "mentions": 310,
         "total_failure_events": 3,
         "failure_events": [
             {
@@ -1643,18 +1646,18 @@
         ]
     },
     "ai_categories_distribution": {
-        "block_affectation": 5023,
-        "circuit_failure": 3667,
+        "block_affectation": 5024,
+        "circuit_failure": 3679,
         "daf": 2539,
         "thermal_unit_status": 501,
-        "block_recovery": 477,
+        "block_recovery": 480,
         "daily_resume": 457,
         "zone_recovery": 422,
         "apology_communication": 325,
         "general_info": 315,
-        "sen_recovery": 189,
+        "sen_recovery": 190,
         "sen_failure": 87,
-        "weather_impact": 71,
+        "weather_impact": 72,
         "zone_outage": 67,
         "scheduled_maintenance": 53,
         "daily_forecast": 52
@@ -1663,64 +1666,64 @@
         {
             "name": "La Habana",
             "kind": "province",
-            "mentions": 5179,
-            "affectations": 2957,
-            "recoveries": 205
+            "mentions": 5186,
+            "affectations": 2962,
+            "recoveries": 206
         },
         {
             "name": "Habana del Este",
             "kind": "municipality",
-            "mentions": 4245,
-            "affectations": 2876,
-            "recoveries": 160
+            "mentions": 4247,
+            "affectations": 2877,
+            "recoveries": 161
         },
         {
             "name": "Arroyo Naranjo",
             "kind": "municipality",
-            "mentions": 816,
-            "affectations": 578,
+            "mentions": 818,
+            "affectations": 580,
             "recoveries": 71
         },
         {
             "name": "Boyeros",
             "kind": "municipality",
-            "mentions": 1094,
-            "affectations": 513,
+            "mentions": 1095,
+            "affectations": 514,
             "recoveries": 55
         },
         {
             "name": "Playa",
             "kind": "municipality",
-            "mentions": 1516,
-            "affectations": 452,
+            "mentions": 1517,
+            "affectations": 453,
             "recoveries": 79
         },
         {
             "name": "La Lisa",
             "kind": "municipality",
-            "mentions": 653,
-            "affectations": 451,
+            "mentions": 654,
+            "affectations": 452,
             "recoveries": 59
         },
         {
             "name": "Guanabacoa",
             "kind": "municipality",
-            "mentions": 560,
-            "affectations": 435,
+            "mentions": 562,
+            "affectations": 437,
             "recoveries": 50
         },
         {
             "name": "San Miguel del Padrón",
             "kind": "municipality",
-            "mentions": 683,
-            "affectations": 414,
+            "mentions": 684,
+            "affectations": 415,
             "recoveries": 64
         },
         {
             "name": "Plaza de la Revolución",
             "kind": "municipality",
-            "mentions": 605,
-            "affectations": 375,
+            "mentions": 607,
+            "affectations": 377,
             "recoveries": 44
         },
         {
@@ -1733,15 +1736,15 @@
         {
             "name": "Cerro",
             "kind": "municipality",
-            "mentions": 825,
-            "affectations": 315,
+            "mentions": 827,
+            "affectations": 317,
             "recoveries": 62
         },
         {
             "name": "Marianao",
             "kind": "municipality",
-            "mentions": 675,
-            "affectations": 321,
+            "mentions": 678,
+            "affectations": 324,
             "recoveries": 46
         },
         {
@@ -1768,8 +1771,8 @@
         {
             "name": "Centro Habana",
             "kind": "municipality",
-            "mentions": 245,
-            "affectations": 152,
+            "mentions": 248,
+            "affectations": 154,
             "recoveries": 24
         },
         {
@@ -1782,8 +1785,8 @@
         {
             "name": "Vedado",
             "kind": "circuit",
-            "mentions": 208,
-            "affectations": 129,
+            "mentions": 209,
+            "affectations": 130,
             "recoveries": 12
         },
         {
@@ -1831,16 +1834,16 @@
         {
             "name": "Alamar",
             "kind": "circuit",
-            "mentions": 147,
-            "affectations": 91,
+            "mentions": 148,
+            "affectations": 92,
             "recoveries": 10
         },
         {
             "name": "Miramar",
             "kind": "circuit",
-            "mentions": 274,
+            "mentions": 275,
             "affectations": 74,
-            "recoveries": 22
+            "recoveries": 23
         },
         {
             "name": "Santiago de Cuba",
@@ -1859,8 +1862,8 @@
         {
             "name": "Mantilla",
             "kind": "circuit",
-            "mentions": 102,
-            "affectations": 76,
+            "mentions": 103,
+            "affectations": 77,
             "recoveries": 9
         },
         {
@@ -1908,9 +1911,9 @@
         {
             "name": "Cojímar",
             "kind": "circuit",
-            "mentions": 65,
+            "mentions": 66,
             "affectations": 51,
-            "recoveries": 5
+            "recoveries": 6
         },
         {
             "name": "Jaimanitas",
@@ -2115,7 +2118,8 @@
         "171": "high",
         "172": "high",
         "173": "critical",
-        "174": "high"
+        "174": "high",
+        "175": "high"
     },
     "power_timeline": [
         {
@@ -3236,16 +3240,16 @@
         {
             "canonical": "CTE Antonio Guiteras",
             "city": "Matanzas",
-            "mentions": 118,
+            "mentions": 119,
             "failures": 59,
-            "recoveries": 6,
+            "recoveries": 7,
             "monthly_activity": [
                 1,
                 14,
                 18,
                 17,
                 35,
-                33,
+                34,
                 0,
                 0,
                 0,
@@ -3477,9 +3481,9 @@
         }
     ],
     "hour_of_day_severity": {
-        "0": 126,
-        "1": 89,
-        "2": 56,
+        "0": 127,
+        "1": 95,
+        "2": 57,
         "3": 58,
         "4": 42,
         "5": 100,
@@ -3518,19 +3522,19 @@
         "sample_message_id": 0
     },
     "year_records": {
-        "longest_clean_streak_days": 191,
-        "longest_clean_streak_start": "2026-06-24",
+        "longest_clean_streak_days": 190,
+        "longest_clean_streak_start": "2026-06-25",
         "longest_clean_streak_end": "2026-12-31",
-        "days_since_sen_failure": 53,
-        "days_since_critical_event": 1,
+        "days_since_sen_failure": 54,
+        "days_since_critical_event": 2,
         "days_since_block_affectation": 0,
         "last_sen_failure_date": "2026-05-01",
         "last_critical_event_date": "2026-06-22",
-        "last_block_affectation_date": "2026-06-23"
+        "last_block_affectation_date": "2026-06-24"
     },
     "health_score": 36,
     "health_breakdown": {
-        "clean_pct": 53,
+        "clean_pct": 52,
         "recovery_ratio": 1,
         "sen_penalty": 70,
         "sentiment_score": 12
@@ -3687,8 +3691,8 @@
         "5-7": 12,
         "1-3": 10,
         "1-23": 22,
-        "2-0": 18,
-        "2-2": 12,
+        "2-0": 19,
+        "2-2": 13,
         "2-4": 7,
         "4-4": 7,
         "5-9": 12,
@@ -3703,7 +3707,7 @@
         "6-23": 8,
         "0-0": 10,
         "0-4": 4,
-        "2-1": 16,
+        "2-1": 22,
         "2-3": 5
     },
     "ai_categories_monthly": {
@@ -3713,7 +3717,7 @@
             362,
             534,
             891,
-            829,
+            841,
             0,
             0,
             0,
@@ -3755,7 +3759,7 @@
             1163,
             780,
             664,
-            428,
+            429,
             0,
             0,
             0,
@@ -3839,7 +3843,7 @@
             100,
             62,
             112,
-            89,
+            92,
             0,
             0,
             0,
@@ -3853,7 +3857,7 @@
             9,
             0,
             103,
-            67,
+            68,
             0,
             0,
             0,
@@ -3867,7 +3871,7 @@
             0,
             0,
             42,
-            26,
+            27,
             0,
             0,
             0,
@@ -3924,7 +3928,7 @@
         "3": 0.8881,
         "4": 0.8614,
         "5": 0.8975,
-        "6": 0.9069,
+        "6": 0.9068,
         "7": 0.0,
         "8": 0.0,
         "9": 0.0,
@@ -3974,5 +3978,5 @@
             "metric": "replies"
         }
     ],
-    "blackout_probability_now": 86
+    "blackout_probability_now": 81
 }
