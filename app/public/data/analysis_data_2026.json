@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-07-17T17:58:40.249053-04:00",
+    "sync_date": "2026-07-17T18:56:26.324879-04:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -17,16 +17,19 @@
         "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨"
     },
     "last_message": {
-        "id": 69389,
-        "link": "https://t.me/EmpresaElectricaDeLaHabana/69389",
-        "date_utc": "2026-07-17 21:57:19",
-        "date_utc_d": "2026-07-17T21:57:19",
-        "date_cuba": "2026-07-17 17:57:19",
-        "date_cuba_d": "2026-07-17T17:57:19",
-        "reactions": {},
-        "views": 1,
-        "replies": 0,
-        "text": "‼️Consumidores del municipio Marianao, por disparo del circuito se afectó el servicio eléctrico en el siguiente circuito:\n\n👉🏼1856: Coco Solo, Los Quemados, Los Ángeles, Las Yaguas‼️"
+        "id": 69409,
+        "link": "https://t.me/EmpresaElectricaDeLaHabana/69409",
+        "date_utc": "2026-07-17 22:52:17",
+        "date_utc_d": "2026-07-17T22:52:17",
+        "date_cuba": "2026-07-17 18:52:17",
+        "date_cuba_d": "2026-07-17T18:52:17",
+        "reactions": {
+            "👍": 2,
+            "👎": 1
+        },
+        "views": 607,
+        "replies": 2,
+        "text": "📣🚨Informamos a la población que a partir de las 3:11pm se afectó el servicio eléctrico de los siguientes circuitos:\n**\n👉D1125**: 1ro de Mayo, Calzada de Managua, Calvario, María Antonia. Reparto Guiteras\n \n**👉PG920**: Eléctrico, Ciudad Jardín, Parcelación Moderna.\n\n👉**D1100**: Parque Lenin, parte del reparto Ponce."
     },
     "shortest_message": {
         "id": 61112,
@@ -60,14 +63,14 @@
         "text": "**📣Averías existentes hasta el momento**\n** **\n**🚨Soterrada: (Cable Fallo)**\n** **\n📌Municipio: San Miguel del Padrón\n📉Afecta: San Juan de los Pinos, Residencial San Miguel, Alturas de San Miguel, Núñez, Afán, Las Granjas y Mirta.\n** **\n**🚨Subestación Apolo     (continúan las labores)**\n**\n📌Municipio: 10 de Octubre\n📉Afecta: **Repartos Vista Alegre** **y Lawton**, **Calle Córdoba desde Milán hasta LFC, Callejón del Matadero hasta San Francisco, Calle Concepción desde LFC hasta 8va; 8va desde San Francisco hasta calle B; B desde 8va hasta calle 13, Luz a Línea de Ferrocarril y desde C hasta H, Cuadrante de Calle Dolores hasta C y Calle 14 hasta 17.** **Calle Giral desde 2da hasta Dos Ríos, 22 desde Dos Ríos hasta Concepción, Concepción desde 18 hasta 25,19 desde Concepción hasta  Pocito, Tejar desde 16 hasta 21; 16 desde Dolores hasta D, D desde 14 hasta porvenir. En Santo Suárez: Felipe Poey desde Libertad hasta General Lacret. Párraga desde Libertad hasta General Lacret. Estrada Palma y Luis Estévez desde Felipe Poey hasta Calzada de 10 de Octubre. Las calles San Francisco, Centurión. Avenida Morell, Alfredo Zayas y Luz. Calles San Carlos, Eulalia e Iznaga. En Lawton: calle San Luis desde Remedio hasta Luz. San José desde Colina hasta Luz. Delicias desde Tres Palacios hasta Luz. Cuadrante de la calle Altarriba y calle E hasta Avenida de Acosta y Calzada de 10 de Octubre hasta Porvenir. Cuadrante entre Milagros, Figueroa, Vista Alegre y 10 de Octubre, tambien 10 de Octubre, San Leonardo Lourdes y Kesell. Parte del Sevillano**\n\n📌Municipio: Arroyo Naranjo**\n📉**Afecta: **Víbora Park, Santa Amalia, Lubumba, Poey, La Palma. En los repartos Portocarrero y El Moro: calle C a Portocarrero, 2da a Holguín. Cuadrante de Portocarrero hasta Carretera del Lucero y Rodríguez de Armas hasta Santa Flora; las calles Miguel Biondi entre Santa Flora y Santa Hortensia. En Mantilla: Cuadrante de Tamarindo hasta Carretera del Cuervo. Mártires de Girón hasta Don Tomás. Barrio Azul: Cuadrante de Santa Isabel hasta Lincoln y Maceo hasta Gómez. Cuadrante de calle 1ra desde Maceo hasta Calzada de Bejucal. Calles 1ra y Jackson hasta Calzada de Bejucal. Calzada de Bejucal desde Calzada de Managua hasta Calzada de Vieja Linda, Montejo: Calzada de Bejucal a San Agustín y Martí a Cortez. Mamey: Cuadrante de San Juan a Estrella y Calzada de Bejucal a Esperanza. Fraternidad, Calleja, San Agustín.\n** **\n**🚨Cable fallo:**\n** **\n📌Municipio: Marianao\n📉Afecta los repartos: Coco Solo, Los Quemados, Los Ángeles, Las Yaguas.\n** **\n**🚨Primario partido:**\n\n📌Municipio: Lisa\n👉Dirección: 236 y 23\n📉Afecta: calle 230 desde 15 hasta 23, La Coronela.\n** **\n**🚨Puente partido:**\n** **\n📌Municipio: Centro Habana/Vieja\n📉Afecta: Águila hasta Egido, Avenida La Pesquera hasta Monte. Puerta Cerrada hasta Diaria, Águila hasta Belascoain.\n** **\n**🚨Transformador Dañado:**\n \n📌Municipio: Boyeros\n👉Dirección: Avenida República entre Las Granjas y Nacional, Aldabó.\n👉Dirección: 6ta entre Soto y Cuervo, El Cuervo.\n \n📌Municipio: Regla\n👉Dirección: Adriano entre Fresneda y Agramonte.\n \n📌Municipio: Plaza\n👉Dirección: Ulloa entre Santa Teresa y Reparto.\n \n📌Municipio: Cerro\n👉Dirección: Victoria entre América y Rambla, Martí.\n👉Dirección: Palmares entre Independencia y América, Martí.\n👉Dirección: Pedroso entre Cruz Padre e Infanta, Latino.\n👉Dirección: San Joaquín entre Estévez y Santa Rosa.\n \n📌Municipio: Guanabacoa\n👉Dirección: Pepe Antonio entre Luz y Maceo, Villa 2.\n👉Dirección: Bertemati entre Jesús María y Cadena, Villa 2.\n👉Dirección: Corral Falso entre Gloria y San Antonio\n👉Dirección: C entre 1ra y 2da.\n👉Dirección: 8na entre 3ra y 5ta, Mañana.\n \n📌Municipio: Marianao\n👉Dirección: 124 entre 47 y 49, Coco Solo.\n👉Dirección: 82 entre 39A y 41.\n \n📌Municipio: Habana del Este\n👉Dirección: 12 y Finca Los Almendros, Guiteras.\n \n📌Municipio: Playa\n👉Dirección: 180 entre 1ra y 5ta, Flores.\n\n📌Municipio: 10 de Octubre\n👉Dirección: Cortina entre Carmen y Vista Alegre\n \n📌Municipio: Lisa\n👉Dirección: 188 entre 31 y 33, La Corbata.\n\nGrupo de Comunicación\nEmpresa Eléctrica de La Habana📣",
         "count": 4059
     },
-    "total_views": 398769057,
-    "total_messages": 17636,
-    "total_erased_messages": 1212,
-    "total_replies": 445714,
-    "total_reactions": 2898657,
-    "total_positive_reactions": 347689,
-    "total_negative_reactions": 2550968,
-    "avg_views": 22611,
+    "total_views": 398932745,
+    "total_messages": 17655,
+    "total_erased_messages": 1213,
+    "total_replies": 445958,
+    "total_reactions": 2899822,
+    "total_positive_reactions": 347894,
+    "total_negative_reactions": 2551928,
+    "avg_views": 22596,
     "avg_replies": 25,
     "avg_reactions": 164,
     "avg_positive_reactions": 20,
@@ -80,7 +83,7 @@
         "4": 50358967,
         "5": 68384000,
         "6": 61311409,
-        "7": 28997092,
+        "7": 29160780,
         "8": 0,
         "9": 0,
         "10": 0,
@@ -94,7 +97,7 @@
         "4": 45598,
         "5": 75908,
         "6": 80053,
-        "7": 51743,
+        "7": 51987,
         "8": 0,
         "9": 0,
         "10": 0,
@@ -108,7 +111,7 @@
         "4": 349504,
         "5": 500955,
         "6": 424743,
-        "7": 183550,
+        "7": 184715,
         "8": 0,
         "9": 0,
         "10": 0,
@@ -122,7 +125,7 @@
         "4": 2126,
         "5": 3243,
         "6": 2915,
-        "7": 1892,
+        "7": 1911,
         "8": 0,
         "9": 0,
         "10": 0,
@@ -327,7 +330,7 @@
         "195": 106,
         "196": 76,
         "197": 144,
-        "198": 188,
+        "198": 207,
         "199": 0,
         "200": 0,
         "201": 0,
@@ -498,15 +501,15 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 2697,
-        "2": 2784,
-        "3": 5196,
+        "1": 2701,
+        "2": 2787,
+        "3": 5204,
         "4": 540,
-        "5": 6419
+        "5": 6423
     },
     "distribution_reaction": {
-        "👎": 2550968,
-        "👍": 347689
+        "👎": 2551928,
+        "👍": 347894
     },
     "top3_most_viewed_messages": [
         {
@@ -710,29 +713,29 @@
     ],
     "top25_most_repeated_words": {
         "bloque": 14198,
-        "calle": 8046,
-        "servicio": 7680,
-        "municipio": 7476,
-        "horas": 6793,
+        "calle": 8052,
+        "servicio": 7693,
+        "municipio": 7481,
+        "horas": 6795,
         "minutos": 6730,
-        "circuitos": 6697,
+        "circuitos": 6705,
         "déficit": 6178,
-        "habana": 6105,
+        "habana": 6106,
         "hrs": 5529,
-        "consumidores": 5386,
-        "informamos": 5257,
-        "afectados": 5212,
-        "emergencia": 5089,
-        "eléctrico": 4903,
+        "consumidores": 5391,
+        "informamos": 5268,
+        "afectados": 5213,
+        "emergencia": 5090,
+        "eléctrico": 4917,
         "dirección": 4519,
-        "santa": 4465,
-        "siguientes": 4357,
-        "clientes": 4287,
+        "santa": 4468,
+        "siguientes": 4365,
+        "clientes": 4288,
         "generación": 4131,
         "empresa": 3895,
-        "eléctrica": 3725,
+        "eléctrica": 3727,
         "comunicación": 3694,
-        "partir": 3524,
+        "partir": 3535,
         "mw": 3452
     },
     "blocks_analysis": [
@@ -1530,7 +1533,7 @@
         }
     ],
     "sen_analysis": {
-        "mentions": 504,
+        "mentions": 505,
         "total_failure_events": 5,
         "failure_events": [
             {
@@ -1709,11 +1712,11 @@
                     "date_cuba": "2026-07-17 17:20:06",
                     "date_cuba_d": "2026-07-17T17:20:06",
                     "reactions": {
-                        "👍": 1,
-                        "👎": 22
+                        "👍": 4,
+                        "👎": 32
                     },
-                    "views": 4556,
-                    "replies": 18,
+                    "views": 7362,
+                    "replies": 20,
                     "text": "📉Informamos a los clientes de los municipios Diez de Octubre y Arroyo Naranjo pertenecientes a la SUBESTACIÓN APOLO, que en el proceso de rotación se encuentran con servicio los siguientes circuitos:\n\n👉A1007: Barrio Azul: Cuadrante de Santa Isabel hasta Lincoln y Maceo hasta Gómez. Cuadrante de calle 1ra desde Maceo hasta Calzada de Bejucal. Calles 1ra y Jackson hasta Calzada de Bejucal. Calzada de Bejucal desde Calzada de Managua hasta Calzada de Vieja Linda. Montejo: Calzada de Bejucal a San Agustín y Martí a Cortez. Poey: 4ta a Quinta Canarias. Calle C hasta Calzada de Bejucal. Mamey: Cuadrante de San Juan a Estrella y Calzada de Bejucal a Esperanza.\n\n👉D632: Víbora Park, La Lira, Pepe Hermoso, Parte del Moro y Parte de Mantilla.\n\n👉D633: Avenida de Acosta desde Milagros Este a 2da, Cuadrante desde Calle 2da a Ave. Porvenir y Desde Avenida De Acosta a Linea del Ferrocarril. Arroyo Apolo en Calle San Leonardo desde Calle 2da a Córdova Calle Roma entre Lourdes y Córdova 📉"
                 },
                 "estimated_duration_seconds": 129600
@@ -1721,17 +1724,17 @@
         ]
     },
     "ai_categories_distribution": {
-        "block_affectation": 5309,
-        "circuit_failure": 4472,
-        "daf": 2784,
-        "block_recovery": 674,
-        "thermal_unit_status": 639,
-        "zone_recovery": 611,
+        "block_affectation": 5310,
+        "circuit_failure": 4476,
+        "daf": 2787,
+        "block_recovery": 676,
+        "thermal_unit_status": 640,
+        "zone_recovery": 615,
         "daily_resume": 540,
-        "general_info": 408,
-        "apology_communication": 381,
+        "general_info": 410,
+        "apology_communication": 382,
         "sen_recovery": 300,
-        "sen_failure": 136,
+        "sen_failure": 137,
         "zone_outage": 113,
         "weather_impact": 106,
         "scheduled_maintenance": 101,
@@ -1741,8 +1744,8 @@
         {
             "name": "La Habana",
             "kind": "province",
-            "mentions": 6074,
-            "affectations": 3285,
+            "mentions": 6075,
+            "affectations": 3286,
             "recoveries": 441
         },
         {
@@ -1783,15 +1786,15 @@
         {
             "name": "San Miguel del Padrón",
             "kind": "municipality",
-            "mentions": 881,
-            "affectations": 547,
+            "mentions": 882,
+            "affectations": 548,
             "recoveries": 91
         },
         {
             "name": "Guanabacoa",
             "kind": "municipality",
-            "mentions": 706,
-            "affectations": 554,
+            "mentions": 708,
+            "affectations": 556,
             "recoveries": 61
         },
         {
@@ -1811,8 +1814,8 @@
         {
             "name": "Cerro",
             "kind": "municipality",
-            "mentions": 1021,
-            "affectations": 428,
+            "mentions": 1024,
+            "affectations": 429,
             "recoveries": 94
         },
         {
@@ -1825,7 +1828,7 @@
         {
             "name": "Cotorro",
             "kind": "municipality",
-            "mentions": 515,
+            "mentions": 516,
             "affectations": 248,
             "recoveries": 32
         },
@@ -1846,9 +1849,9 @@
         {
             "name": "Regla",
             "kind": "municipality",
-            "mentions": 304,
+            "mentions": 305,
             "affectations": 207,
-            "recoveries": 41
+            "recoveries": 42
         },
         {
             "name": "Centro Habana",
@@ -1874,7 +1877,7 @@
         {
             "name": "Miramar",
             "kind": "circuit",
-            "mentions": 395,
+            "mentions": 396,
             "affectations": 124,
             "recoveries": 58
         },
@@ -1909,7 +1912,7 @@
         {
             "name": "Santiago de Cuba",
             "kind": "province",
-            "mentions": 584,
+            "mentions": 585,
             "affectations": 111,
             "recoveries": 29
         },
@@ -1923,9 +1926,9 @@
         {
             "name": "Dolores",
             "kind": "circuit",
-            "mentions": 169,
+            "mentions": 170,
             "affectations": 109,
-            "recoveries": 22
+            "recoveries": 23
         },
         {
             "name": "Alamar",
@@ -1958,9 +1961,9 @@
         {
             "name": "Tejas",
             "kind": "circuit",
-            "mentions": 126,
+            "mentions": 128,
             "affectations": 73,
-            "recoveries": 20
+            "recoveries": 21
         },
         {
             "name": "Habana Vieja",
@@ -1968,6 +1971,13 @@
             "mentions": 173,
             "affectations": 80,
             "recoveries": 11
+        },
+        {
+            "name": "La Cumbre",
+            "kind": "circuit",
+            "mentions": 112,
+            "affectations": 71,
+            "recoveries": 15
         },
         {
             "name": "California",
@@ -1982,13 +1992,6 @@
             "mentions": 117,
             "affectations": 65,
             "recoveries": 20
-        },
-        {
-            "name": "La Cumbre",
-            "kind": "circuit",
-            "mentions": 111,
-            "affectations": 71,
-            "recoveries": 14
         },
         {
             "name": "Jaimanitas",
@@ -2007,8 +2010,8 @@
         {
             "name": "La Esperanza",
             "kind": "circuit",
-            "mentions": 96,
-            "affectations": 68,
+            "mentions": 97,
+            "affectations": 69,
             "recoveries": 11
         },
         {
@@ -3492,8 +3495,8 @@
         {
             "canonical": "CTE Antonio Guiteras",
             "city": "Matanzas",
-            "mentions": 167,
-            "failures": 75,
+            "mentions": 170,
+            "failures": 77,
             "recoveries": 21,
             "monthly_activity": [
                 1,
@@ -3502,14 +3505,14 @@
                 17,
                 35,
                 44,
-                38,
+                41,
                 0,
                 0,
                 0,
                 0,
                 0
             ],
-            "last_status": "normal"
+            "last_status": "active_failure"
         },
         {
             "canonical": "CTE Máximo Gómez (Mariel)",
@@ -3795,7 +3798,7 @@
         "15": 207,
         "16": 220,
         "17": 258,
-        "18": 276,
+        "18": 277,
         "19": 204,
         "20": 185,
         "21": 166,
@@ -3835,7 +3838,7 @@
         "sen_penalty": 50,
         "sentiment_score": 12
     },
-    "avg_ai_confidence": 0.8975,
+    "avg_ai_confidence": 0.8976,
     "weekly_hourly_severity": {
         "3-10": 27,
         "3-11": 25,
@@ -3882,7 +3885,7 @@
         "4-15": 33,
         "4-16": 33,
         "4-17": 34,
-        "4-18": 41,
+        "4-18": 42,
         "4-19": 34,
         "5-8": 15,
         "5-15": 24,
@@ -4014,7 +4017,7 @@
             534,
             891,
             1087,
-            547,
+            551,
             0,
             0,
             0,
@@ -4028,7 +4031,7 @@
             378,
             660,
             485,
-            188,
+            191,
             0,
             0,
             0,
@@ -4056,7 +4059,7 @@
             780,
             664,
             550,
-            164,
+            165,
             0,
             0,
             0,
@@ -4070,7 +4073,7 @@
             76,
             101,
             54,
-            45,
+            46,
             0,
             0,
             0,
@@ -4084,7 +4087,7 @@
             59,
             126,
             100,
-            123,
+            124,
             0,
             0,
             0,
@@ -4098,7 +4101,7 @@
             40,
             116,
             99,
-            162,
+            166,
             0,
             0,
             0,
@@ -4126,7 +4129,7 @@
             38,
             97,
             64,
-            81,
+            83,
             0,
             0,
             0,
@@ -4140,7 +4143,7 @@
             62,
             112,
             134,
-            152,
+            154,
             0,
             0,
             0,
@@ -4182,7 +4185,7 @@
             0,
             54,
             32,
-            46,
+            47,
             0,
             0,
             0,
@@ -4225,7 +4228,7 @@
         "4": 0.8614,
         "5": 0.8975,
         "6": 0.9071,
-        "7": 0.8872,
+        "7": 0.8868,
         "8": 0.0,
         "9": 0.0,
         "10": 0.0,
@@ -4274,5 +4277,5 @@
             "metric": "replies"
         }
     ],
-    "blackout_probability_now": 89
+    "blackout_probability_now": 91
 }
