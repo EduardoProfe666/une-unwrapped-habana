@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-07-19T09:25:30.284615-04:00",
+    "sync_date": "2026-07-19T11:00:27.838588-04:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -17,16 +17,19 @@
         "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨"
     },
     "last_message": {
-        "id": 69630,
-        "link": "https://t.me/EmpresaElectricaDeLaHabana/69630",
-        "date_utc": "2026-07-19 13:23:28",
-        "date_utc_d": "2026-07-19T13:23:28",
-        "date_cuba": "2026-07-19 09:23:28",
-        "date_cuba_d": "2026-07-19T09:23:28",
-        "reactions": {},
-        "views": 6,
+        "id": 69634,
+        "link": "https://t.me/EmpresaElectricaDeLaHabana/69634",
+        "date_utc": "2026-07-19 14:57:24",
+        "date_utc_d": "2026-07-19T14:57:24",
+        "date_cuba": "2026-07-19 10:57:24",
+        "date_cuba_d": "2026-07-19T10:57:24",
+        "reactions": {
+            "👍": 2,
+            "👎": 5
+        },
+        "views": 310,
         "replies": 0,
-        "text": "🛑⚡️Consumidores del municipio Habana del Este se detectó una AVERÍA SECUNDARIA por TRANSFORMADOR DAÑADO en :\n\n👉  Calle: 2da/16 y 19🛑⚡️"
+        "text": "✅📣Informamos a la población que a partir de la 9:50 am queda restablecido el servicio en los siguientes circuitos: \n\n👉OP321: Lealtad desde Sitios hasta Malecón, Campanario desde Escobar hasta Rayo, Reyna hasta Sitios, Escobar hasta Ángeles, Águila desde Puerta Cerrada hasta Monte, Revillagigedo hasta Antón Recio.\n👉A1217: Reparto Versalles, calle 51 desde 190 hasta 222 (Reparto San Rafael Lisa)\n👉L317: Calles 70 desde 3ra hasta 11; 82 y 84 desde 3ra hasta 9na, Almendares.\n👉P322: Sitios desde Xifre hasta Retiro, Placencia hasta Oquendo, Sitios hasta Manglar, Matadero hasta Benjumeda, Mercado hasta Nueva del Pilar.\n👉A1202: Reparto Sexto Congreso , Calle 170; 156; 158 desde 39 hasta 51, Calle 156 desde 51 hasta 71, Calle 37 desde  170 a 144, parte de Cocosolo.\n👉A980: Calle Porvenir desde calle E hasta Calzada de Luyanó, calle Luyanó desde 9 de abril hasta los Benavides, calle  Teresa Blanco desde Calzada de Luyanó hasta Font, calle Manuel Pruna desde Calzada de Luyanó hasta Concha, calle desde Manuel Pruna desde Concha hasta Fábrica. Fábrica desde Gancedo hasta Vía Blanca.                                                                                                                                                                           👉GC19: Repartos Roble, Reparto Militar, Fuentes Bancas, La Hata, Naranjo y Pomo de Oro                                                                                                                                                      👉👉P317: 25 y K\n👉1175: Calle 37 desde 44 hasta 50; 33 desde 44 hasta 66; Reparto Santa Felicia  \n👉1246: Alturas del Bosque y la Ceiba\n👉L316: Calle 70 desde 13 hasta 29 (Reparto Buenavista); Calle 64 desde 5ta hasta 17 (Almendares); Calle 66 desde 1ra hasta 7ma (Miramar)\n👉2076: Alturas de La Lisa, Balcón Arimao, Santa Elena , Novoa\n👉2074: Alturas de La Lisa, San Rafael\n👉A1203: Cuadrante de 198; 202; 11; 13; 15; 17; 19 en Siboney. Calle 220 desde 1ra hasta 5ta; 238 desde 5ta hasta 5ta E, Jaimanitas.\n👉1242: Calles 54 desde 17 hasta 41; 25 desde 46 hasta 66, Buenavista.\n👉Pz24: Calles 2 desde 27 hasta 19; 19 desde 2 hasta 8, B desde 21 hasta 1ra, B desde A hasta D, C desde 13 hasta 1ra, 7ma desde A hasta M, 5ta y 3ra desde B hasta G, 9na hasta Malecón, A hasta K, 11 desde G hasta L.\n👉C10: Vía Blanca de Infanta a Chaples, Chaples desde Vía Blanca a Palmar, Palmar de Palatino a Suzarte, Suzarte de Palmar a Santa Catalina, Lazada desde San Juan Bosco hasta 3ra, Vento Oeste hasta 3ra, Lazada hasta Avenida del Este, Avenida del Este desde Vento Oeste hasta Avenida de La Ceiba, Avenida del Norte desde Avenida del Este hasta Lazada Norte 1, Primelles desde Avenida Norte hasta calle Interior, Avenida Este hasta Aranguren, Blanquita hasta 11.\n👉T44: En Luyanó entre calles Avenida 10 de octubre, Calzada de Luyanó y Tres Palacios.\n👉2204: Alturas del Sevillano, Miraflores Nuevo, Alturas de Los Pinos, La India, Los Pinos, Vieja Linda, Alturas de la Víbora\n👉H443: Repartos Los Ángeles, Rocafort, La Rosalía, La Fernanda, Juanelo.\n👉GC13: Mambí, Garrido, Centro de Guanabacoa. Nalón\n                                                                                                                                                                                    📣Usted puede, aún siendo cliente de estos circuitos, continuar afectado por avería en acometida o transformador. En esos casos le pedimos contactarnos por las vías alternativas."
     },
     "shortest_message": {
         "id": 61112,
@@ -60,19 +63,19 @@
         "text": "**📣Averías existentes hasta el momento**\n** **\n**🚨Soterrada: (Cable Fallo)**\n** **\n📌Municipio: San Miguel del Padrón\n📉Afecta: San Juan de los Pinos, Residencial San Miguel, Alturas de San Miguel, Núñez, Afán, Las Granjas y Mirta.\n** **\n**🚨Subestación Apolo     (continúan las labores)**\n**\n📌Municipio: 10 de Octubre\n📉Afecta: **Repartos Vista Alegre** **y Lawton**, **Calle Córdoba desde Milán hasta LFC, Callejón del Matadero hasta San Francisco, Calle Concepción desde LFC hasta 8va; 8va desde San Francisco hasta calle B; B desde 8va hasta calle 13, Luz a Línea de Ferrocarril y desde C hasta H, Cuadrante de Calle Dolores hasta C y Calle 14 hasta 17.** **Calle Giral desde 2da hasta Dos Ríos, 22 desde Dos Ríos hasta Concepción, Concepción desde 18 hasta 25,19 desde Concepción hasta  Pocito, Tejar desde 16 hasta 21; 16 desde Dolores hasta D, D desde 14 hasta porvenir. En Santo Suárez: Felipe Poey desde Libertad hasta General Lacret. Párraga desde Libertad hasta General Lacret. Estrada Palma y Luis Estévez desde Felipe Poey hasta Calzada de 10 de Octubre. Las calles San Francisco, Centurión. Avenida Morell, Alfredo Zayas y Luz. Calles San Carlos, Eulalia e Iznaga. En Lawton: calle San Luis desde Remedio hasta Luz. San José desde Colina hasta Luz. Delicias desde Tres Palacios hasta Luz. Cuadrante de la calle Altarriba y calle E hasta Avenida de Acosta y Calzada de 10 de Octubre hasta Porvenir. Cuadrante entre Milagros, Figueroa, Vista Alegre y 10 de Octubre, tambien 10 de Octubre, San Leonardo Lourdes y Kesell. Parte del Sevillano**\n\n📌Municipio: Arroyo Naranjo**\n📉**Afecta: **Víbora Park, Santa Amalia, Lubumba, Poey, La Palma. En los repartos Portocarrero y El Moro: calle C a Portocarrero, 2da a Holguín. Cuadrante de Portocarrero hasta Carretera del Lucero y Rodríguez de Armas hasta Santa Flora; las calles Miguel Biondi entre Santa Flora y Santa Hortensia. En Mantilla: Cuadrante de Tamarindo hasta Carretera del Cuervo. Mártires de Girón hasta Don Tomás. Barrio Azul: Cuadrante de Santa Isabel hasta Lincoln y Maceo hasta Gómez. Cuadrante de calle 1ra desde Maceo hasta Calzada de Bejucal. Calles 1ra y Jackson hasta Calzada de Bejucal. Calzada de Bejucal desde Calzada de Managua hasta Calzada de Vieja Linda, Montejo: Calzada de Bejucal a San Agustín y Martí a Cortez. Mamey: Cuadrante de San Juan a Estrella y Calzada de Bejucal a Esperanza. Fraternidad, Calleja, San Agustín.\n** **\n**🚨Cable fallo:**\n** **\n📌Municipio: Marianao\n📉Afecta los repartos: Coco Solo, Los Quemados, Los Ángeles, Las Yaguas.\n** **\n**🚨Primario partido:**\n\n📌Municipio: Lisa\n👉Dirección: 236 y 23\n📉Afecta: calle 230 desde 15 hasta 23, La Coronela.\n** **\n**🚨Puente partido:**\n** **\n📌Municipio: Centro Habana/Vieja\n📉Afecta: Águila hasta Egido, Avenida La Pesquera hasta Monte. Puerta Cerrada hasta Diaria, Águila hasta Belascoain.\n** **\n**🚨Transformador Dañado:**\n \n📌Municipio: Boyeros\n👉Dirección: Avenida República entre Las Granjas y Nacional, Aldabó.\n👉Dirección: 6ta entre Soto y Cuervo, El Cuervo.\n \n📌Municipio: Regla\n👉Dirección: Adriano entre Fresneda y Agramonte.\n \n📌Municipio: Plaza\n👉Dirección: Ulloa entre Santa Teresa y Reparto.\n \n📌Municipio: Cerro\n👉Dirección: Victoria entre América y Rambla, Martí.\n👉Dirección: Palmares entre Independencia y América, Martí.\n👉Dirección: Pedroso entre Cruz Padre e Infanta, Latino.\n👉Dirección: San Joaquín entre Estévez y Santa Rosa.\n \n📌Municipio: Guanabacoa\n👉Dirección: Pepe Antonio entre Luz y Maceo, Villa 2.\n👉Dirección: Bertemati entre Jesús María y Cadena, Villa 2.\n👉Dirección: Corral Falso entre Gloria y San Antonio\n👉Dirección: C entre 1ra y 2da.\n👉Dirección: 8na entre 3ra y 5ta, Mañana.\n \n📌Municipio: Marianao\n👉Dirección: 124 entre 47 y 49, Coco Solo.\n👉Dirección: 82 entre 39A y 41.\n \n📌Municipio: Habana del Este\n👉Dirección: 12 y Finca Los Almendros, Guiteras.\n \n📌Municipio: Playa\n👉Dirección: 180 entre 1ra y 5ta, Flores.\n\n📌Municipio: 10 de Octubre\n👉Dirección: Cortina entre Carmen y Vista Alegre\n \n📌Municipio: Lisa\n👉Dirección: 188 entre 31 y 33, La Corbata.\n\nGrupo de Comunicación\nEmpresa Eléctrica de La Habana📣",
         "count": 4059
     },
-    "total_views": 401357802,
-    "total_messages": 17859,
+    "total_views": 401462702,
+    "total_messages": 17863,
     "total_erased_messages": 1230,
-    "total_replies": 449755,
-    "total_reactions": 2911044,
-    "total_positive_reactions": 349281,
-    "total_negative_reactions": 2561763,
-    "avg_views": 22474,
+    "total_replies": 450010,
+    "total_reactions": 2911553,
+    "total_positive_reactions": 349366,
+    "total_negative_reactions": 2562187,
+    "avg_views": 22475,
     "avg_replies": 25,
     "avg_reactions": 163,
     "avg_positive_reactions": 20,
     "avg_negative_reactions": 143,
-    "avg_text_length": 300,
+    "avg_text_length": 301,
     "monthly_views": {
         "1": 63920288,
         "2": 52700656,
@@ -80,7 +83,7 @@
         "4": 50358967,
         "5": 68384000,
         "6": 61311409,
-        "7": 31585837,
+        "7": 31690737,
         "8": 0,
         "9": 0,
         "10": 0,
@@ -94,7 +97,7 @@
         "4": 45598,
         "5": 75908,
         "6": 80053,
-        "7": 55784,
+        "7": 56039,
         "8": 0,
         "9": 0,
         "10": 0,
@@ -108,7 +111,7 @@
         "4": 349504,
         "5": 500955,
         "6": 424743,
-        "7": 195937,
+        "7": 196446,
         "8": 0,
         "9": 0,
         "10": 0,
@@ -122,7 +125,7 @@
         "4": 2126,
         "5": 3243,
         "6": 2915,
-        "7": 2115,
+        "7": 2119,
         "8": 0,
         "9": 0,
         "10": 0,
@@ -329,7 +332,7 @@
         "197": 144,
         "198": 228,
         "199": 145,
-        "200": 38,
+        "200": 42,
         "201": 0,
         "202": 0,
         "203": 0,
@@ -500,13 +503,13 @@
     "distribution_message": {
         "1": 2739,
         "2": 2808,
-        "3": 5287,
-        "4": 548,
-        "5": 6477
+        "3": 5288,
+        "4": 549,
+        "5": 6479
     },
     "distribution_reaction": {
-        "👎": 2561763,
-        "👍": 349281
+        "👎": 2562187,
+        "👍": 349366
     },
     "top3_most_viewed_messages": [
         {
@@ -710,30 +713,30 @@
     ],
     "top25_most_repeated_words": {
         "bloque": 14198,
-        "calle": 8171,
-        "servicio": 7832,
+        "calle": 8198,
+        "servicio": 7836,
         "municipio": 7588,
-        "horas": 7095,
+        "horas": 7098,
         "minutos": 7025,
-        "circuitos": 6805,
+        "circuitos": 6810,
         "habana": 6253,
-        "déficit": 6211,
+        "déficit": 6214,
         "hrs": 5529,
         "consumidores": 5437,
-        "informamos": 5394,
-        "afectados": 5220,
+        "informamos": 5397,
+        "afectados": 5221,
         "emergencia": 5093,
         "eléctrico": 5006,
         "dirección": 4666,
-        "santa": 4553,
-        "siguientes": 4446,
+        "santa": 4559,
+        "siguientes": 4449,
         "clientes": 4297,
-        "generación": 4150,
+        "generación": 4153,
         "empresa": 3912,
-        "eléctrica": 3746,
+        "eléctrica": 3747,
         "comunicación": 3711,
-        "partir": 3651,
-        "mw": 3479
+        "partir": 3654,
+        "mw": 3491
     },
     "blocks_analysis": [
         {
@@ -1724,10 +1727,10 @@
         "block_affectation": 5331,
         "circuit_failure": 4532,
         "daf": 2808,
-        "block_recovery": 698,
+        "block_recovery": 700,
         "thermal_unit_status": 651,
-        "zone_recovery": 633,
-        "daily_resume": 548,
+        "zone_recovery": 634,
+        "daily_resume": 549,
         "general_info": 416,
         "apology_communication": 383,
         "sen_recovery": 306,
@@ -1748,9 +1751,9 @@
         {
             "name": "Habana del Este",
             "kind": "municipality",
-            "mentions": 4686,
+            "mentions": 4688,
             "affectations": 3144,
-            "recoveries": 229
+            "recoveries": 230
         },
         {
             "name": "Arroyo Naranjo",
@@ -1769,9 +1772,9 @@
         {
             "name": "La Lisa",
             "kind": "municipality",
-            "mentions": 915,
+            "mentions": 916,
             "affectations": 625,
-            "recoveries": 100
+            "recoveries": 101
         },
         {
             "name": "Playa",
@@ -1790,16 +1793,16 @@
         {
             "name": "Guanabacoa",
             "kind": "municipality",
-            "mentions": 733,
+            "mentions": 735,
             "affectations": 570,
-            "recoveries": 68
+            "recoveries": 70
         },
         {
             "name": "Diez de Octubre",
             "kind": "municipality",
-            "mentions": 775,
+            "mentions": 776,
             "affectations": 486,
-            "recoveries": 90
+            "recoveries": 91
         },
         {
             "name": "Plaza de la Revolución",
@@ -1811,9 +1814,9 @@
         {
             "name": "Cerro",
             "kind": "municipality",
-            "mentions": 1044,
+            "mentions": 1045,
             "affectations": 442,
-            "recoveries": 96
+            "recoveries": 97
         },
         {
             "name": "Marianao",
@@ -1832,16 +1835,16 @@
         {
             "name": "Luyanó",
             "kind": "circuit",
-            "mentions": 468,
+            "mentions": 469,
             "affectations": 232,
-            "recoveries": 47
+            "recoveries": 48
         },
         {
             "name": "La Víbora",
             "kind": "circuit",
-            "mentions": 362,
+            "mentions": 363,
             "affectations": 204,
-            "recoveries": 56
+            "recoveries": 57
         },
         {
             "name": "Regla",
@@ -1860,30 +1863,30 @@
         {
             "name": "Vedado",
             "kind": "circuit",
-            "mentions": 291,
+            "mentions": 292,
             "affectations": 193,
-            "recoveries": 23
+            "recoveries": 24
         },
         {
             "name": "Sevillano",
             "kind": "circuit",
-            "mentions": 283,
+            "mentions": 284,
             "affectations": 147,
-            "recoveries": 44
+            "recoveries": 45
         },
         {
             "name": "Miramar",
             "kind": "circuit",
-            "mentions": 404,
+            "mentions": 406,
             "affectations": 128,
-            "recoveries": 60
+            "recoveries": 62
         },
         {
             "name": "Porvenir",
             "kind": "circuit",
-            "mentions": 210,
+            "mentions": 211,
             "affectations": 130,
-            "recoveries": 28
+            "recoveries": 29
         },
         {
             "name": "Párraga",
@@ -1944,9 +1947,9 @@
         {
             "name": "Cojímar",
             "kind": "circuit",
-            "mentions": 129,
+            "mentions": 130,
             "affectations": 88,
-            "recoveries": 25
+            "recoveries": 26
         },
         {
             "name": "Habana Vieja",
@@ -1972,9 +1975,9 @@
         {
             "name": "Jaimanitas",
             "kind": "circuit",
-            "mentions": 648,
+            "mentions": 649,
             "affectations": 68,
-            "recoveries": 22
+            "recoveries": 23
         },
         {
             "name": "California",
@@ -3509,15 +3512,22 @@
             "availability": null,
             "deficit": 551,
             "is_forecast": true
+        },
+        {
+            "date": "2026-07-19 09:48:48",
+            "demand": 2807,
+            "availability": 2179,
+            "deficit": 2062,
+            "is_forecast": false
         }
     ],
     "thermal_units": [
         {
             "canonical": "CTE Antonio Guiteras",
             "city": "Matanzas",
-            "mentions": 180,
+            "mentions": 181,
             "failures": 82,
-            "recoveries": 22,
+            "recoveries": 23,
             "monthly_activity": [
                 1,
                 14,
@@ -3525,19 +3535,19 @@
                 17,
                 35,
                 44,
-                51,
+                52,
                 0,
                 0,
                 0,
                 0,
                 0
             ],
-            "last_status": "active_failure"
+            "last_status": "normal"
         },
         {
             "canonical": "CTE Máximo Gómez (Mariel)",
             "city": "Artemisa",
-            "mentions": 105,
+            "mentions": 106,
             "failures": 63,
             "recoveries": 16,
             "monthly_activity": [
@@ -3547,7 +3557,7 @@
                 11,
                 9,
                 19,
-                36,
+                37,
                 0,
                 0,
                 0,
@@ -3581,7 +3591,7 @@
         {
             "canonical": "CTE Antonio Maceo (Renté)",
             "city": "Santiago de Cuba",
-            "mentions": 55,
+            "mentions": 56,
             "failures": 22,
             "recoveries": 4,
             "monthly_activity": [
@@ -3591,7 +3601,7 @@
                 3,
                 2,
                 3,
-                7,
+                8,
                 0,
                 0,
                 0,
@@ -3603,7 +3613,7 @@
         {
             "canonical": "CTE 10 de Octubre (Nuevitas)",
             "city": "Camagüey",
-            "mentions": 34,
+            "mentions": 35,
             "failures": 12,
             "recoveries": 5,
             "monthly_activity": [
@@ -3613,7 +3623,7 @@
                 3,
                 4,
                 0,
-                6,
+                7,
                 0,
                 0,
                 0,
@@ -3625,7 +3635,7 @@
         {
             "canonical": "CTE Lidio Ramón Pérez (Felton)",
             "city": "Holguín",
-            "mentions": 24,
+            "mentions": 25,
             "failures": 7,
             "recoveries": 8,
             "monthly_activity": [
@@ -3635,7 +3645,7 @@
                 0,
                 4,
                 2,
-                7,
+                8,
                 0,
                 0,
                 0,
@@ -3809,7 +3819,7 @@
         "6": 241,
         "7": 122,
         "8": 134,
-        "9": 149,
+        "9": 150,
         "10": 199,
         "11": 201,
         "12": 188,
@@ -3944,7 +3954,7 @@
         "5-13": 29,
         "5-16": 21,
         "6-8": 16,
-        "6-9": 20,
+        "6-9": 21,
         "6-10": 25,
         "6-11": 23,
         "6-12": 22,
@@ -4065,7 +4075,7 @@
             69,
             102,
             75,
-            74,
+            75,
             0,
             0,
             0,
@@ -4121,7 +4131,7 @@
             40,
             116,
             99,
-            184,
+            185,
             0,
             0,
             0,
@@ -4163,7 +4173,7 @@
             62,
             112,
             134,
-            176,
+            178,
             0,
             0,
             0,
@@ -4248,7 +4258,7 @@
         "4": 0.8614,
         "5": 0.8975,
         "6": 0.9071,
-        "7": 0.8862,
+        "7": 0.8861,
         "8": 0.0,
         "9": 0.0,
         "10": 0.0,
