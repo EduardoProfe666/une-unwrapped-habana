@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-07-27T16:26:40.757746-04:00",
+    "sync_date": "2026-07-27T18:12:12.312128-04:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -17,16 +17,19 @@
         "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨"
     },
     "last_message": {
-        "id": 71211,
-        "link": "https://t.me/EmpresaElectricaDeLaHabana/71211",
-        "date_utc": "2026-07-27 20:24:29",
-        "date_utc_d": "2026-07-27T20:24:29",
-        "date_cuba": "2026-07-27 16:24:29",
-        "date_cuba_d": "2026-07-27T16:24:29",
-        "reactions": {},
-        "views": 6,
-        "replies": 1,
-        "text": "🚨‼️Consumidores del municipio Habana del Este, se encuentra afectado por un disparo del circuito el siguiente circuito:\n\n👉MB910: Justi, Agromar, Bajurayabo, Campo Florido, La Coca"
+        "id": 71217,
+        "link": "https://t.me/EmpresaElectricaDeLaHabana/71217",
+        "date_utc": "2026-07-27 21:49:49",
+        "date_utc_d": "2026-07-27T21:49:49",
+        "date_cuba": "2026-07-27 17:49:49",
+        "date_cuba_d": "2026-07-27T17:49:49",
+        "reactions": {
+            "👍": 1,
+            "👎": 15
+        },
+        "views": 2139,
+        "replies": 21,
+        "text": "🛑⚡️Consumidores del municipio Arroyo Naranjo, se encuentran afectados por un puente primario partido en el siguiente circuito:\n\n👉PG940:Güinera,Comodoro,Volpe."
     },
     "shortest_message": {
         "id": 61112,
@@ -60,13 +63,13 @@
         "text": "**📣Averías existentes hasta el momento**\n** **\n**🚨Soterrada: (Cable Fallo)**\n** **\n📌Municipio: San Miguel del Padrón\n📉Afecta: San Juan de los Pinos, Residencial San Miguel, Alturas de San Miguel, Núñez, Afán, Las Granjas y Mirta.\n** **\n**🚨Subestación Apolo     (continúan las labores)**\n**\n📌Municipio: 10 de Octubre\n📉Afecta: **Repartos Vista Alegre** **y Lawton**, **Calle Córdoba desde Milán hasta LFC, Callejón del Matadero hasta San Francisco, Calle Concepción desde LFC hasta 8va; 8va desde San Francisco hasta calle B; B desde 8va hasta calle 13, Luz a Línea de Ferrocarril y desde C hasta H, Cuadrante de Calle Dolores hasta C y Calle 14 hasta 17.** **Calle Giral desde 2da hasta Dos Ríos, 22 desde Dos Ríos hasta Concepción, Concepción desde 18 hasta 25,19 desde Concepción hasta  Pocito, Tejar desde 16 hasta 21; 16 desde Dolores hasta D, D desde 14 hasta porvenir. En Santo Suárez: Felipe Poey desde Libertad hasta General Lacret. Párraga desde Libertad hasta General Lacret. Estrada Palma y Luis Estévez desde Felipe Poey hasta Calzada de 10 de Octubre. Las calles San Francisco, Centurión. Avenida Morell, Alfredo Zayas y Luz. Calles San Carlos, Eulalia e Iznaga. En Lawton: calle San Luis desde Remedio hasta Luz. San José desde Colina hasta Luz. Delicias desde Tres Palacios hasta Luz. Cuadrante de la calle Altarriba y calle E hasta Avenida de Acosta y Calzada de 10 de Octubre hasta Porvenir. Cuadrante entre Milagros, Figueroa, Vista Alegre y 10 de Octubre, tambien 10 de Octubre, San Leonardo Lourdes y Kesell. Parte del Sevillano**\n\n📌Municipio: Arroyo Naranjo**\n📉**Afecta: **Víbora Park, Santa Amalia, Lubumba, Poey, La Palma. En los repartos Portocarrero y El Moro: calle C a Portocarrero, 2da a Holguín. Cuadrante de Portocarrero hasta Carretera del Lucero y Rodríguez de Armas hasta Santa Flora; las calles Miguel Biondi entre Santa Flora y Santa Hortensia. En Mantilla: Cuadrante de Tamarindo hasta Carretera del Cuervo. Mártires de Girón hasta Don Tomás. Barrio Azul: Cuadrante de Santa Isabel hasta Lincoln y Maceo hasta Gómez. Cuadrante de calle 1ra desde Maceo hasta Calzada de Bejucal. Calles 1ra y Jackson hasta Calzada de Bejucal. Calzada de Bejucal desde Calzada de Managua hasta Calzada de Vieja Linda, Montejo: Calzada de Bejucal a San Agustín y Martí a Cortez. Mamey: Cuadrante de San Juan a Estrella y Calzada de Bejucal a Esperanza. Fraternidad, Calleja, San Agustín.\n** **\n**🚨Cable fallo:**\n** **\n📌Municipio: Marianao\n📉Afecta los repartos: Coco Solo, Los Quemados, Los Ángeles, Las Yaguas.\n** **\n**🚨Primario partido:**\n\n📌Municipio: Lisa\n👉Dirección: 236 y 23\n📉Afecta: calle 230 desde 15 hasta 23, La Coronela.\n** **\n**🚨Puente partido:**\n** **\n📌Municipio: Centro Habana/Vieja\n📉Afecta: Águila hasta Egido, Avenida La Pesquera hasta Monte. Puerta Cerrada hasta Diaria, Águila hasta Belascoain.\n** **\n**🚨Transformador Dañado:**\n \n📌Municipio: Boyeros\n👉Dirección: Avenida República entre Las Granjas y Nacional, Aldabó.\n👉Dirección: 6ta entre Soto y Cuervo, El Cuervo.\n \n📌Municipio: Regla\n👉Dirección: Adriano entre Fresneda y Agramonte.\n \n📌Municipio: Plaza\n👉Dirección: Ulloa entre Santa Teresa y Reparto.\n \n📌Municipio: Cerro\n👉Dirección: Victoria entre América y Rambla, Martí.\n👉Dirección: Palmares entre Independencia y América, Martí.\n👉Dirección: Pedroso entre Cruz Padre e Infanta, Latino.\n👉Dirección: San Joaquín entre Estévez y Santa Rosa.\n \n📌Municipio: Guanabacoa\n👉Dirección: Pepe Antonio entre Luz y Maceo, Villa 2.\n👉Dirección: Bertemati entre Jesús María y Cadena, Villa 2.\n👉Dirección: Corral Falso entre Gloria y San Antonio\n👉Dirección: C entre 1ra y 2da.\n👉Dirección: 8na entre 3ra y 5ta, Mañana.\n \n📌Municipio: Marianao\n👉Dirección: 124 entre 47 y 49, Coco Solo.\n👉Dirección: 82 entre 39A y 41.\n \n📌Municipio: Habana del Este\n👉Dirección: 12 y Finca Los Almendros, Guiteras.\n \n📌Municipio: Playa\n👉Dirección: 180 entre 1ra y 5ta, Flores.\n\n📌Municipio: 10 de Octubre\n👉Dirección: Cortina entre Carmen y Vista Alegre\n \n📌Municipio: Lisa\n👉Dirección: 188 entre 31 y 33, La Corbata.\n\nGrupo de Comunicación\nEmpresa Eléctrica de La Habana📣",
         "count": 4059
     },
-    "total_views": 412884214,
-    "total_messages": 19370,
+    "total_views": 413016328,
+    "total_messages": 19376,
     "total_erased_messages": 1300,
-    "total_replies": 467001,
-    "total_reactions": 2963321,
-    "total_positive_reactions": 355549,
-    "total_negative_reactions": 2607772,
+    "total_replies": 467178,
+    "total_reactions": 2963792,
+    "total_positive_reactions": 355620,
+    "total_negative_reactions": 2608172,
     "avg_views": 21316,
     "avg_replies": 24,
     "avg_reactions": 153,
@@ -80,7 +83,7 @@
         "4": 50358967,
         "5": 68384000,
         "6": 61311409,
-        "7": 43112249,
+        "7": 43244363,
         "8": 0,
         "9": 0,
         "10": 0,
@@ -94,7 +97,7 @@
         "4": 45598,
         "5": 75908,
         "6": 80053,
-        "7": 73030,
+        "7": 73207,
         "8": 0,
         "9": 0,
         "10": 0,
@@ -108,7 +111,7 @@
         "4": 349504,
         "5": 500955,
         "6": 424743,
-        "7": 248214,
+        "7": 248685,
         "8": 0,
         "9": 0,
         "10": 0,
@@ -122,7 +125,7 @@
         "4": 2126,
         "5": 3243,
         "6": 2915,
-        "7": 3626,
+        "7": 3632,
         "8": 0,
         "9": 0,
         "10": 0,
@@ -337,7 +340,7 @@
         "205": 219,
         "206": 222,
         "207": 214,
-        "208": 90,
+        "208": 96,
         "209": 0,
         "210": 0,
         "211": 0,
@@ -498,15 +501,15 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 3146,
+        "1": 3149,
         "2": 2903,
-        "3": 5827,
+        "3": 5830,
         "4": 625,
         "5": 6869
     },
     "distribution_reaction": {
-        "👎": 2607772,
-        "👍": 355549
+        "👎": 2608172,
+        "👍": 355620
     },
     "top3_most_viewed_messages": [
         {
@@ -711,23 +714,23 @@
     "top25_most_repeated_words": {
         "bloque": 14199,
         "calle": 9556,
-        "servicio": 8944,
+        "servicio": 8948,
         "horas": 8344,
         "minutos": 8262,
-        "municipio": 8084,
-        "circuitos": 8055,
+        "municipio": 8086,
+        "circuitos": 8058,
         "habana": 6727,
-        "informamos": 6482,
+        "informamos": 6486,
         "déficit": 6342,
-        "consumidores": 5705,
-        "eléctrico": 5617,
+        "consumidores": 5707,
+        "eléctrico": 5619,
         "hrs": 5529,
-        "afectados": 5302,
-        "siguientes": 5171,
+        "afectados": 5303,
+        "siguientes": 5173,
         "santa": 5169,
         "dirección": 5136,
         "emergencia": 5110,
-        "partir": 4693,
+        "partir": 4697,
         "clientes": 4339,
         "generación": 4221,
         "empresa": 3971,
@@ -1270,9 +1273,9 @@
             "declared_recoveries": 25,
             "declared_affectations": 2233,
             "declared_emergencies": 39,
-            "estimated_affected_seconds": 13518811,
+            "estimated_affected_seconds": 13523931,
             "weekday_off_seconds": {
-                "0": 1898665,
+                "0": 1903785,
                 "1": 2042533,
                 "2": 1902015,
                 "3": 2025210,
@@ -1281,7 +1284,7 @@
                 "6": 1887787
             },
             "weekday_off_avg_seconds": {
-                "0": 36512.78846153846,
+                "0": 36611.25,
                 "1": 39279.480769230766,
                 "2": 36577.21153846154,
                 "3": 38211.50943396227,
@@ -1969,9 +1972,9 @@
                     "date_cuba_d": "2026-07-27T12:08:41",
                     "reactions": {
                         "👍": 7,
-                        "👎": 36
+                        "👎": 38
                     },
-                    "views": 9810,
+                    "views": 11359,
                     "replies": 29,
                     "text": "📣🚨Informamos a la población que a partir de las 10:57 am se afectó el servicio eléctrico en los siguientes circuitos:**\n\n**  \n**👉** A1009:Parte de Lawton desde Luz a Línea de Ferrocarril y desde C hasta H, Cuadrante de Calle Dolores hasta C y Calle 14 hasta 17, Rpto. Vista Alegre.\n👉 GC12:Cojimar.\n👉A1006:Víbora Park, Santa Amalia, Lubumba, Poey.\n👉L315:Reparto Buena Vista."
                 },
@@ -1981,19 +1984,19 @@
     },
     "ai_categories_distribution": {
         "block_affectation": 5465,
-        "circuit_failure": 4830,
+        "circuit_failure": 4831,
         "daf": 2903,
         "zone_recovery": 829,
         "block_recovery": 828,
-        "thermal_unit_status": 811,
+        "thermal_unit_status": 813,
         "daily_resume": 625,
         "general_info": 500,
         "apology_communication": 416,
         "sen_recovery": 385,
         "sen_failure": 191,
-        "zone_outage": 168,
+        "zone_outage": 170,
         "scheduled_maintenance": 152,
-        "weather_impact": 146,
+        "weather_impact": 147,
         "daily_forecast": 116
     },
     "affected_zones": [
@@ -2007,14 +2010,14 @@
         {
             "name": "Habana del Este",
             "kind": "municipality",
-            "mentions": 4850,
-            "affectations": 3221,
+            "mentions": 4851,
+            "affectations": 3222,
             "recoveries": 268
         },
         {
             "name": "Arroyo Naranjo",
             "kind": "municipality",
-            "mentions": 1198,
+            "mentions": 1199,
             "affectations": 833,
             "recoveries": 116
         },
@@ -2042,8 +2045,8 @@
         {
             "name": "San Miguel del Padrón",
             "kind": "municipality",
-            "mentions": 1059,
-            "affectations": 646,
+            "mentions": 1060,
+            "affectations": 647,
             "recoveries": 117
         },
         {
@@ -2063,7 +2066,7 @@
         {
             "name": "Cerro",
             "kind": "municipality",
-            "mentions": 1184,
+            "mentions": 1185,
             "affectations": 495,
             "recoveries": 128
         },
@@ -2091,8 +2094,8 @@
         {
             "name": "Luyanó",
             "kind": "circuit",
-            "mentions": 544,
-            "affectations": 256,
+            "mentions": 545,
+            "affectations": 257,
             "recoveries": 72
         },
         {
@@ -2133,7 +2136,7 @@
         {
             "name": "Sevillano",
             "kind": "circuit",
-            "mentions": 351,
+            "mentions": 352,
             "affectations": 167,
             "recoveries": 64
         },
@@ -2154,7 +2157,7 @@
         {
             "name": "Párraga",
             "kind": "circuit",
-            "mentions": 278,
+            "mentions": 279,
             "affectations": 148,
             "recoveries": 29
         },
@@ -2189,7 +2192,7 @@
         {
             "name": "Camagüey",
             "kind": "province",
-            "mentions": 260,
+            "mentions": 261,
             "affectations": 99,
             "recoveries": 47
         },
@@ -4325,7 +4328,7 @@
             534,
             891,
             1087,
-            905,
+            906,
             0,
             0,
             0,
@@ -4395,7 +4398,7 @@
             59,
             126,
             100,
-            295,
+            297,
             0,
             0,
             0,
@@ -4479,7 +4482,7 @@
             0,
             42,
             29,
-            72,
+            73,
             0,
             0,
             0,
@@ -4521,7 +4524,7 @@
             0,
             49,
             24,
-            95,
+            97,
             0,
             0,
             0,
@@ -4536,7 +4539,7 @@
         "4": 0.8614,
         "5": 0.8975,
         "6": 0.9071,
-        "7": 0.885,
+        "7": 0.8849,
         "8": 0.0,
         "9": 0.0,
         "10": 0.0,
