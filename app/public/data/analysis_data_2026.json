@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-08-18T02:49:47.396983-04:00",
+    "sync_date": "2026-08-18T03:41:45.950749-04:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -17,16 +17,18 @@
         "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨"
     },
     "last_message": {
-        "id": 75408,
-        "link": "https://t.me/EmpresaElectricaDeLaHabana/75408",
-        "date_utc": "2026-08-18 06:45:44",
-        "date_utc_d": "2026-08-18T06:45:44",
-        "date_cuba": "2026-08-18 02:45:44",
-        "date_cuba_d": "2026-08-18T02:45:44",
-        "reactions": {},
-        "views": 62,
-        "replies": 0,
-        "text": "🚨📣Informamos a la población que a partir de las 02:44 am se afectó el servicio eléctrico en el siguiente circuito:\n\n👉  P322: Alrededores de calles Sitios desde Xifre hasta Retiro, Placencia hasta Oquendo, Sitios hasta Manglar, Matadero hasta Benjumeda, Mercado hasta Nueva del Pilar.🚨📣"
+        "id": 75413,
+        "link": "https://t.me/EmpresaElectricaDeLaHabana/75413",
+        "date_utc": "2026-08-18 07:28:27",
+        "date_utc_d": "2026-08-18T07:28:27",
+        "date_cuba": "2026-08-18 03:28:27",
+        "date_cuba_d": "2026-08-18T03:28:27",
+        "reactions": {
+            "👎": 1
+        },
+        "views": 160,
+        "replies": 1,
+        "text": "📣✅Informamos a la población que a partir de las 03:21 AM quedó restablecido el servicio en el siguiente circuito: \n\n👉 H442: Reparto Barrio Obrero, Guardiola, Jacomino, California, María Cristina y Carolina.\n\n📌Usted puede, aún siendo cliente de este circuito, continuar afectado por avería en acometida o transformador. En esos casos le pedimos contactarnos por las vías alternativas.📣✅"
     },
     "shortest_message": {
         "id": 75211,
@@ -60,14 +62,14 @@
         "text": "📣🚨Informamos a la población que a partir de las 07:29 PM se afectó el servicio eléctrico en los siguientes circuitos:\n\n👉A1007: Alrededores de calles:                                                                                                                                                                            -Alegría, María Auxiliadora, San Gregorio, Hatuey, Giorgia Rivera y Maceo (Víbora Park)                                                                                                                                                                             -Cuadrante desde Washintong hasta calle 1ra y desde Maceo hasta San Agustín (Montejo)                                                                                                                                                                      -Calzada de Bejucal desde calle 2da hasta Porvenir (Poey)                                                                                                                                                                                -Cuadrante desde calle 1ra hasta Santa Isabel y desde Calzada de Bejucal hasta Maceo (Barrio Azul)\n👉1242: Cuadrante de avenida 25 desde calle 60 hasta calle 48 y calle 54 desde avenida 19 hasta avenida 31. Avenida 17 desde calle 62 hasta calle 46, avenida 27 desde calle 68 hasta calle 60, avenida 39 desde calle 44 hasta calle 50, calle 54 desde avenida 31 hasta avenida 41\n👉D632: Alrededores de calles:                                                                                                                                                      Lourdes desde Calzada Managua hasta Trinidad (Vibora Park)                                                                            Calzada Managua desde Coliseo hasta Imperio (La Lira)                                                                                         Calzada Managua desde María Ayala hasta Morales (Pepe Hermoso)\n👉D633: San Leonardo desde Lourdes hasta calle 2da (Víbora Park). Avenida Acosta desde calle 8 hasta calle 2da, calles Patrocinio y Lagueruela\n👉1856: Calle 130 desde avenida 37 hasta avenida 45, avenida 45 desde calle 130 hasta calle 124 (Coco Solo) Avenida 45 desde calle 124 hasta calle 110, cuadrante de avenida 47 hasta avenida 39 y calle 108 hasta calle 100 (Los Quemados) Cuadrante de avenida 51 hasta avenida 85 y desde calle 114 hasta 96. Reparto Los Ángeles, Las Yaguas                                                                                                                                                                                                                             \n👉1851: Reparto Zamora\n👉D1280: Repartos Coco Solo, Los Pocitos, Los Ángeles, El Palmar, Alturas de La Salle\n👉GC13: Mambi, Garrido y Centro de Guanabacoa\n👉R453: La Gloria, Ciruela, Unión, Lídice y Colina Lenin\n👉R456: Alrededores de calles Adriano, González Rubiera, Agramonte, Calixto García, Maceo, La Piedra y Facciolo\n👉1175: Calle 82 desde avenida 41 hasta avenida 49, avenida 43 desde calle 82 hasta calle 74, calle 76 desde avenida 41 hasta avenida 45 (Reparto Santa Felicia) Calle 82 desde avenida 49 hasta avenida 41, avenida 43 desde calle 82 hasta calle 76(Santa Felicia)                                                          Avenida 41B desde calle 76 hasta calles 68 y 70                                                                                                                       Avenida 43 desde calle 72 hasta calle 60. Avenidas 33A y 33 desde calle 66 hasta calle 46, calle 48 desde avenida 33 hasta avenida 39                                                                                                                                        \n👉1246: Avenida 51 hasta 58 C. Cuadrante de avenida 47 desde calles 50 y 52 hasta calles 58C y 58D, calle 58 desde avenida 41 hasta avenida 51(Altura del Bosque)                                                                                                                               Cuadrante de avenida 51 desde calle 58C hasta calle 44 y avenida 63 📣🚨",
         "count": 4086
     },
-    "total_views": 439776915,
-    "total_messages": 23305,
+    "total_views": 439784836,
+    "total_messages": 23310,
     "total_erased_messages": 1562,
-    "total_replies": 512797,
-    "total_reactions": 3093033,
-    "total_positive_reactions": 373246,
-    "total_negative_reactions": 2719787,
-    "avg_views": 18870,
+    "total_replies": 512808,
+    "total_reactions": 3093060,
+    "total_positive_reactions": 373248,
+    "total_negative_reactions": 2719812,
+    "avg_views": 18867,
     "avg_replies": 22,
     "avg_reactions": 133,
     "avg_positive_reactions": 16,
@@ -81,7 +83,7 @@
         "5": 68384000,
         "6": 61311409,
         "7": 49135533,
-        "8": 20869417,
+        "8": 20877338,
         "9": 0,
         "10": 0,
         "11": 0,
@@ -95,7 +97,7 @@
         "5": 75908,
         "6": 80053,
         "7": 85477,
-        "8": 33349,
+        "8": 33360,
         "9": 0,
         "10": 0,
         "11": 0,
@@ -109,7 +111,7 @@
         "5": 500955,
         "6": 424743,
         "7": 277913,
-        "8": 100013,
+        "8": 100040,
         "9": 0,
         "10": 0,
         "11": 0,
@@ -123,7 +125,7 @@
         "5": 3243,
         "6": 2915,
         "7": 4385,
-        "8": 3176,
+        "8": 3181,
         "9": 0,
         "10": 0,
         "11": 0,
@@ -359,7 +361,7 @@
         "227": 191,
         "228": 198,
         "229": 258,
-        "230": 16,
+        "230": 21,
         "231": 0,
         "232": 0,
         "233": 0,
@@ -498,15 +500,15 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 4183,
+        "1": 4184,
         "2": 3177,
-        "3": 7385,
-        "4": 777,
+        "3": 7388,
+        "4": 778,
         "5": 7783
     },
     "distribution_reaction": {
-        "👎": 2719787,
-        "👍": 373246
+        "👎": 2719812,
+        "👍": 373248
     },
     "top3_most_viewed_messages": [
         {
@@ -711,28 +713,28 @@
     "top25_most_repeated_words": {
         "calle": 19167,
         "bloque": 14199,
-        "servicio": 12071,
-        "horas": 11145,
-        "minutos": 11028,
-        "circuitos": 10566,
+        "servicio": 12075,
+        "horas": 11165,
+        "minutos": 11048,
+        "circuitos": 10569,
         "municipio": 9389,
-        "informamos": 9373,
-        "avenida": 9201,
-        "habana": 7581,
-        "partir": 7433,
-        "eléctrico": 7263,
+        "informamos": 9377,
+        "avenida": 9202,
+        "habana": 7584,
+        "partir": 7437,
+        "eléctrico": 7264,
         "dirección": 7135,
-        "siguientes": 6877,
-        "déficit": 6760,
+        "siguientes": 6878,
+        "déficit": 6762,
         "santa": 6436,
         "consumidores": 6333,
         "hrs": 5531,
         "afectados": 5434,
-        "avería": 5155,
+        "avería": 5158,
         "emergencia": 5154,
-        "población": 4686,
-        "circuito": 4572,
-        "reparto": 4533,
+        "población": 4690,
+        "circuito": 4577,
+        "reparto": 4535,
         "ra": 4533
     },
     "blocks_analysis": [
@@ -2464,10 +2466,10 @@
         "block_affectation": 5771,
         "circuit_failure": 5530,
         "daf": 3177,
-        "zone_recovery": 1589,
-        "thermal_unit_status": 1218,
+        "zone_recovery": 1592,
+        "thermal_unit_status": 1219,
         "block_recovery": 1091,
-        "daily_resume": 777,
+        "daily_resume": 778,
         "general_info": 714,
         "sen_recovery": 608,
         "apology_communication": 508,
@@ -2481,30 +2483,30 @@
         {
             "name": "Habana del Este",
             "kind": "municipality",
-            "mentions": 5938,
+            "mentions": 5941,
             "affectations": 3475,
-            "recoveries": 739
+            "recoveries": 742
         },
         {
             "name": "La Habana",
             "kind": "province",
-            "mentions": 6700,
+            "mentions": 6702,
             "affectations": 3573,
-            "recoveries": 563
+            "recoveries": 564
         },
         {
             "name": "Arroyo Naranjo",
             "kind": "municipality",
-            "mentions": 1564,
+            "mentions": 1565,
             "affectations": 1033,
-            "recoveries": 181
+            "recoveries": 182
         },
         {
             "name": "Boyeros",
             "kind": "municipality",
-            "mentions": 1877,
+            "mentions": 1878,
             "affectations": 956,
-            "recoveries": 195
+            "recoveries": 196
         },
         {
             "name": "San Miguel del Padrón",
@@ -2516,16 +2518,16 @@
         {
             "name": "La Lisa",
             "kind": "municipality",
-            "mentions": 1336,
+            "mentions": 1337,
             "affectations": 844,
-            "recoveries": 184
+            "recoveries": 185
         },
         {
             "name": "Playa",
             "kind": "municipality",
-            "mentions": 2103,
+            "mentions": 2104,
             "affectations": 801,
-            "recoveries": 148
+            "recoveries": 149
         },
         {
             "name": "Diez de Octubre",
@@ -2551,9 +2553,9 @@
         {
             "name": "Plaza de la Revolución",
             "kind": "municipality",
-            "mentions": 1056,
+            "mentions": 1057,
             "affectations": 672,
-            "recoveries": 94
+            "recoveries": 95
         },
         {
             "name": "Marianao",
@@ -2565,9 +2567,9 @@
         {
             "name": "Cotorro",
             "kind": "municipality",
-            "mentions": 827,
+            "mentions": 828,
             "affectations": 413,
-            "recoveries": 87
+            "recoveries": 88
         },
         {
             "name": "Luyanó",
@@ -2719,9 +2721,9 @@
         {
             "name": "California",
             "kind": "circuit",
-            "mentions": 187,
+            "mentions": 188,
             "affectations": 83,
-            "recoveries": 59
+            "recoveries": 60
         },
         {
             "name": "Guanabo",
@@ -4969,7 +4971,7 @@
             102,
             75,
             186,
-            117,
+            118,
             0,
             0,
             0,
@@ -5011,7 +5013,7 @@
             126,
             100,
             366,
-            336,
+            337,
             0,
             0,
             0,
@@ -5025,7 +5027,7 @@
             116,
             99,
             501,
-            639,
+            642,
             0,
             0,
             0,
