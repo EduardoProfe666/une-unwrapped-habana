@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-08-18T08:53:55.555042-04:00",
+    "sync_date": "2026-08-18T09:46:04.842716-04:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -17,16 +17,19 @@
         "text": "🚨‼️Consumidores del municipio Arroyo Naranjo,los repartos Párraga, Porvenir, La Esperanza, Alcázar y Capri se encuentran afectados por una avería primaria.‼️🚨"
     },
     "last_message": {
-        "id": 75445,
-        "link": "https://t.me/EmpresaElectricaDeLaHabana/75445",
-        "date_utc": "2026-08-18 12:52:13",
-        "date_utc_d": "2026-08-18T12:52:13",
-        "date_cuba": "2026-08-18 08:52:13",
-        "date_cuba_d": "2026-08-18T08:52:13",
-        "reactions": {},
-        "views": 2,
-        "replies": 0,
-        "text": "⚡ Actualización del Sistema Electroenergético Nacional para el 18 de agosto de 2026.\n\n☑️ En el día de ayer se afectó el servicio por déficit de capacidad durante las 24 horas y se mantuvo la afectación durante todo el horario de la madrugada. La máxima afectación por déficit de capacidad de generación en el día de ayer fue de         2275 MW a las 21:40 horas.\n\n☀️ La producción energías de los parques solares fotovoltaicos fue de 5754 MWh, con 895 MW como máxima potencia entregada en el horario de la media con esta fuente de generación.\n\n☑️ La disponibilidad del SEN a las 06:00 horas es de 1048 MW, la demanda 2855 MW con 1804 MW afectados. En el horario de la media se estima una afectación de 1750 MW.\n\n🛠️ Se encuentran en avería las unidades 6 y 8 de la CTE Mariel, la unidad 6 de la CTE Nuevitas y la unidad 2 de la CTE Felton. Se encuentran en mantenimiento la unidad 3 de la CTE Santa Cruz, la unidad 5 de la CTE Nuevitas y las unidades 5 y 6 de la CTE Renté.\n\n☑️ Las limitaciones en la generación térmica son de 522 MW.\n\n📈 Se prevé para el horario de máxima demanda una disponibilidad de 921 MW con una demanda máxima de 3350 MW, para un déficit de 2429 MW, por lo que de mantenerse las condiciones previstas se pronostica una afectación de 2459 MW en este horario."
+        "id": 75454,
+        "link": "https://t.me/EmpresaElectricaDeLaHabana/75454",
+        "date_utc": "2026-08-18 13:35:27",
+        "date_utc_d": "2026-08-18T13:35:27",
+        "date_cuba": "2026-08-18 09:35:27",
+        "date_cuba_d": "2026-08-18T09:35:27",
+        "reactions": {
+            "👍": 1,
+            "👎": 50
+        },
+        "views": 735,
+        "replies": 4,
+        "text": "🔴 Fuera de línea la Unidad 3 de la CTE Antonio Maceo por humedad en el gabinete de control del generador."
     },
     "shortest_message": {
         "id": 75211,
@@ -60,16 +63,16 @@
         "text": "📣🚨Informamos a la población que a partir de las 07:29 PM se afectó el servicio eléctrico en los siguientes circuitos:\n\n👉A1007: Alrededores de calles:                                                                                                                                                                            -Alegría, María Auxiliadora, San Gregorio, Hatuey, Giorgia Rivera y Maceo (Víbora Park)                                                                                                                                                                             -Cuadrante desde Washintong hasta calle 1ra y desde Maceo hasta San Agustín (Montejo)                                                                                                                                                                      -Calzada de Bejucal desde calle 2da hasta Porvenir (Poey)                                                                                                                                                                                -Cuadrante desde calle 1ra hasta Santa Isabel y desde Calzada de Bejucal hasta Maceo (Barrio Azul)\n👉1242: Cuadrante de avenida 25 desde calle 60 hasta calle 48 y calle 54 desde avenida 19 hasta avenida 31. Avenida 17 desde calle 62 hasta calle 46, avenida 27 desde calle 68 hasta calle 60, avenida 39 desde calle 44 hasta calle 50, calle 54 desde avenida 31 hasta avenida 41\n👉D632: Alrededores de calles:                                                                                                                                                      Lourdes desde Calzada Managua hasta Trinidad (Vibora Park)                                                                            Calzada Managua desde Coliseo hasta Imperio (La Lira)                                                                                         Calzada Managua desde María Ayala hasta Morales (Pepe Hermoso)\n👉D633: San Leonardo desde Lourdes hasta calle 2da (Víbora Park). Avenida Acosta desde calle 8 hasta calle 2da, calles Patrocinio y Lagueruela\n👉1856: Calle 130 desde avenida 37 hasta avenida 45, avenida 45 desde calle 130 hasta calle 124 (Coco Solo) Avenida 45 desde calle 124 hasta calle 110, cuadrante de avenida 47 hasta avenida 39 y calle 108 hasta calle 100 (Los Quemados) Cuadrante de avenida 51 hasta avenida 85 y desde calle 114 hasta 96. Reparto Los Ángeles, Las Yaguas                                                                                                                                                                                                                             \n👉1851: Reparto Zamora\n👉D1280: Repartos Coco Solo, Los Pocitos, Los Ángeles, El Palmar, Alturas de La Salle\n👉GC13: Mambi, Garrido y Centro de Guanabacoa\n👉R453: La Gloria, Ciruela, Unión, Lídice y Colina Lenin\n👉R456: Alrededores de calles Adriano, González Rubiera, Agramonte, Calixto García, Maceo, La Piedra y Facciolo\n👉1175: Calle 82 desde avenida 41 hasta avenida 49, avenida 43 desde calle 82 hasta calle 74, calle 76 desde avenida 41 hasta avenida 45 (Reparto Santa Felicia) Calle 82 desde avenida 49 hasta avenida 41, avenida 43 desde calle 82 hasta calle 76(Santa Felicia)                                                          Avenida 41B desde calle 76 hasta calles 68 y 70                                                                                                                       Avenida 43 desde calle 72 hasta calle 60. Avenidas 33A y 33 desde calle 66 hasta calle 46, calle 48 desde avenida 33 hasta avenida 39                                                                                                                                        \n👉1246: Avenida 51 hasta 58 C. Cuadrante de avenida 47 desde calles 50 y 52 hasta calles 58C y 58D, calle 58 desde avenida 41 hasta avenida 51(Altura del Bosque)                                                                                                                               Cuadrante de avenida 51 desde calle 58C hasta calle 44 y avenida 63 📣🚨",
         "count": 4086
     },
-    "total_views": 439901116,
-    "total_messages": 23341,
+    "total_views": 439945217,
+    "total_messages": 23350,
     "total_erased_messages": 1563,
-    "total_replies": 512889,
-    "total_reactions": 3093483,
-    "total_positive_reactions": 373315,
-    "total_negative_reactions": 2720168,
-    "avg_views": 18847,
+    "total_replies": 512937,
+    "total_reactions": 3093772,
+    "total_positive_reactions": 373352,
+    "total_negative_reactions": 2720420,
+    "avg_views": 18841,
     "avg_replies": 22,
-    "avg_reactions": 133,
+    "avg_reactions": 132,
     "avg_positive_reactions": 16,
     "avg_negative_reactions": 117,
     "avg_text_length": 365,
@@ -81,7 +84,7 @@
         "5": 68384000,
         "6": 61311409,
         "7": 49135533,
-        "8": 20993618,
+        "8": 21037719,
         "9": 0,
         "10": 0,
         "11": 0,
@@ -95,7 +98,7 @@
         "5": 75908,
         "6": 80053,
         "7": 85477,
-        "8": 33441,
+        "8": 33489,
         "9": 0,
         "10": 0,
         "11": 0,
@@ -109,7 +112,7 @@
         "5": 500955,
         "6": 424743,
         "7": 277913,
-        "8": 100463,
+        "8": 100752,
         "9": 0,
         "10": 0,
         "11": 0,
@@ -123,7 +126,7 @@
         "5": 3243,
         "6": 2915,
         "7": 4385,
-        "8": 3212,
+        "8": 3221,
         "9": 0,
         "10": 0,
         "11": 0,
@@ -359,7 +362,7 @@
         "227": 191,
         "228": 198,
         "229": 258,
-        "230": 52,
+        "230": 61,
         "231": 0,
         "232": 0,
         "233": 0,
@@ -498,15 +501,15 @@
         "366": 0
     },
     "distribution_message": {
-        "1": 4195,
+        "1": 4196,
         "2": 3180,
-        "3": 7398,
+        "3": 7401,
         "4": 781,
-        "5": 7787
+        "5": 7792
     },
     "distribution_reaction": {
-        "👎": 2720168,
-        "👍": 373315
+        "👎": 2720420,
+        "👍": 373352
     },
     "top3_most_viewed_messages": [
         {
@@ -709,31 +712,31 @@
         }
     ],
     "top25_most_repeated_words": {
-        "calle": 19195,
+        "calle": 19216,
         "bloque": 14199,
-        "servicio": 12102,
+        "servicio": 12108,
         "horas": 11188,
         "minutos": 11067,
-        "circuitos": 10593,
-        "municipio": 9403,
-        "informamos": 9402,
-        "avenida": 9221,
-        "habana": 7591,
-        "partir": 7460,
+        "circuitos": 10601,
+        "informamos": 9408,
+        "municipio": 9404,
+        "avenida": 9236,
+        "habana": 7593,
+        "partir": 7466,
         "eléctrico": 7282,
         "dirección": 7175,
-        "siguientes": 6893,
+        "siguientes": 6897,
         "déficit": 6769,
-        "santa": 6444,
-        "consumidores": 6335,
+        "santa": 6445,
+        "consumidores": 6336,
         "hrs": 5531,
         "afectados": 5438,
-        "avería": 5173,
+        "avería": 5179,
         "emergencia": 5154,
-        "población": 4713,
-        "circuito": 4592,
-        "reparto": 4548,
-        "ra": 4539
+        "población": 4719,
+        "circuito": 4597,
+        "reparto": 4550,
+        "ra": 4545
     },
     "blocks_analysis": [
         {
@@ -1530,8 +1533,8 @@
         }
     ],
     "sen_analysis": {
-        "mentions": 999,
-        "total_failure_events": 25,
+        "mentions": 1001,
+        "total_failure_events": 26,
         "failure_events": [
             {
                 "start_date": "2026-03-04 13:06:12",
@@ -2457,23 +2460,60 @@
                     "text": "🔔⚡️Actualización de afectaciones por déficit en la capital.\nSiendo las**  3**:10 pm se afectan 200 **MW **distribuidos **en 64 circuitos de distribución**. A continuación, se relacionan los de mayor tiempo de afectación:\n\n✅M2044 (Boyeros) 5horas y 39 minutos\n✅M1603 (Boyeros) 5horas y 40 minutos\n✅A1042(Cotorro) 5horas y 25 minutos\n✅A1008 (Arroyo Naranjo) 5horas y 18 minutos\n✅D631(10 de Octubre) 5 horas y 19 minutos\n✅D634 (10 de Octubre /Arroyo N) 5horas y 21 minutos\n✅D870 (Boyeros) 5horas y 17 minutos\n✅A708 (Boyeros) 5 horas y 07 minutos\n✅A800 (Boyeros) 5 horas y 07 minutos\n✅A1223(Lisa)  5horas y 04 minutos\n✅A815(10 de Octubre/Cerro) 4horas y 08 minutos\n✅H442 (S.M.P) 4horas y 30 minutos\n✅2210 (10 de octubre/Cerro) 3 horas y 24 minutos\n✅2074 (Lisa) 3 horas y 18 minutos\n✅A1203 ( Playa) 3horas y 20 minutos\n✅PG980(Arroyo N.) 3horas y 13 minutos\n✅2076 (Lisa) 3horas y 15 minutos\n✅MB920 ( Habana del Este) 3 horas y 15 minutos\n✅L315 ( Playa ) 3horas y 13 minutos\n✅SF583 (Playa) 3horas y 13 minutos\n\n📌Si usted presenta afectaciones superiores a los tiempos aquí informados, puede ser a causa de averías u otras incidencias no relacionadas con la afectación por déficit de generación. En esos casos le pedimos contactarnos por las vías establecidas.⚡️🔔"
                 },
                 "estimated_duration_seconds": 85653
+            },
+            {
+                "start_date": "2026-08-16 18:23:01",
+                "start_date_d": "2026-08-16T18:23:01",
+                "start_message": {
+                    "id": 75081,
+                    "link": "https://t.me/EmpresaElectricaDeLaHabana/75081",
+                    "date_utc": "2026-08-16 22:23:01",
+                    "date_utc_d": "2026-08-16T22:23:01",
+                    "date_cuba": "2026-08-16 18:23:01",
+                    "date_cuba_d": "2026-08-16T18:23:01",
+                    "reactions": {
+                        "👍": 5,
+                        "👎": 37
+                    },
+                    "views": 6021,
+                    "replies": 14,
+                    "text": "🔔⚡️Actualización de afectaciones por déficit en la capital.\nSiendo las**  6**:20 pm se afectan 438 **MW **distribuidos **en 123 circuitos de distribución**. A continuación, se relacionan los de mayor tiempo de afectación:\n\n✅S512(S.M.P) 9 horas y 22 minutos\n✅S514 (S.M.P) 9 horas y 22 minutos\n✅A815 (10 de Octubre/ Cerro) 8 horas y 23 minutos\n✅2210 (10 de Octubre/Cerro) 7 horas y 23 minutos\n✅A1203(Playa) 6 horas y 19 minutos\n✅2074 (Lisa) 6horas y 20 minutos\n✅PG980 (Arroyo N.) 6 horas y 13 minutos\n✅2076 (Lisa) 6horas y 15 minutos\n✅MB920(Habana del Este) 6 horas y 16 minutos\n✅SF583 (Playa) 6horas y 16 minutos\n✅L315 (Playa) 6horas y 15 minutos\n✅GC14 (Habana del Este) 6horas y 14 minutos\n✅AL53 (Habana del Este) 6 horas y 15 minutos\n✅D1050 (Guanabacoa) 6horas y 05 minutos\n✅D1055 ( Guanabacoa ) 6horas y 06 minutos\n✅A1570 (Habana del Este) 6 horas y 06 minutos\n✅SR840 (Cotorro) 6horas y 03 minutos\n✅SR830(Cotorro) 6 horas y 03 minutos\n✅1246 (Marianao/ Playa) 6horas y 01 minutos\n✅PZ15 (Plaza) 6 horas y 01 minutos\n\n📌Si usted presenta afectaciones superiores a los tiempos aquí informados, puede ser a causa de averías u otras incidencias no relacionadas con la afectación por déficit de generación. En esos casos le pedimos contactarnos por las vías establecidas.⚡️🔔"
+                },
+                "end_date": "2026-08-18 09:01:59",
+                "end_date_d": "2026-08-18T09:01:59",
+                "end_message": {
+                    "id": 75446,
+                    "link": "https://t.me/EmpresaElectricaDeLaHabana/75446",
+                    "date_utc": "2026-08-18 13:01:59",
+                    "date_utc_d": "2026-08-18T13:01:59",
+                    "date_cuba": "2026-08-18 09:01:59",
+                    "date_cuba_d": "2026-08-18T09:01:59",
+                    "reactions": {
+                        "👍": 3,
+                        "👎": 10
+                    },
+                    "views": 1767,
+                    "replies": 0,
+                    "text": "☀️⚡ ¡Aprovecha tu energía solar, tu aporte junto al SEN! ⚡☀️\n\nLa Empresa Eléctrica de La Habana te informa sobre los requisitos técnicos esenciales para conectar tu sistema fotovoltaico privado y vender el excedente que generas al Sistema Electroenergético Nacional (SEN) para ganar 90 CUP por cada kWh que aportes:\n\n🔌 Punto de interconexión: \n✅ Tensiones 115-230 V según NC 365-2011 \n✅ Cumplir con lo establecido en el Reglamento de Seguridad Eléctrica (Resolución 159/2014 MINEM) \n✅ Frecuencia eléctrica de 60 Hz \n✅ Cumplir con la calidad de tensión según la Norma IEC 61000-4-30\n\n🛡️ Protecciones eléctricas:\n✅ Anti-isla: evita entregar potencia a una red desenergizada.\n✅ Contra sobrecorrientes y sobretensiones (CD y CA). \n✅ Sistema de puesta a tierra contra descargas atmosféricas o sobre tensiones inducidas menores de 10 Ohmio, según Resolución 159/2014 del MINEM.\n\nhttps://m.facebook.com/story.php?story_fbid=pfbid09uWcsgxUfjsKYdgXC7yWqtASTbXh365XsPsrpgHZQJs1rkqdz5HsCMNihrLzRDirl&id=100063632679111&mibextid=Nif5oz"
+                },
+                "estimated_duration_seconds": 129600
             }
         ]
     },
     "ai_categories_distribution": {
-        "block_affectation": 5772,
+        "block_affectation": 5773,
         "circuit_failure": 5531,
         "daf": 3180,
-        "zone_recovery": 1599,
+        "zone_recovery": 1602,
         "thermal_unit_status": 1226,
-        "block_recovery": 1092,
+        "block_recovery": 1094,
         "daily_resume": 781,
         "general_info": 715,
-        "sen_recovery": 610,
+        "sen_recovery": 612,
         "apology_communication": 509,
         "sen_failure": 313,
         "zone_outage": 268,
-        "scheduled_maintenance": 246,
+        "scheduled_maintenance": 247,
         "weather_impact": 229,
         "daily_forecast": 180
     },
@@ -2481,22 +2521,22 @@
         {
             "name": "Habana del Este",
             "kind": "municipality",
-            "mentions": 5950,
-            "affectations": 3478,
-            "recoveries": 743
+            "mentions": 5953,
+            "affectations": 3480,
+            "recoveries": 744
         },
         {
             "name": "La Habana",
             "kind": "province",
-            "mentions": 6707,
-            "affectations": 3575,
-            "recoveries": 566
+            "mentions": 6709,
+            "affectations": 3576,
+            "recoveries": 567
         },
         {
             "name": "Arroyo Naranjo",
             "kind": "municipality",
-            "mentions": 1569,
-            "affectations": 1035,
+            "mentions": 1570,
+            "affectations": 1036,
             "recoveries": 183
         },
         {
@@ -2509,9 +2549,9 @@
         {
             "name": "San Miguel del Padrón",
             "kind": "municipality",
-            "mentions": 1438,
+            "mentions": 1439,
             "affectations": 830,
-            "recoveries": 216
+            "recoveries": 217
         },
         {
             "name": "La Lisa",
@@ -2579,9 +2619,9 @@
         {
             "name": "La Víbora",
             "kind": "circuit",
-            "mentions": 637,
+            "mentions": 638,
             "affectations": 299,
-            "recoveries": 134
+            "recoveries": 135
         },
         {
             "name": "Regla",
@@ -2600,16 +2640,16 @@
         {
             "name": "Miramar",
             "kind": "circuit",
-            "mentions": 683,
+            "mentions": 684,
             "affectations": 186,
-            "recoveries": 166
+            "recoveries": 167
         },
         {
             "name": "Sevillano",
             "kind": "circuit",
-            "mentions": 491,
+            "mentions": 492,
             "affectations": 224,
-            "recoveries": 103
+            "recoveries": 104
         },
         {
             "name": "Vedado",
@@ -2621,9 +2661,9 @@
         {
             "name": "Santa Fe",
             "kind": "circuit",
-            "mentions": 948,
+            "mentions": 949,
             "affectations": 189,
-            "recoveries": 105
+            "recoveries": 106
         },
         {
             "name": "Porvenir",
@@ -2677,8 +2717,8 @@
         {
             "name": "Cienfuegos",
             "kind": "province",
-            "mentions": 286,
-            "affectations": 170,
+            "mentions": 287,
+            "affectations": 171,
             "recoveries": 36
         },
         {
@@ -4491,9 +4531,9 @@
         {
             "canonical": "CTE Antonio Maceo (Renté)",
             "city": "Santiago de Cuba",
-            "mentions": 68,
+            "mentions": 69,
             "failures": 23,
-            "recoveries": 4,
+            "recoveries": 5,
             "monthly_activity": [
                 17,
                 20,
@@ -4502,13 +4542,13 @@
                 2,
                 3,
                 11,
-                9,
+                10,
                 0,
                 0,
                 0,
                 0
             ],
-            "last_status": "active_failure"
+            "last_status": "normal"
         },
         {
             "canonical": "CTE 10 de Octubre (Nuevitas)",
@@ -4719,7 +4759,7 @@
         "6": 293,
         "7": 148,
         "8": 162,
-        "9": 193,
+        "9": 196,
         "10": 235,
         "11": 232,
         "12": 228,
@@ -4754,10 +4794,10 @@
         "longest_clean_streak_days": 135,
         "longest_clean_streak_start": "2026-08-19",
         "longest_clean_streak_end": "2026-12-31",
-        "days_since_sen_failure": 3,
+        "days_since_sen_failure": 2,
         "days_since_critical_event": 0,
         "days_since_block_affectation": 22,
-        "last_sen_failure_date": "2026-08-15",
+        "last_sen_failure_date": "2026-08-16",
         "last_critical_event_date": "2026-08-18",
         "last_block_affectation_date": "2026-07-27"
     },
@@ -4768,7 +4808,7 @@
         "sen_penalty": 0,
         "sentiment_score": 13
     },
-    "avg_ai_confidence": 0.9032,
+    "avg_ai_confidence": 0.9031,
     "weekly_hourly_severity": {
         "3-10": 30,
         "3-11": 27,
@@ -4796,7 +4836,7 @@
         "0-21": 28,
         "1-7": 15,
         "1-8": 24,
-        "1-9": 28,
+        "1-9": 31,
         "1-10": 26,
         "1-15": 49,
         "1-17": 47,
@@ -4990,7 +5030,7 @@
             664,
             550,
             373,
-            254,
+            255,
             0,
             0,
             0,
@@ -5032,7 +5072,7 @@
             116,
             99,
             501,
-            649,
+            652,
             0,
             0,
             0,
@@ -5046,7 +5086,7 @@
             29,
             23,
             113,
-            76,
+            77,
             0,
             0,
             0,
@@ -5074,7 +5114,7 @@
             112,
             134,
             364,
-            206,
+            208,
             0,
             0,
             0,
@@ -5088,7 +5128,7 @@
             103,
             77,
             238,
-            173,
+            175,
             0,
             0,
             0,
