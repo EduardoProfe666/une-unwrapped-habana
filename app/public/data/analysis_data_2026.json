@@ -1,5 +1,5 @@
 {
-    "sync_date": "2026-08-23T04:34:42.731909-04:00",
+    "sync_date": "2026-08-23T05:31:31.924490-04:00",
     "year": 2026,
     "first_message": {
         "id": 50542,
@@ -24,10 +24,10 @@
         "date_cuba": "2026-08-23 04:00:54",
         "date_cuba_d": "2026-08-23T04:00:54",
         "reactions": {
-            "👎": 5
+            "👎": 9
         },
-        "views": 436,
-        "replies": 7,
+        "views": 930,
+        "replies": 16,
         "text": "📣✅Informamos a la población que a partir de las 03:58 AM quedó restablecido el servicio en el siguiente circuito: \n\n👉 A1217: Reparto Versalles, Ampliación de Versalles, calle 51 desde 220 hasta 212, calle 51 desde 220 hasta 57 (Reparto San Rafael)\n\n📌Usted puede, aún siendo cliente de estos circuitos, continuar afectado por avería en acometida o transformador. En esos casos le pedimos contactarnos por las vías alternativas.📣✅"
     },
     "shortest_message": {
@@ -62,13 +62,13 @@
         "text": "📣🚨Informamos a la población que a partir de las 07:29 PM se afectó el servicio eléctrico en los siguientes circuitos:\n\n👉A1007: Alrededores de calles:                                                                                                                                                                            -Alegría, María Auxiliadora, San Gregorio, Hatuey, Giorgia Rivera y Maceo (Víbora Park)                                                                                                                                                                             -Cuadrante desde Washintong hasta calle 1ra y desde Maceo hasta San Agustín (Montejo)                                                                                                                                                                      -Calzada de Bejucal desde calle 2da hasta Porvenir (Poey)                                                                                                                                                                                -Cuadrante desde calle 1ra hasta Santa Isabel y desde Calzada de Bejucal hasta Maceo (Barrio Azul)\n👉1242: Cuadrante de avenida 25 desde calle 60 hasta calle 48 y calle 54 desde avenida 19 hasta avenida 31. Avenida 17 desde calle 62 hasta calle 46, avenida 27 desde calle 68 hasta calle 60, avenida 39 desde calle 44 hasta calle 50, calle 54 desde avenida 31 hasta avenida 41\n👉D632: Alrededores de calles:                                                                                                                                                      Lourdes desde Calzada Managua hasta Trinidad (Vibora Park)                                                                            Calzada Managua desde Coliseo hasta Imperio (La Lira)                                                                                         Calzada Managua desde María Ayala hasta Morales (Pepe Hermoso)\n👉D633: San Leonardo desde Lourdes hasta calle 2da (Víbora Park). Avenida Acosta desde calle 8 hasta calle 2da, calles Patrocinio y Lagueruela\n👉1856: Calle 130 desde avenida 37 hasta avenida 45, avenida 45 desde calle 130 hasta calle 124 (Coco Solo) Avenida 45 desde calle 124 hasta calle 110, cuadrante de avenida 47 hasta avenida 39 y calle 108 hasta calle 100 (Los Quemados) Cuadrante de avenida 51 hasta avenida 85 y desde calle 114 hasta 96. Reparto Los Ángeles, Las Yaguas                                                                                                                                                                                                                             \n👉1851: Reparto Zamora\n👉D1280: Repartos Coco Solo, Los Pocitos, Los Ángeles, El Palmar, Alturas de La Salle\n👉GC13: Mambi, Garrido y Centro de Guanabacoa\n👉R453: La Gloria, Ciruela, Unión, Lídice y Colina Lenin\n👉R456: Alrededores de calles Adriano, González Rubiera, Agramonte, Calixto García, Maceo, La Piedra y Facciolo\n👉1175: Calle 82 desde avenida 41 hasta avenida 49, avenida 43 desde calle 82 hasta calle 74, calle 76 desde avenida 41 hasta avenida 45 (Reparto Santa Felicia) Calle 82 desde avenida 49 hasta avenida 41, avenida 43 desde calle 82 hasta calle 76(Santa Felicia)                                                          Avenida 41B desde calle 76 hasta calles 68 y 70                                                                                                                       Avenida 43 desde calle 72 hasta calle 60. Avenidas 33A y 33 desde calle 66 hasta calle 46, calle 48 desde avenida 33 hasta avenida 39                                                                                                                                        \n👉1246: Avenida 51 hasta 58 C. Cuadrante de avenida 47 desde calles 50 y 52 hasta calles 58C y 58D, calle 58 desde avenida 41 hasta avenida 51(Altura del Bosque)                                                                                                                               Cuadrante de avenida 51 desde calle 58C hasta calle 44 y avenida 63 📣🚨",
         "count": 4086
     },
-    "total_views": 444738529,
+    "total_views": 444746723,
     "total_messages": 24494,
     "total_erased_messages": 1608,
-    "total_replies": 518946,
-    "total_reactions": 3114342,
-    "total_positive_reactions": 377511,
-    "total_negative_reactions": 2736831,
+    "total_replies": 518959,
+    "total_reactions": 3114364,
+    "total_positive_reactions": 377512,
+    "total_negative_reactions": 2736852,
     "avg_views": 18157,
     "avg_replies": 21,
     "avg_reactions": 127,
@@ -83,7 +83,7 @@
         "5": 68384000,
         "6": 61311409,
         "7": 49135533,
-        "8": 25831031,
+        "8": 25839225,
         "9": 0,
         "10": 0,
         "11": 0,
@@ -97,7 +97,7 @@
         "5": 75908,
         "6": 80053,
         "7": 85477,
-        "8": 39498,
+        "8": 39511,
         "9": 0,
         "10": 0,
         "11": 0,
@@ -111,7 +111,7 @@
         "5": 500955,
         "6": 424743,
         "7": 277913,
-        "8": 121322,
+        "8": 121344,
         "9": 0,
         "10": 0,
         "11": 0,
@@ -507,8 +507,8 @@
         "5": 8059
     },
     "distribution_reaction": {
-        "👎": 2736831,
-        "👍": 377511
+        "👎": 2736852,
+        "👍": 377512
     },
     "top3_most_viewed_messages": [
         {
@@ -5365,7 +5365,7 @@
         "5": 0.8975,
         "6": 0.9071,
         "7": 0.886,
-        "8": 0.8447,
+        "8": 0.8448,
         "9": 0.0,
         "10": 0.0,
         "11": 0.0,
